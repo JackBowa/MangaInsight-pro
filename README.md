@@ -1,0 +1,1 @@
+# MangaInsight-pro
