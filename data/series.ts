@@ -216,7 +216,7 @@ export const SERIES: Serie[] = [
   title: "The Player Who Can’t Level Up",
   category: "manhwa",
   tags: "Action · Fantasy",
-  cover: "/player.jpg",
+  cover: "https://manga-insight-pro.vercel.app/the player.png",
   synopsis: "Kim Gi-Gyu, un joueur qui a reçu son éveil mais reste bloqué au niveau 1 malgré des années d'efforts. Lorsqu’il obtient soudainement une arme unique et un pouvoir mystérieux, sa progression commence et il découvre la vérité sur son monde.",
   reviewHtml: `
     <p><strong>Un héros bloqué qui se révèle</strong></p>
