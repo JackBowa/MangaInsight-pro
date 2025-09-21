@@ -167,7 +167,7 @@ export const SERIES: Serie[] = [
     },
   ],
   live: [],
-}
+},
 
 // TOKYO REVENGERS
 {
