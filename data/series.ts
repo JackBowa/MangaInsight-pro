@@ -350,4 +350,102 @@ export const SERIES: Serie[] = [
   ],
   live: [],
 },
+// BLUE LOCK
+{
+  slug: "blue-lock",
+  title: "Blue Lock",
+  category: "manga",
+  tags: "Football · Shōnen · Compétition",
+  cover: "https://manga-insight-pro.vercel.app/blue-lock.jpg",
+  synopsis: `Après l’échec du Japon à la Coupe du monde, un programme radical est lancé : Blue Lock, une sélection impitoyable destinée à forger l’attaquant égoïste ultime. Yoichi Isagi, lycéen talentueux mais hésitant, y joue sa carrière et sa vision du football.`,
+  reviewHtml: `
+    <p><strong>Un battle shōnen… de foot !</strong></p>
+    <p>Blue Lock transforme le sport en duel psychologique. Le rythme est nerveux, la mise en scène agressive et chaque match devient un affrontement d’ego, d’instinct et de créativité. Isagi, Baro, Nagi… tous ont une “arme” et une progression très lisible.</p>
+    <p>Que tu aimes le foot ou pas, la série accroche par ses enjeux, son découpage et ses retournements.</p>
+  `,
+  stars: 5,
+  shops: [
+    { name: "Manganim", url: "https://manganim.fr/search?q=blue+lock", logo: "https://manganim.fr/cdn/shop/files/logo-manganim-header_180x.png?v=1672862594" },
+    { name: "Fnac",     url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=blue+lock", logo: "https://cdn.iconscout.com/icon/free/png-256/free-fnac-3521434-2944878.png" },
+    { name: "Amazon",   url: "https://www.amazon.fr/s?k=blue+lock", logo: "https://www.1min30.com/wp-content/uploads/2017/12/logo-amazon-1.jpg" },
+  ],
+  streaming: [
+    { name: "Crunchyroll", url: "https://www.crunchyroll.com/fr/series/G4PH0WEKE/blue-lock", logo: "https://upload.wikimedia.org/wikipedia/commons/f/fc/Crunchyroll_logo_2018_vertical.png" },
+  ],
+  live: [],
+},
+
+// BLEACH
+{
+  slug: "bleach",
+  title: "Bleach",
+  category: "manga",
+  tags: "Shōnen · Surnaturel · Action",
+  cover: "https://manga-insight-pro.vercel.app/bleach.jpg",
+  synopsis: `Ichigo Kurosaki, lycéen capable de voir les esprits, hérite par hasard des pouvoirs d’une Shinigami, Rukia. Propulsé dans le monde des âmes, il doit protéger les vivants des Hollows et affronter des complots qui dépassent son imagination.`,
+  reviewHtml: `
+    <p><strong>Du cool factor à l’état pur</strong></p>
+    <p>Bleach brille par son esthétique, ses OST (en animé) et ses combats à la mise en scène tranchante. Le lore s’étoffe au fil des arcs (Soul Society, Arrancars, Quincy), avec des Bankai iconiques et des antagonistes mémorables.</p>
+    <p>Une série-symbole du shōnen 2000s qui reste ultra efficace aujourd’hui.</p>
+  `,
+  stars: 5,
+  shops: [
+    { name: "Manganim", url: "https://manganim.fr/search?q=bleach", logo: "https://manganim.fr/cdn/shop/files/logo-manganim-header_180x.png?v=1672862594" },
+    { name: "Fnac",     url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=bleach+manga", logo: "https://cdn.iconscout.com/icon/free/png-256/free-fnac-3521434-2944878.png" },
+    { name: "Amazon",   url: "https://www.amazon.fr/s?k=bleach+manga", logo: "https://www.1min30.com/wp-content/uploads/2017/12/logo-amazon-1.jpg" },
+  ],
+  streaming: [
+    { name: "Crunchyroll", url: "https://www.crunchyroll.com/fr/series/G63VGG2NY/bleach", logo: "https://upload.wikimedia.org/wikipedia/commons/f/fc/Crunchyroll_logo_2018_vertical.png" },
+  ],
+  live: [],
+},
+
+// BLACK BUTLER (Kuroshitsuji)
+{
+  slug: "black-butler",
+  title: "Black Butler",
+  category: "manga",
+  tags: "Gothique · Mystère · Fantaisie",
+  cover: "https://manga-insight-pro.vercel.app/black-butler.jpg",
+  synopsis: `Ciel Phantomhive, jeune comte au passé tragique, a scellé un pacte avec Sebastian, un majordome démoniaque parfait. Ensemble, ils résolvent des affaires sombres dans le Londres victorien, en attendant le jour où Sebastian prendra l’âme de Ciel.`,
+  reviewHtml: `
+    <p><strong>Élégance macabre et intrigues victoriennes</strong></p>
+    <p>Black Butler mêle esthétique gothique, humour noir et enquêtes. Sebastian vole la vedette à chaque apparition, tandis que Ciel impose un charisme froid et déterminé. L’ambiance, la mode et le sens du détail font beaucoup du charme de la série.</p>
+  `,
+  stars: 5,
+  shops: [
+    { name: "Manganim", url: "https://manganim.fr/search?q=black+butler", logo: "https://manganim.fr/cdn/shop/files/logo-manganim-header_180x.png?v=1672862594" },
+    { name: "Fnac",     url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=black+butler", logo: "https://cdn.iconscout.com/icon/free/png-256/free-fnac-3521434-2944878.png" },
+    { name: "Amazon",   url: "https://www.amazon.fr/s?k=black+butler+manga", logo: "https://www.1min30.com/wp-content/uploads/2017/12/logo-amazon-1.jpg" },
+  ],
+  streaming: [
+    { name: "Crunchyroll", url: "https://www.crunchyroll.com/fr/series/GRDV5EN6Y/black-butler", logo: "https://upload.wikimedia.org/wikipedia/commons/f/fc/Crunchyroll_logo_2018_vertical.png" },
+  ],
+  live: [],
+},
+
+// ASSASSINATION CLASSROOM
+{
+  slug: "assassination-classroom",
+  title: "Assassination Classroom",
+  category: "manga",
+  tags: "Comédie · École · Action",
+  cover: "/assassination-classroom.jpg",
+  synopsis: `La classe 3-E reçoit une mission folle : tuer leur professeur Koro-sensei, une créature surpuissante qui menace de détruire la Terre… après les avoir “bien formés”. Entre cours délirants, entraînement et amitié, les élèves vont se dépasser.`,
+  reviewHtml: `
+    <p><strong>Un ovni drôle et touchant</strong></p>
+    <p>Assassination Classroom équilibre humour absurde, pédagogie et émotion. Koro-sensei est un prof improbable mais inoubliable, et chaque élève bénéficie d’un petit arc qui fait progresser la classe entière. Finale très réussie.</p>
+  `,
+  stars: 5,
+  shops: [
+    { name: "Manganim", url: "https://manganim.fr/search?q=assassination+classroom", logo: "https://manganim.fr/cdn/shop/files/logo-manganim-header_180x.png?v=1672862594" },
+    { name: "Fnac",     url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=assassination+classroom", logo: "https://cdn.iconscout.com/icon/free/png-256/free-fnac-3521434-2944878.png" },
+    { name: "Amazon",   url: "https://www.amazon.fr/s?k=assassination+classroom", logo: "https://www.1min30.com/wp-content/uploads/2017/12/logo-amazon-1.jpg" },
+  ],
+  streaming: [
+    { name: "Crunchyroll", url: "https://www.crunchyroll.com/fr/series/GY8DV5N1Y/assassination-classroom", logo: "https://upload.wikimedia.org/wikipedia/commons/f/fc/Crunchyroll_logo_2018_vertical.png" },
+  ],
+  live: [],
+},
+  
 ]
