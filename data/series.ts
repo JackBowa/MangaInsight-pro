@@ -169,3 +169,185 @@ export const SERIES: Serie[] = [
   live: [],
 }
 ]
+// TOKYO REVENGERS
+{
+  slug: "tokyo-revengers",
+  title: "Tokyo Revengers",
+  category: "manga",
+  tags: "Action · Voyage temporel",
+  cover: "https://manga-insight-pro.vercel.app/Tokyo-Revengers.jpg",
+  synopsis: "Takemichi Hanagaki, 26 ans, apprend que son ex-petite amie Hinata a été tuée par le gang Tokyo Manji. Peu après, il est poussé sur les rails du métro et se retrouve douze ans en arrière. Il décide de modifier le passé pour sauver Hinata et empêcher la montée du gang.",
+  reviewHtml: `
+    <p><strong>Un voyage dans le temps palpitant</strong></p>
+    <p>Tokyo Revengers suit Takemichi, un loser de 26 ans qui retourne dans son adolescence pour tenter de sauver son premier amour et empêcher un gang violent de détruire des vies. Chaque retour dans le passé modifie l'avenir et entraîne des conséquences imprévisibles.</p>
+    <p>Le mélange d'action, d'émotion et de suspense rend chaque chapitre addictif. Les personnages ont tous leurs propres motivations et évoluent de manière crédible, ce qui rend l'histoire encore plus immersive.</p>
+  `,
+  stars: 5,
+  shops: [
+    {
+      name: "Manganim",
+      url: "https://manganim.fr/search?q=tokyo+revengers",
+      logo: "https://manganim.fr/cdn/shop/files/logo-manganim-header_180x.png?v=1672862594",
+    },
+    {
+      name: "Fnac",
+      url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=tokyo+revengers",
+      logo: "https://cdn.iconscout.com/icon/free/png-256/free-fnac-3521434-2944878.png",
+    },
+    {
+      name: "Amazon",
+      url: "https://www.amazon.fr/s?k=tokyo+revengers",
+      logo: "https://www.1min30.com/wp-content/uploads/2017/12/logo-amazon-1.jpg",
+    },
+  ],
+  streaming: [
+    {
+      name: "Crunchyroll",
+      url: "https://www.crunchyroll.com/fr/series/G3KHEVMEX/tokyo-revengers",
+      logo: "https://upload.wikimedia.org/wikipedia/commons/f/fc/Crunchyroll_logo_2018_vertical.png",
+    },
+  ],
+  live: [],
+},
+]
+// THE PLAYER WHO CAN'T LEVEL UP
+{
+  slug: "the-player-who-cant-level-up",
+  title: "The Player Who Can’t Level Up",
+  category: "manhwa",
+  tags: "Action · Fantasy",
+  cover: "/player.jpg",
+  synopsis: "Kim Gi-Gyu, un joueur qui a reçu son éveil mais reste bloqué au niveau 1 malgré des années d'efforts. Lorsqu’il obtient soudainement une arme unique et un pouvoir mystérieux, sa progression commence et il découvre la vérité sur son monde.",
+  reviewHtml: `
+    <p><strong>Un héros bloqué qui se révèle</strong></p>
+    <p>The Player Who Can’t Level Up raconte l’histoire de Kim Gi-Gyu, un joueur coincé au niveau 1. Alors que tous les autres progressent, il reste impuissant jusqu’au jour où il obtient une arme et des pouvoirs uniques. L’histoire suit sa montée en puissance et la découverte des secrets des tours et des donjons.</p>
+    <p>Le manhwa combine habilement suspense, action et mystère, avec une progression du personnage très satisfaisante pour le lecteur.</p>
+  `,
+  stars: 5,
+  shops: [
+    {
+      name: "Manganim",
+      url: "https://manganim.fr/search?q=the+player+who+cant+level+up",
+      logo: "https://manganim.fr/cdn/shop/files/logo-manganim-header_180x.png?v=1672862594",
+    },
+    {
+      name: "Amazon",
+      url: "https://www.amazon.fr/s?k=the+player+who+cant+level+up",
+      logo: "https://www.1min30.com/wp-content/uploads/2017/12/logo-amazon-1.jpg",
+    },
+  ],
+  streaming: [],
+  live: [],
+},
+]
+// THE BEGINNING AFTER THE END
+{
+  slug: "the-beginning-after-the-end",
+  title: "The Beginning After The End",
+  category: "manhwa",
+  tags: "Réincarnation · Fantasy",
+  cover: "https://manga-insight-pro.vercel.app/the-beginning-after-the-end-kv-large.jpg",
+  synopsis: "Arthur Leywin, roi d’un monde magique, meurt et se réincarne dans un nouveau monde où il grandit avec les souvenirs de sa vie passée. Décidé à corriger ses erreurs, il explore un univers rempli de magie, de monstres et d’intrigues.",
+  reviewHtml: `
+    <p><strong>Un roi réincarné dans un nouveau monde</strong></p>
+    <p>The Beginning After The End suit Arthur, ancien roi puissant, qui se réincarne dans un monde où il peut vivre une seconde chance. Entre découverte, entraînement et secrets enfouis, il se construit une nouvelle vie et tente d’éviter les erreurs du passé.</p>
+    <p>Un excellent mélange de fantasy, de magie et de développement personnel, avec des combats intenses et un univers riche.</p>
+  `,
+  stars: 5,
+  shops: [
+    {
+      name: "Manganim",
+      url: "https://manganim.fr/search?q=the+beginning+after+the+end",
+      logo: "https://manganim.fr/cdn/shop/files/logo-manganim-header_180x.png?v=1672862594",
+    },
+    {
+      name: "Amazon",
+      url: "https://www.amazon.fr/s?k=the+beginning+after+the+end",
+      logo: "https://www.1min30.com/wp-content/uploads/2017/12/logo-amazon-1.jpg",
+    },
+  ],
+  streaming: [],
+  live: [],
+},
+]
+// MY HERO ACADEMIA
+{
+  slug: "my-hero-academia",
+  title: "My Hero Academia",
+  category: "manga",
+  tags: "Super-héros · Shōnen",
+  cover: "https://manga-insight-pro.vercel.app/My-Hero-Academia.jpg",
+  synopsis: "Dans un monde où 80 % de la population possède des super-pouvoirs appelés Alters, Izuku Midoriya est né sans aucun don. Son rêve de devenir héros semble impossible, jusqu’au jour où il rencontre son idole All Might qui lui transmet son pouvoir.",
+  reviewHtml: `
+    <p><strong>Un shōnen de super-héros inspirant</strong></p>
+    <p>My Hero Academia suit Izuku, un garçon sans pouvoir dans un monde de héros. Son courage et sa détermination l’amènent à hériter du pouvoir du plus grand héros et à entrer à l’académie Yuei. On suit son évolution et celle de ses camarades dans une ambiance pleine d’action et d’émotions.</p>
+  `,
+  stars: 5,
+  shops: [
+    {
+      name: "Manganim",
+      url: "https://manganim.fr/search?q=my+hero+academia",
+      logo: "https://manganim.fr/cdn/shop/files/logo-manganim-header_180x.png?v=1672862594",
+    },
+    {
+      name: "Fnac",
+      url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=my+hero+academia",
+      logo: "https://cdn.iconscout.com/icon/free/png-256/free-fnac-3521434-2944878.png",
+    },
+    {
+      name: "Amazon",
+      url: "https://www.amazon.fr/s?k=my+hero+academia",
+      logo: "https://www.1min30.com/wp-content/uploads/2017/12/logo-amazon-1.jpg",
+    },
+  ],
+  streaming: [
+    {
+      name: "Crunchyroll",
+      url: "https://www.crunchyroll.com/fr/series/G6J0G49X6/my-hero-academia",
+      logo: "https://upload.wikimedia.org/wikipedia/commons/f/fc/Crunchyroll_logo_2018_vertical.png",
+    },
+  ],
+  live: [],
+},
+]
+
+// L'ATTAQUE DES TITANS
+{
+  slug: "l-attaque-des-titans",
+  title: "L’Attaque des Titans",
+  category: "manga",
+  tags: "Dark Fantasy · Titans",
+  cover: "https://manga-insight-pro.vercel.app/shinkegi-no-kyojin.jpg",
+  synopsis: "L’humanité vit retranchée derrière d’immenses murs pour se protéger des Titans, des créatures géantes mangeuses d’hommes. Eren Jaeger, témoin de la destruction de sa ville, jure de les exterminer et rejoint l’armée pour combattre ces monstres.",
+  reviewHtml: `
+    <p><strong>Un monde oppressant et des révélations choc</strong></p>
+    <p>L’Attaque des Titans nous plonge dans un univers sombre où l’humanité lutte pour sa survie. L’histoire d’Eren et de ses amis mélange action, suspense et secrets politiques, avec des retournements de situation mémorables.</p>
+  `,
+  stars: 5,
+  shops: [
+    {
+      name: "Manganim",
+      url: "https://manganim.fr/search?q=attaque+des+titans",
+      logo: "https://manganim.fr/cdn/shop/files/logo-manganim-header_180x.png?v=1672862594",
+    },
+    {
+      name: "Fnac",
+      url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=attaque+des+titans",
+      logo: "https://cdn.iconscout.com/icon/free/png-256/free-fnac-3521434-2944878.png",
+    },
+    {
+      name: "Amazon",
+      url: "https://www.amazon.fr/s?k=attaque+des+titans",
+      logo: "https://www.1min30.com/wp-content/uploads/2017/12/logo-amazon-1.jpg",
+    },
+  ],
+  streaming: [
+    {
+      name: "Crunchyroll",
+      url: "https://www.crunchyroll.com/fr/series/GR751KNZY/attack-on-titan",
+      logo: "https://upload.wikimedia.org/wikipedia/commons/f/fc/Crunchyroll_logo_2018_vertical.png",
+    },
+  ],
+  live: [],
+},
+  ]
