@@ -6,24 +6,25 @@ type CommentItem = {
   name: string;
   stars: number;
   text: string;
-  date: string; // ISO
+  date: string;
 };
 
 export default function Comments({
   slug,
   title,
+  max = 5,            // ⬅️ nouveau : nombre d’étoiles (5 ou 9)
 }: {
   slug: string;
   title: string;
+  max?: number;
 }) {
-  const storageKey = useMemo(() => `ms-comments:${slug}`, [slug]);
+  const storageKey = useMemo(() => `ms-comments:${slug}:x${max}`, [slug, max]);
   const [items, setItems] = useState<CommentItem[]>([]);
   const [name, setName] = useState("");
   const [text, setText] = useState("");
   const [stars, setStars] = useState<number>(0);
   const [error, setError] = useState<string | null>(null);
 
-  // charger depuis localStorage
   useEffect(() => {
     try {
       const raw = localStorage.getItem(storageKey);
@@ -31,7 +32,6 @@ export default function Comments({
     } catch {}
   }, [storageKey]);
 
-  // sauvegarder à chaque changement
   useEffect(() => {
     try {
       localStorage.setItem(storageKey, JSON.stringify(items));
@@ -42,7 +42,7 @@ export default function Comments({
     e.preventDefault();
     setError(null);
     if (!name.trim()) return setError("Ton pseudo est requis.");
-    if (stars < 1 || stars > 5) return setError("Mets une note entre 1 et 5.");
+    if (stars < 1 || stars > max) return setError(`Mets une note entre 1 et ${max}.`);
     if (!text.trim()) return setError("Écris un avis.");
 
     const item: CommentItem = {
@@ -60,9 +60,7 @@ export default function Comments({
 
   const avg =
     items.length > 0
-      ? Math.round(
-          (items.reduce((s, it) => s + it.stars, 0) / items.length) * 10
-        ) / 10
+      ? Math.round((items.reduce((s, it) => s + it.stars, 0) / items.length) * 10) / 10
       : null;
 
   return (
@@ -71,24 +69,19 @@ export default function Comments({
         Avis & commentaires — {title}
       </h2>
 
-      {/* moyenne */}
       <div className="text-center mb-4 text-sm text-gray-300">
         {avg ? (
           <>
             Note moyenne des lecteurs :{" "}
-            <span className="font-semibold text-yellow-400">{avg}/5</span>{" "}
+            <span className="font-semibold text-yellow-400">{avg}/{max}</span>{" "}
             ({items.length} avis)
           </>
         ) : (
-          "Pas d'avis pour le moment. Lance-toi !"
+          `Pas d'avis pour le moment. Note sur ${max}.`
         )}
       </div>
 
-      {/* formulaire */}
-      <form
-        onSubmit={submit}
-        className="rounded-xl border border-white/10 bg-white/5 p-4 space-y-3"
-      >
+      <form onSubmit={submit} className="rounded-xl border border-white/10 bg-white/5 p-4 space-y-3">
         <div className="flex flex-col sm:flex-row gap-3 sm:items-center">
           <input
             value={name}
@@ -97,9 +90,9 @@ export default function Comments({
             className="flex-1 rounded-md bg-black/40 border border-white/10 px-3 py-2 outline-none focus:border-violet-400"
           />
 
-          {/* étoiles cliquables */}
+        {/* étoiles cliquables (max dynamique) */}
           <div className="flex items-center gap-1">
-            {Array.from({ length: 5 }).map((_, i) => {
+            {Array.from({ length: max }).map((_, i) => {
               const idx = i + 1;
               return (
                 <button
@@ -107,15 +100,13 @@ export default function Comments({
                   type="button"
                   onClick={() => setStars(idx)}
                   aria-label={`Note ${idx}`}
-                  className={`text-2xl leading-none ${
-                    idx <= stars ? "text-yellow-400" : "text-gray-600"
-                  }`}
+                  className={`text-2xl leading-none ${idx <= stars ? "text-yellow-400" : "text-gray-600"}`}
                 >
                   ★
                 </button>
               );
             })}
-            <span className="ml-2 text-sm text-gray-400">{stars || 0}/5</span>
+            <span className="ml-2 text-sm text-gray-400">{stars || 0}/{max}</span>
           </div>
         </div>
 
@@ -134,29 +125,20 @@ export default function Comments({
         )}
 
         <div className="flex justify-end">
-          <button
-            className="rounded-md bg-violet-600 hover:bg-violet-500 px-4 py-2 text-sm font-medium"
-            type="submit"
-          >
+          <button className="rounded-md bg-violet-600 hover:bg-violet-500 px-4 py-2 text-sm font-medium" type="submit">
             Publier l’avis
           </button>
         </div>
       </form>
 
-      {/* liste des commentaires */}
       <div className="mt-6 space-y-3">
         {items.map((it) => (
-          <article
-            key={it.id}
-            className="rounded-lg border border-white/10 bg-white/5 p-3"
-          >
+          <article key={it.id} className="rounded-lg border border-white/10 bg-white/5 p-3">
             <header className="flex items-center justify-between">
               <div className="font-semibold">{it.name}</div>
               <div className="text-yellow-400">
                 {"★".repeat(it.stars)}
-                <span className="text-gray-600">
-                  {"★".repeat(5 - it.stars)}
-                </span>
+                <span className="text-gray-600">{"★".repeat(max - it.stars)}</span>
               </div>
             </header>
             <p className="mt-2 text-gray-100 leading-relaxed">{it.text}</p>
@@ -167,10 +149,8 @@ export default function Comments({
         ))}
       </div>
 
-      {/* astuce */}
       <p className="mt-6 text-center text-xs text-gray-500">
-        (Les avis sont stockés dans ton navigateur. Pour un vrai stockage
-        partagé, on branchera Supabase/Firestore quand tu veux.)
+        (Stocké localement pour l’instant. On pourra brancher Supabase/Firestore ensuite.)
       </p>
     </section>
   );
