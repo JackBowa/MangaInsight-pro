@@ -224,7 +224,7 @@ export const SERIES: Serie[] = [
   title: "The Player Who Can’t Level Up",
   category: "manhwa",
   tags: "Action · Fantasy",
-  cover: "https://manga-insight-pro.vercel.app/the player.png",
+  cover: "https://manga-insight-pro.vercel.app/the-player.png",
   synopsis: "Kim Gi-Gyu, un joueur qui a reçu son éveil mais reste bloqué au niveau 1 malgré des années d'efforts. Lorsqu’il obtient soudainement une arme unique et un pouvoir mystérieux, sa progression commence et il découvre la vérité sur son monde.",
   reviewHtml: `
    <p>The Player Who Can't Level Up m'a agréablement surpris avec son approche unique dans le monde des manhwas axés sur les jeux, se distinguant même de séries bien connues comme "Solo Leveling". Dès le début, j'ai été intrigué par le protagoniste, ce joueur qui défie les conventions en trouvant des moyens ingénieux de devenir plus fort malgré son incapacité à monter de niveau.</p>
@@ -506,5 +506,45 @@ export const SERIES: Serie[] = [
   ],
   live: [],
 },
-  
+{
+  slug: "kuroko-no-basket",
+  title: "Kuroko no Basket",
+  category: "manga",
+  tags: "Sport · Basket · Lycée · Shônen · Compétition",
+  cover: "https://manga-insight-pro.vercel.app/kuroko-no-basket.jpg",
+  synopsis: `À Seirin, l’arrivée du discret Kuroko Tetsuya et du surdoué Kagami Taiga bouscule la hiérarchie du basket lycéen. Tandis que l’ombre et la lumière unissent leurs forces, l’équipe vise le sommet du championnat. Face à la légendaire “Génération des Miracles”, chaque match devient un duel de styles et de mentalités. Un shônen sportif rythmé, où la stratégie compte autant que l’exploit.`,
+  reviewHtml: `<p> Kuroko’s Basket est un manga qui a capturé l'esprit du basket-ball d'une manière que peu d'autres séries ont réussi à faire. Ayant pratiqué le basket pendant 12 ans, je trouve que ce manga réussit à allier action intense, stratégie sportive et développement de personnages avec une aisance incroyable. L'histoire suit Kuroko Tetsuya, un joueur apparemment discret mais doté d'une technique exceptionnelle, et Kagami Taiga, son coéquipier talentueux et passionné. Ensemble, ils visent à conquérir le championnat de basket-ball lycéen.
+ </p>
+<p> Ce qui rend Kuroko’s Basket si captivant, c'est sa capacité à créer des matchs pleins d'adrénaline. Les rencontres entre les équipes sont épiques, avec des stratégies ingénieuses et des techniques spéciales qui ajoutent une touche de fantaisie au basket. En tant que joueur, j'ai apprécié la manière dont le manga dépeint les différentes approches du jeu, des tactiques défensives à l'offensive spectaculaire. </p>
+<p> Les personnages de Kuroko’s Basket sont un autre point fort. Kuroko, avec son style de jeu discret mais efficace, est un protagoniste unique dans le monde des mangas de sport. Kagami, avec sa force brute et sa détermination, apporte un équilibre parfait. Les autres membres de l'équipe Seirin, ainsi que les rivaux issus de la "Génération des Miracles", ont chacun leur propre caractère et style de jeu, ce qui rend chaque match passionnant à suivre. </p>
+<p>L'intensité des matchs est palpable, et le manga parvient à capturer l'excitation du basket-ball. Les moments de victoire, de défaite et de camaraderie entre les joueurs ajoutent une profondeur émotionnelle qui fait écho à ma propre expérience en tant que joueur. On ressent la pression, la joie des victoires et la déception des défaites, ce qui rend chaque chapitre mémorable. </p>
+<p>Je donne à Kuroko’s Basket une note de 5 sur 5 pour son approche exceptionnelle du basket-ball et sa capacité à maintenir une énergie élevée tout au long de la série. Le mélange d'action sportive, de développement de personnages et de rivalités féroces crée une expérience de lecture incroyable. Si vous aimez le basket et recherchez un manga qui capte l'essence de ce sport avec une touche d'originalité, "Kuroko no Basket" est un incontournable. Pour moi, c'est l'un des meilleurs mangas de sport, et je le recommande vivement à quiconque aime le basket ou cherche une série pleine d'action et de passion. </p>`,
+  stars: 5,
+  shops: [
+    { name: "Manganim", url: "https://manganim.fr/collections/tomes-kurokos-basket?_pos=2&_psq=Kuroko&_ss=e&_v=1.0", logo: "https://manganim.fr/cdn/shop/files/logo-manganim-header_180x.png?v=1672862594" },
+    { name: "Fnac", url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=kuroko+basket&SCat=0%211&sft=1&sa=1", logo: "https://cdn.iconscout.com/icon/free/png-256/free-fnac-3521434-2944878.png" },
+    { name: "Amazon", url: "https://www.amazon.fr/s?k=kuroko%27s+basket+tome&ref=nb_sb_noss", logo: "https://www.1min30.com/wp-content/uploads/2017/12/logo-amazon-1.jpg" }
+  ],
+  streaming: [
+    { name: "Crunchyroll", url: "https://www.crunchyroll.com/fr/series/G62P48X56/kurokos-basketball", logo: "https://upload.wikimedia.org/wikipedia/commons/f/fc/Crunchyroll_logo_2018_vertical.png" }
+  ],
+  live: []
+},
+{
+  slug: "kill-the-hero",
+  title: "Kill the Hero",
+  category: "manhwa",
+  tags: "Action · Donjons · Régression · Revanche · Thriller",
+  cover: "https://manga-insight-pro.vercel.app/kill-the-hero.png",
+  synopsis: `Dans un monde envahi par des donjons et des guildes sans scrupules, un joueur revient au point de départ après une trahison. Fort d’une connaissance du futur et d’une détermination froide, il grimpe l’échelle du pouvoir. Combats nerveux, intrigues de coulisses et coups de poker rythment sa quête. Une chasse à l’“héros” qui brouille les lignes entre justice et vengeance.`,
+  reviewHtml: `<p> Kill the Hero m'a happé dès les premières pages avec son intrigue palpitante et ses personnages captivants. Plonger dans ce monde où les héros et les monstres s'affrontent dans une lutte sans merci a été une expérience époustouflante du début à la fin. </p>
+<p> Ce qui rend Kill the Hero si unique, c'est son rythme effréné et son action sans répit. Chaque chapitre est une montagne russe d'émotions, avec des combats exaltants et des retournements de situation qui m'ont maintenu en haleine à chaque instant. </p>
+<p> Les personnages de Kill the Hero sont un véritable atout. Du héros charismatique aux antagonistes redoutables, chacun apporte une dimension intrigante à l'histoire. Leurs motivations complexes et leurs interactions fascinantes ajoutent une profondeur inattendue à cette aventure déjà captivante. </p>
+<p> Cependant, malgré tout son dynamisme, je dois reconnaître que par moments, l'évolution du héros semble un peu trop linéaire. Certaines victoires semblent venir trop facilement, ce qui peut parfois atténuer le suspense et la tension. </p>
+<p> Cela dit, Kill the Hero reste une lecture incroyablement gratifiante. Son cocktail d'action intense, de mystères captivants et de personnages inoubliables en fait un manhwa à ne pas manquer pour tous les amateurs de thrillers et d'aventures épiques. Avec un peu plus de complexité dans le développement du héros, cette série pourrait aisément se hisser parmi les meilleurs du genre. </p>`,
+  stars: 4,
+  shops: [],
+  streaming: [],
+  live: []
+},  
 ]
