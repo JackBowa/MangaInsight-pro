@@ -209,7 +209,7 @@ export const SERIES: Serie[] = [
   ],
   live: [],
 },
-]
+
 // THE PLAYER WHO CAN'T LEVEL UP
 {
   slug: "the-player-who-cant-level-up",
@@ -239,7 +239,7 @@ export const SERIES: Serie[] = [
   streaming: [],
   live: [],
 },
-]
+
 // THE BEGINNING AFTER THE END
 {
   slug: "the-beginning-after-the-end",
@@ -269,7 +269,7 @@ export const SERIES: Serie[] = [
   streaming: [],
   live: [],
 },
-]
+
 // MY HERO ACADEMIA
 {
   slug: "my-hero-academia",
@@ -309,7 +309,7 @@ export const SERIES: Serie[] = [
   ],
   live: [],
 },
-]
+
 
 // L'ATTAQUE DES TITANS
 {
@@ -350,4 +350,4 @@ export const SERIES: Serie[] = [
   ],
   live: [],
 },
-  ]
+
