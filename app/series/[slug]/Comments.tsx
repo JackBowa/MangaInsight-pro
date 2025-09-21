@@ -1,61 +1,86 @@
 "use client";
+
 import { useEffect, useMemo, useState } from "react";
+import { createClient } from "@supabase/supabase-js";
 
 type CommentItem = {
   id: string;
+  slug: string;
   name: string;
   stars: number;
   text: string;
-  date: string;
+  created_at: string;
 };
 
-export default function Comments({
-  slug,
-  title,
-}: {
-  slug: string;
-  title: string;
-}) {
-  const max = 5; // ← note sur 5 fixée
-  const storageKey = useMemo(() => `ms-comments:${slug}`, [slug]);
+const max = 5;
+
+export default function Comments({ slug, title }: { slug: string; title: string }) {
+  const supabase = useMemo(
+    () =>
+      createClient(
+        process.env.NEXT_PUBLIC_SUPABASE_URL!,
+        process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
+      ),
+    []
+  );
 
   const [items, setItems] = useState<CommentItem[]>([]);
   const [name, setName] = useState("");
   const [text, setText] = useState("");
   const [stars, setStars] = useState<number>(0);
   const [error, setError] = useState<string | null>(null);
+  const [loading, setLoading] = useState(false);
+
+  async function load() {
+    const { data, error } = await supabase
+      .from("comments")
+      .select("*")
+      .eq("slug", slug)
+      .order("created_at", { ascending: false });
+
+    if (!error && data) setItems(data as CommentItem[]);
+  }
 
   useEffect(() => {
-    try {
-      const raw = localStorage.getItem(storageKey);
-      if (raw) setItems(JSON.parse(raw));
-    } catch {}
-  }, [storageKey]);
+    load();
+    // (optionnel) temps réel:
+    const channel = supabase
+      .channel("comments-realtime")
+      .on(
+        "postgres_changes",
+        { event: "*", schema: "public", table: "comments", filter: `slug=eq.${slug}` },
+        () => load()
+      )
+      .subscribe();
+    return () => {
+      supabase.removeChannel(channel);
+    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [slug]);
 
-  useEffect(() => {
-    try {
-      localStorage.setItem(storageKey, JSON.stringify(items));
-    } catch {}
-  }, [storageKey, items]);
-
-  const submit = (e: React.FormEvent) => {
+  const submit = async (e: React.FormEvent) => {
     e.preventDefault();
     setError(null);
+
     if (!name.trim()) return setError("Ton pseudo est requis.");
-    if (stars < 1 || stars > max) return setError(`Mets une note entre 1 et ${max}.`);
+    if (stars < 1 || stars > max) return setError(`Note entre 1 et ${max}.`);
     if (!text.trim()) return setError("Écris un avis.");
 
-    const item: CommentItem = {
-      id: crypto.randomUUID(),
+    setLoading(true);
+    const { error } = await supabase.from("comments").insert({
+      slug,
       name: name.trim(),
       stars,
       text: text.trim(),
-      date: new Date().toISOString(),
-    };
-    setItems([item, ...items]);
+    });
+    setLoading(false);
+
+    if (error) return setError(error.message);
+
     setName("");
     setText("");
     setStars(0);
+    load();
   };
 
   const avg =
@@ -73,7 +98,9 @@ export default function Comments({
         {avg ? (
           <>
             Note moyenne des lecteurs :{" "}
-            <span className="font-semibold text-yellow-400">{avg}/{max}</span>{" "}
+            <span className="font-semibold text-yellow-400">
+              {avg}/{max}
+            </span>{" "}
             ({items.length} avis)
           </>
         ) : (
@@ -81,10 +108,7 @@ export default function Comments({
         )}
       </div>
 
-      <form
-        onSubmit={submit}
-        className="rounded-xl border border-white/10 bg-white/5 p-4 space-y-3"
-      >
+      <form onSubmit={submit} className="rounded-xl border border-white/10 bg-white/5 p-4 space-y-3">
         <div className="flex flex-col sm:flex-row gap-3 sm:items-center">
           <input
             value={name}
@@ -92,8 +116,6 @@ export default function Comments({
             placeholder="Ton pseudo"
             className="flex-1 rounded-md bg-black/40 border border-white/10 px-3 py-2 outline-none focus:border-violet-400"
           />
-
-          {/* étoiles cliquables */}
           <div className="flex items-center gap-1">
             {Array.from({ length: max }).map((_, i) => {
               const idx = i + 1;
@@ -118,8 +140,8 @@ export default function Comments({
         <textarea
           value={text}
           onChange={(e) => setText(e.target.value)}
-          placeholder="Ton avis (reste sympa, pas de spoilers non avertis 🙂)"
           rows={4}
+          placeholder="Ton avis (pas de spoilers non avertis 🙂)"
           className="w-full rounded-md bg-black/40 border border-white/10 px-3 py-2 outline-none focus:border-violet-400"
         />
 
@@ -131,40 +153,32 @@ export default function Comments({
 
         <div className="flex justify-end">
           <button
-            className="rounded-md bg-violet-600 hover:bg-violet-500 px-4 py-2 text-sm font-medium"
+            className="rounded-md bg-violet-600 hover:bg-violet-500 px-4 py-2 text-sm font-medium disabled:opacity-60"
             type="submit"
+            disabled={loading}
           >
-            Publier l’avis
+            {loading ? "Publication…" : "Publier l’avis"}
           </button>
         </div>
       </form>
 
       <div className="mt-6 space-y-3">
         {items.map((it) => (
-          <article
-            key={it.id}
-            className="rounded-lg border border-white/10 bg-white/5 p-3"
-          >
+          <article key={it.id} className="rounded-lg border border-white/10 bg-white/5 p-3">
             <header className="flex items-center justify-between">
               <div className="font-semibold">{it.name}</div>
               <div className="text-yellow-400">
                 {"★".repeat(it.stars)}
-                <span className="text-gray-600">
-                  {"★".repeat(max - it.stars)}
-                </span>
+                <span className="text-gray-600">{"★".repeat(max - it.stars)}</span>
               </div>
             </header>
             <p className="mt-2 text-gray-100 leading-relaxed">{it.text}</p>
             <div className="mt-1 text-xs text-gray-500">
-              {new Date(it.date).toLocaleString()}
+              {new Date(it.created_at).toLocaleString()}
             </div>
           </article>
         ))}
       </div>
-
-      <p className="mt-6 text-center text-xs text-gray-500">
-        (Stocké localement pour l’instant. On pourra brancher Supabase/Firestore ensuite.)
-      </p>
     </section>
   );
 }
