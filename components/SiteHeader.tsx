@@ -1,17 +1,51 @@
-import Link from 'next/link'
+"use client";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 
-export default function SiteHeader(){
+const items = [
+  { href: "/",          label: "Accueil" },
+  { href: "/critiques", label: "Critiques" },
+  { href: "/news",      label: "News" },
+  { href: "/tops",      label: "Tops" },
+  { href: "/guides",    label: "Guides" },
+];
+
+export default function SiteHeader() {
+  const pathname = usePathname();
   return (
-    <header className="sticky top-0 z-40 border-b border-white/10 bg-black/40 backdrop-blur supports-[backdrop-filter]:bg-black/30">
-      <div className="container mx-auto px-4 h-14 flex items-center justify-between">
-        <Link href="/" className="font-bold tracking-wide">Mangainsight</Link>
-        <nav className="flex gap-4 text-sm text-gray-200">
-          <Link href="/reviews">Reviews</Link>
-          <Link href="/news">News</Link>
-          <Link href="/tops">Tops</Link>
-          <Link href="/guides">Guides</Link>
-        </nav>
+    <nav className="border-b border-white/10 bg-black/80 backdrop-blur">
+      <div className="container mx-auto px-4 h-16 flex items-center gap-5">
+        {/* LOGO / IMAGE */}
+        <Link href="/" className="flex items-center gap-2">
+          <img
+            src="https://i.postimg.cc/dt1vhRGY/IMG-0126.jpg" // ⬅️ ton image d’accueil/logo
+            alt="Mangainsight"
+            className="h-12 w-auto object-cover rounded"      // hauteur header
+          />
+        </Link>
+
+        {/* MENU */}
+        <div className="ml-auto flex items-center gap-4 text-sm">
+          {items.map((it) => {
+            const active =
+              pathname === it.href || pathname.startsWith(it.href + "/");
+            return (
+              <Link
+                key={it.href}
+                href={it.href}
+                className={
+                  active
+                    ? "text-white font-medium"
+                    : "text-gray-300 hover:text-white"
+                }
+              >
+                {it.label}
+              </Link>
+            );
+          })}
+        </div>
       </div>
-    </header>
-  )
+    </nav>
+  );
 }
+
