@@ -1,7 +1,6 @@
-// app/page.tsx
 export default function Home() {
   return (
-    <main style={{ background: "#0b0b10", color: "#fff", minHeight: "100vh", fontFamily: "system-ui" }}>
+    <main style={{ background: "#000", color: "#fff", minHeight: "100vh", fontFamily: "system-ui" }}>
       {/* Bannière */}
       <header role="banner" style={{ margin: 0, padding: 0 }}>
         <img
@@ -20,16 +19,20 @@ export default function Home() {
         </nav>
       </header>
 
-      {/* Contenu */}
-      <section style={{ maxWidth: 960, margin: "20px auto", padding: "0 16px" }}>
-        <h2>Bienvenue</h2>
-        <h3>Découvrez nos critiques et commentaires</h3>
-        <p>Explorez des critiques détaillées de vos mangas et manwhas préférés.</p>
+      {/* Bloc texte centré comme avant */}
+      <section style={{ maxWidth: 960, margin: "40px auto", padding: "0 16px", textAlign: "center" }}>
+        <h2 style={{ fontSize: "2rem", marginBottom: "0.5rem" }}>Bienvenue</h2>
+        <h3 style={{ fontSize: "1.5rem", marginBottom: "1rem" }}>
+          Découvrez nos critiques et commentaires
+        </h3>
+        <p style={{ opacity: 0.9 }}>
+          Explorez des critiques détaillées de vos mangas et manwhas préférés.
+        </p>
 
         <img
           src="https://i.postimg.cc/WbF7sk67/IMG-0132.jpg"
           alt=""
-          style={{ maxWidth: "100%", height: "auto", borderRadius: 12 }}
+          style={{ maxWidth: "100%", height: "auto", borderRadius: 12, marginTop: "24px" }}
         />
       </section>
 
