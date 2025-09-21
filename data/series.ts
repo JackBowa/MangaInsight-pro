@@ -260,7 +260,7 @@ export const SERIES: Serie[] = [
   title: "The Beginning After The End",
   category: "manhwa",
   tags: "Réincarnation · Fantasy",
-  cover: "https://manga-insight-pro.vercel.app/the-beginning-after-the-end-kv-large.jpg",
+  cover: "https://manga-insight-pro.vercel.app/the%20beginning.jpg",
   synopsis: "Arthur Leywin, roi d’un monde magique, meurt et se réincarne dans un nouveau monde où il grandit avec les souvenirs de sa vie passée. Décidé à corriger ses erreurs, il explore un univers rempli de magie, de monstres et d’intrigues.",
   reviewHtml: `
   <p>The Beginning After the End m'a vraiment captivé avec son univers incroyablement riche et immersif. Dès les premières pages, j'ai été transporté dans un monde où la magie et les conflits règnent en maîtres, et où chaque recoin révèle de nouveaux mystères à explorer. Ce qui m'a le plus marqué, c'est le protagoniste, cet ancien roi réincarné dans un corps nouveau. Son voyage, entre la quête de puissance et celle de rédemption, m'a profondément touché, car il combine sa sagesse acquise dans sa vie passée avec les défis de sa nouvelle existence.</p>
