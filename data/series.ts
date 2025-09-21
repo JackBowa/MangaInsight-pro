@@ -168,7 +168,7 @@ export const SERIES: Serie[] = [
   ],
   live: [],
 }
-]
+
 // TOKYO REVENGERS
 {
   slug: "tokyo-revengers",
@@ -350,4 +350,4 @@ export const SERIES: Serie[] = [
   ],
   live: [],
 },
-
+]
