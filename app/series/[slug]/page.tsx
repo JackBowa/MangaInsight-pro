@@ -121,6 +121,18 @@ export default function SeriePage({ params }: { params: { slug: string } }) {
         </section>
 
         <div className="h-10" />
+     
+      import Comments from "./Comments"; // ⬅️ ajoute cette ligne en haut
+
+// ...ton code de page...
+
+        <div className="h-10" />
+
+        {/* ⬇️ Section Avis & Commentaires */}
+        <Comments slug={params.slug} title={serie.title} />
+
+      </article>
+
       </article>
 
       <footer className="border-t border-white/10 py-6 text-center text-sm text-gray-400">
