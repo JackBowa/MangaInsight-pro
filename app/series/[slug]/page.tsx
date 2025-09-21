@@ -64,14 +64,15 @@ export default function SeriePage({ params }: { params: { slug: string } }) {
 
 {/* AVIS en pleine largeur et centré */}
 {serie.reviewHtml && (
-  <section className="mt-8 mx-auto max-w-3xl text-gray-100 leading-relaxed">
-    <h2 className="text-xl font-semibold mb-4 text-center">Avis</h2>
+  <section className="mt-12 mx-auto max-w-3xl text-gray-100 leading-relaxed text-center">
+    <h2 className="text-xl font-semibold mb-6">Avis</h2>
     <div
-      className="prose prose-invert max-w-none text-left md:text-justify"
+      className="prose prose-invert max-w-none mx-auto text-center"
       dangerouslySetInnerHTML={{ __html: serie.reviewHtml }}
     />
   </section>
 )}
+
 
 
         {/* BOUTIQUES / STREAMING / LIVE en tuiles */}
