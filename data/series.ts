@@ -178,11 +178,19 @@ export const SERIES: Serie[] = [
   cover: "https://manga-insight-pro.vercel.app/Tokyo-Revengers.jpg",
   synopsis: "Takemichi Hanagaki, 26 ans, apprend que son ex-petite amie Hinata a été tuée par le gang Tokyo Manji. Peu après, il est poussé sur les rails du métro et se retrouve douze ans en arrière. Il décide de modifier le passé pour sauver Hinata et empêcher la montée du gang.",
   reviewHtml: `
-    <p><strong>Un voyage dans le temps palpitant</strong></p>
-    <p>Tokyo Revengers suit Takemichi, un loser de 26 ans qui retourne dans son adolescence pour tenter de sauver son premier amour et empêcher un gang violent de détruire des vies. Chaque retour dans le passé modifie l'avenir et entraîne des conséquences imprévisibles.</p>
-    <p>Le mélange d'action, d'émotion et de suspense rend chaque chapitre addictif. Les personnages ont tous leurs propres motivations et évoluent de manière crédible, ce qui rend l'histoire encore plus immersive.</p>
-  `,
-  stars: 5,
+ <p> Tokyo Revengers est un manga qui m'a rapidement accroché avec son mélange de voyage dans le temps, de gangs de rue et de quête de rédemption. L'histoire suit Takemichi Hanagaki, un jeune homme qui découvre qu'il peut remonter le temps pour essayer de sauver son ex-petite amie Hinata, qui a été tuée dans le futur par un gang violent. Cette combinaison de thèmes m'a immédiatement intrigué, car elle apporte un aspect de suspense et de mystère tout en explorant la vie des gangs à Tokyo.</p>
+
+              <p>Ce qui rend Tokyo Revengers si intéressant, c'est l'évolution de Takemichi. Il commence comme un personnage assez ordinaire, mais avec un énorme cœur, et il est prêt à tout pour changer le futur. Toutefois, il a tendance à pleurer et à se laisser submerger par les émotions assez souvent, ce qui peut être un peu répétitif à la longue. Malgré cela, sa détermination à changer le cours des événements et à protéger ses amis reste touchante.</p>
+
+              <p>Les autres personnages sont également bien développés. Les membres du Tokyo Manji Gang, comme Mikey et Draken, ajoutent de la profondeur à l'histoire. Ils ont chacun leur propre histoire, leurs propres motivations, et la dynamique entre eux est l'un des points forts du manga. Les rivalités entre gangs, les luttes pour le pouvoir et les intrigues internes créent une tension constante qui maintient l'intérêt.</p>
+
+              <p>L'aspect du voyage dans le temps apporte une dimension unique à Tokyo Revengers. Cela permet à Takemichi de revoir des événements passés et de tenter de les modifier, mais cela soulève également des questions sur le destin et la possibilité réelle de changer le futur. Cette dualité entre déterminisme et libre arbitre ajoute un niveau de complexité à l'intrigue.</p>
+
+              <p>Les scènes de combat sont intenses, avec des moments de grande violence, mais aussi des actes de courage et de loyauté. Ces éléments contribuent à donner au manga un ton réaliste et dur, ce qui contraste avec d'autres mangas plus légers.</p>
+
+              <p>Je donnerais à Tokyo Revengers une note de 4 sur 5. Malgré les moments où Takemichi pleure un peu trop, c'est un bon manga avec une intrigue captivante, des personnages intéressants et des thèmes profonds. Si vous aimez les histoires de gangs, de voyages dans le temps et de rédemption, ce manga vaut vraiment le détour. La tension constante et les rebondissements rendent chaque chapitre excitant, et on veut toujours savoir ce qui va se passer ensuite.</p>
+,
+  stars: 4,
   shops: [
     {
       name: "Manganim",
@@ -219,10 +227,16 @@ export const SERIES: Serie[] = [
   cover: "https://manga-insight-pro.vercel.app/the player.png",
   synopsis: "Kim Gi-Gyu, un joueur qui a reçu son éveil mais reste bloqué au niveau 1 malgré des années d'efforts. Lorsqu’il obtient soudainement une arme unique et un pouvoir mystérieux, sa progression commence et il découvre la vérité sur son monde.",
   reviewHtml: `
-    <p><strong>Un héros bloqué qui se révèle</strong></p>
-    <p>The Player Who Can’t Level Up raconte l’histoire de Kim Gi-Gyu, un joueur coincé au niveau 1. Alors que tous les autres progressent, il reste impuissant jusqu’au jour où il obtient une arme et des pouvoirs uniques. L’histoire suit sa montée en puissance et la découverte des secrets des tours et des donjons.</p>
-    <p>Le manhwa combine habilement suspense, action et mystère, avec une progression du personnage très satisfaisante pour le lecteur.</p>
-  `,
+   <p>The Player Who Can't Level Up m'a agréablement surpris avec son approche unique dans le monde des manhwas axés sur les jeux, se distinguant même de séries bien connues comme "Solo Leveling". Dès le début, j'ai été intrigué par le protagoniste, ce joueur qui défie les conventions en trouvant des moyens ingénieux de devenir plus fort malgré son incapacité à monter de niveau.</p>
+
+              <p>Ce qui m'a le plus marqué, c'est l'immersion totale dans un monde élaboré et détaillé. Chaque élément, des règles du jeu aux enjeux, est soigneusement développé, offrant une expérience de lecture vraiment immersive. Chaque chapitre m'a transporté dans un nouvel aspect de cet univers fascinant, me tenant en haleine à chaque tournant.</p>
+
+              <p>Les dessins sont tout simplement spectaculaires. Chaque détail est méticuleusement rendu, donnant vie aux personnages et aux scènes avec une incroyable vivacité. Les scènes d'action sont un vrai régal, avec un rythme qui m'a fait retenir mon souffle à chaque page. Et les expressions des personnages... Elles capturent si bien leurs émotions que j'ai vraiment ressenti leur joie, leur colère et leur détermination tout au long de l'histoire.</p>
+
+              <p>Mais ce qui rend ce manhwa vraiment addictif, ce sont ses intrigues captivantes. Les rebondissements inattendus et les développements astucieux m'ont maintenu en suspense à chaque instant. Voir comment le protagoniste surmonte les obstacles avec intelligence et détermination, même sans pouvoir monter de niveau, est à la fois inspirant et incroyablement divertissant.</p>
+
+              <p>En conclusion, The Player Who Can't Level Up est un véritable joyau pour les amateurs de manhwas axés sur les jeux. Son univers riche, ses superbes dessins et ses intrigues palpitantes en font une lecture incontournable pour ceux qui recherchent quelque chose d'original et de captivant. Si vous aimez les histoires où l'intelligence et la détermination sont les clés du succès, alors vous ne serez pas déçu par ce manhwa captivant.</p>
+   ,
   stars: 5,
   shops: [
     {
@@ -249,10 +263,14 @@ export const SERIES: Serie[] = [
   cover: "https://manga-insight-pro.vercel.app/the-beginning-after-the-end-kv-large.jpg",
   synopsis: "Arthur Leywin, roi d’un monde magique, meurt et se réincarne dans un nouveau monde où il grandit avec les souvenirs de sa vie passée. Décidé à corriger ses erreurs, il explore un univers rempli de magie, de monstres et d’intrigues.",
   reviewHtml: `
-    <p><strong>Un roi réincarné dans un nouveau monde</strong></p>
-    <p>The Beginning After The End suit Arthur, ancien roi puissant, qui se réincarne dans un monde où il peut vivre une seconde chance. Entre découverte, entraînement et secrets enfouis, il se construit une nouvelle vie et tente d’éviter les erreurs du passé.</p>
-    <p>Un excellent mélange de fantasy, de magie et de développement personnel, avec des combats intenses et un univers riche.</p>
-  `,
+  <p>The Beginning After the End m'a vraiment captivé avec son univers incroyablement riche et immersif. Dès les premières pages, j'ai été transporté dans un monde où la magie et les conflits règnent en maîtres, et où chaque recoin révèle de nouveaux mystères à explorer. Ce qui m'a le plus marqué, c'est le protagoniste, cet ancien roi réincarné dans un corps nouveau. Son voyage, entre la quête de puissance et celle de rédemption, m'a profondément touché, car il combine sa sagesse acquise dans sa vie passée avec les défis de sa nouvelle existence.</p>
+
+                <p>Visuellement, le manhwa est un véritable régal pour les yeux. Les dessins détaillés et dynamiques captent parfaitement l'intensité des scènes d'action, donnant vie à chaque mouvement avec une énergie palpable. Et les personnages... Leurs designs uniques les rendent vraiment mémorables, et suivre leur évolution au fil des chapitres est un véritable plaisir.</p>
+
+                <p>Mais ce qui m'a vraiment accroché, c'est la détermination du protagoniste. On la ressent à chaque page, et cela crée un lien profond entre le lecteur et lui. Sa croissance, à la fois en termes de pouvoir et de caractère, est un véritable pilier de l'histoire, et voir comment il surmonte les obstacles est à la fois inspirant et émouvant. Et bien sûr, les autres personnages ne sont pas en reste. Leurs propres parcours ajoutent des couches de profondeur à l'univers déjà complexe, créant ainsi une toile narrative vraiment captivante.</p>
+
+              <p>En résumé, The Beginning After the End est bien plus qu'une simple série de manhwa. C'est une expérience immersive qui m'a totalement absorbé. Entre l'univers complexe, les scènes d'action exécutées à la perfection et la force inébranlable du protagoniste, c'est une lecture que je recommande vivement à tous les amateurs de fantasy. Si vous cherchez une histoire qui vous transporte et vous fait vibrer à chaque page, alors vous allez adorer plonger dans cet univers fascinant.</p>
+   ,
   stars: 5,
   shops: [
     {
@@ -279,9 +297,14 @@ export const SERIES: Serie[] = [
   cover: "https://manga-insight-pro.vercel.app/My-Hero-Academia.jpg",
   synopsis: "Dans un monde où 80 % de la population possède des super-pouvoirs appelés Alters, Izuku Midoriya est né sans aucun don. Son rêve de devenir héros semble impossible, jusqu’au jour où il rencontre son idole All Might qui lui transmet son pouvoir.",
   reviewHtml: `
-    <p><strong>Un shōnen de super-héros inspirant</strong></p>
-    <p>My Hero Academia suit Izuku, un garçon sans pouvoir dans un monde de héros. Son courage et sa détermination l’amènent à hériter du pouvoir du plus grand héros et à entrer à l’académie Yuei. On suit son évolution et celle de ses camarades dans une ambiance pleine d’action et d’émotions.</p>
-  `,
+        <p>My Hero Academia est un manga qui incarne l'essence même du genre shōnen. L'histoire suit Izuku Midoriya, un jeune garçon né sans super-pouvoirs dans un monde où presque tout le monde en possède, mais qui aspire à devenir un héros. Cette prémisse m'a tout de suite captivé, car elle renverse le cliché du héros naturellement doué et montre un personnage qui doit travailler dur pour atteindre ses objectifs.</p>
+                <p>Ce qui rend My Hero Academia si spécial, c'est l'univers riche en super-héros et en super-vilains. Chaque personnage a un pouvoir unique (ou "Quirk"), ce qui crée des possibilités infinies pour des combats passionnants et des interactions dynamiques. Midoriya, surnommé Deku, commence son voyage en tant qu'outsider, ce qui le rend incroyablement attachant. Sa détermination et son esprit de persévérance sont inspirants, et on ne peut s'empêcher de l'encourager.</p>
+                  <p>Les autres personnages, comme All Might, Bakugo, Todoroki, et Uraraka, apportent chacun leur propre style et leur propre histoire à l'intrigue. Les relations qui se tissent entre les élèves de la classe 1-A ajoutent de la profondeur à l'histoire. C'est un plaisir de voir comment ils évoluent en tant que héros en formation et en tant qu'amis.</p>
+                    <p>L'action dans My Hero Academia est époustouflante. Les combats sont intenses et bien chorégraphiés, avec des moments épiques qui m'ont tenu en haleine. Les thèmes abordés, comme le courage, l'amitié et la justice, donnent du poids à l'histoire, faisant de ce manga bien plus qu'une simple série d'action.</p>
+                      <p>Cependant, ce que j'apprécie le plus dans My Hero Academia, c'est la croissance des personnages. On voit Deku passer de quelqu'un qui n'a rien à quelqu'un qui travaille dur pour devenir un héros digne de ce nom. Cela montre que le véritable héroïsme ne réside pas dans le pouvoir, mais dans le courage et le dévouement.</p>
+                        <p>Je donne à My Hero Academia une note de 5 sur 5 pour sa capacité à inspirer et à divertir. Le monde des super-héros est excitant et plein de possibilités, et les personnages sont bien développés. Si vous aimez les histoires de héros qui se battent pour ce qui est juste, ce manga est fait pour vous. C'est un univers où j'ai toujours hâte de revenir, et le seul regret, c'est de devoir attendre le prochain chapitre.
+.</p>,
+
   stars: 5,
   shops: [
     {
@@ -320,9 +343,16 @@ export const SERIES: Serie[] = [
   cover: "https://manga-insight-pro.vercel.app/shingeki-no-kyojin.jpg",
   synopsis: "L’humanité vit retranchée derrière d’immenses murs pour se protéger des Titans, des créatures géantes mangeuses d’hommes. Eren Jaeger, témoin de la destruction de sa ville, jure de les exterminer et rejoint l’armée pour combattre ces monstres.",
   reviewHtml: `
-    <p><strong>Un monde oppressant et des révélations choc</strong></p>
-    <p>L’Attaque des Titans nous plonge dans un univers sombre où l’humanité lutte pour sa survie. L’histoire d’Eren et de ses amis mélange action, suspense et secrets politiques, avec des retournements de situation mémorables.</p>
-  `,
+    <p> L'Attaque des Titans (Shingeki no Kyojin) est un manga qui a redéfini le genre de la fantasy sombre et post-apocalyptique. Dès le premier chapitre, j'ai été impressionné par l'ampleur de son univers et par l'innovation de son concept. L'histoire se déroule dans un monde où l'humanité vit à l'intérieur de gigantesques murs pour se protéger des Titans, des créatures monstrueuses qui dévorent les humains. Le mystère qui entoure ces Titans est l'un des éléments les plus captivants du manga.</p>
+
+              <p>Ce qui rend L'Attaque des Titans si spécial, c'est la combinaison de moments intenses, de révélations surprenantes et de personnages profondément attachants. Eren Yeager, Mikasa Ackerman, et Armin Arlert, les protagonistes principaux, commencent comme de simples enfants cherchant à survivre dans ce monde brutal, mais leur évolution au fil de la série est fascinante. Chacun d'eux a ses propres motivations et son propre développement, ce qui crée une dynamique riche et nuancée.</p>
+
+              <p>Les scènes d'action dans L'Attaque des Titans sont à couper le souffle. Les combats contre les Titans sont incroyablement bien réalisés, avec une tension palpable à chaque instant. Le manga explore des thèmes profonds, comme le sacrifice, le courage et la quête de liberté, tout en offrant des moments de pur chaos et d'adrénaline. C'est un équilibre parfait entre action intense et moments d'émotion qui restent gravés dans la mémoire.</p>
+
+                <p>Un autre aspect que j'ai trouvé impressionnant est le développement de l'intrigue. Chaque révélation sur les Titans, les murs et l'histoire cachée du monde apporte de nouvelles couches de complexité à l'histoire. Cela maintient un niveau constant de suspense et de curiosité, ce qui m'a rendu accro à la série.</p>
+
+                <p>Je donne à L'Attaque des Titans une note de 5 sur 5 pour son innovation, son côté impressionnant et ses personnages très attachants. C'est un manga qui parvient à surprendre et à émouvoir, tout en offrant des scènes d'action spectaculaires. Si vous recherchez une série avec des personnages forts, une intrigue captivante et des combats épiques, L'Attaque des Titans est un incontournable. C'est l'une des œuvres les plus innovantes et engageantes que j'ai lues, et je la recommande à tous ceux qui aiment les histoires qui vous tiennent en haleine du début à la fin </p>
+        `,
   stars: 5,
   shops: [
     {
@@ -359,9 +389,20 @@ export const SERIES: Serie[] = [
   cover: "https://manga-insight-pro.vercel.app/blue-lock.jpg",
   synopsis: `Après l’échec du Japon à la Coupe du monde, un programme radical est lancé : Blue Lock, une sélection impitoyable destinée à forger l’attaquant égoïste ultime. Yoichi Isagi, lycéen talentueux mais hésitant, y joue sa carrière et sa vision du football.`,
   reviewHtml: `
-    <p><strong>Un battle shōnen… de foot !</strong></p>
-    <p>Blue Lock transforme le sport en duel psychologique. Le rythme est nerveux, la mise en scène agressive et chaque match devient un affrontement d’ego, d’instinct et de créativité. Isagi, Baro, Nagi… tous ont une “arme” et une progression très lisible.</p>
-    <p>Que tu aimes le foot ou pas, la série accroche par ses enjeux, son découpage et ses retournements.</p>
+  
+              <p>Blue Lock est un manga qui a complètement renouvelé mon intérêt pour les récits sportifs. En se concentrant sur le football, ce manga introduit une prémisse unique où le gouvernement japonais crée une installation appelée Blue Lock, destinée à former le meilleur attaquant de football du monde. Cette approche radicale et compétitive du sport m'a immédiatement captivé.</p>
+
+              <p>Ce que j'apprécie le plus dans Blue Lock, c'est la façon dont il se distingue d'autres mangas sportifs. Au lieu de se concentrer uniquement sur l'esprit d'équipe, il met en avant l'individualisme et la quête de l'excellence personnelle. Le personnage principal, Yoichi Isagi, se retrouve confronté à un dilemme moral profond entre ses aspirations personnelles et le bien collectif de l'équipe, ce qui ajoute une tension dramatique fascinante.</p>
+
+              <p>Les personnages sont un autre point fort de Blue Lock. Chaque joueur a un style de jeu unique et une personnalité bien définie, ce qui enrichit les interactions et les confrontations sur et hors du terrain. Les stratégies et les tactiques employées sont innovantes et reflètent une compréhension profonde du football, ce qui rend les matchs excitants et imprévisibles.</p>
+
+              <p>Graphiquement, Blue Lock est un régal pour les yeux. Les mouvements des joueurs sont représentés avec une précision et une dynamique qui capturent l'intensité du sport. Les expressions faciales et les mouvements corporels transmettent parfaitement l'urgence et la pression ressenties par les joueurs pendant les matchs.</p>
+
+              <p>Le développement des personnages est également remarquable. Voir Isagi et ses coéquipiers évoluer, surmonter des défis et repousser leurs limites pour atteindre le sommet est incroyablement inspirant. Leur croissance n'est pas seulement physique, mais aussi émotionnelle et mentale, ce qui rend chaque victoire et chaque défaite encore plus poignante.</p>
+
+              <p>En somme, je donne à Blue Lock une note de 5 sur 5 pour son approche audacieuse et innovante du manga sportif. Il brise les conventions et offre une lecture exaltante qui est à la fois un hommage au football et une exploration des ambitions personnelles. Si vous cherchez un manga qui mélange action, stratégie et développement de personnages, Blue Lock est incontestablement à recommander. C'est une série que je trouve difficile de lâcher, tant chaque chapitre me laisse impatient de découvrir la suite.</p>
+
+        
   `,
   stars: 5,
   shops: [
@@ -409,9 +450,18 @@ export const SERIES: Serie[] = [
   cover: "https://manga-insight-pro.vercel.app/black-butler.jpg",
   synopsis: `Ciel Phantomhive, jeune comte au passé tragique, a scellé un pacte avec Sebastian, un majordome démoniaque parfait. Ensemble, ils résolvent des affaires sombres dans le Londres victorien, en attendant le jour où Sebastian prendra l’âme de Ciel.`,
   reviewHtml: `
-    <p><strong>Élégance macabre et intrigues victoriennes</strong></p>
-    <p>Black Butler mêle esthétique gothique, humour noir et enquêtes. Sebastian vole la vedette à chaque apparition, tandis que Ciel impose un charisme froid et déterminé. L’ambiance, la mode et le sens du détail font beaucoup du charme de la série.</p>
-  `,
+     <p>Bleach occupe une place spéciale dans mon cœur, car c'était le premier manga que j'ai découvert, et son histoire m'a captivé dès le premier chapitre. Plonger dans l'univers de Soul Society et suivre les aventures de Ichigo Kurosaki m'a totalement absorbé, et j'ai été emporté par chaque arc narratif.</p>
+              
+               <p>Ce qui m'a vraiment marqué dans Bleach, ce sont les combats. Ils sont tout simplement impressionnants, avec des pouvoirs et des techniques incroyablement variés qui m'ont toujours laissé bouche bée. Chaque affrontement est intense, et voir les personnages utiliser leur Zanpakuto avec maîtrise est un vrai régal visuel.</p>
+
+              <p>Mais ce n'est pas seulement l'action qui m'a séduit. Les personnages de Bleach ont une profondeur et une complexité qui les rendent vraiment mémorables. De Ichigo et Rukia à Byakuya et Kenpachi, chacun a ses propres motivations et son propre cheminement, ce qui rend leur évolution au fil de l'histoire fascinante à suivre.</p>
+
+              <p>Ce manga a une capacité incroyable à mélanger l'action avec des moments émotionnels poignants. Les liens d'amitié et de camaraderie entre les personnages sont au cœur de l'histoire, et ces moments de connexion humaine ajoutent une dimension supplémentaire à l'ensemble.</p>
+
+              <p>J'ai relu Bleach plusieurs fois, et à chaque relecture, je découvre de nouveaux détails et nuances que j'avais peut-être manqués auparavant. C'est une série qui ne cesse de me surprendre et de me captiver, et je suis reconnaissant d'avoir eu l'opportunité de plonger dans cet univers fantastique.</p>
+   
+              <p>En résumé, Bleach est bien plus qu'un simple manga pour moi. C'est une aventure épique qui a façonné ma passion pour les histoires narratives. Ses combats spectaculaires, ses personnages mémorables et son mélange habile d'action et d'émotion en font un incontournable pour tous les amateurs de manga.</p>
+    `,
   stars: 5,
   shops: [
     { name: "Manganim", url: "https://manganim.fr/search?q=black+butler", logo: "https://manganim.fr/cdn/shop/files/logo-manganim-header_180x.png?v=1672862594" },
@@ -433,9 +483,18 @@ export const SERIES: Serie[] = [
   cover: "/assassination-classroom.jpg",
   synopsis: `La classe 3-E reçoit une mission folle : tuer leur professeur Koro-sensei, une créature surpuissante qui menace de détruire la Terre… après les avoir “bien formés”. Entre cours délirants, entraînement et amitié, les élèves vont se dépasser.`,
   reviewHtml: `
-    <p><strong>Un ovni drôle et touchant</strong></p>
-    <p>Assassination Classroom équilibre humour absurde, pédagogie et émotion. Koro-sensei est un prof improbable mais inoubliable, et chaque élève bénéficie d’un petit arc qui fait progresser la classe entière. Finale très réussie.</p>
-  `,
+    <p>"Assassination Classroom" est un manga qui m'a fait passer d'excellents moments. L'intrigue tourne autour d'une classe de collégiens qui doivent assassiner leur professeur, Koro-sensei, une créature mystérieuse dotée de pouvoirs incroyables. Dès le départ, le concept est unique et promet des situations comiques, mais il y a aussi des moments plus profonds qui ajoutent de la profondeur à l'histoire.</p>
+
+              <p>Ce qui m'a marqué avec "Assassination Classroom", c'est son équilibre entre humour et émotion. Les interactions entre Koro-sensei et ses élèves sont hilarantes, avec des gags visuels, des jeux de mots et des situations absurdes. Koro-sensei, malgré son rôle de cible à assassiner, se révèle être un professeur exceptionnel qui se soucie réellement du bien-être de ses élèves. Cette dualité crée un mélange parfait de comédie et de moments touchants.</p>
+
+              <p>Les élèves eux-mêmes sont des personnages attachants, chacun avec ses propres défis et aspirations. Les différentes tentatives d'assassinat, souvent ratées de manière comique, montrent à quel point Koro-sensei est puissant mais aussi combien il est dévoué à l'enseignement. Cette dynamique entre la comédie et le développement des personnages rend "Assassination Classroom" vraiment spécial.</p>
+
+              <p>Au fil des épisodes, j'ai été surpris par la profondeur de certaines histoires et les leçons de vie qui émergent de ce contexte inhabituel. Les thèmes abordés, comme le travail d'équipe, la résilience et le dépassement de soi, donnent au manga une dimension éducative qui complète parfaitement le côté comique.</p>
+
+              <p>Le seul point négatif pour moi, c'est qu'il n'y a pas plus de chapitres. J'aurais aimé passer plus de temps avec ces personnages et voir d'autres tentatives d'assassinat aussi inventives que drôles. C'est un manga qui vous fait rire, mais qui sait aussi vous émouvoir, ce qui le rend très agréable à lire.</p>
+
+              <p>Je donne à "Assassination Classroom" une note de 5 sur 5 pour son humour, ses personnages uniques et la capacité de mélanger comédie et émotion. Si vous aimez les mangas qui vous font rire tout en vous touchant, c'est un incontournable. Le seul regret est que l'aventure se termine trop tôt.</p>
+`,
   stars: 5,
   shops: [
     { name: "Manganim", url: "https://manganim.fr/search?q=assassination+classroom", logo: "https://manganim.fr/cdn/shop/files/logo-manganim-header_180x.png?v=1672862594" },
