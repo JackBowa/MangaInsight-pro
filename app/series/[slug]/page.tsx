@@ -143,8 +143,8 @@ export default function SeriePage({ params }: { params: { slug: string } }) {
 
         <div className="h-10" />
 
-        {/* Avis & Commentaires des lecteurs (sur 9) */}
-<Comments slug={params.slug} title={serie.title} max={9} />
+        {/* Avis & Commentaires des lecteurs (sur 5) */}
+<Comments slug={params.slug} title={serie.title} />
       </article>
 
       <footer className="border-t border-white/10 py-6 text-center text-sm text-gray-400">
