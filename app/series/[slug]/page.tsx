@@ -57,16 +57,22 @@ export default function SeriePage({ params }: { params: { slug: string } }) {
           </div>
         </div>
 
-        {/* séparateur doux */}
-        <div className="my-8 h-px bg-white/10" />
+        
 
-        {/* AVIS avec largeur de lecture */}
-        {serie.reviewHtml && (
-          <section className="max-w-prose text-gray-100 leading-relaxed">
-            <h2 className="text-xl font-semibold mb-2">Avis</h2>
-            <div className="prose prose-invert max-w-none" dangerouslySetInnerHTML={{ __html: serie.reviewHtml }} />
-          </section>
-        )}
+        {/* séparateur doux */}
+<div className="my-8 h-px bg-white/10" />
+
+{/* AVIS en pleine largeur et centré */}
+{serie.reviewHtml && (
+  <section className="mt-8 mx-auto max-w-3xl text-gray-100 leading-relaxed">
+    <h2 className="text-xl font-semibold mb-4 text-center">Avis</h2>
+    <div
+      className="prose prose-invert max-w-none text-left md:text-justify"
+      dangerouslySetInnerHTML={{ __html: serie.reviewHtml }}
+    />
+  </section>
+)}
+
 
         {/* BOUTIQUES / STREAMING / LIVE en tuiles */}
         <section className="mt-10 grid gap-8 md:grid-cols-3">
