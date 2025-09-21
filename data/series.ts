@@ -317,7 +317,7 @@ export const SERIES: Serie[] = [
   title: "L’Attaque des Titans",
   category: "manga",
   tags: "Dark Fantasy · Titans",
-  cover: "https://manga-insight-pro.vercel.app/shinkegi-no-kyojin.jpg",
+  cover: "https://manga-insight-pro.vercel.app/shingeki-no-kyojin.jpg",
   synopsis: "L’humanité vit retranchée derrière d’immenses murs pour se protéger des Titans, des créatures géantes mangeuses d’hommes. Eren Jaeger, témoin de la destruction de sa ville, jure de les exterminer et rejoint l’armée pour combattre ces monstres.",
   reviewHtml: `
     <p><strong>Un monde oppressant et des révélations choc</strong></p>
