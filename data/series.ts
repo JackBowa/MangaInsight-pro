@@ -121,17 +121,51 @@ export const SERIES: Serie[] = [
 },
 
   // Exemple manhwa
-  {
-    slug: "solo-leveling",
-    title: "Solo Leveling",
-    category: "manhwa",
-    tags: "Action · Fantasy",
-    cover: "https://m.media-amazon.com/images/I/81Y8KpYtQhL.jpg",
-    synopsis: "Sung Jin-Woo passe de chasseur faible à surpuissant via un système mystérieux.",
-    reviewHtml: "<p>Ton texte d’avis ici…</p>",
-    stars: 4,
-    shops: [],
-    streaming: [],
-    live: [],
-  },
-];
+{
+  slug: "solo-leveling",
+  title: "Solo Leveling",
+  category: "manhwa",
+  tags: "Action · Fantasy · Chasseurs",
+  cover:
+    "https://manga-insight-pro.vercel.app/solo-leveling.jpeg",
+  synopsis:
+    "Il y a dix ans, des portails apparaissaient en ouvrant des passages vers des donjons et du monde parallèle, et parmi des gens normaux, certains ont éveillé leurs pouvoirs et sont devenus des chasseurs. Sung Jin-Woo, un chasseur faible, a beaucoup de mal à survivre. Un jour, il se retrouve dans un double donjon et, en échappant la mort de justesse, il obtient un étrange pouvoir et devient le chasseur le plus fort.",
+  reviewHtml: `
+    <p><strong>Un voyage épique dans un monde de chasseurs et de monstres</strong></p>
+
+    <p><em>Solo Leveling</em> est bien plus qu'un simple manhwa&nbsp;: c'est une expérience captivante qui te plonge dans un univers où la frontière entre l'humanité et le surnaturel s'estompe. En tant que premier manhwa que j'ai lu, il m'a immédiatement accroché avec son mélange d'action, de mystère et de magie.</p>
+
+    <p>L'histoire suit Jin-Woo, un chasseur de donjons, alors qu'il entre dans un monde dangereux où des monstres menacent l'humanité. Ce qui commence comme une quête personnelle pour devenir plus fort se transforme rapidement en une bataille pour sauver le monde lui-même. La progression du personnage est palpitante, et voir Jin-Woo surmonter des défis de plus en plus grands est incroyablement satisfaisant.</p>
+
+    <p>Ce qui distingue vraiment <em>Solo Leveling</em>, c'est son art magnifique et ses scènes d'action épiques. Chaque chapitre est un régal visuel&nbsp;: combats fluides, créatures impressionnantes et mise en scène ultra dynamique. Les retournements de situation te tiennent en haleine jusqu'à la dernière page.</p>
+
+    <p>En résumé, <em>Solo Leveling</em> est un incontournable du genre&nbsp;: une lecture addictive et immersive, portée par un héros qui explose littéralement ses limites. À lire si tu veux une aventure nerveuse dans un monde fantastique.</p>
+  `,
+  stars: 5,
+  shops: [
+    {
+      name: "Manganim",
+      url: "https://manganim.fr/collections/tomes-solo-leveling?_pos=2&_psq=Solo+leveing&_ss=e&_v=1.0",
+      logo: "https://manganim.fr/cdn/shop/files/logo-manganim-header_180x.png?v=1672862594",
+    },
+    {
+      name: "Fnac",
+      url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=Solo+leveling&sft=1&sa=0",
+      logo: "https://cdn.iconscout.com/icon/free/png-256/free-fnac-3521434-2944878.png",
+    },
+    {
+      name: "Amazon",
+      url: "https://www.amazon.fr/s?k=Solo+leveling+tome&__mk_fr_FR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=24JTZHYW0CMFC&sprefix=solo+leveling+tome%2Caps%2C90&ref=nb_sb_noss_2",
+      logo: "https://www.1min30.com/wp-content/uploads/2017/12/logo-amazon-1.jpg",
+    },
+  ],
+  streaming: [
+    {
+      name: "Crunchyroll",
+      url: "https://www.crunchyroll.com/fr/series/GDKHZEJ0K/solo-leveling",
+      logo: "https://upload.wikimedia.org/wikipedia/commons/f/fc/Crunchyroll_logo_2018_vertical.png",
+    },
+  ],
+  live: [],
+}
+
