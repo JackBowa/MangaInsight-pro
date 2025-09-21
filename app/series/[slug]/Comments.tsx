@@ -12,13 +12,13 @@ type CommentItem = {
 export default function Comments({
   slug,
   title,
-  max = 5,            // ⬅️ nouveau : nombre d’étoiles (5 ou 9)
 }: {
   slug: string;
   title: string;
-  max?: number;
 }) {
-  const storageKey = useMemo(() => `ms-comments:${slug}:x${max}`, [slug, max]);
+  const max = 5; // ← note sur 5 fixée
+  const storageKey = useMemo(() => `ms-comments:${slug}`, [slug]);
+
   const [items, setItems] = useState<CommentItem[]>([]);
   const [name, setName] = useState("");
   const [text, setText] = useState("");
@@ -81,7 +81,10 @@ export default function Comments({
         )}
       </div>
 
-      <form onSubmit={submit} className="rounded-xl border border-white/10 bg-white/5 p-4 space-y-3">
+      <form
+        onSubmit={submit}
+        className="rounded-xl border border-white/10 bg-white/5 p-4 space-y-3"
+      >
         <div className="flex flex-col sm:flex-row gap-3 sm:items-center">
           <input
             value={name}
@@ -90,7 +93,7 @@ export default function Comments({
             className="flex-1 rounded-md bg-black/40 border border-white/10 px-3 py-2 outline-none focus:border-violet-400"
           />
 
-        {/* étoiles cliquables (max dynamique) */}
+          {/* étoiles cliquables */}
           <div className="flex items-center gap-1">
             {Array.from({ length: max }).map((_, i) => {
               const idx = i + 1;
@@ -100,7 +103,9 @@ export default function Comments({
                   type="button"
                   onClick={() => setStars(idx)}
                   aria-label={`Note ${idx}`}
-                  className={`text-2xl leading-none ${idx <= stars ? "text-yellow-400" : "text-gray-600"}`}
+                  className={`text-2xl leading-none ${
+                    idx <= stars ? "text-yellow-400" : "text-gray-600"
+                  }`}
                 >
                   ★
                 </button>
@@ -125,7 +130,10 @@ export default function Comments({
         )}
 
         <div className="flex justify-end">
-          <button className="rounded-md bg-violet-600 hover:bg-violet-500 px-4 py-2 text-sm font-medium" type="submit">
+          <button
+            className="rounded-md bg-violet-600 hover:bg-violet-500 px-4 py-2 text-sm font-medium"
+            type="submit"
+          >
             Publier l’avis
           </button>
         </div>
@@ -133,12 +141,17 @@ export default function Comments({
 
       <div className="mt-6 space-y-3">
         {items.map((it) => (
-          <article key={it.id} className="rounded-lg border border-white/10 bg-white/5 p-3">
+          <article
+            key={it.id}
+            className="rounded-lg border border-white/10 bg-white/5 p-3"
+          >
             <header className="flex items-center justify-between">
               <div className="font-semibold">{it.name}</div>
               <div className="text-yellow-400">
                 {"★".repeat(it.stars)}
-                <span className="text-gray-600">{"★".repeat(max - it.stars)}</span>
+                <span className="text-gray-600">
+                  {"★".repeat(max - it.stars)}
+                </span>
               </div>
             </header>
             <p className="mt-2 text-gray-100 leading-relaxed">{it.text}</p>
