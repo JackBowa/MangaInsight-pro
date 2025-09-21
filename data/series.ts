@@ -168,4 +168,4 @@ export const SERIES: Serie[] = [
   ],
   live: [],
 }
-
+]
