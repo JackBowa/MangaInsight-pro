@@ -1,13 +1,25 @@
 "use client";
+export const dynamic = "force-dynamic"; // évite tout prérendu
+
 import { useEffect, useState } from "react";
-import { supabase } from "@/lib/supabase";
 
 export default function SupaTest() {
   const [ok, setOk] = useState<string>("…");
 
   useEffect(() => {
     (async () => {
-      const { data, error } = await supabase.from("pg_catalog.pg_tables").select("schemaname").limit(1);
+      // 👉 import dynamique pour n'utiliser supabase que dans le navigateur
+      const { createClient } = await import("@supabase/supabase-js");
+
+      const url = process.env.NEXT_PUBLIC_SUPABASE_URL!;
+      const anon = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!;
+      const supabase = createClient(url, anon);
+
+      const { error } = await supabase
+        .from("pg_catalog.pg_tables")
+        .select("schemaname")
+        .limit(1);
+
       setOk(error ? `❌ ${error.message}` : "✅ Connexion OK");
     })();
   }, []);
