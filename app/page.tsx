@@ -10,13 +10,6 @@ export default function Home() {
           height={250}
           style={{ display: "block", width: "100%", height: "auto" }}
         />
-        {/* Menu */}
-        <nav style={{ textAlign: "center", padding: "10px 0" }}>
-          <a href="/" style={{ margin: "0 10px" }}>Accueil</a>
-          <a href="/critiques" style={{ margin: "0 10px" }}>Critiques</a>
-          <a href="/a-propos" style={{ margin: "0 10px" }}>À propos</a>
-          <a href="/contact" style={{ margin: "0 10px" }}>Contact</a>
-        </nav>
       </header>
 
       {/* Bloc texte centré comme avant */}
