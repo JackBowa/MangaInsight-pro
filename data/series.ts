@@ -23,14 +23,18 @@ export const SERIES: Serie[] = [
     cover:
       "https://upload.wikimedia.org/wikipedia/en/9/90/One_Piece%2C_Volume_61_Cover_%28Japanese%29.jpg",
     synopsis:
-      "Luffy se lance sur les mers pour trouver le One Piece et devenir le Roi des Pirates.",
+      "Il fut un temps où Gold Roger était le plus grand de tous les pirates, le "Roi des Pirates" était son surnom. A sa mort, son trésor d'une valeur inestimable connu sous le nom de "One Piece" fut caché quelque part sur "Grand Line". De nombreux pirates sont partis à la recherche de ce trésor mais tous sont morts avant même de l'atteindre. Monkey D. Luffy rêve de retrouver ce trésor légendaire et de devenir le nouveau "Roi des Pirates". Après avoir mangé un fruit du démon, il possède un pouvoir lui permettant de réaliser son rêve. Il lui faut maintenant trouver un équipage pour partir à l'aventure !",
     reviewHtml: `
-      <p>One Piece est un véritable trésor pour moi, une aventure épique qui m'a accompagné pendant des années. 
-      Suivre Monkey D. Luffy et son équipage, c’est plonger dans un univers vaste, varié et d’une imagination folle.</p>
-      <p>Le style de Oda est reconnaissable et dynamique. Même en noir et blanc, chaque combat a de l'énergie.</p>
-      <p>Les personnages ont tous une histoire forte. Les thèmes d’amitié et de liberté donnent une vraie émotion.</p>
-      <p>Sa longueur peut faire peur, mais c’est une force: l’intrigue se développe naturellement et les arcs sont mémorables.</p>
-      <p>En bref: si tu veux une saga d’aventure marquante, fonce.</p>
+ <p>One Piece est un véritable trésor pour moi, une aventure épique qui m'a accompagné pendant des années. Suivre les péripéties de Monkey D. Luffy et de son équipage est une expérience que je chéris profondément. Ce qui rend ce manga si spécial, c'est son univers incroyablement vaste et varié. Chaque île recèle ses propres mystères et ses propres dangers, créant ainsi un monde où l'imagination semble infinie. </p>
+              
+               <p>Le style de dessin unique d'Eiichiro Oda est immédiatement reconnaissable. Ses personnages sont si expressifs, et les scènes d'action sont si dynamiques qu'on a l'impression de vivre chaque combat aux côtés de Luffy et de son équipage. Même en noir et blanc, le manga parvient à capturer toute l'énergie et l'émotion de chaque moment.</p>
+
+              <p>Ce qui me fascine le plus dans One Piece, ce sont les personnages. Chacun d'entre eux a une histoire poignante et des motivations profondes, ce qui crée un lien puissant entre eux et les lecteurs. Les thèmes explorés, comme l'amitié et la liberté, résonnent d'une manière unique et contribuent à faire de cette aventure une expérience véritablement mémorable.</p>
+
+              <p>La longueur de One Piece peut sembler intimidante au début, mais c'est en réalité l'une de ses forces. Cette longévité permet à l'histoire de se développer de manière organique, offrant des arcs narratifs riches et des moments mémorables à chaque tournant. Même après des centaines de chapitres, chaque nouvelle révélation me laisse toujours en haleine, attendant avec impatience la suite de l'aventure.</p>
+
+              <p>En résumé, si vous cherchez une saga captivante, pleine d'aventures, d'émotions et de rebondissements, alors ne cherchez pas plus loin que One Piece. C'est bien plus qu'un simple manga sur les pirates, c'est une expérience de lecture inoubliable qui vous transportera dans un monde fantastique où chaque page vous réserve une nouvelle surprise.</p>
+
     `,
     stars: 5,
     shops: [
