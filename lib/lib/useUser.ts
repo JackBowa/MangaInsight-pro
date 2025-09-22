@@ -1,7 +1,7 @@
 // lib/useUser.ts
 "use client";
 import { useEffect, useState } from "react";
-import { supabase } from "@/lib/supabase/client";
+import { supabase } from "@/lib/lib/supabase/client";
 import type { User } from "@supabase/supabase-js";
 
 export function useUser() {
