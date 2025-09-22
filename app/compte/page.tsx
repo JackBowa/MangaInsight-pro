@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { useUser } from "@supabase/auth-helpers-react";
-import { supabase } from "@/lib/supabase/client";
+import { supabase } from "@/lib/lib/supabase/client";
 import { useProfile } from "@/lib/lib/useProfile";
 
 export default function AccountPage() {
