@@ -446,7 +446,7 @@ export const SERIES: Serie[] = [
   slug: "black-butler",
   title: "Black Butler",
   category: "manga",
-  tags: "Gothique · Mystère · Fantaisie",
+  tags: "Gothique · Mystère · Fantasy",
   cover: "https://manga-insight-pro.vercel.app/black-butler.jpg",
   synopsis: `Ciel Phantomhive, jeune comte au passé tragique, a scellé un pacte avec Sebastian, un majordome démoniaque parfait. Ensemble, ils résolvent des affaires sombres dans le Londres victorien, en attendant le jour où Sebastian prendra l’âme de Ciel.`,
   reviewHtml: `
