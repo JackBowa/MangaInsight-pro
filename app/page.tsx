@@ -1,56 +1,39 @@
-// components/SiteHeader.tsx
-"use client";
-import Link from "next/link";
-import { usePathname } from "next/navigation";
-
-const items = [
-  { href: "/",          label: "Accueil" },
-  { href: "/critiques", label: "Critiques" },
-  { href: "/nouveautés", label: "Nouveautés" },
-  { href: "/tops",      label: "Tops" },
-  { href: "/guides",    label: "Guides" },
-];
-
-export default function SiteHeader() {
-  const pathname = usePathname();
+export default function Home() {
   return (
-    <header className="w-full border-b border-white/10 bg-black/80 backdrop-blur supports-[backdrop-filter]:bg-black/60 sticky top-0 z-40">
-      <div className="mx-auto max-w-screen-lg h-11 md:h-12 px-3 md:px-4 flex items-center gap-3">
-        <Link href="/" className="font-semibold tracking-tight text-white text-sm md:text-base">
-          Mangainsight
-        </Link>
+    <main className="min-h-[60vh]">
+      <header role="banner" className="m-0 p-0">
+        <img
+          src="https://i.postimg.cc/dt1vhRGY/IMG-0126.jpg"
+          alt="Manga insight"
+          width={2000}
+          height={250}
+          className="block w-full h-auto"
+        />
+      </header>
 
-        {/* nav: compact + scrollable si trop long */}
-        <nav className="ml-auto overflow-x-auto whitespace-nowrap no-scrollbar">
-          <div className="flex items-center gap-2 md:gap-4 text-[13px] md:text-[15px]">
-            {items.map((it) => {
-              const active = pathname === it.href || pathname.startsWith(it.href + "/");
-              return (
-                <Link
-                  key={it.href}
-                  href={it.href}
-                  className={
-                    "px-2 py-1 rounded-md transition " +
-                    (active
-                      ? "text-white bg-white/10"
-                      : "text-gray-300 hover:text-white hover:bg-white/5")
-                  }
-                >
-                  {it.label}
-                </Link>
-              );
-            })}
-            <Link
-              href="/compte"
-              className={
-                "px-2 py-1 rounded-md transition text-gray-300 hover:text-white hover:bg-white/5"
-              }
-            >
-              Se connecter
-            </Link>
-          </div>
-        </nav>
-      </div>
-    </header>
+      <section className="max-w-[960px] mx-auto my-10 px-4 text-center">
+        <h2 className="text-3xl font-semibold mb-2">Bienvenue</h2>
+        <h3 className="text-xl mb-4">Découvrez nos critiques et commentaires</h3>
+        <p className="opacity-90">Explorez des critiques détaillées de vos mangas et manwhas préférés.</p>
+
+        <img
+          src="https://i.postimg.cc/WbF7sk67/IMG-0132.jpg"
+          alt=""
+          className="max-w-full h-auto rounded-xl mt-6"
+        />
+      </section>
+
+      <footer className="text-center py-5 border-t border-white/10">
+        <small>
+          <a href="https://www.instagram.com/mangainsight_review/" target="_blank" rel="noreferrer" className="mr-3 underline">
+            Instagram
+          </a>
+          <a href="https://www.facebook.com/profile.php?id=61558806596916" target="_blank" rel="noreferrer" className="underline">
+            Facebook
+          </a>
+        </small>
+        <div className="opacity-70 mt-2">© 2025 Mangainsight — Mentions légales & Affiliation</div>
+      </footer>
+    </main>
   );
 }
