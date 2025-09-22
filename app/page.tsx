@@ -32,7 +32,6 @@ export default function Home() {
             Facebook
           </a>
         </small>
-        <div className="opacity-70 mt-2">© 2025 Mangainsight — Mentions légales & Affiliation</div>
       </footer>
     </main>
   );
