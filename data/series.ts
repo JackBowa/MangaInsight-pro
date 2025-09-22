@@ -546,5 +546,32 @@ export const SERIES: Serie[] = [
   shops: [],
   streaming: [],
   live: []
-},  
+}, 
+ {
+  slug: "hunter-x-hunter",
+  title: "Hunter × Hunter",
+  category: "manga",
+  tags: "Action · Aventure · Shōnen",
+  cover: "/hunter-x-hunter.jpg", // mets l'image dans /public/hunter-x-hunter.jpg
+  synopsis: `Dans un monde où les Hunters sont des aventuriers d’élite prêts à tout, 
+Gon Freecss, un jeune garçon de 12 ans, décide de passer l’examen Hunter afin de retrouver son père disparu, 
+lui-même Hunter légendaire. Au fil de son périple, il se lie d’amitié avec Kirua, Léolio et Kurapika et affronte des épreuves 
+toujours plus dangereuses, des combats mortels et des ennemis redoutables pour progresser et découvrir la vérité.`,
+  // optionnel : si tu as des liens d’achat ou streaming
+  shops: [
+    {
+      name: "Amazon",
+      url: "https://www.amazon.fr/dp/B00G8Q3WVG",
+      logo: "/logos/amazon.svg" // exemple
+    }
+  ],
+  streaming: [
+    {
+      name: "Crunchyroll",
+      url: "https://www.crunchyroll.com/fr/series/GY3VKX1MR/hunter-x-hunter",
+      logo: "/logos/crunchyroll.svg"
+    }
+  ],
+  live: []
+},
 ]
