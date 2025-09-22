@@ -1,12 +1,22 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useUser } from "@/lib/lib/useUser";
 import { supabase } from "@/lib/lib/supabase/client";
 
 export default function AuthMenu() {
   const user = useUser();
-  const [open, setOpen] = useState(false);
+  const [avatar, setAvatar] = useState<string | null>(null);
+  const [label, setLabel] = useState<string>("");
+
+  useEffect(() => {
+    if (!user) { setAvatar(null); setLabel(""); return; }
+    supabase.from("profiles").select("display_name, avatar_url").eq("id", user.id).single()
+      .then(({ data }) => {
+        setLabel(data?.display_name || user.email || "Mon compte");
+        setAvatar(data?.avatar_url || null);
+      });
+  }, [user]);
 
   if (!user) {
     return (
@@ -16,37 +26,14 @@ export default function AuthMenu() {
     );
   }
 
-  const label = user.email ?? "Mon compte";
-
   return (
-    <div className="relative">
-      <button
-        onClick={() => setOpen((v) => !v)}
-        className="text-sm text-gray-200 hover:text-white"
-        title={label}
-      >
-        {label}
-      </button>
-
-      {open && (
-        <div className="absolute right-0 mt-2 w-44 rounded-lg border border-white/10 bg-black/80 backdrop-blur p-1">
-          <a
-            className="block px-3 py-2 text-sm text-gray-200 hover:bg-white/10 rounded"
-            href="/compte"
-          >
-            Mon compte
-          </a>
-          <button
-            className="w-full text-left px-3 py-2 text-sm text-red-300 hover:bg-white/10 rounded"
-            onClick={async () => {
-              await supabase.auth.signOut();
-              window.location.reload();
-            }}
-          >
-            Se déconnecter
-          </button>
-        </div>
+    <a href="/compte" className="flex items-center gap-2 text-sm text-gray-200 hover:text-white">
+      {avatar ? (
+        <img src={avatar} alt="" className="h-6 w-6 rounded-full object-cover border border-white/10" />
+      ) : (
+        <div className="h-6 w-6 rounded-full bg-white/10 grid place-items-center text-[10px]">👤</div>
       )}
-    </div>
+      <span className="max-w-[160px] truncate">{label}</span>
+    </a>
   );
 }
