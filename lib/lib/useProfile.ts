@@ -1,54 +1,35 @@
-"use client";
+// lib/lib/useProfile.ts (extrait)
 import { useEffect, useState } from "react";
-import { supabase } from "@/lib/lib/supabase/client";
+import { supabase } from "./supabase/client";
 import type { User } from "@supabase/supabase-js";
 
 export function useProfile(user: User | null) {
   const [loading, setLoading] = useState(false);
-  const [displayName, setDisplayName] = useState<string>("");
-  const [avatarUrl, setAvatarUrl] = useState<string>("");
+  const [displayName, setDisplayName] = useState("");
+  const [avatarUrl, setAvatarUrl] = useState("");
 
   useEffect(() => {
-    const uid = user?.id; // évite "user is possibly null"
-    if (!uid) {
-      setDisplayName("");
-      setAvatarUrl("");
-      return;
-    }
-
-    let cancelled = false;
-
-    async function load() {
-      setLoading(true);
-      try {
-        const { data, error } = await supabase
-          .from("profiles")
-          .select("display_name, avatar_url")
-          .eq("id", uid)
-          .single();
-
-        if (!cancelled && !error && data) {
+    if (!user) return;
+    setLoading(true);
+    supabase
+      .from("profiles")
+      .select("display_name, avatar_url")
+      .eq("id", user.id)
+      .single()
+      .then(({ data, error }) => {
+        if (!error && data) {
           setDisplayName(data.display_name ?? "");
           setAvatarUrl(data.avatar_url ?? "");
         }
-      } finally {
-        if (!cancelled) setLoading(false);
-      }
-    }
-
-    load();
-    return () => { cancelled = true; };
+      })
+      .finally(() => setLoading(false));
   }, [user]);
 
   async function save() {
     if (!user) return;
-    const payload = {
-      id: user.id,
-      display_name: displayName || null,
-      avatar_url: avatarUrl || null,
-      updated_at: new Date().toISOString(),
-    };
-    const { error } = await supabase.from("profiles").upsert(payload);
+    const { error } = await supabase
+      .from("profiles")
+      .upsert({ id: user.id, display_name: displayName, avatar_url: avatarUrl });
     if (error) throw error;
   }
 
