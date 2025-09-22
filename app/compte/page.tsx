@@ -1,112 +1,117 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useUser } from "@supabase/auth-helpers-react";
-import { supabase } from "@/lib/lib/supabase/client";
-import { useProfile } from "@/lib/lib/useProfile";
+
+// ✅ chemins RELATIFS (fonctionnent partout)
+import { supabase } from "../../lib/lib/supabase/client";
+import { useProfile } from "../../lib/lib/useProfile";
 
 export default function AccountPage() {
   const user = useUser();
-  const { loading, displayName, setDisplayName, avatarUrl, setAvatarUrl, save } = useProfile();
-  const [busy, setBusy] = useState(false);
 
-  // --- VIEW: not logged in => show real login UI ---
-  if (!user) {
-    async function oauth(provider: "google" | "github") {
+  // profil (hook maison)
+  const {
+    loading,
+    displayName,
+    setDisplayName,
+    avatarUrl,
+    setAvatarUrl,
+    save,
+  } = useProfile();
+
+  const [busy, setBusy] = useState(false);
+  const [mailSent, setMailSent] = useState(false);
+  const [error, setError] = useState<string | null>(null);
+
+  // --- UI connexion si pas connecté ---
+  async function oauth(provider: "google" | "github") {
+    try {
       setBusy(true);
       const { error } = await supabase.auth.signInWithOAuth({
         provider,
         options: { redirectTo: `${window.location.origin}/compte` },
       });
+      if (error) throw error;
+    } catch (e: any) {
+      setError(e.message ?? "Erreur de connexion OAuth.");
+    } finally {
+      setBusy(false);
     }
+  }
 
-    async function magicLink(e: React.FormEvent<HTMLFormElement>) {
-      e.preventDefault();
-      const form = new FormData(e.currentTarget);
-      const email = String(form.get("email") || "").trim();
-      if (!email) return;
+  async function magicLink(e: React.FormEvent<HTMLFormElement>) {
+    e.preventDefault();
+    setError(null);
+    const form = new FormData(e.currentTarget);
+    const email = String(form.get("email") || "").trim();
+    if (!email) return setError("Entre un e-mail.");
+    try {
       setBusy(true);
-      await supabase.auth.signInWithOtp({
+      const { error } = await supabase.auth.signInWithOtp({
         email,
         options: { emailRedirectTo: `${window.location.origin}/compte` },
       });
-      alert("Lien magique envoyé (si l'adresse est valide).");
+      if (error) throw error;
+      setMailSent(true);
+    } catch (e: any) {
+      setError(e.message ?? "Échec de l’envoi du lien magique.");
+    } finally {
       setBusy(false);
     }
+  }
 
+  async function logout() {
+    await supabase.auth.signOut();
+    // petit refresh soft
+    window.location.replace("/compte");
+  }
+
+  if (!user) {
+    // --- écran de connexion ---
     return (
-      <main className="max-w-md mx-auto my-8 p-4 card">
-        <h1 className="text-2xl font-semibold mb-4">Se connecter</h1>
+      <main className="container mx-auto px-4 py-10">
+        <h1 className="text-2xl font-semibold mb-6">Se connecter</h1>
 
-        <div className="space-y-3">
+        <div className="max-w-md space-y-4">
           <button
             onClick={() => oauth("google")}
             disabled={busy}
-            className="w-full btn justify-center"
+            className="w-full rounded-xl border border-white/20 px-4 py-2 hover:bg-white/10"
           >
-            Se connecter avec Google
+            Continuer avec Google
           </button>
           <button
             onClick={() => oauth("github")}
             disabled={busy}
-            className="w-full btn justify-center"
+            className="w-full rounded-xl border border-white/20 px-4 py-2 hover:bg-white/10"
           >
-            Se connecter avec GitHub
+            Continuer avec GitHub
           </button>
 
-          <div className="text-center text-sm text-gray-400 my-2">— ou —</div>
+          <div className="text-center text-sm text-gray-400">ou</div>
 
-          <form onSubmit={magicLink} className="space-y-2">
+          <form onSubmit={magicLink} className="space-y-3">
             <input
               name="email"
               type="email"
               placeholder="ton@email.com"
-              className="w-full rounded-lg bg-black/40 border border-white/10 px-3 py-2"
+              className="w-full rounded-xl bg-black/40 border border-white/15 px-3 py-2 outline-none focus:border-violet-400"
               disabled={busy}
             />
-            <button disabled={busy} className="w-full btn justify-center">
+            <button
+              type="submit"
+              disabled={busy}
+              className="w-full rounded-xl bg-violet-600 hover:bg-violet-500 px-4 py-2"
+            >
               Recevoir un lien magique
             </button>
           </form>
-        </div>
-      </main>
-    );
-  }
 
-  // --- VIEW: logged in => profile editor (déjà fonctionnel chez toi) ---
-  return (
-    <main className="max-w-xl mx-auto my-8 p-4 card space-y-4">
-      <h1 className="text-2xl font-semibold">Mon profil</h1>
-
-      <label className="block text-sm">
-        <span className="text-gray-400">Pseudo affiché</span>
-        <input
-          value={displayName}
-          onChange={(e) => setDisplayName(e.target.value)}
-          className="mt-1 w-full rounded-lg bg-black/40 border border-white/10 px-3 py-2"
-          disabled={loading}
-        />
-      </label>
-
-      <label className="block text-sm">
-        <span className="text-gray-400">URL avatar</span>
-        <input
-          value={avatarUrl ?? ""}
-          onChange={(e) => setAvatarUrl(e.target.value)}
-          className="mt-1 w-full rounded-lg bg-black/40 border border-white/10 px-3 py-2"
-          disabled={loading}
-        />
-      </label>
-
-      <div className="flex gap-2">
-        <button onClick={save} disabled={loading} className="btn">Enregistrer</button>
-        <button
-          onClick={() => supabase.auth.signOut()}
-          className="btn"
-        >
-          Se déconnecter
-        </button>
-      </div>
-    </main>
-  );
-}
+          {mailSent && (
+            <p className="text-green-400 text-sm">
+              Lien envoyé ! Vérifie ta boîte mail.
+            </p>
+          )}
+          {error && (
+            <p className="text-red-400
