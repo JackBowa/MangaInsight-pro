@@ -1,35 +1,28 @@
-"use client";
-export const dynamic = "force-dynamic"; // évite tout prérendu
+'use client';
 
-import { useEffect, useState } from "react";
+import { createClient } from '@supabase/supabase-js';
 
-export default function SupaTest() {
-  const [ok, setOk] = useState<string>("…");
+const supabase = createClient(
+  process.env.NEXT_PUBLIC_SUPABASE_URL!,
+  process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
+);
 
-  useEffect(() => {
-    (async () => {
-      // 👉 import dynamique pour n'utiliser supabase que dans le navigateur
-      const { createClient } = await import("@supabase/supabase-js");
-
-      const url = process.env.NEXT_PUBLIC_SUPABASE_URL!;
-      const anon = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!;
-      const supabase = createClient(url, anon);
-
-      const { error } = await supabase
-        .from("pg_catalog.pg_tables")
-        .select("schemaname")
-        .limit(1);
-
-      setOk(error ? `❌ ${error.message}` : "✅ Connexion OK");
-    })();
-  }, []);
+export default async function SupaTest() {
+  const { data, error } = await supabase
+    .from('comments')
+    .select('id')
+    .limit(1);
 
   return (
-    <main className="min-h-screen bg-black text-white flex items-center justify-center">
-      <div className="p-6 rounded-lg border border-white/10 bg-white/5">
-        <h1 className="text-xl font-semibold mb-2">Test Supabase</h1>
-        <p>{ok}</p>
-      </div>
-    </main>
+    <div className="max-w-xl mx-auto mt-10 p-4 rounded-lg border border-white/10 bg-white/5">
+      <h2 className="text-lg font-semibold mb-2">Test Supabase</h2>
+      {error ? (
+        <p className="text-red-400">✖ {error.message}</p>
+      ) : (
+        <p className="text-green-400">
+          ✔ Connexion OK — URL: {process.env.NEXT_PUBLIC_SUPABASE_URL}
+        </p>
+      )}
+    </div>
   );
 }
