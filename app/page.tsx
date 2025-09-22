@@ -1,45 +1,56 @@
-export default function Home() {
+// components/SiteHeader.tsx
+"use client";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+
+const items = [
+  { href: "/",          label: "Accueil" },
+  { href: "/critiques", label: "Critiques" },
+  { href: "/nouveautés", label: "Nouveautés" },
+  { href: "/tops",      label: "Tops" },
+  { href: "/guides",    label: "Guides" },
+];
+
+export default function SiteHeader() {
+  const pathname = usePathname();
   return (
-    <main style={{ background: "#000", color: "#fff", minHeight: "100vh", fontFamily: "system-ui" }}>
-      {/* Bannière */}
-      <header role="banner" style={{ margin: 0, padding: 0 }}>
-        <img
-          src="https://i.postimg.cc/dt1vhRGY/IMG-0126.jpg"
-          alt="Manga insight"
-          width={2000}
-          height={250}
-          style={{ display: "block", width: "100%", height: "auto" }}
-        />
-      </header>
+    <header className="w-full border-b border-white/10 bg-black/80 backdrop-blur supports-[backdrop-filter]:bg-black/60 sticky top-0 z-40">
+      <div className="mx-auto max-w-screen-lg h-11 md:h-12 px-3 md:px-4 flex items-center gap-3">
+        <Link href="/" className="font-semibold tracking-tight text-white text-sm md:text-base">
+          Mangainsight
+        </Link>
 
-      {/* Bloc texte centré comme avant */}
-      <section style={{ maxWidth: 960, margin: "40px auto", padding: "0 16px", textAlign: "center" }}>
-        <h2 style={{ fontSize: "2rem", marginBottom: "0.5rem" }}>Bienvenue</h2>
-        <h3 style={{ fontSize: "1.5rem", marginBottom: "1rem" }}>
-          Découvrez nos critiques et commentaires
-        </h3>
-        <p style={{ opacity: 0.9 }}>
-          Explorez des critiques détaillées de vos mangas et manwhas préférés.
-        </p>
-
-        <img
-          src="https://i.postimg.cc/WbF7sk67/IMG-0132.jpg"
-          alt=""
-          style={{ maxWidth: "100%", height: "auto", borderRadius: 12, marginTop: "24px" }}
-        />
-      </section>
-
-      <footer style={{ textAlign: "center", padding: "20px 0", borderTop: "1px solid #222" }}>
-        <small>
-          <a href="https://www.instagram.com/mangainsight_review/" target="_blank" rel="noreferrer" style={{ marginRight: 12 }}>
-            Instagram
-          </a>
-          <a href="https://www.facebook.com/profile.php?id=61558806596916" target="_blank" rel="noreferrer">
-            Facebook
-          </a>
-        </small>
-        <div style={{ opacity: 0.7, marginTop: 8 }}>© 2025 Mangainsight — Mentions légales & Affiliation</div>
-      </footer>
-    </main>
+        {/* nav: compact + scrollable si trop long */}
+        <nav className="ml-auto overflow-x-auto whitespace-nowrap no-scrollbar">
+          <div className="flex items-center gap-2 md:gap-4 text-[13px] md:text-[15px]">
+            {items.map((it) => {
+              const active = pathname === it.href || pathname.startsWith(it.href + "/");
+              return (
+                <Link
+                  key={it.href}
+                  href={it.href}
+                  className={
+                    "px-2 py-1 rounded-md transition " +
+                    (active
+                      ? "text-white bg-white/10"
+                      : "text-gray-300 hover:text-white hover:bg-white/5")
+                  }
+                >
+                  {it.label}
+                </Link>
+              );
+            })}
+            <Link
+              href="/compte"
+              className={
+                "px-2 py-1 rounded-md transition text-gray-300 hover:text-white hover:bg-white/5"
+              }
+            >
+              Se connecter
+            </Link>
+          </div>
+        </nav>
+      </div>
+    </header>
   );
 }
