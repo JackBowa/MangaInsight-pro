@@ -1,6 +1,6 @@
 "use client";
 import { useEffect, useMemo, useState } from "react";
-import { supabase } from "@/lib/supabase/client";
+import { supabase } from "@/lib/lib/supabase/client";
 
 type DbComment = {
   id: string;
