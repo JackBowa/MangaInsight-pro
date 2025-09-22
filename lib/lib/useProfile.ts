@@ -9,16 +9,40 @@ export function useProfile(user: User | null) {
   const [avatarUrl, setAvatarUrl] = useState<string>("");
 
   useEffect(() => {
-    if (!user) { setDisplayName(""); setAvatarUrl(""); return; }
-    setLoading(true);
-    supabase.from("profiles").select("*").eq("id", user.id).single()
-      .then(({ data }) => {
-        if (data) {
+    if (!user) {
+      setDisplayName("");
+      setAvatarUrl("");
+      return;
+    }
+
+    let cancelled = false;
+
+    async function load() {
+      setLoading(true);
+      try {
+        const { data, error } = await supabase
+          .from("profiles")
+          .select("display_name, avatar_url")
+          .eq("id", user.id)
+          .single();
+
+        if (error) {
+          // Optionnel: console.error(error);
+          return;
+        }
+        if (!cancelled && data) {
           setDisplayName(data.display_name ?? "");
           setAvatarUrl(data.avatar_url ?? "");
         }
-      })
-      .finally(() => setLoading(false));
+      } finally {
+        if (!cancelled) setLoading(false);
+      }
+    }
+
+    load();
+    return () => {
+      cancelled = true;
+    };
   }, [user]);
 
   async function save() {
@@ -29,7 +53,6 @@ export function useProfile(user: User | null) {
       avatar_url: avatarUrl || null,
       updated_at: new Date().toISOString(),
     };
-    // upsert crée ou met à jour
     const { error } = await supabase.from("profiles").upsert(payload);
     if (error) throw error;
   }
