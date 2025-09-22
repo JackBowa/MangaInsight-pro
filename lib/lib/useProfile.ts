@@ -9,7 +9,8 @@ export function useProfile(user: User | null) {
   const [avatarUrl, setAvatarUrl] = useState<string>("");
 
   useEffect(() => {
-    if (!user) {
+    const uid = user?.id; // cache l'ID, évite "user is possibly null"
+    if (!uid) {
       setDisplayName("");
       setAvatarUrl("");
       return;
@@ -23,14 +24,10 @@ export function useProfile(user: User | null) {
         const { data, error } = await supabase
           .from("profiles")
           .select("display_name, avatar_url")
-          .eq("id", user.id)
+          .eq("id", uid)
           .single();
 
-        if (error) {
-          // Optionnel: console.error(error);
-          return;
-        }
-        if (!cancelled && data) {
+        if (!cancelled && !error && data) {
           setDisplayName(data.display_name ?? "");
           setAvatarUrl(data.avatar_url ?? "");
         }
@@ -40,9 +37,7 @@ export function useProfile(user: User | null) {
     }
 
     load();
-    return () => {
-      cancelled = true;
-    };
+    return () => { cancelled = true; };
   }, [user]);
 
   async function save() {
@@ -58,4 +53,3 @@ export function useProfile(user: User | null) {
   }
 
   return { loading, displayName, setDisplayName, avatarUrl, setAvatarUrl, save };
-}
