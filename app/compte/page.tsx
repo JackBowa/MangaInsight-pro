@@ -1,59 +1,68 @@
 "use client";
 import { useState } from "react";
-import { supabase } from "@/lib/lib/supabase/client";
+import { supabase } from "@/lib/lib/supabase/client"; // ton client
 
 export default function ComptePage() {
   const [email, setEmail] = useState("");
-  const [ok, setOk] = useState<string | null>(null);
-  const [err, setErr] = useState<string | null>(null);
+  const [password, setPassword] = useState("");
+  const [message, setMessage] = useState("");
 
-  async function sendMagicLink(e: React.FormEvent) {
+  async function handleSignUp(e: React.FormEvent) {
     e.preventDefault();
-    setOk(null); setErr(null);
-    const { error } = await supabase.auth.signInWithOtp({
+    setMessage("");
+    const { data, error } = await supabase.auth.signUp({
       email,
-      options: {
-        emailRedirectTo: typeof window !== "undefined"
-          ? window.location.origin
-          : undefined,
-      },
+      password,
     });
-    if (error) setErr(error.message);
-    else setOk("Email envoyé ! Clique sur le lien pour te connecter.");
+    if (error) setMessage(error.message);
+    else setMessage("Compte créé ! Vérifie tes mails pour confirmer.");
   }
 
-  async function logout() {
-    await supabase.auth.signOut();
-    window.location.reload();
+  async function handleSignIn(e: React.FormEvent) {
+    e.preventDefault();
+    setMessage("");
+    const { error } = await supabase.auth.signInWithPassword({
+      email,
+      password,
+    });
+    if (error) setMessage(error.message);
+    else setMessage("Connexion réussie !");
   }
 
   return (
-    <main className="min-h-screen bg-black text-white">
-      <div className="container mx-auto max-w-md p-6">
-        <h1 className="text-2xl font-bold mb-4">Se connecter</h1>
-
-        <form onSubmit={sendMagicLink} className="space-y-3">
-          <input
-            type="email"
-            value={email}
-            onChange={(e)=>setEmail(e.target.value)}
-            placeholder="Ton e-mail"
-            required
-            className="w-full rounded bg-black/40 border border-white/10 px-3 py-2"
-          />
-          <button className="rounded bg-violet-600 hover:bg-violet-500 px-4 py-2 text-sm font-medium">
-            Recevoir un lien magique
+    <main className="min-h-screen bg-black text-white flex items-center justify-center">
+      <form onSubmit={handleSignIn} className="space-y-4">
+        <h1 className="text-xl font-bold">Connexion / Inscription</h1>
+        <input
+          type="email"
+          placeholder="Email"
+          className="block w-full rounded-md px-3 py-2 text-black"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+        />
+        <input
+          type="password"
+          placeholder="Mot de passe"
+          className="block w-full rounded-md px-3 py-2 text-black"
+          value={password}
+          onChange={(e) => setPassword(e.target.value)}
+        />
+        <div className="flex gap-2">
+          <button
+            onClick={handleSignIn}
+            className="bg-violet-600 px-4 py-2 rounded-md"
+          >
+            Se connecter
           </button>
-        </form>
-
-        {ok && <p className="mt-3 text-green-400">{ok}</p>}
-        {err && <p className="mt-3 text-red-400">{err}</p>}
-
-        <hr className="my-6 border-white/10" />
-        <button onClick={logout} className="text-sm text-gray-300 underline">
-          Se déconnecter
-        </button>
-      </div>
+          <button
+            onClick={handleSignUp}
+            className="bg-green-600 px-4 py-2 rounded-md"
+          >
+            S'inscrire
+          </button>
+        </div>
+        {message && <p className="text-sm mt-2">{message}</p>}
+      </form>
     </main>
   );
 }
