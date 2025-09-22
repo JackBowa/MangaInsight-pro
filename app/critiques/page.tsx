@@ -1,19 +1,17 @@
 "use client";
 
 import Link from "next/link";
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useState } from "react";
 import { SERIES } from "@/data/series";
+import { supabase } from "@/lib/lib/supabase/client";
 
-// mini étoile
+/* Mini étoiles pour affichage "rédac" */
 function Stars({ n = 0 }: { n?: number }) {
   const c = Math.max(0, Math.min(5, n ?? 0));
   return (
     <div className="flex items-center gap-0.5" aria-label={`${c} sur 5`}>
       {Array.from({ length: 5 }).map((_, i) => (
-        <span
-          key={i}
-          className={i < c ? "text-yellow-400" : "text-gray-600"}
-        >
+        <span key={i} className={i < c ? "text-yellow-400" : "text-gray-600"}>
           ★
         </span>
       ))}
@@ -21,7 +19,7 @@ function Stars({ n = 0 }: { n?: number }) {
   );
 }
 
-// **Carte série** – visuel moderne
+/* Carte série — ajout d’un badge “note moyenne lecteurs” */
 function CritiqueCard({
   slug,
   title,
@@ -29,6 +27,7 @@ function CritiqueCard({
   tags,
   stars,
   category,
+  avg,
 }: {
   slug: string;
   title: string;
@@ -36,6 +35,7 @@ function CritiqueCard({
   tags?: string;
   stars?: number;
   category?: string;
+  avg?: number | null; // ⬅️ moyenne lecteurs
 }) {
   const tagList = (tags ?? "")
     .split("·")
@@ -51,20 +51,28 @@ function CritiqueCard({
       {/* image */}
       {cover ? (
         <div className="relative aspect-[4/5] overflow-hidden">
-          {/* eslint-disable-next-line @next/next/no-img-element */}
           <img
             src={cover}
             alt={title}
             className="absolute inset-0 h-full w-full object-cover transition scale-100 group-hover:scale-105"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/15 to-black/0" />
+
           {/* badge catégorie */}
           {category && (
             <span className="absolute left-2 top-2 rounded-full border border-white/15 bg-black/50 px-2 py-0.5 text-xs tracking-wide text-white/90">
               {category}
             </span>
           )}
-          {/* tags en bas */}
+
+          {/* badge note moyenne lecteurs */}
+          {typeof avg === "number" && (
+            <span className="absolute right-2 top-2 rounded-full border border-white/15 bg-black/60 px-2 py-0.5 text-xs text-white/90">
+              Lecteurs : <b>{avg.toFixed(1)}/5</b>
+            </span>
+          )}
+
+          {/* tags */}
           {tagList.length > 0 && (
             <div className="absolute bottom-2 left-2 right-2 flex flex-wrap gap-1.5">
               {tagList.map((t) => (
@@ -86,7 +94,7 @@ function CritiqueCard({
       <div className="p-3">
         <div className="flex items-center justify-between gap-3">
           <h3 className="text-base font-semibold line-clamp-2">{title}</h3>
-          {"stars" in { stars } && typeof stars === "number" && (
+          {typeof stars === "number" && (
             <div className="shrink-0">
               <Stars n={stars} />
             </div>
@@ -104,7 +112,11 @@ export default function CritiquesPage() {
   const [sort, setSort] = useState<"recent" | "title" | "rating">("recent");
   const [selectedTag, setSelectedTag] = useState<string | null>(null);
 
-  // toutes les tags disponibles (à partir de data)
+  // moyennes lecteurs par slug
+  const [avgs, setAvgs] = useState<Record<string, number>>({});
+  const [loadingAvgs, setLoadingAvgs] = useState(false);
+
+  // collecte de tous les tags dispo
   const allTags = useMemo(() => {
     const bag = new Set<string>();
     for (const s of SERIES) {
@@ -150,12 +162,58 @@ export default function CritiquesPage() {
     } else if (sort === "rating") {
       list.sort((a, b) => (b.stars ?? 0) - (a.stars ?? 0));
     } else {
-      // "recent" — on essaie d'utiliser l'ordre du fichier (derniers en haut)
-      list = list.reverse();
+      list = list.reverse(); // "recent"
     }
 
     return list;
   }, [q, category, sort, selectedTag]);
+
+  /* ⚡️ Fetch groupé des moyennes lecteurs pour les slugs visibles
+     - on récupère tous les comments approuvés pour ces slugs,
+     - on calcule la moyenne côté client (simple et efficace).
+  */
+  useEffect(() => {
+    const slugs = filtered.map((s) => s.slug);
+    if (slugs.length === 0) {
+      setAvgs({});
+      return;
+    }
+
+    // limite de sécurité (paginer si tu as 1000+ items)
+    const uniq = Array.from(new Set(slugs)).slice(0, 200);
+
+    let cancelled = false;
+    setLoadingAvgs(true);
+    supabase
+      .from("comments")
+      .select("slug, stars")
+      .in("slug", uniq)
+      .eq("approved", true)
+      .then(({ data, error }) => {
+        if (cancelled) return;
+        setLoadingAvgs(false);
+        if (error || !data) {
+          setAvgs({});
+          return;
+        }
+        const sums: Record<string, { s: number; n: number }> = {};
+        for (const row of data as { slug: string; stars: number }[]) {
+          if (!sums[row.slug]) sums[row.slug] = { s: 0, n: 0 };
+          sums[row.slug].s += row.stars ?? 0;
+          sums[row.slug].n += 1;
+        }
+        const out: Record<string, number> = {};
+        Object.keys(sums).forEach((k) => {
+          const { s, n } = sums[k];
+          if (n > 0) out[k] = Math.round((s / n) * 10) / 10;
+        });
+        setAvgs(out);
+      });
+
+    return () => {
+      cancelled = true;
+    };
+  }, [filtered]);
 
   return (
     <div className="mx-auto max-w-7xl">
@@ -276,8 +334,16 @@ export default function CritiquesPage() {
               tags={s.tags}
               stars={s.stars as number | undefined}
               category={s.category}
+              avg={avgs[s.slug]} // ⬅️ badge “Lecteurs : X/X”
             />
           ))}
+        </div>
+      )}
+
+      {/* état chargement moyennes (optionnel discret) */}
+      {loadingAvgs && (
+        <div className="mt-4 text-center text-xs text-gray-500">
+          Calcul des notes lecteurs…
         </div>
       )}
     </div>
