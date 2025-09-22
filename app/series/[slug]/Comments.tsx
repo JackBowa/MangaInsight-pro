@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { supabase } from "@/lib/lib/supabase/client";
-import { useUser } from "@supabase/auth-helpers-react";
+import { useUser } from "@/lib/lib/useUser";
 
 type CommentRow = {
   id: string;
