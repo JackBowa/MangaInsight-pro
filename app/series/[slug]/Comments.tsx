@@ -1,14 +1,17 @@
 "use client";
 import { useEffect, useMemo, useState } from "react";
 import { supabase } from "@/lib/lib/supabase/client";
+import { useUser } from "@/lib/lib/useUser";
 
-type DbComment = {
+type CommentRow = {
   id: string;
   slug: string;
   name: string;
   stars: number;
   text: string;
   created_at: string;
+  user_id: string;
+  approved: boolean;
 };
 
 export default function Comments({
@@ -20,70 +23,63 @@ export default function Comments({
   title: string;
   max?: number;
 }) {
-  const [items, setItems] = useState<DbComment[]>([]);
-  const [loading, setLoading] = useState(true);
+  const user = useUser();
+  const [items, setItems] = useState<CommentRow[]>([]);
   const [name, setName] = useState("");
   const [text, setText] = useState("");
-  const [stars, setStars] = useState(0);
+  const [stars, setStars] = useState<number>(0);
   const [error, setError] = useState<string | null>(null);
+  const [busy, setBusy] = useState(false);
 
-  // 1) fetch au chargement
+  // Charger commentaires: approuvés OU les miens (grâce aux policies)
   useEffect(() => {
-    let ignore = false;
     (async () => {
-      setLoading(true);
       const { data, error } = await supabase
         .from("comments")
         .select("*")
         .eq("slug", slug)
         .order("created_at", { ascending: false });
-      if (!ignore) {
-        if (error) setError(error.message);
-        else setItems(data ?? []);
-        setLoading(false);
-      }
+      if (!error && data) setItems(data as CommentRow[]);
     })();
-    return () => { ignore = true };
-  }, [slug]);
+  }, [slug, user?.id]);
 
-  // 2) abonnement temps réel (optionnel)
-  useEffect(() => {
-    const ch = supabase
-      .channel(`comments:${slug}`)
-      .on(
-        'postgres_changes',
-        { event: 'INSERT', schema: 'public', table: 'comments', filter: `slug=eq.${slug}` },
-        payload => setItems(prev => [payload.new as DbComment, ...prev])
-      )
-      .subscribe();
-    return () => { supabase.removeChannel(ch); };
-  }, [slug]);
+  const avg =
+    items.length > 0
+      ? Math.round(
+          (items.reduce((s, it) => s + (it.stars ?? 0), 0) / items.length) * 10
+        ) / 10
+      : null;
 
-  // 3) soumission
-  const submit = async (e: React.FormEvent) => {
+  async function onSubmit(e: React.FormEvent) {
     e.preventDefault();
     setError(null);
+    if (!user) {
+      return setError("Tu dois être connecté pour publier un avis.");
+    }
     if (!name.trim()) return setError("Ton pseudo est requis.");
-    if (stars < 1 || stars > max) return setError(`Mets une note entre 1 et ${max}.`);
+    if (stars < 1 || stars > max) return setError(`Note entre 1 et ${max}.`);
     if (!text.trim()) return setError("Écris un avis.");
 
-    const { error } = await supabase.from("comments").insert({
-      slug,
-      name: name.trim(),
-      stars,
-      text: text.trim(),
-    });
+    setBusy(true);
+    const { data, error } = await supabase
+      .from("comments")
+      .insert({
+        slug,
+        name: name.trim(),
+        stars,
+        text: text.trim(),
+        user_id: user.id, // 👈 IMPORTANT
+        // approved: true/false (selon ton défaut en DB)
+      })
+      .select("*")
+      .single();
+
+    setBusy(false);
+
     if (error) return setError(error.message);
-
-    // reset (l’insert temps réel ajoutera la ligne)
+    setItems([data as CommentRow, ...items]);
     setName(""); setText(""); setStars(0);
-  };
-
-  const avg = useMemo(() => {
-    if (!items.length) return null;
-    const v = items.reduce((s, it) => s + it.stars, 0) / items.length;
-    return Math.round(v * 10) / 10;
-  }, [items]);
+  }
 
   return (
     <section className="mt-14 mx-auto max-w-3xl">
@@ -92,19 +88,32 @@ export default function Comments({
       </h2>
 
       <div className="text-center mb-4 text-sm text-gray-300">
-        {avg !== null ? (
-          <>Note moyenne des lecteurs : <span className="font-semibold text-yellow-400">{avg}/{max}</span> ({items.length} avis)</>
-        ) : loading ? "Chargement…" : `Pas d'avis pour le moment. Note sur ${max}.`}
+        {avg ? (
+          <>Note moyenne des lecteurs :{" "}
+            <span className="font-semibold text-yellow-400">{avg}/{max}</span>{" "}
+            ({items.length} avis)</>
+        ) : (
+          `Pas d'avis pour le moment. Note sur ${max}.`
+        )}
       </div>
 
-      <form onSubmit={submit} className="rounded-xl border border-white/10 bg-white/5 p-4 space-y-3">
+      {/* Formulaire */}
+      <form onSubmit={onSubmit} className="rounded-xl border border-white/10 bg-white/5 p-4 space-y-3">
+        {!user && (
+          <p className="text-sm text-gray-300">
+            Connecte-toi via <a className="underline" href="/compte">/compte</a> pour publier.
+          </p>
+        )}
+
         <div className="flex flex-col sm:flex-row gap-3 sm:items-center">
           <input
             value={name}
             onChange={(e) => setName(e.target.value)}
             placeholder="Ton pseudo"
             className="flex-1 rounded-md bg-black/40 border border-white/10 px-3 py-2 outline-none focus:border-violet-400"
+            disabled={!user || busy}
           />
+
           <div className="flex items-center gap-1">
             {Array.from({ length: max }).map((_, i) => {
               const idx = i + 1;
@@ -113,6 +122,7 @@ export default function Comments({
                   key={idx}
                   type="button"
                   onClick={() => setStars(idx)}
+                  disabled={!user || busy}
                   aria-label={`Note ${idx}`}
                   className={`text-2xl leading-none ${idx <= stars ? "text-yellow-400" : "text-gray-600"}`}
                 >
@@ -130,6 +140,7 @@ export default function Comments({
           placeholder="Ton avis (reste sympa, pas de spoilers non avertis 🙂)"
           rows={4}
           className="w-full rounded-md bg-black/40 border border-white/10 px-3 py-2 outline-none focus:border-violet-400"
+          disabled={!user || busy}
         />
 
         {error && (
@@ -139,12 +150,17 @@ export default function Comments({
         )}
 
         <div className="flex justify-end">
-          <button className="rounded-md bg-violet-600 hover:bg-violet-500 px-4 py-2 text-sm font-medium" type="submit">
-            Publier l’avis
+          <button
+            disabled={!user || busy}
+            className="rounded-md bg-violet-600 hover:bg-violet-500 px-4 py-2 text-sm font-medium disabled:opacity-50"
+            type="submit"
+          >
+            {busy ? "Publication..." : "Publier l’avis"}
           </button>
         </div>
       </form>
 
+      {/* Liste */}
       <div className="mt-6 space-y-3">
         {items.map((it) => (
           <article key={it.id} className="rounded-lg border border-white/10 bg-white/5 p-3">
@@ -155,6 +171,9 @@ export default function Comments({
                 <span className="text-gray-600">{"★".repeat(max - it.stars)}</span>
               </div>
             </header>
+            {!it.approved && (
+              <div className="text-xs text-orange-400 mt-1">En attente d’approbation</div>
+            )}
             <p className="mt-2 text-gray-100 leading-relaxed">{it.text}</p>
             <div className="mt-1 text-xs text-gray-500">
               {new Date(it.created_at).toLocaleString()}
