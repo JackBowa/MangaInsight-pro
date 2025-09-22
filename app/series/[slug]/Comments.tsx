@@ -1,7 +1,13 @@
 "use client";
-import { useEffect, useMemo, useState } from "react";
-import { supabase } from "@/lib/lib/supabase/client";
-import { useUser } from "@/lib/lib/useUser";
+import { useEffect, useState } from "react";
+import { supabase } from "@/lib/supabase/client";
+import { useUser } from "@supabase/auth-helpers-react";
+
+export default function Comments({ slug }: { slug: string }) {
+  const user = useUser();
+  const [name, setName] = useState("");
+  const [text, setText] = useState("");
+  const [stars, setStars] = useState(5);
 
 type CommentRow = {
   id: string;
