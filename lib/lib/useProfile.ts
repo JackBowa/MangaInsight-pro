@@ -9,7 +9,7 @@ export function useProfile(user: User | null) {
   const [avatarUrl, setAvatarUrl] = useState<string>("");
 
   useEffect(() => {
-    const uid = user?.id; // cache l'ID, évite "user is possibly null"
+    const uid = user?.id; // évite "user is possibly null"
     if (!uid) {
       setDisplayName("");
       setAvatarUrl("");
@@ -53,3 +53,4 @@ export function useProfile(user: User | null) {
   }
 
   return { loading, displayName, setDisplayName, avatarUrl, setAvatarUrl, save };
+}
