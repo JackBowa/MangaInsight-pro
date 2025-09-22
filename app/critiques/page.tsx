@@ -1,103 +1,285 @@
-// app/critiques/page.tsx
 "use client";
+
+import Link from "next/link";
+import { useMemo, useState } from "react";
 import { SERIES } from "@/data/series";
-import { useState } from "react";
 
-const group = {
-  mangas: SERIES.filter((s) => s.category === "manga"),
-  manhwas: SERIES.filter((s) => s.category === "manhwa"),
-};
+// mini étoile
+function Stars({ n = 0 }: { n?: number }) {
+  const c = Math.max(0, Math.min(5, n ?? 0));
+  return (
+    <div className="flex items-center gap-0.5" aria-label={`${c} sur 5`}>
+      {Array.from({ length: 5 }).map((_, i) => (
+        <span
+          key={i}
+          className={i < c ? "text-yellow-400" : "text-gray-600"}
+        >
+          ★
+        </span>
+      ))}
+    </div>
+  );
+}
 
-export default function Critiques() {
-  const [open, setOpen] = useState<{ [k: string]: boolean }>({ mangas: true, manhwas: false });
+// **Carte série** – visuel moderne
+function CritiqueCard({
+  slug,
+  title,
+  cover,
+  tags,
+  stars,
+  category,
+}: {
+  slug: string;
+  title: string;
+  cover?: string;
+  tags?: string;
+  stars?: number;
+  category?: string;
+}) {
+  const tagList = (tags ?? "")
+    .split("·")
+    .map((t) => t.trim())
+    .filter(Boolean)
+    .slice(0, 3);
 
-  const Accordeon = ({ id, title, items }: { id: string; title: string; items: typeof SERIES }) => (
-    <div style={{ marginBottom: 12 }}>
-      <button
-        onClick={() => setOpen((o) => ({ ...o, [id]: !o[id] }))}
-        style={{
-          width: "100%",
-          textAlign: "left",
-          cursor: "pointer",
-          background: "#444",
-          border: "1px solid #666",
-          padding: "10px 12px",
-          borderRadius: 8,
-          color: "#fff",
-        }}
-      >
-        {title}
-      </button>
-      {open[id] && (
-        <div style={{ border: "1px solid #666", borderTop: "none", padding: 12, borderRadius: "0 0 8px 8px" }}>
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "repeat(auto-fill, minmax(220px, 1fr))",
-              gap: 12,
-            }}
-          >
-            {items.map((s) => (
-              <a
-                key={s.slug}
-                href={`/series/${s.slug}`}
-                style={{
-                  display: "block",
-                  textDecoration: "none",
-                  color: "#fff",
-                  border: "1px solid #222",
-                  borderRadius: 12,
-                  padding: 12,
-                  background: "#111",
-                }}
+  return (
+    <Link
+      href={`/series/${slug}`}
+      className="group relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 hover:bg-white/10 transition shadow-sm hover:shadow-lg"
+    >
+      {/* image */}
+      {cover ? (
+        <div className="relative aspect-[4/5] overflow-hidden">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src={cover}
+            alt={title}
+            className="absolute inset-0 h-full w-full object-cover transition scale-100 group-hover:scale-105"
+          />
+          <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/15 to-black/0" />
+          {/* badge catégorie */}
+          {category && (
+            <span className="absolute left-2 top-2 rounded-full border border-white/15 bg-black/50 px-2 py-0.5 text-xs tracking-wide text-white/90">
+              {category}
+            </span>
+          )}
+          {/* tags en bas */}
+          {tagList.length > 0 && (
+            <div className="absolute bottom-2 left-2 right-2 flex flex-wrap gap-1.5">
+              {tagList.map((t) => (
+                <span
+                  key={t}
+                  className="rounded-full bg-black/50 px-2 py-0.5 text-[11px] border border-white/10 text-white/90"
+                >
+                  {t}
+                </span>
+              ))}
+            </div>
+          )}
+        </div>
+      ) : (
+        <div className="aspect-[4/5] bg-white/5" />
+      )}
+
+      {/* contenu */}
+      <div className="p-3">
+        <div className="flex items-center justify-between gap-3">
+          <h3 className="text-base font-semibold line-clamp-2">{title}</h3>
+          {"stars" in { stars } && typeof stars === "number" && (
+            <div className="shrink-0">
+              <Stars n={stars} />
+            </div>
+          )}
+        </div>
+      </div>
+    </Link>
+  );
+}
+
+export default function CritiquesPage() {
+  // état filtres
+  const [q, setQ] = useState("");
+  const [category, setCategory] = useState<"all" | "manga" | "manhwa">("all");
+  const [sort, setSort] = useState<"recent" | "title" | "rating">("recent");
+  const [selectedTag, setSelectedTag] = useState<string | null>(null);
+
+  // toutes les tags disponibles (à partir de data)
+  const allTags = useMemo(() => {
+    const bag = new Set<string>();
+    for (const s of SERIES) {
+      (s.tags ?? "")
+        .split("·")
+        .map((t) => t.trim())
+        .filter(Boolean)
+        .forEach((t) => bag.add(t));
+    }
+    return Array.from(bag).sort((a, b) => a.localeCompare(b, "fr"));
+  }, []);
+
+  // filtrage + tri
+  const filtered = useMemo(() => {
+    let list = SERIES.slice();
+
+    if (category !== "all") {
+      list = list.filter((s) => (s.category ?? "").toLowerCase() === category);
+    }
+
+    if (q.trim()) {
+      const needle = q.toLowerCase();
+      list = list.filter(
+        (s) =>
+          s.title.toLowerCase().includes(needle) ||
+          (s.tags ?? "").toLowerCase().includes(needle) ||
+          (s.synopsis ?? "").toLowerCase().includes(needle)
+      );
+    }
+
+    if (selectedTag) {
+      list = list.filter((s) =>
+        (s.tags ?? "")
+          .split("·")
+          .map((t) => t.trim())
+          .includes(selectedTag)
+      );
+    }
+
+    // tri
+    if (sort === "title") {
+      list.sort((a, b) => a.title.localeCompare(b.title, "fr"));
+    } else if (sort === "rating") {
+      list.sort((a, b) => (b.stars ?? 0) - (a.stars ?? 0));
+    } else {
+      // "recent" — on essaie d'utiliser l'ordre du fichier (derniers en haut)
+      list = list.reverse();
+    }
+
+    return list;
+  }, [q, category, sort, selectedTag]);
+
+  return (
+    <div className="mx-auto max-w-7xl">
+      {/* Titre + barre de filtres */}
+      <header className="mb-6">
+        <h1 className="text-2xl md:text-3xl font-bold tracking-tight">
+          Critiques
+        </h1>
+        <p className="text-sm text-gray-300">
+          Explore les mangas & manhwas, filtre par tags, cherche et trie.
+        </p>
+      </header>
+
+      {/* contrôles */}
+      <div className="mb-6 grid items-center gap-3 md:grid-cols-12">
+        {/* recherche */}
+        <div className="md:col-span-6">
+          <div className="relative">
+            <input
+              value={q}
+              onChange={(e) => setQ(e.target.value)}
+              placeholder="Rechercher un titre, un tag, un mot-clé…"
+              className="w-full rounded-xl bg-black/40 border border-white/10 px-4 py-2.5 outline-none focus:border-violet-400"
+            />
+            {q && (
+              <button
+                onClick={() => setQ("")}
+                className="absolute right-2 top-1/2 -translate-y-1/2 text-sm text-gray-400 hover:text-white"
+                aria-label="Effacer"
+                title="Effacer"
               >
-                {s.cover && (
-                  <img
-                    src={s.cover}
-                    alt={s.title}
-                    style={{ width: "100%", height: 140, objectFit: "cover", borderRadius: 8, marginBottom: 8 }}
-                  />
-                )}
-                <div style={{ fontWeight: 700 }}>{s.title}</div>
-                {s.tags && <div style={{ opacity: 0.7, fontSize: 14 }}>{s.tags}</div>}
-              </a>
-            ))}
+                ✕
+              </button>
+            )}
           </div>
+        </div>
+
+        {/* catégories */}
+        <div className="md:col-span-3 flex gap-2">
+          {[
+            { key: "all", label: "Tout" },
+            { key: "manga", label: "Manga" },
+            { key: "manhwa", label: "Manhwa" },
+          ].map((opt) => (
+            <button
+              key={opt.key}
+              onClick={() => setCategory(opt.key as any)}
+              className={[
+                "rounded-lg px-3 py-2 text-sm border transition",
+                category === opt.key
+                  ? "bg-violet-600 border-violet-500"
+                  : "bg-white/5 border-white/10 hover:bg-white/10",
+              ].join(" ")}
+            >
+              {opt.label}
+            </button>
+          ))}
+        </div>
+
+        {/* tri */}
+        <div className="md:col-span-3">
+          <select
+            value={sort}
+            onChange={(e) => setSort(e.target.value as any)}
+            className="w-full rounded-lg bg-black/40 border border-white/10 px-3 py-2 text-sm outline-none focus:border-violet-400"
+          >
+            <option value="recent">Tri : plus récents</option>
+            <option value="title">Tri : titre A–Z</option>
+            <option value="rating">Tri : meilleure note</option>
+          </select>
+        </div>
+      </div>
+
+      {/* Tags rapides */}
+      {allTags.length > 0 && (
+        <div className="mb-5 flex flex-wrap gap-2">
+          <button
+            onClick={() => setSelectedTag(null)}
+            className={[
+              "rounded-full px-3 py-1.5 text-xs border transition",
+              selectedTag === null
+                ? "bg-violet-600 border-violet-500"
+                : "bg-white/5 border-white/10 hover:bg-white/10",
+            ].join(" ")}
+          >
+            Tous les tags
+          </button>
+          {allTags.map((t) => (
+            <button
+              key={t}
+              onClick={() => setSelectedTag(t === selectedTag ? null : t)}
+              className={[
+                "rounded-full px-3 py-1.5 text-xs border transition",
+                selectedTag === t
+                  ? "bg-violet-600 border-violet-500"
+                  : "bg-white/5 border-white/10 hover:bg-white/10",
+              ].join(" ")}
+            >
+              {t}
+            </button>
+          ))}
+        </div>
+      )}
+
+      {/* grille */}
+      {filtered.length === 0 ? (
+        <div className="mt-12 text-center text-sm text-gray-400">
+          Aucun résultat. Essaie d’autres mots-clés ou filtres.
+        </div>
+      ) : (
+        <div className="grid gap-4 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+          {filtered.map((s) => (
+            <CritiqueCard
+              key={s.slug}
+              slug={s.slug}
+              title={s.title}
+              cover={s.cover}
+              tags={s.tags}
+              stars={s.stars as number | undefined}
+              category={s.category}
+            />
+          ))}
         </div>
       )}
     </div>
-  );
-
-  return (
-    <main style={{ background: "#000", color: "#fff", minHeight: "100vh", fontFamily: "system-ui" }}>
-      {/* Bannière + menu simple */}
-      <header role="banner" style={{ margin: 0, padding: 0 }}>
-        <img
-          src="https://i.postimg.cc/dt1vhRGY/IMG-0126.jpg"
-          alt="Manga insight"
-          width={2000}
-          height={250}
-          style={{ display: "block", width: "100%", height: "auto" }}
-        />
-      </header>
-
-      <section style={{ maxWidth: 1000, margin: "20px auto", padding: "0 16px" }}>
-        <h2 style={{ textAlign: "center", marginBottom: 20 }}>Critiques des mangas et des manhwas</h2>
-
-        <Accordeon id="mangas" title="Mangas" items={group.mangas} />
-        <Accordeon id="manhwas" title="Manhwas" items={group.manhwas} />
-      </section>
-
-      <footer style={{ textAlign: "center", padding: "20px 0", borderTop: "1px solid #222" }}>
-        <small>
-          <a href="https://www.instagram.com/mangainsight_review/" target="_blank" rel="noreferrer" style={{ marginRight: 12 }}>
-            Instagram
-          </a>
-          <a href="https://www.facebook.com/profile.php?id=61558806596916" target="_blank" rel="noreferrer">
-            Facebook
-          </a>
-        </small>
-      </footer>
-    </main>
   );
 }
