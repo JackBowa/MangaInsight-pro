@@ -1089,7 +1089,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   slug: "wind-breaker",
   title: "Wind Breaker",
   category: "manhwa",
-  tags: "Sport · Vélo · Rue · Crew",
+  tags: Action · Combat · Lycée · Délinquants · Shōnen",
   cover: "https://manga-insight-pro.vercel.app/wind-breaker.jpg",
   synopsis: "Haruka Sakura est un lycéen qui arrive au lycée Fûrin, connu pour son taux de délinquance élevé. Son objectif : affronter les meilleurs bagarreurs et devenir le meilleur d'entre eux. Mais cela ne va pas être aussi simple qu'il ne le pensait.",
   reviewHtml: "",
