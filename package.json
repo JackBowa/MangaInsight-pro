@@ -39,4 +39,5 @@
     "fetch:covers": "ts-node scripts/fetch-covers.ts"
   }
 }
+npm run fetch:covers
 }
