@@ -1099,5 +1099,1228 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   ],
   streaming: [],
   live: []
+},
+{
+  slug: "demon-slayer-kimetsu-no-yaiba",
+  title: "Demon Slayer: Kimetsu no Yaiba",
+  category: "manga",
+  tags: "Shōnen · Démons · Sabre · Fratrie",
+  cover: "https://manga-insight-pro.vercel.app/demon-slayer.jpg",
+  synopsis: "Après le massacre de sa famille et la transformation de sa sœur Nezuko en démon, Tanjiro rejoint le Corps des Pourfendeurs pour la protéger et traquer les responsables.",
+  reviewHtml: "",
+  stars: 0,
+  shops: [
+    { name: "Manganim", url: "https://manganim.fr/search?q=Demon+Slayer", logo: "https://manganim.fr/cdn/shop/files/logo-manganim-header_180x.png?v=1672862594" },
+    { name: "Fnac",     url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=demon+slayer+tome", logo: "https://cdn.iconscout.com/icon/free/png-256/free-fnac-3521434-2944878.png" },
+    { name: "Amazon",   url: "https://www.amazon.fr/s?k=demon+slayer+tome", logo: "https://www.1min30.com/wp-content/uploads/2017/12/logo-amazon-1.jpg" }
+  ],
+  streaming: [
+    { name: "Crunchyroll", url: "https://www.crunchyroll.com/series/GY5P48XEY/demon-slayer-kimetsu-no-yaiba", logo: "https://upload.wikimedia.org/wikipedia/commons/f/fc/Crunchyroll_logo_2018_vertical.png" },
+    { name: "Netflix (recherche)", url: "https://www.netflix.com/search?q=Demon%20Slayer", logo: "https://images.ctfassets.net/y2ske730sjqp/5QQ9SVIdc1tmkqrtFnG9U1/de758bba0f65dcc1c6bc1f31f161003d/BrandAssets_Logos_02-NSymbol.jpg?w=940" }
+  ],
+  live: []
+},
+{
+  slug: "spy-x-family",
+  title: "SPY×FAMILY",
+  category: "manga",
+  tags: "Comédie · Espionnage · Famille",
+  cover: "https://manga-insight-pro.vercel.app/spy-x-family.jpg",
+  synopsis: "Pour approcher un politicien, l’espion « Twilight » forme une famille de façade : Anya, fillette télépathe, et Yor, tueuse à gages. Personne ne connaît le secret des autres.",
+  reviewHtml: "",
+  stars: 0,
+  shops: [
+    { name: "Manganim", url: "https://manganim.fr/search?q=Spy+x+Family", logo: "https://manganim.fr/cdn/shop/files/logo-manganim-header_180x.png?v=1672862594" },
+    { name: "Fnac",     url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=Spy%20x%20Family%20tome", logo: "https://cdn.iconscout.com/icon/free/png-256/free-fnac-3521434-2944878.png" },
+    { name: "Amazon",   url: "https://www.amazon.fr/s?k=spy+x+family+tome", logo: "https://www.1min30.com/wp-content/uploads/2017/12/logo-amazon-1.jpg" }
+  ],
+  streaming: [
+    { name: "Crunchyroll", url: "https://www.crunchyroll.com/series/G4PH0WXVJ/spy-x-family", logo: "https://upload.wikimedia.org/wikipedia/commons/f/fc/Crunchyroll_logo_2018_vertical.png" },
+    { name: "Netflix (recherche)", url: "https://www.netflix.com/search?q=Spy%20x%20Family", logo: "https://images.ctfassets.net/y2ske730sjqp/5QQ9SVIdc1tmkqrtFnG9U1/de758bba0f65dcc1c6bc1f31f161003d/BrandAssets_Logos_02-NSymbol.jpg?w=940" }
+  ],
+  live: []
+},
+{
+  slug: "overlord",
+  title: "Overlord",
+  category: "manga",
+  tags: "Isekai · Jeu vidéo · Nécromancie · Fantasy",
+  cover: "https://manga-insight-pro.vercel.app/overlord.jpg",
+  synopsis: "Coincé dans son MMORPG favori quand les serveurs s’arrêtent, Momonga devient Ainz Ooal Gown, seigneur mort-vivant, et tente de comprendre — voire dominer — ce monde.",
+  reviewHtml: "",
+  stars: 0,
+  shops: [
+    { name: "Manganim", url: "https://manganim.fr/search?q=Overlord%20manga", logo: "https://manganim.fr/cdn/shop/files/logo-manganim-header_180x.png?v=1672862594" },
+    { name: "Fnac",     url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=overlord%20manga%20tome", logo: "https://cdn.iconscout.com/icon/free/png-256/free-fnac-3521434-2944878.png" },
+    { name: "Amazon",   url: "https://www.amazon.fr/s?k=overlord+manga+tome", logo: "https://www.1min30.com/wp-content/uploads/2017/12/logo-amazon-1.jpg" }
+  ],
+  streaming: [
+    { name: "Crunchyroll", url: "https://www.crunchyroll.com/series/G69PZ5PDY/overlord", logo: "https://upload.wikimedia.org/wikipedia/commons/f/fc/Crunchyroll_logo_2018_vertical.png" }
+  ],
+  live: []
+},
+{
+  slug: "arifureta",
+  title: "Arifureta: De zéro à héros",
+  category: "manga",
+  tags: "Isekai · Donjon · Vengeance · Survie",
+  cover: "https://manga-insight-pro.vercel.app/arifureta.jpg",
+  synopsis: "Trahi lors d’un raid, Hajime chute au fond d’un donjon. Pour survivre, il se radicalise, fabrique ses armes et remonte, décidé à renverser son destin.",
+  reviewHtml: "",
+  stars: 0,
+  shops: [
+    { name: "Manganim", url: "https://manganim.fr/search?q=Arifureta", logo: "https://manganim.fr/cdn/shop/files/logo-manganim-header_180x.png?v=1672862594" },
+    { name: "Fnac",     url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=arifureta%20tome", logo: "https://cdn.iconscout.com/icon/free/png-256/free-fnac-3521434-2944878.png" },
+    { name: "Amazon",   url: "https://www.amazon.fr/s?k=arifureta+tome", logo: "https://www.1min30.com/wp-content/uploads/2017/12/logo-amazon-1.jpg" }
+  ],
+  streaming: [
+    { name: "Crunchyroll", url: "https://www.crunchyroll.com/series/G4PH0WXD1/arifureta-from-commonplace-to-worlds-strongest", logo: "https://upload.wikimedia.org/wikipedia/commons/f/fc/Crunchyroll_logo_2018_vertical.png" }
+  ],
+  live: []
+},
+{
+  slug: "re-zero",
+  title: "Re:Zero",
+  category: "manga",
+  tags: "Isekai · Boucle temporelle · Drame · Fantasy",
+  cover: "https://manga-insight-pro.vercel.app/re-zero.jpg",
+  synopsis: "Subaru est transporté dans un autre monde et découvre qu’à chaque mort, il revient à un point de sauvegarde. Il tente d’enrayer les tragédies qui l’entourent.",
+  reviewHtml: "",
+  stars: 0,
+  shops: [
+    { name: "Manganim", url: "https://manganim.fr/search?q=Re%3AZero%20tome", logo: "https://manganim.fr/cdn/shop/files/logo-manganim-header_180x.png?v=1672862594" },
+    { name: "Fnac",     url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=re%3Azero%20tome", logo: "https://cdn.iconscout.com/icon/free/png-256/free-fnac-3521434-2944878.png" },
+    { name: "Amazon",   url: "https://www.amazon.fr/s?k=re%3Azero+tome", logo: "https://www.1min30.com/wp-content/uploads/2017/12/logo-amazon-1.jpg" }
+  ],
+  streaming: [
+    { name: "Crunchyroll", url: "https://www.crunchyroll.com/series/GRGG9798R/rezero--starting-life-in-another-world-", logo: "https://upload.wikimedia.org/wikipedia/commons/f/fc/Crunchyroll_logo_2018_vertical.png" }
+  ],
+  live: []
+},
+{
+  slug: "akame-ga-kill",
+  title: "Akame ga Kill!",
+  category: "manga",
+  tags: "Action · Assassins · Rébellion · Drame",
+  cover: "https://manga-insight-pro.vercel.app/akame-ga-kill.jpg",
+  synopsis: "Tatsumi rejoint Night Raid, un groupe d’assassins qui lutte contre un empire gangrené par la corruption. Chaque victoire se paie au prix fort.",
+  reviewHtml: "",
+  stars: 0,
+  shops: [
+    { name: "Manganim", url: "https://manganim.fr/search?q=Akame%20ga%20Kill", logo: "https://manganim.fr/cdn/shop/files/logo-manganim-header_180x.png?v=1672862594" },
+    { name: "Fnac",     url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=akame%20ga%20kill%20tome", logo: "https://cdn.iconscout.com/icon/free/png-256/free-fnac-3521434-2944878.png" },
+    { name: "Amazon",   url: "https://www.amazon.fr/s?k=akame+ga+kill+tome", logo: "https://www.1min30.com/wp-content/uploads/2017/12/logo-amazon-1.jpg" }
+  ],
+  streaming: [
+    { name: "Crunchyroll", url: "https://www.crunchyroll.com/series/GY2P14QEY/akame-ga-kill", logo: "https://upload.wikimedia.org/wikipedia/commons/f/fc/Crunchyroll_logo_2018_vertical.png" }
+  ],
+  live: []
+},
+{
+  slug: "tokyo-ghoul",
+  title: "Tokyo Ghoul",
+  category: "manga",
+  tags: "Dark Fantasy · Ghouls · Identité · Drame",
+  cover: "https://manga-insight-pro.vercel.app/tokyo-ghoul.jpg",
+  synopsis: "Blessé par une goule, Ken Kaneki devient un hybride et doit survivre entre deux mondes en luttant pour conserver son humanité.",
+  reviewHtml: "",
+  stars: 0,
+  shops: [
+    { name: "Manganim", url: "https://manganim.fr/search?q=Tokyo%20Ghoul%20tome", logo: "https://manganim.fr/cdn/shop/files/logo-manganim-header_180x.png?v=1672862594" },
+    { name: "Fnac",     url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=tokyo%20ghoul%20tome", logo: "https://cdn.iconscout.com/icon/free/png-256/free-fnac-3521434-2944878.png" },
+    { name: "Amazon",   url: "https://www.amazon.fr/s?k=tokyo+ghoul+tome", logo: "https://www.1min30.com/wp-content/uploads/2017/12/logo-amazon-1.jpg" }
+  ],
+  streaming: [
+    { name: "Crunchyroll", url: "https://www.crunchyroll.com/series/G6NV7Z50Y/tokyo-ghoul", logo: "https://upload.wikimedia.org/wikipedia/commons/f/fc/Crunchyroll_logo_2018_vertical.png" }
+  ],
+  live: []
+},
+{
+  slug: "black-god",
+  title: "Black God (Kurokami)",
+  category: "manga",
+  tags: "Action · Surnaturel · Pacte · Rivalités",
+  cover: "https://manga-insight-pro.vercel.app/kurokami.jpg",
+  synopsis: "Après une rencontre avec Kuro, Keita se retrouve lié à une mototsumitama et impliqué dans des conflits mystiques qui dépassent son quotidien.",
+  reviewHtml: "",
+  stars: 0,
+  shops: [
+    { name: "Manganim", url: "https://manganim.fr/search?q=Kurokami%20Black%20God", logo: "https://manganim.fr/cdn/shop/files/logo-manganim-header_180x.png?v=1672862594" },
+    { name: "Fnac",     url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=kurokami%20manga%20tome", logo: "https://cdn.iconscout.com/icon/free/png-256/free-fnac-3521434-2944878.png" },
+    { name: "Amazon",   url: "https://www.amazon.fr/s?k=black+god+manga+kurokami", logo: "https://www.1min30.com/wp-content/uploads/2017/12/logo-amazon-1.jpg" }
+  ],
+  streaming: [],  // L'anime "Kurokami The Animation" n'est pas disponible partout sur les plateformes majeures
+  live: []
+},
+{
+  slug: "sss-class-suicide-hunter",
+  title: "SSS-Class Suicide Hunter",
+  category: "manhwa",
+  tags: "Répétition · Donjons · Vengeance",
+  cover: "https://manga-insight-pro.vercel.app/sss-suicide-hunter.jpg",
+  synopsis: "La capacité unique de Kim Gong-ja le rend plus fort à chaque mort. Il accumule talents et stratégies dans un monde où les épreuves ne pardonnent pas.",
+  reviewHtml: "",
+  stars: 0,
+  shops: [
+    { name: "Manganim", url: "https://manganim.fr/search?q=SSS%20Class%20Suicide%20Hunter", logo: "https://manganim.fr/cdn/shop/files/logo-manganim-header_180x.png?v=1672862594" },
+    { name: "Fnac",     url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=SSS%20Class%20Suicide%20Hunter", logo: "https://cdn.iconscout.com/icon/free/png-256/free-fnac-3521434-2944878.png" },
+    { name: "Amazon",   url: "https://www.amazon.fr/s?k=SSS+Class+Suicide+Hunter", logo: "https://www.1min30.com/wp-content/uploads/2017/12/logo-amazon-1.jpg" }
+  ],
+  streaming: [],  // Pas d'anime officiel confirmé
+  live: []
+},
+{
+  slug: "my-wife-is-a-demon-queen",
+  title: "My Wife Is a Demon Queen",
+  category: "manhwa",
+  tags: "Isekai · Couple · Fantasy",
+  cover: "https://manga-insight-pro.vercel.app/my-wife-demon-queen.jpg",
+  synopsis: "Un humain invoqué devient l’époux d’une reine démoniaque déchue. Ensemble, ils tentent de reconquérir un trône et un avenir.",
+  reviewHtml: "",
+  stars: 0,
+  shops: [
+    { name: "Manganim", url: "https://manganim.fr/search?q=My%20Wife%20Is%20a%20Demon%20Queen", logo: "https://manganim.fr/cdn/shop/files/logo-manganim-header_180x.png?v=1672862594" },
+    { name: "Fnac",     url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=My%20Wife%20Is%20a%20Demon%20Queen", logo: "https://cdn.iconscout.com/icon/free/png-256/free-fnac-3521434-2944878.png" },
+    { name: "Amazon",   url: "https://www.amazon.fr/s?k=My+Wife+Is+a+Demon+Queen", logo: "https://www.1min30.com/wp-content/uploads/2017/12/logo-amazon-1.jpg" }
+  ],
+  streaming: [],  // Aucun anime officiel connu
+  live: []
+},
+{
+  slug: "the-rising-of-the-shield-hero",
+  title: "The Rising of the Shield Hero",
+  category: "manga",
+  tags: "Isekai · Héros · Trahison · Fantasy",
+  cover: "https://manga-insight-pro.vercel.app/shield-hero.jpg",
+  synopsis: "Naofumi est invoqué dans un autre monde parmi les quatre héros légendaires. Prenant le bouclier, le plus faible des armes, il est trahi, calomnié, et doit prouver sa valeur seul.",
+  reviewHtml: "",
+  stars: 0,
+  shops: [
+    { name: "Manganim", url: "https://manganim.fr/search?q=Shield+Hero", logo: "" },
+    { name: "Fnac",     url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=shield+hero+tome", logo: "" },
+    { name: "Amazon",   url: "https://www.amazon.fr/s?k=shield+hero+manga", logo: "" }
+  ],
+  streaming: [
+    { name: "Crunchyroll", url: "https://www.crunchyroll.com/series/G21MYZ1ML/the-rising-of-the-shield-hero", logo: "" }
+  ],
+  live: []
+},
+{
+  slug: "sword-art-online",
+  title: "Sword Art Online",
+  category: "manga",
+  tags: "Isekai · Jeu vidéo · Romance · Action",
+  cover: "https://manga-insight-pro.vercel.app/sword-art-online.jpg",
+  synopsis: "Kirito et d’autres joueurs sont piégés dans un jeu virtuel mortel : mourir dans le jeu signifie mourir dans la réalité. Kirito lutte pour sauver tout le monde.",
+  reviewHtml: "",
+  stars: 0,
+  shops: [
+    { name: "Manganim", url: "https://manganim.fr/search?q=Sword+Art+Online", logo: "" },
+    { name: "Fnac",     url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=sword+art+online+tome", logo: "" },
+    { name: "Amazon",   url: "https://www.amazon.fr/s?k=sword+art+online+manga", logo: "" }
+  ],
+  streaming: [
+    { name: "Crunchyroll", url: "https://www.crunchyroll.com/series/G4V5XW0PE/sword-art-online", logo: "" },
+    { name: "Netflix (recherche)", url: "https://www.netflix.com/search?q=Sword%20Art%20Online", logo: "" }
+  ],
+  live: []
+},
+{
+  slug: "goblin-slayer",
+  title: "Goblin Slayer",
+  category: "manga",
+  tags: "Dark Fantasy · Aventure · Violence",
+  cover: "https://manga-insight-pro.vercel.app/goblin-slayer.jpg",
+  synopsis: "Dans un monde où les gobelins terrorisent les villageois, une prêtresse rejoint un guerrier mystérieux : Goblin Slayer, obsédé par leur extermination.",
+  reviewHtml: "",
+  stars: 0,
+  shops: [
+    { name: "Manganim", url: "https://manganim.fr/search?q=Goblin+Slayer", logo: "" },
+    { name: "Fnac",     url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=goblin+slayer+tome", logo: "" },
+    { name: "Amazon",   url: "https://www.amazon.fr/s?k=goblin+slayer+manga", logo: "" }
+  ],
+  streaming: [
+    { name: "Crunchyroll", url: "https://www.crunchyroll.com/series/GR1MVZ6L2/goblin-slayer", logo: "" }
+  ],
+  live: []
+},
+{
+  slug: "grimgar",
+  title: "Grimgar, le Monde des Cendres et de Fantaisie",
+  category: "manga",
+  tags: "Fantasy · Monde parallèle · Aventure",
+  cover: "https://manga-insight-pro.vercel.app/grimgar.jpg",
+  synopsis: "Des individus se réveillent dans un monde inconnu sans souvenir, forcés de s’adapter, lutter et trouver leur place au sein d’une communauté d’aventuriers.",
+  reviewHtml: "",
+  stars: 0,
+  shops: [
+    { name: "Manganim", url: "https://manganim.fr/search?q=Grimgar+fantasy", logo: "" },
+    { name: "Fnac",     url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=grimgar+tome", logo: "" },
+    { name: "Amazon",   url: "https://www.amazon.fr/s?k=grimgar+manga", logo: "" }
+  ],
+  streaming: [],  // anime disponible mais dépend des régions
+  live: []
+},
+{
+  slug: "no-game-no-life",
+  title: "No Game No Life",
+  category: "manga",
+  tags: "Isekai · Jeux · Fantaisie",
+  cover: "https://manga-insight-pro.vercel.app/no-game-no-life.jpg",
+  synopsis: "Sora et Shiro, fratrie géniale des jeux, sont invoqués dans Disboard, un monde où tout est déterminé par les jeux. Ils visent à défier les dieux du nouveau monde.",
+  reviewHtml: "",
+  stars: 0,
+  shops: [
+    { name: "Manganim", url: "https://manganim.fr/search?q=No+Game+No+Life", logo: "" },
+    { name: "Fnac",     url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=no+game+no+life+tome", logo: "" },
+    { name: "Amazon",   url: "https://www.amazon.fr/s?k=no+game+no+life+manga", logo: "" }
+  ],
+  streaming: [
+    { name: "Crunchyroll", url: "https://www.crunchyroll.com/series/GR1NV2LD5/no-game-no-life", logo: "" }
+  ],
+  live: []
+},
+{
+  slug: "record-of-ragnarok",
+  title: "Record of Ragnarok",
+  category: "manga",
+  tags: "Mythologie · Combat · Tournoi",
+  cover: "https://manga-insight-pro.vercel.app/record-of-ragnarok.jpg",
+  synopsis: "Tous les 1000 ans, les dieux décident du sort de l’humanité. 13 duels sont organisés entre dieux et humains pour décider si l’humanité peut survivre.",
+  reviewHtml: "",
+  stars: 0,
+  shops: [
+    { name: "Manganim", url: "https://manganim.fr/search?q=Record+of+Ragnarok", logo: "" },
+    { name: "Fnac",     url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=record+of+ragnarok+tome", logo: "" },
+    { name: "Amazon",   url: "https://www.amazon.fr/s?k=record+of+ragnarok+manga", logo: "" }
+  ],
+  streaming: [
+    { name: "Crunchyroll", url: "https://www.crunchyroll.com/series/GRK9ZNXJQ/record-of-ragnarok", logo: "" }
+  ],
+  live: []
+},
+{
+  slug: "chainsaw-man",
+  title: "Chainsaw Man",
+  category: "manga",
+  tags: "Shōnen · Démons · Horreur · Action",
+  cover: "https://manga-insight-pro.vercel.app/chainsaw-man.jpg",
+  synopsis: "Denji fusionne avec Pochita et devient Chainsaw Man pour combattre les démons tout en essayant de mener une vie “normale”.",
+  reviewHtml: "",
+  stars: 0,
+  shops: [
+    { name: "Manganim", url: "https://manganim.fr/search?q=Chainsaw+Man", logo: "" },
+    { name: "Fnac",     url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=chainsaw+man+tome", logo: "" },
+    { name: "Amazon",   url: "https://www.amazon.fr/s?k=chainsaw+man+manga", logo: "" }
+  ],
+  streaming: [
+    { name: "Crunchyroll", url: "https://www.crunchyroll.com/series/G6NV7Z5KY/chainsaw-man", logo: "" }
+  ],
+  live: []
+},
+{
+  slug: "parasyte",
+  title: "Parasyte",
+  category: "manga",
+  tags: "Horreur · Psychologie · Aliens",
+  cover: "https://manga-insight-pro.vercel.app/parasyte.jpg",
+  synopsis: "Un parasite extraterrestre occupe la main droite de Shinichi. Ensemble, ils se battent contre d’autres parasites qui menacent l’humanité.",
+  reviewHtml: "",
+  stars: 0,
+  shops: [
+    { name: "Manganim", url: "https://manganim.fr/search?q=Parasyte", logo: "" },
+    { name: "Fnac",     url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=parasyte+tome", logo: "" },
+    { name: "Amazon",   url: "https://www.amazon.fr/s?k=parasyte+manga", logo: "" }
+  ],
+  streaming: [
+    { name: "Crunchyroll", url: "https://www.crunchyroll.com/series/G4V5XW60X/parasyte-the-max", logo: "" }
+  ],
+  live: []
+},
+{
+  slug: "the-god-of-high-school",
+  title: "The God of High School",
+  category: "manga",
+  tags: "Arts martiaux · Tournoi · Action · Fantasy",
+  cover: "https://manga-insight-pro.vercel.app/the-god-of-high-school.jpg",
+  synopsis: "Jin Mori participe à un tournoi lycéen mêlant arts martiaux et forces mystiques, face à des adversaires aux pouvoirs surnaturels. Les enjeux sont divins.",
+  reviewHtml: "",
+  stars: 0,
+  shops: [
+    { name: "Manganim", url: "https://manganim.fr/search?q=The+God+of+High+School", logo: "" },
+    { name: "Fnac",     url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=the+god+of+high+school+tome", logo: "" },
+    { name: "Amazon",   url: "https://www.amazon.fr/s?k=the+god+of+high+school+manga", logo: "" }
+  ],
+  streaming: [
+    { name: "Crunchyroll", url: "https://www.crunchyroll.com/series/G4V5XW4QZ/the-god-of-high-school", logo: "" }
+  ],
+  live: []
+},
+{
+  slug: "akame-ga-kill",
+  title: "Akame ga Kill!",
+  category: "manga",
+  tags: "Action · Rébellion · Assassins · Dark Fantasy",
+  cover: "https://manga-insight-pro.vercel.app/akame-ga-kill.jpg",
+  synopsis: "Tatsumi rejoint Night Raid, un groupe d’assassins luttant contre un Empire corrompu. Entre missions meurtrières et sacrifices, il découvre la face sombre de la révolution.",
+  reviewHtml: "",
+  stars: 0,
+  shops: [
+    { name: "Manganim", url: "https://manganim.fr/search?q=Akame+ga+Kill", logo: "" },
+    { name: "Fnac", url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=akame+ga+kill+tome", logo: "" },
+    { name: "Amazon", url: "https://www.amazon.fr/s?k=akame+ga+kill+manga", logo: "" }
+  ],
+  streaming: [
+    { name: "Crunchyroll", url: "https://www.crunchyroll.com/series/G69V7G5KY/akame-ga-kill", logo: "" }
+  ],
+  live: []
+},
+{
+  slug: "akatsuki-no-yona",
+  title: "Yona, Princesse de l’Aube",
+  category: "manga",
+  tags: "Aventure · Romance · Fantasy · Voyage",
+  cover: "https://manga-insight-pro.vercel.app/yona.jpg",
+  synopsis: "Princesse Yona voit son royaume basculer dans le chaos. Trahie, elle s’exile et part en quête des quatre dragons légendaires pour reconquérir son trône.",
+  reviewHtml: "",
+  stars: 0,
+  shops: [
+    { name: "Manganim", url: "https://manganim.fr/search?q=Yona", logo: "" },
+    { name: "Fnac", url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=yona+tome", logo: "" },
+    { name: "Amazon", url: "https://www.amazon.fr/s?k=yona+princesse+manga", logo: "" }
+  ],
+  streaming: [
+    { name: "Crunchyroll", url: "https://www.crunchyroll.com/series/G69V7G5YZ/yona-of-the-dawn", logo: "" }
+  ],
+  live: []
+},
+{
+  slug: "btooom",
+  title: "Btooom!",
+  category: "manga",
+  tags: "Survie · Battle royale · Jeu vidéo",
+  cover: "https://manga-insight-pro.vercel.app/btooom.jpg",
+  synopsis: "Ryōta Sakamoto, joueur expert de Btooom!, se réveille sur une île transformée en champ de bataille où chacun doit tuer pour survivre à coups de bombes.",
+  reviewHtml: "",
+  stars: 0,
+  shops: [
+    { name: "Fnac", url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=btooom+tome", logo: "" },
+    { name: "Amazon", url: "https://www.amazon.fr/s?k=btooom+manga", logo: "" }
+  ],
+  streaming: [
+    { name: "Crunchyroll", url: "https://www.crunchyroll.com/search?from=search&q=Btooom", logo: "" }
+  ],
+  live: []
+},
+{
+  slug: "cage-of-eden",
+  title: "Cage of Eden",
+  category: "manga",
+  tags: "Survie · Île mystérieuse · Aventure",
+  cover: "https://manga-insight-pro.vercel.app/cage-of-eden.jpg",
+  synopsis: "Des lycéens échouent sur une île peuplée de créatures préhistoriques. Pour survivre, ils doivent s’unir et percer le mystère du lieu.",
+  reviewHtml: "",
+  stars: 0,
+  shops: [
+    { name: "Amazon", url: "https://www.amazon.fr/s?k=cage+of+eden+manga", logo: "" }
+  ],
+  streaming: []
+},
+{
+  slug: "deadman-wonderland",
+  title: "Deadman Wonderland",
+  category: "manga",
+  tags: "Prison · Pouvoirs · Survival Game",
+  cover: "https://manga-insight-pro.vercel.app/deadman-wonderland.jpg",
+  synopsis: "Accusé à tort du massacre de sa classe, Ganta est envoyé dans une prison-parc d’attractions où les détenus s’affrontent à mort. Il y découvre un mystérieux pouvoir du sang.",
+  reviewHtml: "",
+  stars: 0,
+  shops: [
+    { name: "Fnac", url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=deadman+wonderland+tome", logo: "" },
+    { name: "Amazon", url: "https://www.amazon.fr/s?k=deadman+wonderland+manga", logo: "" }
+  ],
+  streaming: [
+    { name: "Crunchyroll", url: "https://www.crunchyroll.com/search?q=Deadman+Wonderland", logo: "" }
+  ],
+  live: []
+},
+{
+  slug: "eden-zero",
+  title: "Edens Zero",
+  category: "manga",
+  tags: "Sci-fi · Aventure · Espace",
+  cover: "https://manga-insight-pro.vercel.app/edens-zero.jpg",
+  synopsis: "Shiki, élevé par des robots sur l’île Granbell, rejoint Rebecca et Happy pour explorer l’espace à la recherche de la déesse Mère et découvrir l’amitié.",
+  reviewHtml: "",
+  stars: 0,
+  shops: [
+    { name: "Manganim", url: "https://manganim.fr/search?q=Edens+Zero", logo: "" },
+    { name: "Fnac", url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=edens+zero+tome", logo: "" },
+    { name: "Amazon", url: "https://www.amazon.fr/s?k=edens+zero+manga", logo: "" }
+  ],
+  streaming: [
+    { name: "Netflix", url: "https://www.netflix.com/search?q=Edens%20Zero", logo: "" }
+  ],
+  live: []
+},
+{
+  slug: "fate-stay-night",
+  title: "Fate/Stay Night",
+  category: "manga",
+  tags: "Magie · Combat · Guerre du Graal",
+  cover: "https://manga-insight-pro.vercel.app/fate-stay-night.jpg",
+  synopsis: "Shirō Emiya est entraîné dans la Guerre du Saint Graal, un tournoi où mages et esprits héroïques s’affrontent pour un souhait ultime.",
+  reviewHtml: "",
+  stars: 0,
+  shops: [
+    { name: "Amazon", url: "https://www.amazon.fr/s?k=fate+stay+night+manga", logo: "" }
+  ],
+  streaming: [
+    { name: "Crunchyroll", url: "https://www.crunchyroll.com/search?q=Fate", logo: "" }
+  ],
+  live: []
+},
+{
+  slug: "goblin-nightmare",
+  title: "Goblin Nightmare",
+  category: "manga",
+  tags: "Dark Fantasy · Gobelins · Vengeance",
+  cover: "https://manga-insight-pro.vercel.app/goblin-nightmare.jpg",
+  synopsis: "Dans un univers ravagé par les gobelins, un guerrier maudit poursuit une vendetta sans fin. Chaque village libéré est une étape vers sa propre damnation.",
+  reviewHtml: "",
+  stars: 0,
+  shops: [
+    { name: "Amazon", url: "#", logo: "" }
+  ],
+  streaming: []
+},
+{
+  slug: "highschool-dxd",
+  title: "High School DxD",
+  category: "manga",
+  tags: "Écchi · Démon · Lycée · Action",
+  cover: "https://manga-insight-pro.vercel.app/highschool-dxd.jpg",
+  synopsis: "Issei Hyoudou est tué par une fille lors de son premier rendez-vous puis ressuscité en démon par Rias Gremory. Il entre alors dans un monde de démons et d’anges déchus.",
+  reviewHtml: "",
+  stars: 0,
+  shops: [
+    { name: "Amazon", url: "https://www.amazon.fr/s?k=high+school+dxd+manga", logo: "" }
+  ],
+  streaming: [
+    { name: "Crunchyroll", url: "https://www.crunchyroll.com/search?q=High%20School%20DxD", logo: "" }
+  ],
+  live: []
+},
+{
+  slug: "isekai-cheat-magician",
+  title: "Isekai Cheat Magician",
+  category: "manga",
+  tags: "Isekai · Magie · Duo",
+  cover: "https://manga-insight-pro.vercel.app/isekai-cheat-magician.jpg",
+  synopsis: "Taichi et Rin sont transportés dans un autre monde et découvrent des pouvoirs magiques extraordinaires. Ils doivent apprendre à les maîtriser et à survivre aux complots.",
+  reviewHtml: "",
+  stars: 0,
+  shops: [
+    { name: "Amazon", url: "https://www.amazon.fr/s?k=isekai+cheat+magician+manga", logo: "" }
+  ],
+  streaming: [
+    { name: "Crunchyroll", url: "https://www.crunchyroll.com/search?q=Isekai+Cheat+Magician", logo: "" }
+  ],
+  live: []
+},
+{
+  slug: "kaiju-no-8",
+  title: "Kaiju No. 8",
+  category: "manga",
+  tags: "Monstres · Armée · Transformation · Action",
+  cover: "https://manga-insight-pro.vercel.app/kaiju-no-8.jpg",
+  synopsis: "Kafka Hibino, employé du nettoyage des Kaijus, rêve d’intégrer les Forces de Défense. Après un incident, il obtient le pouvoir de se transformer en monstre et décide de combattre pour protéger l’humanité.",
+  reviewHtml: "",
+  stars: 0,
+  shops: [
+    { name: "Manganim", url: "https://manganim.fr/search?q=Kaiju+No+8", logo: "" },
+    { name: "Fnac", url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=kaiju+no+8+tome", logo: "" },
+    { name: "Amazon", url: "https://www.amazon.fr/s?k=kaiju+no+8", logo: "" }
+  ],
+  streaming: [
+    { name: "Crunchyroll", url: "https://www.crunchyroll.com/search?q=Kaiju%20No.%208", logo: "" }
+  ],
+  live: []
+},
+{
+  slug: "kengan-ashura",
+  title: "Kengan Ashura",
+  category: "manga",
+  tags: "Combat · Tournoi · Entreprises",
+  cover: "https://manga-insight-pro.vercel.app/kengan-ashura.jpg",
+  synopsis: "Tokita Ohma participe à des combats clandestins où les entreprises engagent des combattants pour régler leurs différends. Chaque affrontement est un duel de styles et de stratégies.",
+  reviewHtml: "",
+  stars: 0,
+  shops: [
+    { name: "Amazon", url: "https://www.amazon.fr/s?k=kengan+ashura+manga", logo: "" }
+  ],
+  streaming: [
+    { name: "Netflix", url: "https://www.netflix.com/search?q=Kengan%20Ashura", logo: "" }
+  ],
+  live: []
+},
+{
+  slug: "kenshin",
+  title: "Kenshin le Vagabond",
+  category: "manga",
+  tags: "Samouraï · Historique · Rédemption",
+  cover: "https://manga-insight-pro.vercel.app/kenshin.jpg",
+  synopsis: "Ancien assassin surnommé Battosai, Kenshin parcourt le Japon pour expier ses crimes. Il protège les innocents avec un sabre à lame inversée.",
+  reviewHtml: "",
+  stars: 0,
+  shops: [
+    { name: "Fnac", url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=kenshin+tome", logo: "" },
+    { name: "Amazon", url: "https://www.amazon.fr/s?k=kenshin+manga", logo: "" }
+  ],
+  streaming: [
+    { name: "Crunchyroll", url: "https://www.crunchyroll.com/search?q=Kenshin", logo: "" }
+  ],
+  live: []
+},
+{
+  slug: "kings-game",
+  title: "King’s Game",
+  category: "manga",
+  tags: "Survie · Jeu mortel · Lycée",
+  cover: "https://manga-insight-pro.vercel.app/kings-game.jpg",
+  synopsis: "Une classe reçoit des ordres d’un mystérieux ‘Roi’. Chaque ordre doit être exécuté sous peine de mort. Nobuaki tente de briser la malédiction du jeu.",
+  reviewHtml: "",
+  stars: 0,
+  shops: [
+    { name: "Amazon", url: "https://www.amazon.fr/s?k=king%27s+game+manga", logo: "" }
+  ],
+  streaming: []
+},
+{
+  slug: "kuroshitsuji",
+  title: "Black Butler (Kuroshitsuji)",
+  category: "manga",
+  tags: "Gothique · Mystère · Démon",
+  cover: "https://manga-insight-pro.vercel.app/kuroshitsuji.jpg",
+  synopsis: "Ciel Phantomhive, jeune comte anglais, a scellé un pacte avec Sebastian, son majordome démoniaque. Ensemble, ils résolvent les affaires sombres du Londres victorien.",
+  reviewHtml: "",
+  stars: 0,
+  shops: [
+    { name: "Manganim", url: "https://manganim.fr/search?q=Black+Butler", logo: "" },
+    { name: "Fnac", url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=black+butler+tome", logo: "" },
+    { name: "Amazon", url: "https://www.amazon.fr/s?k=black+butler+manga", logo: "" }
+  ],
+  streaming: [
+    { name: "Crunchyroll", url: "https://www.crunchyroll.com/fr/series/GRDV5EN6Y/black-butler", logo: "" }
+  ],
+  live: []
+},
+{
+  slug: "magister-negi-magi",
+  title: "Negima! Magister Negi Magi",
+  category: "manga",
+  tags: "Magie · Comédie · École",
+  cover: "https://manga-insight-pro.vercel.app/negima.jpg",
+  synopsis: "Negi Springfield, magicien de 10 ans, devient professeur d’une classe de 31 filles dans un collège japonais tout en poursuivant ses études de magie et ses missions secrètes.",
+  reviewHtml: "",
+  stars: 0,
+  shops: [
+    { name: "Amazon", url: "https://www.amazon.fr/s?k=negima+manga", logo: "" }
+  ],
+  streaming: []
+},
+{
+  slug: "magi",
+  title: "Magi: The Labyrinth of Magic",
+  category: "manga",
+  tags: "Aventure · Magie · Mille et une nuits",
+  cover: "https://manga-insight-pro.vercel.app/magi.jpg",
+  synopsis: "Aladdin et Alibaba explorent des donjons mystérieux remplis de trésors et de djinns. Leurs choix influenceront l’équilibre du monde.",
+  reviewHtml: "",
+  stars: 0,
+  shops: [
+    { name: "Fnac", url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=magi+tome", logo: "" },
+    { name: "Amazon", url: "https://www.amazon.fr/s?k=magi+manga", logo: "" }
+  ],
+  streaming: [
+    { name: "Netflix", url: "https://www.netflix.com/search?q=Magi", logo: "" },
+    { name: "Crunchyroll", url: "https://www.crunchyroll.com/search?q=Magi", logo: "" }
+  ],
+  live: []
+},
+{
+  slug: "monster-musume",
+  title: "Monster Musume",
+  category: "manga",
+  tags: "Comédie · Romance · Monstres",
+  cover: "https://manga-insight-pro.vercel.app/monster-musume.jpg",
+  synopsis: "Dans un Japon où humains et créatures mythiques cohabitent, Kimihito se retrouve malgré lui à héberger plusieurs demi-humaines aux caractères bien trempés.",
+  reviewHtml: "",
+  stars: 0,
+  shops: [
+    { name: "Amazon", url: "https://www.amazon.fr/s?k=monster+musume+manga", logo: "" }
+  ],
+  streaming: [
+    { name: "Crunchyroll", url: "https://www.crunchyroll.com/search?q=Monster%20Musume", logo: "" }
+  ],
+  live: []
+},
+{
+  slug: "overlord",
+  title: "Overlord",
+  category: "manga",
+  tags: "Isekai · Guilde · Non-mort",
+  cover: "https://manga-insight-pro.vercel.app/overlord.jpg",
+  synopsis: "Momonga reste connecté dans le jeu Yggdrasil lors de sa fermeture et se retrouve coincé dans son avatar de seigneur mort-vivant. Il décide d’explorer et de dominer ce nouveau monde.",
+  reviewHtml: "",
+  stars: 0,
+  shops: [
+    { name: "Amazon", url: "https://www.amazon.fr/s?k=overlord+manga", logo: "" }
+  ],
+  streaming: [
+    { name: "Crunchyroll", url: "https://www.crunchyroll.com/search?q=Overlord", logo: "" },
+    { name: "Netflix", url: "https://www.netflix.com/search?q=Overlord", logo: "" }
+  ],
+  live: []
+},
+{
+  slug: "psycho-pass",
+  title: "Psycho-Pass",
+  category: "manga",
+  tags: "Futur · Thriller · Cyberpunk",
+  cover: "https://manga-insight-pro.vercel.app/psycho-pass.jpg",
+  synopsis: "Dans un futur où la criminalité est prédite par le système Sibyl, Akane Tsunemori rejoint la police et découvre les failles de ce système de justice préventive.",
+  reviewHtml: "",
+  stars: 0,
+  shops: [
+    { name: "Amazon", url: "https://www.amazon.fr/s?k=psycho+pass+manga", logo: "" }
+  ],
+  streaming: [
+    { name: "Crunchyroll", url: "https://www.crunchyroll.com/search?q=Psycho-Pass", logo: "" }
+  ],
+  live: []
+},
+{
+  slug: "radiant",
+  title: "Radiant",
+  category: "manga",
+  tags: "Magie · Aventure · Sorciers",
+  cover: "https://manga-insight-pro.vercel.app/radiant.jpg",
+  synopsis: "Seth, un jeune sorcier contaminé par les Némésis, cherche à détruire leur nid d’origine, Radiant, tout en affrontant l’Inquisition et les préjugés.",
+  reviewHtml: "",
+  stars: 0,
+  shops: [
+    { name: "Manganim", url: "https://manganim.fr/search?q=Radiant", logo: "" },
+    { name: "Fnac", url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=radiant+tome", logo: "" },
+    { name: "Amazon", url: "https://www.amazon.fr/s?k=radiant+manga", logo: "" }
+  ],
+  streaming: [
+    { name: "Crunchyroll", url: "https://www.crunchyroll.com/search?q=Radiant", logo: "" }
+  ],
+  live: []
+},
+{
+  slug: "re-zero",
+  title: "Re:Zero − Starting Life in Another World",
+  category: "manga",
+  tags: "Isekai · Boucle temporelle · Drame",
+  cover: "https://manga-insight-pro.vercel.app/re-zero.jpg",
+  synopsis: "Subaru est transporté dans un autre monde et découvre qu’il revient à un point précis chaque fois qu’il meurt. Il doit utiliser cette malédiction pour sauver ceux qu’il aime.",
+  reviewHtml: "",
+  stars: 0,
+  shops: [
+    { name: "Amazon", url: "https://www.amazon.fr/s?k=re+zero+manga", logo: "" }
+  ],
+  streaming: [
+    { name: "Crunchyroll", url: "https://www.crunchyroll.com/search?q=Re%3AZero", logo: "" }
+  ],
+  live: []
+},
+{
+  slug: "rosario-vampire",
+  title: "Rosario + Vampire",
+  category: "manga",
+  tags: "Comédie · Harem · Monstres · Lycée",
+  cover: "https://manga-insight-pro.vercel.app/rosario-vampire.jpg",
+  synopsis: "Tsukune intègre par erreur un lycée pour monstres. Il rencontre Moka, une vampire, et tente de cacher son identité d’humain tout en survivant aux élèves surnaturels.",
+  reviewHtml: "",
+  stars: 0,
+  shops: [
+    { name: "Amazon", url: "https://www.amazon.fr/s?k=rosario+vampire+manga", logo: "" }
+  ],
+  streaming: [
+    { name: "Crunchyroll", url: "https://www.crunchyroll.com/search?q=Rosario%20Vampire", logo: "" }
+  ],
+  live: []
+},
+{
+  slug: "seven-deadly-sins",
+  title: "The Seven Deadly Sins",
+  category: "manga",
+  tags: "Fantasy · Chevaliers · Péchés capitaux",
+  cover: "https://manga-insight-pro.vercel.app/seven-deadly-sins.jpg",
+  synopsis: "La princesse Elizabeth recherche les Seven Deadly Sins, chevaliers accusés de trahison, pour sauver son royaume. Meliodas, leur chef, cache un passé redoutable.",
+  reviewHtml: "",
+  stars: 0,
+  shops: [
+    { name: "Manganim", url: "https://manganim.fr/search?q=Seven+Deadly+Sins", logo: "" },
+    { name: "Fnac", url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=seven+deadly+sins+tome", logo: "" },
+    { name: "Amazon", url: "https://www.amazon.fr/s?k=seven+deadly+sins+manga", logo: "" }
+  ],
+  streaming: [
+    { name: "Netflix", url: "https://www.netflix.com/search?q=Seven%20Deadly%20Sins", logo: "" }
+  ],
+  live: []
+},
+{
+  slug: "shield-hero",
+  title: "The Rising of the Shield Hero",
+  category: "manga",
+  tags: "Isekai · Bouclier · Réhabilitation",
+  cover: "https://manga-insight-pro.vercel.app/shield-hero.jpg",
+  synopsis: "Naofumi, invoqué comme Héros du Bouclier, est trahi et rejeté. Il doit se reconstruire et protéger le royaume avec l’aide de Raphtalia.",
+  reviewHtml: "",
+  stars: 0,
+  shops: [
+    { name: "Amazon", url: "https://www.amazon.fr/s?k=the+rising+of+the+shield+hero+manga", logo: "" }
+  ],
+  streaming: [
+    { name: "Crunchyroll", url: "https://www.crunchyroll.com/search?q=Shield%20Hero", logo: "" }
+  ],
+  live: []
+},
+{
+  slug: "shaman-king",
+  title: "Shaman King",
+  category: "manga",
+  tags: "Esprits · Tournoi · Héritage",
+  cover: "https://manga-insight-pro.vercel.app/shaman-king.jpg",
+  synopsis: "Yoh Asakura, shaman capable de communiquer avec les esprits, participe au Shaman Fight pour devenir le Shaman King et unir le monde des vivants et des morts.",
+  reviewHtml: "",
+  stars: 0,
+  shops: [
+    { name: "Manganim", url: "https://manganim.fr/search?q=Shaman+King", logo: "" },
+    { name: "Fnac", url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=shaman+king+tome", logo: "" },
+    { name: "Amazon", url: "https://www.amazon.fr/s?k=shaman+king+manga", logo: "" }
+  ],
+  streaming: [
+    { name: "Netflix", url: "https://www.netflix.com/search?q=Shaman%20King", logo: "" }
+  ],
+  live: []
+},
+{
+  slug: "sk8-the-infinity",
+  title: "SK8 the Infinity",
+  category: "manga",
+  tags: "Skateboard · Compétition · Amitié",
+  cover: "https://manga-insight-pro.vercel.app/sk8-the-infinity.jpg",
+  synopsis: "Reki et Langa participent à des courses de skateboard clandestines appelées ‘S’. Vitesse, style et rivalités s’enchaînent sur les rampes.",
+  reviewHtml: "",
+  stars: 0,
+  shops: [
+    { name: "Amazon", url: "https://www.amazon.fr/s?k=sk8+the+infinity+manga", logo: "" }
+  ],
+  streaming: [
+    { name: "Crunchyroll", url: "https://www.crunchyroll.com/search?q=SK8%20the%20Infinity", logo: "" }
+  ],
+  live: []
+},
+{
+  slug: "so-im-a-spider-so-what",
+  title: "So I’m a Spider, So What?",
+  category: "manga",
+  tags: "Isekai · Monstre · Survie",
+  cover: "https://manga-insight-pro.vercel.app/so-im-a-spider.jpg",
+  synopsis: "Une lycéenne se réincarne en araignée dans un donjon. Elle doit survivre, évoluer et comprendre les mystères de ce nouveau monde.",
+  reviewHtml: "",
+  stars: 0,
+  shops: [
+    { name: "Amazon", url: "https://www.amazon.fr/s?k=so+i%27m+a+spider+manga", logo: "" }
+  ],
+  streaming: [
+    { name: "Crunchyroll", url: "https://www.crunchyroll.com/search?q=So%20I%27m%20a%20Spider", logo: "" }
+  ],
+  live: []
+},
+{
+  slug: "steins-gate",
+  title: "Steins;Gate",
+  category: "manga",
+  tags: "Voyage temporel · Science · Thriller",
+  cover: "https://manga-insight-pro.vercel.app/steins-gate.jpg",
+  synopsis: "Un groupe d’amis découvre comment envoyer des messages dans le passé. Chaque modification change le présent et entraîne des conséquences dramatiques.",
+  reviewHtml: "",
+  stars: 0,
+  shops: [
+    { name: "Amazon", url: "https://www.amazon.fr/s?k=steins+gate+manga", logo: "" }
+  ],
+  streaming: [
+    { name: "Crunchyroll", url: "https://www.crunchyroll.com/search?q=Steins%3BGate", logo: "" }
+  ],
+  live: []
+},
+{
+  slug: "trigun",
+  title: "Trigun",
+  category: "manga",
+  tags: "Western · Sci-fi · Chasseur de primes",
+  cover: "https://manga-insight-pro.vercel.app/trigun.jpg",
+  synopsis: "Vash the Stampede est un tireur d’élite au grand cœur recherché pour une prime énorme. Sur une planète désertique, il tente d’éviter les bains de sang.",
+  reviewHtml: "",
+  stars: 0,
+  shops: [
+    { name: "Fnac", url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=trigun+tome", logo: "" },
+    { name: "Amazon", url: "https://www.amazon.fr/s?k=trigun+manga", logo: "" }
+  ],
+  streaming: [
+    { name: "Crunchyroll", url: "https://www.crunchyroll.com/search?q=Trigun", logo: "" }
+  ],
+  live: []
+},
+{
+  slug: "trinity-seven",
+  title: "Trinity Seven",
+  category: "manga",
+  tags: "Magie · Harem · Académie",
+  cover: "https://manga-insight-pro.vercel.app/trinity-seven.jpg",
+  synopsis: "Arata Kasuga voit son village détruit par un phénomène magique. Pour sauver sa cousine, il intègre l’académie royale et rencontre les ‘Trinity Seven’, sept puissantes magiciennes.",
+  reviewHtml: "",
+  stars: 0,
+  shops: [
+    { name: "Amazon", url: "https://www.amazon.fr/s?k=trinity+seven+manga", logo: "" }
+  ],
+  streaming: [
+    { name: "Crunchyroll", url: "https://www.crunchyroll.com/search?q=Trinity%20Seven", logo: "" }
+  ],
+  live: []
+},
+{
+  slug: "akame-ga-kill",
+  title: "Akame ga Kill!",
+  category: "manga",
+  tags: "Action · Rébellion · Assassins",
+  cover: "https://manga-insight-pro.vercel.app/akame-ga-kill.jpg",
+  synopsis: "Tatsumi rejoint Night Raid, un groupe d’assassins luttant contre un empire corrompu. Chaque combat se paie cher et l’espoir d’un monde meilleur coûte des vies.",
+  reviewHtml: "",
+  stars: 0,
+  shops: [
+    { name: "Manganim", url: "https://manganim.fr/search?q=Akame+ga+Kill", logo: "" },
+    { name: "Fnac", url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=akame+ga+kill+tome", logo: "" },
+    { name: "Amazon", url: "https://www.amazon.fr/s?k=akame+ga+kill+manga", logo: "" }
+  ],
+  streaming: [
+    { name: "Crunchyroll", url: "https://www.crunchyroll.com/search?q=Akame%20ga%20Kill", logo: "" }
+  ],
+  live: []
+},
+{
+  slug: "angel-beats",
+  title: "Angel Beats!",
+  category: "manga",
+  tags: "Au-delà · Lycée · Drame",
+  cover: "https://manga-insight-pro.vercel.app/angel-beats.jpg",
+  synopsis: "Dans un lycée de l’au-delà, Otonashi rejoint un groupe rebelle dirigé par Yuri pour défier une mystérieuse ‘Ange’. Entre humour et drame, chaque élève doit affronter son passé.",
+  reviewHtml: "",
+  stars: 0,
+  shops: [
+    { name: "Amazon", url: "https://www.amazon.fr/s?k=angel+beats+manga", logo: "" }
+  ],
+  streaming: [
+    { name: "Crunchyroll", url: "https://www.crunchyroll.com/search?q=Angel%20Beats", logo: "" }
+  ],
+  live: []
+},
+{
+  slug: "bastard",
+  title: "Bastard!!",
+  category: "manga",
+  tags: "Dark Fantasy · Heavy Metal · Magie",
+  cover: "https://manga-insight-pro.vercel.app/bastard.jpg",
+  synopsis: "Dans un monde médiéval où règnent magie et métal, Dark Schneider, puissant sorcier, est libéré pour sauver un royaume mais son caractère tyrannique menace tout.",
+  reviewHtml: "",
+  stars: 0,
+  shops: [
+    { name: "Fnac", url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=bastard+manga", logo: "" },
+    { name: "Amazon", url: "https://www.amazon.fr/s?k=bastard+manga", logo: "" }
+  ],
+  streaming: [
+    { name: "Netflix", url: "https://www.netflix.com/search?q=Bastard", logo: "" }
+  ],
+  live: []
+},
+{
+  slug: "beelzebub",
+  title: "Beelzebub",
+  category: "manga",
+  tags: "Comédie · Démon · Lycée",
+  cover: "https://manga-insight-pro.vercel.app/beelzebub.jpg",
+  synopsis: "Oga Tatsumi, délinquant, devient le ‘père’ du bébé Beelzebub, héritier du roi des démons. Il doit l’élever tout en gérant son quotidien de bagarres lycéennes.",
+  reviewHtml: "",
+  stars: 0,
+  shops: [
+    { name: "Manganim", url: "https://manganim.fr/search?q=Beelzebub", logo: "" },
+    { name: "Fnac", url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=beelzebub+tome", logo: "" },
+    { name: "Amazon", url: "https://www.amazon.fr/s?k=beelzebub+manga", logo: "" }
+  ],
+  streaming: [
+    { name: "Crunchyroll", url: "https://www.crunchyroll.com/search?q=Beelzebub", logo: "" }
+  ],
+  live: []
+},
+{
+  slug: "black-bullet",
+  title: "Black Bullet",
+  category: "manga",
+  tags: "Post-apo · Armes vivantes · Action",
+  cover: "https://manga-insight-pro.vercel.app/black-bullet.jpg",
+  synopsis: "Dans un futur envahi par des créatures appelées Gastrea, les ‘Enfants maudits’ aux pouvoirs spéciaux combattent aux côtés de leurs protecteurs pour sauver l’humanité.",
+  reviewHtml: "",
+  stars: 0,
+  shops: [
+    { name: "Amazon", url: "https://www.amazon.fr/s?k=black+bullet+manga", logo: "" }
+  ],
+  streaming: [
+    { name: "Crunchyroll", url: "https://www.crunchyroll.com/search?q=Black%20Bullet", logo: "" }
+  ],
+  live: []
+},
+{
+  slug: "black-lagoon",
+  title: "Black Lagoon",
+  category: "manga",
+  tags: "Action · Mafia · Pirates modernes",
+  cover: "https://manga-insight-pro.vercel.app/black-lagoon.jpg",
+  synopsis: "Rokurou, employé japonais, est kidnappé par des mercenaires. Il rejoint leur équipage dans un monde de trafics et de fusillades en Asie du Sud-Est.",
+  reviewHtml: "",
+  stars: 0,
+  shops: [
+    { name: "Fnac", url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=black+lagoon+tome", logo: "" },
+    { name: "Amazon", url: "https://www.amazon.fr/s?k=black+lagoon+manga", logo: "" }
+  ],
+  streaming: [
+    { name: "Crunchyroll", url: "https://www.crunchyroll.com/search?q=Black%20Lagoon", logo: "" }
+  ],
+  live: []
+},
+{
+  slug: "blame",
+  title: "Blame!",
+  category: "manga",
+  tags: "Sci-fi · Cyberpunk · Exploration",
+  cover: "https://manga-insight-pro.vercel.app/blame.jpg",
+  synopsis: "Dans un futur lointain, Killy parcourt une gigantesque mégastructure à la recherche du gène d’accès au réseau. Silence, architecture titanesque et solitude l’accompagnent.",
+  reviewHtml: "",
+  stars: 0,
+  shops: [
+    { name: "Fnac", url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=blame+manga", logo: "" },
+    { name: "Amazon", url: "https://www.amazon.fr/s?k=blame+manga", logo: "" }
+  ],
+  streaming: [
+    { name: "Netflix", url: "https://www.netflix.com/search?q=Blame", logo: "" }
+  ],
+  live: []
+},
+{
+  slug: "blood-lad",
+  title: "Blood Lad",
+  category: "manga",
+  tags: "Comédie · Vampire · Action",
+  cover: "https://manga-insight-pro.vercel.app/blood-lad.jpg",
+  synopsis: "Staz, vampire otaku, règne sur un quartier du monde des démons. Quand une humaine meurt dans son territoire, il promet de la ressusciter.",
+  reviewHtml: "",
+  stars: 0,
+  shops: [
+    { name: "Manganim", url: "https://manganim.fr/search?q=Blood+Lad", logo: "" },
+    { name: "Fnac", url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=blood+lad+tome", logo: "" },
+    { name: "Amazon", url: "https://www.amazon.fr/s?k=blood+lad+manga", logo: "" }
+  ],
+  streaming: [
+    { name: "Crunchyroll", url: "https://www.crunchyroll.com/search?q=Blood%20Lad", logo: "" }
+  ],
+  live: []
+},
+{
+  slug: "bungou-stray-dogs",
+  title: "Bungou Stray Dogs",
+  category: "manga",
+  tags: "Pouvoirs · Enquête · Organisation",
+  cover: "https://manga-insight-pro.vercel.app/bungou-stray-dogs.jpg",
+  synopsis: "Atsushi, orphelin affamé, rencontre Dazai et Kunikida, membres d’une agence d’investigation composée d’individus aux dons surnaturels. Il y découvre complots et secrets.",
+  reviewHtml: "",
+  stars: 0,
+  shops: [
+    { name: "Manganim", url: "https://manganim.fr/search?q=Bungou+Stray+Dogs", logo: "" },
+    { name: "Fnac", url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=bungou+stray+dogs+tome", logo: "" },
+    { name: "Amazon", url: "https://www.amazon.fr/s?k=bungou+stray+dogs+manga", logo: "" }
+  ],
+  streaming: [
+    { name: "Crunchyroll", url: "https://www.crunchyroll.com/search?q=Bungou%20Stray%20Dogs", logo: "" }
+  ],
+  live: []
+},
+{
+  slug: "coppelion",
+  title: "Coppelion",
+  category: "manga",
+  tags: "Post-apo · Tokyo · Unités spéciales",
+  cover: "https://manga-insight-pro.vercel.app/coppelion.jpg",
+  synopsis: "2036 : Tokyo est contaminée après un accident nucléaire. Trois lycéennes génétiquement modifiées et immunisées sont envoyées secourir les survivants.",
+  stars: 0,
+  shops: [
+    { name: "Amazon", url: "https://www.amazon.fr/s?k=coppelion+manga", logo: "" }
+  ],
+  streaming: [
+    { name: "Crunchyroll", url: "https://www.crunchyroll.com/search?q=Coppelion", logo: "" }
+  ],
+  live: []
+},
+{
+  slug: "deadman-wonderland",
+  title: "Deadman Wonderland",
+  category: "manga",
+  tags: "Prison · Pouvoirs · Survival",
+  cover: "https://manga-insight-pro.vercel.app/deadman-wonderland.jpg",
+  synopsis: "Accusé à tort d’un massacre, Ganta est envoyé à Deadman Wonderland, prison-parc d’attraction où les détenus s’affrontent dans des jeux mortels.",
+  stars: 0,
+  shops: [
+    { name: "Fnac", url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=deadman+wonderland+tome", logo: "" },
+    { name: "Amazon", url: "https://www.amazon.fr/s?k=deadman+wonderland+manga", logo: "" }
+  ],
+  streaming: [
+    { name: "Crunchyroll", url: "https://www.crunchyroll.com/search?q=Deadman%20Wonderland", logo: "" }
+  ],
+  live: []
+},
+{
+  slug: "devilman-crybaby",
+  title: "Devilman Crybaby",
+  category: "manga",
+  tags: "Démons · Apocalypse · Tragédie",
+  cover: "https://manga-insight-pro.vercel.app/devilman.jpg",
+  synopsis: "Akira fusionne avec un démon pour combattre ses semblables et protéger l’humanité. Mais la frontière entre bien et mal s’efface rapidement.",
+  stars: 0,
+  shops: [
+    { name: "Amazon", url: "https://www.amazon.fr/s?k=devilman+manga", logo: "" }
+  ],
+  streaming: [
+    { name: "Netflix", url: "https://www.netflix.com/search?q=Devilman%20Crybaby", logo: "" }
+  ],
+  live: []
+},
+{
+  slug: "dororo",
+  title: "Dororo",
+  category: "manga",
+  tags: "Historique · Démon · Voyage",
+  cover: "https://manga-insight-pro.vercel.app/dororo.jpg",
+  synopsis: "Hyakkimaru, né sans membres ni organes, les récupère en exterminant les démons qui les détiennent, accompagné du jeune voleur Dororo.",
+  stars: 0,
+  shops: [
+    { name: "Amazon", url: "https://www.amazon.fr/s?k=dororo+manga", logo: "" }
+  ],
+  streaming: [
+    { name: "Prime Video", url: "https://www.primevideo.com/search/ref=atv_nb_sr?phrase=Dororo", logo: "" }
+  ],
+  live: []
+},
+{
+  slug: "eden-zero",
+  title: "Edens Zero",
+  category: "manga",
+  tags: "Sci-fi · Aventure · Guildes",
+  cover: "https://manga-insight-pro.vercel.app/edens-zero.jpg",
+  synopsis: "Shiki, jeune garçon élevé par des robots, quitte sa planète pour explorer l’univers aux côtés de Rebecca et Happy, à la recherche de Mother.",
+  stars: 0,
+  shops: [
+    { name: "Manganim", url: "https://manganim.fr/search?q=Edens+Zero", logo: "" },
+    { name: "Fnac", url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=edens+zero+tome", logo: "" },
+    { name: "Amazon", url: "https://www.amazon.fr/s?k=edens+zero+manga", logo: "" }
+  ],
+  streaming: [
+    { name: "Netflix", url: "https://www.netflix.com/search?q=Edens%20Zero", logo: "" }
+  ],
+  live: []
+},
+{
+  slug: "en-en-no-shouboutai",
+  title: "En’en no Shouboutai (Fire Force)",
+  category: "manga",
+  tags: "Pompiers · Surnaturel · Action",
+  cover: "https://manga-insight-pro.vercel.app/fire-force.jpg",
+  synopsis: "Des combustions humaines spontanées transforment les victimes en infernaux. Shinra, pompier aux pieds de feu, cherche la vérité sur son passé.",
+  stars: 0,
+  shops: [
+    { name: "Manganim", url: "https://manganim.fr/search?q=Fire+Force", logo: "" },
+    { name: "Fnac", url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=fire+force+tome", logo: "" },
+    { name: "Amazon", url: "https://www.amazon.fr/s?k=fire+force+tome", logo: "" }
+  ],
+  streaming: [
+    { name: "Crunchyroll", url: "https://www.crunchyroll.com/search?q=Fire%20Force", logo: "" }
+  ],
+  live: []
+},
+{
+  slug: "hajime-no-ippo",
+  title: "Hajime no Ippo",
+  category: "manga",
+  tags: "Boxe · Sport · Shōnen",
+  cover: "https://manga-insight-pro.vercel.app/hajime-no-ippo.jpg",
+  synopsis: "Ippo, lycéen timide, découvre la boxe et s’entraîne dur pour devenir champion. Chaque match est une leçon de courage et de dépassement.",
+  stars: 0,
+  shops: [
+    { name: "Amazon", url: "https://www.amazon.fr/s?k=hajime+no+ippo+manga", logo: "" }
+  ],
+  streaming: [
+    { name: "Crunchyroll", url: "https://www.crunchyroll.com/search?q=Hajime%20no%20Ippo", logo: "" }
+  ],
+  live: []
+},
+{
+  slug: "highschool-dxd",
+  title: "Highschool DxD",
+  category: "manga",
+  tags: "Écchi · Démons · Lycée",
+  cover: "https://manga-insight-pro.vercel.app/highschool-dxd.jpg",
+  synopsis: "Issei, lycéen pervers, est tué par une fille lors de leur premier rendez-vous puis ressuscité comme démon au service de Rias Gremory.",
+  stars: 0,
+  shops: [
+    { name: "Amazon", url: "https://www.amazon.fr/s?k=highschool+dxd+manga", logo: "" }
+  ],
+  streaming: [
+    { name: "Crunchyroll", url: "https://www.crunchyroll.com/search?q=Highschool%20DxD", logo: "" }
+  ],
+  live: []
+},
+{
+  slug: "katekyo-hitman-reborn",
+  title: "Katekyo Hitman Reborn!",
+  category: "manga",
+  tags: "Mafia · Comédie · Action",
+  cover: "https://manga-insight-pro.vercel.app/katekyo-hitman-reborn.jpg",
+  synopsis: "Tsuna, collégien médiocre, apprend qu’il est héritier d’une famille mafieuse. Son tuteur, un bébé mafieux armé, le forme pour en devenir le boss.",
+  stars: 0,
+  shops: [
+    { name: "Amazon", url: "https://www.amazon.fr/s?k=katekyo+hitman+reborn+manga", logo: "" }
+  ],
+  streaming: [
+    { name: "Crunchyroll", url: "https://www.crunchyroll.com/search?q=Katekyo%20Hitman%20Reborn", logo: "" }
+  ],
+  live: []
+},
+{
+  slug: "zatch-bell",
+  title: "Zatch Bell!",
+  category: "manga",
+  tags: "Démons · Tournoi · Amitié",
+  cover: "https://manga-insight-pro.vercel.app/zatch-bell.jpg",
+  synopsis: "Kiyomaro reçoit un grimoire et rencontre Zatch, enfant démon venu gagner un tournoi pour devenir roi. Ensemble, ils affrontent d’autres duos mage/démon.",
+  stars: 0,
+  shops: [
+    { name: "Amazon", url: "https://www.amazon.fr/s?k=zatch+bell+manga", logo: "" }
+  ],
+  streaming: [
+    { name: "Crunchyroll", url: "https://www.crunchyroll.com/search?q=Zatch%20Bell", logo: "" }
+  ],
+  live: []
 }
 ]
