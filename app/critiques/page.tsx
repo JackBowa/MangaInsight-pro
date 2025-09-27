@@ -65,7 +65,7 @@ function CritiqueCard({
               img.src = `/covers/${slug}.jpg`;
             } else if (img.dataset.fallback === "slug") {
               img.dataset.fallback = "placeholder";
-              img.src = "/covers/_placeholder.jpg";
+              img.src = "/_placeholder.jpg";
             }
           }}
         />
