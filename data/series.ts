@@ -1055,7 +1055,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   title: "Vagabond",
   category: "manga",
   tags: "Samouraï · Historique · Philosophie · Duel",
-  cover: "https://manga-insight-pro.vercel.app/vagabond.jpg",
+  cover: "https://manga-insight-pro.vercel.app/vagabond.png",
   synopsis: "Libre adaptation de la vie de Musashi Miyamoto. De combats en errance, le jeune bretteur apprend la voie du sabre et de l’humilité. Chaque duel interroge le sens de la force.",
   reviewHtml: "",
   stars: 0,
