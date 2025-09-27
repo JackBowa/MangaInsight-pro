@@ -579,11 +579,19 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   title: "Berserk",
   category: "manga",
   tags: "Dark Fantasy · Tragédie · Épée · Destin",
-  cover: "/berserk.jpg",
-  synopsis: `Guts, mercenaire marqué par la fatalité, traverse un monde ravagé par monstres et trahisons. Sa quête de vengeance croise celle d’un empire du mal. L’espoir subsiste au fil du fer et de la camaraderie. Une odyssée violente et mythique.`,
+  cover: "/covers/berserk.jpg",
+  synopsis: "Guts, mercenaire marqué par la fatalité, traverse un monde ravagé par monstres et trahisons. Sa quête de vengeance croise celle d’un empire du mal. L’espoir subsiste au fil du fer et de la camaraderie. Une odyssée violente et mythique.",
   reviewHtml: "",
-  shops: [],
-  streaming: [],
+  stars: 0,
+  shops: [
+    { name: "Manganim", url: "https://manganim.fr/search?q=Berserk", logo: "https://manganim.fr/cdn/shop/files/logo-manganim-header_180x.png?v=1672862594" },
+    { name: "Fnac",     url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=berserk+manga", logo: "https://cdn.iconscout.com/icon/free/png-256/free-fnac-3521434-2944878.png" },
+    { name: "Amazon",   url: "https://www.amazon.fr/s?k=berserk+manga", logo: "https://www.1min30.com/wp-content/uploads/2017/12/logo-amazon-1.jpg" }
+  ],
+  streaming: [
+    { name: "Crunchyroll", url: "https://www.crunchyroll.com/fr/search?q=Berserk", logo: "https://upload.wikimedia.org/wikipedia/commons/f/fc/Crunchyroll_logo_2018_vertical.png" },
+    { name: "Netflix",     url: "https://www.netflix.com/search?q=Berserk",        logo: "https://images.ctfassets.net/y2ske730sjqp/5QQ9SVIdc1tmkqrtFnG9U1/de758bba0f65dcc1c6bc1f31f161003d/BrandAssets_Logos_02-NSymbol.jpg?w=940" }
+  ],
   live: []
 },
 {
@@ -591,11 +599,19 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   title: "Black Clover",
   category: "manga",
   tags: "Shōnen · Magie · Rivalité · Dépassement",
-  cover: "/black-clover.jpg",
-  synopsis: `Né sans magie, Asta rêve pourtant de devenir Empereur-Mage. Avec son grimoire anti-magie et la rivalité de Yuno, il défie un monde qui le croit impuissant. Missions périlleuses et complots démoniaques s’enchaînent. La persévérance devient son arme absolue.`,
+  cover: "/covers/black-clover.jpg",
+  synopsis: "Né sans magie, Asta rêve pourtant de devenir Empereur-Mage. Avec son grimoire anti-magie et la rivalité de Yuno, il défie un monde qui le croit impuissant. Missions périlleuses et complots démoniaques s’enchaînent. La persévérance devient son arme absolue.",
   reviewHtml: "",
-  shops: [],
-  streaming: [],
+  stars: 0,
+  shops: [
+    { name: "Manganim", url: "https://manganim.fr/search?q=Black+Clover", logo: "https://manganim.fr/cdn/shop/files/logo-manganim-header_180x.png?v=1672862594" },
+    { name: "Fnac",     url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=black+clover+tome", logo: "https://cdn.iconscout.com/icon/free/png-256/free-fnac-3521434-2944878.png" },
+    { name: "Amazon",   url: "https://www.amazon.fr/s?k=black+clover+tome",        logo: "https://www.1min30.com/wp-content/uploads/2017/12/logo-amazon-1.jpg" }
+  ],
+  streaming: [
+    { name: "Crunchyroll", url: "https://www.crunchyroll.com/fr/search?q=Black%20Clover", logo: "https://upload.wikimedia.org/wikipedia/commons/f/fc/Crunchyroll_logo_2018_vertical.png" },
+    { name: "Netflix",     url: "https://www.netflix.com/search?q=Black%20Clover",        logo: "https://images.ctfassets.net/y2ske730sjqp/5QQ9SVIdc1tmkqrtFnG9U1/de758bba0f65dcc1c6bc1f31f161003d/BrandAssets_Logos_02-NSymbol.jpg?w=940" }
+  ],
   live: []
 },
 {
@@ -603,11 +619,19 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   title: "Blue Exorcist",
   category: "manga",
   tags: "Exorcisme · Démon · Lycée · Action",
-  cover: "/blue-exorcist.jpg",
-  synopsis: `Rin découvre qu’il est le fils de Satan. Décidé à lutter contre son héritage, il rejoint une académie d’exorcistes. Entre fraternité et tentations, il forge sa propre voie. Le feu bleu n’est pas une fatalité.`,
+  cover: "/covers/blue-exorcist.jpg",
+  synopsis: "Rin découvre qu’il est le fils de Satan. Décidé à lutter contre son héritage, il rejoint une académie d’exorcistes. Entre fraternité et tentations, il forge sa propre voie. Le feu bleu n’est pas une fatalité.",
   reviewHtml: "",
-  shops: [],
-  streaming: [],
+  stars: 0,
+  shops: [
+    { name: "Manganim", url: "https://manganim.fr/search?q=Blue+Exorcist", logo: "https://manganim.fr/cdn/shop/files/logo-manganim-header_180x.png?v=1672862594" },
+    { name: "Fnac",     url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=blue+exorcist+tome", logo: "https://cdn.iconscout.com/icon/free/png-256/free-fnac-3521434-2944878.png" },
+    { name: "Amazon",   url: "https://www.amazon.fr/s?k=blue+exorcist+tome",        logo: "https://www.1min30.com/wp-content/uploads/2017/12/logo-amazon-1.jpg" }
+  ],
+  streaming: [
+    { name: "Crunchyroll", url: "https://www.crunchyroll.com/fr/search?q=Blue%20Exorcist", logo: "https://upload.wikimedia.org/wikipedia/commons/f/fc/Crunchyroll_logo_2018_vertical.png" },
+    { name: "Netflix",     url: "https://www.netflix.com/search?q=Blue%20Exorcist",        logo: "https://images.ctfassets.net/y2ske730sjqp/5QQ9SVIdc1tmkqrtFnG9U1/de758bba0f65dcc1c6bc1f31f161003d/BrandAssets_Logos_02-NSymbol.jpg?w=940" }
+  ],
   live: []
 },
 {
@@ -615,11 +639,18 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   title: "Claymore",
   category: "manga",
   tags: "Dark Fantasy · Démons · Épée · Vengeance",
-  cover: "/claymore.jpg",
-  synopsis: `Des guerrières mi-humaines mi-démones traquent des créatures voraces. Clare poursuit sa vendetta dans un monde hostile et hiérarchisé. Les combats laissent place à des choix cruels. La frontière entre monstre et humain s’effrite.`,
+  cover: "/covers/claymore.jpg",
+  synopsis: "Des guerrières mi-humaines mi-démones traquent des créatures voraces. Clare poursuit sa vendetta dans un monde hostile et hiérarchisé. Les combats laissent place à des choix cruels. La frontière entre monstre et humain s’effrite.",
   reviewHtml: "",
-  shops: [],
-  streaming: [],
+  stars: 0,
+  shops: [
+    { name: "Manganim", url: "https://manganim.fr/search?q=Claymore", logo: "https://manganim.fr/cdn/shop/files/logo-manganim-header_180x.png?v=1672862594" },
+    { name: "Fnac",     url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=claymore+tome",  logo: "https://cdn.iconscout.com/icon/free/png-256/free-fnac-3521434-2944878.png" },
+    { name: "Amazon",   url: "https://www.amazon.fr/s?k=claymore+manga",          logo: "https://www.1min30.com/wp-content/uploads/2017/12/logo-amazon-1.jpg" }
+  ],
+  streaming: [
+    { name: "Crunchyroll", url: "https://www.crunchyroll.com/fr/search?q=Claymore", logo: "https://upload.wikimedia.org/wikipedia/commons/f/fc/Crunchyroll_logo_2018_vertical.png" }
+  ],
   live: []
 },
 {
@@ -627,11 +658,18 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   title: "D.Gray-man",
   category: "manga",
   tags: "Surnaturel · Organisation · Tragédie · Gothique",
-  cover: "/d-gray-man.jpg",
-  synopsis: `Allen Walker combat aux côtés d’exorcistes contre les Akuma créés par le Comte Millénaire. L’Innocence, arme divine, épuise autant qu’elle sauve. Les secrets de l’Ordre s’assombrissent. Le salut a un coût.`,
+  cover: "/covers/d-gray-man.jpg",
+  synopsis: "Allen Walker combat aux côtés d’exorcistes contre les Akuma créés par le Comte Millénaire. L’Innocence, arme divine, épuise autant qu’elle sauve. Les secrets de l’Ordre s’assombrissent. Le salut a un coût.",
   reviewHtml: "",
-  shops: [],
-  streaming: [],
+  stars: 0,
+  shops: [
+    { name: "Manganim", url: "https://manganim.fr/search?q=D.Gray-man", logo: "https://manganim.fr/cdn/shop/files/logo-manganim-header_180x.png?v=1672862594" },
+    { name: "Fnac",     url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=d+gray+man+tome",  logo: "https://cdn.iconscout.com/icon/free/png-256/free-fnac-3521434-2944878.png" },
+    { name: "Amazon",   url: "https://www.amazon.fr/s?k=D.Gray-man+tome",           logo: "https://www.1min30.com/wp-content/uploads/2017/12/logo-amazon-1.jpg" }
+  ],
+  streaming: [
+    { name: "Crunchyroll", url: "https://www.crunchyroll.com/fr/search?q=D.Gray-man", logo: "https://upload.wikimedia.org/wikipedia/commons/f/fc/Crunchyroll_logo_2018_vertical.png" }
+  ],
   live: []
 },
 {
@@ -639,11 +677,19 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   title: "Death Note",
   category: "manga",
   tags: "Thriller · Surnaturel · Psychologie · Duel cérébral",
-  cover: "/death-note.jpg",
-  synopsis: `Light Yagami découvre un cahier permettant de tuer quiconque dont on écrit le nom. Il se lance dans une croisade pour « purifier » le monde, attirant l’attention du détective L. Un duel d’esprits s’engage où chaque geste peut trahir l’autre. Le pouvoir absolu corrompt ses convictions.`,
+  cover: "/covers/death-note.jpg",
+  synopsis: "Light Yagami découvre un cahier permettant de tuer quiconque dont on écrit le nom. Il se lance dans une croisade pour « purifier » le monde, attirant l’attention du détective L. Un duel d’esprits s’engage où chaque geste peut trahir l’autre. Le pouvoir absolu corrompt ses convictions.",
   reviewHtml: "",
-  shops: [],
-  streaming: [],
+  stars: 0,
+  shops: [
+    { name: "Manganim", url: "https://manganim.fr/search?q=Death+Note", logo: "https://manganim.fr/cdn/shop/files/logo-manganim-header_180x.png?v=1672862594" },
+    { name: "Fnac",     url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=death+note+tome",  logo: "https://cdn.iconscout.com/icon/free/png-256/free-fnac-3521434-2944878.png" },
+    { name: "Amazon",   url: "https://www.amazon.fr/s?k=death+note+tome",           logo: "https://www.1min30.com/wp-content/uploads/2017/12/logo-amazon-1.jpg" }
+  ],
+  streaming: [
+    { name: "Crunchyroll", url: "https://www.crunchyroll.com/fr/search?q=Death%20Note", logo: "https://upload.wikimedia.org/wikipedia/commons/f/fc/Crunchyroll_logo_2018_vertical.png" },
+    { name: "Netflix",     url: "https://www.netflix.com/search?q=Death%20Note",        logo: "https://images.ctfassets.net/y2ske730sjqp/5QQ9SVIdc1tmkqrtFnG9U1/de758bba0f65dcc1c6bc1f31f161003d/BrandAssets_Logos_02-NSymbol.jpg?w=940" }
+  ],
   live: []
 },
 {
@@ -651,11 +697,18 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   title: "Dr. Stone",
   category: "manga",
   tags: "Science · Survie · Post-apo · Aventure",
-  cover: "/dr-stone.jpg",
-  synopsis: `L’humanité est pétrifiée pendant des millénaires. À son réveil, Senku, prodige de la science, veut rebâtir la civilisation avec des moyens rudimentaires. Entre inventions géniales et alliances fragiles, une nouvelle ère commence.`,
+  cover: "/covers/dr-stone.jpg",
+  synopsis: "L’humanité est pétrifiée pendant des millénaires. À son réveil, Senku, prodige de la science, veut rebâtir la civilisation avec des moyens rudimentaires. Entre inventions géniales et alliances fragiles, une nouvelle ère commence.",
   reviewHtml: "",
-  shops: [],
-  streaming: [],
+  stars: 0,
+  shops: [
+    { name: "Manganim", url: "https://manganim.fr/search?q=Dr.+Stone", logo: "https://manganim.fr/cdn/shop/files/logo-manganim-header_180x.png?v=1672862594" },
+    { name: "Fnac",     url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=dr+stone+tome",   logo: "https://cdn.iconscout.com/icon/free/png-256/free-fnac-3521434-2944878.png" },
+    { name: "Amazon",   url: "https://www.amazon.fr/s?k=dr+stone+tome",            logo: "https://www.1min30.com/wp-content/uploads/2017/12/logo-amazon-1.jpg" }
+  ],
+  streaming: [
+    { name: "Crunchyroll", url: "https://www.crunchyroll.com/fr/search?q=Dr.%20Stone", logo: "https://upload.wikimedia.org/wikipedia/commons/f/fc/Crunchyroll_logo_2018_vertical.png" }
+  ],
   live: []
 },
 {
@@ -663,10 +716,15 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   title: "Eleceed",
   category: "manhwa",
   tags: "Action · Pouvoirs · Comédie · Mentor",
-  cover: "/eleceed.jpg",
-  synopsis: `Jiwoo, au cœur doux et rapide comme l’éclair, rencontre Kayden, maître puissant coincé en chat. Ensemble, ils naviguent le monde secret des éveillés. Amitiés, entraînements et affrontements s’enchaînent. La gentillesse peut frapper fort.`,
+  cover: "/covers/eleceed.jpg",
+  synopsis: "Jiwoo, au cœur doux et rapide comme l’éclair, rencontre Kayden, maître puissant coincé en chat. Ensemble, ils naviguent le monde secret des éveillés. Amitiés, entraînements et affrontements s’enchaînent. La gentillesse peut frapper fort.",
   reviewHtml: "",
-  shops: [],
+  stars: 0,
+  shops: [
+    { name: "Manganim", url: "https://manganim.fr/search?q=Eleceed",  logo: "https://manganim.fr/cdn/shop/files/logo-manganim-header_180x.png?v=1672862594" },
+    { name: "Fnac",     url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=eleceed",         logo: "https://cdn.iconscout.com/icon/free/png-256/free-fnac-3521434-2944878.png" },
+    { name: "Amazon",   url: "https://www.amazon.fr/s?k=eleceed",     logo: "https://www.1min30.com/wp-content/uploads/2017/12/logo-amazon-1.jpg" }
+  ],
   streaming: [],
   live: []
 },
@@ -675,11 +733,18 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   title: "Fairy Tail",
   category: "manga",
   tags: "Shōnen · Magie · Guilde · Aventure",
-  cover: "/fairy-tail.jpg",
-  synopsis: `Lucy rejoint Fairy Tail et forme un duo avec Natsu, chasseur de dragons au tempérament brûlant. La guilde enchaîne missions, tournois et guerres de factions. Entre rivalités et solidarité, chacun protège sa famille choisie.`,
+  cover: "/covers/fairy-tail.jpg",
+  synopsis: "Lucy rejoint Fairy Tail et forme un duo avec Natsu, chasseur de dragons au tempérament brûlant. La guilde enchaîne missions, tournois et guerres de factions. Entre rivalités et solidarité, chacun protège sa famille choisie.",
   reviewHtml: "",
-  shops: [],
-  streaming: [],
+  stars: 0,
+  shops: [
+    { name: "Manganim", url: "https://manganim.fr/search?q=Fairy+Tail",  logo: "https://manganim.fr/cdn/shop/files/logo-manganim-header_180x.png?v=1672862594" },
+    { name: "Fnac",     url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=fairy+tail+tome",  logo: "https://cdn.iconscout.com/icon/free/png-256/free-fnac-3521434-2944878.png" },
+    { name: "Amazon",   url: "https://www.amazon.fr/s?k=fairy+tail+tome",           logo: "https://www.1min30.com/wp-content/uploads/2017/12/logo-amazon-1.jpg" }
+  ],
+  streaming: [
+    { name: "Crunchyroll", url: "https://www.crunchyroll.com/fr/search?q=Fairy%20Tail", logo: "https://upload.wikimedia.org/wikipedia/commons/f/fc/Crunchyroll_logo_2018_vertical.png" }
+  ],
   live: []
 },
 {
@@ -687,11 +752,18 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   title: "Fire Force",
   category: "manga",
   tags: "Action · Pompiers · Surnaturel · Enquête",
-  cover: "/fire-force.jpg",
-  synopsis: `Des combustions humaines spontanées transforment des victimes en infernaux. Shinra, pompier aux pieds flamboyants, combat ces fléaux tout en cherchant la vérité sur son passé. Les brigades s’affrontent sur fond de complot religieux.`,
+  cover: "/covers/fire-force.jpg",
+  synopsis: "Des combustions humaines spontanées transforment des victimes en infernaux. Shinra, pompier aux pieds flamboyants, combat ces fléaux tout en cherchant la vérité sur son passé. Les brigades s’affrontent sur fond de complot religieux.",
   reviewHtml: "",
-  shops: [],
-  streaming: [],
+  stars: 0,
+  shops: [
+    { name: "Manganim", url: "https://manganim.fr/search?q=Fire+Force",  logo: "https://manganim.fr/cdn/shop/files/logo-manganim-header_180x.png?v=1672862594" },
+    { name: "Fnac",     url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=fire+force+tome", logo: "https://cdn.iconscout.com/icon/free/png-256/free-fnac-3521434-2944878.png" },
+    { name: "Amazon",   url: "https://www.amazon.fr/s?k=fire+force+tome",           logo: "https://www.1min30.com/wp-content/uploads/2017/12/logo-amazon-1.jpg" }
+  ],
+  streaming: [
+    { name: "Crunchyroll", url: "https://www.crunchyroll.com/fr/search?q=Fire%20Force", logo: "https://upload.wikimedia.org/wikipedia/commons/f/fc/Crunchyroll_logo_2018_vertical.png" }
+  ],
   live: []
 },
 {
@@ -699,11 +771,19 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   title: "Fullmetal Alchemist",
   category: "manga",
   tags: "Aventure · Alchimie · Frères · Guerre",
-  cover: "/fullmetal-alchemist.jpg",
-  synopsis: `Après une transmutation interdite, Edward et Alphonse perdent chacun une partie d’eux-mêmes. Pour récupérer leurs corps, ils cherchent la Pierre Philosophale. Leur quête révèle complots d’État, homonculus et vérités amères.`,
+  cover: "/covers/fullmetal-alchemist.jpg",
+  synopsis: "Après une transmutation interdite, Edward et Alphonse perdent chacun une partie d’eux-mêmes. Pour récupérer leurs corps, ils cherchent la Pierre Philosophale. Leur quête révèle complots d’État, homonculus et vérités amères.",
   reviewHtml: "",
-  shops: [],
-  streaming: [],
+  stars: 0,
+  shops: [
+    { name: "Manganim", url: "https://manganim.fr/search?q=Fullmetal+Alchemist",  logo: "https://manganim.fr/cdn/shop/files/logo-manganim-header_180x.png?v=1672862594" },
+    { name: "Fnac",     url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=fullmetal+alchemist+tome",  logo: "https://cdn.iconscout.com/icon/free/png-256/free-fnac-3521434-2944878.png" },
+    { name: "Amazon",   url: "https://www.amazon.fr/s?k=fullmetal+alchemist+tome",         logo: "https://www.1min30.com/wp-content/uploads/2017/12/logo-amazon-1.jpg" }
+  ],
+  streaming: [
+    { name: "Crunchyroll", url: "https://www.crunchyroll.com/fr/search?q=Fullmetal%20Alchemist", logo: "https://upload.wikimedia.org/wikipedia/commons/f/fc/Crunchyroll_logo_2018_vertical.png" },
+    { name: "Netflix",     url: "https://www.netflix.com/search?q=Fullmetal%20Alchemist",        logo: "https://images.ctfassets.net/y2ske730sjqp/5QQ9SVIdc1tmkqrtFnG9U1/de758bba0f65dcc1c6bc1f31f161003d/BrandAssets_Logos_02-NSymbol.jpg?w=940" }
+  ],
   live: []
 },
 {
@@ -711,11 +791,18 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   title: "Gintama",
   category: "manga",
   tags: "Comédie · Sci-fi · Parodie · Samouraï",
-  cover: "/gintama.jpg",
-  synopsis: `Dans un Edo envahi par des aliens, Gintoki, samouraï décalé, accepte tous les petits boulots. Parodies méta, émotions sincères et combats sérieux cohabitent. L’absurde devient un art.`,
+  cover: "/covers/gintama.jpg",
+  synopsis: "Dans un Edo envahi par des aliens, Gintoki, samouraï décalé, accepte tous les petits boulots. Parodies méta, émotions sincères et combats sérieux cohabitent. L’absurde devient un art.",
   reviewHtml: "",
-  shops: [],
-  streaming: [],
+  stars: 0,
+  shops: [
+    { name: "Manganim", url: "https://manganim.fr/search?q=Gintama",  logo: "https://manganim.fr/cdn/shop/files/logo-manganim-header_180x.png?v=1672862594" },
+    { name: "Fnac",     url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=gintama+manga",  logo: "https://cdn.iconscout.com/icon/free/png-256/free-fnac-3521434-2944878.png" },
+    { name: "Amazon",   url: "https://www.amazon.fr/s?k=gintama+manga",         logo: "https://www.1min30.com/wp-content/uploads/2017/12/logo-amazon-1.jpg" }
+  ],
+  streaming: [
+    { name: "Crunchyroll", url: "https://www.crunchyroll.com/fr/search?q=Gintama", logo: "https://upload.wikimedia.org/wikipedia/commons/f/fc/Crunchyroll_logo_2018_vertical.png" }
+  ],
   live: []
 },
 {
@@ -723,11 +810,18 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   title: "Hell’s Paradise",
   category: "manga",
   tags: "Dark Fantasy · Ninjas · Survival · Île maudite",
-  cover: "/hells-paradise.jpg",
-  synopsis: `Condamné à mort, Gabimaru se voit offrir la vie sauve s’il récupère un élixir d’immortalité sur une île létale. Assassins et samouraïs s’y affrontent au cœur d’une nature monstrueuse. Beauté et horreur s’entrelacent.`,
+  cover: "/covers/hells-paradise.jpg",
+  synopsis: "Condamné à mort, Gabimaru se voit offrir la vie sauve s’il récupère un élixir d’immortalité sur une île létale. Assassins et samouraïs s’y affrontent au cœur d’une nature monstrueuse. Beauté et horreur s’entrelacent.",
   reviewHtml: "",
-  shops: [],
-  streaming: [],
+  stars: 0,
+  shops: [
+    { name: "Manganim", url: "https://manganim.fr/search?q=Hell%27s+Paradise",  logo: "https://manganim.fr/cdn/shop/files/logo-manganim-header_180x.png?v=1672862594" },
+    { name: "Fnac",     url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=hell%27s+paradise+tome",  logo: "https://cdn.iconscout.com/icon/free/png-256/free-fnac-3521434-2944878.png" },
+    { name: "Amazon",   url: "https://www.amazon.fr/s?k=hell%27s+paradise+tome",         logo: "https://www.1min30.com/wp-content/uploads/2017/12/logo-amazon-1.jpg" }
+  ],
+  streaming: [
+    { name: "Crunchyroll", url: "https://www.crunchyroll.com/fr/search?q=Hell%27s%20Paradise", logo: "https://upload.wikimedia.org/wikipedia/commons/f/fc/Crunchyroll_logo_2018_vertical.png" }
+  ],
   live: []
 },
 {
@@ -735,11 +829,19 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   title: "JoJo’s Bizarre Adventure",
   category: "manga",
   tags: "Action · Fantastique · Saga · Style",
-  cover: "/jojos-bizarre-adventure.jpg",
-  synopsis: `Saga multigénérationnelle où les Joestar affrontent des forces occultes. Pouvoirs stylisés, poses iconiques et imagination débridée. Chaque partie réinvente la formule avec panache.`,
+  cover: "/covers/jojos-bizarre-adventure.jpg",
+  synopsis: "Saga multigénérationnelle où les Joestar affrontent des forces occultes. Pouvoirs stylisés, poses iconiques et imagination débridée. Chaque partie réinvente la formule avec panache.",
   reviewHtml: "",
-  shops: [],
-  streaming: [],
+  stars: 0,
+  shops: [
+    { name: "Manganim", url: "https://manganim.fr/search?q=JoJo",    logo: "https://manganim.fr/cdn/shop/files/logo-manganim-header_180x.png?v=1672862594" },
+    { name: "Fnac",     url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=jojo+manga",  logo: "https://cdn.iconscout.com/icon/free/png-256/free-fnac-3521434-2944878.png" },
+    { name: "Amazon",   url: "https://www.amazon.fr/s?k=jojo+manga",           logo: "https://www.1min30.com/wp-content/uploads/2017/12/logo-amazon-1.jpg" }
+  ],
+  streaming: [
+    { name: "Crunchyroll", url: "https://www.crunchyroll.com/fr/search?q=JoJo",  logo: "https://upload.wikimedia.org/wikipedia/commons/f/fc/Crunchyroll_logo_2018_vertical.png" },
+    { name: "Netflix",     url: "https://www.netflix.com/search?q=JoJo",          logo: "https://images.ctfassets.net/y2ske730sjqp/5QQ9SVIdc1tmkqrtFnG9U1/de758bba0f65dcc1c6bc1f31f161003d/BrandAssets_Logos_02-NSymbol.jpg?w=940" }
+  ],
   live: []
 },
 {
@@ -747,11 +849,18 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   title: "Made in Abyss",
   category: "manga",
   tags: "Aventure · Exploration · Mystère · Dark",
-  cover: "/made-in-abyss.jpg",
-  synopsis: `Riko descend dans l’Abysse pour retrouver sa mère légendaire, accompagnée de Reg, androïde amnésique. À mesure qu’ils plongent, la beauté cède au cauchemar. Les secrets enfouis exigent un tribut terrible.`,
+  cover: "/covers/made-in-abyss.jpg",
+  synopsis: "Riko descend dans l’Abysse pour retrouver sa mère légendaire, accompagnée de Reg, androïde amnésique. À mesure qu’ils plongent, la beauté cède au cauchemar. Les secrets enfouis exigent un tribut terrible.",
   reviewHtml: "",
-  shops: [],
-  streaming: [],
+  stars: 0,
+  shops: [
+    { name: "Manganim", url: "https://manganim.fr/search?q=Made+in+Abyss",  logo: "https://manganim.fr/cdn/shop/files/logo-manganim-header_180x.png?v=1672862594" },
+    { name: "Fnac",     url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=made+in+abyss",    logo: "https://cdn.iconscout.com/icon/free/png-256/free-fnac-3521434-2944878.png" },
+    { name: "Amazon",   url: "https://www.amazon.fr/s?k=made+in+abyss+manga",   logo: "https://www.1min30.com/wp-content/uploads/2017/12/logo-amazon-1.jpg" }
+  ],
+  streaming: [
+    { name: "Crunchyroll", url: "https://www.crunchyroll.com/fr/search?q=Made%20in%20Abyss", logo: "https://upload.wikimedia.org/wikipedia/commons/f/fc/Crunchyroll_logo_2018_vertical.png" }
+  ],
   live: []
 },
 {
@@ -759,11 +868,18 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   title: "Mashle",
   category: "manga",
   tags: "Comédie · Magie · Parodie · Action",
-  cover: "/mashle.jpg",
-  synopsis: `Dans un monde régi par la magie, Mash n’en possède aucune… mais des biceps en béton. Il entre dans une académie et résout tous les problèmes à la force brute. Les codes sont bousculés, les duels tournent à l’absurde.`,
+  cover: "/covers/mashle.jpg",
+  synopsis: "Dans un monde régi par la magie, Mash n’en possède aucune… mais des biceps en béton. Il entre dans une académie et résout tous les problèmes à la force brute. Les codes sont bousculés, les duels tournent à l’absurde.",
   reviewHtml: "",
-  shops: [],
-  streaming: [],
+  stars: 0,
+  shops: [
+    { name: "Manganim", url: "https://manganim.fr/search?q=Mashle",  logo: "https://manganim.fr/cdn/shop/files/logo-manganim-header_180x.png?v=1672862594" },
+    { name: "Fnac",     url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=mashle+tome",   logo: "https://cdn.iconscout.com/icon/free/png-256/free-fnac-3521434-2944878.png" },
+    { name: "Amazon",   url: "https://www.amazon.fr/s?k=mashle+tome",           logo: "https://www.1min30.com/wp-content/uploads/2017/12/logo-amazon-1.jpg" }
+  ],
+  streaming: [
+    { name: "Crunchyroll", url: "https://www.crunchyroll.com/fr/search?q=Mashle", logo: "https://upload.wikimedia.org/wikipedia/commons/f/fc/Crunchyroll_logo_2018_vertical.png" }
+  ],
   live: []
 },
 {
@@ -771,11 +887,18 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   title: "Monster",
   category: "manga",
   tags: "Thriller · Psychologie · Europe · Enquête",
-  cover: "/monster.jpg",
-  synopsis: `Brillant neurochirurgien, Tenma sauve un enfant promis à devenir un tueur. Des années plus tard, il traque le monstre qu’il a épargné, à travers une Europe hantée par la culpabilité et la manipulation.`,
+  cover: "/covers/monster.jpg",
+  synopsis: "Brillant neurochirurgien, Tenma sauve un enfant promis à devenir un tueur. Des années plus tard, il traque le monstre qu’il a épargné, à travers une Europe hantée par la culpabilité et la manipulation.",
   reviewHtml: "",
-  shops: [],
-  streaming: [],
+  stars: 0,
+  shops: [
+    { name: "Manganim", url: "https://manganim.fr/search?q=Monster+manga",  logo: "https://manganim.fr/cdn/shop/files/logo-manganim-header_180x.png?v=1672862594" },
+    { name: "Fnac",     url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=monster+ura+rasawa",   logo: "https://cdn.iconscout.com/icon/free/png-256/free-fnac-3521434-2944878.png" },
+    { name: "Amazon",   url: "https://www.amazon.fr/s?k=monster+manga+urasawa",        logo: "https://www.1min30.com/wp-content/uploads/2017/12/logo-amazon-1.jpg" }
+  ],
+  streaming: [
+    { name: "Netflix", url: "https://www.netflix.com/search?q=Monster%20anime", logo: "https://images.ctfassets.net/y2ske730sjqp/5QQ9SVIdc1tmkqrtFnG9U1/de758bba0f65dcc1c6bc1f31f161003d/BrandAssets_Logos_02-NSymbol.jpg?w=940" }
+  ],
   live: []
 },
 {
@@ -783,11 +906,18 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   title: "Noragami",
   category: "manga",
   tags: "Dieux · Action · Comédie · Quotidien",
-  cover: "/noragami.jpg",
-  synopsis: `Yato, dieu fauché, rêve de devenir populaire. Avec Hiyori et Yukine, il résout des affaires entre monde des vivants et esprits. Derrière les gags, des blessures profondes ressurgissent.`,
+  cover: "/covers/noragami.jpg",
+  synopsis: "Yato, dieu fauché, rêve de devenir populaire. Avec Hiyori et Yukine, il résout des affaires entre monde des vivants et esprits. Derrière les gags, des blessures profondes ressurgissent.",
   reviewHtml: "",
-  shops: [],
-  streaming: [],
+  stars: 0,
+  shops: [
+    { name: "Manganim", url: "https://manganim.fr/search?q=Noragami",  logo: "https://manganim.fr/cdn/shop/files/logo-manganim-header_180x.png?v=1672862594" },
+    { name: "Fnac",     url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=noragami+tome",   logo: "https://cdn.iconscout.com/icon/free/png-256/free-fnac-3521434-2944878.png" },
+    { name: "Amazon",   url: "https://www.amazon.fr/s?k=noragami+tome",            logo: "https://www.1min30.com/wp-content/uploads/2017/12/logo-amazon-1.jpg" }
+  ],
+  streaming: [
+    { name: "Crunchyroll", url: "https://www.crunchyroll.com/fr/search?q=Noragami", logo: "https://upload.wikimedia.org/wikipedia/commons/f/fc/Crunchyroll_logo_2018_vertical.png" }
+  ],
   live: []
 },
 {
@@ -795,10 +925,13 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   title: "Omniscient Reader",
   category: "manhwa",
   tags: "Apocalypse · Méta · Scénario · Compagnons",
-  cover: "/omniscient-reader.jpg",
-  synopsis: `Dokja voit son webroman favori devenir réalité. Armé de sa connaissance de l’histoire, il tente de survivre aux scénarios imposés par des entités cosmiques. Savoir n’équivaut pas à pouvoir.`,
+  cover: "/covers/omniscient-reader.jpg",
+  synopsis: "Dokja voit son webroman favori devenir réalité. Armé de sa connaissance de l’histoire, il tente de survivre aux scénarios imposés par des entités cosmiques. Savoir n’équivaut pas à pouvoir.",
   reviewHtml: "",
-  shops: [],
+  stars: 0,
+  shops: [
+    { name: "Amazon", url: "https://www.amazon.fr/s?k=omniscient+reader", logo: "https://www.1min30.com/wp-content/uploads/2017/12/logo-amazon-1.jpg" }
+  ],
   streaming: [],
   live: []
 },
@@ -807,11 +940,18 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   title: "Oshi no Ko",
   category: "manga",
   tags: "Showbiz · Drame · Mystère · Réincarnation",
-  cover: "/oshi-no-ko.jpg",
-  synopsis: `Un médecin et sa patiente renaissent dans le monde des idoles, liés au destin d’une star lumineuse. Entre coulisses du showbiz et quête de vérité, ils affrontent manipulations et médias.`,
+  cover: "/covers/oshi-no-ko.jpg",
+  synopsis: "Un médecin et sa patiente renaissent dans le monde des idoles, liés au destin d’une star lumineuse. Entre coulisses du showbiz et quête de vérité, ils affrontent manipulations et médias.",
   reviewHtml: "",
-  shops: [],
-  streaming: [],
+  stars: 0,
+  shops: [
+    { name: "Manganim", url: "https://manganim.fr/search?q=Oshi+no+Ko",  logo: "https://manganim.fr/cdn/shop/files/logo-manganim-header_180x.png?v=1672862594" },
+    { name: "Fnac",     url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=oshi+no+ko",   logo: "https://cdn.iconscout.com/icon/free/png-256/free-fnac-3521434-2944878.png" },
+    { name: "Amazon",   url: "https://www.amazon.fr/s?k=oshi+no+ko",            logo: "https://www.1min30.com/wp-content/uploads/2017/12/logo-amazon-1.jpg" }
+  ],
+  streaming: [
+    { name: "Netflix", url: "https://www.netflix.com/search?q=Oshi%20no%20Ko", logo: "https://images.ctfassets.net/y2ske730sjqp/5QQ9SVIdc1tmkqrtFnG9U1/de758bba0f65dcc1c6bc1f31f161003d/BrandAssets_Logos_02-NSymbol.jpg?w=940" }
+  ],
   live: []
 },
 {
@@ -819,11 +959,17 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   title: "Pluto",
   category: "manga",
   tags: "Sci-fi · Robotique · Enquête · Remake",
-  cover: "/pluto.jpg",
-  synopsis: `Relecture sombre d’un arc d’Astro Boy. Gesicht, détective robot, enquête sur des assassinats visant les plus puissants robots du monde. Humanité, mémoire et haine s’entrecroisent.`,
+  cover: "/covers/pluto.jpg",
+  synopsis: "Relecture sombre d’un arc d’Astro Boy. Gesicht, détective robot, enquête sur des assassinats visant les plus puissants robots du monde. Humanité, mémoire et haine s’entrecroisent.",
   reviewHtml: "",
-  shops: [],
-  streaming: [],
+  stars: 0,
+  shops: [
+    { name: "Fnac",   url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=pluto+manga+urasawa", logo: "https://cdn.iconscout.com/icon/free/png-256/free-fnac-3521434-2944878.png" },
+    { name: "Amazon", url: "https://www.amazon.fr/s?k=pluto+manga+urasawa",       logo: "https://www.1min30.com/wp-content/uploads/2017/12/logo-amazon-1.jpg" }
+  ],
+  streaming: [
+    { name: "Netflix", url: "https://www.netflix.com/search?q=Pluto%20anime", logo: "https://images.ctfassets.net/y2ske730sjqp/5QQ9SVIdc1tmkqrtFnG9U1/de758bba0f65dcc1c6bc1f31f161003d/BrandAssets_Logos_02-NSymbol.jpg?w=940" }
+  ],
   live: []
 },
 {
@@ -831,10 +977,14 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   title: "Slam Dunk",
   category: "manga",
   tags: "Sport · Basket · Lycée · Équipe",
-  cover: "/slam-dunk.jpg",
-  synopsis: `Voyou au grand cœur, Hanamichi rejoint le club de basket par amour-propre. Entre entraînements, rivalités et matchs haletants, il découvre l’esprit d’équipe. Le terrain devient sa seconde chance.`,
+  cover: "/covers/slam-dunk.jpg",
+  synopsis: "Voyou au grand cœur, Hanamichi rejoint le club de basket par amour-propre. Entre entraînements, rivalités et matchs haletants, il découvre l’esprit d’équipe. Le terrain devient sa seconde chance.",
   reviewHtml: "",
-  shops: [],
+  stars: 0,
+  shops: [
+    { name: "Fnac",   url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=slam+dunk+tome", logo: "https://cdn.iconscout.com/icon/free/png-256/free-fnac-3521434-2944878.png" },
+    { name: "Amazon", url: "https://www.amazon.fr/s?k=slam+dunk+tome",       logo: "https://www.1min30.com/wp-content/uploads/2017/12/logo-amazon-1.jpg" }
+  ],
   streaming: [],
   live: []
 },
@@ -843,11 +993,17 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   title: "Soul Eater",
   category: "manga",
   tags: "Fantaisie · Académie · Armes vivantes · Style",
-  cover: "/soul-eater.jpg",
-  synopsis: `À la Shibusen, des manieurs et leurs armes humaines chassent âmes corrompues et sorcières. Maka et Soul visent le statut d’Arme ultime. Ambiance gothique, humour noir et combats syncopés.`,
+  cover: "/covers/soul-eater.jpg",
+  synopsis: "À la Shibusen, des manieurs et leurs armes humaines chassent âmes corrompues et sorcières. Maka et Soul visent le statut d’Arme ultime. Ambiance gothique, humour noir et combats syncopés.",
   reviewHtml: "",
-  shops: [],
-  streaming: [],
+  stars: 0,
+  shops: [
+    { name: "Fnac",   url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=soul+eater+tome", logo: "https://cdn.iconscout.com/icon/free/png-256/free-fnac-3521434-2944878.png" },
+    { name: "Amazon", url: "https://www.amazon.fr/s?k=soul+eater+tome",       logo: "https://www.1min30.com/wp-content/uploads/2017/12/logo-amazon-1.jpg" }
+  ],
+  streaming: [
+    { name: "Crunchyroll", url: "https://www.crunchyroll.com/fr/search?q=Soul%20Eater", logo: "https://upload.wikimedia.org/wikipedia/commons/f/fc/Crunchyroll_logo_2018_vertical.png" }
+  ],
   live: []
 },
 {
@@ -855,11 +1011,18 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   title: "The Promised Neverland",
   category: "manga",
   tags: "Thriller · Évasion · Mystère · Enfance",
-  cover: "/the-promised-neverland.jpg",
-  synopsis: `Emma, Norman et Ray découvrent l’horrible vérité de leur orphelinat. Ils orchestrent une évasion impossible sous l’œil d’adultes menaçants. Chaque détail compte, chaque erreur est fatale.`,
+  cover: "/covers/the-promised-neverland.jpg",
+  synopsis: "Emma, Norman et Ray découvrent l’horrible vérité de leur orphelinat. Ils orchestrent une évasion impossible sous l’œil d’adultes menaçants. Chaque détail compte, chaque erreur est fatale.",
   reviewHtml: "",
-  shops: [],
-  streaming: [],
+  stars: 0,
+  shops: [
+    { name: "Fnac",   url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=the+promised+neverland+tome", logo: "https://cdn.iconscout.com/icon/free/png-256/free-fnac-3521434-2944878.png" },
+    { name: "Amazon", url: "https://www.amazon.fr/s?k=the+promised+neverland+tome",       logo: "https://www.1min30.com/wp-content/uploads/2017/12/logo-amazon-1.jpg" }
+  ],
+  streaming: [
+    { name: "Crunchyroll", url: "https://www.crunchyroll.com/fr/search?q=The%20Promised%20Neverland", logo: "https://upload.wikimedia.org/wikipedia/commons/f/fc/Crunchyroll_logo_2018_vertical.png" },
+    { name: "Netflix",     url: "https://www.netflix.com/search?q=The%20Promised%20Neverland",        logo: "https://images.ctfassets.net/y2ske730sjqp/5QQ9SVIdc1tmkqrtFnG9U1/de758bba0f65dcc1c6bc1f31f161003d/BrandAssets_Logos_02-NSymbol.jpg?w=940" }
+  ],
   live: []
 },
 {
@@ -867,11 +1030,16 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   title: "Tower of God",
   category: "manhwa",
   tags: "Fantasy · Tour · Épreuves · Compétition",
-  cover: "/tower-of-god.jpg",
-  synopsis: `Bam entre dans une tour où chaque étage impose des tests mortels. Alliances fragiles, règles changeantes et pouvoirs étranges rythment l’ascension. Il cherche son amie Rachel, quitte à tout sacrifier.`,
+  cover: "/covers/tower-of-god.jpg",
+  synopsis: "Bam entre dans une tour où chaque étage impose des tests mortels. Alliances fragiles, règles changeantes et pouvoirs étranges rythment l’ascension. Il cherche son amie Rachel, quitte à tout sacrifier.",
   reviewHtml: "",
-  shops: [],
-  streaming: [],
+  stars: 0,
+  shops: [
+    { name: "Amazon", url: "https://www.amazon.fr/s?k=tower+of+god+manhwa", logo: "https://www.1min30.com/wp-content/uploads/2017/12/logo-amazon-1.jpg" }
+  ],
+  streaming: [
+    { name: "Crunchyroll", url: "https://www.crunchyroll.com/fr/search?q=Tower%20of%20God", logo: "https://upload.wikimedia.org/wikipedia/commons/f/fc/Crunchyroll_logo_2018_vertical.png" }
+  ],
   live: []
 },
 {
@@ -879,10 +1047,14 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   title: "Vagabond",
   category: "manga",
   tags: "Samouraï · Historique · Philosophie · Duel",
-  cover: "/vagabond.jpg",
-  synopsis: `Libre adaptation de la vie de Musashi Miyamoto. De combats en errance, le jeune bretteur apprend la voie du sabre et de l’humilité. Chaque duel interroge le sens de la force.`,
+  cover: "/covers/vagabond.jpg",
+  synopsis: "Libre adaptation de la vie de Musashi Miyamoto. De combats en errance, le jeune bretteur apprend la voie du sabre et de l’humilité. Chaque duel interroge le sens de la force.",
   reviewHtml: "",
-  shops: [],
+  stars: 0,
+  shops: [
+    { name: "Fnac",   url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=vagabond+tome", logo: "https://cdn.iconscout.com/icon/free/png-256/free-fnac-3521434-2944878.png" },
+    { name: "Amazon", url: "https://www.amazon.fr/s?k=vagabond+tome",       logo: "https://www.1min30.com/wp-content/uploads/2017/12/logo-amazon-1.jpg" }
+  ],
   streaming: [],
   live: []
 },
@@ -891,11 +1063,18 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   title: "Vinland Saga",
   category: "manga",
   tags: "Historique · Vikings · Épopée · Drame",
-  cover: "/vinland-saga.jpg",
-  synopsis: `Thorfinn, jeune guerrier islandais, poursuit une vengeance qui le consume. Des champs de bataille à la quête d’un nouveau monde, il redéfinit sa voie. La violence héritée se heurte au désir de paix.`,
+  cover: "/covers/vinland-saga.jpg",
+  synopsis: "Thorfinn, jeune guerrier islandais, poursuit une vengeance qui le consume. Des champs de bataille à la quête d’un nouveau monde, il redéfinit sa voie. La violence héritée se heurte au désir de paix.",
   reviewHtml: "",
-  shops: [],
-  streaming: [],
+  stars: 0,
+  shops: [
+    { name: "Fnac",   url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=vinland+saga+tome", logo: "https://cdn.iconscout.com/icon/free/png-256/free-fnac-3521434-2944878.png" },
+    { name: "Amazon", url: "https://www.amazon.fr/s?k=vinland+saga+tome",       logo: "https://www.1min30.com/wp-content/uploads/2017/12/logo-amazon-1.jpg" }
+  ],
+  streaming: [
+    { name: "Crunchyroll", url: "https://www.crunchyroll.com/fr/search?q=Vinland%20Saga", logo: "https://upload.wikimedia.org/wikipedia/commons/f/fc/Crunchyroll_logo_2018_vertical.png" },
+    { name: "Netflix",     url: "https://www.netflix.com/search?q=Vinland%20Saga",        logo: "https://images.ctfassets.net/y2ske730sjqp/5QQ9SVIdc1tmkqrtFnG9U1/de758bba0f65dcc1c6bc1f31f161003d/BrandAssets_Logos_02-NSymbol.jpg?w=940" }
+  ],
   live: []
 },
 {
@@ -903,10 +1082,13 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   title: "Wind Breaker",
   category: "manhwa",
   tags: "Sport · Vélo · Rue · Crew",
-  cover: "/wind-breaker.jpg",
-  synopsis: `Jay rejoint une équipe de riders urbains où s’expriment rivalité, amitié et adrénaline. Courses illégales, défis techniques et identité de groupe marquent sa progression. Le bitume devient terrain d’initiation.`,
+  cover: "/covers/wind-breaker.jpg",
+  synopsis: "Jay rejoint une équipe de riders urbains où s’expriment rivalité, amitié et adrénaline. Courses illégales, défis techniques et identité de groupe marquent sa progression. Le bitume devient terrain d’initiation.",
   reviewHtml: "",
-  shops: [],
+  stars: 0,
+  shops: [
+    { name: "Amazon", url: "https://www.amazon.fr/s?k=wind+breaker+manhwa", logo: "https://www.1min30.com/wp-content/uploads/2017/12/logo-amazon-1.jpg" }
+  ],
   streaming: [],
   live: []
 }
