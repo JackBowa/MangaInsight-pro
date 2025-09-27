@@ -279,4 +279,14 @@ export default function CritiquesPage() {
       )}
     </div>
   );
+  <img
+  src={cover ?? `/covers/${slug}.jpg`}
+  alt={title}
+  className="absolute inset-0 h-full w-full object-cover transition scale-100 group-hover:scale-105"
+  onError={(e) => {
+    const img = e.currentTarget as HTMLImageElement;
+    img.onerror = null;               // évite boucle
+    img.src = "/covers/_placeholder.jpg";
+  }}
+/>
 }
