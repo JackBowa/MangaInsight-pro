@@ -1,25 +1,53 @@
-/* scripts/fetch-covers.ts */
-import fs from "fs";
-import path from "path";
-import https from "https";
+// scripts/fetch-covers.js
+// Lance avec: npm run fetch:covers
 
+const fs = require("fs");
+const path = require("path");
+const https = require("https");
+
+// 1) Liste slug -> titre Wikipédia
+const targets = [
+  { slug: "berserk",                 query: "Berserk (manga)" },
+  { slug: "black-clover",            query: "Black Clover" },
+  { slug: "blue-exorcist",           query: "Blue Exorcist" },
+  { slug: "claymore",                query: "Claymore (manga)" },
+  { slug: "d-gray-man",              query: "D.Gray-man" },
+  { slug: "death-note",              query: "Death Note" },
+  { slug: "dr-stone",                query: "Dr. Stone" },
+  { slug: "eleceed",                 query: "Eleceed" },
+  { slug: "fairy-tail",              query: "Fairy Tail" },
+  { slug: "fire-force",              query: "Fire Force (manga)" },
+  { slug: "fullmetal-alchemist",     query: "Fullmetal Alchemist" },
+  { slug: "gintama",                 query: "Gintama" },
+  { slug: "hells-paradise",          query: "Hell's Paradise: Jigokuraku" },
+  { slug: "jojos-bizarre-adventure", query: "JoJo's Bizarre Adventure" },
+  { slug: "made-in-abyss",           query: "Made in Abyss" },
+  { slug: "mashle",                  query: "Mashle: Magic and Muscles" },
+  { slug: "monster",                 query: "Monster (manga)" },
+  { slug: "noragami",                query: "Noragami" },
+  { slug: "omniscient-reader",       query: "Omniscient Reader" },
+  { slug: "oshi-no-ko",              query: "Oshi no Ko" },
+  { slug: "pluto",                   query: "Pluto (manga)" },
+  { slug: "slam-dunk",               query: "Slam Dunk (manga)" },
+  { slug: "soul-eater",              query: "Soul Eater" },
+  { slug: "the-promised-neverland",  query: "The Promised Neverland" },
+  { slug: "tower-of-god",            query: "Tower of God" },
+  { slug: "vagabond",                query: "Vagabond (manga)" },
+  { slug: "vinland-saga",            query: "Vinland Saga" },
+  { slug: "wind-breaker",            query: "Wind Breaker (manhwa)" },
+  { slug: "hunter-x-hunter",         query: "Hunter × Hunter" },
+];
+
+// dossier de sortie
 const outDir = path.join(process.cwd(), "public", "covers");
-
-type Serie = {
-  slug: string;
-  title: string;
-  cover?: string | null;
-};
-
-const SERIES: Serie[] = require("../data/series").SERIES;
-
 fs.mkdirSync(outDir, { recursive: true });
 
-function getJSON(url: string): Promise<any> {
+// utilitaires
+function getJSON(url) {
   return new Promise((resolve, reject) => {
     https.get(url, (res) => {
       let data = "";
-      res.on("data", (chunk) => (data += chunk));
+      res.on("data", (c) => (data += c));
       res.on("end", () => {
         try {
           resolve(JSON.parse(data));
@@ -31,68 +59,59 @@ function getJSON(url: string): Promise<any> {
   });
 }
 
-function download(url: string, dest: string): Promise<void> {
+function download(url, filePath) {
   return new Promise((resolve, reject) => {
-    const file = fs.createWriteStream(dest);
-    https
-      .get(url, (response) => {
-        if (response.statusCode && response.statusCode >= 400) {
-          file.close();
-          fs.unlink(dest, () => {});
-          return reject(new Error(`HTTP ${response.statusCode} for ${url}`));
-        }
-        response.pipe(file);
-        file.on("finish", () => file.close(() => resolve()));
-      })
-      .on("error", (err) => {
+    const file = fs.createWriteStream(filePath);
+    https.get(url, (res) => {
+      if (res.statusCode && res.statusCode >= 400) {
         file.close();
-        fs.unlink(dest, () => {});
-        reject(err);
-      });
+        fs.rmSync(filePath, { force: true });
+        return reject(new Error(`HTTP ${res.statusCode} for ${url}`));
+      }
+      res.pipe(file);
+      file.on("finish", () => file.close(() => resolve()));
+    }).on("error", (err) => {
+      file.close();
+      fs.rmSync(filePath, { force: true });
+      reject(err);
+    });
   });
 }
 
-(async () => {
-  console.log(`→ Export des covers dans ${outDir}`);
+// télécharge une image pour un slug
+async function fetchCover({ slug, query }) {
+  const api = `https://en.wikipedia.org/w/api.php?action=query&format=json&prop=pageimages&piprop=original|thumbnail&pithumbsize=1000&titles=${encodeURIComponent(
+    query
+  )}&redirects=1&origin=*`;
 
-  for (const s of SERIES) {
-    const target = path.join(outDir, `${s.slug}.jpg`);
-    if (fs.existsSync(target)) {
-      console.log(`skip ${s.slug} (déjà présent)`);
-      continue;
-    }
+  const json = await getJSON(api);
+  const pages = json?.query?.pages || {};
+  const page = Object.values(pages)[0] || {};
+  const src =
+    (page.thumbnail && page.thumbnail.source) ||
+    (page.original && page.original.source) ||
+    null;
 
-    // 1) si cover fourni dans data, on essaie direct
-    if (s.cover && /^https?:\/\//i.test(s.cover)) {
-      try {
-        await download(s.cover, target);
-        console.log(`ok   ${s.slug} (depuis s.cover)`);
-        continue;
-      } catch {}
-    }
-
-    // 2) fallback: jaquettes via Jikan (MyAnimeList)
-    try {
-      const q = encodeURIComponent(s.title);
-      const res: any = await getJSON(`https://api.jikan.moe/v4/anime?q=${q}&limit=1`);
-      const imgUrl: string | undefined =
-        res?.data?.[0]?.images?.jpg?.large_image_url ||
-        res?.data?.[0]?.images?.jpg?.image_url ||
-        res?.data?.[0]?.images?.webp?.large_image_url ||
-        res?.data?.[0]?.images?.webp?.image_url;
-
-      if (!imgUrl) throw new Error("image not found");
-      await download(imgUrl, target);
-      console.log(`ok   ${s.slug} (Jikan)`);
-      continue;
-    } catch (e) {
-      console.log(`fail ${s.slug} (Jikan): ${(e as Error).message}`);
-    }
-
-    // 3) placeholder si rien trouvé
-    fs.copyFileSync(path.join(process.cwd(), "public", "covers", "_placeholder.jpg"), target);
-    console.log(`ph   ${s.slug} (placeholder)`);
+  if (!src) {
+    console.warn(`⚠️  Pas d’image trouvée pour "${query}" (${slug})`);
+    return;
   }
 
-  console.log("✓ Terminé.");
+  let ext = (src.split(".").pop() || "jpg").split("?")[0].toLowerCase();
+  if (!["jpg", "jpeg", "png", "webp"].includes(ext)) ext = "jpg";
+
+  const dest = path.join(outDir, `${slug}.${ext}`);
+  await download(src, dest);
+  console.log(`✅ ${slug} → covers/${slug}.${ext}`);
+}
+
+// boucle
+(async () => {
+  for (const t of targets) {
+    try {
+      await fetchCover(t);
+    } catch (e) {
+      console.error(`❌ ${t.slug}:`, e.message);
+    }
+  }
 })();
