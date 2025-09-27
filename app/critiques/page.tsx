@@ -19,7 +19,7 @@ function Stars({ n = 0 }: { n?: number }) {
   );
 }
 
-/* Carte série — ajout d’un badge “note moyenne lecteurs” */
+/* Carte série — badge “note moyenne lecteurs” conservé */
 function CritiqueCard({
   slug,
   title,
@@ -35,7 +35,7 @@ function CritiqueCard({
   tags?: string;
   stars?: number;
   category?: string;
-  avg?: number | null; // ⬅️ moyenne lecteurs
+  avg?: number | null;
 }) {
   const tagList = (tags ?? "")
     .split("·")
@@ -48,7 +48,6 @@ function CritiqueCard({
       href={`/series/${slug}`}
       className="group relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 hover:bg-white/10 transition shadow-sm hover:shadow-lg"
     >
-      {/* image */}
       {cover ? (
         <div className="relative aspect-[4/5] overflow-hidden">
           <img
@@ -57,22 +56,16 @@ function CritiqueCard({
             className="absolute inset-0 h-full w-full object-cover transition scale-100 group-hover:scale-105"
           />
           <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/15 to-black/0" />
-
-          {/* badge catégorie */}
           {category && (
             <span className="absolute left-2 top-2 rounded-full border border-white/15 bg-black/50 px-2 py-0.5 text-xs tracking-wide text-white/90">
               {category}
             </span>
           )}
-
-          {/* badge note moyenne lecteurs */}
           {typeof avg === "number" && (
             <span className="absolute right-2 top-2 rounded-full border border-white/15 bg-black/60 px-2 py-0.5 text-xs text-white/90">
               Lecteurs : <b>{avg.toFixed(1)}/5</b>
             </span>
           )}
-
-          {/* tags */}
           {tagList.length > 0 && (
             <div className="absolute bottom-2 left-2 right-2 flex flex-wrap gap-1.5">
               {tagList.map((t) => (
@@ -90,7 +83,6 @@ function CritiqueCard({
         <div className="aspect-[4/5] bg-white/5" />
       )}
 
-      {/* contenu */}
       <div className="p-3">
         <div className="flex items-center justify-between gap-3">
           <h3 className="text-base font-semibold line-clamp-2">{title}</h3>
@@ -106,30 +98,16 @@ function CritiqueCard({
 }
 
 export default function CritiquesPage() {
-  // état filtres
+  // états conservés
   const [q, setQ] = useState("");
   const [category, setCategory] = useState<"all" | "manga" | "manhwa">("all");
   const [sort, setSort] = useState<"recent" | "title" | "rating">("recent");
-  const [selectedTag, setSelectedTag] = useState<string | null>(null);
 
   // moyennes lecteurs par slug
   const [avgs, setAvgs] = useState<Record<string, number>>({});
   const [loadingAvgs, setLoadingAvgs] = useState(false);
 
-  // collecte de tous les tags dispo
-  const allTags = useMemo(() => {
-    const bag = new Set<string>();
-    for (const s of SERIES) {
-      (s.tags ?? "")
-        .split("·")
-        .map((t) => t.trim())
-        .filter(Boolean)
-        .forEach((t) => bag.add(t));
-    }
-    return Array.from(bag).sort((a, b) => a.localeCompare(b, "fr"));
-  }, []);
-
-  // filtrage + tri
+  // filtrage + tri (❌ plus de filtre par tag global)
   const filtered = useMemo(() => {
     let list = SERIES.slice();
 
@@ -147,16 +125,6 @@ export default function CritiquesPage() {
       );
     }
 
-    if (selectedTag) {
-      list = list.filter((s) =>
-        (s.tags ?? "")
-          .split("·")
-          .map((t) => t.trim())
-          .includes(selectedTag)
-      );
-    }
-
-    // tri
     if (sort === "title") {
       list.sort((a, b) => a.title.localeCompare(b.title, "fr"));
     } else if (sort === "rating") {
@@ -166,12 +134,9 @@ export default function CritiquesPage() {
     }
 
     return list;
-  }, [q, category, sort, selectedTag]);
+  }, [q, category, sort]);
 
-  /* ⚡️ Fetch groupé des moyennes lecteurs pour les slugs visibles
-     - on récupère tous les comments approuvés pour ces slugs,
-     - on calcule la moyenne côté client (simple et efficace).
-  */
+  /* ⚡️ Moyennes lecteurs pour les items visibles */
   useEffect(() => {
     const slugs = filtered.map((s) => s.slug);
     if (slugs.length === 0) {
@@ -179,9 +144,7 @@ export default function CritiquesPage() {
       return;
     }
 
-    // limite de sécurité (paginer si tu as 1000+ items)
     const uniq = Array.from(new Set(slugs)).slice(0, 200);
-
     let cancelled = false;
     setLoadingAvgs(true);
     supabase
@@ -219,11 +182,9 @@ export default function CritiquesPage() {
     <div className="mx-auto max-w-7xl">
       {/* Titre + barre de filtres */}
       <header className="mb-6">
-        <h1 className="text-2xl md:text-3xl font-bold tracking-tight">
-          Critiques
-        </h1>
+        <h1 className="text-2xl md:text-3xl font-bold tracking-tight">Critiques</h1>
         <p className="text-sm text-gray-300">
-          Explore les mangas & manhwas, filtre par tags, cherche et trie.
+          Explore les mangas & manhwas : recherche, filtre par type et trie.
         </p>
       </header>
 
@@ -235,7 +196,7 @@ export default function CritiquesPage() {
             <input
               value={q}
               onChange={(e) => setQ(e.target.value)}
-              placeholder="Rechercher un titre, un tag, un mot-clé…"
+              placeholder="Rechercher un titre ou un mot-clé…"
               className="w-full rounded-xl bg-black/40 border border-white/10 px-4 py-2.5 outline-none focus:border-violet-400"
             />
             {q && (
@@ -287,36 +248,7 @@ export default function CritiquesPage() {
         </div>
       </div>
 
-      {/* Tags rapides */}
-      {allTags.length > 0 && (
-        <div className="mb-5 flex flex-wrap gap-2">
-          <button
-            onClick={() => setSelectedTag(null)}
-            className={[
-              "rounded-full px-3 py-1.5 text-xs border transition",
-              selectedTag === null
-                ? "bg-violet-600 border-violet-500"
-                : "bg-white/5 border-white/10 hover:bg-white/10",
-            ].join(" ")}
-          >
-            Tous les tags
-          </button>
-          {allTags.map((t) => (
-            <button
-              key={t}
-              onClick={() => setSelectedTag(t === selectedTag ? null : t)}
-              className={[
-                "rounded-full px-3 py-1.5 text-xs border transition",
-                selectedTag === t
-                  ? "bg-violet-600 border-violet-500"
-                  : "bg-white/5 border-white/10 hover:bg-white/10",
-              ].join(" ")}
-            >
-              {t}
-            </button>
-          ))}
-        </div>
-      )}
+      {/* ❌ Ligne des tags globaux supprimée */}
 
       {/* grille */}
       {filtered.length === 0 ? (
@@ -334,13 +266,12 @@ export default function CritiquesPage() {
               tags={s.tags}
               stars={s.stars as number | undefined}
               category={s.category}
-              avg={avgs[s.slug]} // ⬅️ badge “Lecteurs : X/X”
+              avg={avgs[s.slug]}
             />
           ))}
         </div>
       )}
 
-      {/* état chargement moyennes (optionnel discret) */}
       {loadingAvgs && (
         <div className="mt-4 text-center text-xs text-gray-500">
           Calcul des notes lecteurs…
