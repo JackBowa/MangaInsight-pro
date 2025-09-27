@@ -80,7 +80,7 @@ function download(url, filePath) {
 
 // télécharge une image pour un slug
 async function fetchCover({ slug, query }) {
-  const api = `https://en.wikipedia.org/w/api.php?action=query&format=json&prop=pageimages&piprop=original|thumbnail&pithumbsize=1000&titles=${encodeURIComponent(
+const api = `https://en.wikipedia.org/w/api.php?action=query&format=json&prop=pageimages&piprop=original|thumbnail&pithumbsize=1000&titles=${encodeURIComponent(query)}&redirects=1&origin=*`;
     query
   )}&redirects=1&origin=*`;
 
