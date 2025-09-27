@@ -2,12 +2,37 @@ const fs = require("fs");
 const path = require("path");
 const https = require("https");
 
-// Ta liste de slugs / titres à chercher
+// 📌 Tous tes titres + slugs pour AniList
 const targets = [
-  { slug: "berserk", search: "Berserk" },
-  { slug: "black-clover", search: "Black Clover" },
-  { slug: "blue-exorcist", search: "Blue Exorcist" },
-  // ... etc.
+  { slug: "berserk",                 search: "Berserk" },
+  { slug: "black-clover",            search: "Black Clover" },
+  { slug: "blue-exorcist",           search: "Blue Exorcist" },
+  { slug: "claymore",                search: "Claymore" },
+  { slug: "d-gray-man",              search: "D.Gray-man" },
+  { slug: "death-note",              search: "Death Note" },
+  { slug: "dr-stone",                search: "Dr. Stone" },
+  { slug: "eleceed",                 search: "Eleceed" },
+  { slug: "fairy-tail",              search: "Fairy Tail" },
+  { slug: "fire-force",              search: "Fire Force" },
+  { slug: "fullmetal-alchemist",     search: "Fullmetal Alchemist" },
+  { slug: "gintama",                 search: "Gintama" },
+  { slug: "hells-paradise",          search: "Hell's Paradise: Jigokuraku" },
+  { slug: "jojos-bizarre-adventure", search: "JoJo's Bizarre Adventure" },
+  { slug: "made-in-abyss",           search: "Made in Abyss" },
+  { slug: "mashle",                  search: "Mashle: Magic and Muscles" },
+  { slug: "monster",                 search: "Monster" },
+  { slug: "noragami",                search: "Noragami" },
+  { slug: "omniscient-reader",       search: "Omniscient Reader" },
+  { slug: "oshi-no-ko",              search: "Oshi no Ko" },
+  { slug: "pluto",                   search: "Pluto" },
+  { slug: "slam-dunk",               search: "Slam Dunk" },
+  { slug: "soul-eater",              search: "Soul Eater" },
+  { slug: "the-promised-neverland",  search: "The Promised Neverland" },
+  { slug: "tower-of-god",            search: "Tower of God" },
+  { slug: "vagabond",                search: "Vagabond" },
+  { slug: "vinland-saga",            search: "Vinland Saga" },
+  { slug: "wind-breaker",            search: "Wind Breaker" },
+  { slug: "hunter-x-hunter",         search: "Hunter x Hunter" },
 ];
 
 const outDir = path.join(process.cwd(), "public", "covers");
