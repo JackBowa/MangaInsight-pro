@@ -1,11 +1,10 @@
-// scripts/fetch-covers.ts
-import fs from "node:fs";
-import path from "node:path";
-import https from "node:https";
+// scripts/fetch-covers.js (CommonJS, marche avec `node` direct)
+const fs = require("fs");
+const path = require("path");
+const https = require("https");
 
-type Target = { slug: string; query: string };
-
-const targets: Target[] = [
+// 1) Liste slug -> page Wikipédia à viser
+const targets = [
   { slug: "berserk",                 query: "Berserk (manga)" },
   { slug: "black-clover",            query: "Black Clover" },
   { slug: "blue-exorcist",           query: "Blue Exorcist" },
@@ -35,86 +34,66 @@ const targets: Target[] = [
   { slug: "vinland-saga",            query: "Vinland Saga" },
   { slug: "wind-breaker",            query: "Wind Breaker (manhwa)" },
   { slug: "hunter-x-hunter",         query: "Hunter × Hunter" },
-  // ajoute tes autres titres ici au besoin
 ];
 
 const outDir = path.join(process.cwd(), "public", "covers");
 fs.mkdirSync(outDir, { recursive: true });
 
-function getJSON<T>(url: string): Promise<T> {
+function getJSON(url) {
   return new Promise((resolve, reject) => {
-    https
-      .get(url, (res) => {
-        let data = "";
-        res.on("data", (c) => (data += c));
-        res.on("end", () => {
-          try {
-            resolve(JSON.parse(data));
-          } catch (e) {
-            reject(e);
-          }
-        });
-      })
-      .on("error", reject);
+    https.get(url, (res) => {
+      let data = "";
+      res.on("data", (c) => (data += c));
+      res.on("end", () => {
+        try { resolve(JSON.parse(data)); }
+        catch (e) { reject(e); }
+      });
+    }).on("error", reject);
   });
 }
 
-function download(url: string, filePath: string): Promise<void> {
+function download(url, filePath) {
   return new Promise((resolve, reject) => {
     const file = fs.createWriteStream(filePath);
-    https
-      .get(url, (res) => {
-        if (res.statusCode && res.statusCode >= 400) {
-          file.close();
-          fs.rmSync(filePath, { force: true });
-          return reject(new Error(`HTTP ${res.statusCode} for ${url}`));
-        }
-        res.pipe(file);
-        file.on("finish", () => file.close(() => resolve()));
-      })
-      .on("error", (err) => {
+    https.get(url, (res) => {
+      if (res.statusCode && res.statusCode >= 400) {
         file.close();
         fs.rmSync(filePath, { force: true });
-        reject(err);
-      });
+        return reject(new Error(`HTTP ${res.statusCode} for ${url}`));
+      }
+      res.pipe(file);
+      file.on("finish", () => file.close(() => resolve()));
+    }).on("error", (err) => {
+      file.close();
+      fs.rmSync(filePath, { force: true });
+      reject(err);
+    });
   });
 }
 
-// On passe par l’API Wikipedia pour récupérer l’image principale (PageImages),
-// puis on télécharge une vignette 1000px de large pour un bon compromis qualité/poids.
-async function fetchCover(t: Target) {
-  const api = `https://en.wikipedia.org/w/api.php?action=query&format=json&prop=pageimages&piprop=original|thumbnail&pithumbsize=1000&titles=${encodeURIComponent(
-    t.query
-  )}&redirects=1&origin=*`;
+async function fetchCover({ slug, query }) {
+  const api = `https://en.wikipedia.org/w/api.php?action=query&format=json&prop=pageimages&piprop=original|thumbnail&pithumbsize=1000&titles=${encodeURIComponent(query)}&redirects=1&origin=*`;
+  const json = await getJSON(api);
+  const pages = json?.query?.pages || {};
+  const page = Object.values(pages)[0] || {};
+  const src = (page.thumbnail && page.thumbnail.source) || (page.original && page.original.source) || null;
 
-  const json = await getJSON<any>(api);
-  const pages = json?.query?.pages ?? {};
-  const page = Object.values(pages)[0] as any;
-
-  const thumb =
-    page?.thumbnail?.source ||
-    page?.original?.source ||
-    null;
-
-  if (!thumb) {
-    console.warn(`⚠️  Pas d’image trouvée pour "${t.query}" (${t.slug})`);
+  if (!src) {
+    console.warn(`⚠️  Pas d’image trouvée pour "${query}" (${slug})`);
     return;
   }
 
-  const ext = (thumb.split(".").pop() || "jpg").split("?")[0].toLowerCase();
-  const safeExt = ["jpg", "jpeg", "png", "webp"].includes(ext) ? ext : "jpg";
-  const dest = path.join(outDir, `${t.slug}.${safeExt}`);
+  let ext = (src.split(".").pop() || "jpg").split("?")[0].toLowerCase();
+  if (!["jpg", "jpeg", "png", "webp"].includes(ext)) ext = "jpg";
 
-  await download(thumb, dest);
-  console.log(`✅ ${t.slug} → covers/${t.slug}.${safeExt}`);
+  const dest = path.join(outDir, `${slug}.${ext}`);
+  await download(src, dest);
+  console.log(`✅ ${slug} → covers/${slug}.${ext}`);
 }
 
 (async () => {
   for (const t of targets) {
-    try {
-      await fetchCover(t);
-    } catch (e) {
-      console.error(`❌ ${t.slug}:`, (e as Error).message);
-    }
+    try { await fetchCover(t); }
+    catch (e) { console.error(`❌ ${t.slug}:`, e.message); }
   }
 })();
