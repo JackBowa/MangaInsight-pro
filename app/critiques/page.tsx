@@ -19,7 +19,7 @@ function Stars({ n = 0 }: { n?: number }) {
   );
 }
 
-/* Carte série — badge “note moyenne lecteurs” conservé */
+/* Carte série — badge “note moyenne lecteurs” + fallback cover */
 function CritiqueCard({
   slug,
   title,
@@ -43,46 +43,64 @@ function CritiqueCard({
     .filter(Boolean)
     .slice(0, 3);
 
+  // src avec fallback initial
+  const src = cover || `/covers/${slug}.jpg`;
+
   return (
     <Link
       href={`/series/${slug}`}
       className="group relative overflow-hidden rounded-2xl border border-white/10 bg-white/5 hover:bg-white/10 transition shadow-sm hover:shadow-lg"
     >
-      {cover ? (
-        <div className="relative aspect-[4/5] overflow-hidden">
-          <img
-            src={cover}
-            alt={title}
-            className="absolute inset-0 h-full w-full object-cover transition scale-100 group-hover:scale-105"
-          />
-          <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/15 to-black/0" />
-          {category && (
-            <span className="absolute left-2 top-2 rounded-full border border-white/15 bg-black/50 px-2 py-0.5 text-xs tracking-wide text-white/90">
-              {category}
-            </span>
-          )}
-          {typeof avg === "number" && (
-            <span className="absolute right-2 top-2 rounded-full border border-white/15 bg-black/60 px-2 py-0.5 text-xs text-white/90">
-              Lecteurs : <b>{avg.toFixed(1)}/5</b>
-            </span>
-          )}
-          {tagList.length > 0 && (
-            <div className="absolute bottom-2 left-2 right-2 flex flex-wrap gap-1.5">
-              {tagList.map((t) => (
-                <span
-                  key={t}
-                  className="rounded-full bg-black/50 px-2 py-0.5 text-[11px] border border-white/10 text-white/90"
-                >
-                  {t}
-                </span>
-              ))}
-            </div>
-          )}
-        </div>
-      ) : (
-        <div className="aspect-[4/5] bg-white/5" />
-      )}
+      {/* image */}
+      <div className="relative aspect-[4/5] overflow-hidden">
+        <img
+          src={src}
+          alt={title}
+          className="absolute inset-0 h-full w-full object-cover transition scale-100 group-hover:scale-105"
+          onError={(e) => {
+            const img = e.currentTarget as HTMLImageElement;
+            // 1er fallback -> /covers/<slug>.jpg ; 2e -> placeholder
+            if (!img.dataset.fallback) {
+              img.dataset.fallback = "slug";
+              img.src = `/covers/${slug}.jpg`;
+            } else if (img.dataset.fallback === "slug") {
+              img.dataset.fallback = "placeholder";
+              img.src = "/covers/_placeholder.jpg";
+            }
+          }}
+        />
+        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/15 to-black/0" />
 
+        {/* badge catégorie */}
+        {category && (
+          <span className="absolute left-2 top-2 rounded-full border border-white/15 bg-black/50 px-2 py-0.5 text-xs tracking-wide text-white/90">
+            {category}
+          </span>
+        )}
+
+        {/* badge note moyenne lecteurs */}
+        {typeof avg === "number" && (
+          <span className="absolute right-2 top-2 rounded-full border border-white/15 bg-black/60 px-2 py-0.5 text-xs text-white/90">
+            Lecteurs : <b>{avg.toFixed(1)}/5</b>
+          </span>
+        )}
+
+        {/* tags (3 max) */}
+        {tagList.length > 0 && (
+          <div className="absolute bottom-2 left-2 right-2 flex flex-wrap gap-1.5">
+            {tagList.map((t) => (
+              <span
+                key={t}
+                className="rounded-full bg-black/50 px-2 py-0.5 text-[11px] border border-white/10 text-white/90"
+              >
+                {t}
+              </span>
+            ))}
+          </div>
+        )}
+      </div>
+
+      {/* contenu */}
       <div className="p-3">
         <div className="flex items-center justify-between gap-3">
           <h3 className="text-base font-semibold line-clamp-2">{title}</h3>
@@ -98,7 +116,7 @@ function CritiqueCard({
 }
 
 export default function CritiquesPage() {
-  // états conservés
+  // états
   const [q, setQ] = useState("");
   const [category, setCategory] = useState<"all" | "manga" | "manhwa">("all");
   const [sort, setSort] = useState<"recent" | "title" | "rating">("recent");
@@ -107,7 +125,7 @@ export default function CritiquesPage() {
   const [avgs, setAvgs] = useState<Record<string, number>>({});
   const [loadingAvgs, setLoadingAvgs] = useState(false);
 
-  // filtrage + tri (❌ plus de filtre par tag global)
+  // filtrage + tri
   const filtered = useMemo(() => {
     let list = SERIES.slice();
 
@@ -248,8 +266,6 @@ export default function CritiquesPage() {
         </div>
       </div>
 
-      {/* ❌ Ligne des tags globaux supprimée */}
-
       {/* grille */}
       {filtered.length === 0 ? (
         <div className="mt-12 text-center text-sm text-gray-400">
@@ -279,14 +295,4 @@ export default function CritiquesPage() {
       )}
     </div>
   );
-  <img
-  src={cover ?? `/covers/${slug}.jpg`}
-  alt={title}
-  className="absolute inset-0 h-full w-full object-cover transition scale-100 group-hover:scale-105"
-  onError={(e) => {
-    const img = e.currentTarget as HTMLImageElement;
-    img.onerror = null;               // évite boucle
-    img.src = "/covers/_placeholder.jpg";
-  }}
-/>
 }
