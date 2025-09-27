@@ -6,7 +6,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "fetch:covers": "node scripts/fetch-covers.js"
   },
   "dependencies": {
     "next": "14.2.5",
@@ -22,7 +23,7 @@
     "@supabase/auth-helpers-nextjs": "^0.8.2",
     "@supabase/auth-helpers-react": "^0.4.1",
     "@supabase/auth-ui-react": "0.4.7",
-"@supabase/auth-ui-shared": "0.1.8"
+    "@supabase/auth-ui-shared": "0.1.8"
   },
   "devDependencies": {
     "autoprefixer": "10.4.19",
@@ -33,11 +34,5 @@
     "@types/react": "18.3.3",
     "@types/react-dom": "18.3.0",
     "@tailwindcss/typography": "0.5.15"
-  },
-  {
-  "scripts": {
-    "fetch:covers": "ts-node scripts/fetch-covers.ts"
   }
-}
-npm run fetch:covers
 }
