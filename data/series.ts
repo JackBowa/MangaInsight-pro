@@ -1083,7 +1083,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   category: "manhwa",
   tags: "Sport · Vélo · Rue · Crew",
   cover: "/covers/wind-breaker.jpg",
-  synopsis: "Jay rejoint une équipe de riders urbains où s’expriment rivalité, amitié et adrénaline. Courses illégales, défis techniques et identité de groupe marquent sa progression. Le bitume devient terrain d’initiation.",
+  synopsis: "Haruka Sakura est un lycéen qui arrive au lycée Fûrin, connu pour son taux de délinquance élevé. Son objectif : affronter les meilleurs bagarreurs et devenir le meilleur d'entre eux. Mais cela ne va pas être aussi simple qu'il ne le pensait.",
   reviewHtml: "",
   stars: 0,
   shops: [
