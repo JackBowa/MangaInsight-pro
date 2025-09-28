@@ -1105,7 +1105,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   title: "Demon Slayer: Kimetsu no Yaiba",
   category: "manga",
   tags: "Shōnen · Démons · Sabre · Fratrie",
-  cover: "https://manga-insight-pro.vercel.app/demon-slayer.png",
+  cover: "https://manga-insight-pro.vercel.app/demon-slayer-kimetsu-no-yaiba.png",
   synopsis: "Après le massacre de sa famille et la transformation de sa sœur Nezuko en démon, Tanjiro rejoint le Corps des Pourfendeurs pour la protéger et traquer les responsables.",
   reviewHtml: "",
   stars: 0,
@@ -1140,25 +1140,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   ],
   live: []
 },
-{
-  slug: "overlord",
-  title: "Overlord",
-  category: "manga",
-  tags: "Isekai · Jeu vidéo · Nécromancie · Fantasy",
-  cover: "https://manga-insight-pro.vercel.app/overlord.jpg",
-  synopsis: "Coincé dans son MMORPG favori quand les serveurs s’arrêtent, Momonga devient Ainz Ooal Gown, seigneur mort-vivant, et tente de comprendre — voire dominer — ce monde.",
-  reviewHtml: "",
-  stars: 0,
-  shops: [
-    { name: "Manganim", url: "https://manganim.fr/search?q=Overlord%20manga", logo: "https://manganim.fr/cdn/shop/files/logo-manganim-header_180x.png?v=1672862594" },
-    { name: "Fnac",     url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=overlord%20manga%20tome", logo: "https://cdn.iconscout.com/icon/free/png-256/free-fnac-3521434-2944878.png" },
-    { name: "Amazon",   url: "https://www.amazon.fr/s?k=overlord+manga+tome", logo: "https://www.1min30.com/wp-content/uploads/2017/12/logo-amazon-1.jpg" }
-  ],
-  streaming: [
-    { name: "Crunchyroll", url: "https://www.crunchyroll.com/series/G69PZ5PDY/overlord", logo: "https://upload.wikimedia.org/wikipedia/commons/f/fc/Crunchyroll_logo_2018_vertical.png" }
-  ],
-  live: []
-},
+
 {
   slug: "arifureta",
   title: "Arifureta: De zéro à héros",
@@ -1194,25 +1176,6 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   ],
   streaming: [
     { name: "Crunchyroll", url: "https://www.crunchyroll.com/series/GRGG9798R/rezero--starting-life-in-another-world-", logo: "https://upload.wikimedia.org/wikipedia/commons/f/fc/Crunchyroll_logo_2018_vertical.png" }
-  ],
-  live: []
-},
-{
-  slug: "akame-ga-kill",
-  title: "Akame ga Kill!",
-  category: "manga",
-  tags: "Action · Assassins · Rébellion · Drame",
-  cover: "https://manga-insight-pro.vercel.app/akame-ga-kill.jpg",
-  synopsis: "Tatsumi rejoint Night Raid, un groupe d’assassins qui lutte contre un empire gangrené par la corruption. Chaque victoire se paie au prix fort.",
-  reviewHtml: "",
-  stars: 0,
-  shops: [
-    { name: "Manganim", url: "https://manganim.fr/search?q=Akame%20ga%20Kill", logo: "https://manganim.fr/cdn/shop/files/logo-manganim-header_180x.png?v=1672862594" },
-    { name: "Fnac",     url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=akame%20ga%20kill%20tome", logo: "https://cdn.iconscout.com/icon/free/png-256/free-fnac-3521434-2944878.png" },
-    { name: "Amazon",   url: "https://www.amazon.fr/s?k=akame+ga+kill+tome", logo: "https://www.1min30.com/wp-content/uploads/2017/12/logo-amazon-1.jpg" }
-  ],
-  streaming: [
-    { name: "Crunchyroll", url: "https://www.crunchyroll.com/series/GY2P14QEY/akame-ga-kill", logo: "https://upload.wikimedia.org/wikipedia/commons/f/fc/Crunchyroll_logo_2018_vertical.png" }
   ],
   live: []
 },
@@ -1257,7 +1220,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   title: "SSS-Class Suicide Hunter",
   category: "manhwa",
   tags: "Répétition · Donjons · Vengeance",
-  cover: "https://manga-insight-pro.vercel.app/sss-suicide-hunter.jpg",
+  cover: "https://manga-insight-pro.vercel.app/sss-class-suicide-hunter.jpg",
   synopsis: "La capacité unique de Kim Gong-ja le rend plus fort à chaque mort. Il accumule talents et stratégies dans un monde où les épreuves ne pardonnent pas.",
   reviewHtml: "",
   stars: 0,
@@ -1274,7 +1237,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   title: "My Wife Is a Demon Queen",
   category: "manhwa",
   tags: "Isekai · Couple · Fantasy",
-  cover: "https://manga-insight-pro.vercel.app/my-wife-demon-queen.jpg",
+  cover: "https://manga-insight-pro.vercel.app/my-wife-is-a-demon-queen.jpg",
   synopsis: "Un humain invoqué devient l’époux d’une reine démoniaque déchue. Ensemble, ils tentent de reconquérir un trône et un avenir.",
   reviewHtml: "",
   stars: 0,
@@ -1291,7 +1254,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   title: "The Rising of the Shield Hero",
   category: "manga",
   tags: "Isekai · Héros · Trahison · Fantasy",
-  cover: "https://manga-insight-pro.vercel.app/shield-hero.jpg",
+  cover: "https://manga-insight-pro.vercel.app/the-rising-of-the-shield-hero.jpg",
   synopsis: "Naofumi est invoqué dans un autre monde parmi les quatre héros légendaires. Prenant le bouclier, le plus faible des armes, il est trahi, calomnié, et doit prouver sa valeur seul.",
   reviewHtml: "",
   stars: 0,
@@ -1457,30 +1420,11 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   live: []
 },
 {
-  slug: "akame-ga-kill",
-  title: "Akame ga Kill!",
-  category: "manga",
-  tags: "Action · Rébellion · Assassins · Dark Fantasy",
-  cover: "https://manga-insight-pro.vercel.app/akame-ga-kill.jpg",
-  synopsis: "Tatsumi rejoint Night Raid, un groupe d’assassins luttant contre un Empire corrompu. Entre missions meurtrières et sacrifices, il découvre la face sombre de la révolution.",
-  reviewHtml: "",
-  stars: 0,
-  shops: [
-    { name: "Manganim", url: "https://manganim.fr/search?q=Akame+ga+Kill", logo: "" },
-    { name: "Fnac", url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=akame+ga+kill+tome", logo: "" },
-    { name: "Amazon", url: "https://www.amazon.fr/s?k=akame+ga+kill+manga", logo: "" }
-  ],
-  streaming: [
-    { name: "Crunchyroll", url: "https://www.crunchyroll.com/series/G69V7G5KY/akame-ga-kill", logo: "" }
-  ],
-  live: []
-},
-{
   slug: "akatsuki-no-yona",
   title: "Yona, Princesse de l’Aube",
   category: "manga",
   tags: "Aventure · Romance · Fantasy · Voyage",
-  cover: "https://manga-insight-pro.vercel.app/yona.jpg",
+  cover: "https://manga-insight-pro.vercel.app/",
   synopsis: "Princesse Yona voit son royaume basculer dans le chaos. Trahie, elle s’exile et part en quête des quatre dragons légendaires pour reconquérir son trône.",
   reviewHtml: "",
   stars: 0,
@@ -1549,7 +1493,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   title: "Edens Zero",
   category: "manga",
   tags: "Sci-fi · Aventure · Espace",
-  cover: "https://manga-insight-pro.vercel.app/edens-zero.jpg",
+  cover: "https://manga-insight-pro.vercel.app/eden-zero.jpg",
   synopsis: "Shiki, élevé par des robots sur l’île Granbell, rejoint Rebecca et Happy pour explorer l’espace à la recherche de la déesse Mère et découvrir l’amitié.",
   reviewHtml: "",
   stars: 0,
@@ -1695,25 +1639,6 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
     { name: "Amazon", url: "https://www.amazon.fr/s?k=king%27s+game+manga", logo: "" }
   ],
   streaming: []
-},
-{
-  slug: "kuroshitsuji",
-  title: "Black Butler (Kuroshitsuji)",
-  category: "manga",
-  tags: "Gothique · Mystère · Démon",
-  cover: "https://manga-insight-pro.vercel.app/kuroshitsuji.jpg",
-  synopsis: "Ciel Phantomhive, jeune comte anglais, a scellé un pacte avec Sebastian, son majordome démoniaque. Ensemble, ils résolvent les affaires sombres du Londres victorien.",
-  reviewHtml: "",
-  stars: 0,
-  shops: [
-    { name: "Manganim", url: "https://manganim.fr/search?q=Black+Butler", logo: "" },
-    { name: "Fnac", url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=black+butler+tome", logo: "" },
-    { name: "Amazon", url: "https://www.amazon.fr/s?k=black+butler+manga", logo: "" }
-  ],
-  streaming: [
-    { name: "Crunchyroll", url: "https://www.crunchyroll.com/fr/series/GRDV5EN6Y/black-butler", logo: "" }
-  ],
-  live: []
 },
 {
   slug: "magister-negi-magi",
@@ -1869,23 +1794,6 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   ],
   streaming: [
     { name: "Netflix", url: "https://www.netflix.com/search?q=Seven%20Deadly%20Sins", logo: "" }
-  ],
-  live: []
-},
-{
-  slug: "shield-hero",
-  title: "The Rising of the Shield Hero",
-  category: "manga",
-  tags: "Isekai · Bouclier · Réhabilitation",
-  cover: "https://manga-insight-pro.vercel.app/shield-hero.jpg",
-  synopsis: "Naofumi, invoqué comme Héros du Bouclier, est trahi et rejeté. Il doit se reconstruire et protéger le royaume avec l’aide de Raphtalia.",
-  reviewHtml: "",
-  stars: 0,
-  shops: [
-    { name: "Amazon", url: "https://www.amazon.fr/s?k=the+rising+of+the+shield+hero+manga", logo: "" }
-  ],
-  streaming: [
-    { name: "Crunchyroll", url: "https://www.crunchyroll.com/search?q=Shield%20Hero", logo: "" }
   ],
   live: []
 },
@@ -2175,23 +2083,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   live: []
 },
 {
-  slug: "deadman-wonderland",
-  title: "Deadman Wonderland",
-  category: "manga",
-  tags: "Prison · Pouvoirs · Survival",
-  cover: "https://manga-insight-pro.vercel.app/deadman-wonderland.jpg",
-  synopsis: "Accusé à tort d’un massacre, Ganta est envoyé à Deadman Wonderland, prison-parc d’attraction où les détenus s’affrontent dans des jeux mortels.",
-  stars: 0,
-  shops: [
-    { name: "Fnac", url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=deadman+wonderland+tome", logo: "" },
-    { name: "Amazon", url: "https://www.amazon.fr/s?k=deadman+wonderland+manga", logo: "" }
-  ],
-  streaming: [
-    { name: "Crunchyroll", url: "https://www.crunchyroll.com/search?q=Deadman%20Wonderland", logo: "" }
-  ],
-  live: []
-},
-{
+ {
   slug: "devilman-crybaby",
   title: "Devilman Crybaby",
   category: "manga",
@@ -2220,24 +2112,6 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   ],
   streaming: [
     { name: "Prime Video", url: "https://www.primevideo.com/search/ref=atv_nb_sr?phrase=Dororo", logo: "" }
-  ],
-  live: []
-},
-{
-  slug: "eden-zero",
-  title: "Edens Zero",
-  category: "manga",
-  tags: "Sci-fi · Aventure · Guildes",
-  cover: "https://manga-insight-pro.vercel.app/edens-zero.jpg",
-  synopsis: "Shiki, jeune garçon élevé par des robots, quitte sa planète pour explorer l’univers aux côtés de Rebecca et Happy, à la recherche de Mother.",
-  stars: 0,
-  shops: [
-    { name: "Manganim", url: "https://manganim.fr/search?q=Edens+Zero", logo: "" },
-    { name: "Fnac", url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=edens+zero+tome", logo: "" },
-    { name: "Amazon", url: "https://www.amazon.fr/s?k=edens+zero+manga", logo: "" }
-  ],
-  streaming: [
-    { name: "Netflix", url: "https://www.netflix.com/search?q=Edens%20Zero", logo: "" }
   ],
   live: []
 },
