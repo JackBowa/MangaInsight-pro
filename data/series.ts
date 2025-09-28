@@ -2082,7 +2082,6 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   ],
   live: []
 },
-{
  {
   slug: "devilman-crybaby",
   title: "Devilman Crybaby",
