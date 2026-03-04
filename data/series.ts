@@ -1684,7 +1684,6 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   live: []
 },
 {
-{
   slug: "rosario-vampire",
   title: "Rosario + Vampire",
   category: "manga",
