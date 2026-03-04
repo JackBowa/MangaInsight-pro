@@ -7,6 +7,8 @@ import { supabase } from "@/lib/lib/supabase/client";
 
 const GENRES = ["Tout", "Action", "Aventure", "Fantasy", "Shonen", "Thriller", "Sport", "Reincarnation", "Surnaturel"];
 
+const FEATURED_SLUGS = ["one-piece", "solo-leveling", "l-attaque-des-titans", "death-note", "blue-lock", "bleach"];
+
 function StarRating({ stars }: { stars?: number }) {
   if (!stars) return null;
   return (
@@ -25,34 +27,33 @@ function CritiqueCard({ slug, title, cover, tags, stars, category, avg }: {
   stars?: number; category?: string; avg?: number | null;
 }) {
   const tagList = (tags ?? "").split("·").map((t) => t.trim()).filter(Boolean).slice(0, 3);
-  const src = cover || `/_placeholder.jpg`;
 
   return (
-    <Link href={`/series/${slug}`} className="group relative overflow-hidden rounded-2xl border border-white/8 bg-white/3 hover:border-brand-500/40 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-2xl flex flex-col">
-      <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-        .card-title-bebas { font-family: 'Bebas Neue', sans-serif; letter-spacing: 0.04em; }
-      `}</style>
+    <Link
+      href={`/series/${slug}`}
+      className="group relative flex flex-col overflow-hidden rounded-2xl border border-white/7 bg-white/3 cursor-pointer transition-all duration-300 hover:-translate-y-2 hover:border-brand-500/50 hover:shadow-[0_20px_50px_rgba(0,0,0,0.5),0_0_40px_rgba(139,92,246,0.08)]"
+    >
+      {/* lueur hover */}
+      <div className="pointer-events-none absolute inset-0 rounded-2xl bg-gradient-to-br from-brand-500/15 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100 z-10" />
 
       {/* Image */}
       <div className="relative overflow-hidden" style={{ aspectRatio: "2/3" }}>
         <img
-          src={src}
+          src={cover || "/_placeholder.jpg"}
           alt={title}
           className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
           onError={(e) => {
             const img = e.currentTarget as HTMLImageElement;
-            if (!img.dataset.fallback) {
-              img.dataset.fallback = "1";
-              img.src = "/_placeholder.jpg";
-            }
+            if (!img.dataset.fallback) { img.dataset.fallback = "1"; img.src = "/_placeholder.jpg"; }
           }}
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/20 to-transparent opacity-70 group-hover:opacity-100 transition-opacity duration-300" />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#05050e]/97 via-[#05050e]/20 to-transparent opacity-65 transition-opacity duration-300 group-hover:opacity-100" />
+        {/* lueur violette depuis le bas */}
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_50%_100%,rgba(139,92,246,0.28)_0%,transparent_65%)] opacity-0 transition-opacity duration-400 group-hover:opacity-100" />
 
         {/* Badge categorie */}
         {category && (
-          <span className={`absolute left-2 top-2 rounded-full text-[0.58rem] font-bold tracking-widest uppercase px-2 py-0.5 border ${
+          <span className={`absolute left-2 top-2 z-10 rounded-full text-[0.58rem] font-bold tracking-widest uppercase px-2 py-0.5 border ${
             category === "manhwa"
               ? "bg-pink-500/20 border-pink-500/35 text-pink-300"
               : "bg-indigo-500/20 border-indigo-500/35 text-indigo-300"
@@ -62,15 +63,15 @@ function CritiqueCard({ slug, title, cover, tags, stars, category, avg }: {
         )}
 
         {/* Etoiles */}
-        <div className="absolute top-2 right-2">
+        <div className="absolute top-2 right-2 z-10">
           <StarRating stars={stars} />
         </div>
 
         {/* Tags */}
         {tagList.length > 0 && (
-          <div className="absolute bottom-2 left-2 right-2 flex flex-wrap gap-1">
+          <div className="absolute bottom-2 left-2 right-2 z-10 flex flex-wrap gap-1">
             {tagList.map((t) => (
-              <span key={t} className="rounded-full bg-black/55 border border-white/10 px-1.5 py-0.5 text-[0.6rem] text-white/80">
+              <span key={t} className="rounded-full bg-black/60 border border-white/10 px-1.5 py-0.5 text-[0.6rem] text-white/75">
                 {t}
               </span>
             ))}
@@ -79,11 +80,13 @@ function CritiqueCard({ slug, title, cover, tags, stars, category, avg }: {
       </div>
 
       {/* Corps */}
-      <div className="p-3">
-        <h3 className="card-title-bebas text-[1rem] text-white leading-tight mb-1">{title}</h3>
+      <div className="relative z-10 p-3">
+        <h3 style={{ fontFamily: "'Bebas Neue', sans-serif", letterSpacing: "0.04em" }} className="text-[1.05rem] text-white leading-tight mb-1">
+          {title}
+        </h3>
         {typeof avg === "number" && (
-          <p className="text-[0.68rem] text-white/40">
-            Lecteurs : <span className="text-brand-500-400 font-bold">{avg.toFixed(1)}/5</span>
+          <p className="text-[0.68rem] text-white/35">
+            Lecteurs : <span className="text-brand-400 font-bold">{avg.toFixed(1)}/5</span>
           </p>
         )}
       </div>
@@ -102,35 +105,32 @@ export default function CritiquesPage() {
   const mangaCount = SERIES.filter((s) => s.category === "manga").length;
   const manhwaCount = SERIES.filter((s) => s.category === "manhwa").length;
 
+  const featuredSeries = useMemo(() =>
+    FEATURED_SLUGS.map((slug) => SERIES.find((s) => s.slug === slug)).filter(Boolean).slice(0, 6) as typeof SERIES,
+    []
+  );
+
   const filtered = useMemo(() => {
     let list = SERIES.slice();
-
     if (category !== "all") list = list.filter((s) => s.category === category);
-
-    if (genre !== "Tout") {
-      list = list.filter((s) => (s.tags ?? "").toLowerCase().includes(genre.toLowerCase()));
-    }
-
+    if (genre !== "Tout") list = list.filter((s) => (s.tags ?? "").toLowerCase().includes(genre.toLowerCase()));
     if (q.trim()) {
       const needle = q.toLowerCase();
-      list = list.filter(
-        (s) =>
-          s.title.toLowerCase().includes(needle) ||
-          (s.tags ?? "").toLowerCase().includes(needle) ||
-          (s.synopsis ?? "").toLowerCase().includes(needle)
+      list = list.filter((s) =>
+        s.title.toLowerCase().includes(needle) ||
+        (s.tags ?? "").toLowerCase().includes(needle) ||
+        (s.synopsis ?? "").toLowerCase().includes(needle)
       );
     }
-
     if (sort === "title") list.sort((a, b) => a.title.localeCompare(b.title, "fr"));
     else if (sort === "rating") list.sort((a, b) => (b.stars ?? 0) - (a.stars ?? 0));
     else list = list.reverse();
-
     return list;
   }, [q, category, genre, sort]);
 
   useEffect(() => {
     const slugs = Array.from(new Set(filtered.map((s) => s.slug))).slice(0, 200);
-    if (slugs.length === 0) { setAvgs({}); return; }
+    if (!slugs.length) { setAvgs({}); return; }
     let cancelled = false;
     setLoadingAvgs(true);
     supabase.from("comments").select("slug, stars").in("slug", slugs).eq("approved", true)
@@ -155,122 +155,162 @@ export default function CritiquesPage() {
   }, [filtered]);
 
   return (
-    <div className="mx-auto max-w-7xl">
+    <div className="min-h-screen">
       <style>{`
         @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-        .bebas { font-family: 'Bebas Neue', sans-serif; letter-spacing: 0.04em; }
-        .eyebrow::before { content: ''; display: inline-block; width: 20px; height: 2px; background: #a78bfa; border-radius: 1px; margin-right: 8px; vertical-align: middle; }
+        @keyframes floatCover { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-8px)} }
+        @keyframes pulseOrb { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:0.5;transform:scale(0.8)} }
+        .float-1{animation:floatCover 7s ease-in-out infinite}
+        .float-2{animation:floatCover 7s ease-in-out 1s infinite}
+        .float-3{animation:floatCover 7s ease-in-out 2s infinite}
+        .float-4{animation:floatCover 7s ease-in-out 0.5s infinite}
+        .float-5{animation:floatCover 7s ease-in-out 1.5s infinite}
+        .float-6{animation:floatCover 7s ease-in-out 2.5s infinite}
+        .pulse-dot{animation:pulseOrb 2s infinite}
+        .hero-grid{background-image:linear-gradient(rgba(139,92,246,0.06) 1px,transparent 1px),linear-gradient(90deg,rgba(139,92,246,0.06) 1px,transparent 1px);background-size:40px 40px}
       `}</style>
 
-      {/* Header */}
-      <div className="py-10">
-        <p className="eyebrow text-[0.72rem] font-bold tracking-widest uppercase text-brand-500-400 mb-3">Catalogue complet</p>
-        <h1 className="bebas text-5xl md:text-6xl text-white mb-2">Critiques</h1>
-        <p className="text-sm text-white/40">
-          <span className="text-brand-500-400 font-bold">{SERIES.length}</span> series referencees · Manga & Manhwa
-        </p>
-      </div>
+      {/* ── HERO ── */}
+      <section className="relative min-h-[320px] flex items-center overflow-hidden px-6 md:px-12 hero-grid">
+        {/* fond */}
+        <div className="absolute inset-0 bg-gradient-to-br from-brand-700/50 via-brand-900/30 to-transparent" />
+        {/* orbes */}
+        <div className="absolute -top-20 left-[10%] w-72 h-72 rounded-full bg-brand-500/18 blur-[60px] pointer-events-none" />
+        <div className="absolute -bottom-10 left-[35%] w-48 h-48 rounded-full bg-brand-400/12 blur-[60px] pointer-events-none" />
 
-      {/* Barre de filtres */}
-      <div className="bg-white/3 border border-white/7 rounded-2xl p-4 mb-8 flex flex-wrap gap-4 items-center">
-
-        {/* Recherche */}
-        <div className="relative flex-1 min-w-[200px]">
-          <input
-            value={q}
-            onChange={(e) => setQ(e.target.value)}
-            placeholder="Rechercher un titre, un genre..."
-            className="w-full bg-black/40 border border-white/10 rounded-xl px-4 py-2.5 text-sm outline-none focus:border-brand-500/50 placeholder:text-white/30 transition-colors"
-          />
-          {q && (
-            <button onClick={() => setQ("")} className="absolute right-3 top-1/2 -translate-y-1/2 text-white/40 hover:text-white text-xs">✕</button>
-          )}
+        {/* contenu */}
+        <div className="relative z-10 max-w-lg py-14">
+          <div className="inline-flex items-center gap-2 text-[0.7rem] font-bold tracking-[0.18em] uppercase text-brand-300 bg-brand-500/12 border border-brand-500/25 px-3.5 py-1.5 rounded-full mb-4">
+            <span className="pulse-dot w-1.5 h-1.5 rounded-full bg-brand-400 inline-block" />
+            Critiques · Manhwa · Manga
+          </div>
+          <h1 style={{ fontFamily: "'Bebas Neue', sans-serif", letterSpacing: "0.03em" }} className="text-[clamp(3.5rem,7vw,5.5rem)] text-white leading-[0.92] mb-4">
+            Toutes<br />les <span className="text-brand-500">critiques</span>
+          </h1>
+          <p className="text-[0.95rem] text-white/50 leading-relaxed mb-6 max-w-sm">
+            Explore, filtre et decouvre les meilleures series notees par la redaction.
+          </p>
+          <div className="flex gap-7">
+            {[
+              { num: SERIES.length, label: "Series" },
+              { num: mangaCount, label: "Mangas" },
+              { num: manhwaCount, label: "Manhwas" },
+            ].map(({ num, label }) => (
+              <div key={label}>
+                <div style={{ fontFamily: "'Bebas Neue', sans-serif" }} className="text-[1.8rem] text-white leading-none tracking-wide">{num}</div>
+                <div className="text-[0.65rem] font-bold tracking-[0.12em] uppercase text-white/35 mt-0.5">{label}</div>
+              </div>
+            ))}
+          </div>
         </div>
 
-        {/* Onglets categorie */}
-        <div className="flex gap-1.5 bg-black/30 rounded-xl p-1 border border-white/6">
-          {([
-            { key: "all", label: "Tout", count: SERIES.length },
-            { key: "manga", label: "Manga", count: mangaCount },
-            { key: "manhwa", label: "Manhwa", count: manhwaCount },
-          ] as const).map((opt) => (
-            <button
-              key={opt.key}
-              onClick={() => setCategory(opt.key)}
-              className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm font-bold transition-all ${
-                category === opt.key
-                  ? "bg-brand-500 text-white shadow-lg shadow-brand-500/30"
-                  : "text-white/50 hover:text-white hover:bg-white/6"
-              }`}
-            >
-              {opt.label}
-              <span className={`text-[0.65rem] px-1.5 py-0.5 rounded ${category === opt.key ? "bg-white/25" : "bg-white/10"}`}>
-                {opt.count}
-              </span>
-            </button>
+        {/* covers flottantes */}
+        <div className="absolute right-8 md:right-16 top-1/2 -translate-y-1/2 hidden md:grid grid-cols-3 gap-2 z-10" style={{ gridTemplateColumns: "repeat(3, 90px)" }}>
+          {featuredSeries.map((s, i) => (
+            <div key={s.slug} className={`float-${i + 1} rounded-xl overflow-hidden border border-white/10 shadow-2xl`} style={{ aspectRatio: "2/3", marginTop: i % 2 === 1 ? "16px" : "0" }}>
+              <img src={s.cover || "/_placeholder.jpg"} alt={s.title} className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                onError={(e) => { const img = e.currentTarget as HTMLImageElement; if (!img.dataset.fb) { img.dataset.fb = "1"; img.src = "/_placeholder.jpg"; } }} />
+            </div>
           ))}
         </div>
+      </section>
 
-        {/* Tri */}
-        <select
-          value={sort}
-          onChange={(e) => setSort(e.target.value as any)}
-          className="bg-black/40 border border-white/10 rounded-xl px-3 py-2.5 text-sm outline-none focus:border-brand-500/50 text-white/70"
-        >
-          <option value="recent">Plus recents</option>
-          <option value="title">Titre A-Z</option>
-          <option value="rating">Meilleure note</option>
-        </select>
+      {/* fade */}
+      <div className="h-14 bg-gradient-to-b from-transparent to-[#0b0b10] -mt-0.5 relative z-10" />
 
-        {/* Chips genres */}
-        <div className="w-full flex flex-wrap gap-2 pt-3 border-t border-white/6">
-          {GENRES.map((g) => (
-            <button
-              key={g}
-              onClick={() => setGenre(g)}
-              className={`px-3 py-1 rounded-full text-xs font-bold border transition-all ${
-                genre === g
-                  ? "bg-brand-500/20 border-brand-500/50 text-brand-500-400"
-                  : "bg-transparent border-white/10 text-white/50 hover:border-white/20 hover:text-white"
-              }`}
-            >
-              {g}
-            </button>
-          ))}
-        </div>
-      </div>
+      {/* ── CONTENU ── */}
+      <div className="mx-auto max-w-[1400px] px-4 md:px-8">
 
-      {/* Compteur resultats */}
-      <div className="flex items-center justify-between mb-5">
-        <p className="text-sm text-white/40">
-          <span className="text-white font-bold">{filtered.length}</span> resultats
-        </p>
-        {loadingAvgs && <p className="text-xs text-white/30">Calcul des notes lecteurs...</p>}
-      </div>
+        {/* Filtres */}
+        <div className="bg-white/3 border border-white/7 rounded-2xl p-4 md:p-5 mb-7 flex flex-wrap gap-3 items-center">
 
-      {/* Grille */}
-      {filtered.length === 0 ? (
-        <div className="text-center py-20 text-white/30">
-          <div className="text-5xl mb-4">🔍</div>
-          <p className="bebas text-2xl text-white/40 mb-2">Aucun resultat</p>
-          <p className="text-sm">Essayez d&apos;autres mots-cles ou filtres</p>
-        </div>
-      ) : (
-        <div className="grid gap-4 grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6">
-          {filtered.map((s) => (
-            <CritiqueCard
-              key={s.slug}
-              slug={s.slug}
-              title={s.title}
-              cover={s.cover}
-              tags={s.tags}
-              stars={s.stars as number | undefined}
-              category={s.category}
-              avg={avgs[s.slug]}
+          {/* Recherche */}
+          <div className="relative flex-1 min-w-[200px]">
+            <input
+              value={q}
+              onChange={(e) => setQ(e.target.value)}
+              placeholder="Rechercher un titre, un genre..."
+              className="w-full bg-black/45 border border-white/9 rounded-xl px-4 py-2.5 text-sm outline-none focus:border-brand-500/50 focus:shadow-[0_0_0_3px_rgba(139,92,246,0.08)] placeholder:text-white/25 transition-all"
             />
-          ))}
+            {q && (
+              <button onClick={() => setQ("")} className="absolute right-3 top-1/2 -translate-y-1/2 text-white/40 hover:text-white text-xs">✕</button>
+            )}
+          </div>
+
+          {/* Onglets categorie */}
+          <div className="flex gap-1 bg-black/35 rounded-xl p-1 border border-white/6">
+            {([
+              { key: "all", label: "Tout", count: SERIES.length },
+              { key: "manga", label: "Manga", count: mangaCount },
+              { key: "manhwa", label: "Manhwa", count: manhwaCount },
+            ] as const).map((opt) => (
+              <button key={opt.key} onClick={() => setCategory(opt.key)}
+                className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm font-bold transition-all ${
+                  category === opt.key ? "bg-brand-500 text-white shadow-lg shadow-brand-500/30" : "text-white/45 hover:text-white hover:bg-white/6"
+                }`}>
+                {opt.label}
+                <span className={`text-[0.65rem] px-1.5 py-0.5 rounded ${category === opt.key ? "bg-white/25" : "bg-white/10"}`}>{opt.count}</span>
+              </button>
+            ))}
+          </div>
+
+          {/* Tri */}
+          <select value={sort} onChange={(e) => setSort(e.target.value as any)}
+            className="bg-black/40 border border-white/9 rounded-xl px-3 py-2.5 text-sm outline-none focus:border-brand-500/50 text-white/65">
+            <option value="recent">Plus recents</option>
+            <option value="title">Titre A-Z</option>
+            <option value="rating">Meilleure note</option>
+          </select>
+
+          {/* Chips genres */}
+          <div className="w-full flex flex-wrap gap-2 pt-3 border-t border-white/5">
+            {GENRES.map((g) => (
+              <button key={g} onClick={() => setGenre(g)}
+                className={`px-3 py-1 rounded-full text-xs font-bold border transition-all ${
+                  genre === g
+                    ? "bg-brand-500/18 border-brand-500/45 text-brand-300"
+                    : "bg-transparent border-white/9 text-white/45 hover:border-white/20 hover:text-white hover:bg-white/4"
+                }`}>
+                {g}
+              </button>
+            ))}
+          </div>
         </div>
-      )}
+
+        {/* Compteur */}
+        <div className="flex items-center justify-between mb-5">
+          <p className="text-sm text-white/35">
+            <span className="text-white font-bold text-base">{filtered.length}</span> resultats
+          </p>
+          {loadingAvgs && <p className="text-xs text-white/25">Calcul des notes...</p>}
+        </div>
+
+        {/* Grille */}
+        {filtered.length === 0 ? (
+          <div className="text-center py-24 text-white/25">
+            <div className="text-5xl mb-4">🔍</div>
+            <p style={{ fontFamily: "'Bebas Neue', sans-serif" }} className="text-2xl text-white/35 mb-2">Aucun resultat</p>
+            <p className="text-sm">Essaie d&apos;autres mots-cles ou filtres</p>
+          </div>
+        ) : (
+          <div className="grid gap-4 grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6">
+            {filtered.map((s) => (
+              <CritiqueCard
+                key={s.slug}
+                slug={s.slug}
+                title={s.title}
+                cover={s.cover}
+                tags={s.tags}
+                stars={s.stars as number | undefined}
+                category={s.category}
+                avg={avgs[s.slug]}
+              />
+            ))}
+          </div>
+        )}
+
+        <div className="h-20" />
+      </div>
     </div>
   );
 }
