@@ -13,7 +13,7 @@ const ALL_SHOPS: ShopKey[] = ["manganim", "amazon", "fnac", "rakuten"];
 const NO_MANGANIM: ShopKey[] = ["amazon", "fnac", "rakuten"];
 
 export const SHOPS_MAP: Record<string, ShopKey[]> = {
-  // ── MANGAS JAPONAIS — tous les shops ──
+  // ── MANGAS JAPONAIS, tous les shops ──
   "naruto":                        ALL_SHOPS,
   "my-hero-academia":              ALL_SHOPS,
   "l-attaque-des-titans":          ALL_SHOPS,
@@ -105,7 +105,7 @@ export const SHOPS_MAP: Record<string, ShopKey[]> = {
   "kings-game":                    ALL_SHOPS,
   "black-god":                     ALL_SHOPS,
 
-  // ── MANHWAS CORÉENS — pas sur Manganim ──
+  // ── MANHWAS CORÉENS, pas sur Manganim ──
   "solo-leveling":                 NO_MANGANIM,
   "the-player-who-cant-level-up":  NO_MANGANIM,
   "the-beginning-after-the-end":   NO_MANGANIM,
