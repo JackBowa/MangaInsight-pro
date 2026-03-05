@@ -168,23 +168,51 @@ export default function TopsPage() {
       `}</style>
 
       {/* HERO */}
-      <section className="relative min-h-[270px] flex items-center overflow-hidden px-6 md:px-12 hero-grid">
+      <section className="relative min-h-[320px] flex items-center overflow-hidden px-6 md:px-12 hero-grid">
         <div className="absolute inset-0 bg-gradient-to-br from-brand-700/50 via-brand-900/30 to-transparent" />
-        <div className="absolute -top-16 left-[5%] w-72 h-72 rounded-full bg-amber-400/12 blur-[60px] pointer-events-none" />
-        <div className="absolute -bottom-10 left-[40%] w-48 h-48 rounded-full bg-brand-500/18 blur-[60px] pointer-events-none" />
+        <div className="absolute -top-16 left-[5%] w-96 h-96 rounded-full bg-amber-400/12 blur-[80px] pointer-events-none" />
+        <div className="absolute -bottom-10 left-[40%] w-64 h-64 rounded-full bg-brand-500/18 blur-[70px] pointer-events-none" />
 
-        <div className="relative z-10 py-12">
-          <div className="inline-flex items-center gap-2 text-[0.7rem] font-bold tracking-[0.18em] uppercase text-amber-300 bg-amber-400/10 border border-amber-400/25 px-3.5 py-1.5 rounded-full mb-4">
+        <div className="relative z-10 py-14 max-w-xl">
+          <div className="inline-flex items-center gap-2 text-[0.7rem] font-bold tracking-[0.18em] uppercase text-amber-300 bg-amber-400/10 border border-amber-400/25 px-3.5 py-1.5 rounded-full mb-5">
             <span className="pulse-dot w-1.5 h-1.5 rounded-full bg-amber-400 inline-block" />
             Classements officiels
           </div>
           <h1 style={{ fontFamily: "'Bebas Neue', sans-serif", letterSpacing: "0.03em" }}
-            className="text-[clamp(3rem,6vw,5rem)] text-white leading-[0.92] mb-3">
+            className="text-[clamp(3.5rem,7vw,5.5rem)] text-white leading-none mb-4">
             Rangs <span className="text-amber-400">SSS</span> à <span className="text-blue-400">B</span>
           </h1>
-          <p className="text-[0.9rem] text-white/45 leading-relaxed max-w-md">
-            Les meilleures series classees par la redaction — de l&apos;incontournable absolu au bon divertissement.
+          <p className="text-[0.95rem] text-white/50 leading-relaxed mb-6">
+            Les meilleures séries classées par la rédaction, de l&apos;incontournable absolu au bon divertissement.
           </p>
+          <div className="flex gap-6">
+            {([
+              { rank: "SSS", color: "text-amber-400" },
+              { rank: "SS",  color: "text-red-400" },
+              { rank: "S",   color: "text-orange-400" },
+              { rank: "A",   color: "text-green-400" },
+              { rank: "B",   color: "text-blue-400" },
+            ] as const).map(({ rank, color }) => {
+              const count = SERIES.filter(s => starsToRank(s.stars as number ?? 0) === rank).length;
+              return count > 0 ? (
+                <div key={rank}>
+                  <div style={{ fontFamily: "'Bebas Neue', sans-serif" }} className={`text-[1.8rem] leading-none tracking-wide ${color}`}>{count}</div>
+                  <div className="text-[0.65rem] font-bold tracking-[0.12em] uppercase text-white/35 mt-0.5">Rang {rank}</div>
+                </div>
+              ) : null;
+            })}
+          </div>
+        </div>
+
+        {/* Covers top SSS flottantes */}
+        <div className="absolute right-8 md:right-16 top-1/2 -translate-y-1/2 hidden md:flex gap-2 z-10">
+          {SERIES.filter(s => starsToRank(s.stars as number ?? 0) === "SSS").slice(0, 5).map((s, i) => (
+            <div key={s.slug} className="rounded-xl overflow-hidden border border-amber-400/20 shadow-2xl flex-shrink-0"
+              style={{ width: 70, aspectRatio: "2/3", marginTop: i % 2 === 1 ? 16 : 0, opacity: 1 - i * 0.12 }}>
+              <img src={s.cover || "/_placeholder.jpg"} alt={s.title} className="w-full h-full object-cover"
+                onError={(e) => { const img = e.currentTarget as HTMLImageElement; if (!img.dataset.fb) { img.dataset.fb = "1"; img.src = "/_placeholder.jpg"; }}} />
+            </div>
+          ))}
         </div>
       </section>
 
