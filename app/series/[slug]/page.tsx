@@ -2,6 +2,11 @@ import { notFound } from "next/navigation";
 import Link from "next/link";
 import { SERIES } from "@/data/series";
 import Comments from "./Comments";
+import CoverImage from "./CoverImage";
+
+export function generateStaticParams() {
+  return SERIES.map(s => ({ slug: s.slug }));
+}
 
 function starsToRank(stars?: number): string | null {
   if (stars === 5) return "SSS";
@@ -293,9 +298,8 @@ export default function SeriePage({ params }: { params: { slug: string } }) {
                 <Link key={s.slug} href={`/series/${s.slug}`}
                   className="group block rounded-xl overflow-hidden border border-white/7 transition-all duration-300 hover:-translate-y-1.5 hover:border-brand-500/40 hover:shadow-xl">
                   <div className="relative overflow-hidden" style={{ aspectRatio: "2/3" }}>
-                    <img src={s.cover || "/_placeholder.jpg"} alt={s.title}
-                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                      onError={(e) => { const img = e.currentTarget as HTMLImageElement; if (!img.dataset.fb) { img.dataset.fb = "1"; img.src = "/_placeholder.jpg"; } }} />
+                    <CoverImage src={s.cover} alt={s.title}
+                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
                     <div className="absolute inset-0 bg-gradient-to-t from-[#05050e]/95 to-transparent opacity-60" />
                   </div>
                   <div className="p-2 bg-white/3">
