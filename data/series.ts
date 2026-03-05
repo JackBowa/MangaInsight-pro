@@ -21,7 +21,7 @@ export const SERIES: Serie[] = [
   // Tu ajoutes les autres séries ici, par ex. Naruto :
 {
   slug: "naruto",
-  pros: ["Personnages profonds et mémorables","Thèmes universels — amitié, persévérance, sacrifice","Combats stratégiques et inventifs","World-building riche et cohérent"],
+  pros: ["Personnages profonds et mémorables","Thèmes universels, amitié, persévérance, sacrifice","Combats stratégiques et inventifs","World-building riche et cohérent"],
   cons: ["Nombreux flashbacks ralentissent le rythme","Arcs de remplissage dans l'animé","Fin de Shippuden divisive"],
   addedAt: "2025-09-01",
   title: "Naruto",
@@ -172,6 +172,8 @@ export const SERIES: Serie[] = [
 // THE PLAYER WHO CAN'T LEVEL UP
 {
   slug: "the-player-who-cant-level-up",
+  pros: ["Concept original de stagnation volontaire dans un monde de progression","Héros ingénieux qui compense par la stratégie","Univers de donjons bien construit"],
+  cons: ["Rythme parfois lent","Certains arcs manquent de tension","Personnages secondaires peu développés"],
   addedAt: "2025-09-06",
   title: "The Player Who Can’t Level Up",
   category: "manhwa",
@@ -209,6 +211,8 @@ export const SERIES: Serie[] = [
 // THE BEGINNING AFTER THE END
 {
   slug: "the-beginning-after-the-end",
+  pros: ["Isekai avec un vrai passé adulte pour le protagoniste","World-building solide et progressif","Évolution émotionnelle crédible"],
+  cons: ["Longueur excessive de certains arcs","Quelques clichés du genre persistants","Rythme inégal selon les volumes"],
   addedAt: "2025-09-08",
   title: "The Beginning After The End",
   category: "manhwa",
@@ -342,7 +346,7 @@ export const SERIES: Serie[] = [
 // BLUE LOCK
 {
   slug: "blue-lock",
-  pros: ["Concept original — anti-shōnen sportif","Rivalités intenses et mémorables","Psychologie du football jamais vue dans le genre"],
+  pros: ["Concept original, anti-shōnen sportif","Rivalités intenses et mémorables","Psychologie du football jamais vue dans le genre"],
   cons: ["Certains matchs s'étirent en longueur","Logique footballistique parfois fantaisiste","Personnages féminins inexistants"],
   addedAt: "2025-09-13",
   title: "Blue Lock",
@@ -381,7 +385,7 @@ export const SERIES: Serie[] = [
 // BLEACH
 {
   slug: "bleach",
-  pros: ["Designs de personnages iconiques","Arc Soul Society — l'un des meilleurs du shōnen","Ambiance unique entre le monde des vivants et des morts"],
+  pros: ["Designs de personnages iconiques","Arc Soul Society, l'un des meilleurs du shōnen","Ambiance unique entre le monde des vivants et des morts"],
   cons: ["Arc Fullbring considéré comme le moins bon","Remplissage excessif dans l'animé","Fin manga très précipitée"],
   addedAt: "2025-09-15",
   title: "Bleach",
@@ -417,6 +421,8 @@ export const SERIES: Serie[] = [
 // BLACK BUTLER (Kuroshitsuji)
 {
   slug: "black-butler",
+  pros: ["Duo Sebastian/Ciel iconique et fascinant","Ambiance victorienne gothique unique","Mélange humour et horreur très bien dosé"],
+  cons: ["Arcs inégaux en qualité","Certaines intrigues s'étirent inutilement","Résolution de certains mystères décevante"],
   addedAt: "2025-09-17",
   title: "Black Butler",
   category: "manga",
@@ -451,6 +457,8 @@ export const SERIES: Serie[] = [
 // ASSASSINATION CLASSROOM
 {
   slug: "assassination-classroom",
+  pros: ["Concept brillant et original","Équilibre parfait entre comédie et émotion","Korosensei — l'un des meilleurs personnages du shōnen"],
+  cons: ["Certains élèves restent peu développés","Quelques arcs mineurs dispensables","Fin prévisible malgré la qualité d'exécution"],
   addedAt: "2025-09-19",
   title: "Assassination Classroom",
   category: "manga",
@@ -483,6 +491,8 @@ export const SERIES: Serie[] = [
 },
 {
   slug: "kuroko-no-basket",
+  pros: ["Matchs intenses et bien rythmés","Galerie de personnages mémorables","Spécialités de jeu inventives et spectaculaires"],
+  cons: ["Pouvoirs trop surhumains pour un sport réaliste","Adversaires principaux parfois trop puissants","Peu de défaites pour les protagonistes"],
   addedAt: "2025-09-21",
   title: "Kuroko no Basket",
   category: "manga",
@@ -508,6 +518,8 @@ export const SERIES: Serie[] = [
 },
 {
   slug: "kill-the-hero",
+  pros: ["Protagoniste froid et calculateur rafraîchissant","Boucle de régression bien exploitée","Tension maintenue tout au long"],
+  cons: ["Manque d'humour et de légèreté","Personnages secondaires effacés","Prévisible dans sa structure"],
   addedAt: "2025-09-22",
   title: "Kill the Hero",
   category: "manhwa",
@@ -526,12 +538,12 @@ export const SERIES: Serie[] = [
 }, 
  {
   slug: "hunter-x-hunter",
-  pros: ["Système de pouvoirs Nen — le plus inventif du genre","Arcs variés et tous marquants","Protagonistes vraiment originaux"],
+  pros: ["Système de pouvoirs Nen, le plus inventif du genre","Arcs variés et tous marquants","Protagonistes vraiment originaux"],
   cons: ["Hiatus interminables depuis des années","Certains arcs très longs et denses","Fin potentiellement jamais écrite"],
   addedAt: "2025-09-24",
   reviewHtml: `<p>Yoshihiro Togashi a créé avec Hunter x Hunter quelque chose de paradoxal : une série incomplète qui reste l'une des plus abouties intellectuellement du shōnen. Malgré des hiatus qui s'étirent sur des années, malgré une fin qui n'arrive pas, chaque arc de HxH est une démonstration de ce que peut atteindre le manga quand un auteur refuse tous les compromis.</p>
-<p>Le système de pouvoirs Nen est le plus ingénieux du genre. Pas de simples attaques numérotées ici — chaque utilisateur développe un Nen unique qui reflète sa personnalité, ses peurs, ses désirs. Les combats de HxH sont des joutes mentales autant que physiques, et certains affrontements se résolvent en plusieurs chapitres de déduction pure. L'arc Yorknew et l'arc Chimaera Ant sont parmi les sommets absolus du shōnen.</p>
-<p>Gon et Killua forment l'un des meilleurs duos de l'histoire du manga — deux garçons liés par une amitié sincère mais que tout oppose, et dont les chemins finissent par diverger de façon déchirante. Leur relation est le cœur émotionnel de la série.</p>
+<p>Le système de pouvoirs Nen est le plus ingénieux du genre. Pas de simples attaques numérotées ici, chaque utilisateur développe un Nen unique qui reflète sa personnalité, ses peurs, ses désirs. Les combats de HxH sont des joutes mentales autant que physiques, et certains affrontements se résolvent en plusieurs chapitres de déduction pure. L'arc Yorknew et l'arc Chimaera Ant sont parmi les sommets absolus du shōnen.</p>
+<p>Gon et Killua forment l'un des meilleurs duos de l'histoire du manga, deux garçons liés par une amitié sincère mais que tout oppose, et dont les chemins finissent par diverger de façon déchirante. Leur relation est le cœur émotionnel de la série.</p>
 <p>La seule vraie ombre au tableau : les hiatus. Togashi souffre de problèmes de dos chroniques qui rendent la publication extrêmement irrégulière. Commencer HxH c'est accepter d'attendre. Mais ce qu'il y a à lire vaut chaque minute d'attente.</p>`,
   title: "Hunter × Hunter",
   category: "manga",
@@ -560,7 +572,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "berserk",
-  pros: ["Chef-d'œuvre absolu du dark fantasy","Artwork de Miura — niveau hors norme","Personnage de Guts — l'un des meilleurs de l'histoire du manga"],
+  pros: ["Chef-d'œuvre absolu du dark fantasy","Artwork de Miura, niveau hors norme","Personnage de Guts, l'un des meilleurs de l'histoire du manga"],
   cons: ["Hiatus très fréquents du vivant de l'auteur","Histoire inachevée suite au décès de Miura","Extrêmement violent et sombre"],
   addedAt: "2025-09-26",
   title: "Berserk",
@@ -568,7 +580,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   tags: "Dark Fantasy · Tragédie · Épée · Destin",
   cover: "https://manga-insight-pro.vercel.app/berserk.jpg",
   synopsis: "Guts, mercenaire marqué par la fatalité, traverse un monde ravagé par monstres et trahisons. Sa quête de vengeance croise celle d’un empire du mal. L’espoir subsiste au fil du fer et de la camaraderie. Une odyssée violente et mythique.",
-  reviewHtml: `<p>Il y a des œuvres qui transcendent leur médium. Berserk est de celles-là. Kentaro Miura a consacré plus de trente ans de sa vie à bâtir l'un des univers les plus sombres, les plus beaux et les plus humains de toute la bande dessinée mondiale — et son décès en 2021 a laissé une cicatrice dans le cœur de millions de lecteurs, comme un écho cruel au destin de son héros.</p><p>Guts, le guerrier à l'épée démesurée, est bien plus qu'un personnage d'action. C'est une étude sur la souffrance, la résistance, et la question fondamentale de savoir si un homme brisé peut encore choisir de vivre. L'Arc d'Or reste l'une des meilleures introductions de l'histoire du manga : une amitié, une trahison, une chute. Tout ce qui suit en découle.</p><p>L'artwork de Miura est hors catégorie. Ses doubles pages de bataille, ses architectures gothiques, ses démons d'un détail hallucinant — aucun autre mangaka n'a atteint ce niveau de maîtrise technique. Chaque planche est une peinture.</p><p>Berserk est violent, sombre, parfois éprouvant. Mais c'est une lecture nécessaire — un monument qui rappelle pourquoi le manga peut être un art majeur. L'histoire reste inachevée, et ce manque fait mal. Mais ce qui existe déjà suffit à en faire un chef-d'œuvre absolu.</p>`,
+  reviewHtml: `<p>Il y a des œuvres qui transcendent leur médium. Berserk est de celles-là. Kentaro Miura a consacré plus de trente ans de sa vie à bâtir l'un des univers les plus sombres, les plus beaux et les plus humains de toute la bande dessinée mondiale, et son décès en 2021 a laissé une cicatrice dans le cœur de millions de lecteurs, comme un écho cruel au destin de son héros.</p><p>Guts, le guerrier à l'épée démesurée, est bien plus qu'un personnage d'action. C'est une étude sur la souffrance, la résistance, et la question fondamentale de savoir si un homme brisé peut encore choisir de vivre. L'Arc d'Or reste l'une des meilleures introductions de l'histoire du manga : une amitié, une trahison, une chute. Tout ce qui suit en découle.</p><p>L'artwork de Miura est hors catégorie. Ses doubles pages de bataille, ses architectures gothiques, ses démons d'un détail hallucinant, aucun autre mangaka n'a atteint ce niveau de maîtrise technique. Chaque planche est une peinture.</p><p>Berserk est violent, sombre, parfois éprouvant. Mais c'est une lecture nécessaire, un monument qui rappelle pourquoi le manga peut être un art majeur. L'histoire reste inachevée, et ce manque fait mal. Mais ce qui existe déjà suffit à en faire un chef-d'œuvre absolu.</p>`,
   stars: 5,
   shops: [
     { name: "Manganim", url: "https://manganim.fr/search?q=Berserk", logo: "https://manganim.fr/cdn/shop/files/logo-manganim-header_180x.png?v=1672862594" },
@@ -583,13 +595,15 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "black-clover",
+  pros: ["Énergie et enthousiasme communicatifs","Système de magie créatif et varié","Progression constante en qualité"],
+  cons: ["Début générique et lent","Asta criard au départ","Trop de personnages difficiles à suivre"],
   addedAt: "2025-09-28",
   title: "Black Clover",
   category: "manga",
   tags: "Shōnen · Magie · Rivalité · Dépassement",
   cover: "https://manga-insight-pro.vercel.app/black-clover.png",
   synopsis: "Né sans magie, Asta rêve pourtant de devenir Empereur-Mage. Avec son grimoire anti-magie et la rivalité de Yuno, il défie un monde qui le croit impuissant. Missions périlleuses et complots démoniaques s’enchaînent. La persévérance devient son arme absolue.",
-  reviewHtml: "",
+  reviewHtml: `<p>Black Clover assume pleinement d'être un shōnen classique, et le fait avec une énergie et une conviction qui finissent par emporter l'adhésion. Yūki Tabata n'invente rien, mais il exécute la formule avec un soin et une progression constante qui ont conquis des millions de lecteurs.</p><p>Asta est né sans magie dans un monde où tout le monde en a. Sa compensation : un corps physique extraordinaire et une volonté absolue de devenir le Roi Mage malgré tout. Ce prémisse classique est porté par un protagoniste dont l'enthousiasme bruyant cache une loyauté et une droiture sincères, irritant au départ, attachant sur la durée.</p><p>Black Clover brille dans ses arcs de tournoi et de bataille à grande échelle. Le système de magie, chaque utilisateur a un attribut unique, crée des affrontements variés et créatifs. Les chevaliers magiques des Taureaux Noirs forment une galerie de personnages secondaires solides, dont plusieurs volent régulièrement la vedette à Asta.</p><p>La série s'améliore significativement au fil des arcs, les premiers tomes sont les plus génériques, et la qualité monte à mesure que Tabata développe son world-building. Un shōnen d'action qui récompense la patience.</p>`,
   stars: 3,
   shops: [
     { name: "Manganim", url: "https://manganim.fr/search?q=Black+Clover", logo: "https://manganim.fr/cdn/shop/files/logo-manganim-header_180x.png?v=1672862594" },
@@ -604,13 +618,15 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "blue-exorcist",
+  pros: ["Univers riche mêlant démonologie et quotidien","Duo Rin/Yukio bien écrit","Ambiance scolaire originale"],
+  cons: ["Publication très irrégulière","Certains arcs sans tension réelle","Résolution parfois bâclée"],
   addedAt: "2025-09-30",
   title: "Blue Exorcist",
   category: "manga",
   tags: "Exorcisme · Démon · Lycée · Action",
   cover: "https://manga-insight-pro.vercel.app/blue-exorcist.png",
   synopsis: "Rin découvre qu’il est le fils de Satan. Décidé à lutter contre son héritage, il rejoint une académie d’exorcistes. Entre fraternité et tentations, il forge sa propre voie. Le feu bleu n’est pas une fatalité.",
-  reviewHtml: "",
+  reviewHtml: `<p>Blue Exorcist pose une question intéressante : que se passe-t-il quand le fils de Satan veut devenir exorciste pour combattre les démons ? Kazue Katō construit autour de cette prémisse un manga d'action-aventure au monde riche, ancré dans une mythologie démoniaque et chrétienne revisitée avec originalité.</p><p>Rin Okumura et son frère Yukio forment un duo central efficace, l'un impulsif et puissant mais incontrôlable, l'autre studieux et compétent mais portant des fardeaux cachés. Leur relation fraternelle, compliquée par leurs natures si différentes et par les secrets que Yukio dissimule, est le fil émotionnel le plus intéressant de la série.</p><p>L'Académie True Cross et ses enseignants exorcistes constituent un cadre scolaire original, l'aspect formation des élèves donne une structure aux premiers arcs et permet d'introduire une galerie de personnages secondaires attachants. Shiemi, Bon, Shura, chacun apporte quelque chose à la dynamique du groupe.</p><p>Blue Exorcist souffre d'une publication irrégulière et d'arcs parfois inégaux en qualité. Mais son univers riche et ses personnages bien écrits en font une série qui mérite d'être découverte par tout amateur de dark fantasy avec une touche scolaire.</p>`,
   stars: 3,
   shops: [
     { name: "Manganim", url: "https://manganim.fr/search?q=Blue+Exorcist", logo: "https://manganim.fr/cdn/shop/files/logo-manganim-header_180x.png?v=1672862594" },
@@ -625,13 +641,15 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "claymore",
+  pros: ["Héroïnes complexes et mémorables","Atmosphère médiévale pesante et cohérente","Combats stratégiques et brutaux"],
+  cons: ["Fin un peu abrupte","Personnages masculins peu développés","Rythme parfois difficile en milieu de série"],
   addedAt: "2025-10-02",
   title: "Claymore",
   category: "manga",
   tags: "Dark Fantasy · Démons · Épée · Vengeance",
   cover: "https://manga-insight-pro.vercel.app/claymore.png",
   synopsis: "Des guerrières mi-humaines mi-démones traquent des créatures voraces. Clare poursuit sa vendetta dans un monde hostile et hiérarchisé. Les combats laissent place à des choix cruels. La frontière entre monstre et humain s’effrite.",
-  reviewHtml: "",
+  reviewHtml: `<p>Claymore est un manga de dark fantasy médiéval qui mérite bien plus de reconnaissance que celle qu'il a reçue. Norihiro Yagi a construit une œuvre dense, sombre, et émotionnellement intense autour d'un concept fort : des guerrières mi-humaines mi-monstres, créées pour combattre les Yoma, et condamnées à une existence entre deux mondes.</p><p>Clare, la protagoniste, est une héroïne atypique, introvertie, froide, motivée par une vengeance personnelle plutôt que par des idéaux nobles. Son évolution au fil de la série, notamment sa relation avec Teresa dont le sacrifice l'a façonnée, est l'un des arcs émotionnels les plus réussis du manga d'action. Les Claymore elles-mêmes, chacune numérotée selon sa puissance, forment une galerie de personnages féminins forts et complexes, rare dans le genre.</p><p>L'artwork de Yagi crée une atmosphère médiévale pesante et cohérente. Les combats sont brutaux et lisibles, et la montée en puissance des menaces, des Yoma aux Abysses, est bien dosée. Les arcs de la Guerre du Nord et du dénouement final comptent parmi les meilleurs du manga d'action dark fantasy.</p><p>Claymore est une série exigeante qui récompense la patience. Un classique sous-estimé.</p>`,
   stars: 3,
   shops: [
     { name: "Manganim", url: "https://manganim.fr/search?q=Claymore", logo: "https://manganim.fr/cdn/shop/files/logo-manganim-header_180x.png?v=1672862594" },
@@ -645,13 +663,15 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "d-gray-man",
+  pros: ["Univers steampunk gothique unique","Allen Walker attachant et complexe","Mythologie dense et intéressante"],
+  cons: ["Hiatus très fréquents depuis des années","Rythme haché par les interruptions","Certains arcs incomplets"],
   addedAt: "2025-10-03",
   title: "D.Gray-man",
   category: "manga",
   tags: "Surnaturel · Organisation · Tragédie · Gothique",
   cover: "https://manga-insight-pro.vercel.app/d-gray-man.jpg",
   synopsis: "Allen Walker combat aux côtés d’exorcistes contre les Akuma créés par le Comte Millénaire. L’Innocence, arme divine, épuise autant qu’elle sauve. Les secrets de l’Ordre s’assombrissent. Le salut a un coût.",
-  reviewHtml: "",
+  reviewHtml: `<p>D.Gray-man est l'une des séries les plus visuellement inventives du shōnen des années 2000. Katsura Hoshino a créé un univers steampunk gothique où des exorcistes combattent les Akuma, des machines d'âmes corrompues, avec des armes appelées Innocence. L'esthétique est immédiatement reconnaissable et n'a pas vieilli.</p><p>Allen Walker est un protagoniste attachant dont la malédiction, voir les âmes piégées dans les Akuma, lui donne une sensibilité rare parmi les héros de shōnen. Sa relation contradictoire avec le Comte Millénaire et avec Road Camelot ajoute une profondeur mythologique progressive. Kanda, Lenalee, et Lavi forment une équipe complémentaire et bien développée.</p><p>La série souffre d'une publication extrêmement irrégulière, des hiatus parfois longs de plusieurs années, qui a fragmenté son lectorat. Mais le matériel existant, notamment les révélations sur la véritable nature d'Allen, montre une série qui avait des ambitions narratives réelles et originales.</p><p>Pour les amateurs d'esthétique gothic-steampunk et de shōnen d'action avec une mythologie dense, D.Gray-man reste une expérience unique.</p>`,
   stars: 3,
   shops: [
     { name: "Manganim", url: "https://manganim.fr/search?q=D.Gray-man", logo: "https://manganim.fr/cdn/shop/files/logo-manganim-header_180x.png?v=1672862594" },
@@ -665,7 +685,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "death-note",
-  pros: ["Duel psychologique haletant","Light Yagami — antagoniste iconique","Rythme parfait sur 12 tomes","Réflexion sur la justice et le pouvoir"],
+  pros: ["Duel psychologique haletant","Light Yagami, antagoniste iconique","Rythme parfait sur 12 tomes","Réflexion sur la justice et le pouvoir"],
   cons: ["Deuxième partie en retrait après un tournant majeur","Quelques facilités scénaristiques vers la fin"],
   addedAt: "2025-10-05",
   title: "Death Note",
@@ -673,7 +693,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   tags: "Thriller · Surnaturel · Psychologie · Duel cérébral",
   cover: "https://manga-insight-pro.vercel.app/death-note.jpg",
   synopsis: "Light Yagami découvre un cahier permettant de tuer quiconque dont on écrit le nom. Il se lance dans une croisade pour « purifier » le monde, attirant l’attention du détective L. Un duel d’esprits s’engage où chaque geste peut trahir l’autre. Le pouvoir absolu corrompt ses convictions.",
-  reviewHtml: "",
+  reviewHtml: `<p>Death Note est l'un des rares mangas à avoir transcendé son propre genre. Ce n'est pas une histoire de combat ni d'aventure, c'est un duel psychologique pur entre deux génies, et chaque chapitre est une partie d'échecs où les règles changent constamment. Tsugumi Ohba et Takeshi Obata ont créé quelque chose d'unique dans le paysage du manga.</p><p>Light Yagami est l'un des antagonistes les plus fascinants de toute la fiction. Brillant, narcissique, convaincu d'agir pour le bien de l'humanité, sa descente progressive dans la folie est terrifiante précisément parce qu'elle est logique. Face à lui, L est son miroir parfait : aussi intelligent, aussi tordu, mais du bon côté. Leur confrontation occupe la majeure partie de la série et ne faiblit jamais.</p><p>Les 12 premiers tomes sont d'une tenue narrative exceptionnelle. Le rythme est parfait, les twists arrivent sans prévenir, et la tension ne retombe jamais. Death Note se lit en apnée, chapitre après chapitre, impossible à poser.</p><p>La deuxième partie, après un tournant majeur à mi-série, est globalement jugée inférieure. Les nouveaux personnages ne retrouvent pas le niveau de L, et la conclusion divise. Mais les deux tiers de Death Note suffisent à en faire un chef-d'œuvre du thriller manga.</p>`,
   stars: 5,
   shops: [
     { name: "Manganim", url: "https://manganim.fr/search?q=Death+Note", logo: "https://manganim.fr/cdn/shop/files/logo-manganim-header_180x.png?v=1672862594" },
@@ -688,13 +708,15 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "dr-stone",
+  pros: ["Science expliquée de façon ludique et accessible","Concept de reconstruction civilisationnelle unique","Senku — héros intellectuel rafraîchissant"],
+  cons: ["Tension dramatique limitée par l'invincibilité du duo","Personnages secondaires peu développés","Arcs tardifs moins inspirés"],
   addedAt: "2025-10-07",
   title: "Dr. Stone",
   category: "manga",
   tags: "Science · Survie · Post-apo · Aventure",
   cover: "https://manga-insight-pro.vercel.app/dr-stone.jpg",
   synopsis: "L’humanité est pétrifiée pendant des millénaires. À son réveil, Senku, prodige de la science, veut rebâtir la civilisation avec des moyens rudimentaires. Entre inventions géniales et alliances fragiles, une nouvelle ère commence.",
-  reviewHtml: "",
+  reviewHtml: `<p>Dr. Stone est une lettre d'amour à la science. Riichiro Inagaki et Boichi ont créé un shōnen où l'intelligence et la connaissance scientifique sont les véritables superpuissances, et ça marche étonnamment bien.</p><p>L'humanité entière est pétrifiée pendant 3700 ans. Senku Ishigami se réveille avec un seul objectif : reconstruire la civilisation depuis zéro, en utilisant uniquement la science. Chaque arc est une démonstration ludique de chimie, physique, biologie ou ingénierie, et Inagaki parvient à rendre fascinant le processus de recréer du savon, de la nourriture ou de l'électricité.</p><p>Ce qui distingue Dr. Stone c'est son optimisme. Dans un genre souvent dominé par la survie sombre et la violence, c'est une série qui dit que la connaissance humaine peut tout surmonter. Senku n'est pas un héros qui frappe fort, c'est un héros qui réfléchit vite, et ses victoires intellectuelles sont aussi satisfaisantes que n'importe quel combat.</p><p>Les derniers arcs sont légèrement moins inspirés que le début, et certains personnages secondaires restent peu développés. Mais Dr. Stone est une série originale, positive, et éducative sans jamais être ennuyeuse, un tour de force.</p>`,
   stars: 4,
   shops: [
     { name: "Manganim", url: "https://manganim.fr/search?q=Dr.+Stone", logo: "https://manganim.fr/cdn/shop/files/logo-manganim-header_180x.png?v=1672862594" },
@@ -708,13 +730,15 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "eleceed",
+  pros: ["Duo Jiwoo/Kayden irrésistible","Humour constant et bien dosé","Action dynamique et lisible"],
+  cons: ["Worldbuilding encore superficiel","Antagonistes peu mémorables","Certains arcs de tournoi répétitifs"],
   addedAt: "2025-10-09",
   title: "Eleceed",
   category: "manhwa",
   tags: "Action · Pouvoirs · Comédie · Mentor",
   cover: "https://manga-insight-pro.vercel.app/eleceed.jpg",
   synopsis: "Jiwoo, au cœur doux et rapide comme l’éclair, rencontre Kayden, maître puissant coincé en chat. Ensemble, ils naviguent le monde secret des éveillés. Amitiés, entraînements et affrontements s’enchaînent. La gentillesse peut frapper fort.",
-  reviewHtml: "",
+  reviewHtml: `<p>Eleceed est l'une des meilleures surprises du manhwa récent. Le duo Son Jae-ho et Zhena a créé une série de super-héros coréenne qui allie action, comédie et cœur avec une aisance rare. Le concept, un garçon aux réflexes surhumains qui recueille un chat bedonnant qui est en réalité un puissant éveil, est délibérément absurde et pleinement assumé.</p><p>Kayden, emprisonné dans le corps d'un gros chat blanc, est l'un des personnages les plus drôles du manhwa contemporain. Sa frustration permanente, son orgueil blessé, et sa relation progressivement affectueuse avec Jiwoo créent une dynamique irrésistible. Les échanges entre les deux protagonistes portent la série autant que l'action.</p><p>Le système des Éveillés, individus aux capacités surnaturelles hiérarchisées, est bien construit, et les arcs de tournoi introduits progressivement montrent une série qui sait développer ses enjeux. Le dessin de Zhena est expressif et dynamique, particulièrement efficace dans les séquences comiques.</p><p>Eleceed est une lecture légère et joyeuse qui ne sacrifie pas la qualité pour la simplicité. Idéal pour découvrir le manhwa d'action sans se prendre la tête.</p>`,
   stars: 4,
   shops: [
     { name: "Manganim", url: "https://manganim.fr/search?q=Eleceed",  logo: "https://manganim.fr/cdn/shop/files/logo-manganim-header_180x.png?v=1672862594" },
@@ -726,13 +750,15 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "fairy-tail",
+  pros: ["Ambiance chaleureuse et familiale unique","Personnages attachants et variés","Moments d'amitié sincèrement émouvants"],
+  cons: ["Enjeux limités par l'absence de vraies morts","Résolutions trop souvent émotionnelles","Structure répétitive arc après arc"],
   addedAt: "2025-10-11",
   title: "Fairy Tail",
   category: "manga",
   tags: "Shōnen · Magie · Guilde · Aventure",
   cover: "https://manga-insight-pro.vercel.app/fairy-tail.jpg",
   synopsis: "Lucy rejoint Fairy Tail et forme un duo avec Natsu, chasseur de dragons au tempérament brûlant. La guilde enchaîne missions, tournois et guerres de factions. Entre rivalités et solidarité, chacun protège sa famille choisie.",
-  reviewHtml: "",
+  reviewHtml: `<p>Fairy Tail est le manga de la bonne humeur. Hiro Mashima a créé une série qui ne cherche pas à surprendre ni à bouleverser, elle veut juste divertir, réchauffer le cœur, et célébrer l'amitié et la famille choisie. Dans ce registre très précis, elle réussit avec une constance remarquable sur 63 volumes.</p><p>La guilde Fairy Tail est le vrai protagoniste de la série, une famille dysfonctionnelle et bruyante dont chaque membre est attachant à sa façon. Natsu, Lucy, Erza, Gray, Wendy, Happy, chacun a son moment de gloire, ses faiblesses, et sa contribution unique aux aventures du groupe. L'alchimie entre ces personnages est la force principale de la série.</p><p>Mashima excelle dans les moments de camaraderie, les retournements émotionnels bien placés, et les combats au sein desquels les personnages trouvent une puissance dans leurs liens plutôt que dans leur entraînement solitaire. La magie des nakama est poussée à son maximum ici.</p><p>Les reproches sont connus : la mort n'existe pratiquement pas dans Fairy Tail, ce qui diminue les enjeux. Certains arcs se ressemblent dans leur structure. Et la résolution de certains combats par des power-ups émotionnels peut sembler facile. Mais pour un manga de pur plaisir de lecture sans prise de tête, Fairy Tail est imbattable.</p>`,
   stars: 3,
   shops: [
     { name: "Manganim", url: "https://manganim.fr/search?q=Fairy+Tail",  logo: "https://manganim.fr/cdn/shop/files/logo-manganim-header_180x.png?v=1672862594" },
@@ -746,13 +772,15 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "fire-force",
+  pros: ["Univers pyrokinétique original et cohérent","Artwork spectaculaire d'Ohkubo","Mythologie progressive ambitieuse"],
+  cons: ["Certains arcs intermédiaires en retrait","Quelques résolutions précipitées","Fan service parfois mal intégré"],
   addedAt: "2025-10-13",
   title: "Fire Force",
   category: "manga",
   tags: "Action · Pompiers · Surnaturel · Enquête",
   cover: "https://manga-insight-pro.vercel.app/fire-force.jpg",
   synopsis: "Des combustions humaines spontanées transforment des victimes en infernaux. Shinra, pompier aux pieds flamboyants, combat ces fléaux tout en cherchant la vérité sur son passé. Les brigades s’affrontent sur fond de complot religieux.",
-  reviewHtml: "",
+  reviewHtml: `<p>Fire Force est la deuxième grande série d'Atsushi Ohkubo après Soul Eater, et elle porte sa signature visuelle immédiatement reconnaissable. L'univers, un Tokyo futur où des êtres humains s'enflamment spontanément et deviennent des démons de feu combattus par des pompiers aux pouvoirs pyrokinétiques, est l'un des plus originaux du shōnen moderne.</p><p>Shinra Kusakabe, avec son sourire nerveux perpétuel et ses pieds qui s'embrasent pour voler, est un protagoniste attachant dont le mystère familial sert de fil conducteur à toute la série. La Brigade 8 qu'il rejoint est une galerie de personnages aux personnalités tranchées, Arthur le chevalier délirant, Maki la musclée sensible, Hinawa le froid stratège.</p><p>Fire Force brille dans ses combats, Ohkubo maîtrise la dynamique de l'action comme personne, et dans sa mythologie progressive sur l'origine des Infernaux et la vérité sur le monde. Les révélations des arcs tardifs récompensent les lecteurs patients avec un world-building ambitieux.</p><p>Certains arcs intermédiaires sont plus inégaux, et quelques résolutions semblent précipitées. Mais Fire Force est une série ambitieuse et visuellement spectaculaire qui confirme le talent d'Ohkubo.</p>`,
   stars: 3,
   shops: [
     { name: "Manganim", url: "https://manganim.fr/search?q=Fire+Force",  logo: "https://manganim.fr/cdn/shop/files/logo-manganim-header_180x.png?v=1672862594" },
@@ -766,7 +794,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "fullmetal-alchemist",
-  pros: ["Scénario sans faille du début à la fin","Duo Edward/Alphonse attachant","Thèmes profonds — deuil, responsabilité, humanité"],
+  pros: ["Scénario sans faille du début à la fin","Duo Edward/Alphonse attachant","Thèmes profonds, deuil, responsabilité, humanité"],
   cons: ["Rythme parfois rapide en fin de série","Certains antagonistes moins bien traités que d'autres"],
   addedAt: "2025-10-14",
   title: "Fullmetal Alchemist",
@@ -774,7 +802,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   tags: "Aventure · Alchimie · Frères · Guerre",
   cover: "https://manga-insight-pro.vercel.app/fullmetal-alchemist.png",
   synopsis: "Après une transmutation interdite, Edward et Alphonse perdent chacun une partie d’eux-mêmes. Pour récupérer leurs corps, ils cherchent la Pierre Philosophale. Leur quête révèle complots d’État, homonculus et vérités amères.",
-  reviewHtml: `<p>Fullmetal Alchemist est l'exemple parfait d'un manga qui sait exactement ce qu'il veut raconter — et qui le raconte sans jamais dévier. En 27 tomes, Hiromu Arakawa construit un récit complet, cohérent, émotionnellement puissant, sans un seul arc de remplissage. C'est rare. C'est précieux.</p><p>Edward et Alphonse Elric ont brisé la loi fondamentale de l'alchimie en tentant de ressusciter leur mère. Le prix à payer : le bras et la jambe d'Edward, et le corps entier d'Alphonse — son âme scellée dans une armure de métal. Leur quête entraîne dans une conspiration qui menace tout un pays.</p><p>Ce qui distingue FMA c'est l'équilibre parfait entre action et émotion, humour et gravité, world-building et personnages. Les thèmes — le deuil, la responsabilité, le sacrifice, la famille — sont traités avec une maturité rare dans le shōnen. La conclusion est un modèle pour toute série longue.</p><p>FMA est un chef-d'œuvre sans défaut majeur. La meilleure introduction possible au manga pour quelqu'un qui n'a encore rien lu.</p>`,
+  reviewHtml: `<p>Fullmetal Alchemist est l'exemple parfait d'un manga qui sait exactement ce qu'il veut raconter, et qui le raconte sans jamais dévier. En 27 tomes, Hiromu Arakawa construit un récit complet, cohérent, émotionnellement puissant, sans un seul arc de remplissage. C'est rare. C'est précieux.</p><p>Edward et Alphonse Elric ont brisé la loi fondamentale de l'alchimie en tentant de ressusciter leur mère. Le prix à payer : le bras et la jambe d'Edward, et le corps entier d'Alphonse, son âme scellée dans une armure de métal. Leur quête entraîne dans une conspiration qui menace tout un pays.</p><p>Ce qui distingue FMA c'est l'équilibre parfait entre action et émotion, humour et gravité, world-building et personnages. Les thèmes, le deuil, la responsabilité, le sacrifice, la famille, sont traités avec une maturité rare dans le shōnen. La conclusion est un modèle pour toute série longue.</p><p>FMA est un chef-d'œuvre sans défaut majeur. La meilleure introduction possible au manga pour quelqu'un qui n'a encore rien lu.</p>`,
   stars: 5,
   shops: [
     { name: "Manganim", url: "https://manganim.fr/search?q=Fullmetal+Alchemist",  logo: "https://manganim.fr/cdn/shop/files/logo-manganim-header_180x.png?v=1672862594" },
@@ -789,13 +817,15 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "gintama",
+  pros: ["Humour le plus inventif du manga","Arcs sérieux d'une intensité rare","Gintoki — personnage d'une profondeur inattendue"],
+  cons: ["Début très lent et décousu","Nécessite une connaissance de la culture japonaise","Difficile à recommander sans connaître le contexte"],
   addedAt: "2025-10-16",
   title: "Gintama",
   category: "manga",
   tags: "Comédie · Sci-fi · Parodie · Samouraï",
   cover: "https://manga-insight-pro.vercel.app/gintama.jpg",
   synopsis: "Dans un Edo envahi par des aliens, Gintoki, samouraï décalé, accepte tous les petits boulots. Parodies méta, émotions sincères et combats sérieux cohabitent. L’absurde devient un art.",
-  reviewHtml: "",
+  reviewHtml: `<p>Gintama est impossible à résumer à quelqu'un qui ne l'a pas lu. C'est une parodie de manga de samouraïs qui se déroule dans un Japon d'Edo envahi par des aliens, avec un héros paresseux qui fait des petits boulots pour payer le loyer, et qui est aussi l'un des combattants les plus puissants de l'univers. Ça n'a aucun sens. C'est génial.</p><p>Hideaki Sorachi a créé une série qui peut passer d'un arc comique absurde à un arc dramatique déchirant d'un chapitre à l'autre, et les deux fonctionnent parfaitement. Les arcs sérieux de Gintama sont parmi les plus intenses du shōnen. Mais c'est l'humour qui rend la série unique : les parodies, les références, les gags meta qui brisent le quatrième mur, les moments où les personnages commentent leur propre manga.</p><p>Gintoki Sakata est l'un des meilleurs personnages du manga, en apparence un adulte irresponsable qui mange des sucreries et lit des Jump, en réalité un ancien soldat brisé par la guerre qui cache une loyauté absolue envers ceux qu'il aime. Cette profondeur cachée derrière la comédie est la marque de fabrique de Gintama.</p><p>La seule difficulté : les premiers arcs sont lents à démarrer et l'humour peut sembler décousu. Mais ceux qui persistent découvrent l'une des expériences manga les plus complètes et les plus émouvantes qui soit.</p>`,
   stars: 4,
   shops: [
     { name: "Manganim", url: "https://manganim.fr/search?q=Gintama",  logo: "https://manganim.fr/cdn/shop/files/logo-manganim-header_180x.png?v=1672862594" },
@@ -809,13 +839,15 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "hells-paradise",
+  pros: ["Seulement 13 tomes, très bien rythmé","Univers visuel sublime et original","Thèmes profonds traités avec cohérence"],
+  cons: ["Contenu très violent et perturbant","Certains personnages secondaires peu exploités","Fin un peu rapide"],
   addedAt: "2025-10-18",
   title: "Hell’s Paradise",
   category: "manga",
   tags: "Dark Fantasy · Ninjas · Survival · Île maudite",
   cover: "https://manga-insight-pro.vercel.app/hells-paradise.png",
   synopsis: "Condamné à mort, Gabimaru se voit offrir la vie sauve s’il récupère un élixir d’immortalité sur une île létale. Assassins et samouraïs s’y affrontent au cœur d’une nature monstrueuse. Beauté et horreur s’entrelacent.",
-  reviewHtml: "",
+  reviewHtml: `<p>Hell's Paradise : Jigokuraku est une série de 13 tomes qui prouve qu'un manga court bien maîtrisé vaut mieux qu'une longue saga qui s'étire. Yuji Kaku a créé une œuvre dense, graphiquement splendide, et thématiquement cohérente de la première à la dernière page.</p><p>Gabimaru le Creux, assassin ninja réputé invincible envoyé sur une île mystérieuse pour trouver l'Élixir d'immortalité, est un personnage dont la contradiction centrale est fascinante : un homme qui dit ne rien ressentir mais qui risque tout pour retrouver sa femme. Cette dissonance entre ce qu'il prétend être et ce qu'il est vraiment structure tout son arc.</p><p>L'île de Shinsenkyo est un environnement d'une créativité visuelle remarquable, une nature luxuriante et mortelle, des créatures hybrides entre bouddhisme et horreur, une esthétique qui rappelle les estampes japonaises revisitées par le gore. Kaku dessine avec une précision et un style qui font de chaque planche un plaisir visuel.</p><p>Les thèmes, la nature du paradis et de l'enfer, ce qui constitue l'humanité, le désir comme force vitale, sont explorés sans lourdeur à travers des personnages qui évoluent tous de façon credible. Une réussite complète.</p>`,
   stars: 4,
   shops: [
     { name: "Manganim", url: "https://manganim.fr/search?q=Hell%27s+Paradise",  logo: "https://manganim.fr/cdn/shop/files/logo-manganim-header_180x.png?v=1672862594" },
@@ -829,13 +861,15 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "jojos-bizarre-adventure",
+  pros: ["Chaque arc totalement différent et unique","Système de Stands — le plus créatif du genre","Style visuel iconique et inimitable"],
+  cons: ["Style graphique déroutant pour les nouveaux lecteurs","Tons très différents entre les arcs","Accessible uniquement à un public averti"],
   addedAt: "2025-10-20",
   title: "JoJo’s Bizarre Adventure",
   category: "manga",
   tags: "Action · Fantastique · Saga · Style",
   cover: "https://manga-insight-pro.vercel.app/jojos-bizarre-adventure.jpg",
   synopsis: "Saga multigénérationnelle où les Joestar affrontent des forces occultes. Pouvoirs stylisés, poses iconiques et imagination débridée. Chaque partie réinvente la formule avec panache.",
-  reviewHtml: "",
+  reviewHtml: `<p>JoJo's Bizarre Adventure est unique. Absolument unique. Hirohiko Araki publie cette saga depuis 1987, et elle continue encore aujourd'hui, chaque arc suit un membre différent de la famille Joestar à travers les époques, avec un style graphique en constante évolution qui n'ressemble à aucun autre manga.</p><p>Le système des Stands, des manifestations de l'âme prenant forme physique, chacune avec des pouvoirs uniques et souvent conceptuels, est l'une des idées les plus créatives du manga d'action. Les combats de JoJo ne reposent pas sur la force brute mais sur l'ingéniosité : utiliser le pouvoir de son Stand de façon inattendue, trouver la faille dans celui de l'ennemi. Chaque duel est un puzzle.</p><p>Chaque arc a son propre ton. Phantom Blood est gothique et sérieux. Battle Tendency est pulp et exubérant. Stardust Crusaders est un road trip. Diamond is Unbreakable est presque un slice-of-life de super-héros de quartier. Cette variété est une force, il y a un arc JoJo pour chaque goût.</p><p>Le style d'Araki, poses extravagantes, références à la mode haute couture, musique omniprésente, est soit une révélation soit un repoussoir. Mais ceux qui entrent dans l'univers JoJo n'en ressortent généralement pas.</p>`,
   stars: 4,
   shops: [
     { name: "Manganim", url: "https://manganim.fr/search?q=JoJo",    logo: "https://manganim.fr/cdn/shop/files/logo-manganim-header_180x.png?v=1672862594" },
@@ -858,7 +892,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   tags: "Aventure · Exploration · Mystère · Dark",
   cover: "https://manga-insight-pro.vercel.app/made-in-abyss.jpg",
   synopsis: "Riko descend dans l’Abysse pour retrouver sa mère légendaire, accompagnée de Reg, androïde amnésique. À mesure qu’ils plongent, la beauté cède au cauchemar. Les secrets enfouis exigent un tribut terrible.",
-  reviewHtml: `<p>Made in Abyss est une expérience de lecture unique — et éprouvante. Akihito Tsukushi a créé un monde d'une beauté envoûtante et d'une cruauté absolue. Le résultat est une série qui fascine autant qu'elle dérange.</p><p>L'Abysse est un gouffre sans fond dont personne ne comprend l'origine. Plus on descend, plus les merveilles sont grandes — et plus les conséquences de la remontée sont terribles. Ce système de malédiction ascensionnelle est l'un des concepts les plus ingénieux du manga récent : chaque décision de descendre plus loin devient irréversible, et le lecteur le ressent physiquement.</p><p>Riko et Reg forment un duo attachant. Leur aventure dans les couches de l'Abysse alterne entre émerveillement et horreur, et c'est cette tension permanente qui rend la lecture addictive. Les illustrations oniriques sont sublimes.</p><p>Une mise en garde s'impose : Made in Abyss contient des scènes extrêmement dures. Ce n'est pas une lecture pour tout le monde. Mais pour ceux qui acceptent ce contrat, c'est l'un des univers les plus originaux du manga contemporain.</p>`,
+  reviewHtml: `<p>Made in Abyss est une expérience de lecture unique, et éprouvante. Akihito Tsukushi a créé un monde d'une beauté envoûtante et d'une cruauté absolue. Le résultat est une série qui fascine autant qu'elle dérange.</p><p>L'Abysse est un gouffre sans fond dont personne ne comprend l'origine. Plus on descend, plus les merveilles sont grandes, et plus les conséquences de la remontée sont terribles. Ce système de malédiction ascensionnelle est l'un des concepts les plus ingénieux du manga récent : chaque décision de descendre plus loin devient irréversible, et le lecteur le ressent physiquement.</p><p>Riko et Reg forment un duo attachant. Leur aventure dans les couches de l'Abysse alterne entre émerveillement et horreur, et c'est cette tension permanente qui rend la lecture addictive. Les illustrations oniriques sont sublimes.</p><p>Une mise en garde s'impose : Made in Abyss contient des scènes extrêmement dures. Ce n'est pas une lecture pour tout le monde. Mais pour ceux qui acceptent ce contrat, c'est l'un des univers les plus originaux du manga contemporain.</p>`,
   stars: 5,
   shops: [
     { name: "Manganim", url: "https://manganim.fr/search?q=Made+in+Abyss",  logo: "https://manganim.fr/cdn/shop/files/logo-manganim-header_180x.png?v=1672862594" },
@@ -872,13 +906,15 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "mashle",
+  pros: ["Timing comique impeccable","Concept parodique bien exécuté","Personnages secondaires attachants"],
+  cons: ["Peu de profondeur narrative","Formule répétitive sur la durée","Antagonistes peu mémorables"],
   addedAt: "2025-10-24",
   title: "Mashle",
   category: "manga",
   tags: "Comédie · Magie · Parodie · Action",
   cover: "https://manga-insight-pro.vercel.app/mashle.jpg",
   synopsis: "Dans un monde régi par la magie, Mash n’en possède aucune… mais des biceps en béton. Il entre dans une académie et résout tous les problèmes à la force brute. Les codes sont bousculés, les duels tournent à l’absurde.",
-  reviewHtml: "",
+  reviewHtml: `<p>Mashle est une parodie de Harry Potter croisée avec One Punch Man, et cette combinaison absurde fonctionne remarquablement bien. Hajime Kōmoto a créé un gag manga d'action qui se moque des codes du shōnen magique tout en les utilisant avec une efficacité surprenante.</p><p>Mash Burnedead n'a aucun pouvoir magique dans un monde où la magie détermine la valeur d'une personne. Sa solution : des muscles. Des muscles impossibles. Il résout absolument tout avec des poings, des abdos, et une expression imperturbable face à des adversaires qui s'attendent à un duel de sorts. Le concept est simple et la série l'exploite jusqu'à la dernière goutte.</p><p>Ce qui élève Mashle au-dessus de la simple parodie c'est son timing comique impeccable et ses personnages secondaires attachants. Lance Crown, le rival pompeux qui finit par devenir un allié fiable, est l'un des meilleurs exemples du trope du rival bien exécuté. Les arc de tournoi, même prévisibles dans leur structure, sont portés par des gags qui ne s'épuisent pas.</p><p>Mashle ne prétend pas être autre chose qu'un divertissement pur. Il y réussit avec une régularité et une générosité qui lui valent amplement sa place dans le paysage shōnen récent.</p>`,
   stars: 4,
   shops: [
     { name: "Manganim", url: "https://manganim.fr/search?q=Mashle",  logo: "https://manganim.fr/cdn/shop/files/logo-manganim-header_180x.png?v=1672862594" },
@@ -892,13 +928,15 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "monster",
+  pros: ["Thriller psychologique sans équivalent dans le manga","Johan Liebert — antagoniste le plus terrfiant du medium","Réalisme et profondeur humaine exceptionnels"],
+  cons: ["Rythme lent et exigeant","Pas d'action spectaculaire","Demande une patience et une maturité du lecteur"],
   addedAt: "2025-10-25",
   title: "Monster",
   category: "manga",
   tags: "Thriller · Psychologie · Europe · Enquête",
   cover: "https://manga-insight-pro.vercel.app/monster.jpg",
   synopsis: "Brillant neurochirurgien, Tenma sauve un enfant promis à devenir un tueur. Des années plus tard, il traque le monstre qu’il a épargné, à travers une Europe hantée par la culpabilité et la manipulation.",
-  reviewHtml: "",
+  reviewHtml: `<p>Monster est l'œuvre maîtresse de Naoki Urasawa, et l'une des meilleures bandes dessinées du vingtième siècle, tout medium confondu. Ce n'est pas une hyperbole. En 18 volumes, Urasawa construit un thriller psychologique d'une précision et d'une profondeur qui n'ont pas d'équivalent dans le manga.</p><p>Johan Liebert est l'antagoniste le plus terrfiant de l'histoire du manga, non pas parce qu'il a des pouvoirs surhumains, mais précisément parce qu'il n'en a pas. Il est humain. Et pourtant, partout où il passe, des gens meurent ou perdent leur âme. Il fascine, manipule, convainc, et le lecteur, comme les personnages, ne comprend jamais tout à fait comment ni pourquoi.</p><p>Le Dr Tenma, qui l'a sauvé enfant et qui le traque des années plus tard à travers l'Europe, est un protagoniste d'une intégrité rare. Sa quête le confronte à une question fondamentale : toutes les vies ont-elles la même valeur ? Cette question, posée dans le premier chapitre, résonne jusqu'au dernier.</p><p>Monster demande un lecteur adulte et patient. Il n'y a pas d'action spectaculaire ni de pouvoirs magiques, juste des personnages extraordinairement bien écrits dans une Europe post-guerre froide reconstituée avec soin. Un chef-d'œuvre absolu.</p>`,
   stars: 5,
   shops: [
     { name: "Manganim", url: "https://manganim.fr/search?q=Monster+manga",  logo: "https://manganim.fr/cdn/shop/files/logo-manganim-header_180x.png?v=1672862594" },
@@ -912,13 +950,15 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "noragami",
+  pros: ["Mythologie shinto bien intégrée","Yato — personnage attachant et profond","Équilibre comédie/drama très réussi"],
+  cons: ["Publication très irrégulière","Certains arcs en attente de résolution depuis des années","Rythme de publication frustrant"],
   addedAt: "2025-10-27",
   title: "Noragami",
   category: "manga",
   tags: "Dieux · Action · Comédie · Quotidien",
   cover: "https://manga-insight-pro.vercel.app/noragami.png",
   synopsis: "Yato, dieu fauché, rêve de devenir populaire. Avec Hiyori et Yukine, il résout des affaires entre monde des vivants et esprits. Derrière les gags, des blessures profondes ressurgissent.",
-  reviewHtml: "",
+  reviewHtml: `<p>Noragami est une pépite qui mérite bien plus de reconnaissance qu'elle n'en a reçu. Adachitoka a construit un univers ancré dans la mythologie japonaise, dieux shintoïstes, esprits, frontière entre le monde des vivants et celui des morts, avec une maîtrise et une cohérence remarquables.</p><p>Yato est un dieu mineur sans temple ni fidèles, qui rend des services pour 5 yens en rêvant de gloire. C'est un personnage comique en surface, mais derrière la façade du sans-abri divin se cache une histoire longue et douloureuse que la série dévoile progressivement. Sa relation avec Yukine, son Regalia, et Hiyori, la fille qui peut voir les dieux, forme un trio attachant dont la dynamique évolue naturellement au fil des tomes.</p><p>Les arcs plus sérieux de Noragami, notamment tout ce qui concerne le passé de Yato et les intrigues des dieux majeurs, sont d'une intensité surprenante pour une série qui se présente d'abord comme une comédie surnaturelle. Bishamon, antagoniste puis alliée, est l'un des meilleurs personnages secondaires du manga d'action-aventure.</p><p>La publication est malheureusement très irrégulière. Mais chaque tome vaut l'attente.</p>`,
   stars: 4,
   shops: [
     { name: "Manganim", url: "https://manganim.fr/search?q=Noragami",  logo: "https://manganim.fr/cdn/shop/files/logo-manganim-header_180x.png?v=1672862594" },
@@ -933,14 +973,14 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 {
   slug: "omniscient-reader",
   pros: ["Concept meta-narratif brillant","Protagoniste avec une vraie profondeur","Univers d'une richesse rare dans le manhwa"],
-  cons: ["Très dense — nécessite une lecture attentive","Nombreux personnages difficiles à mémoriser","Début lent"],
+  cons: ["Très dense, nécessite une lecture attentive","Nombreux personnages difficiles à mémoriser","Début lent"],
   addedAt: "2025-10-29",
   title: "Omniscient Reader",
   category: "manhwa",
   tags: "Apocalypse · Méta · Scénario · Compagnons",
   cover: "https://manga-insight-pro.vercel.app/omniscient-reader.jpg",
   synopsis: "Dokja voit son webroman favori devenir réalité. Armé de sa connaissance de l’histoire, il tente de survivre aux scénarios imposés par des entités cosmiques. Savoir n’équivaut pas à pouvoir.",
-  reviewHtml: "",
+  reviewHtml: `<p>Omniscient Reader's Viewpoint est peut-être le manhwa le mieux écrit de sa génération. Le concept est méta et brillant : Kim Dokja est le seul lecteur au monde à avoir fini "Three Ways to Survive the Apocalypse", un roman web obscur, et quand le monde réel commence à suivre exactement le scénario du roman, il devient le seul humain à savoir ce qui va se passer.</p><p>Cette omniscience partielle est utilisée avec une intelligence rare. Dokja connaît les grandes lignes du "scénario" mais pas tous les détails, et ses tentatives de dévier le récit tout en l'utilisant créent des situations d'une complexité fascinante. La question de ce que signifie être lecteur versus personnage, observateur versus acteur, est explorée avec une profondeur philosophique inattendue.</p><p>Le manhwa récompense les lecteurs attentifs avec des callbacks, des foreshadowings et des révélations qui recontextualisent des scènes passées. Certaines révélations sur la véritable nature du "roman" et de son auteur font partie des meilleurs moments de l'ensemble du genre.</p><p>C'est une lecture dense qui demande de l'attention, les noms coréens, la hiérarchie des constellations, les règles du système sont nombreux à intégrer. Mais Omniscient Reader est une œuvre qui traite son lecteur comme un adulte intelligent, et ça change tout.</p>`,
   stars: 5,
   shops: [
     { name: "Amazon", url: "https://www.amazon.fr/s?k=omniscient+reader", logo: "https://www.1min30.com/wp-content/uploads/2017/12/logo-amazon-1.jpg" }
@@ -950,13 +990,15 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "oshi-no-ko",
+  pros: ["Critique acérée de l'industrie du divertissement japonais","Twists de début de série mémorables","Thèmes adultes traités avec maturité"],
+  cons: ["Rythme inégal selon les arcs","Sous-intrigues romantiques moins intéressantes","Peut dérouter par ses changements de registre"],
   addedAt: "2025-10-31",
   title: "Oshi no Ko",
   category: "manga",
   tags: "Showbiz · Drame · Mystère · Réincarnation",
   cover: "https://manga-insight-pro.vercel.app/oshi-no-ko.png",
   synopsis: "Un médecin et sa patiente renaissent dans le monde des idoles, liés au destin d’une star lumineuse. Entre coulisses du showbiz et quête de vérité, ils affrontent manipulations et médias.",
-  reviewHtml: "",
+  reviewHtml: `<p>Oshi no Ko commence avec l'un des premiers chapitres les plus surprenants du manga récent. Ce qui ressemble à une romance entre un médecin de campagne et son idole préférée prend en quelques pages une direction radicalement inattendue, et le lecteur se retrouve embarqué dans quelque chose de bien plus sombre et complexe que prévu.</p><p>Aka Akasaka, auteur de Kaguya-sama, et Mengo Yokoyari construisent une critique acérée de l'industrie du divertissement japonais : les idols, le monde de l'acteur, les réseaux sociaux, la culture du mensonge public et de la performance permanente. C'est rare de voir un manga shōnen traiter ces thèmes avec autant de mordant.</p><p>Les personnages sont complexes et leurs motivations évoluent de façon crédible. La question centrale de la série, peut-on utiliser le mensonge pour atteindre la vérité ?, est explorée sous plusieurs angles sans jamais imposer de réponse simple.</p><p>Le rythme peut être inégal selon les arcs, et certaines sous-intrigues romantiques semblent moins essentielles que la critique de l'industrie. Mais Oshi no Ko est l'une des séries les plus ambitieuses et les plus originales du manga contemporain.</p>`,
   stars: 4,
   shops: [
     { name: "Manganim", url: "https://manganim.fr/search?q=Oshi+no+Ko",  logo: "https://manganim.fr/cdn/shop/files/logo-manganim-header_180x.png?v=1672862594" },
@@ -970,13 +1012,15 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "pluto",
+  pros: ["Réécriture d'Astro Boy pour adultes magistrale","Thèmes sur la guerre et la haine d'une profondeur rare","Artwork d'Urasawa immaculé"],
+  cons: ["Nécessite de connaître Astro Boy pour apprécier pleinement","Très court — 8 volumes qui laissent un vide","Fin très émotionnellement éprouvante"],
   addedAt: "2025-11-02",
   title: "Pluto",
   category: "manga",
   tags: "Sci-fi · Robotique · Enquête · Remake",
   cover: "https://manga-insight-pro.vercel.app/pluto.jpg",
   synopsis: "Relecture sombre d’un arc d’Astro Boy. Gesicht, détective robot, enquête sur des assassinats visant les plus puissants robots du monde. Humanité, mémoire et haine s’entrecroisent.",
-  reviewHtml: "",
+  reviewHtml: `<p>Pluto est la preuve que le manga peut être de la grande littérature. Naoki Urasawa a pris un arc classique d'Astro Boy, Le Robot le Plus Puissant du Monde, et l'a réécrit pour adultes, avec une profondeur thématique et une maîtrise narrative qui honorent Osamu Tezuka tout en créant quelque chose de radicalement nouveau.</p><p>Dans un futur proche, les huit robots les plus puissants du monde sont assassinés un par un. L'enquête menée par Gesicht, robot détective europol, révèle progressivement une conspiration qui touche aux fondements de la guerre, de la haine, et de ce que signifie souffrir. Atom n'apparaît que tardivement, mais son arc final est d'une beauté bouleversante.</p><p>Urasawa traite ses robots comme des êtres émotionnels complets, capables de traumatisme, de deuil, d'amour, de doute existentiel. Cette humanisation totale est la clé de l'émotion que génère Pluto. Quand un robot "meurt", on pleure. Vraiment.</p><p>Les thèmes, le cycle de la haine, le coût humain de la guerre, la question de si une machine peut vraiment haïr, résonnent avec une actualité douloureuse. Pluto est court, 8 volumes, et chaque page compte. Un monument.</p>`,
   stars: 5,
   shops: [
     { name: "Fnac",   url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=pluto+manga+urasawa", logo: "https://cdn.iconscout.com/icon/free/png-256/free-fnac-3521434-2944878.png" },
@@ -989,13 +1033,15 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "slam-dunk",
+  pros: ["Le meilleur manga de sport jamais créé","Hanamichi — protagoniste inoubliable","Matchs d'un réalisme et d'une tension exceptionnels"],
+  cons: ["Fin abrupte qui laisse des histoires inachevées","Visuellement daté par moments","Début très lent avant que Hanamichi joue vraiment"],
   addedAt: "2025-11-04",
   title: "Slam Dunk",
   category: "manga",
   tags: "Sport · Basket · Lycée · Équipe",
   cover: "https://manga-insight-pro.vercel.app/slam-dunk.png",
   synopsis: "Voyou au grand cœur, Hanamichi rejoint le club de basket par amour-propre. Entre entraînements, rivalités et matchs haletants, il découvre l’esprit d’équipe. Le terrain devient sa seconde chance.",
-  reviewHtml: "",
+  reviewHtml: `<p>Slam Dunk n'est pas juste le meilleur manga de basketball jamais créé, c'est l'un des meilleurs mangas de sport tout court, et une œuvre dont l'influence sur la culture japonaise et asiatique reste immense trente ans après sa publication. Takehiko Inoue a réussi quelque chose d'extraordinaire : rendre le basketball passionnant pour des millions de lecteurs qui n'avaient jamais regardé un match.</p><p>Hanamichi Sakuragi est l'un des protagonistes les plus mémorables du shōnen. Bruyant, immature, comique, et pourtant capable de moments de grandeur pure qui font monter les larmes. Son apprentissage du basketball, motivé au départ par le désir d'impressionner une fille, devient peu à peu une véritable passion, et ce basculement est traité avec une subtilité magnifique.</p><p>Ce qui distingue Slam Dunk c'est son réalisme. Les matchs sont ancrés dans une logique basketballistique crédible. Les adversaires sont respectés et développés. Les victoires sont méritées et les défaites ont du poids. Le climax de la série, le tournoi national, est une séquence de manga sportif qui n'a jamais été égalée.</p><p>La fin arrive abruptement, laissant certaines histoires inachevées. Mais Slam Dunk reste une expérience manga incontournable, et son film de 2022 a confirmé que l'œuvre n'a rien perdu de sa puissance émotionnelle.</p>`,
   stars: 5,
   shops: [
     { name: "Fnac",   url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=slam+dunk+tome", logo: "https://cdn.iconscout.com/icon/free/png-256/free-fnac-3521434-2944878.png" },
@@ -1006,13 +1052,15 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "soul-eater",
+  pros: ["Esthétique gothic halloween unique et mémorable","Personnages secondaires qui volent souvent la vedette","Humour et action bien équilibrés"],
+  cons: ["Qualité en baisse dans la deuxième moitié","Fin manga décevante vs l'animé","Certains pouvoirs peu cohérents"],
   addedAt: "2025-11-05",
   title: "Soul Eater",
   category: "manga",
   tags: "Fantaisie · Académie · Armes vivantes · Style",
   cover: "https://manga-insight-pro.vercel.app/soul-eater.jpg",
   synopsis: "À la Shibusen, des manieurs et leurs armes humaines chassent âmes corrompues et sorcières. Maka et Soul visent le statut d’Arme ultime. Ambiance gothique, humour noir et combats syncopés.",
-  reviewHtml: "",
+  reviewHtml: `<p>Soul Eater a un style visuel immédiatement reconnaissable, une Death City gothique sous une lune souriante et un soleil ricanant, des personnages aux designs extravagants, une esthétique Halloween permanente qui donne à la série une identité visuelle forte. Atsushi Ohkubo a créé un univers où des élèves s'entraînent pour devenir des Faucheuses de la Mort en utilisant leurs partenaires transformés en armes.</p><p>Le concept est inventif : chaque duo est composé d'un méister et d'une arme vivante, et leur compatibilité psychologique détermine leur puissance. Soul et Maka forment le duo central, attachant et bien écrit, mais c'est souvent la galerie de personnages secondaires, Black Star, Death the Kid avec son obsession de la symétrie, qui vole la vedette.</p><p>Soul Eater est à son meilleur dans ses premiers arcs, où l'équilibre entre humour, action et développement des personnages est parfait. La série perd un peu de son élan dans sa deuxième moitié, et la fin du manga diverge de celle de l'animé de façon assez abrupte.</p><p>Mais comme introduction au manga d'action avec une esthétique unique et des personnages mémorables, Soul Eater reste une valeur sûre, surtout pour un public adolescent ou pour ceux qui aiment les univers dark fantasy avec une touche de comédie.</p>`,
   stars: 4,
   shops: [
     { name: "Fnac",   url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=soul+eater+tome", logo: "https://cdn.iconscout.com/icon/free/png-256/free-fnac-3521434-2944878.png" },
@@ -1025,7 +1073,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "the-promised-neverland",
-  pros: ["Arc 1 — thriller haletant d'une tension rare","Trio Emma/Norman/Ray remarquable","Twists réguliers qui renouvellent l'intrigue"],
+  pros: ["Arc 1, thriller haletant d'une tension rare","Trio Emma/Norman/Ray remarquable","Twists réguliers qui renouvellent l'intrigue"],
   cons: ["Qualité chute drastiquement après l'arc 1","Fin très précipitée et décevante","Certains arcs intermédiaires dispensables"],
   addedAt: "2025-11-07",
   title: "The Promised Neverland",
@@ -1033,7 +1081,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   tags: "Thriller · Évasion · Mystère · Enfance",
   cover: "https://manga-insight-pro.vercel.app/the-promised-neverland.jpg",
   synopsis: "Emma, Norman et Ray découvrent l’horrible vérité de leur orphelinat. Ils orchestrent une évasion impossible sous l’œil d’adultes menaçants. Chaque détail compte, chaque erreur est fatale.",
-  reviewHtml: `<p>Les premiers tomes de The Promised Neverland sont parmi les plus haletants qu'on puisse lire en manga. Le concept de départ est brillant, l'exécution est chirurgicale, et la révélation de la vérité sur Grace Field House reste l'un des meilleurs moments d'horreur douce du genre.</p><p>Emma, Norman et Ray forment un trio exceptionnellement bien équilibré. L'optimisme inconditionnel d'Emma, la froideur stratégique de Norman, le réalisme cynique de Ray — leurs approches opposées créent des dynamiques fascinantes. La relation avec Isabella, leur gardienne, atteint des profondeurs émotionnelles inattendues.</p><p>L'arc de Grace Field House est un chef-d'œuvre de thriller. La tension monte chapitre après chapitre, les plans et contre-plans des enfants contre leur gardienne sont d'une intelligence rare. On lit en apnée.</p><p>Honnêtement : la qualité chute significativement après cet arc, et la fin a déçu beaucoup de lecteurs. Mais les 40 premiers chapitres justifient à eux seuls la lecture — peu de mangas commencent aussi fort.</p>`,
+  reviewHtml: `<p>Les premiers tomes de The Promised Neverland sont parmi les plus haletants qu'on puisse lire en manga. Le concept de départ est brillant, l'exécution est chirurgicale, et la révélation de la vérité sur Grace Field House reste l'un des meilleurs moments d'horreur douce du genre.</p><p>Emma, Norman et Ray forment un trio exceptionnellement bien équilibré. L'optimisme inconditionnel d'Emma, la froideur stratégique de Norman, le réalisme cynique de Ray, leurs approches opposées créent des dynamiques fascinantes. La relation avec Isabella, leur gardienne, atteint des profondeurs émotionnelles inattendues.</p><p>L'arc de Grace Field House est un chef-d'œuvre de thriller. La tension monte chapitre après chapitre, les plans et contre-plans des enfants contre leur gardienne sont d'une intelligence rare. On lit en apnée.</p><p>Honnêtement : la qualité chute significativement après cet arc, et la fin a déçu beaucoup de lecteurs. Mais les 40 premiers chapitres justifient à eux seuls la lecture, peu de mangas commencent aussi fort.</p>`,
   stars: 5,
   shops: [
     { name: "Fnac",   url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=the+promised+neverland+tome", logo: "https://cdn.iconscout.com/icon/free/png-256/free-fnac-3521434-2944878.png" },
@@ -1047,7 +1095,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "tower-of-god",
-  pros: ["Univers vertical et mystérieux fascinant","Twenty-Fifth Bam — évolution lente mais marquante","Intrigues politiques complexes"],
+  pros: ["Univers vertical et mystérieux fascinant","Twenty-Fifth Bam, évolution lente mais marquante","Intrigues politiques complexes"],
   cons: ["Rythme très lent par moments","Extrêmement long avec des centaines de chapitres","Certains arcs difficiles à suivre"],
   addedAt: "2025-11-09",
   title: "Tower of God",
@@ -1055,7 +1103,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   tags: "Fantasy · Tour · Épreuves · Compétition",
   cover: "https://manga-insight-pro.vercel.app/tower-of-god.jpg",
   synopsis: "Bam entre dans une tour où chaque étage impose des tests mortels. Alliances fragiles, règles changeantes et pouvoirs étranges rythment l’ascension. Il cherche son amie Rachel, quitte à tout sacrifier.",
-  reviewHtml: "",
+  reviewHtml: `<p>Tower of God est l'un des manhwas les plus ambitieux jamais créés. SIU, Slave In Utero, a commencé cette publication sur plateforme webtoon coréenne en 2010, et a depuis construit l'un des univers les plus complexes et les plus riches du medium.</p><p>La Tour est une structure mystérieuse dont personne ne connaît le sommet. Ceux qui la grimpent peuvent voir leurs vœux exaucés, richesse, pouvoir, ou simplement retrouver quelqu'un de perdu. Twenty-Fifth Bam entre dans la Tour pour retrouver Rachel, la seule personne qu'il ait jamais connue. Ce point de départ simple ouvre sur un récit politique, mythologique et émotionnel d'une ampleur rare.</p><p>Le système de pouvoirs, Shinsu, positions de combat, classes de grimpeurs, est élaboré et cohérent. Les personnages secondaires sont nombreux mais remarquablement bien développés. Khun Aguero Agnes, l'allié stratège de Bam, est l'un des meilleurs personnages de soutien du webtoon.</p><p>Tower of God demande un investissement important, des centaines de chapitres, des dizaines de personnages à mémoriser, des arcs qui s'étalent sur des années de publication. Mais pour ceux qui s'accrochent, c'est une saga épique comme il en existe peu.</p>`,
   stars: 4,
   shops: [
     { name: "Amazon", url: "https://www.amazon.fr/s?k=tower+of+god+manhwa", logo: "https://www.1min30.com/wp-content/uploads/2017/12/logo-amazon-1.jpg" }
@@ -1067,13 +1115,15 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "vagabond",
+  pros: ["Artwork sumi-e d'une beauté absolue","Évolution philosophique de Musashi unique dans le manga","Sasaki Kojiro — l'un des meilleurs personnages secondaires"],
+  cons: ["Hiatus depuis 2015 sans fin connue","Histoire probablement inachevée","Rythme très lent par nature"],
   addedAt: "2025-11-11",
   title: "Vagabond",
   category: "manga",
   tags: "Samouraï · Historique · Philosophie · Duel",
   cover: "https://manga-insight-pro.vercel.app/vagabond.png",
   synopsis: "Libre adaptation de la vie de Musashi Miyamoto. De combats en errance, le jeune bretteur apprend la voie du sabre et de l’humilité. Chaque duel interroge le sens de la force.",
-  reviewHtml: `<p>Vagabond n'est pas un manga de samouraï. C'est une exploration de ce que signifie être humain, racontée à travers la vie de Miyamoto Musashi — le plus grand duelliste de l'histoire japonaise. Takehiko Inoue, déjà auteur de Slam Dunk, a consacré plus de vingt ans à cette œuvre, et chaque tome en porte la marque.</p><p>L'artwork de Vagabond est dans une catégorie à part. Inoue utilise l'encre sumi-e dans un style qui rappelle la peinture japonaise traditionnelle — des traits expressifs, des noirs profonds, des compositions magistrales. Certaines doubles pages sont des œuvres d'art autonomes. Aucun autre manga ne ressemble à Vagabond.</p><p>L'histoire suit Musashi depuis sa jeunesse violente jusqu'à sa maturité philosophique. Le jeune homme assoiffé de gloire qui veut être "invincible sous le ciel" devient quelqu'un qui comprend que la vraie force n'a rien à voir avec les combats. Sasaki Kojiro, son rival sourd de naissance, est l'un des personnages les mieux écrits de tout le manga.</p><p>Vagabond est en hiatus depuis 2015 et la fin semble incertaine. Mais les 37 volumes existants — d'une beauté absolue — suffisent à en faire l'une des plus grandes œuvres de la bande dessinée mondiale.</p>`,
+  reviewHtml: `<p>Vagabond n'est pas un manga de samouraï. C'est une exploration de ce que signifie être humain, racontée à travers la vie de Miyamoto Musashi, le plus grand duelliste de l'histoire japonaise. Takehiko Inoue, déjà auteur de Slam Dunk, a consacré plus de vingt ans à cette œuvre, et chaque tome en porte la marque.</p><p>L'artwork de Vagabond est dans une catégorie à part. Inoue utilise l'encre sumi-e dans un style qui rappelle la peinture japonaise traditionnelle, des traits expressifs, des noirs profonds, des compositions magistrales. Certaines doubles pages sont des œuvres d'art autonomes. Aucun autre manga ne ressemble à Vagabond.</p><p>L'histoire suit Musashi depuis sa jeunesse violente jusqu'à sa maturité philosophique. Le jeune homme assoiffé de gloire qui veut être "invincible sous le ciel" devient quelqu'un qui comprend que la vraie force n'a rien à voir avec les combats. Sasaki Kojiro, son rival sourd de naissance, est l'un des personnages les mieux écrits de tout le manga.</p><p>Vagabond est en hiatus depuis 2015 et la fin semble incertaine. Mais les 37 volumes existants, d'une beauté absolue, suffisent à en faire l'une des plus grandes œuvres de la bande dessinée mondiale.</p>`,
   stars: 5,
   shops: [
     { name: "Fnac",   url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=vagabond+tome", logo: "https://cdn.iconscout.com/icon/free/png-256/free-fnac-3521434-2944878.png" },
@@ -1084,7 +1134,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "vinland-saga",
-  pros: ["Reconstitution historique exceptionnelle","Évolution de Thorfinn — l'une des meilleures arcs du manga","Thèmes pacifistes rares et courageux"],
+  pros: ["Reconstitution historique exceptionnelle","Évolution de Thorfinn, l'une des meilleures arcs du manga","Thèmes pacifistes rares et courageux"],
   cons: ["Deuxième arc radicalement différent peut dérouter","Rythme lent dans l'arc de la ferme","Peu accessible aux non-initiés à l'histoire viking"],
   addedAt: "2025-11-13",
   title: "Vinland Saga",
@@ -1092,7 +1142,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   tags: "Historique · Vikings · Épopée · Drame",
   cover: "https://manga-insight-pro.vercel.app/vinland-saga.jpg",
   synopsis: "Thorfinn, jeune guerrier islandais, poursuit une vengeance qui le consume. Des champs de bataille à la quête d’un nouveau monde, il redéfinit sa voie. La violence héritée se heurte au désir de paix.",
-  reviewHtml: `<p>Makoto Yukimura a commencé Vinland Saga comme un manga de vikings épiques — et en a fait quelque chose d'infiniment plus grand : une méditation sur la violence, la rédemption, et le sens de la paix dans un monde qui ne connaît que la guerre.</p><p>L'arc 1 suit Thorfinn, aveuglé par la vengeance depuis l'enfance. La reconstitution historique de l'ère viking est saisissante. Askeladd, l'antagoniste principal, est l'un des personnages les plus complexes et les plus fascinants du manga moderne — un homme amoral qui cache une loyauté profonde.</p><p>Puis vient l'arc 2 — et tout change. Thorfinn se retrouve esclave dans une ferme. C'est là que Vinland Saga révèle son ambition : montrer qu'un homme construit par la haine peut, lentement, douloureusement, choisir autre chose. L'évolution de Thorfinn est l'une des plus belles courbes narratives du manga contemporain.</p><p>Une lecture qui demande de la patience, mais qui récompense chaque heure investie. Vinland Saga est une œuvre adulte, courageuse, unique.</p>`,
+  reviewHtml: `<p>Makoto Yukimura a commencé Vinland Saga comme un manga de vikings épiques, et en a fait quelque chose d'infiniment plus grand : une méditation sur la violence, la rédemption, et le sens de la paix dans un monde qui ne connaît que la guerre.</p><p>L'arc 1 suit Thorfinn, aveuglé par la vengeance depuis l'enfance. La reconstitution historique de l'ère viking est saisissante. Askeladd, l'antagoniste principal, est l'un des personnages les plus complexes et les plus fascinants du manga moderne, un homme amoral qui cache une loyauté profonde.</p><p>Puis vient l'arc 2, et tout change. Thorfinn se retrouve esclave dans une ferme. C'est là que Vinland Saga révèle son ambition : montrer qu'un homme construit par la haine peut, lentement, douloureusement, choisir autre chose. L'évolution de Thorfinn est l'une des plus belles courbes narratives du manga contemporain.</p><p>Une lecture qui demande de la patience, mais qui récompense chaque heure investie. Vinland Saga est une œuvre adulte, courageuse, unique.</p>`,
   stars: 5,
   shops: [
     { name: "Fnac",   url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=vinland+saga+tome", logo: "https://cdn.iconscout.com/icon/free/png-256/free-fnac-3521434-2944878.png" },
@@ -1112,7 +1162,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   tags: "Action · Combat · Lycée · Délinquants · Shōnen",
   cover: "https://manga-insight-pro.vercel.app/wind-breaker.jpg",
   synopsis: "Haruka Sakura est un lycéen qui arrive au lycée Fûrin, connu pour son taux de délinquance élevé. Son objectif : affronter les meilleurs bagarreurs et devenir le meilleur d'entre eux. Mais cela ne va pas être aussi simple qu'il ne le pensait.",
-  reviewHtml: "",
+  reviewHtml: `<p>Wind Breaker est l'une des meilleures séries de street gang du manhwa récent. Jo Yongseok a créé un manga d'action qui utilise la hiérarchie des lycées de délinquants comme cadre pour explorer des thèmes plus profonds, la place qu'on occupe dans un groupe, la fierté mal placée, et ce que signifie vraiment protéger quelque chose.</p><p>Jay, le protagoniste, arrive dans un lycée réputé pour ses combattants avec une seule ambition : devenir le plus fort. Ce qu'il découvre c'est une école dont les élèves se battent non pas pour la gloire personnelle mais pour protéger leur quartier des gangs extérieurs. Ce renversement de ses attentes, et du lecteur, est le point de départ d'une évolution de personnage bien menée.</p><p>Les combats de Wind Breaker sont dynamiques et chorégraphiés avec soin, l'action est lisible et chaque affrontement a un enjeu clair. Les personnages secondaires, notamment Kuwahara et les autres membres de l'école, ont chacun leur arc et leur profondeur propre.</p><p>Wind Breaker est en cours de publication et monte en qualité arc après arc. Une série d'action urbaine solide avec plus de cœur qu'elle n'en a l'air.</p>`,
   stars: 4,
   shops: [
     { name: "Amazon", url: "https://www.amazon.fr/s?k=wind+breaker+manhwa", logo: "https://www.1min30.com/wp-content/uploads/2017/12/logo-amazon-1.jpg" }
@@ -1130,7 +1180,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   tags: "Shōnen · Démons · Sabre · Fratrie",
   cover: "https://manga-insight-pro.vercel.app/demon-slayer-kimetsu-no-yaiba.png",
   synopsis: "Après le massacre de sa famille et la transformation de sa sœur Nezuko en démon, Tanjiro rejoint le Corps des Pourfendeurs pour la protéger et traquer les responsables.",
-  reviewHtml: `<p>Demon Slayer est peut-être le manga le plus beau visuellement de sa génération. Koyoharu Gotouge a développé un style graphique immédiatement reconnaissable — des traits nets, des kimonos aux motifs géométriques complexes, des effets de souffle et d'eau qui semblent animés sur la page. Même en noir et blanc, chaque planche est un spectacle.</p><p>L'histoire de Tanjiro — un garçon qui devient chasseur de démons pour sauver sa sœur Nezuko — est simple dans son prémisse. Mais cette simplicité est une force. La relation fraternelle entre Tanjiro et Nezuko est le cœur émotionnel de la série, et elle fonctionne parfaitement du premier au dernier chapitre.</p><p>Les Piliers — les neuf chasseurs d'élite — sont une galerie de personnages mémorables, chacun avec son style de combat et son histoire. L'arc du Train de l'Infini compte parmi les meilleures séquences d'action du shōnen moderne.</p><p>Le seul reproche : les antagonistes restent en surface, peu développés. Mais comme divertissement pur, visuellement somptueux et émotionnellement efficace, Demon Slayer est irréprochable.</p>`,
+  reviewHtml: `<p>Demon Slayer est peut-être le manga le plus beau visuellement de sa génération. Koyoharu Gotouge a développé un style graphique immédiatement reconnaissable, des traits nets, des kimonos aux motifs géométriques complexes, des effets de souffle et d'eau qui semblent animés sur la page. Même en noir et blanc, chaque planche est un spectacle.</p><p>L'histoire de Tanjiro, un garçon qui devient chasseur de démons pour sauver sa sœur Nezuko, est simple dans son prémisse. Mais cette simplicité est une force. La relation fraternelle entre Tanjiro et Nezuko est le cœur émotionnel de la série, et elle fonctionne parfaitement du premier au dernier chapitre.</p><p>Les Piliers, les neuf chasseurs d'élite, sont une galerie de personnages mémorables, chacun avec son style de combat et son histoire. L'arc du Train de l'Infini compte parmi les meilleures séquences d'action du shōnen moderne.</p><p>Le seul reproche : les antagonistes restent en surface, peu développés. Mais comme divertissement pur, visuellement somptueux et émotionnellement efficace, Demon Slayer est irréprochable.</p>`,
   stars: 4,
   shops: [
     { name: "Manganim", url: "https://manganim.fr/search?q=Demon+Slayer", logo: "https://manganim.fr/cdn/shop/files/logo-manganim-header_180x.png?v=1672862594" },
@@ -1145,7 +1195,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "spy-x-family",
-  pros: ["Humour parfaitement dosé","Anya — personnage irrésistible","Légèreté assumée et rafraîchissante"],
+  pros: ["Humour parfaitement dosé","Anya, personnage irrésistible","Légèreté assumée et rafraîchissante"],
   cons: ["Peu d'enjeux réels malgré le prémisse espionnage","Progression narrative lente","Risque de tourner en rond sur la durée"],
   addedAt: "2025-11-18",
   title: "SPY×FAMILY",
@@ -1153,7 +1203,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   tags: "Comédie · Espionnage · Famille",
   cover: "https://manga-insight-pro.vercel.app/spy-x-family.jpg",
   synopsis: "Pour approcher un politicien, l’espion « Twilight » forme une famille de façade : Anya, fillette télépathe, et Yor, tueuse à gages. Personne ne connaît le secret des autres.",
-  reviewHtml: "",
+  reviewHtml: `<p>Dans un paysage manga souvent dominé par l'action intense et les enjeux de vie ou de mort, Spy x Family arrive avec une proposition rafraîchissante : et si l'espionnage international servait de cadre à une comédie familiale douce et chaleureuse ? Tatsuya Endo a trouvé la formule parfaite.</p><p>Loid Forger, agent secret d'élite, doit constituer une fausse famille pour mener à bien une mission. Il adopte Anya, une petite fille télépathe qui sait tout mais fait semblant de ne rien savoir. Il épouse Yor, une tueuse à gages qui cherche une couverture. Chacun cache son identité aux autres. Et pourtant, malgré la construction artificielle de cette famille, quelque chose de vrai se construit progressivement.</p><p>Anya est l'une des créations les plus attachantes du manga récent. Ses expressions, ses réactions, son enthousiasme sincère pour sa nouvelle vie, chaque scène avec elle est un bonheur. Elle porte la série sur ses petites épaules avec un naturel désarmant.</p><p>Spy x Family assume pleinement sa légèreté. Ce n'est pas une série qui cherche à surprendre ou à bouleverser, c'est un manga qui veut juste rendre le lecteur heureux. Et elle y réussit parfaitement, à chaque chapitre.</p>`,
   stars: 4,
   shops: [
     { name: "Manganim", url: "https://manganim.fr/search?q=Spy+x+Family", logo: "https://manganim.fr/cdn/shop/files/logo-manganim-header_180x.png?v=1672862594" },
@@ -1169,13 +1219,15 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 
 {
   slug: "arifureta",
+  pros: ["Progression crafting inventive et satisfaisante","Atmosphère survival efficace au début","Héros pragmatique et compétent"],
+  cons: ["Virage harem qui déçoit les fans du ton sombre initial","Qualité narrative inégale","Personnages féminins stéréotypés"],
   addedAt: "2025-11-20",
   title: "Arifureta: De zéro à héros",
   category: "manga",
   tags: "Isekai · Donjon · Vengeance · Survie",
   cover: "https://manga-insight-pro.vercel.app/arifureta.jpg",
   synopsis: "Trahi lors d’un raid, Hajime chute au fond d’un donjon. Pour survivre, il se radicalise, fabrique ses armes et remonte, décidé à renverser son destin.",
-  reviewHtml: "",
+  reviewHtml: `<p>Arifureta commence avec un concept familier, groupe d'élèves transportés dans un autre monde, mais choisit de suivre le personnage le plus faible du groupe, Hajime Nagumo, après qu'il ait été trahi et laissé pour mort dans les profondeurs d'un donjon. Sa survie et sa transformation progressive en quelqu'un de plus dur, plus efficace, et moins naïf que ses anciens camarades forment le cœur de la série.</p><p>Ce qui fonctionne bien dans Arifureta c'est l'aspect crafting et progression : Hajime utilise sa seule compétence de transmutation pour créer des armes de plus en plus sophistiquées, et cette ingéniosité pratique dans un monde de magie et d'épées est rafraîchissante. Les premières parties du donjon ont une atmosphère de survival tendue et efficace.</p><p>La série change de registre une fois Hajime sorti du donjon, elle devient plus légère, plus harem, avec l'accumulation progressive d'une troupe de compagnes aux personnalités contrastées. Ce virage plaît à certains lecteurs, en déçoit d'autres qui préféraient le ton sombre du début.</p><p>Arifureta est un isekai de divertissement honnête, pas révolutionnaire, mais efficace dans ce qu'il propose, surtout pour les fans du genre qui apprécient un protagoniste compétent et pragmatique.</p>`,
   stars: 3,
   shops: [
     { name: "Manganim", url: "https://manganim.fr/search?q=Arifureta", logo: "https://manganim.fr/cdn/shop/files/logo-manganim-header_180x.png?v=1672862594" },
@@ -1189,7 +1241,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "re-zero",
-  pros: ["Système de résurrection exploré avec génie","Subaru — anti-héros complexe et réaliste","World-building très riche"],
+  pros: ["Système de résurrection exploré avec génie","Subaru, anti-héros complexe et réaliste","World-building très riche"],
   cons: ["Certains arcs très longs","Personnage de Subaru peut être agaçant au début","Nombreux personnages à suivre"],
   addedAt: "2025-11-22",
   title: "Re:Zero",
@@ -1197,7 +1249,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   tags: "Isekai · Boucle temporelle · Drame · Fantasy",
   cover: "https://manga-insight-pro.vercel.app/re-zero.jpg",
   synopsis: "Subaru est transporté dans un autre monde et découvre qu’à chaque mort, il revient à un point de sauvegarde. Il tente d’enrayer les tragédies qui l’entourent.",
-  reviewHtml: `<p>Re:Zero a réinventé la formule isekai en prenant le concept de "recommencer depuis un checkpoint" et en explorant honnêtement ce que ça ferait à un être humain. La réponse est : rien de bon. Et c'est là toute la brillance de la série.</p><p>Subaru Natsuki est téléporté dans un autre monde dont le seul pouvoir est de revenir à la vie après chaque mort — sans que personne d'autre ne s'en souvienne. Ce pouvoir qui ressemble à un cadeau est une malédiction. Chaque mort est vécue pleinement. La douleur, la panique, le désespoir s'accumulent. Tappei Nagatsuki traite le trauma psychologique avec une rigueur rare dans le genre.</p><p>La scène du "je ne veux pas mourir" de Subaru est l'une des séquences les plus émotionnellement intenses du genre. Elle redéfinit le personnage et brise les attentes du lecteur d'une façon difficile à oublier.</p><p>Re:Zero est dense — très dense. Ce n'est pas une lecture légère. Mais pour ceux qui s'accrochent, c'est l'un des isekai les plus intelligents jamais écrits.</p>`,
+  reviewHtml: `<p>Re:Zero a réinventé la formule isekai en prenant le concept de "recommencer depuis un checkpoint" et en explorant honnêtement ce que ça ferait à un être humain. La réponse est : rien de bon. Et c'est là toute la brillance de la série.</p><p>Subaru Natsuki est téléporté dans un autre monde dont le seul pouvoir est de revenir à la vie après chaque mort, sans que personne d'autre ne s'en souvienne. Ce pouvoir qui ressemble à un cadeau est une malédiction. Chaque mort est vécue pleinement. La douleur, la panique, le désespoir s'accumulent. Tappei Nagatsuki traite le trauma psychologique avec une rigueur rare dans le genre.</p><p>La scène du "je ne veux pas mourir" de Subaru est l'une des séquences les plus émotionnellement intenses du genre. Elle redéfinit le personnage et brise les attentes du lecteur d'une façon difficile à oublier.</p><p>Re:Zero est dense, très dense. Ce n'est pas une lecture légère. Mais pour ceux qui s'accrochent, c'est l'un des isekai les plus intelligents jamais écrits.</p>`,
   stars: 4,
   shops: [
     { name: "Manganim", url: "https://manganim.fr/search?q=Re%3AZero%20tome", logo: "https://manganim.fr/cdn/shop/files/logo-manganim-header_180x.png?v=1672862594" },
@@ -1211,13 +1263,15 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "tokyo-ghoul",
+  pros: ["Premier arc excellent et atmosphérique","Transformation de Kaneki fascinante","Métaphore de la marginalité bien traitée"],
+  cons: ["Qualité chute après le premier arc","Scénario trop complexe dans :re","Fin décevante pour la majorité des lecteurs"],
   addedAt: "2025-11-24",
   title: "Tokyo Ghoul",
   category: "manga",
   tags: "Dark Fantasy · Ghouls · Identité · Drame",
   cover: "https://manga-insight-pro.vercel.app/tokyo-ghoul.jpg",
   synopsis: "Blessé par une goule, Ken Kaneki devient un hybride et doit survivre entre deux mondes en luttant pour conserver son humanité.",
-  reviewHtml: "",
+  reviewHtml: `<p>Tokyo Ghoul commence comme l'un des mangas d'horreur urbaine les plus prometteurs de sa génération. Kaneki Ken, étudiant ordinaire transformé en demi-goule après une rencontre traumatisante, est un protagoniste attachant dont la transformation progressive est fascinante à suivre. La métaphore de la marginalité, du "monstre" contraint de vivre caché dans la société humaine, est traitée avec une vraie sensibilité.</p><p>Le premier arc est excellent. L'ambiance du 20ème arrondissement, la galerie de personnages du café Anteiku, la tension entre ghules et enquêteurs du CCG, tout fonctionne. Les combats sont brutaux et stylisés, et la descente psychologique de Kaneki vers l'acceptation de sa nature monstrueuse est l'un des arcs de transformation les plus marquants du manga d'action.</p><p>La suite, Tokyo Ghoul :re, est plus inégale. Le scénario se complexifie jusqu'à parfois perdre le fil, certains personnages sont sous-exploités, et la conclusion laisse une partie des lecteurs sur leur faim. Le sentiment d'une série qui n'a pas tout à fait réalisé son potentiel est réel.</p><p>Mais pour son ambiance unique, son protagoniste mémorable et son premier arc impeccable, Tokyo Ghoul mérite largement sa place dans la bibliothèque de tout amateur de manga dark.</p>`,
   stars: 3,
   shops: [
     { name: "Manganim", url: "https://manganim.fr/search?q=Tokyo%20Ghoul%20tome", logo: "https://manganim.fr/cdn/shop/files/logo-manganim-header_180x.png?v=1672862594" },
@@ -1231,13 +1285,15 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "black-god",
+  pros: ["Système de doubles original et bien conçu","Kuro attachante et charismatique","Action rythmée et lisible"],
+  cons: ["Worldbuilding parfois confus","Personnages secondaires peu développés","Rythme inégal entre les arcs"],
   addedAt: "2025-11-26",
   title: "Black God (Kurokami)",
   category: "manga",
   tags: "Action · Surnaturel · Pacte · Rivalités",
   cover: "https://manga-insight-pro.vercel.app/kurokami.jpg",
   synopsis: "Après une rencontre avec Kuro, Keita se retrouve lié à une mototsumitama et impliqué dans des conflits mystiques qui dépassent son quotidien.",
-  reviewHtml: "",
+  reviewHtml: `<p>Tokyo Ghoul commence comme l'un des mangas d'horreur urbaine les plus prometteurs de sa génération. Kaneki Ken, étudiant ordinaire transformé en demi-goule après une rencontre traumatisante, est un protagoniste attachant dont la transformation progressive est fascinante à suivre. La métaphore de la marginalité, du "monstre" contraint de vivre caché dans la société humaine, est traitée avec une vraie sensibilité.</p><p>Le premier arc est excellent. L'ambiance du 20ème arrondissement, la galerie de personnages du café Anteiku, la tension entre ghules et enquêteurs du CCG, tout fonctionne. Les combats sont brutaux et stylisés, et la descente psychologique de Kaneki vers l'acceptation de sa nature est l'un des arcs de transformation les plus marquants du manga d'action.</p><p>La suite, Tokyo Ghoul :re, est plus inégale. Le scénario se complexifie jusqu'à parfois perdre le fil, et la conclusion laisse une partie des lecteurs sur leur faim. Mais pour son ambiance unique et son premier arc impeccable, Tokyo Ghoul mérite sa place dans toute bonne bibliothèque manga.</p>`,
   stars: 2,
   shops: [
     { name: "Manganim", url: "https://manganim.fr/search?q=Kurokami%20Black%20God", logo: "https://manganim.fr/cdn/shop/files/logo-manganim-header_180x.png?v=1672862594" },
@@ -1249,13 +1305,15 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "sss-class-suicide-hunter",
+  pros: ["Mécanisme de boucle temporelle exploité avec génie","Évolution psychologique du protagoniste très crédible","Payoffs émotionnels dévastateurs"],
+  cons: ["Certains arcs d'exposition trop longs","Nombreux personnages à mémoriser","Début difficile d'accès"],
   addedAt: "2025-11-27",
   title: "SSS-Class Suicide Hunter",
   category: "manhwa",
   tags: "Répétition · Donjons · Vengeance",
   cover: "https://manga-insight-pro.vercel.app/sss-class-suicide-hunter.jpg",
   synopsis: "La capacité unique de Kim Gong-ja le rend plus fort à chaque mort. Il accumule talents et stratégies dans un monde où les épreuves ne pardonnent pas.",
-  reviewHtml: "",
+  reviewHtml: `<p>SSS-Class Suicide Hunter commence avec l'une des prémisses les plus originales du manhwa de progression : Kim Gongja copie le pouvoir de n'importe qui en mourant de sa main, et voyage dans le temps jusqu'au moment de sa mort. Quand il copie accidentellement le pouvoir du chasseur le plus puissant du monde et meurt aussitôt, il se retrouve condamné à revivre indéfiniment jusqu'à comprendre comment survivre.</p><p>Ce mécanisme de boucle temporelle est exploité avec une intelligence et une créativité constantes. Chaque arc utilise le retour en arrière différemment, parfois pour résoudre un puzzle, parfois pour explorer ce qu'un personnage aurait fait autrement, parfois pour des effets émotionnels dévastateurs. La série ne se répète jamais.</p><p>Gongja lui-même évolue de façon crédible, les centaines de morts accumulées laissent des traces psychologiques réelles, et son rapport aux autres personnages change profondément au fil des arcs. Cette progression émotionnelle distingue SSS-Class des manhwas de progression plus superficiels.</p><p>Le rythme peut sembler lent dans certains arcs d'exposition, mais les payoffs valent l'investissement. Un manhwa de système qui mérite vraiment sa réputation.</p>`,
   stars: 3,
   shops: [
     { name: "Manganim", url: "https://manganim.fr/search?q=SSS%20Class%20Suicide%20Hunter", logo: "https://manganim.fr/cdn/shop/files/logo-manganim-header_180x.png?v=1672862594" },
@@ -1267,13 +1325,15 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "my-wife-is-a-demon-queen",
+  pros: ["Héros ingénieux sans pouvoirs de combat rafraîchissant","Dynamique du couple comique et efficace","Légèreté assumée et cohérente"],
+  cons: ["Peu de profondeur narrative","Enjeux dramatiques limités","Prévisible dans ses développements"],
   addedAt: "2025-11-29",
   title: "My Wife Is a Demon Queen",
   category: "manhwa",
   tags: "Isekai · Couple · Fantasy",
   cover: "https://manga-insight-pro.vercel.app/my-wife-is-a-demon-queen.jpg",
   synopsis: "Un humain invoqué devient l’époux d’une reine démoniaque déchue. Ensemble, ils tentent de reconquérir un trône et un avenir.",
-  reviewHtml: "",
+  reviewHtml: `<p>My Wife is a Demon Queen est un manhwa de fantasy légère qui assume pleinement son registre de comédie romantique dans un monde d'épée et de sorcellerie. Xiao Tong Kong a créé une série charmante dont le principal attrait est la dynamique entre ses deux protagonistes.</p><p>Xiang Ye, un humain ordinaire transporté dans un monde fantastique, se retrouve lié à Isabella, l'ancienne Reine Démon déchue cherchant à reconquérir son trône. Leur relation, elle le méprise ouvertement mais dépend de lui, il l'admire sincèrement et la soutient sans condition, est le moteur comique et émotionnel de la série.</p><p>Ce qui distingue My Wife is a Demon Queen de la masse des isekai c'est son héros : Xiang Ye n'a aucun pouvoir de combat, mais compense par une ingéniosité pratique et une loyauté absolue. Ses solutions créatives aux problèmes, souvent basées sur des connaissances du monde réel, sont plus satisfaisantes que les power-ups habituels du genre.</p><p>La série ne prétend pas à la profondeur. Elle offre de la légèreté, de l'humour, et une romance qui progresse honnêtement. Pour une lecture détente sans prise de tête, c'est une valeur sûre.</p>`,
   stars: 2,
   shops: [
     { name: "Manganim", url: "https://manganim.fr/search?q=My%20Wife%20Is%20a%20Demon%20Queen", logo: "https://manganim.fr/cdn/shop/files/logo-manganim-header_180x.png?v=1672862594" },
@@ -1285,13 +1345,15 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "the-rising-of-the-shield-hero",
+  pros: ["Protagoniste plus sombre et amer que la moyenne isekai","Arc de réhabilitation bien géré","Compagnons attachants autour de Naofumi"],
+  cons: ["Perd son mordant dans les arcs tardifs","Système de niveaux générique","Certains antagonistes caricaturaux"],
   addedAt: "2025-12-01",
   title: "The Rising of the Shield Hero",
   category: "manga",
   tags: "Isekai · Héros · Trahison · Fantasy",
   cover: "https://manga-insight-pro.vercel.app/the-rising-of-the-shield-hero.jpg",
   synopsis: "Naofumi est invoqué dans un autre monde parmi les quatre héros légendaires. Prenant le bouclier, le plus faible des armes, il est trahi, calomnié, et doit prouver sa valeur seul.",
-  reviewHtml: "",
+  reviewHtml: `<p>The Rising of the Shield Hero se distingue dans le genre isekai par son ton résolument plus sombre et plus amer. Naofumi Iwatani est convoqué dans un autre monde comme Héros du Bouclier, et immédiatement trahi, accusé à tort, et rejeté par tous. Là où la plupart des protagonistes isekai sont accueillis en sauveurs, Naofumi doit construire sa force depuis le fond du gouffre, sans alliés et sans confiance.</p><p>Cette prémisse amère donne à la série une énergie différente. Naofumi n'est pas un héros généreux, c'est un homme blessé qui garde ses distances, méfiant envers tout le monde, et dont la dureté est une cicatrice plus qu'un trait de caractère. Son évolution progressive, sous l'influence de Raphtalia et Filo, est l'arc émotionnel le plus intéressant de la série.</p><p>Les premiers arcs sont les meilleurs, la tension entre Naofumi et le reste du monde, les révélations sur les véritables enjeux de la menace des Vagues, la dynamique de son petit groupe. La série perd un peu de son mordant dans ses arcs ultérieurs quand Naofumi devient plus accepté.</p><p>Un isekai qui prend des risques narratifs et qui récompense les lecteurs patients avec un protagoniste plus complexe que la moyenne du genre.</p>`,
   stars: 3,
   shops: [
     { name: "Manganim", url: "https://manganim.fr/search?q=Shield+Hero", logo: "" },
@@ -1305,13 +1367,15 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "sword-art-online",
+  pros: ["Prémisse de départ très accrocheur","Arc Aincrad solide et immersif","Influence majeure sur tout le genre isekai"],
+  cons: ["Qualité très inégale entre les arcs","Kirito trop parfait par moments","ALfheim Online jugé très faible par la majorité"],
   addedAt: "2025-12-03",
   title: "Sword Art Online",
   category: "manga",
   tags: "Isekai · Jeu vidéo · Romance · Action",
   cover: "https://manga-insight-pro.vercel.app/sword-art-online.jpg",
   synopsis: "Kirito et d’autres joueurs sont piégés dans un jeu virtuel mortel : mourir dans le jeu signifie mourir dans la réalité. Kirito lutte pour sauver tout le monde.",
-  reviewHtml: "",
+  reviewHtml: `<p>Sword Art Online est l'une des séries les plus influentes, et les plus débattues, du manga et light novel des années 2010. Son prémisse de départ reste l'un des plus accrocheurs du genre : 10 000 joueurs piégés dans un MMO de réalité virtuelle où mourir dans le jeu signifie mourir pour de vrai. Cette première arc, Aincrad, est un thriller de survie efficace qui a défini l'esthétique isekai pour une décennie.</p><p>Kirito est un protagoniste qui divise. Ses détracteurs lui reprochent d'être trop parfait, trop facilement victorieux. Ses défenseurs apprécient son pragmatisme froid et sa loyauté envers ses proches. Asuna, dans l'arc Aincrad, est l'un des personnages féminins les mieux écrits du genre, ce qui rend d'autant plus décevant son traitement dans certains arcs suivants.</p><p>SAO souffre d'une inégalité prononcée entre ses arcs. Aincrad est solide. ALfheim Online est jugé bien plus faible par la majorité des lecteurs. GGO et Alicization remontent le niveau avec des concepts plus inventifs et un meilleur traitement des personnages secondaires.</p><p>Malgré ses défauts bien documentés, SAO a introduit des millions de lecteurs au manga et light novel. Son influence sur tout le genre isekai qui a suivi est indéniable.</p>`,
   stars: 3,
   shops: [
     { name: "Manganim", url: "https://manganim.fr/search?q=Sword+Art+Online", logo: "" },
@@ -1326,13 +1390,15 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "goblin-slayer",
+  pros: ["Protagonist original et traumatisé de façon crédible","Désacralisation honnête du heroic fantasy","Combats tactiques et conséquents"],
+  cons: ["Premier chapitre très difficile à lire","Pas pour tous les publics","Manque de variété dans les antagonistes"],
   addedAt: "2025-12-05",
   title: "Goblin Slayer",
   category: "manga",
   tags: "Dark Fantasy · Aventure · Violence",
   cover: "https://manga-insight-pro.vercel.app/goblin-slayer.jpg",
   synopsis: "Dans un monde où les gobelins terrorisent les villageois, une prêtresse rejoint un guerrier mystérieux : Goblin Slayer, obsédé par leur extermination.",
-  reviewHtml: "",
+  reviewHtml: `<p>Goblin Slayer est une série qui a fait beaucoup parler à sa sortie, et pas toujours pour les bonnes raisons. Kumo Kagyu a créé un dark fantasy résolument brutal, dont le premier chapitre est l'un des plus violents et dérangeants du genre. Ceux qui passent ce cap découvrent quelque chose de plus nuancé.</p><p>Le Goblin Slayer lui-même est un personnage fascinant, un homme traumatisé par un massacre dans son enfance, entièrement consumé par une obsession : tuer des gobelins. Uniquement des gobelins. Sa rigidité monomaniaques, son pragmatisme froid, et les fissures occasionnelles dans son armure émotionnelle en font un protagoniste bien plus intéressant que la moyenne du fantasy.</p><p>La série explore intelligemment ce que le genre heroic fantasy occulte habituellement, les aventuriers débutants qui meurent bêtement, les créatures "faibles" qui sont redoutables en nombre, la réalité violente d'un monde médiéval fantastique. Cette désacralisation est sa force principale.</p><p>Goblin Slayer n'est pas pour tout le monde, le contenu est explicitement sombre et violent. Mais pour ceux qui cherchent un dark fantasy sérieux avec un protagoniste original, c'est une série qui mérite d'être jugée sur l'ensemble de son œuvre.</p>`,
   stars: 3,
   shops: [
     { name: "Manganim", url: "https://manganim.fr/search?q=Goblin+Slayer", logo: "" },
@@ -1346,13 +1412,15 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "grimgar",
+  pros: ["Isekai le plus honnête émotionnellement","Atmosphère mélancolique unique","Vraies conséquences de la mort sur le groupe"],
+  cons: ["Rythme très lent par design","Peu d'action spectaculaire","Peut frustrer les lecteurs de manhwa de progression"],
   addedAt: "2025-12-07",
   title: "Grimgar, le Monde des Cendres et de Fantaisie",
   category: "manga",
   tags: "Fantasy · Monde parallèle · Aventure",
   cover: "https://manga-insight-pro.vercel.app/grimgar.jpg",
   synopsis: "Des individus se réveillent dans un monde inconnu sans souvenir, forcés de s’adapter, lutter et trouver leur place au sein d’une communauté d’aventuriers.",
-  reviewHtml: "",
+  reviewHtml: `<p>Grimgar of Fantasy and Ash est l'anti-isekai par excellence. Là où la plupart des séries du genre propulsent leur héros vers la puissance, Ao Jyumonji s'intéresse à ce que ressentent vraiment des gens ordinaires transportés dans un monde de RPG, la peur, la fatigue, le deuil, l'incertitude permanente.</p><p>Le groupe de protagonistes est faible. Vraiment faible. Tuer un simple gobelin leur prend plusieurs chapitres d'effort, de stratégie et de risque. Cette lenteur délibérée est ce qui rend Grimgar unique, on ressent le danger, on comprend pourquoi chaque victoire compte, et quand un personnage meurt, l'impact émotionnel est réel parce que la série a pris le temps de le construire.</p><p>L'atmosphère de Grimgar est mélancolique et contemplative. Les moments de pause, les repas partagés, les conversations du soir, les petits rituels du quotidien, ont autant d'importance que les combats. C'est un isekai pour ceux qui voudraient que le genre prenne le temps de respirer.</p><p>La progression narrative est lente par design, ce qui peut frustrer les lecteurs habitués aux manhwas de système. Mais pour une expérience isekai émotionnellement honnête et atmosphériquement riche, Grimgar est irremplaçable.</p>`,
   stars: 3,
   shops: [
     { name: "Manganim", url: "https://manganim.fr/search?q=Grimgar+fantasy", logo: "" },
@@ -1364,13 +1432,15 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "no-game-no-life",
+  pros: ["Duo Sora/Shiro iconique et mémorable","Résolutions de jeux brillantes et satisfaisantes","Énergie visuelle unique"],
+  cons: ["Hiatus depuis des années","Histoire probablement inachevée","Fan service parfois excessif"],
   addedAt: "2025-12-08",
   title: "No Game No Life",
   category: "manga",
   tags: "Isekai · Jeux · Fantaisie",
   cover: "https://manga-insight-pro.vercel.app/no-game-no-life.jpg",
   synopsis: "Sora et Shiro, fratrie géniale des jeux, sont invoqués dans Disboard, un monde où tout est déterminé par les jeux. Ils visent à défier les dieux du nouveau monde.",
-  reviewHtml: "",
+  reviewHtml: `<p>No Game No Life est le fantasme ultime du gamer transporté dans un autre monde, exécuté avec une intelligence et une énergie visuelle qui le distinguent nettement de la masse des isekai. Yuu Kamiya a créé deux protagonistes iconiques : Sora et Shiro, frère et sœur, génies du jeu incapables de fonctionner dans le monde réel mais invincibles dans celui de Disboard, où tout se règle par le jeu.</p><p>Le concept central est brillant : dans un monde où la guerre est interdite et où tout conflit se résout par des jeux aux règles strictes, l'intelligence et la créativité valent plus que la force. Chaque arc est un tournoi ou un duel où les règles semblent impossibles à contourner, et Sora et Shiro trouvent toujours une solution latérale inattendue. Ces moments de révélation sont parmi les plus satisfaisants du genre.</p><p>Le style visuel, couleurs saturées, compositions dynamiques, est immédiatement reconnaissable et parfaitement adapté à l'énergie de la série. Les échanges entre les personnages sont vifs et souvent drôles.</p><p>La grande frustration : la série est en hiatus depuis des années, et l'histoire reste inachevée. Ce qui existe est excellent, mais s'y plonger c'est accepter de peut-être ne jamais voir la fin.</p>`,
   stars: 3,
   shops: [
     { name: "Manganim", url: "https://manganim.fr/search?q=No+Game+No+Life", logo: "" },
@@ -1384,13 +1454,15 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "record-of-ragnarok",
+  pros: ["Concept direct et assumé — dieux vs humains légendaires","Chaque combattant développé avec soin","Combats épiques à grande échelle"],
+  cons: ["Peu de profondeur narrative en dehors des duels","Résultats de certains combats discutables","Structure très répétitive"],
   addedAt: "2025-12-10",
   title: "Record of Ragnarok",
   category: "manga",
   tags: "Mythologie · Combat · Tournoi",
   cover: "https://manga-insight-pro.vercel.app/record-of-ragnarok.jpg",
   synopsis: "Tous les 1000 ans, les dieux décident du sort de l’humanité. 13 duels sont organisés entre dieux et humains pour décider si l’humanité peut survivre.",
-  reviewHtml: "",
+  reviewHtml: `<p>Record of Ragnarok a le concept le plus direct du manga de combat : les dieux de toutes les mythologies décident d'exterminer l'humanité. Treize humains légendaires sont sélectionnés pour les affronter en duel. Si l'humanité gagne sept combats, elle survit. Shinya Umemura et Takumi Fukui n'ont pas cherché la subtilité, et c'est exactement ce qui fonctionne.</p><p>Chaque combat est un spectacle à grande échelle mettant en scène des personnages historiques ou mythologiques dans des affrontements titanesques. Lu Bu contre Thor, Adam contre Zeus, Sasaki Kojiro contre Poseidon, chaque duel a son propre ton, ses propres enjeux émotionnels, et son propre dosage entre puissance brute et ingéniosité tactique.</p><p>Ce qui élève la série au-dessus du simple combat de fan service c'est le soin apporté à la caractérisation des combattants. Des personnages comme Adam, Nikola Tesla, ou Sasaki Kojiro sont développés avec une profondeur surprenante pour une série dont le pitch est "dieux vs humains". Le chapitre sur Adam en particulier est l'un des meilleurs du manga d'action récent.</p><p>Record of Ragnarok ne cherche pas à être plus que ce qu'il est, un manga de combats épiques avec un casting légendaire. Il excelle dans cet objectif précis.</p>`,
   stars: 4,
   shops: [
     { name: "Manganim", url: "https://manganim.fr/search?q=Record+of+Ragnarok", logo: "" },
@@ -1404,7 +1476,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "chainsaw-man",
-  pros: ["Complètement imprévisible — impossible de deviner la suite","Humour noir et violence stylisée parfaitement dosés","Designs de démons iconiques"],
+  pros: ["Complètement imprévisible, impossible de deviner la suite","Humour noir et violence stylisée parfaitement dosés","Designs de démons iconiques"],
   cons: ["Extrêmement violent et gore","Partie 2 plus lente que la partie 1","Peut dérouter les lecteurs non habitués au style de Fujimoto"],
   addedAt: "2025-12-12",
   title: "Chainsaw Man",
@@ -1412,7 +1484,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   tags: "Shōnen · Démons · Horreur · Action",
   cover: "https://manga-insight-pro.vercel.app/chainsaw-man.png",
   synopsis: "Denji fusionne avec Pochita et devient Chainsaw Man pour combattre les démons tout en essayant de mener une vie “normale”.",
-  reviewHtml: `<p>Comment résumer Chainsaw Man ? C'est la série qui vous fera rire, pleurer, crier de surprise et fermer le tome en vous demandant ce qui vient de se passer — parfois dans la même page. Tatsuki Fujimoto est un auteur complètement à part, et Chainsaw Man est son œuvre la plus débridée, la plus imprévisible, la plus marquante.</p><p>Denji, mi-humain mi-tronçonneuse, n'a pas de grands idéaux. Il veut juste manger à sa faim, dormir dans un vrai lit, et peut-être toucher une fille. Cette franchise désarmante est la grande force de la série : dans un genre saturé de héros noblement motivés, Denji est rafraîchissant de bêtise sincère. Et pourtant, derrière ce vernis de comédie gore, Fujimoto construit quelque chose de bien plus profond.</p><p>La partie 1 est un feu d'artifice de 97 chapitres sans un seul temps mort. Les designs de démons sont iconiques, les combats défient la physique et le bon sens, et les retournements de situation arrivent quand on les attend le moins. Plusieurs moments resteront gravés longtemps après la lecture.</p><p>Attention : c'est violent, très violent. Mais pour ceux qui se laissent embarquer, Chainsaw Man est une expérience unique que le manga mainstream n'offre nulle part ailleurs.</p>`,
+  reviewHtml: `<p>Comment résumer Chainsaw Man ? C'est la série qui vous fera rire, pleurer, crier de surprise et fermer le tome en vous demandant ce qui vient de se passer, parfois dans la même page. Tatsuki Fujimoto est un auteur complètement à part, et Chainsaw Man est son œuvre la plus débridée, la plus imprévisible, la plus marquante.</p><p>Denji, mi-humain mi-tronçonneuse, n'a pas de grands idéaux. Il veut juste manger à sa faim, dormir dans un vrai lit, et peut-être toucher une fille. Cette franchise désarmante est la grande force de la série : dans un genre saturé de héros noblement motivés, Denji est rafraîchissant de bêtise sincère. Et pourtant, derrière ce vernis de comédie gore, Fujimoto construit quelque chose de bien plus profond.</p><p>La partie 1 est un feu d'artifice de 97 chapitres sans un seul temps mort. Les designs de démons sont iconiques, les combats défient la physique et le bon sens, et les retournements de situation arrivent quand on les attend le moins. Plusieurs moments resteront gravés longtemps après la lecture.</p><p>Attention : c'est violent, très violent. Mais pour ceux qui se laissent embarquer, Chainsaw Man est une expérience unique que le manga mainstream n'offre nulle part ailleurs.</p>`,
   stars: 4,
   shops: [
     { name: "Manganim", url: "https://manganim.fr/search?q=Chainsaw+Man", logo: "" },
@@ -1426,13 +1498,15 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "parasyte",
+  pros: ["Science-fiction philosophique d'une intelligence rare","Migi — partenaire unique dans le manga","Questions sur l'humanité traitées avec profondeur"],
+  cons: ["Dessin daté visuellement","Très court — peut laisser sur sa faim","Fin un peu abrupte"],
   addedAt: "2025-12-14",
   title: "Parasyte",
   category: "manga",
   tags: "Horreur · Psychologie · Aliens",
   cover: "https://manga-insight-pro.vercel.app/parasyte.png",
   synopsis: "Un parasite extraterrestre occupe la main droite de Shinichi. Ensemble, ils se battent contre d’autres parasites qui menacent l’humanité.",
-  reviewHtml: "",
+  reviewHtml: `<p>Parasyte est un manga des années 90 qui n'a pas pris une ride. Hitoshi Iwaaki a créé une œuvre de science-fiction corporelle d'une intelligence rare, terrifiante, philosophique, et profondément humaine à la fois.</p><p>Shinichi Izumi a la main droite colonisée par un parasite extraterrestre nommé Migi, qui aurait dû prendre son cerveau mais a raté sa cible. Leur cohabitation forcée, un humain et une créature froide et purement rationnelle partageant un corps, est le cœur de la série. Leur relation évolue de la méfiance à quelque chose de plus complexe, et c'est fascinant à observer.</p><p>Parasyte pose des questions que peu de mangas osent : qu'est-ce qui définit l'humanité ? Les humains sont-ils vraiment différents des parasites qui dévorent d'autres espèces ? La violence de la série n'est jamais gratuite, elle sert une réflexion continue sur la nature animale de l'homme et sur ce que signifie avoir de l'empathie.</p><p>Le dessin est daté visuellement, et l'œuvre est courte, 64 chapitres. Mais Parasyte est l'exemple parfait d'un manga qui dit exactement ce qu'il a à dire, sans une page de trop. Un classique absolu du manga de science-fiction.</p>`,
   stars: 5,
   shops: [
     { name: "Manganim", url: "https://manganim.fr/search?q=Parasyte", logo: "" },
@@ -1446,13 +1520,15 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "the-god-of-high-school",
+  pros: ["Combats parmi les plus spectaculaires du manhwa","Tournoi initial direct et efficace","Designs de personnages mémorables"],
+  cons: ["Scénario s'effondre dans la deuxième partie","Mythologie divine confuse","Cohérence narrative sacrifiée pour le spectacle"],
   addedAt: "2025-12-16",
   title: "The God of High School",
   category: "manga",
   tags: "Arts martiaux · Tournoi · Action · Fantasy",
   cover: "https://manga-insight-pro.vercel.app/the-god-of-high-school.png",
   synopsis: "Jin Mori participe à un tournoi lycéen mêlant arts martiaux et forces mystiques, face à des adversaires aux pouvoirs surnaturels. Les enjeux sont divins.",
-  reviewHtml: "",
+  reviewHtml: `<p>The God of High School est le manhwa de combat pur par excellence. Yongje Park n'essaie pas de révolutionner la narration ou de construire un world-building complexe, il veut juste créer les combats les plus spectaculaires possibles, et dans cet objectif très précis, il réussit brillamment.</p><p>Jin Mori, Han Daewi et Yu Mira, le trio central, forment un groupe attachant et leurs personnalités contrastées créent une dynamique de groupe efficace. Le tournoi de combat qui structure la première partie de la série est simple mais efficace, et chaque combattant rencontré a un style et des motivations suffisamment distinctifs pour marquer.</p><p>Le manhwa change radicalement de registre dans sa seconde moitié en introduisant une mythologie à grande échelle, dieux, pouvoirs divins, enjeux cosmiques, qui divise les lecteurs. Certains apprécient l'ambition de cette expansion. D'autres trouvent que la série perd le charme simple et direct de ses débuts de tournoi de quartier.</p><p>Les illustrations de Park sont dynamiques et lisibles même dans les séquences d'action les plus chargées, une compétence rare. Pour un manhwa d'action pure, The God of High School est difficile à battre.</p>`,
   stars: 4,
   shops: [
     { name: "Manganim", url: "https://manganim.fr/search?q=The+God+of+High+School", logo: "" },
@@ -1466,13 +1542,15 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "akatsuki-no-yona",
+  pros: ["Arc de transformation de Yona parmi les meilleurs du shōjo","Hak — love interest exemplaire","Thèmes politiques traités avec maturité"],
+  cons: ["Rythme très lent dans certains arcs","Publication irrégulière","Progression romantique frustrante"],
   addedAt: "2025-12-18",
   title: "Yona, Princesse de l’Aube",
   category: "manga",
   tags: "Aventure · Romance · Fantasy · Voyage",
   cover: "https://manga-insight-pro.vercel.app/",
   synopsis: "Princesse Yona voit son royaume basculer dans le chaos. Trahie, elle s’exile et part en quête des quatre dragons légendaires pour reconquérir son trône.",
-  reviewHtml: "",
+  reviewHtml: `<p>Akatsuki no Yona est l'une des meilleures séries shōjo d'action de ces vingt dernières années. Mizuho Kusanagi a créé une héroïne dont l'arc de transformation, de princesse naïve et gâtée à chef de guerre déterminée, est l'un des plus satisfaisants du manga féminin.</p><p>Yona commence la série comme une adolescente dont le seul souci est ses cheveux roux. Après le meurtre de son père et la trahison de l'homme qu'elle aimait, elle doit survivre, trouver des alliés, et décider de ce qu'elle veut vraiment faire de sa vie et de son royaume. Cette évolution est progressive, crédible, et émotionnellement puissante.</p><p>Les Quatre Dragons, guerriers légendaires que Yona doit rassembler, sont une galerie de personnages aux backstories touchantes. Hak, son garde du corps dévoué, est l'un des meilleurs love interests du shōjo, présent sans être étouffant, fort sans être dominant, drôle sans être superficiel.</p><p>La série aborde des thèmes politiques sérieux, inégalités sociales, corruption, coût de la guerre, avec une maturité rare pour le genre. Akatsuki no Yona est une lecture incontournable pour tous les fans de fantasy historique et de développement de personnage.</p>`,
   stars: 3,
   shops: [
     { name: "Manganim", url: "https://manganim.fr/search?q=Yona", logo: "" },
@@ -1486,13 +1564,15 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "btooom",
+  pros: ["Mécanique de bombes tactiquement intéressante","Tension de survie bien maintenue","Backstories des participants bien construites"],
+  cons: ["Certains arcs tardifs moins efficaces","Fin décevante pour certains lecteurs","Protagoniste pas toujours sympathique"],
   addedAt: "2025-12-19",
   title: "Btooom!",
   category: "manga",
   tags: "Survie · Battle royale · Jeu vidéo",
   cover: "https://manga-insight-pro.vercel.app/btooom.jpg",
   synopsis: "Ryōta Sakamoto, joueur expert de Btooom!, se réveille sur une île transformée en champ de bataille où chacun doit tuer pour survivre à coups de bombes.",
-  reviewHtml: "",
+  reviewHtml: `<p>Btooom! est un survival game manga qui utilise les codes du genre avec une efficacité solide. Junya Inoue a créé un thriller d'action dont le hook, des gens piégés sur une île et forcés de se battre avec des bombes, est simple et efficace. La spécialité des BIM, les différents types de bombes disponibles, donne aux affrontements une dimension tactique intéressante.</p><p>Ryōta Sakamoto, champion de jeu vidéo inadapté socialement, est un protagoniste dont l'évolution de gamer passif à survivant actif est bien gérée. Sa relation avec Himiko, qui lui est d'abord hostile pour de bonnes raisons, forme le cœur émotionnel de la série.</p><p>Btooom! est à son meilleur dans ses premiers arcs, où la tension de survie est maintenue et où les motivations des participants à ce jeu meurtrier restent mystérieuses. La série explore intelligemment la question de qui mérite vraiment d'être là, chaque participant a été "nominé" par quelqu'un de son entourage, ce qui soulève des questions sur les relations humaines en société.</p><p>Un survival game solide et bien rythmé, idéal pour les fans du genre qui cherchent une série complète.</p>`,
   stars: 3,
   shops: [
     { name: "Fnac", url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=btooom+tome", logo: "" },
@@ -1505,13 +1585,15 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "cage-of-eden",
+  pros: ["Mystère central intrigant et bien dosé","Galerie de survivants aux compétences variées","Rythme haletant dans les meilleurs arcs"],
+  cons: ["Fin jugée précipitée","Certaines résolutions de mystères décevantes","Fan service parfois mal placé"],
   addedAt: "2025-12-21",
   title: "Cage of Eden",
   category: "manga",
   tags: "Survie · Île mystérieuse · Aventure",
   cover: "https://manga-insight-pro.vercel.app/cage-of-eden.jpg",
   synopsis: "Des lycéens échouent sur une île peuplée de créatures préhistoriques. Pour survivre, ils doivent s’unir et percer le mystère du lieu.",
-  reviewHtml: "",
+  reviewHtml: `<p>Cage of Eden est un survival manga à la Lost, des lycéens dont l'avion s'écrase sur une île mystérieuse peuplée d'animaux préhistoriques supposément éteints. Yoshinobu Yamada a créé une série de survie qui mélange action, mystère et science avec une ambition narrative évidente.</p><p>Akira Sengoku, protagoniste pas particulièrement exceptionnel mais déterminé à protéger les autres, mène un groupe hétérogène dont les dynamiques, alliances, trahisons, romances sous stress de survie, constituent le tissu narratif de la série. La galerie de personnages est l'une des forces de Cage of Eden : chaque survivant a ses propres compétences et ses propres failles.</p><p>Le mystère central, pourquoi cette île existe-t-elle, qui y a amené ces animaux préhistoriques, que cachent les structures que les survivants découvrent, maintient un suspens efficace tout au long de la série. Yamada parsème des indices et des révélations avec un rythme bien calibré.</p><p>La fin a été jugée précipitée par une partie des lecteurs. Mais Cage of Eden offre une expérience de survival haletante avec suffisamment de profondeur narrative pour dépasser le simple divertissement d'action.</p>`,
   stars: 3,
   shops: [
     { name: "Amazon", url: "https://www.amazon.fr/s?k=cage+of+eden+manga", logo: "" }
@@ -1520,13 +1602,15 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "deadman-wonderland",
+  pros: ["Univers carcéral dystopique très original","Shiro — l'un des meilleurs mystères du manga d'action","Combats sanguinaires et inventifs"],
+  cons: ["Série raccourcie contre la volonté des auteurs","Plusieurs intrigues inachevées","Fin précipitée et frustrante"],
   addedAt: "2025-12-23",
   title: "Deadman Wonderland",
   category: "manga",
   tags: "Prison · Pouvoirs · Survival Game",
   cover: "https://manga-insight-pro.vercel.app/deadman-wonderland.jpg",
   synopsis: "Accusé à tort du massacre de sa classe, Ganta est envoyé dans une prison-parc d’attractions où les détenus s’affrontent à mort. Il y découvre un mystérieux pouvoir du sang.",
-  reviewHtml: "",
+  reviewHtml: `<p>Deadman Wonderland est un manga d'action psychologique qui n'hésite pas à aller dans des territoires sombres. Jinsei Kataoka et Kazuma Kondou ont créé un univers carcéral dystopique, une prison-parc d'attractions où les détenus risquent leur vie pour divertir le public, avec une créativité morbide assumée.</p><p>Ganta Igarashi, condamné à tort pour le massacre de sa classe, découvre dans cette prison des individus capables de manipuler leur propre sang comme arme. Le système des Branches of Sin, ces pouvoirs sanguinaires aux formes variées, crée des combats visuellement originaux et souvent intenses.</p><p>Shiro, la mystérieuse albinos qui semble connaître Ganta depuis toujours, est le personnage le plus fascinant de la série. Sa véritable nature et son lien avec Ganta constituent l'un des meilleurs mystères du manga d'action de sa génération.</p><p>Deadman Wonderland souffre d'une fin précipitée, la série a été raccourcie contre la volonté des auteurs, ce qui laisse certaines intrigues inachevées. Mais pour son atmosphère unique, ses personnages mémorables, et son univers carcéral inventif, c'est une série qui vaut le détour.</p>`,
   stars: 3,
   shops: [
     { name: "Fnac", url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=deadman+wonderland+tome", logo: "" },
@@ -1539,13 +1623,15 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "eden-zero",
+  pros: ["World-building spatial plus ambitieux que Fairy Tail","Système Ether Gear cohérent et varié","Personnages bien développés"],
+  cons: ["Trop similaire à Fairy Tail dans sa structure","Certains lecteurs de Mashima en attente de plus d'originalité","Arcs de début génériques"],
   addedAt: "2025-12-25",
   title: "Edens Zero",
   category: "manga",
   tags: "Sci-fi · Aventure · Espace",
   cover: "https://manga-insight-pro.vercel.app/eden-zero.jpg",
   synopsis: "Shiki, élevé par des robots sur l’île Granbell, rejoint Rebecca et Happy pour explorer l’espace à la recherche de la déesse Mère et découvrir l’amitié.",
-  reviewHtml: "",
+  reviewHtml: `<p>Edens Zero est la troisième grande saga de Hiro Mashima après Rave Master et Fairy Tail, et elle bénéficie de toute l'expérience accumulée. Dans un univers de science-fiction spatiale où des humains et des robots cohabitent, Shiki Granbell quitte sa planète natale pour explorer le cosmos et trouver la déesse Cosmos, Rebecca.</p><p>Mashima a gardé ses forces, personnages attachants, moments d'amitié chaleureux, combats dynamiques, tout en développant un world-building plus ambitieux que ses œuvres précédentes. L'univers interstellaire d'Edens Zero permet une variété de décors et de cultures qui renouvelle l'intérêt arc après arc.</p><p>Le système des Ether Gear, des pouvoirs liés à différentes forces cosmiques, est plus cohérent et inventif que la simple magie de Fairy Tail. Les Quatre Shining Stars, les alliées androïdes de Shiki, sont des personnages bien construits dont les arcs individuels approfondissent progressivement la mythologie de la série.</p><p>Edens Zero assume ses similarités avec Fairy Tail, même structure de guilde, même dynamique de nakama, mais les transcende par des enjeux plus grands et un ton plus équilibré entre légèreté et gravité. Pour les fans de Mashima, c'est sa meilleure œuvre.</p>`,
   stars: 3,
   shops: [
     { name: "Manganim", url: "https://manganim.fr/search?q=Edens+Zero", logo: "" },
@@ -1559,13 +1645,15 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "fate-stay-night",
+  pros: ["Concept de Guerre du Graal brillant et fertile","Servants développés avec une vraie profondeur mythologique","Gilgamesh — antagoniste mémorable"],
+  cons: ["Dense et exigeant pour les nouveaux venus","Plusieurs routes nécessaires pour tout comprendre","Rythme parfois lent"],
   addedAt: "2025-12-27",
   title: "Fate/Stay Night",
   category: "manga",
   tags: "Magie · Combat · Guerre du Graal",
   cover: "https://manga-insight-pro.vercel.app/fate-stay-night.png",
   synopsis: "Shirō Emiya est entraîné dans la Guerre du Saint Graal, un tournoi où mages et esprits héroïques s’affrontent pour un souhait ultime.",
-  reviewHtml: "",
+  reviewHtml: `<p>Fate/stay night est le point d'entrée dans l'un des univers fictifs les plus expansifs et les plus complexes du manga et de l'animation japonaise. Le concept central, une guerre secrète entre mages qui invoquent des héros légendaires comme Servants pour combattre en leur nom, est l'une des idées les plus fertiles de la fantasy moderne.</p><p>Shirou Emiya, forgeron amateur de magie avec un idéalisme naïf mais sincère, est invoqué dans la Cinquième Guerre du Graal quasi malgré lui. Sa relation avec Saber, le Roi Arthur incarné en guerrière, est le cœur émotionnel de la route Fate, la première des trois histoires que propose l'œuvre originale.</p><p>Ce qui distingue Fate/stay night c'est la profondeur de ses Servants. Chaque héros invoqué, Hercule, Médée, Gilgamesh, est réinterprété avec soin, ses mythes originaux revisités de façon cohérente avec sa personnalité dans la série. Gilgamesh en particulier est l'un des antagonistes les mieux écrits du medium.</p><p>L'adaptation manga capture l'essentiel de l'œuvre originale. Une porte d'entrée idéale vers un univers qui occupera le lecteur curieux pendant des années.</p>`,
   stars: 3,
   shops: [
     { name: "Amazon", url: "https://www.amazon.fr/s?k=fate+stay+night+manga", logo: "" }
@@ -1577,13 +1665,15 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "goblin-nightmare",
+  pros: ["Perspective originale du point de vue des gobelins","Survie dans un monde hostile bien rendue","Déconstruction intéressante du heroic fantasy"],
+  cons: ["Univers peu développé","Personnages difficiles à mémoriser","Peu reconnu et donc peu de ressources"],
   addedAt: "2025-12-29",
   title: "Goblin Nightmare",
   category: "manga",
   tags: "Dark Fantasy · Gobelins · Vengeance",
   cover: "https://manga-insight-pro.vercel.app/goblin-nightmare.jpg",
   synopsis: "Dans un univers ravagé par les gobelins, un guerrier maudit poursuit une vendetta sans fin. Chaque village libéré est une étape vers sa propre damnation.",
-  reviewHtml: "",
+  reviewHtml: `<p>Goblin Nightmare est une série de dark fantasy qui explore le monde du point de vue des créatures habituellement reléguées au rang de chair à canon dans les récits heroic fantasy. Ce renversement de perspective, suivre les gobelins plutôt que les héros qui les combattent, est le concept central qui distingue la série.</p><p>L'univers est brutal et sans romantisme, la survie dans un monde où les humains et autres races plus puissantes traitent les gobelins comme des nuisibles à éliminer crée une tension permanente et des enjeux immédiats. Les protagonistes gobelins ont des motivations simples et claires qui les rendent accessibles malgré leur nature de "monstres".</p><p>Goblin Nightmare est une série de niche qui intéressera particulièrement les fans de dark fantasy qui apprécient les récits centrés sur les marges et les perspectives inhabituelles. Elle ne révolutionne pas le genre mais occupe un espace narratif rarement exploré.</p>`,
   stars: 2,
   shops: [
     { name: "Amazon", url: "#", logo: "" }
@@ -1592,13 +1682,15 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "highschool-dxd",
+  pros: ["Système de puissances angélique/démoniaque élaboré","Arcs d'action tardifs genuinement intenses","Issei attachant malgré les clichés"],
+  cons: ["Fan service omniprésent et souvent mal placé","Clairement pas pour tous les publics","Difficile à recommander sans mettre en garde"],
   addedAt: "2025-12-30",
   title: "High School DxD",
   category: "manga",
   tags: "Écchi · Démon · Lycée · Action",
   cover: "https://manga-insight-pro.vercel.app/highschool-dxd.jpg",
   synopsis: "Issei Hyoudou est tué par une fille lors de son premier rendez-vous puis ressuscité en démon par Rias Gremory. Il entre alors dans un monde de démons et d’anges déchus.",
-  reviewHtml: "",
+  reviewHtml: `<p>High School DxD est la série ecchi-action la plus populaire de sa génération, et sa réputation, méritée, de manga à fanservice intense occulte souvent ses qualités réelles. Ichiei Ishibumi a construit, derrière l'abondance de scènes provocatrices, un système de pouvoirs et une mythologie angélique-démoniaque étonnamment élaborés.</p><p>Issei Hyodo, lycéen ressuscité en diable après avoir été tué par une ange déchue, développe un pouvoir unique lié à sa nature de "Dragon Dieu Rouge". Sa progression, de perdant absolu à combattant d'élite, suit la formule shōnen classique mais avec une énergie et un humour qui lui donnent son propre charme.</p><p>Ce qui surprend les lecteurs qui dépassent la surface c'est la qualité des arcs d'action tardifs. Les batailles contre les antagonistes majeurs atteignent une échelle épique et une intensité émotionnelle genuines. Les personnages féminins, au-delà de leur rôle de fanservice, ont des motivations et des arcs narratifs réels.</p><p>High School DxD n'est clairement pas une série pour tout le monde. Mais pour ceux qui acceptent son contrat, beaucoup de fanservice, beaucoup d'action, humour décomplexé, c'est un divertissement généreux qui va plus loin qu'il n'y paraît.</p>`,
   stars: 2,
   shops: [
     { name: "Amazon", url: "https://www.amazon.fr/s?k=high+school+dxd+manga", logo: "" }
@@ -1610,13 +1702,15 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "isekai-cheat-magician",
+  pros: ["Power fantasy assumé et honnête","Duo Taichi/Rin équilibré","Divertissement sans prise de tête"],
+  cons: ["Aucune originalité narrative","Antagonistes très peu développés","Oubliable malgré sa bonne humeur"],
   addedAt: "2026-01-01",
   title: "Isekai Cheat Magician",
   category: "manga",
   tags: "Isekai · Magie · Duo",
   cover: "https://manga-insight-pro.vercel.app/isekai-cheat-magician.png",
   synopsis: "Taichi et Rin sont transportés dans un autre monde et découvrent des pouvoirs magiques extraordinaires. Ils doivent apprendre à les maîtriser et à survivre aux complots.",
-  reviewHtml: "",
+  reviewHtml: `<p>Isekai Cheat Magician est un isekai qui assume pleinement sa nature de power fantasy sans complexes. Taichi et Rin sont transportés dans un monde fantastique et découvrent rapidement qu'ils ont des capacités magiques hors norme, Taichi en magie physique et combat, Rin en magie élémentaire. Leur progression vers le sommet de la hiérarchie magique est directe et efficace.</p><p>La série ne cherche pas à surprendre ni à subvertir les attentes du genre. Elle offre exactement ce qu'elle promet : des protagonistes sympathiques qui deviennent rapidement puissants, des antagonistes clairement identifiables, et des combats où les héros gagnent de façon satisfaisante. Pour un certain public, c'est précisément ce qui est recherché.</p><p>Le duo Taichi-Rin fonctionne bien, leur complicité préexistante et leur évolution parallèle créent une dynamique plus équilibrée que les isekai centrés sur un seul protagoniste masculin. Les personnages secondaires, notamment les membres de leur guilde d'aventuriers, ajoutent une chaleur qui empêche la série de paraître froide malgré les power-ups constants.</p><p>Isekai Cheat Magician est un isekai de confort, pas révolutionnaire, mais honnête dans ce qu'il offre.</p>`,
   stars: 2,
   shops: [
     { name: "Amazon", url: "https://www.amazon.fr/s?k=isekai+cheat+magician+manga", logo: "" }
@@ -1628,13 +1722,15 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "kaiju-no-8",
+  pros: ["Protagoniste adulte rare et crédible dans le shōnen","Système de combat inventif et évolutif","Designs de kaiju mémorables"],
+  cons: ["En cours, donc impossible de juger la conclusion","Certains personnages secondaires encore peu exploités","Rythme parfois trop rapide"],
   addedAt: "2026-01-03",
   title: "Kaiju No. 8",
   category: "manga",
   tags: "Monstres · Armée · Transformation · Action",
   cover: "https://manga-insight-pro.vercel.app/kaiju-no-8.jpg",
   synopsis: "Kafka Hibino, employé du nettoyage des Kaijus, rêve d’intégrer les Forces de Défense. Après un incident, il obtient le pouvoir de se transformer en monstre et décide de combattre pour protéger l’humanité.",
-  reviewHtml: "",
+  reviewHtml: `<p>Kaiju No. 8 est l'une des meilleures nouvelles séries shōnen de ces dernières années. Naoya Matsumoto a créé un manga de kaiju dont la prémisse, un homme de 32 ans qui rêve depuis toujours d'intégrer les forces de défense anti-monstres se transforme involontairement en kaiju, est exploitée avec un soin et une progression exemplaires.</p><p>Kafka Hibino est un protagoniste adulte, ce qui est rare dans le shōnen, et cette maturité donne à ses motivations et à ses relations une crédibilité que les héros adolescents peinent souvent à atteindre. Sa loyauté envers Mina Ashiro, commandante des forces de défense et amie d'enfance, est le fil émotionnel le plus touchant de la série.</p><p>Le système de combat, les soldats absorbent et utilisent les pouvoirs des kaiju vaincus, est inventif et crée des dynamiques d'équipe intéressantes. Les designs des kaiju sont mémorables et variés, et les combats allient spectacle visuel et enjeux émotionnels avec une régularité rassurante.</p><p>Kaiju No. 8 est en cours de publication et monte en puissance arc après arc. L'une des meilleures séries en cours du Weekly Shōnen Jump.</p>`,
   stars: 4,
   shops: [
     { name: "Manganim", url: "https://manganim.fr/search?q=Kaiju+No+8", logo: "" },
@@ -1648,13 +1744,15 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "kengan-ashura",
+  pros: ["Combats de MMA les plus réalistes et élaborés du manga","Chaque combattant adverse mémorable et bien développé","Artwork exceptionnel dans les scènes de combat"],
+  cons: ["Prémisse d'entreprises qui se battent difficile à prendre au sérieux","Peu de développement en dehors des combats","Personnage principal un peu transparent"],
   addedAt: "2026-01-05",
   title: "Kengan Ashura",
   category: "manga",
   tags: "Combat · Tournoi · Entreprises",
   cover: "https://manga-insight-pro.vercel.app/kengan-ashura.jpg",
   synopsis: "Tokita Ohma participe à des combats clandestins où les entreprises engagent des combattants pour régler leurs différends. Chaque affrontement est un duel de styles et de stratégies.",
-  reviewHtml: "",
+  reviewHtml: `<p>Kengan Ashura est le manga de combat de MMA/arts martiaux le plus sérieux et le plus élaboré du marché. Yabako Sandrovich a créé un univers où les grandes entreprises japonaises résolvent leurs conflits commerciaux par des combats clandestins entre lutteurs d'élite. Ce prémisse absurde est traité avec un deadpan parfait.</p><p>Tokita Ohma, combattant mystérieux engagé par un homme d'affaires ordinaire, est un protagoniste dont le passé et les motivations se dévoilent progressivement avec soin. Mais la vraie force de Kengan Ashura c'est son tournoi, chaque combattant adverse est développé avec un style martial unique, une philosophie propre, et des motivations qui rendent chaque duel plus qu'un simple concours de force.</p><p>Le dessin de Daromeon pour les séquences de combat est exceptionnel, les mouvements sont précis, lisibles, et les techniques martiales semblent réelles et documentées. L'escalade des affrontements vers le tournoi final maintient une tension constante.</p><p>Kengan Ashura est suivi de Kengan Omega qui continue l'histoire avec le même soin. Pour les amateurs de manga de combat sérieux et bien construit, c'est une référence absolue du genre.</p>`,
   stars: 4,
   shops: [
     { name: "Amazon", url: "https://www.amazon.fr/s?k=kengan+ashura+manga", logo: "" }
@@ -1666,13 +1764,15 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "kenshin",
+  pros: ["Kenshin — l'un des personnages les plus iconiques du manga","Arc Kyoto avec Shishio parmi les meilleurs du genre","Thème de la rédemption traité avec profondeur"],
+  cons: ["Fin originale inégale","Réputation ternie par les problèmes de l'auteur","Dernier arc moins fort que le reste"],
   addedAt: "2026-01-07",
   title: "Kenshin le Vagabond",
   category: "manga",
   tags: "Samouraï · Historique · Rédemption",
   cover: "https://manga-insight-pro.vercel.app/kenshin.jpg",
   synopsis: "Ancien assassin surnommé Battosai, Kenshin parcourt le Japon pour expier ses crimes. Il protège les innocents avec un sabre à lame inversée.",
-  reviewHtml: "",
+  reviewHtml: `<p>Rurouni Kenshin est un classique du manga historique d'action qui a défini l'esthétique du samouraï repentant pour toute une génération. Nobuhiro Watsuki a créé en Himura Kenshin l'un des personnages les plus iconiques du shōnen, un assassin légendaire de l'ère Bakumatsu qui a juré de ne plus tuer et porte un sabre inversé pour tenir cette promesse.</p><p>La tension centrale de la série, un homme capable d'une violence absolue qui choisit chaque jour de ne pas l'exercer, est la source de toute sa profondeur émotionnelle. Kenshin est doux, presque enfantin dans sa vie quotidienne, mais les moments où son passé resurgit révèlent quelqu'un de bien plus complexe et meurtri.</p><p>L'arc Kyoto, avec Makoto Shishio comme antagoniste, est l'un des meilleurs arcs du manga des années 90. Shishio, lui aussi assassin du Bakumatsu, brûlé et abandonné par le gouvernement qu'il servait, est le miroir le plus sombre de Kenshin. Leur confrontation est mémorable.</p><p>La fin originale de la série a été jugée inégale, et les problèmes personnels de Watsuki ont terni la réputation de l'auteur. Mais Rurouni Kenshin comme œuvre reste un monument du manga historique d'action.</p>`,
   stars: 4,
   shops: [
     { name: "Fnac", url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=kenshin+tome", logo: "" },
@@ -1685,13 +1785,15 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "kings-game",
+  pros: ["Tension de survie immédiate et efficace","Ordres du roi inventifs et cruels","Flashbacks sur la première expérience de Nobuaki intenses"],
+  cons: ["Escalade artificielle dans les arcs tardifs","Résolution divisive","Certains personnages peu développés avant leur mort"],
   addedAt: "2026-01-09",
   title: "King’s Game",
   category: "manga",
   tags: "Survie · Jeu mortel · Lycée",
   cover: "https://manga-insight-pro.vercel.app/kings-game.jpg",
   synopsis: "Une classe reçoit des ordres d’un mystérieux ‘Roi’. Chaque ordre doit être exécuté sous peine de mort. Nobuaki tente de briser la malédiction du jeu.",
-  reviewHtml: "",
+  reviewHtml: `<p>King's Game est un thriller de survie scolaire qui mise tout sur son concept : une classe entière reçoit des ordres d'un "roi" mystérieux, et quiconque désobéit meurt. La tension est immédiate et le rythme effréné.</p><p>Nobuaki Kanazawa a déjà survécu à un King's Game dans son ancienne école, ce passé traumatique qu'il révèle progressivement donne à sa résistance aux règles du jeu une profondeur que les autres personnages n'ont pas. Les flashbacks sur sa première expérience sont souvent plus intenses que le présent narratif.</p><p>King's Game fonctionne comme un thriller de haute tension dans ses meilleurs moments, les ordres du roi sont inventifs et cruels, les dilemmes moraux auxquels sont confrontés les élèves sont genuinement difficiles, et les morts ont un impact réel. La série ne ménage pas ses personnages.</p><p>Le défaut principal est une tendance à l'escalade qui peut sembler artificielle dans les arcs tardifs, et une résolution qui divise. Mais pour les fans de survival horror scolaire à l'ambiance oppressante, King's Game est l'une des propositions les plus directes et les plus efficaces du genre.</p>`,
   stars: 2,
   shops: [
     { name: "Amazon", url: "https://www.amazon.fr/s?k=king%27s+game+manga", logo: "" }
@@ -1700,13 +1802,15 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "magister-negi-magi",
+  pros: ["Évolution de registre de harem à saga épique unique","Gestion d'un casting de 31 personnages remarquable","Système de combat Pactio très inventif"],
+  cons: ["Départ très lent et comédie légère qui peut décourager","Très long avant d'atteindre les arcs sérieux","Fin bâclée par l'éditeur"],
   addedAt: "2026-01-10",
   title: "Negima! Magister Negi Magi",
   category: "manga",
   tags: "Magie · Comédie · École",
   cover: "https://manga-insight-pro.vercel.app/negima.jpg",
   synopsis: "Negi Springfield, magicien de 10 ans, devient professeur d’une classe de 31 filles dans un collège japonais tout en poursuivant ses études de magie et ses missions secrètes.",
-  reviewHtml: "",
+  reviewHtml: `<p>Negima! est une série de Ken Akamatsu, auteur de Love Hina, qui commence comme une comédie de harem scolaire avant de se transformer progressivement en manga d'action magique épique. Cette évolution de registre est l'une des plus spectaculaires de l'histoire du shōnen.</p><p>Negi Springfield, sorcier gallois de dix ans nommé professeur dans un lycée de filles japonaises, est au départ un prétexte à situations comiques. Mais Akamatsu a des ambitions narratives réelles, et à mesure que la mythologie du monde magique se développe et que les enjeux s'élèvent, Negima! devient une saga d'aventure et de combats d'une ampleur inattendue.</p><p>La galerie des 31 élèves de la classe 2-A est l'une des plus grandes de tout le manga, et Akamatsu parvient à donner à chacune une personnalité distincte et des moments de développement propres. La gestion de ce casting XXL est une performance narrative en soi.</p><p>Le système de combat, les Pactio entre Negi et ses élèves, la magie de combat, devient de plus en plus sophistiqué et inventif dans les arcs tardifs. Negima! est une série qui se bonifie avec chaque tome. Une underrated classic.</p>`,
   stars: 3,
   shops: [
     { name: "Amazon", url: "https://www.amazon.fr/s?k=negima+manga", logo: "" }
@@ -1715,13 +1819,15 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "magi",
+  pros: ["Thèmes politiques adultes rares dans le shōnen","Univers inspiré des Mille et Une Nuits très riche","Judal — antagoniste complexe et fascinant"],
+  cons: ["Certains arcs géopolitiques très denses","Nombreux personnages difficiles à suivre","Fin un peu précipitée"],
   addedAt: "2026-01-12",
   title: "Magi: The Labyrinth of Magic",
   category: "manga",
   tags: "Aventure · Magie · Mille et une nuits",
   cover: "https://manga-insight-pro.vercel.app/magi.jpg",
   synopsis: "Aladdin et Alibaba explorent des donjons mystérieux remplis de trésors et de djinns. Leurs choix influenceront l’équilibre du monde.",
-  reviewHtml: "",
+  reviewHtml: `<p>Magi : The Labyrinth of Magic est une aventure de fantasy inspirée des Mille et Une Nuits avec une ambition narrative et politique rare dans le shōnen. Shinobu Ohtaka a créé un univers où des donjons mystérieux créés par des mages légendaires abritent des trésors et des djinns, et où la politique mondiale est déterminée par ceux qui en contrôlent les richesses.</p><p>Aladdin, Ali Baba et Morgiana forment un trio central bien équilibré, mais c'est la progression du world-building qui distingue vraiment Magi. La série commence comme une aventure de donjons légère et se développe progressivement en une réflexion sur les systèmes politiques, l'esclavage, le colonialisme et la nature du destin. Cette évolution de registre est gérée avec un soin remarquable.</p><p>Judal, antagoniste principal des premiers arcs, est l'un des personnages les plus complexes moralement du shōnen de sa génération, ni vraiment méchant, ni vraiment héros, conditionné par une enfance qu'on découvre progressivement. Ses scènes avec Aladdin comptent parmi les meilleures de la série.</p><p>Magi est une série qui récompense les lecteurs patients avec un world-building de plus en plus riche et des thèmes adultes traités avec sérieux. Une œuvre ambitieuse.</p>`,
   stars: 4,
   shops: [
     { name: "Fnac", url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=magi+tome", logo: "" },
@@ -1735,13 +1841,15 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "monster-musume",
+  pros: ["Worldbuilding cohérent des contraintes physiques de chaque espèce","Humour généreux et bonne humeur constante","Personnages féminins aux personnalités distinctes"],
+  cons: ["Fan service très présent et assumé","Peu de profondeur narrative","Clairement un genre très ciblé"],
   addedAt: "2026-01-14",
   title: "Monster Musume",
   category: "manga",
   tags: "Comédie · Romance · Monstres",
   cover: "https://manga-insight-pro.vercel.app/monster-musume.jpg",
   synopsis: "Dans un Japon où humains et créatures mythiques cohabitent, Kimihito se retrouve malgré lui à héberger plusieurs demi-humaines aux caractères bien trempés.",
-  reviewHtml: "",
+  reviewHtml: `<p>Monster Musume no Iru Nichijou est le manga de harem de créatures mythologiques, et il embrasse pleinement son concept avec une générosité et un humour qui en font une lecture bien plus divertissante qu'attendu. Okayado a créé un monde où les espèces fantastiques, lamies, harpies, centaures, arachnes, vivent en cohabitation avec les humains dans le cadre d'un programme d'échange culturel.</p><p>Kimihito Kurusu, logeur involontaire de multiples créatures, est un protagoniste dont la patience infinie et la bienveillance sincère envers ses pensionnaires créent des situations comiques régulières. Les créatures elles-mêmes, Miia la lamie jalouse, Papi la harpie enfantine, Centorea la centaure chevaleresque, ont chacune une personnalité distincte et des gags qui leur sont propres.</p><p>Ce qui distingue Monster Musume c'est son worldbuilding cohérent. Les contraintes physiques de chaque espèce, comment une lamie prend un bain, comment une centaure entre dans une maison, comment une sirène se déplace en ville, sont traitées avec une attention au détail qui crée un univers crédible dans son absurdité.</p><p>Pour les fans du genre harem avec une touche de fantasy légère et un humour généreux, Monster Musume est une valeur sûre.</p>`,
   stars: 2,
   shops: [
     { name: "Amazon", url: "https://www.amazon.fr/s?k=monster+musume+manga", logo: "" }
@@ -1753,13 +1861,15 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "overlord",
+  pros: ["Inversion brillante du protagoniste omnipotent antagoniste","World-building politique très élaboré","Ainz fascinant dans sa dualité humain/lich"],
+  cons: ["Tension dramatique limitée par l'invincibilité d'Ainz","Certains arcs très longs","Difficile à apprécier sans goût pour le genre isekai dark"],
   addedAt: "2026-01-16",
   title: "Overlord",
   category: "manga",
   tags: "Isekai · Guilde · Non-mort",
   cover: "https://manga-insight-pro.vercel.app/overlord.png",
   synopsis: "Momonga reste connecté dans le jeu Yggdrasil lors de sa fermeture et se retrouve coincé dans son avatar de seigneur mort-vivant. Il décide d’explorer et de dominer ce nouveau monde.",
-  reviewHtml: "",
+  reviewHtml: `<p>Overlord prend le concept isekai et le retourne complètement. Au lieu de suivre un héros qui arrive dans un autre monde et devient progressivement puissant, Ainz Ooal Gown commence déjà comme la créature la plus redoutable de son univers, et la série explore ce que ça signifie d'être un antagoniste omnipotent qui essaie de comprendre ce nouveau monde.</p><p>Cette inversion est la grande force d'Overlord. Ainz n'est pas sympathique au sens traditionnel, il dirige une guilde de monstres maléfiques, ses subordonnés sont fanatiques et terrifiants, et ses "bonnes actions" sont souvent des calculs politiques. Pourtant, on suit son point de vue avec fascination, en partie parce qu'il reste humain dans sa façon de penser malgré son apparence de squelette lich.</p><p>Le world-building est l'un des plus élaborés du genre isekai. Le Nouvel Monde que découvre Ainz est riche, politique, et peuplé de factions complexes. Les arcs qui explorent ce monde du côté des humains ordinaires sont parfois aussi intéressants que ceux centrés sur Ainz.</p><p>Le défaut principal : certains arcs s'étirent en longueur, et les combats manquent de tension puisqu'Ainz est invincible. Mais pour un isekai qui pense en dehors des sentiers battus, Overlord est une référence.</p>`,
   stars: 3,
   shops: [
     { name: "Amazon", url: "https://www.amazon.fr/s?k=overlord+manga", logo: "" }
@@ -1772,13 +1882,15 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "psycho-pass",
+  pros: ["Dystopie Sibyl d'une cohérence et d'une pertinence rares","Akane — héroïne dont l'évolution est exemplaire","Questions sur la surveillance algorithmique très actuelles"],
+  cons: ["Dense et exigeant pour les amateurs d'action pure","Adaptation manga moins complète que l'animé","Rythme parfois lent"],
   addedAt: "2026-01-18",
   title: "Psycho-Pass",
   category: "manga",
   tags: "Futur · Thriller · Cyberpunk",
   cover: "https://manga-insight-pro.vercel.app/psycho-pass.jpg",
   synopsis: "Dans un futur où la criminalité est prédite par le système Sibyl, Akane Tsunemori rejoint la police et découvre les failles de ce système de justice préventive.",
-  reviewHtml: "",
+  reviewHtml: `<p>Psycho-Pass est l'une des meilleures œuvres de science-fiction cyberpunk du manga des années 2010, une adaptation qui rivalise avec son animé d'origine en termes de qualité narrative. L'univers Sibyl, un Japon futur où un système algorithmique évalue en permanence le "coefficient criminel" de chaque citoyen et autorise les arrestations préventives, est l'une des dystopies les plus cohérentes et les plus dérangeantes du genre.</p><p>Akane Tsunemori est une héroïne dont l'évolution, de jeune inspectrice idéaliste à femme qui comprend les contradictions du système qu'elle sert, est traitée avec une subtilité remarquable. Sa relation avec Shinya Kougami, exécuteur aux méthodes discutables, est le cœur émotionnel de la série.</p><p>Les questions que pose Psycho-Pass, peut-on juger une personne avant qu'elle ait commis un crime ? La sécurité vaut-elle la liberté ? Qui contrôle les contrôleurs ?, résonnent avec une acuité particulière dans notre époque de surveillance algorithmique. La série ne donne pas de réponses faciles.</p><p>L'antagoniste Makishima Shōgo est l'un des plus mémorables du manga de SF, un humaniste convaincu que le système Sibyl détruit ce qui fait l'humanité, dont les méthodes criminelles servent une philosophie cohérente. Un manga cyberpunk essentiel.</p>`,
   stars: 4,
   shops: [
     { name: "Amazon", url: "https://www.amazon.fr/s?k=psycho+pass+manga", logo: "" }
@@ -1790,13 +1902,15 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "radiant",
+  pros: ["Fierté française dans le manga mondial","Thème de la discrimination traité avec sincérité","Univers en constante expansion"],
+  cons: ["Encore en développement, difficile de juger l'ensemble","Certains arcs moins inspirés","Parfois en retrait par rapport aux meilleurs shōnen japonais"],
   addedAt: "2026-01-20",
   title: "Radiant",
   category: "manga",
   tags: "Magie · Aventure · Sorciers",
   cover: "https://manga-insight-pro.vercel.app/radiant.jpg",
   synopsis: "Seth, un jeune sorcier contaminé par les Némésis, cherche à détruire leur nid d’origine, Radiant, tout en affrontant l’Inquisition et les préjugés.",
-  reviewHtml: "",
+  reviewHtml: `<p>Radiant est une fierté du manga franco-japonais, créée par Tony Valente, auteur français, et publiée simultanément en France et au Japon. Cette distinction rare s'accompagne d'une qualité réelle : Radiant est un shōnen de fantasy bien construit qui mérite sa place aux côtés des productions japonaises.</p><p>Seth, sorcier infecté par les Nemesis, des monstres tombés du ciel, cherche Radiant, le lieu d'origine de ces créatures, pour les éradiquer à la source. Sa quête le confronte à une intolérance systémique envers les sorciers dans un monde qui les craint autant qu'il a besoin d'eux. Cette métaphore de la discrimination est l'épine dorsale thématique de la série.</p><p>L'univers de Radiant mélange fantasy, steampunk et influences folkloriques européennes avec une cohérence visuelle agréable. Le dessin de Valente est expressif et dynamique, et ses designs de créatures et d'environnements témoignent d'une vraie créativité.</p><p>Radiant prouve qu'un auteur non-japonais peut maîtriser les codes du shōnen tout en y apportant sa propre sensibilité. Une série à soutenir, et une belle ambassadrice de la bande dessinée française sur la scène internationale.</p>`,
   stars: 3,
   shops: [
     { name: "Manganim", url: "https://manganim.fr/search?q=Radiant", logo: "" },
@@ -1810,13 +1924,15 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "rosario-vampire",
+  pros: ["Deuxième saison bien plus ambitieuse que la première","Évolution de Tsukune crédible et satisfaisante","Univers paranormal attachant"],
+  cons: ["Très ancré dans les clichés du harem scolaire","Première saison légère et générique","Fan service omniprésent"],
   addedAt: "2026-01-21",
   title: "Rosario + Vampire",
   category: "manga",
   tags: "Comédie · Harem · Monstres · Lycée",
   cover: "https://manga-insight-pro.vercel.app/rosario-vampire.jpg",
   synopsis: "Tsukune intègre par erreur un lycée pour monstres. Il rencontre Moka, une vampire, et tente de cacher son identité d’humain tout en survivant aux élèves surnaturels.",
-  reviewHtml: "",
+  reviewHtml: `<p>Rosario + Vampire est le manga de harem scolaire paranormal par excellence, et il connaît sa fonction parfaitement. Akihisa Ikeda a créé un lycée peuplé de monstres où un humain ordinaire débarque accidentellement et attire inévitablement l'attention de chaque fille de l'école. Le dispositif est éprouvé, et la série l'exploite avec bonne humeur.</p><p>Ce qui distingue Rosario + Vampire de la masse du genre c'est la deuxième saison, Rosario + Vampire II, qui abandonne partiellement le registre comédie légère pour un ton plus sérieux et des enjeux plus élevés. Le développement de Moka et la révélation progressive de sa véritable nature vampirique ajoutent une profondeur inattendue.</p><p>Tsukune, protagoniste humain archétypalement ordinaire, évolue de façon crédible tout au long des deux saisons, sa transformation de garçon passif à quelqu'un capable de protéger ceux qu'il aime est bien menée, même si elle suit la progression shōnen classique.</p><p>Pour les fans du genre harem scolaire avec une touche paranormale, Rosario + Vampire est une valeur sûre, divertissante, généreuse, et plus ambitieuse qu'il n'y paraît dans sa deuxième partie.</p>`,
   stars: 2,
   shops: [
     { name: "Amazon", url: "https://www.amazon.fr/s?k=rosario+vampire+manga", logo: "" }
@@ -1828,13 +1944,15 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "seven-deadly-sins",
+  pros: ["Meliodas et Elizabeth — romance avec une vraie profondeur","Chacun des sept péchés a sa propre histoire","Arcs d'action épique bien menés"],
+  cons: ["Fin précipitée et décevante","Power-ups excessifs dans les arcs tardifs","Certains antagonistes sacrifiés"],
   addedAt: "2026-01-23",
   title: "The Seven Deadly Sins",
   category: "manga",
   tags: "Fantasy · Chevaliers · Péchés capitaux",
   cover: "https://manga-insight-pro.vercel.app/seven-deadly-sins.jpg",
   synopsis: "La princesse Elizabeth recherche les Seven Deadly Sins, chevaliers accusés de trahison, pour sauver son royaume. Meliodas, leur chef, cache un passé redoutable.",
-  reviewHtml: "",
+  reviewHtml: `<p>Seven Deadly Sins arrive avec un concept accrocheur : sept chevaliers légendaires, chacun incarnant un péché capital, réunis pour sauver un royaume. Nakaba Suzuki construit autour de cette prémisse un manga d'aventure fantaisiste coloré, dynamique, et bourré d'action.</p><p>Meliodas et Elizabeth forment le duo central, et leur relation, dont la vraie nature se révèle progressivement, apporte une dimension émotionnelle qui dépasse le simple shōnen d'action. Les sept péchés eux-mêmes sont des personnages mémorables : Ban l'immortel cynique, King le fée mélancolique, Diane la géante affectueuse, chacun a son histoire et ses motivations propres.</p><p>La série brille dans ses arcs d'action épique et dans ses moments de camaraderie. Le système de pouvoirs, Sacres et capacités uniques, crée des combats variés et spectaculaires. L'escalade des enjeux, passant de la politique du royaume aux menaces démoniaques et divines, est bien gérée sur la majorité de la série.</p><p>La fin est jugée précipitée et décevante par une bonne partie des lecteurs, et certains arcs tardifs souffrent d'une surenchère de power-ups. Mais Seven Deadly Sins reste un manga de fantasy d'aventure solide et divertissant, surtout dans ses deux tiers initiaux.</p>`,
   stars: 4,
   shops: [
     { name: "Manganim", url: "https://manganim.fr/search?q=Seven+Deadly+Sins", logo: "" },
@@ -1848,13 +1966,15 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "shaman-king",
+  pros: ["Philosophie zen unique dans le shōnen de combat","Yoh — protagoniste atypique et mémorable","Anna — l'un des meilleurs personnages féminins de l'époque"],
+  cons: ["Fin originale bâclée avant la version complète","Certains arcs du tournoi longuets","Moins de tension dramatique que dans d'autres séries du genre"],
   addedAt: "2026-01-25",
   title: "Shaman King",
   category: "manga",
   tags: "Esprits · Tournoi · Héritage",
   cover: "https://manga-insight-pro.vercel.app/shaman-king.jpg",
   synopsis: "Yoh Asakura, shaman capable de communiquer avec les esprits, participe au Shaman Fight pour devenir le Shaman King et unir le monde des vivants et des morts.",
-  reviewHtml: "",
+  reviewHtml: `<p>Shaman King est un classique de son époque, un manga des années 2000 qui a marqué toute une génération avec son univers de chamanes, d'esprits, et de tournoi mondial pour décider qui deviendra le Roi Chamane. Hiroyuki Takei a créé quelque chose d'unique : un shōnen de bataille avec une philosophie profondément zen et une vision du monde apaisée qui contraste avec l'énergie guerrière du genre.</p><p>Yoh Asakura est l'un des protagonistes les plus atypiques du shōnen, paresseux, détendu, indifférent à la gloire, motivé uniquement par le désir de "vivre une vie tranquille". Cette attitude nonchalante cache une profondeur spirituelle réelle, et ses moments de sérieux n'en sont que plus frappants. Anna, sa fiancée autoritaire, est l'un des personnages féminins les plus mémorables du manga de l'époque.</p><p>L'univers de Shaman King, les types de Furyoku, les esprits alliés, la hiérarchie des chamanes, est riche et cohérent. Les adversaires rencontrés au tournoi sont variés et souvent plus complexes moralement qu'il n'y paraît.</p><p>La fin originale avait été précipitée par l'arrêt de la série. La version complète publiée plus tard offre une conclusion plus satisfaisante. Un classique nostalgique qui tient toujours la route.</p>`,
   stars: 4,
   shops: [
     { name: "Manganim", url: "https://manganim.fr/search?q=Shaman+King", logo: "" },
@@ -1868,13 +1988,15 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "sk8-the-infinity",
+  pros: ["Skateboard rendu avec une énergie visuelle remarquable","Amitié Reki/Langa touchante et bien développée","Adam — antagoniste mémorable et flamboyant"],
+  cons: ["Série courte qui laisse certains personnages peu exploités","Certaines courses avec des enjeux peu clairs","Réservé aux amateurs du genre"],
   addedAt: "2026-01-27",
   title: "SK8 the Infinity",
   category: "manga",
   tags: "Skateboard · Compétition · Amitié",
   cover: "https://manga-insight-pro.vercel.app/sk8-the-infinity.jpg",
   synopsis: "Reki et Langa participent à des courses de skateboard clandestines appelées ‘S’. Vitesse, style et rivalités s’enchaînent sur les rampes.",
-  reviewHtml: "",
+  reviewHtml: `<p>SK8 the Infinity est une série sur le skateboard nocturne clandestin à Okinawa, et elle est bien plus intense et bien plus bien dessinée qu'on pourrait l'attendre. Kenta Shinohara a créé un manga de sport qui capture l'adrénaline et la liberté du skate avec une énergie visuelle remarquable.</p><p>Reki et Langa forment un duo central attachant, le passionné technique qui enseigne et le débutant avec un passé de snowboard qui apprend et dépasse rapidement. Leur amitié, testée par les jalousies et les doutes, est le fil émotionnel le plus fort de la série.</p><p>Les courses de S, le circuit clandestin où les skateurs s'affrontent dans des descentes urbaines nocturnes, sont chorégraphiées avec un sens du mouvement et du danger qui rend chaque duel haletant. Les designs des personnages sont distinctifs et mémorables, et l'antagoniste Adam est l'un des plus flamboyants du manga de sport récent.</p><p>SK8 the Infinity est une série courte et dense qui n'a pas une page en trop. Pour les amateurs de manga de sport avec une esthétique urbaine et des personnages bien écrits, c'est une lecture incontournable.</p>`,
   stars: 2,
   shops: [
     { name: "Amazon", url: "https://www.amazon.fr/s?k=sk8+the+infinity+manga", logo: "" }
@@ -1886,13 +2008,15 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "so-im-a-spider-so-what",
+  pros: ["Kumoko — l'une des voix les plus drôles de l'isekai","Exploitation créative des mécaniques de RPG","Architecture narrative progressive bien construite"],
+  cons: ["Arcs alternatifs humains moins captivants","Peut sembler décousu entre les deux fils narratifs","Très dense à suivre par moments"],
   addedAt: "2026-01-29",
   title: "So I’m a Spider, So What?",
   category: "manga",
   tags: "Isekai · Monstre · Survie",
   cover: "https://manga-insight-pro.vercel.app/so-im-a-spider.jpg",
   synopsis: "Une lycéenne se réincarne en araignée dans un donjon. Elle doit survivre, évoluer et comprendre les mystères de ce nouveau monde.",
-  reviewHtml: "",
+  reviewHtml: `<p>So I'm a Spider, So What? est l'isekai le plus original de sa vague, parce qu'il ose donner comme protagoniste non pas un humain héroïque mais une araignée de bas niveau qui commence au fond de la hiérarchie des monstres et doit survivre par l'intelligence et l'adaptation. Okina Baba a créé quelque chose de vraiment différent.</p><p>La protagoniste, jamais nommée, simplement "Kumoko" par le fandom, est l'une des voix les plus drôles et les plus attachantes du genre. Son monologue intérieur constant, alternant entre panique existentielle et fierté absurde pour ses petites victoires, crée une dynamique comique qui ne se démode pas. Survivre en tant qu'araignée dans un donjon peuplé de monstres bien plus puissants est un défi constant et inventif.</p><p>La série joue intelligemment avec les mécaniques de RPG, le système de compétences, d'évolution, de niveaux, de façon plus créative que la plupart des isekai. Les révélations progressives sur la nature du monde et le lien entre les différentes intrigues parallèles constituent une architecture narrative solide.</p><p>Les arcs alternatifs centrés sur les autres réincarnés humains sont plus conventionnels que les parties araignée. Mais Kumoko à elle seule vaut la lecture.</p>`,
   stars: 3,
   shops: [
     { name: "Amazon", url: "https://www.amazon.fr/s?k=so+i%27m+a+spider+manga", logo: "" }
@@ -1904,13 +2028,15 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "steins-gate",
+  pros: ["Mécanique temporelle d'une précision et d'une cohérence rares","Retournement de ton magistral à mi-série","Mayuri et Kurisu — deux des meilleures héroïnes de SF manga"],
+  cons: ["Début volontairement confus et difficile d'accès","Demande une attention soutenue du lecteur","L'adaptation manga reste en retrait de l'œuvre originale"],
   addedAt: "2026-01-31",
   title: "Steins;Gate",
   category: "manga",
   tags: "Voyage temporel · Science · Thriller",
   cover: "https://manga-insight-pro.vercel.app/steins-gate.jpg",
   synopsis: "Un groupe d’amis découvre comment envoyer des messages dans le passé. Chaque modification change le présent et entraîne des conséquences dramatiques.",
-  reviewHtml: "",
+  reviewHtml: `<p>Steins;Gate est l'une des meilleures histoires de voyage temporel jamais racontées, dans quelque manga, roman ou film que ce soit. L'adaptation manga de l'œuvre originale capture l'essentiel d'un récit dont la construction temporelle est d'une précision et d'une cohérence rares.</p><p>Rintaro Okabe, dit Hououin Kyouma, est un "savant fou" autodéclaré dont l'humour de surface cache une anxiété profonde. Lui et ses amis découvrent accidentellement comment envoyer des messages dans le passé, et chaque modification de la timeline a des conséquences qui s'accumulent de façon implacable. La série manipule le lecteur avec la même maîtrise que ses protagonistes manipulent le temps.</p><p>Le point de bascule de Steins;Gate, le moment où la légèreté des premiers arcs se transforme en quelque chose de beaucoup plus sombre et urgent, est l'un des meilleurs retournements de ton du medium. Ce qui suivra tient ses promesses jusqu'au bout.</p><p>Mayuri et Kurisu sont deux des meilleurs personnages féminins du manga de science-fiction. Leur importance respective dans l'arc émotionnel d'Okabe est traitée avec un soin exceptionnel. Un chef-d'œuvre de SF.</p>`,
   stars: 4,
   shops: [
     { name: "Amazon", url: "https://www.amazon.fr/s?k=steins+gate+manga", logo: "" }
@@ -1922,13 +2048,15 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "trigun",
+  pros: ["Vash — parmi les personnages les plus originaux du manga","Western SF unique en son genre","Équilibre comédie/drame progressif très bien géré"],
+  cons: ["Dessin parfois confus dans les scènes d'action","Peu connu malgré sa qualité","Publication ancienne et irrégulière"],
   addedAt: "2026-02-01",
   title: "Trigun",
   category: "manga",
   tags: "Western · Sci-fi · Chasseur de primes",
   cover: "https://manga-insight-pro.vercel.app/trigun.jpg",
   synopsis: "Vash the Stampede est un tireur d’élite au grand cœur recherché pour une prime énorme. Sur une planète désertique, il tente d’éviter les bains de sang.",
-  reviewHtml: "",
+  reviewHtml: `<p>Trigun est un western de science-fiction japonais, un genre qui n'existe pratiquement qu'à travers cette série de Yasuhiro Nightow, et c'est l'une des preuves les plus convaincantes de ce que peut accomplir le manga quand il sort de ses territoires habituels.</p><p>Vash the Stampede est recherché dans toute la galaxie pour avoir détruit une ville entière. Sa prime est astronomique. La réalité est tout autre : Vash est un homme aux capacités extraordinaires qui refuse de tuer et qui consacre son existence à protéger des inconnus, souvent au prix de souffrances personnelles considérables. Ce décalage entre réputation et réalité est le cœur comique et émotionnel de la série.</p><p>Trigun commence comme une comédie d'action légère avant de révéler progressivement une histoire bien plus sombre sur la survie d'une humanité transplantée sur une planète désertique, et sur le coût d'un idéalisme absolu dans un monde qui ne le mérite pas toujours. Nicholas D. Wolfwood, le prêtre aux méthodes discutables, est l'un des meilleurs personnages secondaires du manga d'action.</p><p>Un classique mal connu qui mérite d'être (re)découvert.</p>`,
   stars: 3,
   shops: [
     { name: "Fnac", url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=trigun+tome", logo: "" },
@@ -1941,13 +2069,15 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "trinity-seven",
+  pros: ["Protagoniste décomplexé et rafraîchissant pour le genre","Système magique plus élaboré que la concurrence","Bonne humeur constante et généreuse"],
+  cons: ["Clairement du harem assumé, peu de profondeur narrative","Situations embarrassantes répétitives","Intérêt limité pour ceux qui n'apprécient pas le genre"],
   addedAt: "2026-02-03",
   title: "Trinity Seven",
   category: "manga",
   tags: "Magie · Harem · Académie",
   cover: "https://manga-insight-pro.vercel.app/trinity-seven.jpg",
   synopsis: "Arata Kasuga voit son village détruit par un phénomène magique. Pour sauver sa cousine, il intègre l’académie royale et rencontre les ‘Trinity Seven’, sept puissantes magiciennes.",
-  reviewHtml: "",
+  reviewHtml: `<p>Trinity Seven est un manga de harem magique scolaire qui se distingue du genre par son protagoniste. Arata Kasuga n'est pas le héros timide et passif habituel, il assume ses intentions avec un humour décomplexé et une confiance en soi qui donnent à ses interactions avec les Trinity Seven un dynamisme inhabituel pour le genre.</p><p>Le système magique, les Themas, les Archives, les grimoires, est plus élaboré que celui de la plupart des séries similaires, et les arc d'action qui l'explorent montrent une série qui a des ambitions au-delà du simple fanservice. Les sept héroïnes ont chacune leur spécialité magique et leur personnalité propre, suffisamment distinctives pour éviter la confusion.</p><p>Trinity Seven assume pleinement son registre, comédie romantique avec beaucoup de situations embarrassantes et un protagoniste qui ne fait pas semblant d'être indifférent, et le fait avec une bonne humeur constante. La série ne prétend pas à la profondeur mais offre un divertissement généreux et bien rythmé pour les fans du genre.</p>`,
   stars: 2,
   shops: [
     { name: "Amazon", url: "https://www.amazon.fr/s?k=trinity+seven+manga", logo: "" }
@@ -1959,13 +2089,15 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "akame-ga-kill",
+  pros: ["Vraies morts de personnages attachants — enjeux réels","Esdeath — antagoniste complexe et mémorable","Romance Tatsumi/Mine sincèrement émouvante"],
+  cons: ["Tone shifts parfois maladroits entre comédie et tragédie","Certains personnages meurent avant d'être vraiment développés","Fin diverge de l'animé de façon surprenante"],
   addedAt: "2026-02-05",
   title: "Akame ga Kill!",
   category: "manga",
   tags: "Action · Rébellion · Assassins",
   cover: "https://manga-insight-pro.vercel.app/akame-ga-kill.jpg",
   synopsis: "Tatsumi rejoint Night Raid, un groupe d’assassins luttant contre un empire corrompu. Chaque combat se paie cher et l’espoir d’un monde meilleur coûte des vies.",
-  reviewHtml: "",
+  reviewHtml: `<p>Akame ga Kill! est une série qui a choisi un parti pris radical : personne n'est à l'abri. Dans un monde de fantasy corrompue où un empire décadent opprime ses sujets, un groupe de révolutionnaires appelé Night Raid combat pour le changement, et les membres meurent. Vraiment. Régulièrement. Et ça fait mal parce que Takahiro a pris le temps de les rendre attachants.</p><p>Tatsumi, jeune villageois naïf qui rejoint Night Raid, est le prisme à travers lequel on découvre la brutalité de ce monde. Son évolution, de l'idéalisme à une compréhension plus dure de ce que la révolution exige, est l'arc central de la série. La relation entre lui et Mine est l'une des romances les plus sincèrement touchantes du manga d'action dark.</p><p>Les Teigu, armes aux pouvoirs uniques, créent des combats variés et inventifs. L'antagoniste Esdeath est l'un des personnages les plus complexes de la série : un général impitoyable dont la philosophie de force absolue est terrifiante précisément parce qu'elle est cohérente.</p><p>La fin diverge de l'animé et est plus sombre. Akame ga Kill n'est pas parfait, mais son engagement total envers ses propres règles en fait une expérience marquante.</p>`,
   stars: 4,
   shops: [
     { name: "Manganim", url: "https://manganim.fr/search?q=Akame+ga+Kill", logo: "" },
@@ -1979,13 +2111,15 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "angel-beats",
+  pros: ["Prémisse émotionnellement unique — le purgatoire des regrets","Kanade — révélation progressive magistralement gérée","Backstories des membres de la SSS poignantes"],
+  cons: ["Court et condensé — certaines histoires méritaient plus","Ton inégal entre comédie légère et tragédie profonde","Demande un investissement émotionnel fort"],
   addedAt: "2026-02-07",
   title: "Angel Beats!",
   category: "manga",
   tags: "Au-delà · Lycée · Drame",
   cover: "https://manga-insight-pro.vercel.app/angel-beats.jpg",
   synopsis: "Dans un lycée de l’au-delà, Otonashi rejoint un groupe rebelle dirigé par Yuri pour défier une mystérieuse ‘Ange’. Entre humour et drame, chaque élève doit affronter son passé.",
-  reviewHtml: "",
+  reviewHtml: `<p>Angel Beats! est l'adaptation manga d'un visual novel / anime de Key, le studio spécialisé dans les histoires qui brisent le cœur, et elle conserve l'essentiel de l'impact émotionnel de l'œuvre originale. Dans un lycée qui est en réalité un purgatoire pour adolescents morts avec des regrets, un groupe de rebelles combat contre "Dieu" pour ne pas disparaître.</p><p>Le prémisse est plus mélancolique qu'il n'y paraît. Chaque membre de la SSS, la brigade des rebelles, porte le poids d'une vie interrompue trop tôt, souvent par des circonstances injustes. Leurs backstories, révélées progressivement, sont des petites tragédies qui expliquent leur résistance à "l'acceptation".</p><p>Otonashi, protagoniste amnésique, est le fil conducteur qui permet au lecteur de découvrir cet univers étrange. Sa relation avec Kanade, mystérieuse, semblant être leur ennemie mais dont les motivations sont bien différentes, est le cœur émotionnel de la série et sa meilleure réussite.</p><p>Angel Beats! est une lecture courte et intense, idéale pour ceux qui cherchent une histoire fantastique avec une charge émotionnelle réelle. Prévoir des mouchoirs.</p>`,
   stars: 3,
   shops: [
     { name: "Amazon", url: "https://www.amazon.fr/s?k=angel+beats+manga", logo: "" }
@@ -1997,13 +2131,15 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "bastard",
+  pros: ["Dark Schneider — antihéros le plus excessif et fascinant du genre","Artwork exceptionnel pour l'époque","Esthétique heavy metal unique dans le manga"],
+  cons: ["Publication chaotique et hiatus fréquents","Très difficile de trouver l'œuvre complète","Style graphique daté pour les nouveaux lecteurs"],
   addedAt: "2026-02-09",
   title: "Bastard!!",
   category: "manga",
   tags: "Dark Fantasy · Heavy Metal · Magie",
   cover: "https://manga-insight-pro.vercel.app/bastard.jpg",
   synopsis: "Dans un monde médiéval où règnent magie et métal, Dark Schneider, puissant sorcier, est libéré pour sauver un royaume mais son caractère tyrannique menace tout.",
-  reviewHtml: "",
+  reviewHtml: `<p>Bastard!! -Darkness Everlasting- est un manga des années 90 qui a défini une certaine esthétique du heavy metal fantasy dans le manga. Kazushi Hagiwara a créé un univers de dark fantasy débridé, magie destructrice, antihéros flamboyant, références musicales heavy metal omniprésentes, avec une exubérance qui n'appartient qu'à lui.</p><p>Dark Schneider, le plus puissant sorcier qui ait jamais vécu, est un antihéros délibérément excessif, arrogant, libidineux, destructeur, et pourtant capable de moments de loyauté et de sacrifice qui recontextualisent tout. Son rapport au monde, il a littéralement essayé de le conquérir avant d'être scellé, en fait l'un des protagonistes les plus uniques du genre.</p><p>L'artwork de Hagiwara est d'une qualité exceptionnelle pour l'époque et reste impressionnant aujourd'hui, ses personnages féminins, ses scènes de combat, ses représentations de magie apocalyptique sont dessinés avec un soin qui justifie à lui seul la réputation de la série.</p><p>La publication est extrêmement irrégulière, des années de hiatus séparent parfois les chapitres. Mais Bastard!! reste une œuvre marquante de la fantasy manga, un artefact d'une époque où le genre n'avait pas encore de règles.</p>`,
   stars: 2,
   shops: [
     { name: "Fnac", url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=bastard+manga", logo: "" },
@@ -2016,13 +2152,15 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "beelzebub",
+  pros: ["Duo Oga/Baby Beel — l'un des plus drôles du manga","Énergie comique inépuisable","Personnages secondaires truculents et bien utilisés"],
+  cons: ["Peu de profondeur narrative","Structure répétitive dans les arcs de délinquants","Fin abrupte et insatisfaisante"],
   addedAt: "2026-02-11",
   title: "Beelzebub",
   category: "manga",
   tags: "Comédie · Démon · Lycée",
   cover: "https://manga-insight-pro.vercel.app/beelzebub.jpg",
   synopsis: "Oga Tatsumi, délinquant, devient le ‘père’ du bébé Beelzebub, héritier du roi des démons. Il doit l’élever tout en gérant son quotidien de bagarres lycéennes.",
-  reviewHtml: "",
+  reviewHtml: `<p>Beelzebub est l'une des comédies de délinquants les plus drôles du shōnen, une série qui fait le pari absurde de coller un bébé démon nu sur le dos du délinquant le plus violent d'un lycée de voyous et d'en faire une comédie d'action. Ryūhei Tamura exécute ce concept avec une énergie comique inépuisable.</p><p>Oga Tatsumi et Baby Beel forment l'un des duos les plus improbables et les plus attachants du manga. Le bébé-démon pleure quand il est séparé d'Oga, le frappe quand il est content, et génère des décharges électriques sur tous ceux qu'Oga frappe. La logique absurde de leur cohabitation est la source de gags qui ne s'épuisent jamais vraiment.</p><p>Les arcs de combats contre d'autres délinquants d'élite, les intrigues démoniaques qui s'immiscent progressivement dans le quotidien scolaire, et les personnages secondaires truculents, Furuichi le meilleur ami lâche, Hilda la bonniche démon sans humour, complètent un ensemble généreux et bien rythmé.</p><p>Beelzebub est une série de pur divertissement, sans prétention narrative mais d'une générosité constante. Idéale pour rire.</p>`,
   stars: 3,
   shops: [
     { name: "Manganim", url: "https://manganim.fr/search?q=Beelzebub", logo: "" },
@@ -2036,13 +2174,15 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "black-bullet",
+  pros: ["Thèmes de discrimination des enfants soldats traités avec profondeur","Duo Rentaro/Enju touchant","Ambiance post-apo bien construite"],
+  cons: ["Adaptation incomplète par rapport au light novel","Certains antagonistes peu développés","Court et frustrant pour les lecteurs de l'univers complet"],
   addedAt: "2026-02-12",
   title: "Black Bullet",
   category: "manga",
   tags: "Post-apo · Armes vivantes · Action",
   cover: "https://manga-insight-pro.vercel.app/black-bullet.jpg",
   synopsis: "Dans un futur envahi par des créatures appelées Gastrea, les ‘Enfants maudits’ aux pouvoirs spéciaux combattent aux côtés de leurs protecteurs pour sauver l’humanité.",
-  reviewHtml: "",
+  reviewHtml: `<p>Black Bullet est un light novel adapté en manga qui s explore un Japon post-apocalyptique où des parasites appelés Gastrea ont forcé l'humanité à se réfugier derrière des murs de Varanium. Les Civile, jeunes filles aux capacités surhumaines nées de mères infectées, combattent les Gastrea aux côtés d'Initiateurs humains.</p><p>Rentaro Satomi et Enju Aihara forment un duo central touchant, lui déterminé à protéger son partenaire malgré les préjugés sociaux contre les Civile, elle cheerful et attachante malgré la discrimination qu'elle subit. Leur relation fraternelle est le cœur émotionnel de la série.</p><p>Black Bullet aborde des thèmes sérieux, discrimination systémique, enfants soldats, sacrifice, avec plus de profondeur que son prémisse d'action ne le laisse supposer. Les moments où la série confronte frontalement la cruauté du traitement des Civile sont parmi ses plus forts.</p><p>La série est courte et son adaptation manga reste incomplète par rapport au light novel original. Mais comme introduction à un univers de post-apocalypse avec des enjeux humains réels, Black Bullet est une lecture solide.</p>`,
   stars: 2,
   shops: [
     { name: "Amazon", url: "https://www.amazon.fr/s?k=black+bullet+manga", logo: "" }
@@ -2054,13 +2194,15 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "black-lagoon",
+  pros: ["Revy — héroïne d'action la plus mémorable du genre","Répliques cinglantes et dialogues de haute volée","Chaque arc comme un film d'action indépendant"],
+  cons: ["Hiatus très fréquents depuis des années","Peu de progression narrative globale","Fin potentiellement jamais écrite"],
   addedAt: "2026-02-14",
   title: "Black Lagoon",
   category: "manga",
   tags: "Action · Mafia · Pirates modernes",
   cover: "https://manga-insight-pro.vercel.app/black-lagoon.jpg",
   synopsis: "Rokurou, employé japonais, est kidnappé par des mercenaires. Il rejoint leur équipage dans un monde de trafics et de fusillades en Asie du Sud-Est.",
-  reviewHtml: "",
+  reviewHtml: `<p>Black Lagoon est le manga de mercenaires et de criminels le plus cool du marché, et il le sait parfaitement. Rei Hiroe a créé une série d'action pure qui se déroule dans les bas-fonds de l'Asie du Sud-Est, avec un casting de personnages moralement compromis dont chaque interaction est un feu d'artifice de répliques cinglantes et de violence stylisée.</p><p>Revy est l'une des héroïnes d'action les plus mémorables du manga, bilingue, nihiliste, dangereuse, et portant des cicatrices psychologiques que la série ne minimise pas. Sa relation antagoniste-évolutive avec Rokuro, l'employé de bureau japonais qui a tout perdu et rejoint l'équipage du Black Lagoon, forme le cœur narratif de la série.</p><p>Les arcs sont de mini-films d'action : la guerre des cartels, les nazis en Roumanie, les domestiques enfants soldats. Chaque arc a son propre ton et ses propres antagonistes, mais tous partagent un même engagement envers la violence conséquente et les personnages qui ont des raisons réelles d'être ce qu'ils sont.</p><p>Black Lagoon est en hiatus fréquent depuis des années, ce qui frustre son lectorat fidèle. Mais ce qui existe est du pur divertissement d'action adulte, sans équivalent dans le genre.</p>`,
   stars: 3,
   shops: [
     { name: "Fnac", url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=black+lagoon+tome", logo: "" },
@@ -2073,13 +2215,15 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "blame",
+  pros: ["Architecture SF oppressante unique dans le medium","Narration visuelle pure — presque sans dialogue","Atmosphère post-humaine inoubliable"],
+  cons: ["Très difficile d'accès pour les nouveaux lecteurs de manga","Pratiquement pas de narration explicite","Demande un lecteur prêt à construire sa propre compréhension"],
   addedAt: "2026-02-16",
   title: "Blame!",
   category: "manga",
   tags: "Sci-fi · Cyberpunk · Exploration",
   cover: "https://manga-insight-pro.vercel.app/blame.jpg",
   synopsis: "Dans un futur lointain, Killy parcourt une gigantesque mégastructure à la recherche du gène d’accès au réseau. Silence, architecture titanesque et solitude l’accompagnent.",
-  reviewHtml: "",
+  reviewHtml: `<p>Blame! de Tsutomu Nihei est l'une des expériences manga les plus radicales et les plus déroutantes qui soit, et l'une des plus mémorables. Dans un futur lointain, une méga-structure artificielle s'est développée de façon incontrôlée sur des milliards de kilomètres cubes, peuplée d'humains dégénérés et de robots hostiles. Killy traverse cette architecture impossible à la recherche du Gène Net.</p><p>Blame! est un manga presque sans dialogue. Nihei raconte essentiellement par les images, des architectures gigantesques et oppressantes, des silhouettes minuscules perdues dans des espaces impossibles, une violence soudaine et brutale. C'est de la science-fiction architecturale pure, et l'atmosphère qu'elle génère est unique.</p><p>Killy lui-même est l'un des protagonistes les plus mystérieux du manga, stoïque jusqu'à l'extrême, sa force et ses motivations se révèlent par fragments. L'absence d'exposition traditionnelle oblige le lecteur à construire sa propre compréhension de ce monde fragmenté.</p><p>Blame! n'est pas pour tous les goûts. C'est une œuvre d'art visuel autant qu'un récit, et elle demande un lecteur prêt à accepter l'ambiguïté. Mais pour ceux qui entrent dans son univers, c'est une expérience inoubliable.</p>`,
   stars: 2,
   shops: [
     { name: "Fnac", url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=blame+manga", logo: "" },
@@ -2092,13 +2236,15 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "blood-lad",
+  pros: ["Humour méta sur la culture otaku très bien exécuté","Staz — vampire otaku décalé et attachant","Légèreté assumée et bonne humeur généreuse"],
+  cons: ["Peu de profondeur narrative","Enjeux dramatiques limités","Oubliable malgré son charme"],
   addedAt: "2026-02-18",
   title: "Blood Lad",
   category: "manga",
   tags: "Comédie · Vampire · Action",
   cover: "https://manga-insight-pro.vercel.app/blood-lad.jpg",
   synopsis: "Staz, vampire otaku, règne sur un quartier du monde des démons. Quand une humaine meurt dans son territoire, il promet de la ressusciter.",
-  reviewHtml: "",
+  reviewHtml: `<p>Blood Lad est une comédie de fantasy urbaine qui se distingue par son protagoniste inattendu : Staz, vampire-boss d'un territoire des Enfers, est un otaku obsédé par la culture pop japonaise qui n'a aucun intérêt pour sucer le sang. Quand une lycéenne japonaise ordinaire débarque accidentellement dans son territoire et se fait tuer, il décide de la ressusciter, principalement parce que c'est une vraie Japonaise.</p><p>Cette prémisse absurde est exploitée avec un humour méta constant, les références à la culture otaku, au manga, aux jeux vidéo s'accumulent de façon jubilatoire. Staz lui-même est une parodie vivante du vampire traditionnel, et son décalage avec les attentes du genre crée des situations comiques régulières.</p><p>Yūki Kodama équilibre bien comédie et action, les arcs de combat existent et sont bien menés, mais la série ne perd jamais de vue que son cœur c'est la relation entre Staz et Fuyumi, et l'humour qui découle de leur situation improbable.</p><p>Blood Lad est une lecture légère et régulièrement drôle, idéale pour les fans de culture otaku qui apprécient l'autodérision et une fantasy qui ne se prend pas trop au sérieux.</p>`,
   stars: 2,
   shops: [
     { name: "Manganim", url: "https://manganim.fr/search?q=Blood+Lad", logo: "" },
@@ -2112,13 +2258,15 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "bungou-stray-dogs",
+  pros: ["Concept de pouvoirs basés sur des auteurs littéraires brillant","Dazai — personnage le plus fascinant de la série","Alternance comédie/drama très habile"],
+  cons: ["Nombreux personnages difficiles à mémoriser au début","Certains arcs moins bien gérés que d'autres","Peut sembler prétentieux pour ceux qui n'apprécient pas le concept"],
   addedAt: "2026-02-20",
   title: "Bungou Stray Dogs",
   category: "manga",
   tags: "Pouvoirs · Enquête · Organisation",
   cover: "https://manga-insight-pro.vercel.app/bungou-stray-dogs.jpg",
   synopsis: "Atsushi, orphelin affamé, rencontre Dazai et Kunikida, membres d’une agence d’investigation composée d’individus aux dons surnaturels. Il y découvre complots et secrets.",
-  reviewHtml: "",
+  reviewHtml: `<p>Bungou Stray Dogs est une série qui fait le pari audacieux de nommer tous ses personnages d'après des auteurs littéraires réels, Osamu Dazai, Ryūnosuke Akutagawa, Francis Scott Fitzgerald, et de leur donner des pouvoirs basés sur leurs œuvres. Ce concept méta et littéraire aurait pu sembler prétentieux. En pratique, il donne à la série une identité visuelle et narrative unique.</p><p>L'histoire suit l'Agence des Détectives Armés, des individus aux capacités surnaturelles qui gèrent les cas trop étranges pour la police normale, et leur opposition aux groupes criminels et gouvernementaux qui cherchent à les détruire. La politique entre factions, les alliances changeantes, et les révélations progressives sur les motivations de chaque camp maintiennent une tension constante.</p><p>Dazai Osamu est le personnage central de facto, mystérieux, manipulateur, suicidaire de façon comique mais profondément mélancolique sous la surface. Son passé dans la Port Mafia et sa relation avec Chuuya Nakahara sont parmi les meilleurs éléments de la série.</p><p>Bungou Stray Dogs alterne habilement entre comédie légère et drama intense, parfois dans le même chapitre. Une série originale qui récompense les lecteurs curieux de littérature japonaise.</p>`,
   stars: 3,
   shops: [
     { name: "Manganim", url: "https://manganim.fr/search?q=Bungou+Stray+Dogs", logo: "" },
@@ -2132,6 +2280,8 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "coppelion",
+  pros: ["Atmosphère post-nucléaire unique et bien rendue","Héroïnes humanistes et attachantes","Visuellement ambitieux et soigné"],
+  cons: ["Rythme parfois trop lent","Développement de l'antagonisme parfois confus","Public de niche restreint"],
   addedAt: "2026-02-22",
   title: "Coppelion",
   category: "manga",
@@ -2149,6 +2299,8 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
  {
   slug: "devilman-crybaby",
+  pros: ["Œuvre fondatrice du dark fantasy manga","Fin nihiliste d'une cohérence et d'un courage rares","Influence sur des décennies de manga ultérieur"],
+  cons: ["Dessin très daté visuellement","Contenu extrêmement violent et perturbant","Difficile d'accès pour les lecteurs modernes"],
   addedAt: "2026-02-23",
   title: "Devilman Crybaby",
   category: "manga",
@@ -2166,6 +2318,8 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "dororo",
+  pros: ["Œuvre fondatrice de Tezuka d'une modernité surprenante","Concept de Hyakkimaru unique et poignant","Thèmes sur la guerre d'une actualité permanente"],
+  cons: ["Dessin daté — standards des années 60","Récit inachevé par Tezuka lui-même","Difficile à appréhender sans contexte historique manga"],
   addedAt: "2026-02-25",
   title: "Dororo",
   category: "manga",
@@ -2183,11 +2337,13 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "en-en-no-shouboutai",
+  pros: ["Univers pyrokinétique original et inventif","Galerie de personnages variée et mémorable","Évolution de la mythologie progressive et ambitieuse"],
+  cons: ["Fan service parfois intrusif","Certains arcs intermédiaires en retrait","Comparaison inévitable avec Soul Eater du même auteur"],
   addedAt: "2026-02-27",
   title: "En’en no Shouboutai (Fire Force)",
   category: "manga",
   tags: "Pompiers · Surnaturel · Action",
-  cover: "https://manga-insight-pro.vercel.app/fire-force.jpg",
+  cover: "https://manga-insight-pro.vercel.app/en-en-no-shouboutai.jpg",
   synopsis: "Des combustions humaines spontanées transforment les victimes en infernaux. Shinra, pompier aux pieds de feu, cherche la vérité sur son passé.",
   stars: 3,
   shops: [
@@ -2202,6 +2358,8 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "hajime-no-ippo",
+  pros: ["La saga sportive la plus longue et la plus riche du manga","Boxe représentée avec une précision technique exemplaire","Chaque adversaire développé avec autant de soin que le héros"],
+  cons: ["Plus de 1400 chapitres — très difficile à aborder","Certains arcs tardifs critiqués pour leur rythme","Engagement à très long terme requis"],
   addedAt: "2026-03-01",
   title: "Hajime no Ippo",
   category: "manga",
@@ -2219,6 +2377,8 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "katekyo-hitman-reborn",
+  pros: ["Évolution de comédie gag à saga d'action remarquable","Système des Flames et des armes inventif","Arcs de bataille tardifs intenses et bien construits"],
+  cons: ["Début très lent et peu représentatif de la série","Certains arcs de transition longuets","Fin précipitée par rapport aux ambitions narratives"],
   addedAt: "2026-03-03",
   title: "Katekyo Hitman Reborn!",
   category: "manga",
@@ -2236,6 +2396,8 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "zatch-bell",
+  pros: ["Duo Kiyo/Zatch attachant et sincèrement émouvant","Concept de mammodo et partenaires humains original","Moments de fin de combat souvent bouleversants"],
+  cons: ["Visuellement daté","Certains duels longuets","Moins connu que d'autres classiques de son époque"],
   addedAt: "2026-03-05",
   title: "Zatch Bell!",
   category: "manga",
