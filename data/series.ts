@@ -529,6 +529,10 @@ export const SERIES: Serie[] = [
   pros: ["Système de pouvoirs Nen — le plus inventif du genre","Arcs variés et tous marquants","Protagonistes vraiment originaux"],
   cons: ["Hiatus interminables depuis des années","Certains arcs très longs et denses","Fin potentiellement jamais écrite"],
   addedAt: "2025-09-24",
+  reviewHtml: `<p>Yoshihiro Togashi a créé avec Hunter x Hunter quelque chose de paradoxal : une série incomplète qui reste l'une des plus abouties intellectuellement du shōnen. Malgré des hiatus qui s'étirent sur des années, malgré une fin qui n'arrive pas, chaque arc de HxH est une démonstration de ce que peut atteindre le manga quand un auteur refuse tous les compromis.</p>
+<p>Le système de pouvoirs Nen est le plus ingénieux du genre. Pas de simples attaques numérotées ici — chaque utilisateur développe un Nen unique qui reflète sa personnalité, ses peurs, ses désirs. Les combats de HxH sont des joutes mentales autant que physiques, et certains affrontements se résolvent en plusieurs chapitres de déduction pure. L'arc Yorknew et l'arc Chimaera Ant sont parmi les sommets absolus du shōnen.</p>
+<p>Gon et Killua forment l'un des meilleurs duos de l'histoire du manga — deux garçons liés par une amitié sincère mais que tout oppose, et dont les chemins finissent par diverger de façon déchirante. Leur relation est le cœur émotionnel de la série.</p>
+<p>La seule vraie ombre au tableau : les hiatus. Togashi souffre de problèmes de dos chroniques qui rendent la publication extrêmement irrégulière. Commencer HxH c'est accepter d'attendre. Mais ce qu'il y a à lire vaut chaque minute d'attente.</p>`,
   title: "Hunter × Hunter",
   category: "manga",
   tags: "Action · Aventure · Shōnen",
@@ -564,7 +568,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   tags: "Dark Fantasy · Tragédie · Épée · Destin",
   cover: "https://manga-insight-pro.vercel.app/berserk.jpg",
   synopsis: "Guts, mercenaire marqué par la fatalité, traverse un monde ravagé par monstres et trahisons. Sa quête de vengeance croise celle d’un empire du mal. L’espoir subsiste au fil du fer et de la camaraderie. Une odyssée violente et mythique.",
-  reviewHtml: "",
+  reviewHtml: `<p>Il y a des œuvres qui transcendent leur médium. Berserk est de celles-là. Kentaro Miura a consacré plus de trente ans de sa vie à bâtir l'un des univers les plus sombres, les plus beaux et les plus humains de toute la bande dessinée mondiale — et son décès en 2021 a laissé une cicatrice dans le cœur de millions de lecteurs, comme un écho cruel au destin de son héros.</p><p>Guts, le guerrier à l'épée démesurée, est bien plus qu'un personnage d'action. C'est une étude sur la souffrance, la résistance, et la question fondamentale de savoir si un homme brisé peut encore choisir de vivre. L'Arc d'Or reste l'une des meilleures introductions de l'histoire du manga : une amitié, une trahison, une chute. Tout ce qui suit en découle.</p><p>L'artwork de Miura est hors catégorie. Ses doubles pages de bataille, ses architectures gothiques, ses démons d'un détail hallucinant — aucun autre mangaka n'a atteint ce niveau de maîtrise technique. Chaque planche est une peinture.</p><p>Berserk est violent, sombre, parfois éprouvant. Mais c'est une lecture nécessaire — un monument qui rappelle pourquoi le manga peut être un art majeur. L'histoire reste inachevée, et ce manque fait mal. Mais ce qui existe déjà suffit à en faire un chef-d'œuvre absolu.</p>`,
   stars: 5,
   shops: [
     { name: "Manganim", url: "https://manganim.fr/search?q=Berserk", logo: "https://manganim.fr/cdn/shop/files/logo-manganim-header_180x.png?v=1672862594" },
@@ -770,7 +774,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   tags: "Aventure · Alchimie · Frères · Guerre",
   cover: "https://manga-insight-pro.vercel.app/fullmetal-alchemist.png",
   synopsis: "Après une transmutation interdite, Edward et Alphonse perdent chacun une partie d’eux-mêmes. Pour récupérer leurs corps, ils cherchent la Pierre Philosophale. Leur quête révèle complots d’État, homonculus et vérités amères.",
-  reviewHtml: "",
+  reviewHtml: `<p>Fullmetal Alchemist est l'exemple parfait d'un manga qui sait exactement ce qu'il veut raconter — et qui le raconte sans jamais dévier. En 27 tomes, Hiromu Arakawa construit un récit complet, cohérent, émotionnellement puissant, sans un seul arc de remplissage. C'est rare. C'est précieux.</p><p>Edward et Alphonse Elric ont brisé la loi fondamentale de l'alchimie en tentant de ressusciter leur mère. Le prix à payer : le bras et la jambe d'Edward, et le corps entier d'Alphonse — son âme scellée dans une armure de métal. Leur quête entraîne dans une conspiration qui menace tout un pays.</p><p>Ce qui distingue FMA c'est l'équilibre parfait entre action et émotion, humour et gravité, world-building et personnages. Les thèmes — le deuil, la responsabilité, le sacrifice, la famille — sont traités avec une maturité rare dans le shōnen. La conclusion est un modèle pour toute série longue.</p><p>FMA est un chef-d'œuvre sans défaut majeur. La meilleure introduction possible au manga pour quelqu'un qui n'a encore rien lu.</p>`,
   stars: 5,
   shops: [
     { name: "Manganim", url: "https://manganim.fr/search?q=Fullmetal+Alchemist",  logo: "https://manganim.fr/cdn/shop/files/logo-manganim-header_180x.png?v=1672862594" },
@@ -854,7 +858,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   tags: "Aventure · Exploration · Mystère · Dark",
   cover: "https://manga-insight-pro.vercel.app/made-in-abyss.jpg",
   synopsis: "Riko descend dans l’Abysse pour retrouver sa mère légendaire, accompagnée de Reg, androïde amnésique. À mesure qu’ils plongent, la beauté cède au cauchemar. Les secrets enfouis exigent un tribut terrible.",
-  reviewHtml: "",
+  reviewHtml: `<p>Made in Abyss est une expérience de lecture unique — et éprouvante. Akihito Tsukushi a créé un monde d'une beauté envoûtante et d'une cruauté absolue. Le résultat est une série qui fascine autant qu'elle dérange.</p><p>L'Abysse est un gouffre sans fond dont personne ne comprend l'origine. Plus on descend, plus les merveilles sont grandes — et plus les conséquences de la remontée sont terribles. Ce système de malédiction ascensionnelle est l'un des concepts les plus ingénieux du manga récent : chaque décision de descendre plus loin devient irréversible, et le lecteur le ressent physiquement.</p><p>Riko et Reg forment un duo attachant. Leur aventure dans les couches de l'Abysse alterne entre émerveillement et horreur, et c'est cette tension permanente qui rend la lecture addictive. Les illustrations oniriques sont sublimes.</p><p>Une mise en garde s'impose : Made in Abyss contient des scènes extrêmement dures. Ce n'est pas une lecture pour tout le monde. Mais pour ceux qui acceptent ce contrat, c'est l'un des univers les plus originaux du manga contemporain.</p>`,
   stars: 5,
   shops: [
     { name: "Manganim", url: "https://manganim.fr/search?q=Made+in+Abyss",  logo: "https://manganim.fr/cdn/shop/files/logo-manganim-header_180x.png?v=1672862594" },
@@ -1029,7 +1033,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   tags: "Thriller · Évasion · Mystère · Enfance",
   cover: "https://manga-insight-pro.vercel.app/the-promised-neverland.jpg",
   synopsis: "Emma, Norman et Ray découvrent l’horrible vérité de leur orphelinat. Ils orchestrent une évasion impossible sous l’œil d’adultes menaçants. Chaque détail compte, chaque erreur est fatale.",
-  reviewHtml: "",
+  reviewHtml: `<p>Les premiers tomes de The Promised Neverland sont parmi les plus haletants qu'on puisse lire en manga. Le concept de départ est brillant, l'exécution est chirurgicale, et la révélation de la vérité sur Grace Field House reste l'un des meilleurs moments d'horreur douce du genre.</p><p>Emma, Norman et Ray forment un trio exceptionnellement bien équilibré. L'optimisme inconditionnel d'Emma, la froideur stratégique de Norman, le réalisme cynique de Ray — leurs approches opposées créent des dynamiques fascinantes. La relation avec Isabella, leur gardienne, atteint des profondeurs émotionnelles inattendues.</p><p>L'arc de Grace Field House est un chef-d'œuvre de thriller. La tension monte chapitre après chapitre, les plans et contre-plans des enfants contre leur gardienne sont d'une intelligence rare. On lit en apnée.</p><p>Honnêtement : la qualité chute significativement après cet arc, et la fin a déçu beaucoup de lecteurs. Mais les 40 premiers chapitres justifient à eux seuls la lecture — peu de mangas commencent aussi fort.</p>`,
   stars: 5,
   shops: [
     { name: "Fnac",   url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=the+promised+neverland+tome", logo: "https://cdn.iconscout.com/icon/free/png-256/free-fnac-3521434-2944878.png" },
@@ -1069,7 +1073,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   tags: "Samouraï · Historique · Philosophie · Duel",
   cover: "https://manga-insight-pro.vercel.app/vagabond.png",
   synopsis: "Libre adaptation de la vie de Musashi Miyamoto. De combats en errance, le jeune bretteur apprend la voie du sabre et de l’humilité. Chaque duel interroge le sens de la force.",
-  reviewHtml: "",
+  reviewHtml: `<p>Vagabond n'est pas un manga de samouraï. C'est une exploration de ce que signifie être humain, racontée à travers la vie de Miyamoto Musashi — le plus grand duelliste de l'histoire japonaise. Takehiko Inoue, déjà auteur de Slam Dunk, a consacré plus de vingt ans à cette œuvre, et chaque tome en porte la marque.</p><p>L'artwork de Vagabond est dans une catégorie à part. Inoue utilise l'encre sumi-e dans un style qui rappelle la peinture japonaise traditionnelle — des traits expressifs, des noirs profonds, des compositions magistrales. Certaines doubles pages sont des œuvres d'art autonomes. Aucun autre manga ne ressemble à Vagabond.</p><p>L'histoire suit Musashi depuis sa jeunesse violente jusqu'à sa maturité philosophique. Le jeune homme assoiffé de gloire qui veut être "invincible sous le ciel" devient quelqu'un qui comprend que la vraie force n'a rien à voir avec les combats. Sasaki Kojiro, son rival sourd de naissance, est l'un des personnages les mieux écrits de tout le manga.</p><p>Vagabond est en hiatus depuis 2015 et la fin semble incertaine. Mais les 37 volumes existants — d'une beauté absolue — suffisent à en faire l'une des plus grandes œuvres de la bande dessinée mondiale.</p>`,
   stars: 5,
   shops: [
     { name: "Fnac",   url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=vagabond+tome", logo: "https://cdn.iconscout.com/icon/free/png-256/free-fnac-3521434-2944878.png" },
@@ -1088,7 +1092,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   tags: "Historique · Vikings · Épopée · Drame",
   cover: "https://manga-insight-pro.vercel.app/vinland-saga.jpg",
   synopsis: "Thorfinn, jeune guerrier islandais, poursuit une vengeance qui le consume. Des champs de bataille à la quête d’un nouveau monde, il redéfinit sa voie. La violence héritée se heurte au désir de paix.",
-  reviewHtml: "",
+  reviewHtml: `<p>Makoto Yukimura a commencé Vinland Saga comme un manga de vikings épiques — et en a fait quelque chose d'infiniment plus grand : une méditation sur la violence, la rédemption, et le sens de la paix dans un monde qui ne connaît que la guerre.</p><p>L'arc 1 suit Thorfinn, aveuglé par la vengeance depuis l'enfance. La reconstitution historique de l'ère viking est saisissante. Askeladd, l'antagoniste principal, est l'un des personnages les plus complexes et les plus fascinants du manga moderne — un homme amoral qui cache une loyauté profonde.</p><p>Puis vient l'arc 2 — et tout change. Thorfinn se retrouve esclave dans une ferme. C'est là que Vinland Saga révèle son ambition : montrer qu'un homme construit par la haine peut, lentement, douloureusement, choisir autre chose. L'évolution de Thorfinn est l'une des plus belles courbes narratives du manga contemporain.</p><p>Une lecture qui demande de la patience, mais qui récompense chaque heure investie. Vinland Saga est une œuvre adulte, courageuse, unique.</p>`,
   stars: 5,
   shops: [
     { name: "Fnac",   url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=vinland+saga+tome", logo: "https://cdn.iconscout.com/icon/free/png-256/free-fnac-3521434-2944878.png" },
@@ -1126,7 +1130,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   tags: "Shōnen · Démons · Sabre · Fratrie",
   cover: "https://manga-insight-pro.vercel.app/demon-slayer-kimetsu-no-yaiba.png",
   synopsis: "Après le massacre de sa famille et la transformation de sa sœur Nezuko en démon, Tanjiro rejoint le Corps des Pourfendeurs pour la protéger et traquer les responsables.",
-  reviewHtml: "",
+  reviewHtml: `<p>Demon Slayer est peut-être le manga le plus beau visuellement de sa génération. Koyoharu Gotouge a développé un style graphique immédiatement reconnaissable — des traits nets, des kimonos aux motifs géométriques complexes, des effets de souffle et d'eau qui semblent animés sur la page. Même en noir et blanc, chaque planche est un spectacle.</p><p>L'histoire de Tanjiro — un garçon qui devient chasseur de démons pour sauver sa sœur Nezuko — est simple dans son prémisse. Mais cette simplicité est une force. La relation fraternelle entre Tanjiro et Nezuko est le cœur émotionnel de la série, et elle fonctionne parfaitement du premier au dernier chapitre.</p><p>Les Piliers — les neuf chasseurs d'élite — sont une galerie de personnages mémorables, chacun avec son style de combat et son histoire. L'arc du Train de l'Infini compte parmi les meilleures séquences d'action du shōnen moderne.</p><p>Le seul reproche : les antagonistes restent en surface, peu développés. Mais comme divertissement pur, visuellement somptueux et émotionnellement efficace, Demon Slayer est irréprochable.</p>`,
   stars: 4,
   shops: [
     { name: "Manganim", url: "https://manganim.fr/search?q=Demon+Slayer", logo: "https://manganim.fr/cdn/shop/files/logo-manganim-header_180x.png?v=1672862594" },
@@ -1193,7 +1197,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   tags: "Isekai · Boucle temporelle · Drame · Fantasy",
   cover: "https://manga-insight-pro.vercel.app/re-zero.jpg",
   synopsis: "Subaru est transporté dans un autre monde et découvre qu’à chaque mort, il revient à un point de sauvegarde. Il tente d’enrayer les tragédies qui l’entourent.",
-  reviewHtml: "",
+  reviewHtml: `<p>Re:Zero a réinventé la formule isekai en prenant le concept de "recommencer depuis un checkpoint" et en explorant honnêtement ce que ça ferait à un être humain. La réponse est : rien de bon. Et c'est là toute la brillance de la série.</p><p>Subaru Natsuki est téléporté dans un autre monde dont le seul pouvoir est de revenir à la vie après chaque mort — sans que personne d'autre ne s'en souvienne. Ce pouvoir qui ressemble à un cadeau est une malédiction. Chaque mort est vécue pleinement. La douleur, la panique, le désespoir s'accumulent. Tappei Nagatsuki traite le trauma psychologique avec une rigueur rare dans le genre.</p><p>La scène du "je ne veux pas mourir" de Subaru est l'une des séquences les plus émotionnellement intenses du genre. Elle redéfinit le personnage et brise les attentes du lecteur d'une façon difficile à oublier.</p><p>Re:Zero est dense — très dense. Ce n'est pas une lecture légère. Mais pour ceux qui s'accrochent, c'est l'un des isekai les plus intelligents jamais écrits.</p>`,
   stars: 4,
   shops: [
     { name: "Manganim", url: "https://manganim.fr/search?q=Re%3AZero%20tome", logo: "https://manganim.fr/cdn/shop/files/logo-manganim-header_180x.png?v=1672862594" },
@@ -1408,7 +1412,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   tags: "Shōnen · Démons · Horreur · Action",
   cover: "https://manga-insight-pro.vercel.app/chainsaw-man.png",
   synopsis: "Denji fusionne avec Pochita et devient Chainsaw Man pour combattre les démons tout en essayant de mener une vie “normale”.",
-  reviewHtml: "",
+  reviewHtml: `<p>Comment résumer Chainsaw Man ? C'est la série qui vous fera rire, pleurer, crier de surprise et fermer le tome en vous demandant ce qui vient de se passer — parfois dans la même page. Tatsuki Fujimoto est un auteur complètement à part, et Chainsaw Man est son œuvre la plus débridée, la plus imprévisible, la plus marquante.</p><p>Denji, mi-humain mi-tronçonneuse, n'a pas de grands idéaux. Il veut juste manger à sa faim, dormir dans un vrai lit, et peut-être toucher une fille. Cette franchise désarmante est la grande force de la série : dans un genre saturé de héros noblement motivés, Denji est rafraîchissant de bêtise sincère. Et pourtant, derrière ce vernis de comédie gore, Fujimoto construit quelque chose de bien plus profond.</p><p>La partie 1 est un feu d'artifice de 97 chapitres sans un seul temps mort. Les designs de démons sont iconiques, les combats défient la physique et le bon sens, et les retournements de situation arrivent quand on les attend le moins. Plusieurs moments resteront gravés longtemps après la lecture.</p><p>Attention : c'est violent, très violent. Mais pour ceux qui se laissent embarquer, Chainsaw Man est une expérience unique que le manga mainstream n'offre nulle part ailleurs.</p>`,
   stars: 4,
   shops: [
     { name: "Manganim", url: "https://manganim.fr/search?q=Chainsaw+Man", logo: "" },
