@@ -1,37 +1,24 @@
 "use client";
 
 import Link from "next/link";
-import { useRef } from "react";
+import { useRef, useMemo } from "react";
 import { SERIES } from "@/data/series";
 
-// 12 dernières séries ajoutées (fin du tableau)
-const RECENT = SERIES.slice(-12).reverse();
-
-type BadgeType = "new" | "update" | "critique";
-
-interface FeedItem {
-  slug: string;
-  title: string;
-  category: string;
-  cover?: string;
-  tags?: string;
-  badge: BadgeType;
-  badgeLabel: string;
-  date: string;
+// Calcule "il y a X jours" depuis une date ISO
+function timeAgo(dateStr: string): string {
+  const now = new Date();
+  const date = new Date(dateStr);
+  const diff = Math.floor((now.getTime() - date.getTime()) / (1000 * 60 * 60 * 24));
+  if (diff === 0) return "Aujourd'hui";
+  if (diff === 1) return "Hier";
+  if (diff < 7) return `Il y a ${diff} jours`;
+  if (diff < 14) return "Il y a 1 semaine";
+  if (diff < 30) return `Il y a ${Math.floor(diff / 7)} semaines`;
+  if (diff < 60) return "Il y a 1 mois";
+  return `Il y a ${Math.floor(diff / 30)} mois`;
 }
 
-const FEED: FeedItem[] = [
-  { slug: "zatch-bell",           title: "Zatch Bell! — Ajouté",                 category: "manga",   cover: "https://manga-insight-pro.vercel.app/zatch-bell.jpg",            tags: "Démons · Tournoi",     badge: "new",      badgeLabel: "Nouveau",     date: "Aujourd'hui" },
-  { slug: "katekyo-hitman-reborn",title: "Katekyo Hitman Reborn! — Ajouté",      category: "manga",   cover: "https://manga-insight-pro.vercel.app/katekyo-hitman-reborn.jpg", tags: "Mafia · Action",       badge: "new",      badgeLabel: "Nouveau",     date: "Aujourd'hui" },
-  { slug: "hajime-no-ippo",       title: "Hajime no Ippo — Ajouté",              category: "manga",   cover: "https://manga-insight-pro.vercel.app/hajime-no-ippo.jpg",        tags: "Boxe · Sport",         badge: "new",      badgeLabel: "Nouveau",     date: "Hier" },
-  { slug: "en-en-no-shouboutai",  title: "Fire Force — Ajouté",                  category: "manga",   cover: "https://manga-insight-pro.vercel.app/fire-force.jpg",            tags: "Action · Surnaturel",  badge: "new",      badgeLabel: "Nouveau",     date: "Hier" },
-  { slug: "solo-leveling",        title: "Solo Leveling — Critique mise à jour",  category: "manhwa",  cover: "https://manga-insight-pro.vercel.app/solo-leveling.jpeg",        tags: "Action · Fantasy",     badge: "update",   badgeLabel: "Mis à jour",  date: "Il y a 2 jours" },
-  { slug: "blue-lock",            title: "Blue Lock — Nouvelle critique",         category: "manga",   cover: "https://manga-insight-pro.vercel.app/blue-lock.jpg",             tags: "Sport · Football",     badge: "critique", badgeLabel: "Critique",    date: "Il y a 3 jours" },
-  { slug: "dororo",               title: "Dororo — Ajouté",                      category: "manga",   cover: "https://manga-insight-pro.vercel.app/dororo.jpg",                tags: "Historique · Démon",   badge: "new",      badgeLabel: "Nouveau",     date: "Il y a 3 jours" },
-  { slug: "bungou-stray-dogs",    title: "Bungou Stray Dogs — Ajouté",           category: "manga",   cover: "https://manga-insight-pro.vercel.app/bungou-stray-dogs.jpg",     tags: "Pouvoirs · Enquête",   badge: "new",      badgeLabel: "Nouveau",     date: "Il y a 4 jours" },
-  { slug: "death-note",           title: "Death Note — Critique complète",        category: "manga",   cover: "https://manga-insight-pro.vercel.app/death-note.jpg",            tags: "Thriller · Psycho",    badge: "critique", badgeLabel: "Critique",    date: "Il y a 5 jours" },
-  { slug: "omniscient-reader",    title: "Omniscient Reader — Ajouté",           category: "manhwa",  cover: "https://manga-insight-pro.vercel.app/omniscient-reader.jpg",     tags: "Fantasy · Action",     badge: "new",      badgeLabel: "Nouveau",     date: "Il y a 6 jours" },
-];
+type BadgeType = "new" | "update" | "critique";
 
 const BADGE_STYLES: Record<BadgeType, string> = {
   new:      "bg-cyan-400/15 border border-cyan-400/30 text-cyan-300",
@@ -41,6 +28,24 @@ const BADGE_STYLES: Record<BadgeType, string> = {
 
 export default function NouveautesPage() {
   const carouselRef = useRef<HTMLDivElement>(null);
+
+  // Trier par addedAt décroissant
+  const sorted = useMemo(() =>
+    [...SERIES]
+      .filter(s => s.addedAt)
+      .sort((a, b) => (b.addedAt ?? "").localeCompare(a.addedAt ?? "")),
+    []
+  );
+
+  // Carousel = 12 plus récentes
+  const recent = sorted.slice(0, 12);
+
+  // Fil d'actu = 15 plus récentes avec badge
+  const feed = sorted.slice(0, 15).map(s => ({
+    ...s,
+    badge: "new" as BadgeType,
+    badgeLabel: "Nouveau",
+  }));
 
   function scrollCarousel(dir: number) {
     carouselRef.current?.scrollBy({ left: dir * 340, behavior: "smooth" });
@@ -73,7 +78,7 @@ export default function NouveautesPage() {
             Les<br /><span className="text-cyan-400">nouveautés</span>
           </h1>
           <p className="text-[0.9rem] text-white/45 leading-relaxed max-w-md">
-            Les dernières séries ajoutées sur MangaInsight et les sorties récentes à ne pas rater.
+            Les dernières séries ajoutées sur MangaInsight — triées automatiquement par date d&apos;ajout.
           </p>
         </div>
       </section>
@@ -87,16 +92,16 @@ export default function NouveautesPage() {
         </p>
         <div className="relative mb-14">
           <button onClick={() => scrollCarousel(-1)}
-            className="absolute left-[-18px] top-1/2 -translate-y-1/2 z-10 w-9 h-9 rounded-full bg-black/70 border border-white/12 text-white flex items-center justify-center hover:bg-brand-500/50 hover:border-brand-500/50 transition-all backdrop-blur-sm text-base hidden md:flex">
+            className="absolute left-[-18px] top-1/2 -translate-y-[60%] z-10 w-9 h-9 rounded-full bg-black/70 border border-white/12 text-white items-center justify-center hover:bg-brand-500/50 hover:border-brand-500/50 transition-all backdrop-blur-sm text-base hidden md:flex">
             ‹
           </button>
 
           <div ref={carouselRef}
             className="flex gap-3.5 overflow-x-auto scroll-smooth carousel-hide-scrollbar pb-3"
             style={{ scrollSnapType: "x mandatory" }}>
-            {RECENT.map((s, i) => (
+            {recent.map((s, i) => (
               <Link key={s.slug} href={`/series/${s.slug}`}
-                style={{ scrollSnapAlign: "start", animationDelay: `${i * 0.04}s` }}
+                style={{ scrollSnapAlign: "start" }}
                 className="flex-shrink-0 w-40 rounded-2xl overflow-hidden border border-white/7 bg-white/3 flex flex-col transition-all duration-300 hover:-translate-y-1.5 hover:border-brand-500/45 hover:shadow-[0_16px_40px_rgba(0,0,0,0.5),0_0_30px_rgba(139,92,246,0.08)] group">
                 <div className="relative overflow-hidden" style={{ aspectRatio: "2/3" }}>
                   <img src={s.cover || "/_placeholder.jpg"} alt={s.title}
@@ -115,25 +120,28 @@ export default function NouveautesPage() {
                 <div className="p-2.5">
                   <h3 style={{ fontFamily: "'Bebas Neue', sans-serif", letterSpacing: "0.04em" }}
                     className="text-[0.9rem] text-white leading-tight">{s.title}</h3>
+                  {s.addedAt && (
+                    <p className="text-[0.6rem] text-white/30 mt-0.5">{timeAgo(s.addedAt)}</p>
+                  )}
                 </div>
               </Link>
             ))}
           </div>
 
           <button onClick={() => scrollCarousel(1)}
-            className="absolute right-[-18px] top-1/2 -translate-y-1/2 z-10 w-9 h-9 rounded-full bg-black/70 border border-white/12 text-white flex items-center justify-center hover:bg-brand-500/50 hover:border-brand-500/50 transition-all backdrop-blur-sm text-base hidden md:flex">
+            className="absolute right-[-18px] top-1/2 -translate-y-[60%] z-10 w-9 h-9 rounded-full bg-black/70 border border-white/12 text-white items-center justify-center hover:bg-brand-500/50 hover:border-brand-500/50 transition-all backdrop-blur-sm text-base hidden md:flex">
             ›
           </button>
         </div>
 
         {/* ── FIL D'ACTU ── */}
         <p className="text-[0.68rem] font-bold tracking-[0.15em] uppercase text-white/35 mb-4 flex items-center gap-3 after:flex-1 after:h-px after:bg-white/6">
-          📡 Fil des sorties
+          📡 Fil des ajouts
         </p>
         <div className="flex flex-col gap-3 mb-24">
-          {FEED.map((item, i) => (
+          {feed.map((item, i) => (
             <Link key={`${item.slug}-${i}`} href={`/series/${item.slug}`}
-              className="flex items-center gap-4 px-4 py-3.5 bg-white/3 border border-white/6 rounded-2xl transition-all duration-250 hover:bg-white/5 hover:border-brand-500/30 hover:translate-x-1 group">
+              className="flex items-center gap-4 px-4 py-3.5 bg-white/3 border border-white/6 rounded-2xl transition-all duration-250 hover:bg-white/5 hover:border-brand-500/30 hover:translate-x-1">
               <div className="w-11 h-14 rounded-lg overflow-hidden flex-shrink-0 border border-white/8">
                 <img src={item.cover || "/_placeholder.jpg"} alt={item.title}
                   className="w-full h-full object-cover"
@@ -146,15 +154,19 @@ export default function NouveautesPage() {
                   <span className="text-[0.62rem] text-white/40">
                     {item.category === "manhwa" ? "🇰🇷 Manhwa" : "🇯🇵 Manga"}
                   </span>
-                  <span className="w-0.5 h-0.5 rounded-full bg-white/20" />
-                  <span className="text-[0.62rem] text-white/40">{item.tags}</span>
+                  {item.tags && <>
+                    <span className="w-0.5 h-0.5 rounded-full bg-white/20" />
+                    <span className="text-[0.62rem] text-white/40">{item.tags}</span>
+                  </>}
                 </div>
               </div>
               <div className="flex flex-col items-end gap-1.5 flex-shrink-0">
                 <span className={`text-[0.6rem] font-bold tracking-[0.08em] uppercase px-2.5 py-1 rounded-full ${BADGE_STYLES[item.badge]}`}>
                   {item.badgeLabel}
                 </span>
-                <span className="text-[0.68rem] text-white/25">{item.date}</span>
+                {item.addedAt && (
+                  <span className="text-[0.68rem] text-white/25">{timeAgo(item.addedAt)}</span>
+                )}
               </div>
             </Link>
           ))}
