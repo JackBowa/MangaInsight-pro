@@ -5,7 +5,7 @@ import { useEffect, useMemo, useState } from "react";
 import { SERIES } from "@/data/series";
 import { supabase } from "@/lib/lib/supabase/client";
 
-const GENRES = ["Tout", "Action", "Aventure", "Fantasy", "Shonen", "Thriller", "Sport", "Reincarnation", "Surnaturel"];
+const GENRES = ["Tout", "Action", "Fantasy", "Comédie", "Aventure", "Shōnen", "Magie", "Lycée", "Isekai", "Dark Fantasy", "Surnaturel", "Thriller", "Survie", "Sci-fi", "Tournoi"];
 
 const FEATURED_SLUGS = ["one-piece", "solo-leveling", "l-attaque-des-titans", "death-note", "blue-lock", "bleach"];
 
@@ -22,9 +22,10 @@ function StarRating({ stars }: { stars?: number }) {
   );
 }
 
-function CritiqueCard({ slug, title, cover, tags, stars, category, avg }: {
+function CritiqueCard({ slug, title, cover, tags, stars, category, avg, onTagClick }: {
   slug: string; title: string; cover?: string; tags?: string;
   stars?: number; category?: string; avg?: number | null;
+  onTagClick?: (tag: string) => void;
 }) {
   const tagList = (tags ?? "").split("·").map((t) => t.trim()).filter(Boolean).slice(0, 3);
 
@@ -71,9 +72,10 @@ function CritiqueCard({ slug, title, cover, tags, stars, category, avg }: {
         {tagList.length > 0 && (
           <div className="absolute bottom-2 left-2 right-2 z-10 flex flex-wrap gap-1">
             {tagList.map((t) => (
-              <span key={t} className="rounded-full bg-black/60 border border-white/10 px-1.5 py-0.5 text-[0.6rem] text-white/75">
+              <button key={t} onClick={(e) => { e.preventDefault(); onTagClick?.(t); }}
+                className="rounded-full bg-black/60 border border-white/10 px-1.5 py-0.5 text-[0.6rem] text-white/75 hover:border-brand-500/50 hover:text-brand-300 transition-all cursor-pointer">
                 {t}
-              </span>
+              </button>
             ))}
           </div>
         )}
@@ -304,6 +306,7 @@ export default function CritiquesPage() {
                 stars={s.stars as number | undefined}
                 category={s.category}
                 avg={avgs[s.slug]}
+                onTagClick={(tag) => { setGenre(tag); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
               />
             ))}
           </div>
