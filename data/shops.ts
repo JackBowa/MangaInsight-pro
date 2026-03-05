@@ -100,10 +100,8 @@ export const SHOPS_MAP: Record<string, ShopKey[]> = {
   "kengan-ashura":                 ALL_SHOPS,
   "coppelion":                     ALL_SHOPS,
   "cage-of-eden":                  ALL_SHOPS,
-  "deadman-wonderland":            ALL_SHOPS,
   "grimgar":                       ALL_SHOPS,
   "magister-negi-magi":            ALL_SHOPS,
-  "magi":                          ALL_SHOPS,
   "kings-game":                    ALL_SHOPS,
   "black-god":                     ALL_SHOPS,
 
