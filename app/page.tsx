@@ -163,7 +163,7 @@ export default function Home() {
         }
         .hero-desc {
           font-size: 1rem;
-          color: rgba(255,255,255,0.6);
+          color: rgba(255,255,255,0.75);
           line-height: 1.7;
           margin-bottom: 2.5rem;
           max-width: 420px;
@@ -232,7 +232,35 @@ export default function Home() {
           margin-top: 2px;
         }
 
-        /* ── SECTIONS ── */
+        /* ── MOBILE ── */
+        @media (max-width: 768px) {
+          .hero {
+            min-height: 70vh;
+            padding: 0 1.25rem 4rem;
+            align-items: flex-end;
+          }
+          .hero-covers {
+            display: none;
+          }
+          .hero-bg {
+            background:
+              radial-gradient(ellipse 100% 60% at 50% 20%, rgba(139,92,246,0.25) 0%, transparent 70%),
+              linear-gradient(180deg, #05050a 0%, #0b0b18 100%);
+          }
+          .hero-content {
+            max-width: 100%;
+          }
+          .hero-title {
+            font-size: clamp(3.2rem, 14vw, 4.5rem);
+          }
+          .hero-desc {
+            color: rgba(255,255,255,0.85);
+            font-size: 0.95rem;
+          }
+          .hero-stats {
+            gap: 1.5rem;
+          }
+        }
         .section {
           margin: 5rem 0;
         }
@@ -660,6 +688,47 @@ export default function Home() {
               );
             })}
           </div>
+        </section>
+
+        {/* ── TROUVE TA SÉRIE ── */}
+        <section style={{
+          margin: "4rem 0",
+          background: "linear-gradient(135deg, rgba(124,58,237,0.15) 0%, rgba(109,40,217,0.08) 50%, transparent 100%)",
+          border: "1px solid rgba(124,58,237,0.25)",
+          borderRadius: "20px",
+          padding: "2.5rem",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "space-between",
+          gap: "2rem",
+          flexWrap: "wrap",
+          position: "relative",
+          overflow: "hidden",
+        }}>
+          <div style={{ position: "absolute", top: "-40px", right: "-40px", width: "200px", height: "200px", borderRadius: "50%", background: "radial-gradient(ellipse, rgba(124,58,237,0.2) 0%, transparent 70%)", pointerEvents: "none" }} />
+          <div style={{ position: "relative", zIndex: 1 }}>
+            <div style={{ display: "inline-flex", alignItems: "center", gap: "8px", fontSize: "0.7rem", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", color: "#a78bfa", marginBottom: "0.75rem" }}>
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+              Nouveau
+            </div>
+            <h2 style={{ fontFamily: "'Bebas Neue', sans-serif", fontSize: "clamp(1.8rem, 4vw, 2.6rem)", letterSpacing: "0.03em", color: "#fff", lineHeight: 1, marginBottom: "0.6rem" }}>
+              Trouve ta prochaine série
+            </h2>
+            <p style={{ fontSize: "0.9rem", color: "rgba(255,255,255,0.55)", maxWidth: "400px", lineHeight: 1.6 }}>
+              Réponds à 4 questions et on te recommande la série parfaite parmi nos 102 critiques.
+            </p>
+          </div>
+          <Link href="/recommandations" style={{
+            display: "inline-flex", alignItems: "center", gap: "10px",
+            padding: "14px 28px", background: "#7c3aed", color: "#fff",
+            fontWeight: 700, fontSize: "0.95rem", borderRadius: "12px",
+            textDecoration: "none", whiteSpace: "nowrap", flexShrink: 0,
+            boxShadow: "0 4px 24px rgba(124,58,237,0.45)",
+            transition: "transform 0.2s, box-shadow 0.2s",
+          }}>
+            ✨ Lancer le quiz
+            <svg width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </Link>
         </section>
 
         {/* ── BANNER CTA ── */}
