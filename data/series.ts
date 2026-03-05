@@ -2289,7 +2289,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   category: "manga",
   tags: "Post-apo · Tokyo · Unités spéciales",
   cover: "https://manga-insight-pro.vercel.app/coppelion.jpg",
-  synopsis: "2036 : Tokyo est contaminée après un accident nucléaire. Trois lycéennes génétiquement modifiées et immunisées sont envoyées secourir les survivants."
+  synopsis: "2036 : Tokyo est contaminée après un accident nucléaire. Trois lycéennes génétiquement modifiées et immunisées sont envoyées secourir les survivants.",
   reviewHtml: `
     <p>Coppelion m'a surpris par son ambiance unique — un Tokyo déserté et irradié, exploré par trois lycéennes génétiquement modifiées. C'est un manga post-apocalyptique qui prend le temps de s'installer, et c'est précisément ce que j'ai aimé.</p>
     <p>Ibara, Aoi et Taeko forment un trio attachant, chacune avec sa propre façon de faire face à l'horreur silencieuse qui les entoure. Le désespoir des survivants qu'elles rencontrent est traité avec une vraie sensibilité, sans jamais verser dans le misérabilisme.</p>
@@ -2313,7 +2313,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   category: "manga",
   tags: "Démons · Apocalypse · Tragédie",
   cover: "https://manga-insight-pro.vercel.app/devilman.jpg",
-  synopsis: "Akira fusionne avec un démon pour combattre ses semblables et protéger l’humanité. Mais la frontière entre bien et mal s’efface rapidement."
+  synopsis: "Akira fusionne avec un démon pour combattre ses semblables et protéger l’humanité. Mais la frontière entre bien et mal s’efface rapidement.",
   reviewHtml: `
     <p>Devilman est une œuvre qui fait mal — et c'est exactement son intention. Go Nagai a créé en 1972 quelque chose que peu de mangakas oseraient encore aujourd'hui : une série qui détruit tout ce qu'elle construit, jusqu'à sa conclusion nihiliste absolue.</p>
     <p>Akira Fudo est l'un des personnages les plus tragiques du medium. Sa transformation, son amour pour Miki, son amitié avec Ryo — tout est mis en place avec soin uniquement pour être arraché. La dernière partie est une des expériences les plus dévastatrices que j'ai vécues en lisant un manga.</p>
@@ -2337,7 +2337,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   category: "manga",
   tags: "Historique · Démon · Voyage",
   cover: "https://manga-insight-pro.vercel.app/dororo.jpg",
-  synopsis: "Hyakkimaru, né sans membres ni organes, les récupère en exterminant les démons qui les détiennent, accompagné du jeune voleur Dororo."
+  synopsis: "Hyakkimaru, né sans membres ni organes, les récupère en exterminant les démons qui les détiennent, accompagné du jeune voleur Dororo.",
   reviewHtml: `
     <p>Dororo est une œuvre de 1967 qui parle de guerre, de sacrifice et d'humanité avec une modernité stupéfiante. Tezuka y raconte l'histoire d'Hyakkimaru, né sans organes ni membres vendus à des démons par son père ambitieux, et de Dororo, orphelin des routes qui devient son compagnon.</p>
     <p>Chaque démon vaincu rend un organe à Hyakkimaru — ce concept de reconquête de soi morceau par morceau est d'une puissance symbolique rare. La série pose des questions sur ce qui fait de nous des humains, sur le prix du pouvoir, sur l'innocence perdue.</p>
@@ -2361,7 +2361,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   category: "manga",
   tags: "Pompiers · Surnaturel · Action",
   cover: "https://manga-insight-pro.vercel.app/en-en-no-shouboutai.jpg",
-  synopsis: "Des combustions humaines spontanées transforment les victimes en infernaux. Shinra, pompier aux pieds de feu, cherche la vérité sur son passé."
+  synopsis: "Des combustions humaines spontanées transforment les victimes en infernaux. Shinra, pompier aux pieds de feu, cherche la vérité sur son passé.",
   reviewHtml: `
     <p>Fire Force est la série qui m'a réconcilié avec Atsushi Ohkubo après Soul Eater. L'univers pyrokinétique est immédiatement fascinant — des humains qui s'enflamment spontanément, des brigades de pompiers spéciaux qui combattent ces "infernaux", et derrière tout ça une conspiration bien plus sombre.</p>
     <p>Shinra est un protagoniste attachant avec son sourire nerveux et son passé douloureux. La Brigade 8 forme une galerie de personnages mémorables, et les combats mettent en valeur des pouvoirs ignés spectaculaires et bien différenciés.</p>
@@ -2387,7 +2387,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   category: "manga",
   tags: "Boxe · Sport · Shōnen",
   cover: "https://manga-insight-pro.vercel.app/hajime-no-ippo.jpg",
-  synopsis: "Ippo, lycéen timide, découvre la boxe et s’entraîne dur pour devenir champion. Chaque match est une leçon de courage et de dépassement."
+  synopsis: "Ippo, lycéen timide, découvre la boxe et s’entraîne dur pour devenir champion. Chaque match est une leçon de courage et de dépassement.",
   reviewHtml: `
     <p>Hajime no Ippo, c'est plus de trente ans et 1400 chapitres consacrés à la boxe — et c'est probablement la meilleure série sportive jamais écrite. Makunouchi Ippo, introverti et brimé, découvre la boxe presque par accident et y trouve un moyen de se construire. Ce parcours de l'ombre à la lumière est traité avec une sincérité désarmante.</p>
     <p>Ce qui rend Ippo unique, c'est l'attention portée à chaque adversaire. Chaque combattant a son histoire, sa philosophie, ses raisons de se battre. Les matchs sont techniquement précis et dramatiquement intenses — chaque KO a du poids parce que les deux camps ont été développés avec soin.</p>
@@ -2411,7 +2411,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   category: "manga",
   tags: "Mafia · Comédie · Action",
   cover: "https://manga-insight-pro.vercel.app/katekyo-hitman-reborn.jpg",
-  synopsis: "Tsuna, collégien médiocre, apprend qu’il est héritier d’une famille mafieuse. Son tuteur, un bébé mafieux armé, le forme pour en devenir le boss."
+  synopsis: "Tsuna, collégien médiocre, apprend qu’il est héritier d’une famille mafieuse. Son tuteur, un bébé mafieux armé, le forme pour en devenir le boss.",
   reviewHtml: `
     <p>Reborn est le parfait exemple d'un manga qui ne ressemble pas du tout à ce qu'il devient. Les premiers volumes — une comédie gag sur un bébé tueur à gages — ne préparent absolument pas à la saga épique que la série finit par être. Cette transformation est l'une des plus réussies du shōnen.</p>
     <p>Tsunayoshi Sawada, le "Tsuna-nul" du début, devient un protagoniste genuinement charismatique. Le système des Flames et des armes — chaque personnage avec sa propre Box Weapon, sa Flame spécifique — est inventif et bien exploité dans les arcs de combat tardifs.</p>
@@ -2435,7 +2435,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   category: "manga",
   tags: "Démons · Tournoi · Amitié",
   cover: "https://manga-insight-pro.vercel.app/zatch-bell.jpg",
-  synopsis: "Kiyomaro reçoit un grimoire et rencontre Zatch, enfant démon venu gagner un tournoi pour devenir roi. Ensemble, ils affrontent d’autres duos mage/démon."
+  synopsis: "Kiyomaro reçoit un grimoire et rencontre Zatch, enfant démon venu gagner un tournoi pour devenir roi. Ensemble, ils affrontent d’autres duos mage/démon.",
   reviewHtml: `
     <p>Zatch Bell est l'un de ces mangas qu'on lit enfant et qui laissent une empreinte émotionnelle durable. L'histoire de Kiyo et Zatch — un lycéen surdoué asocial et un mamodo amnésique au cœur pur — est une des plus belles histoires d'amitié du shōnen des années 2000.</p>
     <p>Le concept est simple mais fertile : 100 mamodos s'affrontent pour devenir roi de leur monde. Chaque duel révèle l'histoire du mamodo et de son partenaire humain, et les défaites — les livres qui brûlent — sont parmi les moments les plus bouleversants du genre. Brago, Tia, Ponygon — chaque personnage finit par compter.</p>
