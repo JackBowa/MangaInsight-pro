@@ -14,6 +14,8 @@ const LINKS = {
     { href: "/series/death-note", label: "Death Note" },
   ],
   "Le site": [
+    { href: "/a-propos", label: "À propos" },
+    { href: "/recommandations", label: "✨ Pour toi" },
     { href: "/compte", label: "Mon compte" },
     { href: "/compte", label: "Se connecter" },
   ],
