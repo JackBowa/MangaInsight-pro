@@ -63,23 +63,45 @@ export default function NouveautesPage() {
       `}</style>
 
       {/* HERO */}
-      <section className="relative min-h-[240px] flex items-center overflow-hidden px-6 md:px-12 hero-grid">
+      <section className="relative min-h-[320px] flex items-center overflow-hidden px-6 md:px-12 hero-grid">
         <div className="absolute inset-0 bg-gradient-to-br from-brand-700/50 via-brand-900/30 to-transparent" />
-        <div className="absolute -top-16 left-[5%] w-72 h-72 rounded-full bg-brand-500/18 blur-[60px] pointer-events-none" />
-        <div className="absolute -bottom-10 left-[45%] w-48 h-48 rounded-full bg-cyan-500/10 blur-[60px] pointer-events-none" />
+        <div className="absolute -top-16 left-[5%] w-96 h-96 rounded-full bg-brand-500/18 blur-[80px] pointer-events-none" />
+        <div className="absolute -bottom-10 left-[45%] w-64 h-64 rounded-full bg-cyan-500/12 blur-[70px] pointer-events-none" />
 
-        <div className="relative z-10 py-11">
-          <div className="inline-flex items-center gap-2 text-[0.7rem] font-bold tracking-[0.18em] uppercase text-cyan-300 bg-cyan-500/10 border border-cyan-500/25 px-3.5 py-1.5 rounded-full mb-4">
+        <div className="relative z-10 py-14 max-w-xl">
+          <div className="inline-flex items-center gap-2 text-[0.7rem] font-bold tracking-[0.18em] uppercase text-cyan-300 bg-cyan-500/10 border border-cyan-500/25 px-3.5 py-1.5 rounded-full mb-5">
             <span className="pulse-dot w-1.5 h-1.5 rounded-full bg-cyan-400 inline-block" />
             Mis à jour régulièrement
           </div>
           <h1 style={{ fontFamily: "'Bebas Neue', sans-serif", letterSpacing: "0.03em" }}
-            className="text-[clamp(3rem,6vw,5rem)] text-white leading-[0.92] mb-3">
-            Les<br /><span className="text-cyan-400">nouveautés</span>
+            className="text-[clamp(3.5rem,7vw,5.5rem)] text-white leading-none mb-4">
+            Les <span className="text-cyan-400">nouveautés</span>
           </h1>
-          <p className="text-[0.9rem] text-white/45 leading-relaxed max-w-md">
-            Les dernières séries ajoutées sur MangaInsight — triées automatiquement par date d&apos;ajout.
+          <p className="text-[0.95rem] text-white/50 leading-relaxed mb-6">
+            Les dernières séries ajoutées sur MangaInsight, triées automatiquement par date d&apos;ajout.
           </p>
+          <div className="flex gap-6">
+            {[
+              { num: sorted.length, label: "Séries" },
+              { num: recent.length, label: "Ajouts récents" },
+            ].map(({ num, label }) => (
+              <div key={label}>
+                <div style={{ fontFamily: "'Bebas Neue', sans-serif" }} className="text-[1.8rem] text-white leading-none tracking-wide">{num}</div>
+                <div className="text-[0.65rem] font-bold tracking-[0.12em] uppercase text-white/35 mt-0.5">{label}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        {/* Covers flottantes */}
+        <div className="absolute right-8 md:right-16 top-1/2 -translate-y-1/2 hidden md:flex gap-2 z-10">
+          {recent.slice(0, 5).map((s, i) => (
+            <div key={s.slug} className="rounded-xl overflow-hidden border border-white/10 shadow-2xl flex-shrink-0"
+              style={{ width: 70, aspectRatio: "2/3", marginTop: i % 2 === 1 ? 16 : 0, opacity: 1 - i * 0.12 }}>
+              <img src={s.cover || "/_placeholder.jpg"} alt={s.title} className="w-full h-full object-cover"
+                onError={(e) => { const img = e.currentTarget as HTMLImageElement; if (!img.dataset.fb) { img.dataset.fb = "1"; img.src = "/_placeholder.jpg"; }}} />
+            </div>
+          ))}
         </div>
       </section>
       <div className="h-14 bg-gradient-to-b from-transparent to-[#0b0b10] -mt-0.5 relative z-10" />
