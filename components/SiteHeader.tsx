@@ -11,6 +11,8 @@ const items = [
   { href: "/nouveautés", label: "Nouveautés" },
   { href: "/tops", label: "Tops" },
   { href: "/guides", label: "Guides" },
+  { href: "/recommandations", label: "✨ Pour toi" },
+  { href: "/a-propos", label: "À propos" },
 ];
 
 export default function SiteHeader() {
@@ -19,6 +21,7 @@ export default function SiteHeader() {
   const user = useUser();
 
   const [open, setOpen] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
   const [query, setQuery] = useState("");
   const inputRef = useRef<HTMLInputElement>(null);
 
@@ -55,25 +58,25 @@ export default function SiteHeader() {
   return (
     <>
       <nav className="border-b border-white/10 bg-black/80 backdrop-blur sticky top-0 z-40">
-        <div className="container mx-auto px-4 h-12 flex items-center gap-4">
+        <div className="max-w-[1400px] mx-auto px-4 h-14 flex items-center gap-4">
           <Link href="/" className="font-semibold shrink-0" style={{ fontFamily: "'Bebas Neue', sans-serif", letterSpacing: "0.08em", fontSize: "1.1rem" }}>
             🎌 Mangainsight
           </Link>
 
-          {/* liens nav */}
-          <div className="flex-1 overflow-x-auto">
-            <div className="flex items-center gap-4 text-sm min-w-max">
-              {items.map((it) => {
-                const active = pathname === it.href || (it.href !== "/" && pathname.startsWith(it.href));
-                return (
-                  <Link key={it.href} href={it.href}
-                    className={active ? "text-white font-semibold" : "text-white/50 hover:text-white transition-colors"}>
-                    {it.label}
-                  </Link>
-                );
-              })}
-            </div>
+          {/* liens nav — masqués sur mobile */}
+          <div className="hidden md:flex flex-1 items-center gap-5 text-sm">
+            {items.map((it) => {
+              const active = pathname === it.href || (it.href !== "/" && pathname.startsWith(it.href));
+              return (
+                <Link key={it.href} href={it.href}
+                  className={active ? "text-white font-semibold" : "text-white/50 hover:text-white transition-colors"}>
+                  {it.label}
+                </Link>
+              );
+            })}
           </div>
+
+          <div className="flex-1 md:flex-none" />
 
           {/* Bouton recherche */}
           <button onClick={() => setOpen(true)}
@@ -82,15 +85,50 @@ export default function SiteHeader() {
               <circle cx="11" cy="11" r="8" /><path d="m21 21-4.35-4.35" />
             </svg>
             <span className="hidden sm:inline text-xs">Rechercher</span>
-            <span className="hidden md:inline text-[0.6rem] bg-white/8 border border-white/10 px-1.5 py-0.5 rounded font-mono text-white/30">⌘K</span>
+            <span className="hidden lg:inline text-[0.6rem] bg-white/8 border border-white/10 px-1.5 py-0.5 rounded font-mono text-white/30">⌘K</span>
           </button>
 
-          {/* Auth */}
+          {/* Auth — masqué sur mobile */}
           <Link href="/compte"
-            className="shrink-0 rounded-lg border border-white/10 px-3 py-1.5 text-sm hover:bg-white/10 transition-colors text-white/70">
+            className="hidden md:block shrink-0 rounded-lg border border-white/10 px-3 py-1.5 text-sm hover:bg-white/10 transition-colors text-white/70">
             {user ? "Mon compte" : "Se connecter"}
           </Link>
+
+          {/* Burger — visible sur mobile uniquement */}
+          <button onClick={() => setMenuOpen(!menuOpen)}
+            className="md:hidden flex flex-col gap-1.5 p-2 rounded-lg hover:bg-white/8 transition-colors"
+            aria-label="Menu">
+            <span className={`block w-5 h-0.5 bg-white/70 transition-all duration-200 ${menuOpen ? "rotate-45 translate-y-2" : ""}`} />
+            <span className={`block w-5 h-0.5 bg-white/70 transition-all duration-200 ${menuOpen ? "opacity-0" : ""}`} />
+            <span className={`block w-5 h-0.5 bg-white/70 transition-all duration-200 ${menuOpen ? "-rotate-45 -translate-y-2" : ""}`} />
+          </button>
         </div>
+
+        {/* Menu mobile déroulant */}
+        {menuOpen && (
+          <div className="md:hidden border-t border-white/8 bg-black/95 backdrop-blur-md px-4 py-4 flex flex-col gap-1">
+            {items.map((it) => {
+              const active = pathname === it.href || (it.href !== "/" && pathname.startsWith(it.href));
+              return (
+                <Link key={it.href} href={it.href}
+                  onClick={() => setMenuOpen(false)}
+                  className={`px-4 py-3 rounded-xl text-sm font-medium transition-all ${
+                    active
+                      ? "bg-brand-500/15 text-brand-300 border border-brand-500/25"
+                      : "text-white/60 hover:text-white hover:bg-white/5"
+                  }`}>
+                  {it.label}
+                </Link>
+              );
+            })}
+            <div className="border-t border-white/8 mt-2 pt-3">
+              <Link href="/compte" onClick={() => setMenuOpen(false)}
+                className="px-4 py-3 rounded-xl text-sm font-medium text-white/60 hover:text-white hover:bg-white/5 transition-all block">
+                {user ? "👤 Mon compte" : "🔑 Se connecter"}
+              </Link>
+            </div>
+          </div>
+        )}
       </nav>
 
       {/* ── MODALE RECHERCHE ── */}
