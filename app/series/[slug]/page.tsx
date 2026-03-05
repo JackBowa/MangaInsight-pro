@@ -15,7 +15,7 @@ export async function generateMetadata({ params }: { params: { slug: string } })
   if (!serie) return {};
   return {
     title: serie.title,
-    description: serie.synopsis ? serie.synopsis.slice(0, 155) + "…" : `Critique et avis sur ${serie.title} — MangaInsight`,
+    description: serie.synopsis ? serie.synopsis.slice(0, 155) + "…" : `Critique et avis sur ${serie.title}, MangaInsight`,
     openGraph: {
       title: `${serie.title} · MangaInsight`,
       description: serie.synopsis?.slice(0, 155) + "…",
