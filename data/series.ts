@@ -457,7 +457,7 @@ export const SERIES: Serie[] = [
 // ASSASSINATION CLASSROOM
 {
   slug: "assassination-classroom",
-  pros: ["Concept brillant et original","Équilibre parfait entre comédie et émotion","Korosensei — l'un des meilleurs personnages du shōnen"],
+  pros: ["Concept brillant et original","Équilibre parfait entre comédie et émotion","Korosensei, l'un des meilleurs personnages du shōnen"],
   cons: ["Certains élèves restent peu développés","Quelques arcs mineurs dispensables","Fin prévisible malgré la qualité d'exécution"],
   addedAt: "2025-09-19",
   title: "Assassination Classroom",
@@ -708,7 +708,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "dr-stone",
-  pros: ["Science expliquée de façon ludique et accessible","Concept de reconstruction civilisationnelle unique","Senku — héros intellectuel rafraîchissant"],
+  pros: ["Science expliquée de façon ludique et accessible","Concept de reconstruction civilisationnelle unique","Senku, héros intellectuel rafraîchissant"],
   cons: ["Tension dramatique limitée par l'invincibilité du duo","Personnages secondaires peu développés","Arcs tardifs moins inspirés"],
   addedAt: "2025-10-07",
   title: "Dr. Stone",
@@ -817,7 +817,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "gintama",
-  pros: ["Humour le plus inventif du manga","Arcs sérieux d'une intensité rare","Gintoki — personnage d'une profondeur inattendue"],
+  pros: ["Humour le plus inventif du manga","Arcs sérieux d'une intensité rare","Gintoki, personnage d'une profondeur inattendue"],
   cons: ["Début très lent et décousu","Nécessite une connaissance de la culture japonaise","Difficile à recommander sans connaître le contexte"],
   addedAt: "2025-10-16",
   title: "Gintama",
@@ -861,7 +861,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "jojos-bizarre-adventure",
-  pros: ["Chaque arc totalement différent et unique","Système de Stands — le plus créatif du genre","Style visuel iconique et inimitable"],
+  pros: ["Chaque arc totalement différent et unique","Système de Stands, le plus créatif du genre","Style visuel iconique et inimitable"],
   cons: ["Style graphique déroutant pour les nouveaux lecteurs","Tons très différents entre les arcs","Accessible uniquement à un public averti"],
   addedAt: "2025-10-20",
   title: "JoJo’s Bizarre Adventure",
@@ -928,7 +928,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "monster",
-  pros: ["Thriller psychologique sans équivalent dans le manga","Johan Liebert — antagoniste le plus terrfiant du medium","Réalisme et profondeur humaine exceptionnels"],
+  pros: ["Thriller psychologique sans équivalent dans le manga","Johan Liebert, antagoniste le plus terrfiant du medium","Réalisme et profondeur humaine exceptionnels"],
   cons: ["Rythme lent et exigeant","Pas d'action spectaculaire","Demande une patience et une maturité du lecteur"],
   addedAt: "2025-10-25",
   title: "Monster",
@@ -950,7 +950,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "noragami",
-  pros: ["Mythologie shinto bien intégrée","Yato — personnage attachant et profond","Équilibre comédie/drama très réussi"],
+  pros: ["Mythologie shinto bien intégrée","Yato, personnage attachant et profond","Équilibre comédie/drama très réussi"],
   cons: ["Publication très irrégulière","Certains arcs en attente de résolution depuis des années","Rythme de publication frustrant"],
   addedAt: "2025-10-27",
   title: "Noragami",
@@ -1013,7 +1013,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 {
   slug: "pluto",
   pros: ["Réécriture d'Astro Boy pour adultes magistrale","Thèmes sur la guerre et la haine d'une profondeur rare","Artwork d'Urasawa immaculé"],
-  cons: ["Nécessite de connaître Astro Boy pour apprécier pleinement","Très court — 8 volumes qui laissent un vide","Fin très émotionnellement éprouvante"],
+  cons: ["Nécessite de connaître Astro Boy pour apprécier pleinement","Très court, 8 volumes qui laissent un vide","Fin très émotionnellement éprouvante"],
   addedAt: "2025-11-02",
   title: "Pluto",
   category: "manga",
@@ -1033,7 +1033,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "slam-dunk",
-  pros: ["Le meilleur manga de sport jamais créé","Hanamichi — protagoniste inoubliable","Matchs d'un réalisme et d'une tension exceptionnels"],
+  pros: ["Le meilleur manga de sport jamais créé","Hanamichi, protagoniste inoubliable","Matchs d'un réalisme et d'une tension exceptionnels"],
   cons: ["Fin abrupte qui laisse des histoires inachevées","Visuellement daté par moments","Début très lent avant que Hanamichi joue vraiment"],
   addedAt: "2025-11-04",
   title: "Slam Dunk",
@@ -1115,7 +1115,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "vagabond",
-  pros: ["Artwork sumi-e d'une beauté absolue","Évolution philosophique de Musashi unique dans le manga","Sasaki Kojiro — l'un des meilleurs personnages secondaires"],
+  pros: ["Artwork sumi-e d'une beauté absolue","Évolution philosophique de Musashi unique dans le manga","Sasaki Kojiro, l'un des meilleurs personnages secondaires"],
   cons: ["Hiatus depuis 2015 sans fin connue","Histoire probablement inachevée","Rythme très lent par nature"],
   addedAt: "2025-11-11",
   title: "Vagabond",
@@ -1456,7 +1456,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "record-of-ragnarok",
-  pros: ["Concept direct et assumé — dieux vs humains légendaires","Chaque combattant développé avec soin","Combats épiques à grande échelle"],
+  pros: ["Concept direct et assumé, dieux vs humains légendaires","Chaque combattant développé avec soin","Combats épiques à grande échelle"],
   cons: ["Peu de profondeur narrative en dehors des duels","Résultats de certains combats discutables","Structure très répétitive"],
   addedAt: "2025-12-10",
   title: "Record of Ragnarok",
@@ -1500,8 +1500,8 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "parasyte",
-  pros: ["Science-fiction philosophique d'une intelligence rare","Migi — partenaire unique dans le manga","Questions sur l'humanité traitées avec profondeur"],
-  cons: ["Dessin daté visuellement","Très court — peut laisser sur sa faim","Fin un peu abrupte"],
+  pros: ["Science-fiction philosophique d'une intelligence rare","Migi, partenaire unique dans le manga","Questions sur l'humanité traitées avec profondeur"],
+  cons: ["Dessin daté visuellement","Très court, peut laisser sur sa faim","Fin un peu abrupte"],
   addedAt: "2025-12-14",
   title: "Parasyte",
   category: "manga",
@@ -1544,7 +1544,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "akatsuki-no-yona",
-  pros: ["Arc de transformation de Yona parmi les meilleurs du shōjo","Hak — love interest exemplaire","Thèmes politiques traités avec maturité"],
+  pros: ["Arc de transformation de Yona parmi les meilleurs du shōjo","Hak, love interest exemplaire","Thèmes politiques traités avec maturité"],
   cons: ["Rythme très lent dans certains arcs","Publication irrégulière","Progression romantique frustrante"],
   addedAt: "2025-12-18",
   title: "Yona, Princesse de l’Aube",
@@ -1604,7 +1604,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "deadman-wonderland",
-  pros: ["Univers carcéral dystopique très original","Shiro — l'un des meilleurs mystères du manga d'action","Combats sanguinaires et inventifs"],
+  pros: ["Univers carcéral dystopique très original","Shiro, l'un des meilleurs mystères du manga d'action","Combats sanguinaires et inventifs"],
   cons: ["Série raccourcie contre la volonté des auteurs","Plusieurs intrigues inachevées","Fin précipitée et frustrante"],
   addedAt: "2025-12-23",
   title: "Deadman Wonderland",
@@ -1647,7 +1647,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "fate-stay-night",
-  pros: ["Concept de Guerre du Graal brillant et fertile","Servants développés avec une vraie profondeur mythologique","Gilgamesh — antagoniste mémorable"],
+  pros: ["Concept de Guerre du Graal brillant et fertile","Servants développés avec une vraie profondeur mythologique","Gilgamesh, antagoniste mémorable"],
   cons: ["Dense et exigeant pour les nouveaux venus","Plusieurs routes nécessaires pour tout comprendre","Rythme parfois lent"],
   addedAt: "2025-12-27",
   title: "Fate/Stay Night",
@@ -1766,7 +1766,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "kenshin",
-  pros: ["Kenshin — l'un des personnages les plus iconiques du manga","Arc Kyoto avec Shishio parmi les meilleurs du genre","Thème de la rédemption traité avec profondeur"],
+  pros: ["Kenshin, l'un des personnages les plus iconiques du manga","Arc Kyoto avec Shishio parmi les meilleurs du genre","Thème de la rédemption traité avec profondeur"],
   cons: ["Fin originale inégale","Réputation ternie par les problèmes de l'auteur","Dernier arc moins fort que le reste"],
   addedAt: "2026-01-07",
   title: "Kenshin le Vagabond",
@@ -1821,7 +1821,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "magi",
-  pros: ["Thèmes politiques adultes rares dans le shōnen","Univers inspiré des Mille et Une Nuits très riche","Judal — antagoniste complexe et fascinant"],
+  pros: ["Thèmes politiques adultes rares dans le shōnen","Univers inspiré des Mille et Une Nuits très riche","Judal, antagoniste complexe et fascinant"],
   cons: ["Certains arcs géopolitiques très denses","Nombreux personnages difficiles à suivre","Fin un peu précipitée"],
   addedAt: "2026-01-12",
   title: "Magi: The Labyrinth of Magic",
@@ -1884,7 +1884,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "psycho-pass",
-  pros: ["Dystopie Sibyl d'une cohérence et d'une pertinence rares","Akane — héroïne dont l'évolution est exemplaire","Questions sur la surveillance algorithmique très actuelles"],
+  pros: ["Dystopie Sibyl d'une cohérence et d'une pertinence rares","Akane, héroïne dont l'évolution est exemplaire","Questions sur la surveillance algorithmique très actuelles"],
   cons: ["Dense et exigeant pour les amateurs d'action pure","Adaptation manga moins complète que l'animé","Rythme parfois lent"],
   addedAt: "2026-01-18",
   title: "Psycho-Pass",
@@ -1946,7 +1946,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "seven-deadly-sins",
-  pros: ["Meliodas et Elizabeth — romance avec une vraie profondeur","Chacun des sept péchés a sa propre histoire","Arcs d'action épique bien menés"],
+  pros: ["Meliodas et Elizabeth, romance avec une vraie profondeur","Chacun des sept péchés a sa propre histoire","Arcs d'action épique bien menés"],
   cons: ["Fin précipitée et décevante","Power-ups excessifs dans les arcs tardifs","Certains antagonistes sacrifiés"],
   addedAt: "2026-01-23",
   title: "The Seven Deadly Sins",
@@ -1968,7 +1968,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "shaman-king",
-  pros: ["Philosophie zen unique dans le shōnen de combat","Yoh — protagoniste atypique et mémorable","Anna — l'un des meilleurs personnages féminins de l'époque"],
+  pros: ["Philosophie zen unique dans le shōnen de combat","Yoh, protagoniste atypique et mémorable","Anna, l'un des meilleurs personnages féminins de l'époque"],
   cons: ["Fin originale bâclée avant la version complète","Certains arcs du tournoi longuets","Moins de tension dramatique que dans d'autres séries du genre"],
   addedAt: "2026-01-25",
   title: "Shaman King",
@@ -1990,7 +1990,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "sk8-the-infinity",
-  pros: ["Skateboard rendu avec une énergie visuelle remarquable","Amitié Reki/Langa touchante et bien développée","Adam — antagoniste mémorable et flamboyant"],
+  pros: ["Skateboard rendu avec une énergie visuelle remarquable","Amitié Reki/Langa touchante et bien développée","Adam, antagoniste mémorable et flamboyant"],
   cons: ["Série courte qui laisse certains personnages peu exploités","Certaines courses avec des enjeux peu clairs","Réservé aux amateurs du genre"],
   addedAt: "2026-01-27",
   title: "SK8 the Infinity",
@@ -2010,7 +2010,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "so-im-a-spider-so-what",
-  pros: ["Kumoko — l'une des voix les plus drôles de l'isekai","Exploitation créative des mécaniques de RPG","Architecture narrative progressive bien construite"],
+  pros: ["Kumoko, l'une des voix les plus drôles de l'isekai","Exploitation créative des mécaniques de RPG","Architecture narrative progressive bien construite"],
   cons: ["Arcs alternatifs humains moins captivants","Peut sembler décousu entre les deux fils narratifs","Très dense à suivre par moments"],
   addedAt: "2026-01-29",
   title: "So I’m a Spider, So What?",
@@ -2030,7 +2030,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "steins-gate",
-  pros: ["Mécanique temporelle d'une précision et d'une cohérence rares","Retournement de ton magistral à mi-série","Mayuri et Kurisu — deux des meilleures héroïnes de SF manga"],
+  pros: ["Mécanique temporelle d'une précision et d'une cohérence rares","Retournement de ton magistral à mi-série","Mayuri et Kurisu, deux des meilleures héroïnes de SF manga"],
   cons: ["Début volontairement confus et difficile d'accès","Demande une attention soutenue du lecteur","L'adaptation manga reste en retrait de l'œuvre originale"],
   addedAt: "2026-01-31",
   title: "Steins;Gate",
@@ -2050,7 +2050,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "trigun",
-  pros: ["Vash — parmi les personnages les plus originaux du manga","Western SF unique en son genre","Équilibre comédie/drame progressif très bien géré"],
+  pros: ["Vash, parmi les personnages les plus originaux du manga","Western SF unique en son genre","Équilibre comédie/drame progressif très bien géré"],
   cons: ["Dessin parfois confus dans les scènes d'action","Peu connu malgré sa qualité","Publication ancienne et irrégulière"],
   addedAt: "2026-02-01",
   title: "Trigun",
@@ -2091,7 +2091,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "akame-ga-kill",
-  pros: ["Vraies morts de personnages attachants — enjeux réels","Esdeath — antagoniste complexe et mémorable","Romance Tatsumi/Mine sincèrement émouvante"],
+  pros: ["Vraies morts de personnages attachants, enjeux réels","Esdeath, antagoniste complexe et mémorable","Romance Tatsumi/Mine sincèrement émouvante"],
   cons: ["Tone shifts parfois maladroits entre comédie et tragédie","Certains personnages meurent avant d'être vraiment développés","Fin diverge de l'animé de façon surprenante"],
   addedAt: "2026-02-05",
   title: "Akame ga Kill!",
@@ -2113,8 +2113,8 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "angel-beats",
-  pros: ["Prémisse émotionnellement unique — le purgatoire des regrets","Kanade — révélation progressive magistralement gérée","Backstories des membres de la SSS poignantes"],
-  cons: ["Court et condensé — certaines histoires méritaient plus","Ton inégal entre comédie légère et tragédie profonde","Demande un investissement émotionnel fort"],
+  pros: ["Prémisse émotionnellement unique, le purgatoire des regrets","Kanade, révélation progressive magistralement gérée","Backstories des membres de la SSS poignantes"],
+  cons: ["Court et condensé, certaines histoires méritaient plus","Ton inégal entre comédie légère et tragédie profonde","Demande un investissement émotionnel fort"],
   addedAt: "2026-02-07",
   title: "Angel Beats!",
   category: "manga",
@@ -2133,7 +2133,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "bastard",
-  pros: ["Dark Schneider — antihéros le plus excessif et fascinant du genre","Artwork exceptionnel pour l'époque","Esthétique heavy metal unique dans le manga"],
+  pros: ["Dark Schneider, antihéros le plus excessif et fascinant du genre","Artwork exceptionnel pour l'époque","Esthétique heavy metal unique dans le manga"],
   cons: ["Publication chaotique et hiatus fréquents","Très difficile de trouver l'œuvre complète","Style graphique daté pour les nouveaux lecteurs"],
   addedAt: "2026-02-09",
   title: "Bastard!!",
@@ -2154,7 +2154,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "beelzebub",
-  pros: ["Duo Oga/Baby Beel — l'un des plus drôles du manga","Énergie comique inépuisable","Personnages secondaires truculents et bien utilisés"],
+  pros: ["Duo Oga/Baby Beel, l'un des plus drôles du manga","Énergie comique inépuisable","Personnages secondaires truculents et bien utilisés"],
   cons: ["Peu de profondeur narrative","Structure répétitive dans les arcs de délinquants","Fin abrupte et insatisfaisante"],
   addedAt: "2026-02-11",
   title: "Beelzebub",
@@ -2196,7 +2196,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "black-lagoon",
-  pros: ["Revy — héroïne d'action la plus mémorable du genre","Répliques cinglantes et dialogues de haute volée","Chaque arc comme un film d'action indépendant"],
+  pros: ["Revy, héroïne d'action la plus mémorable du genre","Répliques cinglantes et dialogues de haute volée","Chaque arc comme un film d'action indépendant"],
   cons: ["Hiatus très fréquents depuis des années","Peu de progression narrative globale","Fin potentiellement jamais écrite"],
   addedAt: "2026-02-14",
   title: "Black Lagoon",
@@ -2217,7 +2217,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "blame",
-  pros: ["Architecture SF oppressante unique dans le medium","Narration visuelle pure — presque sans dialogue","Atmosphère post-humaine inoubliable"],
+  pros: ["Architecture SF oppressante unique dans le medium","Narration visuelle pure, presque sans dialogue","Atmosphère post-humaine inoubliable"],
   cons: ["Très difficile d'accès pour les nouveaux lecteurs de manga","Pratiquement pas de narration explicite","Demande un lecteur prêt à construire sa propre compréhension"],
   addedAt: "2026-02-16",
   title: "Blame!",
@@ -2238,7 +2238,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "blood-lad",
-  pros: ["Humour méta sur la culture otaku très bien exécuté","Staz — vampire otaku décalé et attachant","Légèreté assumée et bonne humeur généreuse"],
+  pros: ["Humour méta sur la culture otaku très bien exécuté","Staz, vampire otaku décalé et attachant","Légèreté assumée et bonne humeur généreuse"],
   cons: ["Peu de profondeur narrative","Enjeux dramatiques limités","Oubliable malgré son charme"],
   addedAt: "2026-02-18",
   title: "Blood Lad",
@@ -2260,7 +2260,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "bungou-stray-dogs",
-  pros: ["Concept de pouvoirs basés sur des auteurs littéraires brillant","Dazai — personnage le plus fascinant de la série","Alternance comédie/drama très habile"],
+  pros: ["Concept de pouvoirs basés sur des auteurs littéraires brillant","Dazai, personnage le plus fascinant de la série","Alternance comédie/drama très habile"],
   cons: ["Nombreux personnages difficiles à mémoriser au début","Certains arcs moins bien gérés que d'autres","Peut sembler prétentieux pour ceux qui n'apprécient pas le concept"],
   addedAt: "2026-02-20",
   title: "Bungou Stray Dogs",
@@ -2291,7 +2291,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   cover: "https://manga-insight-pro.vercel.app/coppelion.jpg",
   synopsis: "2036 : Tokyo est contaminée après un accident nucléaire. Trois lycéennes génétiquement modifiées et immunisées sont envoyées secourir les survivants.",
   reviewHtml: `
-    <p>Coppelion m'a surpris par son ambiance unique — un Tokyo déserté et irradié, exploré par trois lycéennes génétiquement modifiées. C'est un manga post-apocalyptique qui prend le temps de s'installer, et c'est précisément ce que j'ai aimé.</p>
+    <p>Coppelion m'a surpris par son ambiance unique, un Tokyo déserté et irradié, exploré par trois lycéennes génétiquement modifiées. C'est un manga post-apocalyptique qui prend le temps de s'installer, et c'est précisément ce que j'ai aimé.</p>
     <p>Ibara, Aoi et Taeko forment un trio attachant, chacune avec sa propre façon de faire face à l'horreur silencieuse qui les entoure. Le désespoir des survivants qu'elles rencontrent est traité avec une vraie sensibilité, sans jamais verser dans le misérabilisme.</p>
     <p>Visuellement, les décors de Tokyo envahi par la nature sont d'une beauté mélancolique rare. Le manga prend clairement position sur le nucléaire, ce qui lui donne une résonance particulière après Fukushima. Pas le manga le plus rythmé, mais une œuvre sincère qui mérite d'être découverte.</p>
   `,
@@ -2315,9 +2315,9 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   cover: "https://manga-insight-pro.vercel.app/devilman.jpg",
   synopsis: "Akira fusionne avec un démon pour combattre ses semblables et protéger l’humanité. Mais la frontière entre bien et mal s’efface rapidement.",
   reviewHtml: `
-    <p>Devilman est une œuvre qui fait mal — et c'est exactement son intention. Go Nagai a créé en 1972 quelque chose que peu de mangakas oseraient encore aujourd'hui : une série qui détruit tout ce qu'elle construit, jusqu'à sa conclusion nihiliste absolue.</p>
-    <p>Akira Fudo est l'un des personnages les plus tragiques du medium. Sa transformation, son amour pour Miki, son amitié avec Ryo — tout est mis en place avec soin uniquement pour être arraché. La dernière partie est une des expériences les plus dévastatrices que j'ai vécues en lisant un manga.</p>
-    <p>Le style graphique est daté, évidemment. Mais l'impact émotionnel et thématique est intact. Devilman a influencé des décennies d'œuvres sombres — Berserk, Evangelion, Chainsaw Man lui doivent tous quelque chose. Une lecture incontournable pour quiconque veut comprendre l'histoire du manga.</p>
+    <p>Devilman est une œuvre qui fait mal, et c'est exactement son intention. Go Nagai a créé en 1972 quelque chose que peu de mangakas oseraient encore aujourd'hui : une série qui détruit tout ce qu'elle construit, jusqu'à sa conclusion nihiliste absolue.</p>
+    <p>Akira Fudo est l'un des personnages les plus tragiques du medium. Sa transformation, son amour pour Miki, son amitié avec Ryo, tout est mis en place avec soin uniquement pour être arraché. La dernière partie est une des expériences les plus dévastatrices que j'ai vécues en lisant un manga.</p>
+    <p>Le style graphique est daté, évidemment. Mais l'impact émotionnel et thématique est intact. Devilman a influencé des décennies d'œuvres sombres, Berserk, Evangelion, Chainsaw Man lui doivent tous quelque chose. Une lecture incontournable pour quiconque veut comprendre l'histoire du manga.</p>
   `,
   stars: 3,
   shops: [
@@ -2331,7 +2331,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 {
   slug: "dororo",
   pros: ["Œuvre fondatrice de Tezuka d'une modernité surprenante","Concept de Hyakkimaru unique et poignant","Thèmes sur la guerre d'une actualité permanente"],
-  cons: ["Dessin daté — standards des années 60","Récit inachevé par Tezuka lui-même","Difficile à appréhender sans contexte historique manga"],
+  cons: ["Dessin daté, standards des années 60","Récit inachevé par Tezuka lui-même","Difficile à appréhender sans contexte historique manga"],
   addedAt: "2026-02-25",
   title: "Dororo",
   category: "manga",
@@ -2340,7 +2340,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   synopsis: "Hyakkimaru, né sans membres ni organes, les récupère en exterminant les démons qui les détiennent, accompagné du jeune voleur Dororo.",
   reviewHtml: `
     <p>Dororo est une œuvre de 1967 qui parle de guerre, de sacrifice et d'humanité avec une modernité stupéfiante. Tezuka y raconte l'histoire d'Hyakkimaru, né sans organes ni membres vendus à des démons par son père ambitieux, et de Dororo, orphelin des routes qui devient son compagnon.</p>
-    <p>Chaque démon vaincu rend un organe à Hyakkimaru — ce concept de reconquête de soi morceau par morceau est d'une puissance symbolique rare. La série pose des questions sur ce qui fait de nous des humains, sur le prix du pouvoir, sur l'innocence perdue.</p>
+    <p>Chaque démon vaincu rend un organe à Hyakkimaru, ce concept de reconquête de soi morceau par morceau est d'une puissance symbolique rare. La série pose des questions sur ce qui fait de nous des humains, sur le prix du pouvoir, sur l'innocence perdue.</p>
     <p>Le récit est inachevé par Tezuka lui-même, ce qui frustre, mais les volumes disponibles constituent une expérience complète en soi. Une fenêtre exceptionnelle sur le génie du dieu du manga, et une série qui n'a pas pris une ride dans son propos.</p>
   `,
   stars: 3,
@@ -2363,9 +2363,9 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   cover: "https://manga-insight-pro.vercel.app/en-en-no-shouboutai.jpg",
   synopsis: "Des combustions humaines spontanées transforment les victimes en infernaux. Shinra, pompier aux pieds de feu, cherche la vérité sur son passé.",
   reviewHtml: `
-    <p>Fire Force est la série qui m'a réconcilié avec Atsushi Ohkubo après Soul Eater. L'univers pyrokinétique est immédiatement fascinant — des humains qui s'enflamment spontanément, des brigades de pompiers spéciaux qui combattent ces "infernaux", et derrière tout ça une conspiration bien plus sombre.</p>
+    <p>Fire Force est la série qui m'a réconcilié avec Atsushi Ohkubo après Soul Eater. L'univers pyrokinétique est immédiatement fascinant, des humains qui s'enflamment spontanément, des brigades de pompiers spéciaux qui combattent ces "infernaux", et derrière tout ça une conspiration bien plus sombre.</p>
     <p>Shinra est un protagoniste attachant avec son sourire nerveux et son passé douloureux. La Brigade 8 forme une galerie de personnages mémorables, et les combats mettent en valeur des pouvoirs ignés spectaculaires et bien différenciés.</p>
-    <p>La mythologie se dévoile progressivement et ambitieusement — peut-être trop, car certains arcs intermédiaires perdent en rythme ce qu'ils gagnent en worldbuilding. Et le fan service autour d'Tamaki reste une tache sur une série qui méritait mieux. Mais dans l'ensemble, une saga d'action très solide avec une identité visuelle forte.</p>
+    <p>La mythologie se dévoile progressivement et ambitieusement, peut-être trop, car certains arcs intermédiaires perdent en rythme ce qu'ils gagnent en worldbuilding. Et le fan service autour d'Tamaki reste une tache sur une série qui méritait mieux. Mais dans l'ensemble, une saga d'action très solide avec une identité visuelle forte.</p>
   `,
   stars: 3,
   shops: [
@@ -2381,7 +2381,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 {
   slug: "hajime-no-ippo",
   pros: ["La saga sportive la plus longue et la plus riche du manga","Boxe représentée avec une précision technique exemplaire","Chaque adversaire développé avec autant de soin que le héros"],
-  cons: ["Plus de 1400 chapitres — très difficile à aborder","Certains arcs tardifs critiqués pour leur rythme","Engagement à très long terme requis"],
+  cons: ["Plus de 1400 chapitres, très difficile à aborder","Certains arcs tardifs critiqués pour leur rythme","Engagement à très long terme requis"],
   addedAt: "2026-03-01",
   title: "Hajime no Ippo",
   category: "manga",
@@ -2389,9 +2389,9 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   cover: "https://manga-insight-pro.vercel.app/hajime-no-ippo.jpg",
   synopsis: "Ippo, lycéen timide, découvre la boxe et s’entraîne dur pour devenir champion. Chaque match est une leçon de courage et de dépassement.",
   reviewHtml: `
-    <p>Hajime no Ippo, c'est plus de trente ans et 1400 chapitres consacrés à la boxe — et c'est probablement la meilleure série sportive jamais écrite. Makunouchi Ippo, introverti et brimé, découvre la boxe presque par accident et y trouve un moyen de se construire. Ce parcours de l'ombre à la lumière est traité avec une sincérité désarmante.</p>
-    <p>Ce qui rend Ippo unique, c'est l'attention portée à chaque adversaire. Chaque combattant a son histoire, sa philosophie, ses raisons de se battre. Les matchs sont techniquement précis et dramatiquement intenses — chaque KO a du poids parce que les deux camps ont été développés avec soin.</p>
-    <p>Oui, c'est un investissement colossal. Oui, certains arcs tardifs sont moins inspirés. Mais les sommets d'Ippo — le match contre Miyata, contre Sendo, contre Date — sont parmi les meilleurs moments du manga de sport. Une œuvre monument.</p>
+    <p>Hajime no Ippo, c'est plus de trente ans et 1400 chapitres consacrés à la boxe, et c'est probablement la meilleure série sportive jamais écrite. Makunouchi Ippo, introverti et brimé, découvre la boxe presque par accident et y trouve un moyen de se construire. Ce parcours de l'ombre à la lumière est traité avec une sincérité désarmante.</p>
+    <p>Ce qui rend Ippo unique, c'est l'attention portée à chaque adversaire. Chaque combattant a son histoire, sa philosophie, ses raisons de se battre. Les matchs sont techniquement précis et dramatiquement intenses, chaque KO a du poids parce que les deux camps ont été développés avec soin.</p>
+    <p>Oui, c'est un investissement colossal. Oui, certains arcs tardifs sont moins inspirés. Mais les sommets d'Ippo, le match contre Miyata, contre Sendo, contre Date, sont parmi les meilleurs moments du manga de sport. Une œuvre monument.</p>
   `,
   stars: 3,
   shops: [
@@ -2413,9 +2413,9 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   cover: "https://manga-insight-pro.vercel.app/katekyo-hitman-reborn.jpg",
   synopsis: "Tsuna, collégien médiocre, apprend qu’il est héritier d’une famille mafieuse. Son tuteur, un bébé mafieux armé, le forme pour en devenir le boss.",
   reviewHtml: `
-    <p>Reborn est le parfait exemple d'un manga qui ne ressemble pas du tout à ce qu'il devient. Les premiers volumes — une comédie gag sur un bébé tueur à gages — ne préparent absolument pas à la saga épique que la série finit par être. Cette transformation est l'une des plus réussies du shōnen.</p>
-    <p>Tsunayoshi Sawada, le "Tsuna-nul" du début, devient un protagoniste genuinement charismatique. Le système des Flames et des armes — chaque personnage avec sa propre Box Weapon, sa Flame spécifique — est inventif et bien exploité dans les arcs de combat tardifs.</p>
-    <p>L'arc des Arcobaleno et l'arc futur sont des sommets de tension et d'émotion que peu de shōnens atteignent. La fin, malheureusement, est visiblement précipitée par l'éditeur — ce qui laisse un goût amer. Mais pour tout ce qui précède, Reborn mérite largement sa réputation de classique sous-estimé.</p>
+    <p>Reborn est le parfait exemple d'un manga qui ne ressemble pas du tout à ce qu'il devient. Les premiers volumes, une comédie gag sur un bébé tueur à gages, ne préparent absolument pas à la saga épique que la série finit par être. Cette transformation est l'une des plus réussies du shōnen.</p>
+    <p>Tsunayoshi Sawada, le "Tsuna-nul" du début, devient un protagoniste genuinement charismatique. Le système des Flames et des armes, chaque personnage avec sa propre Box Weapon, sa Flame spécifique, est inventif et bien exploité dans les arcs de combat tardifs.</p>
+    <p>L'arc des Arcobaleno et l'arc futur sont des sommets de tension et d'émotion que peu de shōnens atteignent. La fin, malheureusement, est visiblement précipitée par l'éditeur, ce qui laisse un goût amer. Mais pour tout ce qui précède, Reborn mérite largement sa réputation de classique sous-estimé.</p>
   `,
   stars: 3,
   shops: [
@@ -2437,8 +2437,8 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   cover: "https://manga-insight-pro.vercel.app/zatch-bell.jpg",
   synopsis: "Kiyomaro reçoit un grimoire et rencontre Zatch, enfant démon venu gagner un tournoi pour devenir roi. Ensemble, ils affrontent d’autres duos mage/démon.",
   reviewHtml: `
-    <p>Zatch Bell est l'un de ces mangas qu'on lit enfant et qui laissent une empreinte émotionnelle durable. L'histoire de Kiyo et Zatch — un lycéen surdoué asocial et un mamodo amnésique au cœur pur — est une des plus belles histoires d'amitié du shōnen des années 2000.</p>
-    <p>Le concept est simple mais fertile : 100 mamodos s'affrontent pour devenir roi de leur monde. Chaque duel révèle l'histoire du mamodo et de son partenaire humain, et les défaites — les livres qui brûlent — sont parmi les moments les plus bouleversants du genre. Brago, Tia, Ponygon — chaque personnage finit par compter.</p>
+    <p>Zatch Bell est l'un de ces mangas qu'on lit enfant et qui laissent une empreinte émotionnelle durable. L'histoire de Kiyo et Zatch, un lycéen surdoué asocial et un mamodo amnésique au cœur pur, est une des plus belles histoires d'amitié du shōnen des années 2000.</p>
+    <p>Le concept est simple mais fertile : 100 mamodos s'affrontent pour devenir roi de leur monde. Chaque duel révèle l'histoire du mamodo et de son partenaire humain, et les défaites, les livres qui brûlent, sont parmi les moments les plus bouleversants du genre. Brago, Tia, Ponygon, chaque personnage finit par compter.</p>
     <p>Visuellement daté et rythmiquement inégal par moments, Zatch Bell reste une œuvre sincère et généreuse. Sa conclusion est l'une des plus émouvantes qu'il m'ait été donné de lire. Un classique injustement oublié qui mérite d'être redécouvert.</p>
   `,
   stars: 3,
