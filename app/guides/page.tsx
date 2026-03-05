@@ -34,7 +34,7 @@ export default async function GuidesPage() {
           </div>
           <h1 style={{ fontFamily: "'Bebas Neue', sans-serif", letterSpacing: "0.03em" }}
             className="text-[clamp(3rem,6vw,5rem)] text-white leading-[0.92] mb-3">
-            Guides &amp;<span className="text-emerald-400">conseils</span>
+            Guides &amp; <span className="text-emerald-400">conseils</span>
           </h1>
           <p className="text-[0.9rem] text-white/45 leading-relaxed max-w-md">
             Tout ce qu&apos;il faut savoir pour se lancer dans le manga, des bases aux recommandations expertes.
