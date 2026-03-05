@@ -1,6 +1,8 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { SERIES } from "@/data/series";
+import { STREAMING_MAP, STREAMING_INFO } from "@/data/streaming";
+import { SHOPS_MAP, SHOPS_INFO } from "@/data/shops";
 import Comments from "./Comments";
 import CoverImage from "./CoverImage";
 
@@ -268,36 +270,55 @@ export default function SeriePage({ params }: { params: { slug: string } }) {
             </div>
 
             {/* Boutiques */}
-            {serie.shops && serie.shops.length > 0 && (
-              <div className="bg-white/3 border border-white/7 rounded-2xl p-5">
-                <p className="text-[0.65rem] font-bold tracking-[0.1em] uppercase text-white/30 mb-3">Acheter</p>
-                <div className="flex flex-col gap-2">
-                  {serie.shops.map((s, i) => (
-                    <a key={i} href={s.url} target="_blank" rel="noreferrer"
-                      className="flex items-center gap-3 p-2.5 rounded-xl bg-white/4 border border-white/7 text-white/70 text-sm font-bold hover:bg-white/8 hover:border-brand-500/30 hover:text-white transition-all">
-                      <img src={s.logo} alt={s.name} className="w-6 h-6 object-contain rounded" />
-                      {s.name}
-                    </a>
-                  ))}
+            {(() => {
+              const shopKeys = SHOPS_MAP[serie.slug] ?? ["amazon", "fnac", "rakuten"];
+              return (
+                <div className="bg-white/3 border border-white/7 rounded-2xl p-5">
+                  <p className="text-[0.65rem] font-bold tracking-[0.1em] uppercase text-white/30 mb-3">🛒 Acheter</p>
+                  <div className="flex flex-col gap-2">
+                    {shopKeys.map((key) => {
+                      const s = SHOPS_INFO[key];
+                      return (
+                        <a key={key} href={s.getUrl(serie.title)} target="_blank" rel="noreferrer"
+                          className={`flex items-center gap-3 p-2.5 rounded-xl bg-white/4 border border-white/7 text-white/70 text-sm font-bold hover:bg-white/8 hover:text-white transition-all ${s.color}`}>
+                          <img src={s.logo} alt={s.name} className="w-6 h-6 object-contain rounded" />
+                          {s.name}
+                          <svg className="w-3 h-3 ml-auto text-white/20" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                            <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/>
+                          </svg>
+                        </a>
+                      );
+                    })}
+                  </div>
                 </div>
-              </div>
-            )}
+              );
+            })()}
 
             {/* Streaming */}
-            {serie.streaming && serie.streaming.length > 0 && (
-              <div className="bg-white/3 border border-white/7 rounded-2xl p-5">
-                <p className="text-[0.65rem] font-bold tracking-[0.1em] uppercase text-white/30 mb-3">Voir l'animé</p>
-                <div className="flex flex-col gap-2">
-                  {serie.streaming.map((s, i) => (
-                    <a key={i} href={s.url} target="_blank" rel="noreferrer"
-                      className="flex items-center gap-3 p-2.5 rounded-xl bg-white/4 border border-white/7 text-white/70 text-sm font-bold hover:bg-white/8 hover:border-brand-500/30 hover:text-white transition-all">
-                      <img src={s.logo} alt={s.name} className="w-6 h-6 object-contain rounded" />
-                      {s.name}
-                    </a>
-                  ))}
+            {(() => {
+              const platforms = STREAMING_MAP[serie.slug] ?? null;
+              if (!platforms || platforms.length === 0) return null;
+              return (
+                <div className="bg-white/3 border border-white/7 rounded-2xl p-5">
+                  <p className="text-[0.65rem] font-bold tracking-[0.1em] uppercase text-white/30 mb-3">📺 Voir l'animé</p>
+                  <div className="flex flex-col gap-2">
+                    {platforms.map((key) => {
+                      const p = STREAMING_INFO[key];
+                      return (
+                        <a key={key} href={p.getUrl(serie.title)} target="_blank" rel="noreferrer"
+                          className={`flex items-center gap-3 p-2.5 rounded-xl bg-white/4 border border-white/7 text-white/70 text-sm font-bold hover:bg-white/8 hover:text-white transition-all ${p.color}`}>
+                          <img src={p.logo} alt={p.name} className="w-6 h-6 object-contain rounded" />
+                          {p.name}
+                          <svg className="w-3 h-3 ml-auto text-white/20" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                            <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/>
+                          </svg>
+                        </a>
+                      );
+                    })}
+                  </div>
                 </div>
-              </div>
-            )}
+              );
+            })()}
 
           </div>
         </div>
