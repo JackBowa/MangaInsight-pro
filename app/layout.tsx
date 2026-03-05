@@ -5,8 +5,29 @@ import SiteFooter from '@/components/SiteFooter'
 
 export const metadata = {
   metadataBase: new URL('https://mangainsight.com'),
-  title: { default: 'Mangainsight', template: '%s · Mangainsight' },
-  description: 'Reviews, news, et guides manga/manhwa/webtoons.',
+  title: { default: 'MangaInsight', template: '%s · MangaInsight' },
+  description: 'Critiques détaillées, tops et guides pour explorer les meilleures séries manga et manhwa.',
+  openGraph: {
+    type: 'website',
+    siteName: 'MangaInsight',
+    title: 'MangaInsight — Ton guide manga ultime',
+    description: 'Critiques détaillées, tops et guides pour explorer les meilleures séries manga et manhwa.',
+    url: 'https://mangainsight.com',
+    images: [
+      {
+        url: '/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'MangaInsight — Critiques manga et manhwa',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'MangaInsight — Ton guide manga ultime',
+    description: 'Critiques détaillées, tops et guides pour explorer les meilleures séries manga et manhwa.',
+    images: ['/og-image.jpg'],
+  },
 }
 
 export default function RootLayout({ children }: { children: ReactNode }) {
