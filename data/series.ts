@@ -11,6 +11,7 @@ export type Serie = {
   shops?: { name: string; url: string; logo: string }[];
   streaming?: { name: string; url: string; logo: string }[];
   live?: { name: string; url: string; logo: string }[];
+  addedAt?: string;       // date d'ajout ISO ex: "2025-03-04"
 };
 
 export const SERIES: Serie[] = [
@@ -18,6 +19,7 @@ export const SERIES: Serie[] = [
   // Tu ajoutes les autres séries ici, par ex. Naruto :
 {
   slug: "naruto",
+  addedAt: "2025-09-01",
   title: "Naruto",
   category: "manga",
   tags: "Shōnen · Ninjas · Action",
@@ -62,6 +64,7 @@ export const SERIES: Serie[] = [
   // Exemple manhwa
 {
   slug: "solo-leveling",
+  addedAt: "2025-09-02",
   title: "Solo Leveling",
   category: "manhwa",
   tags: "Action · Fantasy · Chasseurs",
@@ -111,6 +114,7 @@ export const SERIES: Serie[] = [
 // TOKYO REVENGERS
 {
   slug: "tokyo-revengers",
+  addedAt: "2025-09-04",
   title: "Tokyo Revengers",
   category: "manga",
   tags: "Action · Voyage temporel",
@@ -160,6 +164,7 @@ export const SERIES: Serie[] = [
 // THE PLAYER WHO CAN'T LEVEL UP
 {
   slug: "the-player-who-cant-level-up",
+  addedAt: "2025-09-06",
   title: "The Player Who Can’t Level Up",
   category: "manhwa",
   tags: "Action · Fantasy",
@@ -196,6 +201,7 @@ export const SERIES: Serie[] = [
 // THE BEGINNING AFTER THE END
 {
   slug: "the-beginning-after-the-end",
+  addedAt: "2025-09-08",
   title: "The Beginning After The End",
   category: "manhwa",
   tags: "Réincarnation · Fantasy",
@@ -230,6 +236,7 @@ export const SERIES: Serie[] = [
 // MY HERO ACADEMIA
 {
   slug: "my-hero-academia",
+  addedAt: "2025-09-10",
   title: "My Hero Academia",
   category: "manga",
   tags: "Super-héros · Shōnen",
@@ -276,6 +283,7 @@ export const SERIES: Serie[] = [
 // L'ATTAQUE DES TITANS
 {
   slug: "l-attaque-des-titans",
+  addedAt: "2025-09-11",
   title: "L’Attaque des Titans",
   category: "manga",
   tags: "Dark Fantasy · Titans",
@@ -322,6 +330,7 @@ export const SERIES: Serie[] = [
 // BLUE LOCK
 {
   slug: "blue-lock",
+  addedAt: "2025-09-13",
   title: "Blue Lock",
   category: "manga",
   tags: "Football · Shōnen · Compétition",
@@ -358,6 +367,7 @@ export const SERIES: Serie[] = [
 // BLEACH
 {
   slug: "bleach",
+  addedAt: "2025-09-15",
   title: "Bleach",
   category: "manga",
   tags: "Shōnen · Surnaturel · Action",
@@ -391,6 +401,7 @@ export const SERIES: Serie[] = [
 // BLACK BUTLER (Kuroshitsuji)
 {
   slug: "black-butler",
+  addedAt: "2025-09-17",
   title: "Black Butler",
   category: "manga",
   tags: "Gothique · Mystère · Fantasy",
@@ -424,6 +435,7 @@ export const SERIES: Serie[] = [
 // ASSASSINATION CLASSROOM
 {
   slug: "assassination-classroom",
+  addedAt: "2025-09-19",
   title: "Assassination Classroom",
   category: "manga",
   tags: "Comédie · École · Action",
@@ -455,6 +467,7 @@ export const SERIES: Serie[] = [
 },
 {
   slug: "kuroko-no-basket",
+  addedAt: "2025-09-21",
   title: "Kuroko no Basket",
   category: "manga",
   tags: "Sport · Basket · Lycée · Shônen · Compétition",
@@ -479,6 +492,7 @@ export const SERIES: Serie[] = [
 },
 {
   slug: "kill-the-hero",
+  addedAt: "2025-09-22",
   title: "Kill the Hero",
   category: "manhwa",
   tags: "Action · Donjons · Régression · Revanche · Thriller",
@@ -496,6 +510,7 @@ export const SERIES: Serie[] = [
 }, 
  {
   slug: "hunter-x-hunter",
+  addedAt: "2025-09-24",
   title: "Hunter × Hunter",
   category: "manga",
   tags: "Action · Aventure · Shōnen",
@@ -523,6 +538,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "berserk",
+  addedAt: "2025-09-26",
   title: "Berserk",
   category: "manga",
   tags: "Dark Fantasy · Tragédie · Épée · Destin",
@@ -543,6 +559,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "black-clover",
+  addedAt: "2025-09-28",
   title: "Black Clover",
   category: "manga",
   tags: "Shōnen · Magie · Rivalité · Dépassement",
@@ -563,6 +580,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "blue-exorcist",
+  addedAt: "2025-09-30",
   title: "Blue Exorcist",
   category: "manga",
   tags: "Exorcisme · Démon · Lycée · Action",
@@ -583,6 +601,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "claymore",
+  addedAt: "2025-10-02",
   title: "Claymore",
   category: "manga",
   tags: "Dark Fantasy · Démons · Épée · Vengeance",
@@ -602,6 +621,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "d-gray-man",
+  addedAt: "2025-10-03",
   title: "D.Gray-man",
   category: "manga",
   tags: "Surnaturel · Organisation · Tragédie · Gothique",
@@ -621,6 +641,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "death-note",
+  addedAt: "2025-10-05",
   title: "Death Note",
   category: "manga",
   tags: "Thriller · Surnaturel · Psychologie · Duel cérébral",
@@ -641,6 +662,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "dr-stone",
+  addedAt: "2025-10-07",
   title: "Dr. Stone",
   category: "manga",
   tags: "Science · Survie · Post-apo · Aventure",
@@ -660,6 +682,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "eleceed",
+  addedAt: "2025-10-09",
   title: "Eleceed",
   category: "manhwa",
   tags: "Action · Pouvoirs · Comédie · Mentor",
@@ -677,6 +700,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "fairy-tail",
+  addedAt: "2025-10-11",
   title: "Fairy Tail",
   category: "manga",
   tags: "Shōnen · Magie · Guilde · Aventure",
@@ -696,6 +720,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "fire-force",
+  addedAt: "2025-10-13",
   title: "Fire Force",
   category: "manga",
   tags: "Action · Pompiers · Surnaturel · Enquête",
@@ -715,6 +740,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "fullmetal-alchemist",
+  addedAt: "2025-10-14",
   title: "Fullmetal Alchemist",
   category: "manga",
   tags: "Aventure · Alchimie · Frères · Guerre",
@@ -735,6 +761,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "gintama",
+  addedAt: "2025-10-16",
   title: "Gintama",
   category: "manga",
   tags: "Comédie · Sci-fi · Parodie · Samouraï",
@@ -754,6 +781,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "hells-paradise",
+  addedAt: "2025-10-18",
   title: "Hell’s Paradise",
   category: "manga",
   tags: "Dark Fantasy · Ninjas · Survival · Île maudite",
@@ -773,6 +801,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "jojos-bizarre-adventure",
+  addedAt: "2025-10-20",
   title: "JoJo’s Bizarre Adventure",
   category: "manga",
   tags: "Action · Fantastique · Saga · Style",
@@ -793,6 +822,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "made-in-abyss",
+  addedAt: "2025-10-22",
   title: "Made in Abyss",
   category: "manga",
   tags: "Aventure · Exploration · Mystère · Dark",
@@ -812,6 +842,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "mashle",
+  addedAt: "2025-10-24",
   title: "Mashle",
   category: "manga",
   tags: "Comédie · Magie · Parodie · Action",
@@ -831,6 +862,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "monster",
+  addedAt: "2025-10-25",
   title: "Monster",
   category: "manga",
   tags: "Thriller · Psychologie · Europe · Enquête",
@@ -850,6 +882,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "noragami",
+  addedAt: "2025-10-27",
   title: "Noragami",
   category: "manga",
   tags: "Dieux · Action · Comédie · Quotidien",
@@ -869,6 +902,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "omniscient-reader",
+  addedAt: "2025-10-29",
   title: "Omniscient Reader",
   category: "manhwa",
   tags: "Apocalypse · Méta · Scénario · Compagnons",
@@ -884,6 +918,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "oshi-no-ko",
+  addedAt: "2025-10-31",
   title: "Oshi no Ko",
   category: "manga",
   tags: "Showbiz · Drame · Mystère · Réincarnation",
@@ -903,6 +938,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "pluto",
+  addedAt: "2025-11-02",
   title: "Pluto",
   category: "manga",
   tags: "Sci-fi · Robotique · Enquête · Remake",
@@ -921,6 +957,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "slam-dunk",
+  addedAt: "2025-11-04",
   title: "Slam Dunk",
   category: "manga",
   tags: "Sport · Basket · Lycée · Équipe",
@@ -937,6 +974,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "soul-eater",
+  addedAt: "2025-11-05",
   title: "Soul Eater",
   category: "manga",
   tags: "Fantaisie · Académie · Armes vivantes · Style",
@@ -955,6 +993,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "the-promised-neverland",
+  addedAt: "2025-11-07",
   title: "The Promised Neverland",
   category: "manga",
   tags: "Thriller · Évasion · Mystère · Enfance",
@@ -974,6 +1013,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "tower-of-god",
+  addedAt: "2025-11-09",
   title: "Tower of God",
   category: "manhwa",
   tags: "Fantasy · Tour · Épreuves · Compétition",
@@ -991,6 +1031,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "vagabond",
+  addedAt: "2025-11-11",
   title: "Vagabond",
   category: "manga",
   tags: "Samouraï · Historique · Philosophie · Duel",
@@ -1007,6 +1048,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "vinland-saga",
+  addedAt: "2025-11-13",
   title: "Vinland Saga",
   category: "manga",
   tags: "Historique · Vikings · Épopée · Drame",
@@ -1026,6 +1068,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "wind-breaker",
+  addedAt: "2025-11-15",
   title: "Wind Breaker",
   category: "manhwa",
   tags: "Action · Combat · Lycée · Délinquants · Shōnen",
@@ -1041,6 +1084,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "demon-slayer-kimetsu-no-yaiba",
+  addedAt: "2025-11-16",
   title: "Demon Slayer: Kimetsu no Yaiba",
   category: "manga",
   tags: "Shōnen · Démons · Sabre · Fratrie",
@@ -1061,6 +1105,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "spy-x-family",
+  addedAt: "2025-11-18",
   title: "SPY×FAMILY",
   category: "manga",
   tags: "Comédie · Espionnage · Famille",
@@ -1082,6 +1127,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 
 {
   slug: "arifureta",
+  addedAt: "2025-11-20",
   title: "Arifureta: De zéro à héros",
   category: "manga",
   tags: "Isekai · Donjon · Vengeance · Survie",
@@ -1101,6 +1147,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "re-zero",
+  addedAt: "2025-11-22",
   title: "Re:Zero",
   category: "manga",
   tags: "Isekai · Boucle temporelle · Drame · Fantasy",
@@ -1120,6 +1167,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "tokyo-ghoul",
+  addedAt: "2025-11-24",
   title: "Tokyo Ghoul",
   category: "manga",
   tags: "Dark Fantasy · Ghouls · Identité · Drame",
@@ -1139,6 +1187,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "black-god",
+  addedAt: "2025-11-26",
   title: "Black God (Kurokami)",
   category: "manga",
   tags: "Action · Surnaturel · Pacte · Rivalités",
@@ -1156,6 +1205,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "sss-class-suicide-hunter",
+  addedAt: "2025-11-27",
   title: "SSS-Class Suicide Hunter",
   category: "manhwa",
   tags: "Répétition · Donjons · Vengeance",
@@ -1173,6 +1223,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "my-wife-is-a-demon-queen",
+  addedAt: "2025-11-29",
   title: "My Wife Is a Demon Queen",
   category: "manhwa",
   tags: "Isekai · Couple · Fantasy",
@@ -1190,6 +1241,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "the-rising-of-the-shield-hero",
+  addedAt: "2025-12-01",
   title: "The Rising of the Shield Hero",
   category: "manga",
   tags: "Isekai · Héros · Trahison · Fantasy",
@@ -1209,6 +1261,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "sword-art-online",
+  addedAt: "2025-12-03",
   title: "Sword Art Online",
   category: "manga",
   tags: "Isekai · Jeu vidéo · Romance · Action",
@@ -1229,6 +1282,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "goblin-slayer",
+  addedAt: "2025-12-05",
   title: "Goblin Slayer",
   category: "manga",
   tags: "Dark Fantasy · Aventure · Violence",
@@ -1248,6 +1302,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "grimgar",
+  addedAt: "2025-12-07",
   title: "Grimgar, le Monde des Cendres et de Fantaisie",
   category: "manga",
   tags: "Fantasy · Monde parallèle · Aventure",
@@ -1265,6 +1320,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "no-game-no-life",
+  addedAt: "2025-12-08",
   title: "No Game No Life",
   category: "manga",
   tags: "Isekai · Jeux · Fantaisie",
@@ -1284,6 +1340,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "record-of-ragnarok",
+  addedAt: "2025-12-10",
   title: "Record of Ragnarok",
   category: "manga",
   tags: "Mythologie · Combat · Tournoi",
@@ -1303,6 +1360,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "chainsaw-man",
+  addedAt: "2025-12-12",
   title: "Chainsaw Man",
   category: "manga",
   tags: "Shōnen · Démons · Horreur · Action",
@@ -1322,6 +1380,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "parasyte",
+  addedAt: "2025-12-14",
   title: "Parasyte",
   category: "manga",
   tags: "Horreur · Psychologie · Aliens",
@@ -1341,6 +1400,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "the-god-of-high-school",
+  addedAt: "2025-12-16",
   title: "The God of High School",
   category: "manga",
   tags: "Arts martiaux · Tournoi · Action · Fantasy",
@@ -1360,6 +1420,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "akatsuki-no-yona",
+  addedAt: "2025-12-18",
   title: "Yona, Princesse de l’Aube",
   category: "manga",
   tags: "Aventure · Romance · Fantasy · Voyage",
@@ -1379,6 +1440,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "btooom",
+  addedAt: "2025-12-19",
   title: "Btooom!",
   category: "manga",
   tags: "Survie · Battle royale · Jeu vidéo",
@@ -1397,6 +1459,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "cage-of-eden",
+  addedAt: "2025-12-21",
   title: "Cage of Eden",
   category: "manga",
   tags: "Survie · Île mystérieuse · Aventure",
@@ -1411,6 +1474,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "deadman-wonderland",
+  addedAt: "2025-12-23",
   title: "Deadman Wonderland",
   category: "manga",
   tags: "Prison · Pouvoirs · Survival Game",
@@ -1429,6 +1493,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "eden-zero",
+  addedAt: "2025-12-25",
   title: "Edens Zero",
   category: "manga",
   tags: "Sci-fi · Aventure · Espace",
@@ -1448,6 +1513,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "fate-stay-night",
+  addedAt: "2025-12-27",
   title: "Fate/Stay Night",
   category: "manga",
   tags: "Magie · Combat · Guerre du Graal",
@@ -1465,6 +1531,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "goblin-nightmare",
+  addedAt: "2025-12-29",
   title: "Goblin Nightmare",
   category: "manga",
   tags: "Dark Fantasy · Gobelins · Vengeance",
@@ -1479,6 +1546,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "highschool-dxd",
+  addedAt: "2025-12-30",
   title: "High School DxD",
   category: "manga",
   tags: "Écchi · Démon · Lycée · Action",
@@ -1496,6 +1564,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "isekai-cheat-magician",
+  addedAt: "2026-01-01",
   title: "Isekai Cheat Magician",
   category: "manga",
   tags: "Isekai · Magie · Duo",
@@ -1513,6 +1582,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "kaiju-no-8",
+  addedAt: "2026-01-03",
   title: "Kaiju No. 8",
   category: "manga",
   tags: "Monstres · Armée · Transformation · Action",
@@ -1532,6 +1602,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "kengan-ashura",
+  addedAt: "2026-01-05",
   title: "Kengan Ashura",
   category: "manga",
   tags: "Combat · Tournoi · Entreprises",
@@ -1549,6 +1620,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "kenshin",
+  addedAt: "2026-01-07",
   title: "Kenshin le Vagabond",
   category: "manga",
   tags: "Samouraï · Historique · Rédemption",
@@ -1567,6 +1639,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "kings-game",
+  addedAt: "2026-01-09",
   title: "King’s Game",
   category: "manga",
   tags: "Survie · Jeu mortel · Lycée",
@@ -1581,6 +1654,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "magister-negi-magi",
+  addedAt: "2026-01-10",
   title: "Negima! Magister Negi Magi",
   category: "manga",
   tags: "Magie · Comédie · École",
@@ -1595,6 +1669,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "magi",
+  addedAt: "2026-01-12",
   title: "Magi: The Labyrinth of Magic",
   category: "manga",
   tags: "Aventure · Magie · Mille et une nuits",
@@ -1614,6 +1689,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "monster-musume",
+  addedAt: "2026-01-14",
   title: "Monster Musume",
   category: "manga",
   tags: "Comédie · Romance · Monstres",
@@ -1631,6 +1707,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "overlord",
+  addedAt: "2026-01-16",
   title: "Overlord",
   category: "manga",
   tags: "Isekai · Guilde · Non-mort",
@@ -1649,6 +1726,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "psycho-pass",
+  addedAt: "2026-01-18",
   title: "Psycho-Pass",
   category: "manga",
   tags: "Futur · Thriller · Cyberpunk",
@@ -1666,6 +1744,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "radiant",
+  addedAt: "2026-01-20",
   title: "Radiant",
   category: "manga",
   tags: "Magie · Aventure · Sorciers",
@@ -1685,6 +1764,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "rosario-vampire",
+  addedAt: "2026-01-21",
   title: "Rosario + Vampire",
   category: "manga",
   tags: "Comédie · Harem · Monstres · Lycée",
@@ -1702,6 +1782,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "seven-deadly-sins",
+  addedAt: "2026-01-23",
   title: "The Seven Deadly Sins",
   category: "manga",
   tags: "Fantasy · Chevaliers · Péchés capitaux",
@@ -1721,6 +1802,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "shaman-king",
+  addedAt: "2026-01-25",
   title: "Shaman King",
   category: "manga",
   tags: "Esprits · Tournoi · Héritage",
@@ -1740,6 +1822,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "sk8-the-infinity",
+  addedAt: "2026-01-27",
   title: "SK8 the Infinity",
   category: "manga",
   tags: "Skateboard · Compétition · Amitié",
@@ -1757,6 +1840,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "so-im-a-spider-so-what",
+  addedAt: "2026-01-29",
   title: "So I’m a Spider, So What?",
   category: "manga",
   tags: "Isekai · Monstre · Survie",
@@ -1774,6 +1858,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "steins-gate",
+  addedAt: "2026-01-31",
   title: "Steins;Gate",
   category: "manga",
   tags: "Voyage temporel · Science · Thriller",
@@ -1791,6 +1876,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "trigun",
+  addedAt: "2026-02-01",
   title: "Trigun",
   category: "manga",
   tags: "Western · Sci-fi · Chasseur de primes",
@@ -1809,6 +1895,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "trinity-seven",
+  addedAt: "2026-02-03",
   title: "Trinity Seven",
   category: "manga",
   tags: "Magie · Harem · Académie",
@@ -1826,6 +1913,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "akame-ga-kill",
+  addedAt: "2026-02-05",
   title: "Akame ga Kill!",
   category: "manga",
   tags: "Action · Rébellion · Assassins",
@@ -1845,6 +1933,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "angel-beats",
+  addedAt: "2026-02-07",
   title: "Angel Beats!",
   category: "manga",
   tags: "Au-delà · Lycée · Drame",
@@ -1862,6 +1951,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "bastard",
+  addedAt: "2026-02-09",
   title: "Bastard!!",
   category: "manga",
   tags: "Dark Fantasy · Heavy Metal · Magie",
@@ -1880,6 +1970,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "beelzebub",
+  addedAt: "2026-02-11",
   title: "Beelzebub",
   category: "manga",
   tags: "Comédie · Démon · Lycée",
@@ -1899,6 +1990,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "black-bullet",
+  addedAt: "2026-02-12",
   title: "Black Bullet",
   category: "manga",
   tags: "Post-apo · Armes vivantes · Action",
@@ -1916,6 +2008,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "black-lagoon",
+  addedAt: "2026-02-14",
   title: "Black Lagoon",
   category: "manga",
   tags: "Action · Mafia · Pirates modernes",
@@ -1934,6 +2027,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "blame",
+  addedAt: "2026-02-16",
   title: "Blame!",
   category: "manga",
   tags: "Sci-fi · Cyberpunk · Exploration",
@@ -1952,6 +2046,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "blood-lad",
+  addedAt: "2026-02-18",
   title: "Blood Lad",
   category: "manga",
   tags: "Comédie · Vampire · Action",
@@ -1971,6 +2066,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "bungou-stray-dogs",
+  addedAt: "2026-02-20",
   title: "Bungou Stray Dogs",
   category: "manga",
   tags: "Pouvoirs · Enquête · Organisation",
@@ -1990,6 +2086,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "coppelion",
+  addedAt: "2026-02-22",
   title: "Coppelion",
   category: "manga",
   tags: "Post-apo · Tokyo · Unités spéciales",
@@ -2006,6 +2103,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
  {
   slug: "devilman-crybaby",
+  addedAt: "2026-02-23",
   title: "Devilman Crybaby",
   category: "manga",
   tags: "Démons · Apocalypse · Tragédie",
@@ -2022,6 +2120,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "dororo",
+  addedAt: "2026-02-25",
   title: "Dororo",
   category: "manga",
   tags: "Historique · Démon · Voyage",
@@ -2038,6 +2137,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "en-en-no-shouboutai",
+  addedAt: "2026-02-27",
   title: "En’en no Shouboutai (Fire Force)",
   category: "manga",
   tags: "Pompiers · Surnaturel · Action",
@@ -2056,6 +2156,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "hajime-no-ippo",
+  addedAt: "2026-03-01",
   title: "Hajime no Ippo",
   category: "manga",
   tags: "Boxe · Sport · Shōnen",
@@ -2072,6 +2173,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "katekyo-hitman-reborn",
+  addedAt: "2026-03-03",
   title: "Katekyo Hitman Reborn!",
   category: "manga",
   tags: "Mafia · Comédie · Action",
@@ -2088,6 +2190,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "zatch-bell",
+  addedAt: "2026-03-05",
   title: "Zatch Bell!",
   category: "manga",
   tags: "Démons · Tournoi · Amitié",
