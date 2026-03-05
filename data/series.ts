@@ -12,6 +12,8 @@ export type Serie = {
   streaming?: { name: string; url: string; logo: string }[];
   live?: { name: string; url: string; logo: string }[];
   addedAt?: string;       // date d'ajout ISO ex: "2025-03-04"
+  pros?: string[];        // points forts
+  cons?: string[];        // points faibles
 };
 
 export const SERIES: Serie[] = [
@@ -19,6 +21,8 @@ export const SERIES: Serie[] = [
   // Tu ajoutes les autres séries ici, par ex. Naruto :
 {
   slug: "naruto",
+  pros: ["Personnages profonds et mémorables","Thèmes universels — amitié, persévérance, sacrifice","Combats stratégiques et inventifs","World-building riche et cohérent"],
+  cons: ["Nombreux flashbacks ralentissent le rythme","Arcs de remplissage dans l'animé","Fin de Shippuden divisive"],
   addedAt: "2025-09-01",
   title: "Naruto",
   category: "manga",
@@ -64,6 +68,8 @@ export const SERIES: Serie[] = [
   // Exemple manhwa
 {
   slug: "solo-leveling",
+  pros: ["Power fantasy addictif et bien rythmé","Artwork coréen spectaculaire","Progression du héros très satisfaisante"],
+  cons: ["Personnages secondaires peu développés","Scénario prévisible","Manque de profondeur émotionnelle"],
   addedAt: "2025-09-02",
   title: "Solo Leveling",
   category: "manhwa",
@@ -114,6 +120,8 @@ export const SERIES: Serie[] = [
 // TOKYO REVENGERS
 {
   slug: "tokyo-revengers",
+  pros: ["Concept de voyage temporel addictif","Tensions entre gangs très bien rendues","Rythme effréné"],
+  cons: ["Logique temporelle parfois incohérente","Fin jugée décevante par beaucoup","Quelques arcs en trop"],
   addedAt: "2025-09-04",
   title: "Tokyo Revengers",
   category: "manga",
@@ -236,6 +244,8 @@ export const SERIES: Serie[] = [
 // MY HERO ACADEMIA
 {
   slug: "my-hero-academia",
+  pros: ["Galerie de personnages très variée et attachante","Système de pouvoirs (Quirks) créatif","Combats spectaculaires"],
+  cons: ["Arcs inégaux en qualité","Certains personnages principaux mis de côté","Arc final trop long"],
   addedAt: "2025-09-10",
   title: "My Hero Academia",
   category: "manga",
@@ -283,6 +293,8 @@ export const SERIES: Serie[] = [
 // L'ATTAQUE DES TITANS
 {
   slug: "l-attaque-des-titans",
+  pros: ["Twists scénaristiques imprévisibles","Thèmes politiques et philosophiques rares dans le shōnen","Personnages complexes et moralement ambigus","Tension permanente"],
+  cons: ["Fin très controversée et divisive","Rythme parfois lent dans les arcs politiques","Certains personnages sacrifiés"],
   addedAt: "2025-09-11",
   title: "L’Attaque des Titans",
   category: "manga",
@@ -330,6 +342,8 @@ export const SERIES: Serie[] = [
 // BLUE LOCK
 {
   slug: "blue-lock",
+  pros: ["Concept original — anti-shōnen sportif","Rivalités intenses et mémorables","Psychologie du football jamais vue dans le genre"],
+  cons: ["Certains matchs s'étirent en longueur","Logique footballistique parfois fantaisiste","Personnages féminins inexistants"],
   addedAt: "2025-09-13",
   title: "Blue Lock",
   category: "manga",
@@ -367,6 +381,8 @@ export const SERIES: Serie[] = [
 // BLEACH
 {
   slug: "bleach",
+  pros: ["Designs de personnages iconiques","Arc Soul Society — l'un des meilleurs du shōnen","Ambiance unique entre le monde des vivants et des morts"],
+  cons: ["Arc Fullbring considéré comme le moins bon","Remplissage excessif dans l'animé","Fin manga très précipitée"],
   addedAt: "2025-09-15",
   title: "Bleach",
   category: "manga",
@@ -510,6 +526,8 @@ export const SERIES: Serie[] = [
 }, 
  {
   slug: "hunter-x-hunter",
+  pros: ["Système de pouvoirs Nen — le plus inventif du genre","Arcs variés et tous marquants","Protagonistes vraiment originaux"],
+  cons: ["Hiatus interminables depuis des années","Certains arcs très longs et denses","Fin potentiellement jamais écrite"],
   addedAt: "2025-09-24",
   title: "Hunter × Hunter",
   category: "manga",
@@ -538,6 +556,8 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "berserk",
+  pros: ["Chef-d'œuvre absolu du dark fantasy","Artwork de Miura — niveau hors norme","Personnage de Guts — l'un des meilleurs de l'histoire du manga"],
+  cons: ["Hiatus très fréquents du vivant de l'auteur","Histoire inachevée suite au décès de Miura","Extrêmement violent et sombre"],
   addedAt: "2025-09-26",
   title: "Berserk",
   category: "manga",
@@ -545,7 +565,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   cover: "https://manga-insight-pro.vercel.app/berserk.jpg",
   synopsis: "Guts, mercenaire marqué par la fatalité, traverse un monde ravagé par monstres et trahisons. Sa quête de vengeance croise celle d’un empire du mal. L’espoir subsiste au fil du fer et de la camaraderie. Une odyssée violente et mythique.",
   reviewHtml: "",
-  stars: 0,
+  stars: 5,
   shops: [
     { name: "Manganim", url: "https://manganim.fr/search?q=Berserk", logo: "https://manganim.fr/cdn/shop/files/logo-manganim-header_180x.png?v=1672862594" },
     { name: "Fnac",     url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=berserk+manga", logo: "https://cdn.iconscout.com/icon/free/png-256/free-fnac-3521434-2944878.png" },
@@ -566,7 +586,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   cover: "https://manga-insight-pro.vercel.app/black-clover.png",
   synopsis: "Né sans magie, Asta rêve pourtant de devenir Empereur-Mage. Avec son grimoire anti-magie et la rivalité de Yuno, il défie un monde qui le croit impuissant. Missions périlleuses et complots démoniaques s’enchaînent. La persévérance devient son arme absolue.",
   reviewHtml: "",
-  stars: 0,
+  stars: 3,
   shops: [
     { name: "Manganim", url: "https://manganim.fr/search?q=Black+Clover", logo: "https://manganim.fr/cdn/shop/files/logo-manganim-header_180x.png?v=1672862594" },
     { name: "Fnac",     url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=black+clover+tome", logo: "https://cdn.iconscout.com/icon/free/png-256/free-fnac-3521434-2944878.png" },
@@ -587,7 +607,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   cover: "https://manga-insight-pro.vercel.app/blue-exorcist.png",
   synopsis: "Rin découvre qu’il est le fils de Satan. Décidé à lutter contre son héritage, il rejoint une académie d’exorcistes. Entre fraternité et tentations, il forge sa propre voie. Le feu bleu n’est pas une fatalité.",
   reviewHtml: "",
-  stars: 0,
+  stars: 3,
   shops: [
     { name: "Manganim", url: "https://manganim.fr/search?q=Blue+Exorcist", logo: "https://manganim.fr/cdn/shop/files/logo-manganim-header_180x.png?v=1672862594" },
     { name: "Fnac",     url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=blue+exorcist+tome", logo: "https://cdn.iconscout.com/icon/free/png-256/free-fnac-3521434-2944878.png" },
@@ -608,7 +628,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   cover: "https://manga-insight-pro.vercel.app/claymore.png",
   synopsis: "Des guerrières mi-humaines mi-démones traquent des créatures voraces. Clare poursuit sa vendetta dans un monde hostile et hiérarchisé. Les combats laissent place à des choix cruels. La frontière entre monstre et humain s’effrite.",
   reviewHtml: "",
-  stars: 0,
+  stars: 3,
   shops: [
     { name: "Manganim", url: "https://manganim.fr/search?q=Claymore", logo: "https://manganim.fr/cdn/shop/files/logo-manganim-header_180x.png?v=1672862594" },
     { name: "Fnac",     url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=claymore+tome",  logo: "https://cdn.iconscout.com/icon/free/png-256/free-fnac-3521434-2944878.png" },
@@ -628,7 +648,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   cover: "https://manga-insight-pro.vercel.app/d-gray-man.jpg",
   synopsis: "Allen Walker combat aux côtés d’exorcistes contre les Akuma créés par le Comte Millénaire. L’Innocence, arme divine, épuise autant qu’elle sauve. Les secrets de l’Ordre s’assombrissent. Le salut a un coût.",
   reviewHtml: "",
-  stars: 0,
+  stars: 3,
   shops: [
     { name: "Manganim", url: "https://manganim.fr/search?q=D.Gray-man", logo: "https://manganim.fr/cdn/shop/files/logo-manganim-header_180x.png?v=1672862594" },
     { name: "Fnac",     url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=d+gray+man+tome",  logo: "https://cdn.iconscout.com/icon/free/png-256/free-fnac-3521434-2944878.png" },
@@ -641,6 +661,8 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "death-note",
+  pros: ["Duel psychologique haletant","Light Yagami — antagoniste iconique","Rythme parfait sur 12 tomes","Réflexion sur la justice et le pouvoir"],
+  cons: ["Deuxième partie en retrait après un tournant majeur","Quelques facilités scénaristiques vers la fin"],
   addedAt: "2025-10-05",
   title: "Death Note",
   category: "manga",
@@ -648,7 +670,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   cover: "https://manga-insight-pro.vercel.app/death-note.jpg",
   synopsis: "Light Yagami découvre un cahier permettant de tuer quiconque dont on écrit le nom. Il se lance dans une croisade pour « purifier » le monde, attirant l’attention du détective L. Un duel d’esprits s’engage où chaque geste peut trahir l’autre. Le pouvoir absolu corrompt ses convictions.",
   reviewHtml: "",
-  stars: 0,
+  stars: 5,
   shops: [
     { name: "Manganim", url: "https://manganim.fr/search?q=Death+Note", logo: "https://manganim.fr/cdn/shop/files/logo-manganim-header_180x.png?v=1672862594" },
     { name: "Fnac",     url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=death+note+tome",  logo: "https://cdn.iconscout.com/icon/free/png-256/free-fnac-3521434-2944878.png" },
@@ -669,7 +691,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   cover: "https://manga-insight-pro.vercel.app/dr-stone.jpg",
   synopsis: "L’humanité est pétrifiée pendant des millénaires. À son réveil, Senku, prodige de la science, veut rebâtir la civilisation avec des moyens rudimentaires. Entre inventions géniales et alliances fragiles, une nouvelle ère commence.",
   reviewHtml: "",
-  stars: 0,
+  stars: 4,
   shops: [
     { name: "Manganim", url: "https://manganim.fr/search?q=Dr.+Stone", logo: "https://manganim.fr/cdn/shop/files/logo-manganim-header_180x.png?v=1672862594" },
     { name: "Fnac",     url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=dr+stone+tome",   logo: "https://cdn.iconscout.com/icon/free/png-256/free-fnac-3521434-2944878.png" },
@@ -689,7 +711,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   cover: "https://manga-insight-pro.vercel.app/eleceed.jpg",
   synopsis: "Jiwoo, au cœur doux et rapide comme l’éclair, rencontre Kayden, maître puissant coincé en chat. Ensemble, ils naviguent le monde secret des éveillés. Amitiés, entraînements et affrontements s’enchaînent. La gentillesse peut frapper fort.",
   reviewHtml: "",
-  stars: 0,
+  stars: 4,
   shops: [
     { name: "Manganim", url: "https://manganim.fr/search?q=Eleceed",  logo: "https://manganim.fr/cdn/shop/files/logo-manganim-header_180x.png?v=1672862594" },
     { name: "Fnac",     url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=eleceed",         logo: "https://cdn.iconscout.com/icon/free/png-256/free-fnac-3521434-2944878.png" },
@@ -707,7 +729,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   cover: "https://manga-insight-pro.vercel.app/fairy-tail.jpg",
   synopsis: "Lucy rejoint Fairy Tail et forme un duo avec Natsu, chasseur de dragons au tempérament brûlant. La guilde enchaîne missions, tournois et guerres de factions. Entre rivalités et solidarité, chacun protège sa famille choisie.",
   reviewHtml: "",
-  stars: 0,
+  stars: 3,
   shops: [
     { name: "Manganim", url: "https://manganim.fr/search?q=Fairy+Tail",  logo: "https://manganim.fr/cdn/shop/files/logo-manganim-header_180x.png?v=1672862594" },
     { name: "Fnac",     url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=fairy+tail+tome",  logo: "https://cdn.iconscout.com/icon/free/png-256/free-fnac-3521434-2944878.png" },
@@ -727,7 +749,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   cover: "https://manga-insight-pro.vercel.app/fire-force.jpg",
   synopsis: "Des combustions humaines spontanées transforment des victimes en infernaux. Shinra, pompier aux pieds flamboyants, combat ces fléaux tout en cherchant la vérité sur son passé. Les brigades s’affrontent sur fond de complot religieux.",
   reviewHtml: "",
-  stars: 0,
+  stars: 3,
   shops: [
     { name: "Manganim", url: "https://manganim.fr/search?q=Fire+Force",  logo: "https://manganim.fr/cdn/shop/files/logo-manganim-header_180x.png?v=1672862594" },
     { name: "Fnac",     url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=fire+force+tome", logo: "https://cdn.iconscout.com/icon/free/png-256/free-fnac-3521434-2944878.png" },
@@ -740,6 +762,8 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "fullmetal-alchemist",
+  pros: ["Scénario sans faille du début à la fin","Duo Edward/Alphonse attachant","Thèmes profonds — deuil, responsabilité, humanité"],
+  cons: ["Rythme parfois rapide en fin de série","Certains antagonistes moins bien traités que d'autres"],
   addedAt: "2025-10-14",
   title: "Fullmetal Alchemist",
   category: "manga",
@@ -747,7 +771,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   cover: "https://manga-insight-pro.vercel.app/fullmetal-alchemist.png",
   synopsis: "Après une transmutation interdite, Edward et Alphonse perdent chacun une partie d’eux-mêmes. Pour récupérer leurs corps, ils cherchent la Pierre Philosophale. Leur quête révèle complots d’État, homonculus et vérités amères.",
   reviewHtml: "",
-  stars: 0,
+  stars: 5,
   shops: [
     { name: "Manganim", url: "https://manganim.fr/search?q=Fullmetal+Alchemist",  logo: "https://manganim.fr/cdn/shop/files/logo-manganim-header_180x.png?v=1672862594" },
     { name: "Fnac",     url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=fullmetal+alchemist+tome",  logo: "https://cdn.iconscout.com/icon/free/png-256/free-fnac-3521434-2944878.png" },
@@ -768,7 +792,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   cover: "https://manga-insight-pro.vercel.app/gintama.jpg",
   synopsis: "Dans un Edo envahi par des aliens, Gintoki, samouraï décalé, accepte tous les petits boulots. Parodies méta, émotions sincères et combats sérieux cohabitent. L’absurde devient un art.",
   reviewHtml: "",
-  stars: 0,
+  stars: 4,
   shops: [
     { name: "Manganim", url: "https://manganim.fr/search?q=Gintama",  logo: "https://manganim.fr/cdn/shop/files/logo-manganim-header_180x.png?v=1672862594" },
     { name: "Fnac",     url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=gintama+manga",  logo: "https://cdn.iconscout.com/icon/free/png-256/free-fnac-3521434-2944878.png" },
@@ -788,7 +812,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   cover: "https://manga-insight-pro.vercel.app/hells-paradise.png",
   synopsis: "Condamné à mort, Gabimaru se voit offrir la vie sauve s’il récupère un élixir d’immortalité sur une île létale. Assassins et samouraïs s’y affrontent au cœur d’une nature monstrueuse. Beauté et horreur s’entrelacent.",
   reviewHtml: "",
-  stars: 0,
+  stars: 4,
   shops: [
     { name: "Manganim", url: "https://manganim.fr/search?q=Hell%27s+Paradise",  logo: "https://manganim.fr/cdn/shop/files/logo-manganim-header_180x.png?v=1672862594" },
     { name: "Fnac",     url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=hell%27s+paradise+tome",  logo: "https://cdn.iconscout.com/icon/free/png-256/free-fnac-3521434-2944878.png" },
@@ -808,7 +832,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   cover: "https://manga-insight-pro.vercel.app/jojos-bizarre-adventure.jpg",
   synopsis: "Saga multigénérationnelle où les Joestar affrontent des forces occultes. Pouvoirs stylisés, poses iconiques et imagination débridée. Chaque partie réinvente la formule avec panache.",
   reviewHtml: "",
-  stars: 0,
+  stars: 4,
   shops: [
     { name: "Manganim", url: "https://manganim.fr/search?q=JoJo",    logo: "https://manganim.fr/cdn/shop/files/logo-manganim-header_180x.png?v=1672862594" },
     { name: "Fnac",     url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=jojo+manga",  logo: "https://cdn.iconscout.com/icon/free/png-256/free-fnac-3521434-2944878.png" },
@@ -822,6 +846,8 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "made-in-abyss",
+  pros: ["Univers unique et fascinant","Mélange de merveille enfantine et d'horreur adulte","Illustrations oniriques sublimes"],
+  cons: ["Extrêmement sombre et éprouvant","Rythme de publication très lent","Contenu difficile à certains moments"],
   addedAt: "2025-10-22",
   title: "Made in Abyss",
   category: "manga",
@@ -829,7 +855,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   cover: "https://manga-insight-pro.vercel.app/made-in-abyss.jpg",
   synopsis: "Riko descend dans l’Abysse pour retrouver sa mère légendaire, accompagnée de Reg, androïde amnésique. À mesure qu’ils plongent, la beauté cède au cauchemar. Les secrets enfouis exigent un tribut terrible.",
   reviewHtml: "",
-  stars: 0,
+  stars: 5,
   shops: [
     { name: "Manganim", url: "https://manganim.fr/search?q=Made+in+Abyss",  logo: "https://manganim.fr/cdn/shop/files/logo-manganim-header_180x.png?v=1672862594" },
     { name: "Fnac",     url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=made+in+abyss",    logo: "https://cdn.iconscout.com/icon/free/png-256/free-fnac-3521434-2944878.png" },
@@ -849,7 +875,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   cover: "https://manga-insight-pro.vercel.app/mashle.jpg",
   synopsis: "Dans un monde régi par la magie, Mash n’en possède aucune… mais des biceps en béton. Il entre dans une académie et résout tous les problèmes à la force brute. Les codes sont bousculés, les duels tournent à l’absurde.",
   reviewHtml: "",
-  stars: 0,
+  stars: 4,
   shops: [
     { name: "Manganim", url: "https://manganim.fr/search?q=Mashle",  logo: "https://manganim.fr/cdn/shop/files/logo-manganim-header_180x.png?v=1672862594" },
     { name: "Fnac",     url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=mashle+tome",   logo: "https://cdn.iconscout.com/icon/free/png-256/free-fnac-3521434-2944878.png" },
@@ -869,7 +895,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   cover: "https://manga-insight-pro.vercel.app/monster.jpg",
   synopsis: "Brillant neurochirurgien, Tenma sauve un enfant promis à devenir un tueur. Des années plus tard, il traque le monstre qu’il a épargné, à travers une Europe hantée par la culpabilité et la manipulation.",
   reviewHtml: "",
-  stars: 0,
+  stars: 5,
   shops: [
     { name: "Manganim", url: "https://manganim.fr/search?q=Monster+manga",  logo: "https://manganim.fr/cdn/shop/files/logo-manganim-header_180x.png?v=1672862594" },
     { name: "Fnac",     url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=monster+ura+rasawa",   logo: "https://cdn.iconscout.com/icon/free/png-256/free-fnac-3521434-2944878.png" },
@@ -889,7 +915,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   cover: "https://manga-insight-pro.vercel.app/noragami.png",
   synopsis: "Yato, dieu fauché, rêve de devenir populaire. Avec Hiyori et Yukine, il résout des affaires entre monde des vivants et esprits. Derrière les gags, des blessures profondes ressurgissent.",
   reviewHtml: "",
-  stars: 0,
+  stars: 4,
   shops: [
     { name: "Manganim", url: "https://manganim.fr/search?q=Noragami",  logo: "https://manganim.fr/cdn/shop/files/logo-manganim-header_180x.png?v=1672862594" },
     { name: "Fnac",     url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=noragami+tome",   logo: "https://cdn.iconscout.com/icon/free/png-256/free-fnac-3521434-2944878.png" },
@@ -902,6 +928,8 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "omniscient-reader",
+  pros: ["Concept meta-narratif brillant","Protagoniste avec une vraie profondeur","Univers d'une richesse rare dans le manhwa"],
+  cons: ["Très dense — nécessite une lecture attentive","Nombreux personnages difficiles à mémoriser","Début lent"],
   addedAt: "2025-10-29",
   title: "Omniscient Reader",
   category: "manhwa",
@@ -909,7 +937,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   cover: "https://manga-insight-pro.vercel.app/omniscient-reader.jpg",
   synopsis: "Dokja voit son webroman favori devenir réalité. Armé de sa connaissance de l’histoire, il tente de survivre aux scénarios imposés par des entités cosmiques. Savoir n’équivaut pas à pouvoir.",
   reviewHtml: "",
-  stars: 0,
+  stars: 5,
   shops: [
     { name: "Amazon", url: "https://www.amazon.fr/s?k=omniscient+reader", logo: "https://www.1min30.com/wp-content/uploads/2017/12/logo-amazon-1.jpg" }
   ],
@@ -925,7 +953,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   cover: "https://manga-insight-pro.vercel.app/oshi-no-ko.png",
   synopsis: "Un médecin et sa patiente renaissent dans le monde des idoles, liés au destin d’une star lumineuse. Entre coulisses du showbiz et quête de vérité, ils affrontent manipulations et médias.",
   reviewHtml: "",
-  stars: 0,
+  stars: 4,
   shops: [
     { name: "Manganim", url: "https://manganim.fr/search?q=Oshi+no+Ko",  logo: "https://manganim.fr/cdn/shop/files/logo-manganim-header_180x.png?v=1672862594" },
     { name: "Fnac",     url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=oshi+no+ko",   logo: "https://cdn.iconscout.com/icon/free/png-256/free-fnac-3521434-2944878.png" },
@@ -945,7 +973,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   cover: "https://manga-insight-pro.vercel.app/pluto.jpg",
   synopsis: "Relecture sombre d’un arc d’Astro Boy. Gesicht, détective robot, enquête sur des assassinats visant les plus puissants robots du monde. Humanité, mémoire et haine s’entrecroisent.",
   reviewHtml: "",
-  stars: 0,
+  stars: 5,
   shops: [
     { name: "Fnac",   url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=pluto+manga+urasawa", logo: "https://cdn.iconscout.com/icon/free/png-256/free-fnac-3521434-2944878.png" },
     { name: "Amazon", url: "https://www.amazon.fr/s?k=pluto+manga+urasawa",       logo: "https://www.1min30.com/wp-content/uploads/2017/12/logo-amazon-1.jpg" }
@@ -964,7 +992,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   cover: "https://manga-insight-pro.vercel.app/slam-dunk.png",
   synopsis: "Voyou au grand cœur, Hanamichi rejoint le club de basket par amour-propre. Entre entraînements, rivalités et matchs haletants, il découvre l’esprit d’équipe. Le terrain devient sa seconde chance.",
   reviewHtml: "",
-  stars: 0,
+  stars: 5,
   shops: [
     { name: "Fnac",   url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=slam+dunk+tome", logo: "https://cdn.iconscout.com/icon/free/png-256/free-fnac-3521434-2944878.png" },
     { name: "Amazon", url: "https://www.amazon.fr/s?k=slam+dunk+tome",       logo: "https://www.1min30.com/wp-content/uploads/2017/12/logo-amazon-1.jpg" }
@@ -981,7 +1009,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   cover: "https://manga-insight-pro.vercel.app/soul-eater.jpg",
   synopsis: "À la Shibusen, des manieurs et leurs armes humaines chassent âmes corrompues et sorcières. Maka et Soul visent le statut d’Arme ultime. Ambiance gothique, humour noir et combats syncopés.",
   reviewHtml: "",
-  stars: 0,
+  stars: 4,
   shops: [
     { name: "Fnac",   url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=soul+eater+tome", logo: "https://cdn.iconscout.com/icon/free/png-256/free-fnac-3521434-2944878.png" },
     { name: "Amazon", url: "https://www.amazon.fr/s?k=soul+eater+tome",       logo: "https://www.1min30.com/wp-content/uploads/2017/12/logo-amazon-1.jpg" }
@@ -993,6 +1021,8 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "the-promised-neverland",
+  pros: ["Arc 1 — thriller haletant d'une tension rare","Trio Emma/Norman/Ray remarquable","Twists réguliers qui renouvellent l'intrigue"],
+  cons: ["Qualité chute drastiquement après l'arc 1","Fin très précipitée et décevante","Certains arcs intermédiaires dispensables"],
   addedAt: "2025-11-07",
   title: "The Promised Neverland",
   category: "manga",
@@ -1000,7 +1030,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   cover: "https://manga-insight-pro.vercel.app/the-promised-neverland.jpg",
   synopsis: "Emma, Norman et Ray découvrent l’horrible vérité de leur orphelinat. Ils orchestrent une évasion impossible sous l’œil d’adultes menaçants. Chaque détail compte, chaque erreur est fatale.",
   reviewHtml: "",
-  stars: 0,
+  stars: 5,
   shops: [
     { name: "Fnac",   url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=the+promised+neverland+tome", logo: "https://cdn.iconscout.com/icon/free/png-256/free-fnac-3521434-2944878.png" },
     { name: "Amazon", url: "https://www.amazon.fr/s?k=the+promised+neverland+tome",       logo: "https://www.1min30.com/wp-content/uploads/2017/12/logo-amazon-1.jpg" }
@@ -1013,6 +1043,8 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "tower-of-god",
+  pros: ["Univers vertical et mystérieux fascinant","Twenty-Fifth Bam — évolution lente mais marquante","Intrigues politiques complexes"],
+  cons: ["Rythme très lent par moments","Extrêmement long avec des centaines de chapitres","Certains arcs difficiles à suivre"],
   addedAt: "2025-11-09",
   title: "Tower of God",
   category: "manhwa",
@@ -1020,7 +1052,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   cover: "https://manga-insight-pro.vercel.app/tower-of-god.jpg",
   synopsis: "Bam entre dans une tour où chaque étage impose des tests mortels. Alliances fragiles, règles changeantes et pouvoirs étranges rythment l’ascension. Il cherche son amie Rachel, quitte à tout sacrifier.",
   reviewHtml: "",
-  stars: 0,
+  stars: 4,
   shops: [
     { name: "Amazon", url: "https://www.amazon.fr/s?k=tower+of+god+manhwa", logo: "https://www.1min30.com/wp-content/uploads/2017/12/logo-amazon-1.jpg" }
   ],
@@ -1038,7 +1070,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   cover: "https://manga-insight-pro.vercel.app/vagabond.png",
   synopsis: "Libre adaptation de la vie de Musashi Miyamoto. De combats en errance, le jeune bretteur apprend la voie du sabre et de l’humilité. Chaque duel interroge le sens de la force.",
   reviewHtml: "",
-  stars: 0,
+  stars: 5,
   shops: [
     { name: "Fnac",   url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=vagabond+tome", logo: "https://cdn.iconscout.com/icon/free/png-256/free-fnac-3521434-2944878.png" },
     { name: "Amazon", url: "https://www.amazon.fr/s?k=vagabond+tome",       logo: "https://www.1min30.com/wp-content/uploads/2017/12/logo-amazon-1.jpg" }
@@ -1048,6 +1080,8 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "vinland-saga",
+  pros: ["Reconstitution historique exceptionnelle","Évolution de Thorfinn — l'une des meilleures arcs du manga","Thèmes pacifistes rares et courageux"],
+  cons: ["Deuxième arc radicalement différent peut dérouter","Rythme lent dans l'arc de la ferme","Peu accessible aux non-initiés à l'histoire viking"],
   addedAt: "2025-11-13",
   title: "Vinland Saga",
   category: "manga",
@@ -1055,7 +1089,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   cover: "https://manga-insight-pro.vercel.app/vinland-saga.jpg",
   synopsis: "Thorfinn, jeune guerrier islandais, poursuit une vengeance qui le consume. Des champs de bataille à la quête d’un nouveau monde, il redéfinit sa voie. La violence héritée se heurte au désir de paix.",
   reviewHtml: "",
-  stars: 0,
+  stars: 5,
   shops: [
     { name: "Fnac",   url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=vinland+saga+tome", logo: "https://cdn.iconscout.com/icon/free/png-256/free-fnac-3521434-2944878.png" },
     { name: "Amazon", url: "https://www.amazon.fr/s?k=vinland+saga+tome",       logo: "https://www.1min30.com/wp-content/uploads/2017/12/logo-amazon-1.jpg" }
@@ -1075,7 +1109,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   cover: "https://manga-insight-pro.vercel.app/wind-breaker.jpg",
   synopsis: "Haruka Sakura est un lycéen qui arrive au lycée Fûrin, connu pour son taux de délinquance élevé. Son objectif : affronter les meilleurs bagarreurs et devenir le meilleur d'entre eux. Mais cela ne va pas être aussi simple qu'il ne le pensait.",
   reviewHtml: "",
-  stars: 0,
+  stars: 4,
   shops: [
     { name: "Amazon", url: "https://www.amazon.fr/s?k=wind+breaker+manhwa", logo: "https://www.1min30.com/wp-content/uploads/2017/12/logo-amazon-1.jpg" }
   ],
@@ -1084,6 +1118,8 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "demon-slayer-kimetsu-no-yaiba",
+  pros: ["Dessins parmi les plus beaux du shōnen moderne","Relation Tanjiro/Nezuko très émouvante","Histoire complète en 23 tomes"],
+  cons: ["Antagonistes peu développés","Certains personnages secondaires interchangeables","Résolution un peu rapide"],
   addedAt: "2025-11-16",
   title: "Demon Slayer: Kimetsu no Yaiba",
   category: "manga",
@@ -1091,7 +1127,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   cover: "https://manga-insight-pro.vercel.app/demon-slayer-kimetsu-no-yaiba.png",
   synopsis: "Après le massacre de sa famille et la transformation de sa sœur Nezuko en démon, Tanjiro rejoint le Corps des Pourfendeurs pour la protéger et traquer les responsables.",
   reviewHtml: "",
-  stars: 0,
+  stars: 4,
   shops: [
     { name: "Manganim", url: "https://manganim.fr/search?q=Demon+Slayer", logo: "https://manganim.fr/cdn/shop/files/logo-manganim-header_180x.png?v=1672862594" },
     { name: "Fnac",     url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=demon+slayer+tome", logo: "https://cdn.iconscout.com/icon/free/png-256/free-fnac-3521434-2944878.png" },
@@ -1105,6 +1141,8 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "spy-x-family",
+  pros: ["Humour parfaitement dosé","Anya — personnage irrésistible","Légèreté assumée et rafraîchissante"],
+  cons: ["Peu d'enjeux réels malgré le prémisse espionnage","Progression narrative lente","Risque de tourner en rond sur la durée"],
   addedAt: "2025-11-18",
   title: "SPY×FAMILY",
   category: "manga",
@@ -1112,7 +1150,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   cover: "https://manga-insight-pro.vercel.app/spy-x-family.jpg",
   synopsis: "Pour approcher un politicien, l’espion « Twilight » forme une famille de façade : Anya, fillette télépathe, et Yor, tueuse à gages. Personne ne connaît le secret des autres.",
   reviewHtml: "",
-  stars: 0,
+  stars: 4,
   shops: [
     { name: "Manganim", url: "https://manganim.fr/search?q=Spy+x+Family", logo: "https://manganim.fr/cdn/shop/files/logo-manganim-header_180x.png?v=1672862594" },
     { name: "Fnac",     url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=Spy%20x%20Family%20tome", logo: "https://cdn.iconscout.com/icon/free/png-256/free-fnac-3521434-2944878.png" },
@@ -1134,7 +1172,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   cover: "https://manga-insight-pro.vercel.app/arifureta.jpg",
   synopsis: "Trahi lors d’un raid, Hajime chute au fond d’un donjon. Pour survivre, il se radicalise, fabrique ses armes et remonte, décidé à renverser son destin.",
   reviewHtml: "",
-  stars: 0,
+  stars: 3,
   shops: [
     { name: "Manganim", url: "https://manganim.fr/search?q=Arifureta", logo: "https://manganim.fr/cdn/shop/files/logo-manganim-header_180x.png?v=1672862594" },
     { name: "Fnac",     url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=arifureta%20tome", logo: "https://cdn.iconscout.com/icon/free/png-256/free-fnac-3521434-2944878.png" },
@@ -1147,6 +1185,8 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "re-zero",
+  pros: ["Système de résurrection exploré avec génie","Subaru — anti-héros complexe et réaliste","World-building très riche"],
+  cons: ["Certains arcs très longs","Personnage de Subaru peut être agaçant au début","Nombreux personnages à suivre"],
   addedAt: "2025-11-22",
   title: "Re:Zero",
   category: "manga",
@@ -1154,7 +1194,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   cover: "https://manga-insight-pro.vercel.app/re-zero.jpg",
   synopsis: "Subaru est transporté dans un autre monde et découvre qu’à chaque mort, il revient à un point de sauvegarde. Il tente d’enrayer les tragédies qui l’entourent.",
   reviewHtml: "",
-  stars: 0,
+  stars: 4,
   shops: [
     { name: "Manganim", url: "https://manganim.fr/search?q=Re%3AZero%20tome", logo: "https://manganim.fr/cdn/shop/files/logo-manganim-header_180x.png?v=1672862594" },
     { name: "Fnac",     url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=re%3Azero%20tome", logo: "https://cdn.iconscout.com/icon/free/png-256/free-fnac-3521434-2944878.png" },
@@ -1174,7 +1214,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   cover: "https://manga-insight-pro.vercel.app/tokyo-ghoul.jpg",
   synopsis: "Blessé par une goule, Ken Kaneki devient un hybride et doit survivre entre deux mondes en luttant pour conserver son humanité.",
   reviewHtml: "",
-  stars: 0,
+  stars: 3,
   shops: [
     { name: "Manganim", url: "https://manganim.fr/search?q=Tokyo%20Ghoul%20tome", logo: "https://manganim.fr/cdn/shop/files/logo-manganim-header_180x.png?v=1672862594" },
     { name: "Fnac",     url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=tokyo%20ghoul%20tome", logo: "https://cdn.iconscout.com/icon/free/png-256/free-fnac-3521434-2944878.png" },
@@ -1194,7 +1234,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   cover: "https://manga-insight-pro.vercel.app/kurokami.jpg",
   synopsis: "Après une rencontre avec Kuro, Keita se retrouve lié à une mototsumitama et impliqué dans des conflits mystiques qui dépassent son quotidien.",
   reviewHtml: "",
-  stars: 0,
+  stars: 2,
   shops: [
     { name: "Manganim", url: "https://manganim.fr/search?q=Kurokami%20Black%20God", logo: "https://manganim.fr/cdn/shop/files/logo-manganim-header_180x.png?v=1672862594" },
     { name: "Fnac",     url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=kurokami%20manga%20tome", logo: "https://cdn.iconscout.com/icon/free/png-256/free-fnac-3521434-2944878.png" },
@@ -1212,7 +1252,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   cover: "https://manga-insight-pro.vercel.app/sss-class-suicide-hunter.jpg",
   synopsis: "La capacité unique de Kim Gong-ja le rend plus fort à chaque mort. Il accumule talents et stratégies dans un monde où les épreuves ne pardonnent pas.",
   reviewHtml: "",
-  stars: 0,
+  stars: 3,
   shops: [
     { name: "Manganim", url: "https://manganim.fr/search?q=SSS%20Class%20Suicide%20Hunter", logo: "https://manganim.fr/cdn/shop/files/logo-manganim-header_180x.png?v=1672862594" },
     { name: "Fnac",     url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=SSS%20Class%20Suicide%20Hunter", logo: "https://cdn.iconscout.com/icon/free/png-256/free-fnac-3521434-2944878.png" },
@@ -1230,7 +1270,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   cover: "https://manga-insight-pro.vercel.app/my-wife-is-a-demon-queen.jpg",
   synopsis: "Un humain invoqué devient l’époux d’une reine démoniaque déchue. Ensemble, ils tentent de reconquérir un trône et un avenir.",
   reviewHtml: "",
-  stars: 0,
+  stars: 2,
   shops: [
     { name: "Manganim", url: "https://manganim.fr/search?q=My%20Wife%20Is%20a%20Demon%20Queen", logo: "https://manganim.fr/cdn/shop/files/logo-manganim-header_180x.png?v=1672862594" },
     { name: "Fnac",     url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=My%20Wife%20Is%20a%20Demon%20Queen", logo: "https://cdn.iconscout.com/icon/free/png-256/free-fnac-3521434-2944878.png" },
@@ -1248,7 +1288,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   cover: "https://manga-insight-pro.vercel.app/the-rising-of-the-shield-hero.jpg",
   synopsis: "Naofumi est invoqué dans un autre monde parmi les quatre héros légendaires. Prenant le bouclier, le plus faible des armes, il est trahi, calomnié, et doit prouver sa valeur seul.",
   reviewHtml: "",
-  stars: 0,
+  stars: 3,
   shops: [
     { name: "Manganim", url: "https://manganim.fr/search?q=Shield+Hero", logo: "" },
     { name: "Fnac",     url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=shield+hero+tome", logo: "" },
@@ -1268,7 +1308,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   cover: "https://manga-insight-pro.vercel.app/sword-art-online.jpg",
   synopsis: "Kirito et d’autres joueurs sont piégés dans un jeu virtuel mortel : mourir dans le jeu signifie mourir dans la réalité. Kirito lutte pour sauver tout le monde.",
   reviewHtml: "",
-  stars: 0,
+  stars: 3,
   shops: [
     { name: "Manganim", url: "https://manganim.fr/search?q=Sword+Art+Online", logo: "" },
     { name: "Fnac",     url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=sword+art+online+tome", logo: "" },
@@ -1289,7 +1329,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   cover: "https://manga-insight-pro.vercel.app/goblin-slayer.jpg",
   synopsis: "Dans un monde où les gobelins terrorisent les villageois, une prêtresse rejoint un guerrier mystérieux : Goblin Slayer, obsédé par leur extermination.",
   reviewHtml: "",
-  stars: 0,
+  stars: 3,
   shops: [
     { name: "Manganim", url: "https://manganim.fr/search?q=Goblin+Slayer", logo: "" },
     { name: "Fnac",     url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=goblin+slayer+tome", logo: "" },
@@ -1309,7 +1349,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   cover: "https://manga-insight-pro.vercel.app/grimgar.jpg",
   synopsis: "Des individus se réveillent dans un monde inconnu sans souvenir, forcés de s’adapter, lutter et trouver leur place au sein d’une communauté d’aventuriers.",
   reviewHtml: "",
-  stars: 0,
+  stars: 3,
   shops: [
     { name: "Manganim", url: "https://manganim.fr/search?q=Grimgar+fantasy", logo: "" },
     { name: "Fnac",     url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=grimgar+tome", logo: "" },
@@ -1327,7 +1367,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   cover: "https://manga-insight-pro.vercel.app/no-game-no-life.jpg",
   synopsis: "Sora et Shiro, fratrie géniale des jeux, sont invoqués dans Disboard, un monde où tout est déterminé par les jeux. Ils visent à défier les dieux du nouveau monde.",
   reviewHtml: "",
-  stars: 0,
+  stars: 3,
   shops: [
     { name: "Manganim", url: "https://manganim.fr/search?q=No+Game+No+Life", logo: "" },
     { name: "Fnac",     url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=no+game+no+life+tome", logo: "" },
@@ -1347,7 +1387,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   cover: "https://manga-insight-pro.vercel.app/record-of-ragnarok.jpg",
   synopsis: "Tous les 1000 ans, les dieux décident du sort de l’humanité. 13 duels sont organisés entre dieux et humains pour décider si l’humanité peut survivre.",
   reviewHtml: "",
-  stars: 0,
+  stars: 4,
   shops: [
     { name: "Manganim", url: "https://manganim.fr/search?q=Record+of+Ragnarok", logo: "" },
     { name: "Fnac",     url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=record+of+ragnarok+tome", logo: "" },
@@ -1360,6 +1400,8 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 },
 {
   slug: "chainsaw-man",
+  pros: ["Complètement imprévisible — impossible de deviner la suite","Humour noir et violence stylisée parfaitement dosés","Designs de démons iconiques"],
+  cons: ["Extrêmement violent et gore","Partie 2 plus lente que la partie 1","Peut dérouter les lecteurs non habitués au style de Fujimoto"],
   addedAt: "2025-12-12",
   title: "Chainsaw Man",
   category: "manga",
@@ -1367,7 +1409,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   cover: "https://manga-insight-pro.vercel.app/chainsaw-man.png",
   synopsis: "Denji fusionne avec Pochita et devient Chainsaw Man pour combattre les démons tout en essayant de mener une vie “normale”.",
   reviewHtml: "",
-  stars: 0,
+  stars: 4,
   shops: [
     { name: "Manganim", url: "https://manganim.fr/search?q=Chainsaw+Man", logo: "" },
     { name: "Fnac",     url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=chainsaw+man+tome", logo: "" },
@@ -1387,7 +1429,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   cover: "https://manga-insight-pro.vercel.app/parasyte.png",
   synopsis: "Un parasite extraterrestre occupe la main droite de Shinichi. Ensemble, ils se battent contre d’autres parasites qui menacent l’humanité.",
   reviewHtml: "",
-  stars: 0,
+  stars: 5,
   shops: [
     { name: "Manganim", url: "https://manganim.fr/search?q=Parasyte", logo: "" },
     { name: "Fnac",     url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=parasyte+tome", logo: "" },
@@ -1407,7 +1449,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   cover: "https://manga-insight-pro.vercel.app/the-god-of-high-school.png",
   synopsis: "Jin Mori participe à un tournoi lycéen mêlant arts martiaux et forces mystiques, face à des adversaires aux pouvoirs surnaturels. Les enjeux sont divins.",
   reviewHtml: "",
-  stars: 0,
+  stars: 4,
   shops: [
     { name: "Manganim", url: "https://manganim.fr/search?q=The+God+of+High+School", logo: "" },
     { name: "Fnac",     url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=the+god+of+high+school+tome", logo: "" },
@@ -1427,7 +1469,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   cover: "https://manga-insight-pro.vercel.app/",
   synopsis: "Princesse Yona voit son royaume basculer dans le chaos. Trahie, elle s’exile et part en quête des quatre dragons légendaires pour reconquérir son trône.",
   reviewHtml: "",
-  stars: 0,
+  stars: 3,
   shops: [
     { name: "Manganim", url: "https://manganim.fr/search?q=Yona", logo: "" },
     { name: "Fnac", url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=yona+tome", logo: "" },
@@ -1447,7 +1489,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   cover: "https://manga-insight-pro.vercel.app/btooom.jpg",
   synopsis: "Ryōta Sakamoto, joueur expert de Btooom!, se réveille sur une île transformée en champ de bataille où chacun doit tuer pour survivre à coups de bombes.",
   reviewHtml: "",
-  stars: 0,
+  stars: 3,
   shops: [
     { name: "Fnac", url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=btooom+tome", logo: "" },
     { name: "Amazon", url: "https://www.amazon.fr/s?k=btooom+manga", logo: "" }
@@ -1466,7 +1508,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   cover: "https://manga-insight-pro.vercel.app/cage-of-eden.jpg",
   synopsis: "Des lycéens échouent sur une île peuplée de créatures préhistoriques. Pour survivre, ils doivent s’unir et percer le mystère du lieu.",
   reviewHtml: "",
-  stars: 0,
+  stars: 3,
   shops: [
     { name: "Amazon", url: "https://www.amazon.fr/s?k=cage+of+eden+manga", logo: "" }
   ],
@@ -1481,7 +1523,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   cover: "https://manga-insight-pro.vercel.app/deadman-wonderland.jpg",
   synopsis: "Accusé à tort du massacre de sa classe, Ganta est envoyé dans une prison-parc d’attractions où les détenus s’affrontent à mort. Il y découvre un mystérieux pouvoir du sang.",
   reviewHtml: "",
-  stars: 0,
+  stars: 3,
   shops: [
     { name: "Fnac", url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=deadman+wonderland+tome", logo: "" },
     { name: "Amazon", url: "https://www.amazon.fr/s?k=deadman+wonderland+manga", logo: "" }
@@ -1500,7 +1542,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   cover: "https://manga-insight-pro.vercel.app/eden-zero.jpg",
   synopsis: "Shiki, élevé par des robots sur l’île Granbell, rejoint Rebecca et Happy pour explorer l’espace à la recherche de la déesse Mère et découvrir l’amitié.",
   reviewHtml: "",
-  stars: 0,
+  stars: 3,
   shops: [
     { name: "Manganim", url: "https://manganim.fr/search?q=Edens+Zero", logo: "" },
     { name: "Fnac", url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=edens+zero+tome", logo: "" },
@@ -1520,7 +1562,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   cover: "https://manga-insight-pro.vercel.app/fate-stay-night.png",
   synopsis: "Shirō Emiya est entraîné dans la Guerre du Saint Graal, un tournoi où mages et esprits héroïques s’affrontent pour un souhait ultime.",
   reviewHtml: "",
-  stars: 0,
+  stars: 3,
   shops: [
     { name: "Amazon", url: "https://www.amazon.fr/s?k=fate+stay+night+manga", logo: "" }
   ],
@@ -1538,7 +1580,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   cover: "https://manga-insight-pro.vercel.app/goblin-nightmare.jpg",
   synopsis: "Dans un univers ravagé par les gobelins, un guerrier maudit poursuit une vendetta sans fin. Chaque village libéré est une étape vers sa propre damnation.",
   reviewHtml: "",
-  stars: 0,
+  stars: 2,
   shops: [
     { name: "Amazon", url: "#", logo: "" }
   ],
@@ -1553,7 +1595,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   cover: "https://manga-insight-pro.vercel.app/highschool-dxd.jpg",
   synopsis: "Issei Hyoudou est tué par une fille lors de son premier rendez-vous puis ressuscité en démon par Rias Gremory. Il entre alors dans un monde de démons et d’anges déchus.",
   reviewHtml: "",
-  stars: 0,
+  stars: 2,
   shops: [
     { name: "Amazon", url: "https://www.amazon.fr/s?k=high+school+dxd+manga", logo: "" }
   ],
@@ -1571,7 +1613,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   cover: "https://manga-insight-pro.vercel.app/isekai-cheat-magician.png",
   synopsis: "Taichi et Rin sont transportés dans un autre monde et découvrent des pouvoirs magiques extraordinaires. Ils doivent apprendre à les maîtriser et à survivre aux complots.",
   reviewHtml: "",
-  stars: 0,
+  stars: 2,
   shops: [
     { name: "Amazon", url: "https://www.amazon.fr/s?k=isekai+cheat+magician+manga", logo: "" }
   ],
@@ -1589,7 +1631,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   cover: "https://manga-insight-pro.vercel.app/kaiju-no-8.jpg",
   synopsis: "Kafka Hibino, employé du nettoyage des Kaijus, rêve d’intégrer les Forces de Défense. Après un incident, il obtient le pouvoir de se transformer en monstre et décide de combattre pour protéger l’humanité.",
   reviewHtml: "",
-  stars: 0,
+  stars: 4,
   shops: [
     { name: "Manganim", url: "https://manganim.fr/search?q=Kaiju+No+8", logo: "" },
     { name: "Fnac", url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=kaiju+no+8+tome", logo: "" },
@@ -1609,7 +1651,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   cover: "https://manga-insight-pro.vercel.app/kengan-ashura.jpg",
   synopsis: "Tokita Ohma participe à des combats clandestins où les entreprises engagent des combattants pour régler leurs différends. Chaque affrontement est un duel de styles et de stratégies.",
   reviewHtml: "",
-  stars: 0,
+  stars: 4,
   shops: [
     { name: "Amazon", url: "https://www.amazon.fr/s?k=kengan+ashura+manga", logo: "" }
   ],
@@ -1627,7 +1669,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   cover: "https://manga-insight-pro.vercel.app/kenshin.jpg",
   synopsis: "Ancien assassin surnommé Battosai, Kenshin parcourt le Japon pour expier ses crimes. Il protège les innocents avec un sabre à lame inversée.",
   reviewHtml: "",
-  stars: 0,
+  stars: 4,
   shops: [
     { name: "Fnac", url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=kenshin+tome", logo: "" },
     { name: "Amazon", url: "https://www.amazon.fr/s?k=kenshin+manga", logo: "" }
@@ -1646,7 +1688,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   cover: "https://manga-insight-pro.vercel.app/kings-game.jpg",
   synopsis: "Une classe reçoit des ordres d’un mystérieux ‘Roi’. Chaque ordre doit être exécuté sous peine de mort. Nobuaki tente de briser la malédiction du jeu.",
   reviewHtml: "",
-  stars: 0,
+  stars: 2,
   shops: [
     { name: "Amazon", url: "https://www.amazon.fr/s?k=king%27s+game+manga", logo: "" }
   ],
@@ -1661,7 +1703,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   cover: "https://manga-insight-pro.vercel.app/negima.jpg",
   synopsis: "Negi Springfield, magicien de 10 ans, devient professeur d’une classe de 31 filles dans un collège japonais tout en poursuivant ses études de magie et ses missions secrètes.",
   reviewHtml: "",
-  stars: 0,
+  stars: 3,
   shops: [
     { name: "Amazon", url: "https://www.amazon.fr/s?k=negima+manga", logo: "" }
   ],
@@ -1676,7 +1718,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   cover: "https://manga-insight-pro.vercel.app/magi.jpg",
   synopsis: "Aladdin et Alibaba explorent des donjons mystérieux remplis de trésors et de djinns. Leurs choix influenceront l’équilibre du monde.",
   reviewHtml: "",
-  stars: 0,
+  stars: 4,
   shops: [
     { name: "Fnac", url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=magi+tome", logo: "" },
     { name: "Amazon", url: "https://www.amazon.fr/s?k=magi+manga", logo: "" }
@@ -1696,7 +1738,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   cover: "https://manga-insight-pro.vercel.app/monster-musume.jpg",
   synopsis: "Dans un Japon où humains et créatures mythiques cohabitent, Kimihito se retrouve malgré lui à héberger plusieurs demi-humaines aux caractères bien trempés.",
   reviewHtml: "",
-  stars: 0,
+  stars: 2,
   shops: [
     { name: "Amazon", url: "https://www.amazon.fr/s?k=monster+musume+manga", logo: "" }
   ],
@@ -1714,7 +1756,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   cover: "https://manga-insight-pro.vercel.app/overlord.png",
   synopsis: "Momonga reste connecté dans le jeu Yggdrasil lors de sa fermeture et se retrouve coincé dans son avatar de seigneur mort-vivant. Il décide d’explorer et de dominer ce nouveau monde.",
   reviewHtml: "",
-  stars: 0,
+  stars: 3,
   shops: [
     { name: "Amazon", url: "https://www.amazon.fr/s?k=overlord+manga", logo: "" }
   ],
@@ -1733,7 +1775,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   cover: "https://manga-insight-pro.vercel.app/psycho-pass.jpg",
   synopsis: "Dans un futur où la criminalité est prédite par le système Sibyl, Akane Tsunemori rejoint la police et découvre les failles de ce système de justice préventive.",
   reviewHtml: "",
-  stars: 0,
+  stars: 4,
   shops: [
     { name: "Amazon", url: "https://www.amazon.fr/s?k=psycho+pass+manga", logo: "" }
   ],
@@ -1751,7 +1793,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   cover: "https://manga-insight-pro.vercel.app/radiant.jpg",
   synopsis: "Seth, un jeune sorcier contaminé par les Némésis, cherche à détruire leur nid d’origine, Radiant, tout en affrontant l’Inquisition et les préjugés.",
   reviewHtml: "",
-  stars: 0,
+  stars: 3,
   shops: [
     { name: "Manganim", url: "https://manganim.fr/search?q=Radiant", logo: "" },
     { name: "Fnac", url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=radiant+tome", logo: "" },
@@ -1771,7 +1813,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   cover: "https://manga-insight-pro.vercel.app/rosario-vampire.jpg",
   synopsis: "Tsukune intègre par erreur un lycée pour monstres. Il rencontre Moka, une vampire, et tente de cacher son identité d’humain tout en survivant aux élèves surnaturels.",
   reviewHtml: "",
-  stars: 0,
+  stars: 2,
   shops: [
     { name: "Amazon", url: "https://www.amazon.fr/s?k=rosario+vampire+manga", logo: "" }
   ],
@@ -1789,7 +1831,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   cover: "https://manga-insight-pro.vercel.app/seven-deadly-sins.jpg",
   synopsis: "La princesse Elizabeth recherche les Seven Deadly Sins, chevaliers accusés de trahison, pour sauver son royaume. Meliodas, leur chef, cache un passé redoutable.",
   reviewHtml: "",
-  stars: 0,
+  stars: 4,
   shops: [
     { name: "Manganim", url: "https://manganim.fr/search?q=Seven+Deadly+Sins", logo: "" },
     { name: "Fnac", url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=seven+deadly+sins+tome", logo: "" },
@@ -1809,7 +1851,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   cover: "https://manga-insight-pro.vercel.app/shaman-king.jpg",
   synopsis: "Yoh Asakura, shaman capable de communiquer avec les esprits, participe au Shaman Fight pour devenir le Shaman King et unir le monde des vivants et des morts.",
   reviewHtml: "",
-  stars: 0,
+  stars: 4,
   shops: [
     { name: "Manganim", url: "https://manganim.fr/search?q=Shaman+King", logo: "" },
     { name: "Fnac", url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=shaman+king+tome", logo: "" },
@@ -1829,7 +1871,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   cover: "https://manga-insight-pro.vercel.app/sk8-the-infinity.jpg",
   synopsis: "Reki et Langa participent à des courses de skateboard clandestines appelées ‘S’. Vitesse, style et rivalités s’enchaînent sur les rampes.",
   reviewHtml: "",
-  stars: 0,
+  stars: 2,
   shops: [
     { name: "Amazon", url: "https://www.amazon.fr/s?k=sk8+the+infinity+manga", logo: "" }
   ],
@@ -1847,7 +1889,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   cover: "https://manga-insight-pro.vercel.app/so-im-a-spider.jpg",
   synopsis: "Une lycéenne se réincarne en araignée dans un donjon. Elle doit survivre, évoluer et comprendre les mystères de ce nouveau monde.",
   reviewHtml: "",
-  stars: 0,
+  stars: 3,
   shops: [
     { name: "Amazon", url: "https://www.amazon.fr/s?k=so+i%27m+a+spider+manga", logo: "" }
   ],
@@ -1865,7 +1907,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   cover: "https://manga-insight-pro.vercel.app/steins-gate.jpg",
   synopsis: "Un groupe d’amis découvre comment envoyer des messages dans le passé. Chaque modification change le présent et entraîne des conséquences dramatiques.",
   reviewHtml: "",
-  stars: 0,
+  stars: 4,
   shops: [
     { name: "Amazon", url: "https://www.amazon.fr/s?k=steins+gate+manga", logo: "" }
   ],
@@ -1883,7 +1925,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   cover: "https://manga-insight-pro.vercel.app/trigun.jpg",
   synopsis: "Vash the Stampede est un tireur d’élite au grand cœur recherché pour une prime énorme. Sur une planète désertique, il tente d’éviter les bains de sang.",
   reviewHtml: "",
-  stars: 0,
+  stars: 3,
   shops: [
     { name: "Fnac", url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=trigun+tome", logo: "" },
     { name: "Amazon", url: "https://www.amazon.fr/s?k=trigun+manga", logo: "" }
@@ -1902,7 +1944,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   cover: "https://manga-insight-pro.vercel.app/trinity-seven.jpg",
   synopsis: "Arata Kasuga voit son village détruit par un phénomène magique. Pour sauver sa cousine, il intègre l’académie royale et rencontre les ‘Trinity Seven’, sept puissantes magiciennes.",
   reviewHtml: "",
-  stars: 0,
+  stars: 2,
   shops: [
     { name: "Amazon", url: "https://www.amazon.fr/s?k=trinity+seven+manga", logo: "" }
   ],
@@ -1920,7 +1962,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   cover: "https://manga-insight-pro.vercel.app/akame-ga-kill.jpg",
   synopsis: "Tatsumi rejoint Night Raid, un groupe d’assassins luttant contre un empire corrompu. Chaque combat se paie cher et l’espoir d’un monde meilleur coûte des vies.",
   reviewHtml: "",
-  stars: 0,
+  stars: 4,
   shops: [
     { name: "Manganim", url: "https://manganim.fr/search?q=Akame+ga+Kill", logo: "" },
     { name: "Fnac", url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=akame+ga+kill+tome", logo: "" },
@@ -1940,7 +1982,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   cover: "https://manga-insight-pro.vercel.app/angel-beats.jpg",
   synopsis: "Dans un lycée de l’au-delà, Otonashi rejoint un groupe rebelle dirigé par Yuri pour défier une mystérieuse ‘Ange’. Entre humour et drame, chaque élève doit affronter son passé.",
   reviewHtml: "",
-  stars: 0,
+  stars: 3,
   shops: [
     { name: "Amazon", url: "https://www.amazon.fr/s?k=angel+beats+manga", logo: "" }
   ],
@@ -1958,7 +2000,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   cover: "https://manga-insight-pro.vercel.app/bastard.jpg",
   synopsis: "Dans un monde médiéval où règnent magie et métal, Dark Schneider, puissant sorcier, est libéré pour sauver un royaume mais son caractère tyrannique menace tout.",
   reviewHtml: "",
-  stars: 0,
+  stars: 2,
   shops: [
     { name: "Fnac", url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=bastard+manga", logo: "" },
     { name: "Amazon", url: "https://www.amazon.fr/s?k=bastard+manga", logo: "" }
@@ -1977,7 +2019,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   cover: "https://manga-insight-pro.vercel.app/beelzebub.jpg",
   synopsis: "Oga Tatsumi, délinquant, devient le ‘père’ du bébé Beelzebub, héritier du roi des démons. Il doit l’élever tout en gérant son quotidien de bagarres lycéennes.",
   reviewHtml: "",
-  stars: 0,
+  stars: 3,
   shops: [
     { name: "Manganim", url: "https://manganim.fr/search?q=Beelzebub", logo: "" },
     { name: "Fnac", url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=beelzebub+tome", logo: "" },
@@ -1997,7 +2039,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   cover: "https://manga-insight-pro.vercel.app/black-bullet.jpg",
   synopsis: "Dans un futur envahi par des créatures appelées Gastrea, les ‘Enfants maudits’ aux pouvoirs spéciaux combattent aux côtés de leurs protecteurs pour sauver l’humanité.",
   reviewHtml: "",
-  stars: 0,
+  stars: 2,
   shops: [
     { name: "Amazon", url: "https://www.amazon.fr/s?k=black+bullet+manga", logo: "" }
   ],
@@ -2015,7 +2057,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   cover: "https://manga-insight-pro.vercel.app/black-lagoon.jpg",
   synopsis: "Rokurou, employé japonais, est kidnappé par des mercenaires. Il rejoint leur équipage dans un monde de trafics et de fusillades en Asie du Sud-Est.",
   reviewHtml: "",
-  stars: 0,
+  stars: 3,
   shops: [
     { name: "Fnac", url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=black+lagoon+tome", logo: "" },
     { name: "Amazon", url: "https://www.amazon.fr/s?k=black+lagoon+manga", logo: "" }
@@ -2034,7 +2076,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   cover: "https://manga-insight-pro.vercel.app/blame.jpg",
   synopsis: "Dans un futur lointain, Killy parcourt une gigantesque mégastructure à la recherche du gène d’accès au réseau. Silence, architecture titanesque et solitude l’accompagnent.",
   reviewHtml: "",
-  stars: 0,
+  stars: 2,
   shops: [
     { name: "Fnac", url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=blame+manga", logo: "" },
     { name: "Amazon", url: "https://www.amazon.fr/s?k=blame+manga", logo: "" }
@@ -2053,7 +2095,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   cover: "https://manga-insight-pro.vercel.app/blood-lad.jpg",
   synopsis: "Staz, vampire otaku, règne sur un quartier du monde des démons. Quand une humaine meurt dans son territoire, il promet de la ressusciter.",
   reviewHtml: "",
-  stars: 0,
+  stars: 2,
   shops: [
     { name: "Manganim", url: "https://manganim.fr/search?q=Blood+Lad", logo: "" },
     { name: "Fnac", url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=blood+lad+tome", logo: "" },
@@ -2073,7 +2115,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   cover: "https://manga-insight-pro.vercel.app/bungou-stray-dogs.jpg",
   synopsis: "Atsushi, orphelin affamé, rencontre Dazai et Kunikida, membres d’une agence d’investigation composée d’individus aux dons surnaturels. Il y découvre complots et secrets.",
   reviewHtml: "",
-  stars: 0,
+  stars: 3,
   shops: [
     { name: "Manganim", url: "https://manganim.fr/search?q=Bungou+Stray+Dogs", logo: "" },
     { name: "Fnac", url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=bungou+stray+dogs+tome", logo: "" },
@@ -2092,7 +2134,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   tags: "Post-apo · Tokyo · Unités spéciales",
   cover: "https://manga-insight-pro.vercel.app/coppelion.jpg",
   synopsis: "2036 : Tokyo est contaminée après un accident nucléaire. Trois lycéennes génétiquement modifiées et immunisées sont envoyées secourir les survivants.",
-  stars: 0,
+  stars: 2,
   shops: [
     { name: "Amazon", url: "https://www.amazon.fr/s?k=coppelion+manga", logo: "" }
   ],
@@ -2109,7 +2151,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   tags: "Démons · Apocalypse · Tragédie",
   cover: "https://manga-insight-pro.vercel.app/devilman.jpg",
   synopsis: "Akira fusionne avec un démon pour combattre ses semblables et protéger l’humanité. Mais la frontière entre bien et mal s’efface rapidement.",
-  stars: 0,
+  stars: 3,
   shops: [
     { name: "Amazon", url: "https://www.amazon.fr/s?k=devilman+manga", logo: "" }
   ],
@@ -2126,7 +2168,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   tags: "Historique · Démon · Voyage",
   cover: "https://manga-insight-pro.vercel.app/dororo.jpg",
   synopsis: "Hyakkimaru, né sans membres ni organes, les récupère en exterminant les démons qui les détiennent, accompagné du jeune voleur Dororo.",
-  stars: 0,
+  stars: 3,
   shops: [
     { name: "Amazon", url: "https://www.amazon.fr/s?k=dororo+manga", logo: "" }
   ],
@@ -2143,7 +2185,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   tags: "Pompiers · Surnaturel · Action",
   cover: "https://manga-insight-pro.vercel.app/fire-force.jpg",
   synopsis: "Des combustions humaines spontanées transforment les victimes en infernaux. Shinra, pompier aux pieds de feu, cherche la vérité sur son passé.",
-  stars: 0,
+  stars: 3,
   shops: [
     { name: "Manganim", url: "https://manganim.fr/search?q=Fire+Force", logo: "" },
     { name: "Fnac", url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=fire+force+tome", logo: "" },
@@ -2162,7 +2204,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   tags: "Boxe · Sport · Shōnen",
   cover: "https://manga-insight-pro.vercel.app/hajime-no-ippo.jpg",
   synopsis: "Ippo, lycéen timide, découvre la boxe et s’entraîne dur pour devenir champion. Chaque match est une leçon de courage et de dépassement.",
-  stars: 0,
+  stars: 3,
   shops: [
     { name: "Amazon", url: "https://www.amazon.fr/s?k=hajime+no+ippo+manga", logo: "" }
   ],
@@ -2179,7 +2221,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   tags: "Mafia · Comédie · Action",
   cover: "https://manga-insight-pro.vercel.app/katekyo-hitman-reborn.jpg",
   synopsis: "Tsuna, collégien médiocre, apprend qu’il est héritier d’une famille mafieuse. Son tuteur, un bébé mafieux armé, le forme pour en devenir le boss.",
-  stars: 0,
+  stars: 3,
   shops: [
     { name: "Amazon", url: "https://www.amazon.fr/s?k=katekyo+hitman+reborn+manga", logo: "" }
   ],
@@ -2196,7 +2238,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   tags: "Démons · Tournoi · Amitié",
   cover: "https://manga-insight-pro.vercel.app/zatch-bell.jpg",
   synopsis: "Kiyomaro reçoit un grimoire et rencontre Zatch, enfant démon venu gagner un tournoi pour devenir roi. Ensemble, ils affrontent d’autres duos mage/démon.",
-  stars: 0,
+  stars: 3,
   shops: [
     { name: "Amazon", url: "https://www.amazon.fr/s?k=zatch+bell+manga", logo: "" }
   ],
