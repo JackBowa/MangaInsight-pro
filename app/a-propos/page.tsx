@@ -17,7 +17,7 @@ const VALEURS = [
   {
     emoji: "🎯",
     title: "Honnêteté avant tout",
-    desc: "Nos critiques disent ce qu'elles pensent vraiment — les points forts comme les faiblesses. Pas de note gonflée pour plaire à un éditeur.",
+    desc: "Nos critiques disent ce qu'elles pensent vraiment, les points forts comme les faiblesses. Pas de note gonflée pour plaire à un éditeur.",
   },
   {
     emoji: "📚",
@@ -27,7 +27,7 @@ const VALEURS = [
   {
     emoji: "🇫🇷",
     title: "En français, pour les francophones",
-    desc: "On voulait une référence manga sérieuse en français. Les bons sites sont souvent en anglais — on comble ce manque.",
+    desc: "On voulait une référence manga sérieuse en français. Les bons sites sont souvent en anglais, on comble ce manque.",
   },
   {
     emoji: "🚫",
