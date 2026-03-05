@@ -15,7 +15,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const seriesPages = SERIES.map(serie => ({
     url: `${baseUrl}/series/${serie.slug}`,
     lastModified: serie.addedAt ? new Date(serie.addedAt) : new Date(),
-    priority: serie.stars >= 4 ? 0.8 : 0.6,
+    priority: (serie.stars ?? 0) >= 4 ? 0.8 : 0.6,
     changeFrequency: 'monthly' as const,
   }));
 
