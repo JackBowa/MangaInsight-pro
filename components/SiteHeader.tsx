@@ -63,7 +63,7 @@ export default function SiteHeader() {
             🎌 Mangainsight
           </Link>
 
-          {/* liens nav — masqués sur mobile */}
+          {/* liens nav, masqués sur mobile */}
           <div className="hidden md:flex flex-1 items-center gap-5 text-sm">
             {items.map((it) => {
               const active = pathname === it.href || (it.href !== "/" && pathname.startsWith(it.href));
@@ -88,13 +88,13 @@ export default function SiteHeader() {
             <span className="hidden lg:inline text-[0.6rem] bg-white/8 border border-white/10 px-1.5 py-0.5 rounded font-mono text-white/30">⌘K</span>
           </button>
 
-          {/* Auth — masqué sur mobile */}
+          {/* Auth, masqué sur mobile */}
           <Link href="/compte"
             className="hidden md:block shrink-0 rounded-lg border border-white/10 px-3 py-1.5 text-sm hover:bg-white/10 transition-colors text-white/70">
             {user ? "Mon compte" : "Se connecter"}
           </Link>
 
-          {/* Burger — visible sur mobile uniquement */}
+          {/* Burger, visible sur mobile uniquement */}
           <button onClick={() => setMenuOpen(!menuOpen)}
             className="md:hidden flex flex-col gap-1.5 p-2 rounded-lg hover:bg-white/8 transition-colors"
             aria-label="Menu">
