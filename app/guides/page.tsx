@@ -37,7 +37,7 @@ export default async function GuidesPage() {
             Guides &amp;<br /><span className="text-emerald-400">conseils</span>
           </h1>
           <p className="text-[0.9rem] text-white/45 leading-relaxed max-w-md">
-            Tout ce qu&apos;il faut savoir pour se lancer dans le manga — des bases aux recommandations expertes.
+            Tout ce qu&apos;il faut savoir pour se lancer dans le manga, des bases aux recommandations expertes.
           </p>
         </div>
       </section>
