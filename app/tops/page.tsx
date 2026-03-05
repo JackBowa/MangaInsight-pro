@@ -203,17 +203,6 @@ export default function TopsPage() {
             })}
           </div>
         </div>
-
-        {/* Covers top SSS flottantes */}
-        <div className="absolute right-8 md:right-16 top-1/2 -translate-y-1/2 hidden md:flex gap-2 z-10">
-          {SERIES.filter(s => starsToRank(s.stars as number ?? 0) === "SSS").slice(0, 5).map((s, i) => (
-            <div key={s.slug} className="rounded-xl overflow-hidden border border-amber-400/20 shadow-2xl flex-shrink-0"
-              style={{ width: 70, aspectRatio: "2/3", marginTop: i % 2 === 1 ? 16 : 0, opacity: 1 - i * 0.12 }}>
-              <img src={s.cover || "/_placeholder.jpg"} alt={s.title} className="w-full h-full object-cover"
-                onError={(e) => { const img = e.currentTarget as HTMLImageElement; if (!img.dataset.fb) { img.dataset.fb = "1"; img.src = "/_placeholder.jpg"; }}} />
-            </div>
-          ))}
-        </div>
       </section>
 
       {/* fade */}
