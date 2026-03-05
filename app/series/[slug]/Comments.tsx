@@ -100,7 +100,7 @@ export default function Comments({
   return (
     <section className="mt-14 mx-auto max-w-3xl">
       <h2 className="text-xl font-semibold mb-2 text-center">
-        Avis & commentaires — {title}
+        Avis & commentaires, {title}
       </h2>
 
       <div className="text-center mb-4 text-sm text-gray-300">
