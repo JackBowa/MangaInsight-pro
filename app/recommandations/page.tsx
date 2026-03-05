@@ -19,9 +19,9 @@ const STEPS = [
     id: "length",
     question: "Tu veux quelque chose de...",
     options: [
-      { label: "⚡ Court — moins de 15 tomes", value: "short" },
-      { label: "📚 Moyen — 15 à 40 tomes", value: "medium" },
-      { label: "🌊 Long — saga épique", value: "long" },
+      { label: "⚡ Court, moins de 15 tomes", value: "short" },
+      { label: "📚 Moyen, 15 à 40 tomes", value: "medium" },
+      { label: "🌊 Long, saga épique", value: "long" },
       { label: "🤷 Peu importe", value: "any" },
     ],
   },
