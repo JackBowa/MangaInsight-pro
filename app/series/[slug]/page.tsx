@@ -8,6 +8,20 @@ export function generateStaticParams() {
   return SERIES.map(s => ({ slug: s.slug }));
 }
 
+export async function generateMetadata({ params }: { params: { slug: string } }) {
+  const serie = SERIES.find(s => s.slug === params.slug);
+  if (!serie) return {};
+  return {
+    title: serie.title,
+    description: serie.synopsis ? serie.synopsis.slice(0, 155) + "…" : `Critique et avis sur ${serie.title} — MangaInsight`,
+    openGraph: {
+      title: `${serie.title} · MangaInsight`,
+      description: serie.synopsis?.slice(0, 155) + "…",
+      images: serie.cover ? [{ url: serie.cover }] : [],
+    },
+  };
+}
+
 function starsToRank(stars?: number): string | null {
   if (stars === 5) return "SSS";
   if (stars === 4) return "SS";
@@ -47,9 +61,8 @@ export default function SeriePage({ params }: { params: { slug: string } }) {
   const editorHtml = (serie as any)?.editorReview?.html ?? (serie as any)?.reviewHtml ?? null;
   const stars = typeof serie.stars === "number" ? serie.stars : 0;
 
-  // Pros/Cons depuis serie.ts si disponibles, sinon vides
-  const pros: string[] = (serie as any)?.pros ?? [];
-  const cons: string[] = (serie as any)?.cons ?? [];
+  const pros: string[] = serie.pros ?? [];
+  const cons: string[] = serie.cons ?? [];
   const hasProscons = pros.length > 0 || cons.length > 0;
 
   const RANK_STYLES: Record<string, string> = {
