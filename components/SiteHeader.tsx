@@ -11,7 +11,7 @@ const items = [
   { href: "/nouveautés", label: "Nouveautés" },
   { href: "/tops", label: "Tops" },
   { href: "/guides", label: "Guides" },
-  { href: "/recommandations", label: "✨ Pour toi" },
+  { href: "/recommandations", label: "✨ Trouve ta série" },
   { href: "/a-propos", label: "À propos" },
 ];
 
@@ -60,7 +60,7 @@ export default function SiteHeader() {
       <nav className="border-b border-white/10 bg-black/80 backdrop-blur sticky top-0 z-40">
         <div className="max-w-[1400px] mx-auto px-4 h-14 flex items-center gap-4">
           <Link href="/" className="font-semibold shrink-0" style={{ fontFamily: "'Bebas Neue', sans-serif", letterSpacing: "0.08em", fontSize: "1.1rem" }}>
-            🎌 Mangainsight
+            🎌 MangaInsight
           </Link>
 
           {/* liens nav, masqués sur mobile */}
