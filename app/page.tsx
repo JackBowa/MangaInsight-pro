@@ -84,13 +84,13 @@ export default function Home() {
         .hero-covers {
           position: absolute;
           top: 0; right: 0;
-          width: 55%;
+          width: 50%;
           height: 100%;
           display: flex;
           align-items: center;
-          justify-content: flex-end;
+          justify-content: center;
           gap: 12px;
-          padding-right: 2rem;
+          padding-right: 0;
           overflow: hidden;
         }
         .hero-cover-col {
@@ -127,8 +127,8 @@ export default function Home() {
         .hero-covers-fade {
           position: absolute;
           left: 0; top: 0; bottom: 0;
-          width: 30%;
-          background: linear-gradient(to right, #05050a, transparent);
+          width: 45%;
+          background: linear-gradient(to right, #05050a 20%, transparent);
         }
         .hero-content {
           position: relative;
@@ -471,11 +471,12 @@ export default function Home() {
         /* ── CATEGORIES ── */
         .categories-row {
           display: grid;
-          grid-template-columns: repeat(3, 1fr);
+          grid-template-columns: repeat(4, 1fr);
           gap: 14px;
           margin: 4rem 0;
         }
-        @media (max-width: 640px) { .categories-row { grid-template-columns: 1fr; } }
+        @media (max-width: 900px) { .categories-row { grid-template-columns: repeat(2, 1fr); } }
+        @media (max-width: 480px) { .categories-row { grid-template-columns: repeat(2, 1fr); } }
 
         .cat-card {
           display: flex;
@@ -557,9 +558,7 @@ export default function Home() {
             </div>
 
             <h1 className="hero-title">
-              Ton guide<br />
-              <span>manga</span><br />
-              ultime
+              Ton guide <span>manga</span> ultime
             </h1>
 
             <p className="hero-desc">
@@ -650,6 +649,13 @@ export default function Home() {
             <div>
               <div className="cat-card-title">Guides</div>
               <div className="cat-card-desc">Par où commencer ?</div>
+            </div>
+          </Link>
+          <Link href="/nouveautés" className="cat-card">
+            <span className="cat-icon">🆕</span>
+            <div>
+              <div className="cat-card-title">Nouveautés</div>
+              <div className="cat-card-desc">Les derniers ajouts du catalogue</div>
             </div>
           </Link>
         </div>
