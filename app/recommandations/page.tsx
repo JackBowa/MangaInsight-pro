@@ -48,16 +48,16 @@ const STEPS = [
 
 const SCORE_MAP: Record<string, Record<string, string[]>> = {
   mood: {
-    action:  ["Action", "Combat", "Tournoi", "Compétition", "Arts martiaux", "Boxe", "Football"],
-    comedy:  ["Comédie", "Parodie", "Quotidien", "Harem", "École"],
-    dark:    ["Dark Fantasy", "Dark", "Horreur", "Survie", "Thriller", "Psychologie"],
-    deep:    ["Philosophie", "Drame", "Sci-fi", "Thriller", "Mystère", "Cyberpunk"],
+    action:  ["Action", "Combat", "Tournoi", "Compétition", "Arts martiaux", "Boxe", "Football", "Shōnen", "Shônen", "Super-héros", "Duel", "Rivalité", "Rivalités", "Vengeance"],
+    comedy:  ["Comédie", "Parodie", "Quotidien", "Harem", "École", "Famille", "Espionnage", "Duo", "Amitié"],
+    dark:    ["Dark Fantasy", "Dark", "Horreur", "Survie", "Thriller", "Psychologie", "Post-apo", "Apocalypse", "Battle royale", "Survival", "Survival Game", "Jeu mortel", "Tragédie", "Violence", "Prison"],
+    deep:    ["Philosophie", "Drame", "Sci-fi", "Thriller", "Mystère", "Cyberpunk", "Psychologie", "Enquête", "Identité", "Méta", "Scénario"],
   },
   world: {
-    fantasy: ["Fantasy", "Dark Fantasy", "Magie", "Démons", "Isekai", "Chevaliers"],
-    school:  ["Lycée", "Académie", "École", "Tournoi"],
-    scifi:   ["Sci-fi", "Cyberpunk", "Robotique", "Futur", "Espace"],
-    real:    ["Sport", "Boxe", "Football", "Basket", "Mafia", "Enquête"],
+    fantasy: ["Fantasy", "Dark Fantasy", "Magie", "Démons", "Isekai", "Chevaliers", "Surnaturel", "Réincarnation", "Monde parallèle", "Donjon", "Donjons", "Guilde", "Chasseurs", "Mythologie", "Dieux", "Esprits", "Fantastique", "Fantaisie"],
+    school:  ["Lycée", "Académie", "École", "Tournoi", "Compétition"],
+    scifi:   ["Sci-fi", "Cyberpunk", "Robotique", "Futur", "Espace", "Science", "Boucle temporelle", "Voyage temporel"],
+    real:    ["Sport", "Boxe", "Football", "Basket", "Mafia", "Enquête", "Historique", "Samouraï", "Délinquants", "Armée", "Assassins"],
   },
 };
 
@@ -68,9 +68,9 @@ const LENGTH_MAP: Record<string, [number, number]> = {
   any:    [1, 9999],
 };
 
-// Approximation des longueurs par slug (volumes)
 const VOLUME_COUNTS: Record<string, number> = {
-  "naruto": 72, "one-piece": 110, "bleach": 74, "fairy-tail": 63,
+  // Manga
+  "naruto": 72, "bleach": 74, "fairy-tail": 63, "gintama": 77,
   "black-clover": 36, "my-hero-academia": 40, "hunter-x-hunter": 37,
   "berserk": 41, "vagabond": 37, "slam-dunk": 31, "death-note": 12,
   "fullmetal-alchemist": 27, "spy-x-family": 13, "chainsaw-man": 12,
@@ -80,11 +80,37 @@ const VOLUME_COUNTS: Record<string, number> = {
   "blue-lock": 30, "kaiju-no-8": 11, "mashle": 16,
   "oshi-no-ko": 14, "dr-stone": 26, "fire-force": 34,
   "soul-eater": 25, "noragami": 27, "tokyo-ghoul": 14,
-  "re-zero": 18, "tower-of-god": 20, "solo-leveling": 8,
+  "l-attaque-des-titans": 34, "assassination-classroom": 21,
+  "black-butler": 34, "blue-exorcist": 28, "claymore": 27,
+  "d-gray-man": 27, "jojos-bizarre-adventure": 130, "kenshin": 28,
+  "kengan-ashura": 27, "akatsuki-no-yona": 43, "seven-deadly-sins": 41,
+  "beelzebub": 43, "katekyo-hitman-reborn": 42, "shaman-king": 35,
+  "magi": 37, "hajime-no-ippo": 141,
+  "btooom": 26, "cage-of-eden": 21, "deadman-wonderland": 13,
+  "eden-zero": 29, "fate-stay-night": 10, "highschool-dxd": 25,
+  "isekai-cheat-magician": 13, "magister-negi-magi": 38,
+  "monster-musume": 17, "radiant": 22, "rosario-vampire": 24,
+  "so-im-a-spider-so-what": 16, "trigun": 14, "trinity-seven": 22,
+  "akame-ga-kill": 15, "bastard": 27, "black-bullet": 5,
+  "black-lagoon": 11, "blame": 10, "blood-lad": 17,
+  "bungou-stray-dogs": 25, "coppelion": 26, "devilman-crybaby": 5,
+  "dororo": 4, "en-en-no-shouboutai": 34, "zatch-bell": 33,
+  "wind-breaker": 21, "goblin-slayer": 17, "grimgar": 18,
+  "no-game-no-life": 10, "record-of-ragnarok": 17,
+  "the-rising-of-the-shield-hero": 25, "sword-art-online": 27,
+  "arifureta": 14, "angel-beats": 3, "steins-gate": 5,
+  "sk8-the-infinity": 2, "psycho-pass": 6, "overlord": 16,
+  // Manhwa
+  "solo-leveling": 8, "tower-of-god": 20, "re-zero": 18,
+  "the-player-who-cant-level-up": 7, "the-beginning-after-the-end": 22,
+  "kill-the-hero": 13, "eleceed": 25, "omniscient-reader": 8,
+  "sss-class-suicide-hunter": 13, "my-wife-is-a-demon-queen": 9,
+  "the-god-of-high-school": 20, "goblin-nightmare": 5,
+  "kuroko-no-basket": 30, "black-god": 10,
 };
 
 function getVolumes(slug: string): number {
-  return VOLUME_COUNTS[slug] ?? 20; // défaut : 20
+  return VOLUME_COUNTS[slug] ?? 18;
 }
 
 export default function RecommandationsPage() {
@@ -112,25 +138,43 @@ export default function RecommandationsPage() {
       const serieTags = (serie.tags ?? "").split("·").map(t => t.trim());
       let score = 0;
 
-      moodTags.forEach(t => { if (serieTags.includes(t)) score += 2; });
-      worldTags.forEach(t => { if (serieTags.includes(t)) score += 2; });
+      // Mood : +3 par tag correspondant
+      moodTags.forEach(t => { if (serieTags.includes(t)) score += 3; });
+      // Univers : +3 par tag correspondant
+      worldTags.forEach(t => { if (serieTags.includes(t)) score += 3; });
 
-      if (ans.type !== "any" && serie.category === ans.type) score += 3;
-      if (ans.type !== "any" && serie.category !== ans.type) score -= 5;
+      // Type : bonus si match, légère pénalité si non (ne tue pas le résultat)
+      if (ans.type !== "any") {
+        if (serie.category === ans.type) score += 4;
+        else score -= 2;
+      }
 
+      // Longueur : bonus si dans la fourchette, malus modéré sinon
       const vols = getVolumes(serie.slug);
-      if (vols >= minVol && vols <= maxVol) score += 2;
+      if (ans.length !== "any") {
+        if (vols >= minVol && vols <= maxVol) score += 3;
+        else score -= 1;
+      }
 
-      score += (serie.stars ?? 0) * 0.5;
+      // Note editoriale : bonus qualité
+      score += (serie.stars ?? 0) * 0.8;
 
       return { serie, score };
     });
 
-    const top = scored
-      .filter(s => s.score > 0)
-      .sort((a, b) => b.score - a.score)
-      .slice(0, 9)
-      .map(s => s.serie);
+    const sorted = scored.sort((a, b) => b.score - a.score);
+
+    // Résultats principaux : score > 0
+    let top = sorted.filter(s => s.score > 0).slice(0, 9).map(s => s.serie);
+
+    // Fallback : si moins de 5 résultats, compléter avec les mieux notés sans filtre
+    if (top.length < 5) {
+      const extras = sorted
+        .filter(s => !top.includes(s.serie))
+        .slice(0, 9 - top.length)
+        .map(s => s.serie);
+      top = [...top, ...extras];
+    }
 
     setResults(top);
   }
