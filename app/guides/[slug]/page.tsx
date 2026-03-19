@@ -8,6 +8,20 @@ export async function generateStaticParams() {
   return guides.map((g) => ({ slug: g.slug }));
 }
 
+export async function generateMetadata({ params }: { params: { slug: string } }) {
+  const guide = await getGuideBySlug(params.slug);
+  if (!guide) return {};
+  return {
+    title: guide.title,
+    description: guide.excerpt,
+    openGraph: {
+      title: `${guide.title} — MangaInsight`,
+      description: guide.excerpt,
+      url: `https://mangainsight.com/guides/${guide.slug}`,
+    },
+  };
+}
+
 const THEME_STYLES: Record<string, { accent: string; bg: string; border: string }> = {
   purple: { accent: "text-brand-400", bg: "from-brand-900/40", border: "border-brand-500/20" },
   blue:   { accent: "text-blue-300",  bg: "from-blue-900/40",  border: "border-blue-500/20" },
