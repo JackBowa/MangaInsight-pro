@@ -96,6 +96,8 @@ function CritiqueCard({ slug, title, cover, tags, stars, category, avg, onTagCli
   );
 }
 
+const PAGE_SIZE = 24;
+
 export default function CritiquesPage() {
   const [q, setQ] = useState("");
   const [category, setCategory] = useState<"all" | "manga" | "manhwa">("all");
@@ -103,6 +105,7 @@ export default function CritiquesPage() {
   const [sort, setSort] = useState<"recent" | "title" | "rating">("recent");
   const [avgs, setAvgs] = useState<Record<string, number>>({});
   const [loadingAvgs, setLoadingAvgs] = useState(false);
+  const [visibleCount, setVisibleCount] = useState(PAGE_SIZE);
 
   const mangaCount = SERIES.filter((s) => s.category === "manga").length;
   const manhwaCount = SERIES.filter((s) => s.category === "manhwa").length;
@@ -129,6 +132,9 @@ export default function CritiquesPage() {
     else list = list.reverse();
     return list;
   }, [q, category, genre, sort]);
+
+  // Reset pagination quand les filtres changent
+  useEffect(() => { setVisibleCount(PAGE_SIZE); }, [q, category, genre, sort]);
 
   useEffect(() => {
     const slugs = Array.from(new Set(filtered.map((s) => s.slug))).slice(0, 200);
@@ -162,6 +168,7 @@ export default function CritiquesPage() {
         @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
         @keyframes floatCover { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-8px)} }
         @keyframes pulseOrb { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:0.5;transform:scale(0.8)} }
+        @keyframes fadeInUp { from{opacity:0;transform:translateY(16px)} to{opacity:1;transform:translateY(0)} }
         .float-1{animation:floatCover 7s ease-in-out infinite}
         .float-2{animation:floatCover 7s ease-in-out 1s infinite}
         .float-3{animation:floatCover 7s ease-in-out 2s infinite}
@@ -170,6 +177,7 @@ export default function CritiquesPage() {
         .float-6{animation:floatCover 7s ease-in-out 2.5s infinite}
         .pulse-dot{animation:pulseOrb 2s infinite}
         .hero-grid{background-image:linear-gradient(rgba(139,92,246,0.06) 1px,transparent 1px),linear-gradient(90deg,rgba(139,92,246,0.06) 1px,transparent 1px);background-size:40px 40px}
+        .card-fadein{animation:fadeInUp 0.4s ease both}
       `}</style>
 
       {/* ── HERO ── */}
@@ -190,11 +198,11 @@ export default function CritiquesPage() {
             Toutes<br />les <span className="text-brand-500">critiques</span>
           </h1>
           <p className="text-[0.95rem] text-white/50 leading-relaxed mb-6 max-w-sm">
-            Explore, filtre et decouvre les meilleures series notees par la redaction.
+            Explore, filtre et découvre les meilleures séries notées par la rédaction.
           </p>
           <div className="flex gap-7">
             {[
-              { num: SERIES.length, label: "Series" },
+              { num: SERIES.length, label: "Séries" },
               { num: mangaCount, label: "Mangas" },
               { num: manhwaCount, label: "Manhwas" },
             ].map(({ num, label }) => (
@@ -259,7 +267,7 @@ export default function CritiquesPage() {
           {/* Tri */}
           <select value={sort} onChange={(e) => setSort(e.target.value as any)}
             className="bg-black/40 border border-white/9 rounded-xl px-3 py-2.5 text-sm outline-none focus:border-brand-500/50 text-white/65">
-            <option value="recent">Plus recents</option>
+            <option value="recent">Plus récents</option>
             <option value="title">Titre A-Z</option>
             <option value="rating">Meilleure note</option>
           </select>
@@ -282,7 +290,7 @@ export default function CritiquesPage() {
         {/* Compteur */}
         <div className="flex items-center justify-between mb-5">
           <p className="text-sm text-white/35">
-            <span className="text-white font-bold text-base">{filtered.length}</span> resultats
+            <span className="text-white font-bold text-base">{filtered.length}</span> résultats
           </p>
           {loadingAvgs && <p className="text-xs text-white/25">Calcul des notes...</p>}
         </div>
@@ -291,25 +299,38 @@ export default function CritiquesPage() {
         {filtered.length === 0 ? (
           <div className="text-center py-24 text-white/25">
             <div className="text-5xl mb-4">🔍</div>
-            <p style={{ fontFamily: "'Bebas Neue', sans-serif" }} className="text-2xl text-white/35 mb-2">Aucun resultat</p>
-            <p className="text-sm">Essaie d&apos;autres mots-cles ou filtres</p>
+            <p style={{ fontFamily: "'Bebas Neue', sans-serif" }} className="text-2xl text-white/35 mb-2">Aucun résultat</p>
+            <p className="text-sm">Essaie d&apos;autres mots-clés ou filtres</p>
           </div>
         ) : (
-          <div className="grid gap-4 grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6">
-            {filtered.map((s) => (
-              <CritiqueCard
-                key={s.slug}
-                slug={s.slug}
-                title={s.title}
-                cover={s.cover}
-                tags={s.tags}
-                stars={s.stars as number | undefined}
-                category={s.category}
-                avg={avgs[s.slug]}
-                onTagClick={(tag) => { setGenre(tag); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
-              />
-            ))}
-          </div>
+          <>
+            <div className="grid gap-4 grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6">
+              {filtered.slice(0, visibleCount).map((s, i) => (
+                <div key={s.slug} className="card-fadein" style={{ animationDelay: `${(i % PAGE_SIZE) * 30}ms` }}>
+                  <CritiqueCard
+                    slug={s.slug}
+                    title={s.title}
+                    cover={s.cover}
+                    tags={s.tags}
+                    stars={s.stars as number | undefined}
+                    category={s.category}
+                    avg={avgs[s.slug]}
+                    onTagClick={(tag) => { setGenre(tag); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
+                  />
+                </div>
+              ))}
+            </div>
+            {visibleCount < filtered.length && (
+              <div className="flex justify-center mt-8">
+                <button
+                  onClick={() => setVisibleCount(v => v + PAGE_SIZE)}
+                  className="px-8 py-3 rounded-xl bg-white/5 border border-white/10 text-white/70 text-sm font-bold hover:bg-brand-500/15 hover:border-brand-500/40 hover:text-brand-300 transition-all"
+                >
+                  Charger plus ({filtered.length - visibleCount} restantes)
+                </button>
+              </div>
+            )}
+          </>
         )}
 
         <div className="h-20" />

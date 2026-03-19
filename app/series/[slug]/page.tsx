@@ -75,8 +75,27 @@ export default function SeriePage({ params }: { params: { slug: string } }) {
     B:   "bg-blue-400/15 border-blue-400/30 text-blue-300",
   };
 
+  const jsonLd = {
+    "@context": "https://schema.org",
+    "@type": "Book",
+    "name": serie.title,
+    "description": serie.synopsis ?? `Critique et avis sur ${serie.title}`,
+    "image": serie.cover ? `https://mangainsight.fr${serie.cover}` : undefined,
+    "url": `https://mangainsight.fr/series/${serie.slug}`,
+    "genre": serie.tags?.split("·")[0].trim(),
+    "inLanguage": "fr",
+    "aggregateRating": stars > 0 ? {
+      "@type": "AggregateRating",
+      "ratingValue": stars,
+      "bestRating": 5,
+      "worstRating": 1,
+      "ratingCount": 1,
+    } : undefined,
+  };
+
   return (
     <div className="min-h-screen">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <style>{`
         @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
         .review-content p { margin-bottom: 1em; font-size: 0.88rem; color: rgba(255,255,255,0.6); line-height: 1.85; }
