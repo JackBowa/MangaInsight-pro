@@ -217,7 +217,7 @@ export const SERIES: Serie[] = [
   title: "The Beginning After The End",
   category: "manhwa",
   tags: "Réincarnation · Fantasy",
-  cover: "/the%20beginning.jpg",
+  cover: "/the beginning.jpg",
   synopsis: "Arthur Leywin, roi d’un monde magique, meurt et se réincarne dans un nouveau monde où il grandit avec les souvenirs de sa vie passée. Décidé à corriger ses erreurs, il explore un univers rempli de magie, de monstres et d’intrigues.",
   reviewHtml: `
   <p>The Beginning After the End m'a vraiment captivé avec son univers incroyablement riche et immersif. Dès les premières pages, j'ai été transporté dans un monde où la magie et les conflits règnent en maîtres, et où chaque recoin révèle de nouveaux mystères à explorer. Ce qui m'a le plus marqué, c'est le protagoniste, cet ancien roi réincarné dans un corps nouveau. Son voyage, entre la quête de puissance et celle de rédemption, m'a profondément touché, car il combine sa sagesse acquise dans sa vie passée avec les défis de sa nouvelle existence.</p>
@@ -2349,32 +2349,6 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   ],
   streaming: [
     { name: "Prime Video", url: "https://www.primevideo.com/search/ref=atv_nb_sr?phrase=Dororo", logo: "" }
-  ],
-  live: []
-},
-{
-  slug: "en-en-no-shouboutai",
-  pros: ["Univers pyrokinétique original et inventif","Galerie de personnages variée et mémorable","Évolution de la mythologie progressive et ambitieuse"],
-  cons: ["Fan service parfois intrusif","Certains arcs intermédiaires en retrait","Comparaison inévitable avec Soul Eater du même auteur"],
-  addedAt: "2026-02-27",
-  title: "En’en no Shouboutai (Fire Force)",
-  category: "manga",
-  tags: "Pompiers · Surnaturel · Action",
-  cover: "/en-en-no-shouboutai.jpg",
-  synopsis: "Des combustions humaines spontanées transforment les victimes en infernaux. Shinra, pompier aux pieds de feu, cherche la vérité sur son passé.",
-  reviewHtml: `
-    <p>Fire Force est la série qui m'a réconcilié avec Atsushi Ohkubo après Soul Eater. L'univers pyrokinétique est immédiatement fascinant, des humains qui s'enflamment spontanément, des brigades de pompiers spéciaux qui combattent ces "infernaux", et derrière tout ça une conspiration bien plus sombre.</p>
-    <p>Shinra est un protagoniste attachant avec son sourire nerveux et son passé douloureux. La Brigade 8 forme une galerie de personnages mémorables, et les combats mettent en valeur des pouvoirs ignés spectaculaires et bien différenciés.</p>
-    <p>La mythologie se dévoile progressivement et ambitieusement, peut-être trop, car certains arcs intermédiaires perdent en rythme ce qu'ils gagnent en worldbuilding. Et le fan service autour d'Tamaki reste une tache sur une série qui méritait mieux. Mais dans l'ensemble, une saga d'action très solide avec une identité visuelle forte.</p>
-  `,
-  stars: 3,
-  shops: [
-    { name: "Manganim", url: "https://manganim.fr/search?q=Fire+Force", logo: "" },
-    { name: "Fnac", url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=fire+force+tome", logo: "" },
-    { name: "Amazon", url: "https://www.amazon.fr/s?k=fire+force+tome", logo: "" }
-  ],
-  streaming: [
-    { name: "Crunchyroll", url: "https://www.crunchyroll.com/search?q=Fire%20Force", logo: "" }
   ],
   live: []
 },
