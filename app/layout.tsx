@@ -15,7 +15,7 @@ export const metadata = {
     url: 'https://mangainsight.com',
     images: [
       {
-        url: '/og-image.jpg',
+        url: '/og-image.png',
         width: 1200,
         height: 630,
         alt: 'MangaInsight — Critiques manga et manhwa',
@@ -26,7 +26,7 @@ export const metadata = {
     card: 'summary_large_image',
     title: 'MangaInsight — Ton guide manga ultime',
     description: 'Critiques détaillées, tops et guides pour explorer les meilleures séries manga et manhwa.',
-    images: ['/og-image.jpg'],
+    images: ['/og-image.png'],
   },
 }
 
