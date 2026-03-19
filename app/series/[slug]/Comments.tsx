@@ -71,8 +71,10 @@ export default function Comments({
 
     if (!user) return setError("Tu dois être connecté pour publier un avis.");
     if (!name.trim()) return setError("Ton pseudo est requis.");
+    if (name.trim().length > 50) return setError("Pseudo trop long (50 caractères max).");
     if (stars < 1 || stars > max) return setError(`Note entre 1 et ${max}.`);
     if (!text.trim()) return setError("Écris un avis.");
+    if (text.trim().length > 1000) return setError("Avis trop long (1000 caractères max).");
 
     setBusy(true);
     const { data, error } = await supabase
@@ -161,14 +163,19 @@ export default function Comments({
           </div>
         </div>
 
-        <textarea
-          value={text}
-          onChange={(e) => setText(e.target.value)}
-          placeholder="Ton avis (reste sympa, pas de spoilers non avertis 🙂)"
-          rows={4}
-          className="w-full rounded-md bg-black/40 border border-white/10 px-3 py-2 outline-none focus:border-violet-400"
-          disabled={!user || busy}
-        />
+        <div className="relative">
+          <textarea
+            value={text}
+            onChange={(e) => setText(e.target.value.slice(0, 1000))}
+            placeholder="Ton avis (reste sympa, pas de spoilers non avertis 🙂)"
+            rows={4}
+            className="w-full rounded-md bg-black/40 border border-white/10 px-3 py-2 outline-none focus:border-violet-400"
+            disabled={!user || busy}
+          />
+          <span className={`absolute bottom-2 right-3 text-[0.65rem] ${text.length > 900 ? "text-orange-400" : "text-white/20"}`}>
+            {text.length}/1000
+          </span>
+        </div>
 
         {error && (
           <div className="text-sm text-red-400 border border-red-400/30 rounded px-3 py-2 bg-red-950/20">

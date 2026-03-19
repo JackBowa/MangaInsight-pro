@@ -5,6 +5,7 @@ import { STREAMING_MAP, STREAMING_INFO } from "@/data/streaming";
 import { SHOPS_MAP, SHOPS_INFO } from "@/data/shops";
 import Comments from "./Comments";
 import CoverImage from "./CoverImage";
+import SerieActions from "./SerieActions";
 
 export function generateStaticParams() {
   return SERIES.map(s => ({ slug: s.slug }));
@@ -174,6 +175,7 @@ export default function SeriePage({ params }: { params: { slug: string } }) {
                 </a>
               )}
             </div>
+            <SerieActions slug={serie.slug} title={serie.title} />
           </div>
         </div>
       </div>
