@@ -2423,5 +2423,39 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
     { name: "Crunchyroll", url: "https://www.crunchyroll.com/search?q=Zatch%20Bell", logo: "" }
   ],
   live: []
-}
+},
+{
+  slug: "one-piece",
+  title: "One Piece",
+  category: "manga",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx30013-BeslEMqiPhlk.jpg",
+  tags: "Action · Aventure · Comédie · Fantasy",
+  stars: 5,
+  addedAt: "2026-03-19",
+  synopsis: "As a child, Monkey D. Luffy was inspired to become a pirate by listening to the tales of the buccaneer \"Red-Haired\" Shanks. But his life changed when Luffy accidentally ate the Gum-Gum Devil Fruit and gained the power to stretch like rubber...at the cost of never being able to swim again! Years later, still vowing to become the king of the pirates, Luffy sets out on his adventure...one guy alone i",
+  pros: ["Combats dynamiques et bien chorégraphiés", "World-building riche et immersif", "Humour efficace qui allège le récit", "Univers fantastique original"],
+  cons: ["Peut nécessiter de s'accrocher au départ"],
+  reviewHtml: `<p>One Piece est une série incontournable du genre Action.  (score AniList : 91/100)</p><p>À compléter avec votre avis personnel.</p>`,
+  shops: [],
+  streaming: [],
+  live: []
+},
+
+{
+  slug: "dragon-ball",
+  title: "Dragon Ball",
+  category: "manga",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx30042-4SetGiEbGc9x.jpg",
+  tags: "Action · Aventure · Comédie · Fantasy · Sci-fi",
+  stars: 4,
+  addedAt: "2026-03-19",
+  synopsis: "Dragon Ball follows the adventures of Son Goku from his childhood through adulthood as he trains in martial arts and explores the world in search of the seven mystical orbs known as the Dragon Balls, which can summon a wish-granting dragon when gathered. Along his journey, Goku makes several friends and battles a wide variety of villains, many of whom also seek the Dragon Balls for their own desir",
+  pros: ["Combats dynamiques et bien chorégraphiés", "World-building riche et immersif", "Humour efficace qui allège le récit", "Univers fantastique original"],
+  cons: ["Certains arcs secondaires moins aboutis"],
+  reviewHtml: `<p>Dragon Ball est une série incontournable du genre Action.  (score AniList : 83/100)</p><p>À compléter avec votre avis personnel.</p>`,
+  shops: [],
+  streaming: [],
+  live: []
+},
+
 ]
