@@ -6,6 +6,10 @@ import SiteFooter from '@/components/SiteFooter'
 export const metadata = {
   metadataBase: new URL('https://mangainsight.com'),
   title: { default: 'MangaInsight', template: '%s · MangaInsight' },
+  icons: {
+    icon: '/icon.svg',
+    shortcut: '/icon.svg',
+  },
   description: 'Critiques détaillées, tops et guides pour explorer les meilleures séries manga et manhwa.',
   openGraph: {
     type: 'website',
