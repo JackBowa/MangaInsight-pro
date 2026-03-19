@@ -75,7 +75,7 @@ export default function NouveautesPage() {
           </div>
           <h1 style={{ fontFamily: "'Bebas Neue', sans-serif", letterSpacing: "0.03em" }}
             className="text-[clamp(3.5rem,7vw,5.5rem)] text-white leading-none mb-4">
-            Les <span className="text-cyan-400">nouveautes</span>
+            Les <span className="text-cyan-400">nouveautés</span>
           </h1>
           <p className="text-[0.95rem] text-white/50 leading-relaxed mb-6">
             Les dernières séries ajoutées sur MangaInsight, triées automatiquement par date d&apos;ajout.
