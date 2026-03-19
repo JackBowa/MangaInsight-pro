@@ -88,6 +88,16 @@ export default function SiteHeader() {
             <span className="hidden lg:inline text-[0.6rem] bg-white/8 border border-white/10 px-1.5 py-0.5 rounded font-mono text-white/30">⌘K</span>
           </button>
 
+          {/* Bouton favoris */}
+          <Link href="/favoris"
+            className={`hidden md:flex items-center gap-1.5 px-3 py-1.5 rounded-lg border text-sm transition-all ${
+              pathname === "/favoris"
+                ? "bg-pink-500/15 border-pink-500/35 text-pink-300"
+                : "bg-white/5 border-white/10 text-white/40 hover:text-pink-300 hover:bg-pink-500/8 hover:border-pink-500/25"
+            }`}>
+            ♥ <span className="text-xs">Favoris</span>
+          </Link>
+
           {/* Auth, masqué sur mobile */}
           <Link href="/compte"
             className="hidden md:block shrink-0 rounded-lg border border-white/10 px-3 py-1.5 text-sm hover:bg-white/10 transition-colors text-white/70">
@@ -121,7 +131,15 @@ export default function SiteHeader() {
                 </Link>
               );
             })}
-            <div className="border-t border-white/8 mt-2 pt-3">
+            <div className="border-t border-white/8 mt-2 pt-3 flex flex-col gap-1">
+              <Link href="/favoris" onClick={() => setMenuOpen(false)}
+                className={`px-4 py-3 rounded-xl text-sm font-medium transition-all block ${
+                  pathname === "/favoris"
+                    ? "bg-pink-500/15 text-pink-300 border border-pink-500/25"
+                    : "text-white/60 hover:text-white hover:bg-white/5"
+                }`}>
+                ♥ Mes favoris
+              </Link>
               <Link href="/compte" onClick={() => setMenuOpen(false)}
                 className="px-4 py-3 rounded-xl text-sm font-medium text-white/60 hover:text-white hover:bg-white/5 transition-all block">
                 {user ? "👤 Mon compte" : "🔑 Se connecter"}
