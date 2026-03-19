@@ -122,6 +122,7 @@ function AuthPanel() {
 export default function AccountPage() {
   const user = useUser();
   const [busy, setBusy] = useState(false);
+  const [saved, setSaved] = useState(false);
 
   // Hook profil (pseudo + avatar)
   const { loading, displayName, setDisplayName, avatarUrl, setAvatarUrl, save } =
@@ -144,8 +145,11 @@ export default function AccountPage() {
   async function onSave(e: React.FormEvent) {
     e.preventDefault();
     setBusy(true);
+    setSaved(false);
     try {
-      await save(); // le hook gère l’update Supabase
+      await save();
+      setSaved(true);
+      setTimeout(() => setSaved(false), 3000);
     } finally {
       setBusy(false);
     }
@@ -193,6 +197,12 @@ export default function AccountPage() {
             disabled={loading || busy}
           />
         </label>
+
+        {saved && (
+          <div className="text-sm text-emerald-300 border border-emerald-400/20 rounded px-3 py-2 bg-emerald-900/20">
+            Profil mis a jour.
+          </div>
+        )}
 
         <div className="flex items-center gap-3">
           <button
