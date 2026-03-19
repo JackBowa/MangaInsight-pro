@@ -651,7 +651,7 @@ export default function Home() {
               <div className="cat-card-desc">Par où commencer ?</div>
             </div>
           </Link>
-          <Link href="/nouveautés" className="cat-card">
+          <Link href="/nouveautes" className="cat-card">
             <span className="cat-icon">🆕</span>
             <div>
               <div className="cat-card-title">Nouveautés</div>

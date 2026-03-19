@@ -2,7 +2,6 @@ import '../styles/globals.css'
 import { ReactNode } from 'react'
 import SiteHeader from '@/components/SiteHeader'
 import SiteFooter from '@/components/SiteFooter'
-import GoogleAnalytics from '@/components/GoogleAnalytics'
 
 export const metadata = {
   metadataBase: new URL('https://mangainsight.com'),
@@ -35,7 +34,6 @@ export default function RootLayout({ children }: { children: ReactNode }) {
   return (
     <html lang="fr" className="dark">
       <body className="min-h-screen flex flex-col">
-        <GoogleAnalytics gaId="G-Z09L6X4Z0W" />
         <SiteHeader />
         <main className="flex-1">{children}</main>
         <SiteFooter />
@@ -43,3 +41,4 @@ export default function RootLayout({ children }: { children: ReactNode }) {
     </html>
   )
 }
+

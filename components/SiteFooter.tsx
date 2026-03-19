@@ -4,7 +4,7 @@ const LINKS = {
   "Explorer": [
     { href: "/critiques", label: "Toutes les critiques" },
     { href: "/tops", label: "Tops & classements" },
-    { href: "/nouveautés", label: "Nouveautés" },
+    { href: "/nouveautes", label: "Nouveautés" },
     { href: "/guides", label: "Guides débutants" },
   ],
   "Top séries": [

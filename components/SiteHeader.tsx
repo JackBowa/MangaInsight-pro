@@ -8,7 +8,7 @@ import { SERIES } from "@/data/series";
 const items = [
   { href: "/", label: "Accueil" },
   { href: "/critiques", label: "Critiques" },
-  { href: "/nouveautés", label: "Nouveautés" },
+  { href: "/nouveautes", label: "Nouveautés" },
   { href: "/tops", label: "Tops" },
   { href: "/guides", label: "Guides" },
   { href: "/recommandations", label: "✨ Trouve ta série" },
