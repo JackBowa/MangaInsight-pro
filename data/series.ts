@@ -2813,15 +2813,37 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   title: "Yu-Gi-Oh!",
   category: "manga",
   cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx30054-HwrRlsJYePNF.jpg",
-  tags: "Action · Aventure · Comédie · Drame · Fantasy",
+  tags: "Jeux · Action · Surnaturel · Shōnen",
   stars: 4,
   addedAt: "2026-03-19",
-  synopsis: "10th grader Yugi spent most of his time alone playing games--until he solved the Millennium Puzzle, a mysterious Egyptian artifact! Possessed by the puzzle, Yugi becomes Yu-Gi-Oh, the King of Games, and challenges evil-doers to the Shadow Games--weird games with high stakes and high risks! These graphic novels contain new stories not seen in the anime, including the origin of Yugi and his friends!",
-  pros: ["Combats dynamiques et bien chorégraphiés", "World-building riche et immersif", "Humour efficace qui allège le récit", "Moments émotionnellement forts"],
-  cons: ["Certains arcs secondaires moins aboutis"],
-  reviewHtml: `<p>Yu-Gi-Oh! est une série incontournable du genre Action.  (score AniList : 77/100)</p><p>À compléter avec votre avis personnel.</p>`,
-  shops: [],
-  streaming: [],
+  synopsis: "Yugi Muto est un lycéen timide qui résout le Puzzle du Millénaire, un artéfact égyptien mystérieux. Il est dès lors habité par l'esprit d'un ancien pharaon dont la mémoire est effacée. Cet alter ego Yami Yugi joue des Jeux des Ténèbres contre les ennemis de Yugi, punissant les tricheurs et les malfaisants. La série évolue progressivement vers le jeu de cartes Duel Monsters qui a connu un succès mondial phénoménal.",
+  pros: ["Impact culturel mondial immense : le jeu de cartes a généré des milliards de revenus","L'arc du Memory World et la révélation sur le passé du pharaon sont emotionnellement forts","La dualité Yugi/Yami est une des meilleures dynamiques de double personnage du manga","Premiers arcs variés avec des jeux inventifs au-delà du seul Duel Monsters"],
+  cons: ["Premiers arcs plus sombres et violents très différents du Duel Monsters qui a suivi","Les règles de Duel Monsters sont parfois difficiles à suivre sans connaître le jeu"],
+  reviewHtml: `<p>Yu-Gi-Oh est le manga qui a lancé l'une des franchises de jeux de cartes les plus lucratives de l'histoire. Kazuki Takahashi avait initialement une vision bien différente : un manga de jeux variés et sombres, où Yami Yugi punissait les méchants par des Jeux des Ténèbres dont les enjeux allaient bien au-delà du loisir. Cette version originale est plus adulte et plus inventive que la série Duel Monsters qu'elle est devenue.</p><p>La dualité entre le timide Yugi et l'altier Yami est l'un des dispositifs narratifs les plus efficaces du shōnen. Leur relation évolue d'une cohabitation vers une véritable amitié et une compréhension mutuelle, et l'arc final sur le passé du pharaon est un climax émotionnel à la hauteur de toute la série.</p><p>Yu-Gi-Oh a vieilli différemment selon ses arcs. Les premiers volumes ont une noirceur fascinante que la franchise officielle a oubliée. L'arc Duel Monsters reste le coeur populaire pour une raison : il est bien construit et émotionnellement généreux.</p>`,
+  shops: [
+  {
+    name: "Manganim",
+    url: "https://manganim.fr/search?q=Yu-Gi-Oh",
+    logo: "https://manganim.fr/cdn/shop/files/logo-manganim-header_180x.png?v=1672862594"
+  },
+  {
+    name: "Fnac",
+    url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=Yu-Gi-Oh+tome",
+    logo: "https://cdn.iconscout.com/icon/free/png-256/free-fnac-3521434-2944878.png"
+  },
+  {
+    name: "Amazon",
+    url: "https://www.amazon.fr/s?k=Yu-Gi-Oh+tome",
+    logo: "https://www.1min30.com/wp-content/uploads/2017/12/logo-amazon-1.jpg"
+  }
+],
+  streaming: [
+  {
+    name: "Crunchyroll",
+    url: "https://www.crunchyroll.com/fr/search?q=Yu-Gi-Oh",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/f/fc/Crunchyroll_logo_2018_vertical.png"
+  }
+],
   live: []
 },
 
@@ -3176,15 +3198,37 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   title: "The Prince of Tennis",
   category: "manga",
   cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx30049-ipwZTsHitrhC.png",
-  tags: "Comédie · Sport",
+  tags: "Tennis · Sport · Shōnen · Comédie",
   stars: 3,
   addedAt: "2026-03-19",
-  synopsis: "Ryoma Echizen just joined the Seishun Academy's tennis team, which is known for being one of the most competitive teams in Japan. Its members are incredibly talented, gifted, and athletic. With rigorous and extremely intense practices, the upperclassmen of the team expect the very best from themselves and they expect even more from the new members of the team. While most of the freshmen are on pin",
-  pros: ["Humour efficace qui allège le récit", "Tension dramatique dans les matchs"],
-  cons: ["Peut nécessiter de s'accrocher au départ"],
-  reviewHtml: `<p>The Prince of Tennis est une série solide du genre Comedy.  (score AniList : 74/100)</p><p>À compléter avec votre avis personnel.</p>`,
-  shops: [],
-  streaming: [],
+  synopsis: "Ryoma Echizen, prodige du tennis de douze ans formé aux États-Unis, intègre l'équipe de tennis du lycée Seishun. Avec ses coéquipiers variés et sous la direction de l'entraîneur Ryuzaki, ils progressent vers les championnats nationaux. Prince of Tennis est le manga de sport qui a popularisé le tennis au Japon tout en poussant les limites du réalisme sportif à leurs extrêmes absolus.",
+  pros: ["A rendu le tennis populaire au Japon auprès d'une génération entière","Galerie de personnages aux styles et personnalités très variés","Les techniques de tennis impossibles ont une iconicité visuelle indéniable","Humour involontaire sur l'escalade des pouvoirs sportifs"],
+  cons: ["Physique du tennis complètement abandonné dès les arcs médians","Ryoma est un protagoniste distant et peu attachant","Les suites (New Prince of Tennis) poussent l'absurde à des niveaux satiriques non intentionnels"],
+  reviewHtml: `<p>Prince of Tennis est un manga de sport qui a choisi à un moment précis de ne plus se soucier du sport. Les premières arcs sont un shōnen tennistique solide, avec des personnages bien différenciés et des matchs tactiques plaisants. Puis Takeshi Konomi a commencé à inventer des techniques qui défient les lois physiques, et le manga s'est transformé en quelque chose d'entièrement différent.</p><p>L'impact culturel du manga sur le tennis japonais est réel, et ses personnages sont immédiatement reconnaissables même pour les non-lecteurs. Ryoma Echizen, cold et dominant, est un archétype du protagoniste shōnen invincible poussé à son extrême logique.</p><p>À lire en sachant ce qu'on cherche : un divertissement shōnen de sport classique dans les premiers arcs, une experience de jeu de puissance de plus en plus délirante dans les suivants.</p>`,
+  shops: [
+  {
+    name: "Manganim",
+    url: "https://manganim.fr/search?q=Prince+of+Tennis",
+    logo: "https://manganim.fr/cdn/shop/files/logo-manganim-header_180x.png?v=1672862594"
+  },
+  {
+    name: "Fnac",
+    url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=Prince+of+Tennis+tome",
+    logo: "https://cdn.iconscout.com/icon/free/png-256/free-fnac-3521434-2944878.png"
+  },
+  {
+    name: "Amazon",
+    url: "https://www.amazon.fr/s?k=Prince+of+Tennis+tome",
+    logo: "https://www.1min30.com/wp-content/uploads/2017/12/logo-amazon-1.jpg"
+  }
+],
+  streaming: [
+  {
+    name: "Crunchyroll",
+    url: "https://www.crunchyroll.com/fr/search?q=Prince%20of%20Tennis",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/f/fc/Crunchyroll_logo_2018_vertical.png"
+  }
+],
   live: []
 },
 
@@ -3488,15 +3532,37 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   title: "Zom 100: Bucket List of the Dead",
   category: "manga",
   cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx104660-NZZdpLJlgHle.jpg",
-  tags: "Action · Comédie · Horreur",
-  stars: 3,
+  tags: "Comédie · Horreur · Action · Seinen",
+  stars: 4,
   addedAt: "2026-03-19",
-  synopsis: "Surviving a zombie apocalypse beats being a wage slave any day! After spending years slaving away for a soul-crushing company, Akira's life has lost its luster. He lives in a trash-filled apartment, his pay is abysmal, and he can't even muster up the nerve to confess his love to his beautiful co-worker. But when a zombie apocalypse ravages his town, it gives him the push he needs to live for himse",
-  pros: ["Combats dynamiques et bien chorégraphiés", "Humour efficace qui allège le récit"],
-  cons: ["Peut nécessiter de s'accrocher au départ"],
-  reviewHtml: `<p>Zom 100: Bucket List of the Dead est une série solide du genre Action.  (score AniList : 74/100)</p><p>À compléter avec votre avis personnel.</p>`,
-  shops: [],
-  streaming: [],
+  synopsis: "Akira Tendo, salaryman épuisé par trois ans de travail dans une entreprise toxique, se réveille un matin face à une apocalypse zombie. Sa réaction : un soulagement total. Il n'a plus à aller au travail. Avec une énergie retrouvée, il dresse sa liste de cent choses à faire avant de devenir zombie, et part à travers le Japon infesté accomplir chacune d'entre elles avec un enthousiasme désarmant.",
+  pros: ["Concept original et subversif : l'apocalypse comme libération d'un travail oppressif","Akira est un protagoniste d'une joie de vivre communicative et contagieuse","Critique sociale sur le karoshi et la culture de travail japonaise pertinente et bien amenée","Équilibre parfait entre humour, action et émotion"],
+  cons: ["Arcs tardifs perdent un peu de la fraîcheur initiale","Le message optimiste peut sembler naïf dans les situations les plus sombres"],
+  reviewHtml: `<p>Zom 100 est l'apocalypse zombie la plus joyeuse jamais mise en scène. Haro Aso et Kotaro Takata ont eu l'idée brillante de faire de la fin du monde une libération : Akira Tendo, que trois ans dans une entreprise de karoshi avaient transformé en zombie avant l'heure, retrouve toute sa vitalité au moment précis où les vrais zombies débarquent.</p><p>Le manga fonctionne comme une critique sociale déguisée en comédie d'action. La liste de cent choses à faire est un inventaire de tout ce qu'une vie de salaryman sacrifie, et chaque item accompli est une petite victoire contre le système qui avait détruit Akira. C'est subversif, généreux et parfaitement calibré.</p><p>Akira est un protagoniste rare dans le manga : quelqu'un qui choisit explicitement la joie, qui court vers la vie plutôt que de fuir la mort. Dans un genre dominé par la survie anxieuse, sa philosophie est une bouffée d'air frais. Un manga qui donne envie de vivre sa liste.</p>`,
+  shops: [
+  {
+    name: "Manganim",
+    url: "https://manganim.fr/search?q=Zom+100",
+    logo: "https://manganim.fr/cdn/shop/files/logo-manganim-header_180x.png?v=1672862594"
+  },
+  {
+    name: "Fnac",
+    url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=Zom+100+tome",
+    logo: "https://cdn.iconscout.com/icon/free/png-256/free-fnac-3521434-2944878.png"
+  },
+  {
+    name: "Amazon",
+    url: "https://www.amazon.fr/s?k=Zom+100+tome",
+    logo: "https://www.1min30.com/wp-content/uploads/2017/12/logo-amazon-1.jpg"
+  }
+],
+  streaming: [
+  {
+    name: "Netflix",
+    url: "https://www.netflix.com/search?q=Zom%20100",
+    logo: "https://images.ctfassets.net/y2ske730sjqp/5QQ9SVIdc1tmkqrtFnG9U1/de758bba0f65dcc1c6bc1f31f161003d/BrandAssets_Logos_02-NSymbol.jpg?w=940"
+  }
+],
   live: []
 },
 
@@ -3505,15 +3571,37 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   title: "The Eminence in Shadow",
   category: "manga",
   cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx106758-jtXpQYQqyNJv.jpg",
-  tags: "Action · Comédie · Fantasy",
+  tags: "Isekai · Comédie · Action · Seinen",
   stars: 4,
   addedAt: "2026-03-19",
-  synopsis: "One big fat lie and a few twisted truths. Even in his past life, Cid's dream wasn't to become a protagonist or a final boss. He'd rather lie low as a minor character until it's prime time to reveal he's a mastermind...or at least, do the next best thing-pretend to be one! And now that he's been reborn into another world, he's ready to set the perfect conditions to live out his dreams to the fulles",
-  pros: ["Combats dynamiques et bien chorégraphiés", "Humour efficace qui allège le récit", "Univers fantastique original"],
-  cons: ["Peut nécessiter de s'accrocher au départ"],
-  reviewHtml: `<p>The Eminence in Shadow est une série incontournable du genre Action.  (score AniList : 80/100)</p><p>À compléter avec votre avis personnel.</p>`,
-  shops: [],
-  streaming: [],
+  synopsis: "Cid Kagenou rêve depuis l'enfance d'être une puissance de l'ombre, un stratège secret qui manipule les événements depuis les coulisses. Réincarné dans un monde de fantasy, il crée une organisation fictive appelée Shadow Garden pour jouer son rôle de maître de l'ombre imaginaire. Le problème : ses inventions absurdes s'avèrent toutes réelles, et Shadow Garden combat de vraies conspiration sans que Cid le sache.",
+  pros: ["Concept de parodie méta de l'isekai d'une intelligence et d'une constance rares","Cid est le personnage le plus délibérément absurde et satisfaisant de l'isekai moderne","Humour sur l'obliviousness totale du protagoniste face à la réalité jamais épuisé","Combats spectaculaires malgré le ton parodique"],
+  cons: ["Les personnages secondaires sont moins développés que le concept principal","Peu d'enjeux émotionnels au-delà de la comédie"],
+  reviewHtml: `<p>The Eminence in Shadow est la meilleure parodie d'isekai depuis One Punch Man. Le concept est d'une simplicité géniale : un garçon convaincu d'être dans un film de genre invente une fiction et la réalité s'y conforme parfaitement, à son insu total. Cid ne sait jamais ce qui se passe vraiment, et c'est pour ça que chaque scène est hilarante.</p><p>Ce qui distingue Touzai et son adaptation manga d'une simple comédie est la cohérence de l'exécution. Les membres de Shadow Garden sont de vraies antagonistes de puissance réelle, et leurs combats sont spectaculaires malgré le fait que Cid les traverse en mode "je joue mon rôle de badass de l'ombre". L'absurde est traité avec un sérieux total, ce qui est le secret de son efficacité.</p><p>The Eminence in Shadow est une lecture jouissive pour quiconque connaît suffisamment les codes de l'isekai pour apprécier leur démolition méthodique et affectueuse.</p>`,
+  shops: [
+  {
+    name: "Manganim",
+    url: "https://manganim.fr/search?q=Eminence+in+Shadow",
+    logo: "https://manganim.fr/cdn/shop/files/logo-manganim-header_180x.png?v=1672862594"
+  },
+  {
+    name: "Fnac",
+    url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=Eminence+in+Shadow+tome",
+    logo: "https://cdn.iconscout.com/icon/free/png-256/free-fnac-3521434-2944878.png"
+  },
+  {
+    name: "Amazon",
+    url: "https://www.amazon.fr/s?k=Eminence+in+Shadow+tome",
+    logo: "https://www.1min30.com/wp-content/uploads/2017/12/logo-amazon-1.jpg"
+  }
+],
+  streaming: [
+  {
+    name: "Crunchyroll",
+    url: "https://www.crunchyroll.com/fr/search?q=The%20Eminence%20in%20Shadow",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/f/fc/Crunchyroll_logo_2018_vertical.png"
+  }
+],
   live: []
 },
 
@@ -3522,15 +3610,37 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   title: "World Trigger",
   category: "manga",
   cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx78151-o2g4GiqaiPyO.jpg",
-  tags: "Action · Sci-fi",
+  tags: "Sci-fi · Action · Tactique · Shōnen",
   stars: 4,
   addedAt: "2026-03-19",
-  synopsis: "A gate to another dimension has burst open, and from it emerge gigantic invincible creatures that threaten all of humanity. Earth's only defense is a mysterious group of warriors who have co-opted the alien technology in order to fight back! (Source: VIZ Media)",
-  pros: ["Combats dynamiques et bien chorégraphiés", "Concepts science-fiction inventifs"],
-  cons: ["Peut nécessiter de s'accrocher au départ"],
-  reviewHtml: `<p>World Trigger est une série incontournable du genre Action.  (score AniList : 77/100)</p><p>À compléter avec votre avis personnel.</p>`,
-  shops: [],
-  streaming: [],
+  synopsis: "Des créatures appelées Neighbors envahissent la ville de Mikado depuis des portails interdimensionnels. La Frontier Defense Agency Border les combat avec des armures appelées Triggers. Osamu Mikumo, agent de Border de niveau C, rencontre Yuma Kuga, un Neighbor qui veut comprendre le monde des humains. World Trigger est un manga tactique d'une rigueur et d'une profondeur rares.",
+  pros: ["Système de combat tactique le plus rigoureusement pensé du manga shōnen","Aucun personnage n'est fort par magie, tout s'explique par la stratégie et l'entraînement","Galerie de personnages d'une richesse exceptionnelle avec chacun leur style de combat","Daisuke Ashihara construit des batailles qui se lisent comme des parties d'échecs"],
+  cons: ["Démarrage très lent les premiers volumes","Interruptions de publication fréquentes à cause de la santé de l'auteur"],
+  reviewHtml: `<p>World Trigger est le manga le plus rigoureux intellectuellement dans le genre shōnen d'action. Daisuke Ashihara a construit un système de combat où la tactique prévaut absolument sur la puissance brute. Aucun personnage ne gagne parce qu'il est "plus fort" : il gagne parce qu'il a mieux préparé, mieux lu la situation, mieux utilisé ses ressources. C'est rare et fascinant.</p><p>Le système de Triggers, avec ses innombrables types d'armes et leurs interactions, est l'un des systèmes de pouvoirs les mieux pensés du manga. Chaque combattant a un set unique adapté à son style, et les batailles font des analyses post-match détaillées qui expliquent les décisions prises. C'est du management sportif appliqué aux arts martiaux fantastiques.</p><p>World Trigger récompense le lecteur patient et attentif. Si vous aimez les combats qui font réfléchir autant que regarder, c'est une référence absolue.</p>`,
+  shops: [
+  {
+    name: "Manganim",
+    url: "https://manganim.fr/search?q=World+Trigger",
+    logo: "https://manganim.fr/cdn/shop/files/logo-manganim-header_180x.png?v=1672862594"
+  },
+  {
+    name: "Fnac",
+    url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=World+Trigger+tome",
+    logo: "https://cdn.iconscout.com/icon/free/png-256/free-fnac-3521434-2944878.png"
+  },
+  {
+    name: "Amazon",
+    url: "https://www.amazon.fr/s?k=World+Trigger+tome",
+    logo: "https://www.1min30.com/wp-content/uploads/2017/12/logo-amazon-1.jpg"
+  }
+],
+  streaming: [
+  {
+    name: "Crunchyroll",
+    url: "https://www.crunchyroll.com/fr/search?q=World%20Trigger",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/f/fc/Crunchyroll_logo_2018_vertical.png"
+  }
+],
   live: []
 },
 
@@ -3539,15 +3649,37 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   title: "Undead Unluck",
   category: "manga",
   cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx114791-Rj07uWUnsgLY.jpg",
-  tags: "Action · Comédie · Sci-fi · Surnaturel",
+  tags: "Action · Surnaturel · Comédie · Shōnen",
   stars: 4,
   addedAt: "2026-03-19",
-  synopsis: "What happens when an unlucky girl meets an undead guy? Pure chaos! All Fuuko wants is a passionate romance like the one in her favorite shojo manga. Unfortunately, her Unluck ability makes that impossible. But just as Fuuko hits rock bottom, Andy sweeps her off her feet—literally! Now she’s become Andy’s unwilling test subject as he works to find a way to trigger a stroke of Unluck big enough to k",
-  pros: ["Combats dynamiques et bien chorégraphiés", "Humour efficace qui allège le récit", "Concepts science-fiction inventifs"],
-  cons: ["Peut nécessiter de s'accrocher au départ"],
-  reviewHtml: `<p>Undead Unluck est une série incontournable du genre Action.  (score AniList : 77/100)</p><p>À compléter avec votre avis personnel.</p>`,
-  shops: [],
-  streaming: [],
+  synopsis: "Fuuko Izumo a le pouvoir maudit de l'Unluck : tout être vivant qui la touche subit une malchance catastrophique. Andy est un immortel qui cherche désespérément à mourir mais ne le peut pas. Leur rencontre donne naissance à un duo explosif qui intègre l'organisation Union, chargée de gérer les porteurs de pouvoirs négatifs. Undead Unluck est une série d'action créative dont le système de pouvoirs est parmi les plus inventifs du Jump.",
+  pros: ["Système de pouvoirs basé sur des concepts abstraits d'une créativité exceptionnelle","Dynamique Andy-Fuuko de comédie et de romance bien dosée","Chaque arc introduit de nouveaux pouvoirs originaux qui renouvellent constamment l'action","Yoshifumi Tozuka a une imagination visuelle débordante"],
+  cons: ["Peut sembler chaotique dans ses premiers chapitres le temps que le système soit établi","Certains arcs médians moins inspirés"],
+  reviewHtml: `<p>Undead Unluck est la série la plus créativement ambitieuse du Weekly Shōnen Jump de ces dernières années. Yoshifumi Tozuka a inventé un système de pouvoirs basé sur des concepts négatifs abstraits, l'Unluck, l'Undead, l'Unseen, l'Unfair, chacun avec ses propres règles et ses propres limites, d'une inventivité que très peu de manga ont égalée.</p><p>Andy et Fuuko forment un duo d'une chimie remarquable. Leur relation, qui commence par l'absurde, se construit vers quelque chose d'émotionnellement réel avec une habileté que les fans de romance apprécieront. Les enjeux personnels et cosmiques s'entremêlent de façon satisfaisante.</p><p>Undead Unluck est le genre de manga qu'on recommande à quelqu'un qui veut quelque chose de frais dans le shōnen d'action. Ça ne ressemble pas à grand chose d'autre, et c'est déjà une grande qualité.</p>`,
+  shops: [
+  {
+    name: "Manganim",
+    url: "https://manganim.fr/search?q=Undead+Unluck",
+    logo: "https://manganim.fr/cdn/shop/files/logo-manganim-header_180x.png?v=1672862594"
+  },
+  {
+    name: "Fnac",
+    url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=Undead+Unluck+tome",
+    logo: "https://cdn.iconscout.com/icon/free/png-256/free-fnac-3521434-2944878.png"
+  },
+  {
+    name: "Amazon",
+    url: "https://www.amazon.fr/s?k=Undead+Unluck+tome",
+    logo: "https://www.1min30.com/wp-content/uploads/2017/12/logo-amazon-1.jpg"
+  }
+],
+  streaming: [
+  {
+    name: "Crunchyroll",
+    url: "https://www.crunchyroll.com/fr/search?q=Undead%20Unluck",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/f/fc/Crunchyroll_logo_2018_vertical.png"
+  }
+],
   live: []
 },
 
@@ -3595,14 +3727,30 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   title: "Witch Hat Atelier",
   category: "manga",
   cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx98263-kIeaTXrAbGkj.jpg",
-  tags: "Aventure · Drame · Fantasy",
+  tags: "Fantasy · Magie · Seinen · Aventure",
   stars: 5,
   addedAt: "2026-03-19",
-  synopsis: "In a world where everyone takes wonders like magic spells and dragons for granted, Coco is a girl with a simple dream: she wants to be a witch. But everybody knows magicians are born, not made, and Coco was not born with a gift for magic. Resigned to her un-magical life, Coco is about to give up on her dream to become a witch … until the day she meets Qifrey, a mysterious, traveling magician. Afte",
-  pros: ["World-building riche et immersif", "Moments émotionnellement forts", "Univers fantastique original"],
-  cons: ["Peut nécessiter de s'accrocher au départ"],
-  reviewHtml: `<p>Witch Hat Atelier est une série incontournable du genre Adventure.  (score AniList : 86/100)</p><p>À compléter avec votre avis personnel.</p>`,
-  shops: [],
+  synopsis: "Coco rêve de magie depuis toujours, mais dans son monde, la sorcellerie est un talent de naissance réservé à une caste héréditaire. En espionnant une sorcière, elle découvre le secret interdit : la magie s'apprend, elle se trace. Après avoir involontairement pétrifié sa mère, elle est prise comme apprentie par le sorcier Qifrey pour réparer son erreur et apprendre l'art des Chapeaux de Sorcière.",
+  pros: ["Art de Kamome Shirahama d'une beauté et d'une précision techniques absolument exceptionnelles","Worldbuilding de la magie-écriture d'une cohérence et d'une originalité rares","Thèmes sur l'accessibilité de la connaissance et les systèmes d'exclusion traités avec profondeur","Rythme contemplatif qui magnifie chaque révélation"],
+  cons: ["Rythme de publication très lent, les volumes sortent avec des intervalles importants","Peu d'action au sens classique, manga avant tout d'atmosphère et de mystère"],
+  reviewHtml: `<p>Witch Hat Atelier est peut-être le manga le plus beau visuellement publié en ce moment. Kamome Shirahama dessine chaque page avec une minutie et une maîtrise qui relèvent de l'orfèvrerie. Les sorts, qui se tracent comme des glyphes complexes, sont dessinés avec une précision qui donne à la magie une tangibilité réelle et fascinante.</p><p>Mais Witch Hat Atelier n'est pas que visuellement exceptionnel. Son worldbuilding pose une question subversive : et si la magie n'était pas un don héréditaire mais une technique apprise, et si l'aristocratie magique maintenait ce mensonge pour conserver son pouvoir ? Coco, en découvrant la vérité, devient malgré elle une figure révolutionnaire.</p><p>Les thèmes sur l'exclusion, la transmission du savoir et le coût des systèmes d'élite sont traités avec une intelligence qui transcende le public cible apparent. Witch Hat Atelier est un chef-d'oeuvre en cours de construction. Cinq étoiles mérités dès maintenant.</p>`,
+  shops: [
+  {
+    name: "Manganim",
+    url: "https://manganim.fr/search?q=Witch+Hat+Atelier",
+    logo: "https://manganim.fr/cdn/shop/files/logo-manganim-header_180x.png?v=1672862594"
+  },
+  {
+    name: "Fnac",
+    url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=Witch+Hat+Atelier+tome",
+    logo: "https://cdn.iconscout.com/icon/free/png-256/free-fnac-3521434-2944878.png"
+  },
+  {
+    name: "Amazon",
+    url: "https://www.amazon.fr/s?k=Witch+Hat+Atelier+tome",
+    logo: "https://www.1min30.com/wp-content/uploads/2017/12/logo-amazon-1.jpg"
+  }
+],
   streaming: [],
   live: []
 },
@@ -3807,15 +3955,37 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   title: "The Ancient Magus' Bride",
   category: "manga",
   cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/nx85435-GEy771ZSyuO0.jpg",
-  tags: "Drame · Fantasy · Romance · Quotidien · Surnaturel",
+  tags: "Fantasy · Romance · Surnaturel · Seinen",
   stars: 4,
   addedAt: "2026-03-19",
-  synopsis: "Hatori Chise has lived most of her short 15-year life full of neglect and abuse, and devoid of love. With no familial warmth, she's had more than her share of troubles and pitfalls. Just when it seems like life can't get any worse, she's now being sold at a slave auction! When a cloaked man, with the head of a beast' skull and wielding strange powers, purchases her, Chise’s life will never be the ",
-  pros: ["Moments émotionnellement forts", "Univers fantastique original"],
-  cons: ["Certains arcs secondaires moins aboutis"],
-  reviewHtml: `<p>The Ancient Magus' Bride est une série incontournable du genre Drama.  (score AniList : 81/100)</p><p>À compléter avec votre avis personnel.</p>`,
-  shops: [],
-  streaming: [],
+  synopsis: "Chise Hatori, orpheline de seize ans sans foyer ni avenir, se vend aux enchères dans un marché de l'occulte. Elle est achetée par Elias Ainsworth, une créature magique à tête de crâne animal, qui lui révèle qu'elle est une Sleigh Beggy, une rare source de magie capable d'en absorber et en donner. Il lui annonce qu'il en fera sa fiancée et son apprentie. Un conte de fées sombre sur la guérison et l'appartenance.",
+  pros: ["Worldbuilding du folklore européen et japonais d'une richesse et d'une beauté rares","Chise est un personnage fragile et attachant dont la guérison progressive est émouvante","Art de Kore Yamazaki d'une beauté envoûtante","Exploration sincère du deuil, de l'acceptation de soi et du désir d'appartenir"],
+  cons: ["Relation fiancé/apprentie entre une mineure et une entité ancienne inconfortable pour certains lecteurs","Rythme contemplatif qui peut décourager les lecteurs d'action"],
+  reviewHtml: `<p>The Ancient Magus' Bride est un manga qui ressemble à un conte de fées adulte : beau, étrange, parfois sombre, avec des créatures qui défient la catégorisation morale. Kore Yamazaki a construit un univers où le folklore des îles britanniques et la magie japonaise coexistent naturellement, et l'ensemble est visuellement somptueux.</p><p>Chise est un personnage d'une vulnérabilité touchante. Une fille qui se croit sans valeur et qui accepte sa vente comme une délivrance apprend lentement à désirer vivre pour elle-même. Sa relation avec Elias, entité ancienne qui ne comprend pas les émotions humaines mais cherche à les apprendre, est complexe et traitée avec une honnêteté qui évite les facilités romantiques.</p><p>The Ancient Magus' Bride récompense les lecteurs patients qui cherchent quelque chose d'atmosphérique et d'émotionnellement riche. C'est un manga qui s'apprécie comme un conte, pas comme une aventure.</p>`,
+  shops: [
+  {
+    name: "Manganim",
+    url: "https://manganim.fr/search?q=Ancient+Magus+Bride",
+    logo: "https://manganim.fr/cdn/shop/files/logo-manganim-header_180x.png?v=1672862594"
+  },
+  {
+    name: "Fnac",
+    url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=Ancient+Magus+Bride+tome",
+    logo: "https://cdn.iconscout.com/icon/free/png-256/free-fnac-3521434-2944878.png"
+  },
+  {
+    name: "Amazon",
+    url: "https://www.amazon.fr/s?k=Ancient+Magus+Bride+tome",
+    logo: "https://www.1min30.com/wp-content/uploads/2017/12/logo-amazon-1.jpg"
+  }
+],
+  streaming: [
+  {
+    name: "Crunchyroll",
+    url: "https://www.crunchyroll.com/fr/search?q=The%20Ancient%20Magus%20Bride",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/f/fc/Crunchyroll_logo_2018_vertical.png"
+  }
+],
   live: []
 },
 
@@ -3824,15 +3994,37 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   title: "Toilet-Bound Hanako-kun",
   category: "manga",
   cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/nx98842-Ji0v423UZ4er.jpg",
-  tags: "Action · Comédie · Drame · Mystère · Romance",
-  stars: 5,
+  tags: "Surnaturel · Romance · Mystère · Shōnen",
+  stars: 4,
   addedAt: "2026-03-19",
-  synopsis: "\"Hanako-san, Hanako-san... are you there?\" At Kamome Academy, rumors abound about the school's Seven Mysteries, one of which is Hanako-san. Said to occupy the third stall of the third floor girls' bathroom in the old school building, Hanako-san grants any wish when summoned. Nene Yashiro, an occult-loving high school girl who dreams of romance, ventures into this haunted bathroom... but the Hanako",
-  pros: ["Combats dynamiques et bien chorégraphiés", "Humour efficace qui allège le récit", "Moments émotionnellement forts", "Intrigue bien construite"],
-  cons: ["Certains arcs secondaires moins aboutis"],
-  reviewHtml: `<p>Toilet-Bound Hanako-kun est une série incontournable du genre Action.  (score AniList : 85/100)</p><p>À compléter avec votre avis personnel.</p>`,
-  shops: [],
-  streaming: [],
+  synopsis: "Nene Yashiro convoque le fantôme de la toilette du troisième niveau de son lycée pour exaucer son voeu romantique, et se retrouve liée à Hanako, esprit espiègle mais puissant, comme son assistant. Ensemble, ils gèrent les mystères surnaturels de l'école et les Sept Merveilles qui l'habitent. Aida Iro signe un manga d'atmosphère gothique à l'art unique et à la narration émotionnellement dense.",
+  pros: ["Art de Aida Iro d'une originalité visuelle absolument unique dans le manga","Atmosphère qui mélange humour léger et horreur folk japonaise avec une expertise rare","Lore des Sept Merveilles d'une richesse et d'une cohérence impressionnantes","Moments émotionnels d'une profondeur inattendue pour un shōnen"],
+  cons: ["Rythme irrégulier, certains arcs plus lents que d'autres","La romance reste très implicite pour les lecteurs qui l'attendent"],
+  reviewHtml: `<p>Toilet-Bound Hanako-kun est visuellement l'un des manga les plus originaux de sa génération. Aida Iro a développé un style graphique immédiatement reconnaissable, avec ses aplats de couleurs vives, ses décorations géométriques et ses designs de personnages impossibles à confondre avec n'importe quel autre manga.</p><p>Derrière l'humour et la légèreté apparente, le manga cache une mélancolie profonde. Hanako est un personnage d'une complexité que ses fanfaronnades dissimulent soigneusement. Les arcs qui révèlent son passé et sa nature réelle sont parmi les plus émouvants du shōnen récent.</p><p>Le lore des Sept Merveilles de l'école est un worldbuilding fantastique d'une cohérence et d'une inventivité impressionnantes. Chaque mystère révélé en ouvre plusieurs autres. Un manga qui récompense l'attention et la fidélité.</p>`,
+  shops: [
+  {
+    name: "Manganim",
+    url: "https://manganim.fr/search?q=Toilet+Bound+Hanako-kun",
+    logo: "https://manganim.fr/cdn/shop/files/logo-manganim-header_180x.png?v=1672862594"
+  },
+  {
+    name: "Fnac",
+    url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=Toilet+Bound+Hanako-kun+tome",
+    logo: "https://cdn.iconscout.com/icon/free/png-256/free-fnac-3521434-2944878.png"
+  },
+  {
+    name: "Amazon",
+    url: "https://www.amazon.fr/s?k=Toilet+Bound+Hanako-kun+tome",
+    logo: "https://www.1min30.com/wp-content/uploads/2017/12/logo-amazon-1.jpg"
+  }
+],
+  streaming: [
+  {
+    name: "Crunchyroll",
+    url: "https://www.crunchyroll.com/fr/search?q=Toilet-Bound%20Hanako-kun",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/f/fc/Crunchyroll_logo_2018_vertical.png"
+  }
+],
   live: []
 },
 
@@ -3919,15 +4111,37 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   title: "The Case Study of Vanitas",
   category: "manga",
   cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx86568-IibEQI2zjYFl.jpg",
-  tags: "Action · Drame · Fantasy · Mystère · Surnaturel",
+  tags: "Fantasy · Romance · Aventure · Seinen",
   stars: 4,
   addedAt: "2026-03-19",
-  synopsis: "Rumors revolving around The Book of Vanitas, a clockwork grimoire of dubious reputation, draw Noé, a young vampire in search of a friend's salvation, to Paris. What awaits him in the City of Flowers, however, is not long hours treading the pavement or rifling through dusty bookshops in search of the tome. Instead, his quarry comes to him...in the arms of a man claiming to be a vampire doctor! Thru",
-  pros: ["Combats dynamiques et bien chorégraphiés", "Moments émotionnellement forts", "Univers fantastique original", "Intrigue bien construite"],
-  cons: ["Certains arcs secondaires moins aboutis"],
-  reviewHtml: `<p>The Case Study of Vanitas est une série incontournable du genre Action.  (score AniList : 83/100)</p><p>À compléter avec votre avis personnel.</p>`,
-  shops: [],
-  streaming: [],
+  synopsis: "Dans un Paris steampunk du XIXe siècle, Noé Archiviste arrive depuis le monde des vampires à la recherche du mystérieux Livre de Vanitas. Il rencontre Vanitas, un humain excentrique et arrogant qui prétend posséder ce grimoire maudit et l'utilise pour soigner les vampires corrompus par leurs noms. Une aventure sur fond de comédie, de secrets et de manipulation entre deux personnages que tout oppose.",
+  pros: ["Direction artistique steampunk de Paris d'une élégance et d'une richesse remarquables","Dynamique Noé-Vanitas hilarante et progressivement touchante","Jun Mochizuki maîtrise la gestion des révélations et du mystère","Humour et drama équilibrés avec expertise"],
+  cons: ["Structure narrative complexe avec de nombreux fils qui exigent de l'attention","Rythme lent dans certains arcs de worldbuilding"],
+  reviewHtml: `<p>The Case Study of Vanitas est Jun Mochizuki au meilleur de sa forme. Après Pandora Hearts, elle revient avec un manga vampirique steampunk d'une sophistication narrative et visuelle impressionnante. Le Paris imaginaire qu'elle construit est un personnage en soi, somptueux et cohérent.</p><p>La relation entre Noé et Vanitas est le coeur du manga. Leur dynamique de binôme comique cache des enjeux bien plus sombres que ce que leurs chamailleries laissent entrevoir. Mochizuki excelle dans cet art de laisser des indices que le lecteur assemble progressivement en quelque chose d'inévitable et douloureux.</p><p>Pour les amateurs de fantasy romantique avec du mystère et de l'humour, The Case Study of Vanitas est parmi les meilleures propositions du manga actuel. Une oeuvre ambitieuse qui tient ses promesses.</p>`,
+  shops: [
+  {
+    name: "Manganim",
+    url: "https://manganim.fr/search?q=Case+Study+of+Vanitas",
+    logo: "https://manganim.fr/cdn/shop/files/logo-manganim-header_180x.png?v=1672862594"
+  },
+  {
+    name: "Fnac",
+    url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=Case+Study+of+Vanitas+tome",
+    logo: "https://cdn.iconscout.com/icon/free/png-256/free-fnac-3521434-2944878.png"
+  },
+  {
+    name: "Amazon",
+    url: "https://www.amazon.fr/s?k=Case+Study+of+Vanitas+tome",
+    logo: "https://www.1min30.com/wp-content/uploads/2017/12/logo-amazon-1.jpg"
+  }
+],
+  streaming: [
+  {
+    name: "Crunchyroll",
+    url: "https://www.crunchyroll.com/fr/search?q=The%20Case%20Study%20of%20Vanitas",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/f/fc/Crunchyroll_logo_2018_vertical.png"
+  }
+],
   live: []
 },
 
@@ -4053,15 +4267,37 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   title: "Your Lie in April",
   category: "manga",
   cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx67707-srHFl9GBmfig.png",
-  tags: "Drame · Romance · Quotidien",
-  stars: 4,
+  tags: "Romance · Musique · Drame · Shōnen",
+  stars: 5,
   addedAt: "2026-03-19",
-  synopsis: "Kosei Arima was a piano prodigy until his cruel taskmaster of a mother died suddenly, changing his life forever. Driven by his pain to abandon piano, Kosei now lives in a monotonous, colorless world. Having resigned himself to a bland life, he is surprised when he meets Kaori Miyazono, a violinist with an unorthodox style. Can she bring Kosei back to music, and back to life? (Source: Kodansha Comi",
-  pros: ["Moments émotionnellement forts", "Personnages attachants", "Narration solide"],
-  cons: ["Peut nécessiter de s'accrocher au départ"],
-  reviewHtml: `<p>Your Lie in April est une série incontournable du genre Drama.  (score AniList : 82/100)</p><p>À compléter avec votre avis personnel.</p>`,
-  shops: [],
-  streaming: [],
+  synopsis: "Kousei Arima était un prodige du piano surnommé la Machine Humaine pour sa précision mécanique, jusqu'au jour où, à la suite du décès de sa mère tyrannique et aimante à la fois, il devient incapable d'entendre sa propre musique. Deux ans plus tard, il rencontre la violoniste Kaori Miyazono, imprévisible et lumineuse, qui va le forcer à remonter sur scène et à ressentir à nouveau.",
+  pros: ["L'une des histoires d'amour les plus dévastatrices et les plus belles du manga","Représentation musicale visuelle d'une poésie et d'une originalité remarquables","Kaori Miyazono est un personnage inoubliable dont la présence illumine chaque page","Conclusion parmi les plus courageuses et les plus déchirantes du manga romantique"],
+  cons: ["Très éprouvant émotionnellement, déconseillé en état de fragilité","Certains flashbacks de l'enfance de Kousei sont difficiles à traverser"],
+  reviewHtml: `<p>Your Lie in April est l'un des manga les plus douloureux et les plus beaux qu'on puisse lire. Naoshi Arakawa raconte une histoire d'amour et de musique avec une sincérité totale, sans jamais mentir à son lecteur sur où ça va, et cette honnêteté rend chaque chapitre à la fois lumineux et insupportable.</p><p>Kaori Miyazono est un personnage d'exception. Elle incarne quelque chose d'absolument singulier : la joie totale de vivre dans le présent, même quand le présent est tout ce qu'il reste. Son influence sur Kousei n'est pas celle d'une muse passive, c'est une force active qui choisit de donner tout ce qu'elle a.</p><p>La représentation visuelle de la musique dans Your Lie in April est l'une des réalisations graphiques les plus remarquables du manga. Arakawa traduit le son en lumière, en mouvement, en pages qui semblent résonner. C'est une oeuvre qui fait entendre ce qu'on ne peut pas voir.</p><p>Your Lie in April vous brisera. Et vous vous en souviendrez toute votre vie.</p>`,
+  shops: [
+  {
+    name: "Manganim",
+    url: "https://manganim.fr/search?q=Your+Lie+in+April",
+    logo: "https://manganim.fr/cdn/shop/files/logo-manganim-header_180x.png?v=1672862594"
+  },
+  {
+    name: "Fnac",
+    url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=Your+Lie+in+April+tome",
+    logo: "https://cdn.iconscout.com/icon/free/png-256/free-fnac-3521434-2944878.png"
+  },
+  {
+    name: "Amazon",
+    url: "https://www.amazon.fr/s?k=Your+Lie+in+April+tome",
+    logo: "https://www.1min30.com/wp-content/uploads/2017/12/logo-amazon-1.jpg"
+  }
+],
+  streaming: [
+  {
+    name: "Netflix",
+    url: "https://www.netflix.com/search?q=Your%20Lie%20in%20April",
+    logo: "https://images.ctfassets.net/y2ske730sjqp/5QQ9SVIdc1tmkqrtFnG9U1/de758bba0f65dcc1c6bc1f31f161003d/BrandAssets_Logos_02-NSymbol.jpg?w=940"
+  }
+],
   live: []
 },
 
@@ -4499,15 +4735,37 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   title: "Yahari Ore no Seishun Love Come wa Machigatteiru. Monologue",
   category: "manga",
   cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx75447-g0pXtV8FB0JP.jpg",
-  tags: "Comédie · Romance",
+  tags: "Romance · Psychologie · Seinen · École",
   stars: 4,
   addedAt: "2026-03-19",
-  synopsis: "Hikigaya Hachiman is a high school boy with twisted character. He prefers to go against the trend and refuses to make friends with anybody. In order to get Hachiman back the right track, his school teacher Hiratsuka Shizuka forces him to enter 'Public Service Club'. There he meets other problematic students.",
-  pros: ["Humour efficace qui allège le récit", "Personnages attachants", "Narration solide"],
-  cons: ["Peut nécessiter de s'accrocher au départ"],
-  reviewHtml: `<p>Yahari Ore no Seishun Love Come wa Machigatteiru. Monologue est une série incontournable du genre Comedy.  (score AniList : 78/100)</p><p>À compléter avec votre avis personnel.</p>`,
-  shops: [],
-  streaming: [],
+  synopsis: "Hachiman Hikigaya, lycéen cynique convaincu que les liens humains sont des illusions, est forcé d'intégrer le Club de Service avec Yukino Yukinoshita, aussi solitaire et acerbe que lui, et Yui Yuigahama, sincère et sociable. À travers les demandes d'autres élèves, ils aident les autres tout en évitant soigneusement de s'aider eux-mêmes. OreGairu est une étude psychologique sur la solitude, l'honnêteté et le coût des relations.",
+  pros: ["Hachiman est l'un des protagonistes les plus complexes et les plus honnêtes du manga scolaire","Dialogue d'une densité philosophique rare sur la nature des liens et de l'authenticité","Triangle émotionnel Hachiman-Yukino-Yui traité avec une nuance remarquable","Conclusion honnête qui respecte les contradictions des personnages"],
+  cons: ["Très verbal et introspectif, peu adapté aux lecteurs qui cherchent de l'action ou de la légèreté","L'adaptation manga de la light novel perd parfois en profondeur"],
+  reviewHtml: `<p>OreGairu est une des oeuvres les plus honnêtes jamais écrites sur l'adolescence et la peur des relations authentiques. Wataru Watari a créé avec Hachiman Hikigaya un personnage dont le cynisme n'est pas une posture cool mais une stratégie de survie psychologique : si je n'attends rien, je ne serai pas déçu. La voir se fissurer progressivement est l'arc de personnage le plus bien construit du manga scolaire.</p><p>La relation entre Hachiman, Yukino et Yui est d'une complexité émotionnelle qui dépasse largement la romance conventionnelle. Tous trois se protègent avec des mécanismes différents, et leur chemin vers une connexion réelle est parsemé de reculs, de malentendus et de douloureuses honnêtetés.</p><p>OreGairu est lent, dense et parfois épuisant. C'est aussi l'une des représentations les plus justes de comment certains adolescents vivent vraiment l'intériorité. Un manga important pour qui se reconnaît dans Hachiman.</p>`,
+  shops: [
+  {
+    name: "Manganim",
+    url: "https://manganim.fr/search?q=OreGairu",
+    logo: "https://manganim.fr/cdn/shop/files/logo-manganim-header_180x.png?v=1672862594"
+  },
+  {
+    name: "Fnac",
+    url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=OreGairu+tome",
+    logo: "https://cdn.iconscout.com/icon/free/png-256/free-fnac-3521434-2944878.png"
+  },
+  {
+    name: "Amazon",
+    url: "https://www.amazon.fr/s?k=OreGairu+tome",
+    logo: "https://www.1min30.com/wp-content/uploads/2017/12/logo-amazon-1.jpg"
+  }
+],
+  streaming: [
+  {
+    name: "Crunchyroll",
+    url: "https://www.crunchyroll.com/fr/search?q=My%20Teen%20Romantic%20Comedy%20SNAFU",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/f/fc/Crunchyroll_logo_2018_vertical.png"
+  }
+],
   live: []
 },
 
@@ -4555,14 +4813,30 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   title: "Uzumaki: Spiral into Horror",
   category: "manga",
   cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx30436-Opk9ZubMPuDU.jpg",
-  tags: "Drame · Horreur · Mystère · Psychologie · Romance",
-  stars: 4,
+  tags: "Horreur · Psychologie · Seinen · Junji Ito",
+  stars: 5,
   addedAt: "2026-03-19",
-  synopsis: "Kurozu-cho, a small fogbound town on the coast of Japan, is cursed. According to Shuichi Saito, the withdrawn boyfriend of teenager Kirie Goshima, their town is haunted not by a person or being but by a pattern: uzumaki, the spiral, the hypnotic secret shape of the world. It manifests itself in small ways: seashells, ferns, whirlpools in water, whirlwinds in air. And in large ways: the spiral mark",
-  pros: ["Moments émotionnellement forts", "Profondeur psychologique des personnages", "Intrigue bien construite"],
-  cons: ["Certains arcs secondaires moins aboutis"],
-  reviewHtml: `<p>Uzumaki: Spiral into Horror est une série incontournable du genre Drama.  (score AniList : 79/100)</p><p>À compléter avec votre avis personnel.</p>`,
-  shops: [],
+  synopsis: "Dans la petite ville côtière de Kurouzu, les habitants commencent à développer une obsession maladive pour la spirale. Des escargots géants aux cheveux qui tournent, des tornades qui aspirent les âmes aux bâtiments qui se tordent en colimaçon, la ville entière est progressivement dévorée par la malédiction de la spirale. Junji Ito signe avec Uzumaki son oeuvre la plus ambitieuse et la plus terrifiante.",
+  pros: ["Concept d'horreur d'une originalité absolue, rien d'autre n'y ressemble dans toute la bande dessinée","Imagination visuelle de Junji Ito au sommet de sa forme sur chaque chapitre","Escalade progressive et inexorable vers l'horreur cosmique parfaitement dosée","Finale d'une cohérence et d'une ambition remarquables"],
+  cons: ["Certains chapitres isolés moins forts que l'ensemble","Sujette aux cauchemars, déconseillée avant de dormir"],
+  reviewHtml: `<p>Uzumaki est l'oeuvre maîtresse de Junji Ito, et l'une des oeuvres d'horreur les plus originales jamais créées dans n'importe quel médium. Le concept de la spirale comme source de terreur cosmique est d'une simplicité abstraite qui permet une escalade d'inventions visuelles sans limite. Chaque chapitre explore une nouvelle manifestation de la malédiction, et chaque nouvelle manifestation est plus perturbante que la précédente.</p><p>Ce qui rend Uzumaki particulièrement efficace, c'est sa logique interne parfaite. La spirale n'est pas juste un motif décoratif de l'horreur, c'est une force cosmique avec ses propres règles que le manga explore méthodiquement jusqu'à leurs conséquences ultimes. La ville de Kurouzu se transforme selon une progression géométrique cauchemardesque mais rigoureuse.</p><p>L'art de Ito est ici au sommet de ses capacités expressives. Ses doubles pages de transformation architecturale et humaine sont des chefs-d'oeuvre graphiques qui restent gravés dans la mémoire. Un manga à lire absolument, avec les lumières allumées.</p>`,
+  shops: [
+  {
+    name: "Manganim",
+    url: "https://manganim.fr/search?q=Uzumaki+Junji+Ito",
+    logo: "https://manganim.fr/cdn/shop/files/logo-manganim-header_180x.png?v=1672862594"
+  },
+  {
+    name: "Fnac",
+    url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=Uzumaki+Junji+Ito+tome",
+    logo: "https://cdn.iconscout.com/icon/free/png-256/free-fnac-3521434-2944878.png"
+  },
+  {
+    name: "Amazon",
+    url: "https://www.amazon.fr/s?k=Uzumaki+Junji+Ito+tome",
+    logo: "https://www.1min30.com/wp-content/uploads/2017/12/logo-amazon-1.jpg"
+  }
+],
   streaming: [],
   live: []
 },
@@ -4867,15 +5141,37 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   title: "Skeleton Knight in Another World",
   category: "manga",
   cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx87239-SYX4tnwAzmhN.jpg",
-  tags: "Action · Aventure · Fantasy",
-  stars: 3,
+  tags: "Isekai · Comédie · Fantasy · Action",
+  stars: 2,
   addedAt: "2026-03-19",
-  synopsis: "One day, a gamer played video games until he fell asleep…and when he woke up, he found himself in the game world–as a skeleton! Equipped with the powerful weapons and armor of his avatar but stuck with its frightening skeletal appearance, Arc has to find a place for himself in this new, fantastical land. All his hopes for a quiet life are dashed when he crosses paths with a beautiful elven warrior",
-  pros: ["Combats dynamiques et bien chorégraphiés", "World-building riche et immersif", "Univers fantastique original"],
-  cons: ["Rythme parfois irrégulier"],
-  reviewHtml: `<p>Skeleton Knight in Another World est une série solide du genre Action.  (score AniList : 68/100)</p><p>À compléter avec votre avis personnel.</p>`,
-  shops: [],
-  streaming: [],
+  synopsis: "Un joueur se réveille dans le monde de son jeu préféré, mais son avatar est un squelette en armure complète — impossible à retirer sans perdre sa magie. Sous le nom d'Arc, il parcourt ce monde médiéval fantastique en essayant de dissimuler sa nature monstrueuse, tout en aidant les gens qu'il croise et en découvrant les injustices de cette société.",
+  pros: ["Prémisse sympathique du héros caché sous une apparence monstrueuse","Action fluide et combats dynamiques","Ton léger et humoristique accessible"],
+  cons: ["Peu de profondeur narrative ou de développement de personnages","Protagoniste trop puissant sans vrai challenge","Très générique dans ses conventions d'isekai"],
+  reviewHtml: `<p>Skeleton Knight in Another World est un isekai honnête qui fait ce qu'il promet sans prétendre à plus. Arc est un protagoniste sympathique et sa situation de squelette inadapté au monde humain génère quelques gags amusants. La contrainte visuelle de son armure est exploitée correctement.</p><p>Le manga souffre des maux habituels du genre : un protagoniste trop puissant, des enjeux limités, une progression prévisible. Pour les lecteurs qui cherchent une fantasy légère et détendue sans attente particulière, c'est une lecture agréable. Pour ceux qui cherchent de la profondeur, ce n'est pas ici qu'il faut chercher.</p>`,
+  shops: [
+  {
+    name: "Manganim",
+    url: "https://manganim.fr/search?q=Skeleton+Knight",
+    logo: "https://manganim.fr/cdn/shop/files/logo-manganim-header_180x.png?v=1672862594"
+  },
+  {
+    name: "Fnac",
+    url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=Skeleton+Knight+tome",
+    logo: "https://cdn.iconscout.com/icon/free/png-256/free-fnac-3521434-2944878.png"
+  },
+  {
+    name: "Amazon",
+    url: "https://www.amazon.fr/s?k=Skeleton+Knight+tome",
+    logo: "https://www.1min30.com/wp-content/uploads/2017/12/logo-amazon-1.jpg"
+  }
+],
+  streaming: [
+  {
+    name: "Crunchyroll",
+    url: "https://www.crunchyroll.com/fr/search?q=Skeleton%20Knight%20in%20Another%20World",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/f/fc/Crunchyroll_logo_2018_vertical.png"
+  }
+],
   live: []
 },
 
@@ -4962,14 +5258,25 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   title: "True Beauty",
   category: "manhwa",
   cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx103995-eE7WHxOy77TB.jpg",
-  tags: "Comédie · Drame · Romance",
-  stars: 2,
+  tags: "Romance · Manhwa · Comédie · École",
+  stars: 3,
   addedAt: "2026-03-19",
-  synopsis: "After binge-watching beauty videos online, a shy comic book fan masters the art of makeup and sees her social standing skyrocket as she becomes her school’s prettiest pretty girl overnight. But will her elite status be short-lived? How long can she keep her real self a secret? And what about that cute boy who knows her secret? (Source: WEBTOONS) Note: Chapter count includes a prologue and 33 side ",
-  pros: ["Humour efficace qui allège le récit", "Moments émotionnellement forts"],
-  cons: ["Rythme parfois irrégulier"],
-  reviewHtml: `<p>True Beauty est une série solide du genre Comedy.  (score AniList : 63/100)</p><p>À compléter avec votre avis personnel.</p>`,
-  shops: [],
+  synopsis: "Lim Jugyeong est une lycéenne complexée par son visage sans maquillage. Après avoir appris l'art du maquillage sur internet, elle devient une beauté reconnue dans sa nouvelle école. Mais deux garçons découvrent sa vraie apparence : Suho, le beau populaire, et Seojun, le rebelle. True Beauty est le webtoon romantique coréen le plus lu de sa génération.",
+  pros: ["Phénomène culturel réel qui a touché des millions de lecteurs","Message sincère sur la confiance en soi et l'acceptation","Triangle amoureux bien construit avec deux prétendants crédibles"],
+  cons: ["Très codifié dans les conventions du romance coréen, peu de surprises","Certains arcs secondaires excessivement longs","Représentation du maquillage comme masque obligatoire parfois maladroite"],
+  reviewHtml: `<p>True Beauty est le manhwa romantique qui a défini une époque de webtoon. Yaongyi a touché quelque chose d'universel avec Jugyeong : la terreur d'être vue telle qu'on est vraiment, et le masque qu'on construit pour survivre au regard des autres. Ce thème résonne bien au-delà du public cible initial.</p><p>Le triangle amoureux entre Suho et Seojun est efficacement construit, les deux prétendants ayant des personnalités et des dynamiques distinctes avec Jugyeong. La série a su maintenir un suspense romantique réel sur sa longueur, ce qui est déjà un accomplissement dans le genre.</p><p>True Beauty souffre d'une longueur excessive dans ses derniers arcs et d'une représentation du maquillage parfois ambiguë dans son message. Mais en tant que phénomène culturel et comme romance accessible, sa popularité est entièrement méritée.</p>`,
+  shops: [
+  {
+    name: "Fnac",
+    url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=True+Beauty+manhwa",
+    logo: "https://cdn.iconscout.com/icon/free/png-256/free-fnac-3521434-2944878.png"
+  },
+  {
+    name: "Amazon",
+    url: "https://www.amazon.fr/s?k=True+Beauty+manhwa",
+    logo: "https://www.1min30.com/wp-content/uploads/2017/12/logo-amazon-1.jpg"
+  }
+],
   streaming: [],
   live: []
 },
@@ -5006,15 +5313,37 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   title: "Wotakoi: Love is Hard for Otaku",
   category: "manga",
   cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx86717-S7z7uizfTfEu.png",
-  tags: "Comédie · Romance · Quotidien",
+  tags: "Romance · Comédie · Seinen · Otaku",
   stars: 4,
   addedAt: "2026-03-19",
-  synopsis: "Narumi Momose has had it rough: every boyfriend she’s had dumped her once they found out she was an otaku, so she’s gone to great lengths to hide it. When a chance meeting at her new job with childhood friend, fellow otaku, and now coworker Hirotaka Nifuji almost gets her secret outed at work, she comes up with a plan to make sure he never speaks up. But he comes up with a counter-proposal: why do",
-  pros: ["Humour efficace qui allège le récit", "Personnages attachants", "Narration solide"],
-  cons: ["Peut nécessiter de s'accrocher au départ"],
-  reviewHtml: `<p>Wotakoi: Love is Hard for Otaku est une série incontournable du genre Comedy.  (score AniList : 83/100)</p><p>À compléter avec votre avis personnel.</p>`,
-  shops: [],
-  streaming: [],
+  synopsis: "Narumi Momose est une fujoshi secrète qui cache sa passion des BL à ses collègues. Elle retrouve par hasard son ancien camarade d'école Hirotaka Nifuji, gamer incurable, qui lui propose sans romantisme excessif de sortir ensemble puisqu'ils sont tous les deux otaku. Une romance entre adultes qui partagent des passions geek et apprennent maladroitement à s'aimer.",
+  pros: ["Romance entre adultes au travail, décor rare et bienvenu dans le manga romantique","Humour sur les passions otaku d'une précision et d'une affection rares","Hirotaka est un petit ami d'une maladresse et d'une sincérité attendrissantes","Deux couples secondaires qui enrichissent la dynamique de groupe"],
+  cons: ["Progression romantique très lente même pour une seinen romance","Format de gags courts peut parfois sembler décousu"],
+  reviewHtml: `<p>Wotakoi est une bouffée d'air frais dans le manga romantique. Fujita s'intéresse à des adultes qui travaillent, qui ont des passions geek qu'ils gèrent plus ou moins bien, et qui essaient de construire une relation amoureuse avec la même maladresse qu'ils mettent dans tout le reste. C'est agréablement réaliste.</p><p>Hirotaka Nifuji est l'un des petits amis les plus attachants du manga seinen : complètement incapable d'expressions romantiques conventionnelles mais sincèrement investi dans la relation à sa façon. Ses tentatives gauches de faire des "choses de couple" sont d'une drôlerie constante.</p><p>Le manga excelle dans ses moments calmes, quand les personnages jouent ensemble, regardent des animés ou discutent de leurs passions avec un enthousiasme que leurs collègues ne comprennent pas. Wotakoi capture parfaitement ce que c'est d'être avec quelqu'un qui partage vraiment ce qu'on aime.</p>`,
+  shops: [
+  {
+    name: "Manganim",
+    url: "https://manganim.fr/search?q=Wotakoi",
+    logo: "https://manganim.fr/cdn/shop/files/logo-manganim-header_180x.png?v=1672862594"
+  },
+  {
+    name: "Fnac",
+    url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=Wotakoi+tome",
+    logo: "https://cdn.iconscout.com/icon/free/png-256/free-fnac-3521434-2944878.png"
+  },
+  {
+    name: "Amazon",
+    url: "https://www.amazon.fr/s?k=Wotakoi+tome",
+    logo: "https://www.1min30.com/wp-content/uploads/2017/12/logo-amazon-1.jpg"
+  }
+],
+  streaming: [
+  {
+    name: "Crunchyroll",
+    url: "https://www.crunchyroll.com/fr/search?q=Wotakoi%3A%20Love%20is%20Hard%20for%20Otaku",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/f/fc/Crunchyroll_logo_2018_vertical.png"
+  }
+],
   live: []
 },
 
@@ -5023,15 +5352,37 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   title: "We Never Learn",
   category: "manga",
   cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/nx98235-V6yBxNIrsOp0.jpg",
-  tags: "Comédie · Ecchi · Romance · Quotidien",
-  stars: 4,
+  tags: "Comédie · Romance · Harem · Shōnen",
+  stars: 3,
   addedAt: "2026-03-19",
-  synopsis: "Nariyuki Yuiga is in his last and most painful year of high school. In order to gain the “special VIP recommendation” which would grant him a full scholarship to college, he must now tutor his classmates as they struggle to prepare for entrance exams. Among his pupils are “the sleeping beauty of the literary forest,” Fumino Furuhashi, and \"the Thumbelina supercomputer,\" Rizu Ogata–two of the most ",
-  pros: ["Humour efficace qui allège le récit", "Personnages attachants", "Narration solide"],
-  cons: ["Fan service intrusif par moments"],
-  reviewHtml: `<p>We Never Learn est une série incontournable du genre Comedy.  (score AniList : 75/100)</p><p>À compléter avec votre avis personnel.</p>`,
-  shops: [],
-  streaming: [],
+  synopsis: "Nariyuki Yuiga, lycéen brillant mais sans moyens, obtient une bourse complète en échange d'un défi : faire entrer en fac les deux génies de son lycée, Rizu Ogata en littérature et Fumino Furuhashi en sciences, dans des matières où elles sont désastreuses malgré leur génie dans d'autres domaines. Une comédie romantique harem autour du tutorat.",
+  pros: ["Concept original du génie incompétent dans sa matière de rêve","Bonne dynamique de groupe entre les différentes prétendantes","Humour de situation efficace dans les sessions de tutorat","Plusieurs fins alternatives bien exécutées dans les derniers volumes"],
+  cons: ["Schéma harem classique sans grandes innovations","Certaines prétendantes moins développées que d'autres"],
+  reviewHtml: `<p>We Never Learn est un harem romantique solide qui exploite bien son concept de base. L'idée que les personnages soient des génies incompétents dans leurs matières de prédilection est une source de situations comiques bien utilisées, et Nariyuki est un protagoniste plus actif que la moyenne du genre.</p><p>La série se distingue par sa gestion des fins alternatives : les derniers volumes offrent plusieurs dénouements possibles selon la prétendante choisie, ce qui est une approche honnête et satisfaisante pour un genre dont la conclusion est toujours la plus difficile à réussir. Pour les fans de comédie romantique lycéenne, c'est un choix fiable.</p>`,
+  shops: [
+  {
+    name: "Manganim",
+    url: "https://manganim.fr/search?q=We+Never+Learn",
+    logo: "https://manganim.fr/cdn/shop/files/logo-manganim-header_180x.png?v=1672862594"
+  },
+  {
+    name: "Fnac",
+    url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=We+Never+Learn+tome",
+    logo: "https://cdn.iconscout.com/icon/free/png-256/free-fnac-3521434-2944878.png"
+  },
+  {
+    name: "Amazon",
+    url: "https://www.amazon.fr/s?k=We+Never+Learn+tome",
+    logo: "https://www.1min30.com/wp-content/uploads/2017/12/logo-amazon-1.jpg"
+  }
+],
+  streaming: [
+  {
+    name: "Crunchyroll",
+    url: "https://www.crunchyroll.com/fr/search?q=We%20Never%20Learn",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/f/fc/Crunchyroll_logo_2018_vertical.png"
+  }
+],
   live: []
 },
 
@@ -5079,15 +5430,37 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   title: "The Ghost in the Shell",
   category: "manga",
   cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx31023-iozeApEMjmPP.jpg",
-  tags: "Action · Ecchi · Psychologie · Sci-fi",
-  stars: 3,
+  tags: "Sci-fi · Cyberpunk · Seinen · Philosophie",
+  stars: 5,
   addedAt: "2026-03-19",
-  synopsis: "Deep into the twenty-first century, the line between man and machine has been inexorably blurred as humans rely on the enhancement of mechanical implants and robots are upgraded with human tissue. In this rapidly converging landscape, cyborg superagent Major Motoko Kusanagi is charged to track down the craftiest and most dangerous terrorists and cybercriminals, including \"ghost hackers\" who are ca",
-  pros: ["Combats dynamiques et bien chorégraphiés", "Profondeur psychologique des personnages", "Concepts science-fiction inventifs"],
-  cons: ["Fan service intrusif par moments"],
-  reviewHtml: `<p>The Ghost in the Shell est une série solide du genre Action.  (score AniList : 74/100)</p><p>À compléter avec votre avis personnel.</p>`,
-  shops: [],
-  streaming: [],
+  synopsis: "Dans un Japon cyberpunk du futur proche, le Major Motoko Kusanagi dirige la Section 9, une unité de police spécialisée dans la cybercriminalité. Son corps est presque entièrement prothétique, et elle s'interroge constamment sur la nature de son identité : y a-t-il encore quelque chose d'humain en elle ? Quand elle traque un mystérieux hacker appelé le Puppet Master, les questions sur la conscience et l'identité deviennent existentielles.",
+  pros: ["Oeuvre fondatrice du cyberpunk mondial, influence immense sur toute la SF qui a suivi","Questionnements philosophiques sur l'identité, la conscience et l'humanité d'une profondeur réelle","Masamune Shirow construit un worldbuilding technologique d'une cohérence remarquable","Kusanagi est l'un des personnages féminins les plus iconiques de toute la SF"],
+  cons: ["Très dense, avec de nombreuses notes de bas de page et digressions techniques","Humour grivois de Shirow déplace certains lecteurs"],
+  reviewHtml: `<p>Ghost in the Shell est l'un des manga les plus importants jamais publiés, point. Masamune Shirow a posé en 1989 des questions sur l'identité numérique, la conscience artificielle et la frontière entre humain et machine qui sont plus pertinentes aujourd'hui qu'elles ne l'étaient à l'époque. L'influence de cette oeuvre sur la science-fiction mondiale est impossible à surestimer.</p><p>Le Major Kusanagi est un personnage d'une densité philosophique rare. Son questionnement sur ce qui constitue son "ghost", son âme dans un corps artificiel, est traité avec une honnêteté qui refuse les réponses faciles. Shirow ne résout pas le problème de la conscience, il l'expose dans toute sa complexité vertigineuse.</p><p>Le manga original est plus dense et plus technique que le film de Mamoru Oshii, avec plus d'humour et plus de digressions. C'est une oeuvre qui exige de l'engagement mais qui le récompense largement. Un chef-d'oeuvre fondateur de la science-fiction.</p>`,
+  shops: [
+  {
+    name: "Manganim",
+    url: "https://manganim.fr/search?q=Ghost+in+the+Shell",
+    logo: "https://manganim.fr/cdn/shop/files/logo-manganim-header_180x.png?v=1672862594"
+  },
+  {
+    name: "Fnac",
+    url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=Ghost+in+the+Shell+tome",
+    logo: "https://cdn.iconscout.com/icon/free/png-256/free-fnac-3521434-2944878.png"
+  },
+  {
+    name: "Amazon",
+    url: "https://www.amazon.fr/s?k=Ghost+in+the+Shell+tome",
+    logo: "https://www.1min30.com/wp-content/uploads/2017/12/logo-amazon-1.jpg"
+  }
+],
+  streaming: [
+  {
+    name: "Netflix",
+    url: "https://www.netflix.com/search?q=Ghost%20in%20the%20Shell",
+    logo: "https://images.ctfassets.net/y2ske730sjqp/5QQ9SVIdc1tmkqrtFnG9U1/de758bba0f65dcc1c6bc1f31f161003d/BrandAssets_Logos_02-NSymbol.jpg?w=940"
+  }
+],
   live: []
 },
 
@@ -5096,14 +5469,30 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   title: "Yokohama Kaidashi Kikou",
   category: "manga",
   cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/b30004-k0YUnO94IB4x.jpg",
-  tags: "Sci-fi · Quotidien",
+  tags: "Post-apocalyptique · Slice of Life · Seinen · Poétique",
   stars: 5,
   addedAt: "2026-03-19",
-  synopsis: "Set hundreds of years in the future after an environmental catastrophe, Yokohama Kaidashi Kikou (also known as Yokohama Shopping Log) centers on the simple life of Alpha, an android who runs a small coffee shop in coastal Japan. Alpha stands witness to chronicle the end of humanity’s days with coffee, a slice of watermelon, and the sound of her moon guitar backed by distant seagulls. Quiet and bit",
-  pros: ["Concepts science-fiction inventifs", "Personnages attachants", "Narration solide"],
-  cons: ["Peut nécessiter de s'accrocher au départ"],
-  reviewHtml: `<p>Yokohama Kaidashi Kikou est une série incontournable du genre Sci-Fi.  (score AniList : 86/100)</p><p>À compléter avec votre avis personnel.</p>`,
-  shops: [],
+  synopsis: "Alpha est un robot androïde gérant un café isolé sur la côte de la baie de Sagami, dans un monde où la civilisation humaine décline doucement. Les océans montent, les villes se vident, mais personne ne semble pressé. Alpha observe, note, photograph, attend que son propriétaire revienne d'un long voyage. YKK est un manga sur la douceur de la fin du monde et la beauté de l'instant qui passe.",
+  pros: ["Atmosphère unique et irremplaçable dans toute la bande dessinée mondiale","Hisai Hitoshi maîtrise le silence et la lumière comme peu d'auteurs","Méditation apaisante sur la temporalité, la mémoire et ce que signifie vivre","Alpha est l'un des personnages les plus touchants du manga seinen"],
+  cons: ["Rien ne se passe au sens narratif classique, incompatible avec les lecteurs qui cherchent des enjeux","Difficile à trouver en édition française complète"],
+  reviewHtml: `<p>Yokohama Kaidashi Kikou est une oeuvre unique dans toute la bande dessinée mondiale. Hitoshi Ashinano a inventé un genre qu'on pourrait appeler l'apocalypse douce : un monde en fin de course, mais qui s'éteint si lentement et si paisiblement qu'il ressemble moins à une catastrophe qu'à un coucher de soleil très long.</p><p>Alpha, robot androïde qui attend, observe et photographie, est l'un des personnages les plus attachants du manga. Son regard sur le monde humain en déclin est d'une tendresse et d'une curiosité qui transforment chaque moment ordinaire, une tasse de café, une balade à vélo, une conversation avec un voisin, en quelque chose de précieux et d'irremplaçable.</p><p>YKK parle de la mort de la civilisation avec la même légèreté qu'il parle du changement des saisons. C'est une oeuvre qui apprend à regarder les choses avant qu'elles disparaissent. Absolument irremplaçable.</p>`,
+  shops: [
+  {
+    name: "Manganim",
+    url: "https://manganim.fr/search?q=Yokohama+Kaidashi+Kikou",
+    logo: "https://manganim.fr/cdn/shop/files/logo-manganim-header_180x.png?v=1672862594"
+  },
+  {
+    name: "Fnac",
+    url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=Yokohama+Kaidashi+Kikou+tome",
+    logo: "https://cdn.iconscout.com/icon/free/png-256/free-fnac-3521434-2944878.png"
+  },
+  {
+    name: "Amazon",
+    url: "https://www.amazon.fr/s?k=Yokohama+Kaidashi+Kikou+tome",
+    logo: "https://www.1min30.com/wp-content/uploads/2017/12/logo-amazon-1.jpg"
+  }
+],
   streaming: [],
   live: []
 },
@@ -5113,14 +5502,30 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   title: "Shiki",
   category: "manga",
   cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/b112199-bF1fzRraSut3.jpg",
-  tags: "Mystère · Psychologie",
-  stars: 3,
+  tags: "Horreur · Vampire · Seinen · Psychologie",
+  stars: 4,
   addedAt: "2026-03-19",
-  synopsis: "Story about Magata Shiki, a character from S&M series.",
-  pros: ["Profondeur psychologique des personnages", "Intrigue bien construite"],
-  cons: ["Peut nécessiter de s'accrocher au départ"],
-  reviewHtml: `<p>Shiki est une série solide du genre Mystery. </p><p>À compléter avec votre avis personnel.</p>`,
-  shops: [],
+  synopsis: "Dans le village isolé de Sotoba, une série de décès inexpliqués survient à la suite de l'installation d'une mystérieuse famille dans un manoir de style occidental. Le docteur Toshio Ozaki commence à comprendre que les morts ne restent pas morts. Shiki est un thriller vampirique qui s'interroge sur qui sont vraiment les monstres : les vampires ou les humains qui les pourchassent.",
+  pros: ["Tension montante parfaitement dosée sur la première moitié","Renversement moral brillant dans la seconde moitié qui remet tout en question","Personnages des deux camps traités avec une empathie égale","Atmosphère de village coupé du monde oppressante et réussie"],
+  cons: ["Galerie de personnages très large qui peut dérouter au départ","Rythme lent dans les premiers volumes"],
+  reviewHtml: `<p>Shiki est un manga d'horreur qui joue avec les conventions du genre vampirique pour produire quelque chose de nettement plus ambigu et perturbant. Fuyumi Ono et Ryu Fujisaki ne se contentent pas de raconter des humains contre des vampires : ils construisent progressivement un questionnement sur la légitimité de la survie et sur ce qui définit un monstre.</p><p>Le vrai tour de force de Shiki est son retournement de perspective à mi-parcours. Quand les humains commencent à riposter, leur violence est aussi froide et méthodique que celle qu'ils condamnaient. Le lecteur se retrouve à souffrir pour les deux camps, sans boussole morale claire. C'est rare et courageux dans le genre horreur.</p><p>L'atmosphère de Sotoba, village fermé sur lui-même, est d'une efficacité remarquable. La lenteur initiale est un investissement qui se rentabilise complètement dans les arcs finaux.</p>`,
+  shops: [
+  {
+    name: "Manganim",
+    url: "https://manganim.fr/search?q=Shiki+manga",
+    logo: "https://manganim.fr/cdn/shop/files/logo-manganim-header_180x.png?v=1672862594"
+  },
+  {
+    name: "Fnac",
+    url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=Shiki+manga+tome",
+    logo: "https://cdn.iconscout.com/icon/free/png-256/free-fnac-3521434-2944878.png"
+  },
+  {
+    name: "Amazon",
+    url: "https://www.amazon.fr/s?k=Shiki+manga+tome",
+    logo: "https://www.1min30.com/wp-content/uploads/2017/12/logo-amazon-1.jpg"
+  }
+],
   streaming: [],
   live: []
 },
@@ -5130,15 +5535,37 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   title: "Witchcraft Works",
   category: "manga",
   cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx49896-3bGO2Oga6p0l.png",
-  tags: "Action · Fantasy · Romance · Surnaturel",
+  tags: "Fantasy · Romance · Comédie · Seinen",
   stars: 3,
   addedAt: "2026-03-19",
-  synopsis: "There is something unusual about the Tougetsu Academy. While on the surface it may seem like just another private Japanese high school, hidden amongst its student body, though, are a few youngsters with some unique abilities. One of them is Honoka Takamiya. He may not know it yet, but inside him lurks something very powerful. And it is the job of the school’s idol, Ayaka Kagari, to protect Takamiy",
-  pros: ["Combats dynamiques et bien chorégraphiés", "Univers fantastique original"],
-  cons: ["Peut nécessiter de s'accrocher au départ"],
-  reviewHtml: `<p>Witchcraft Works est une série solide du genre Action.  (score AniList : 71/100)</p><p>À compléter avec votre avis personnel.</p>`,
-  shops: [],
-  streaming: [],
+  synopsis: "Honoka Takamiya, lycéen ordinaire, découvre que Ayaka Kagari, la fille la plus populaire de son école, est en réalité une puissante sorcière du Feu dont la mission depuis toujours est de le protéger. Honoka se révèle être porteur d'une puissance dormante que des sorcières opposées à Ayaka cherchent à récupérer. Une fantasy romantique qui inverse les rôles classiques.",
+  pros: ["Inversion des rôles de genre fraîche : la fille forte protège le garçon ordinaire","Ayaka est un personnage d'une froideur et d'un dévouement attachants","Humour de situation efficace sur l'inversion des conventions"],
+  cons: ["Worldbuilding peu approfondi malgré un potentiel évident","Manque de profondeur narrative sur la longueur"],
+  reviewHtml: `<p>Witchcraft Works a une bonne idée de départ : inverser les rôles classiques de la fantasy romantique en faisant de la fille la puissante protectrice et du garçon l'objet de protection. Ayaka Kagari, froide et absolument dévouée à Honoka depuis toujours, est un personnage original dans le genre.</p><p>Le manga exploite correctement cette prémisse sans aller aussi loin qu'il le pourrait dans ses implications. C'est une lecture légère et agréable pour les amateurs de fantasy romantique, sans la profondeur narrative qui lui permettrait de sortir du lot.</p>`,
+  shops: [
+  {
+    name: "Manganim",
+    url: "https://manganim.fr/search?q=Witchcraft+Works",
+    logo: "https://manganim.fr/cdn/shop/files/logo-manganim-header_180x.png?v=1672862594"
+  },
+  {
+    name: "Fnac",
+    url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=Witchcraft+Works+tome",
+    logo: "https://cdn.iconscout.com/icon/free/png-256/free-fnac-3521434-2944878.png"
+  },
+  {
+    name: "Amazon",
+    url: "https://www.amazon.fr/s?k=Witchcraft+Works+tome",
+    logo: "https://www.1min30.com/wp-content/uploads/2017/12/logo-amazon-1.jpg"
+  }
+],
+  streaming: [
+  {
+    name: "Crunchyroll",
+    url: "https://www.crunchyroll.com/fr/search?q=Witchcraft%20Works",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/f/fc/Crunchyroll_logo_2018_vertical.png"
+  }
+],
   live: []
 },
 
@@ -5186,14 +5613,25 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   title: "Soul Land",
   category: "manga",
   cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx85446-YmuBl8pnTL9j.jpg",
-  tags: "Action · Aventure · Fantasy · Romance",
+  tags: "Action · Fantasy · Cultivation · Manhua",
   stars: 3,
   addedAt: "2026-03-19",
-  synopsis: "Tang San spent his prelife in the Tang Clan. He stole the secret from the Inner Clan to reach the peak of martial arts. In the end, he had to commit suicide for such action. Then he was reborn in a different world-Soul Land. This world is filled with powerful soul masters. Each master has their own martial souls. The martial soul of Tang San is a useless Blue Silver Grass. Can he bring the glory o",
-  pros: ["Combats dynamiques et bien chorégraphiés", "World-building riche et immersif", "Univers fantastique original"],
-  cons: ["Peut nécessiter de s'accrocher au départ"],
-  reviewHtml: `<p>Soul Land est une série solide du genre Action.  (score AniList : 73/100)</p><p>À compléter avec votre avis personnel.</p>`,
-  shops: [],
+  synopsis: "Tang San est un disciple du Tangmen, clan des arts cachés, qui se suicide après avoir volé les plus grands secrets de son clan. Il se réincarne dans le monde de Soul Land où chaque être humain possède une Âme Ancestrale, une manifestation spirituelle qui détermine son destin. Né avec une Âme bleue argentée considérée comme inutile, il est décidé à prouver sa valeur.",
+  pros: ["Système de cultivation original avec ses propres règles et ses propres hiérarchies","Fusion inventive entre arts martiaux cachés et fantasy spirituelle","Progression du personnage satisfaisante sur la longueur"],
+  cons: ["Récit très long avec des arcs qui s'étendent","Conventions du genre cultivation qui sembleront répétitives aux non-initiés","Art inégal selon les adaptateurs"],
+  reviewHtml: `<p>Soul Land est l'une des grandes séries du genre cultivation chinois, adapté en manhua depuis le roman web de Tang Jia San Shao. Le mélange entre les arts cachés du Tangmen, héritage du roman de wuxia, et le système d'Âmes Ancestrales de la fantasy occidentalisée est inventif et donne à la série une identité distincte dans le genre.</p><p>Tang San est un protagoniste compétent dont la progression est bien dosée. Les fondations du système de pouvoir, claires et cohérentes, permettent aux combats d'avoir des enjeux tactiques réels. Pour les lecteurs déjà familiers du genre cultivation, Soul Land est une référence solide. Pour les nouveaux venus, c'est une bonne porte d'entrée dans cet univers.</p>`,
+  shops: [
+  {
+    name: "Fnac",
+    url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=Soul+Land+manga",
+    logo: "https://cdn.iconscout.com/icon/free/png-256/free-fnac-3521434-2944878.png"
+  },
+  {
+    name: "Amazon",
+    url: "https://www.amazon.fr/s?k=Soul+Land+manga",
+    logo: "https://www.1min30.com/wp-content/uploads/2017/12/logo-amazon-1.jpg"
+  }
+],
   streaming: [],
   live: []
 },
@@ -5203,15 +5641,37 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   title: "The World God Only Knows",
   category: "manga",
   cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/23032.jpg",
-  tags: "Comédie · Romance · Surnaturel",
-  stars: 3,
+  tags: "Comédie · Romance · Seinen · Méta",
+  stars: 4,
   addedAt: "2026-03-19",
-  synopsis: "Written by Mamizu Arisawa and illustrated by Tamiki Wakaki. The novel features a completely original story that disparate from the series, with original novel characters.",
-  pros: ["Humour efficace qui allège le récit", "Personnages attachants", "Narration solide"],
-  cons: ["Peut nécessiter de s'accrocher au départ"],
-  reviewHtml: `<p>The World God Only Knows est une série solide du genre Comedy.  (score AniList : 70/100)</p><p>À compléter avec votre avis personnel.</p>`,
-  shops: [],
-  streaming: [],
+  synopsis: "Keima Katsuragi est un génie des jeux de dating simulation qui a conquis virtuellement des milliers d'héroïnes. Il est forcé par un démon nommé Elsie de séduire des vraies filles pour en expulser les esprits errants qui s'y cachent, en appliquant les mécaniques de ses jeux. Un manga romantique méta sur les conventions du genre, la réalité et l'idéal.",
+  pros: ["Concept méta sur les codes des dating sims d'une intelligence rare","Keima est un protagoniste original et attachant malgré son arrogance","Arc final qui subvertit toutes les attentes établies de manière satisfaisante","Humour sur les conventions du genre romantic comedy très efficace"],
+  cons: ["Premiers arcs formulaires avant que la série ne montre son vrai potentiel","Arc final peut dérouter les lecteurs attachés à la structure initiale"],
+  reviewHtml: `<p>The World God Only Knows commence comme une comédie romantique répétitive et se révèle être l'une des déconstructions les plus intelligentes du genre romantique dans le manga. Tamiki Wakaki a pris son temps pour établir les règles de son univers avant de les démonter méthodiquement dans ses derniers arcs.</p><p>Keima Katsuragi est un protagoniste fascinant parce que sa compétence dans les jeux est exactement ce qui le rend inapte à la réalité. Sa transformation progressive, d'expert en fictions romantiques en participant réel à une histoire vraie, est l'arc de personnage le plus bien caché du manga comique.</p><p>L'arc final, Goddess Arc, est une récompense pour les lecteurs patients. Il retourne complètement les certitudes établies et démontre que Wakaki savait exactement où il allait depuis le début. Une oeuvre à sous-estimer au départ et à ne jamais oublier.</p>`,
+  shops: [
+  {
+    name: "Manganim",
+    url: "https://manganim.fr/search?q=World+God+Only+Knows",
+    logo: "https://manganim.fr/cdn/shop/files/logo-manganim-header_180x.png?v=1672862594"
+  },
+  {
+    name: "Fnac",
+    url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=World+God+Only+Knows+tome",
+    logo: "https://cdn.iconscout.com/icon/free/png-256/free-fnac-3521434-2944878.png"
+  },
+  {
+    name: "Amazon",
+    url: "https://www.amazon.fr/s?k=World+God+Only+Knows+tome",
+    logo: "https://www.1min30.com/wp-content/uploads/2017/12/logo-amazon-1.jpg"
+  }
+],
+  streaming: [
+  {
+    name: "Crunchyroll",
+    url: "https://www.crunchyroll.com/fr/search?q=The%20World%20God%20Only%20Knows",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/f/fc/Crunchyroll_logo_2018_vertical.png"
+  }
+],
   live: []
 },
 
@@ -5398,14 +5858,25 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   title: "The Return of the Disaster-Class Hero",
   category: "manhwa",
   cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx143056-MEpVxW7346jz.jpg",
-  tags: "Action · Fantasy",
-  stars: 4,
+  tags: "Action · Manhwa · Fantasy · Vengeance",
+  stars: 3,
   addedAt: "2026-03-19",
-  synopsis: "Humans call them “calamities”—the unknown, destructive creatures that suddenly appeared on earth. To challenge these calamities, the zodiac gods awakened 12 humans known as saints. But there was one more that awoke—unchosen but the greatest hero of all: Geon Lee. His allies betrayed him and left him for dead, but now, 20 years later, he’s more powerful than ever and ready to teach his fellow “sain",
-  pros: ["Combats dynamiques et bien chorégraphiés", "Univers fantastique original"],
-  cons: ["Peut nécessiter de s'accrocher au départ"],
-  reviewHtml: `<p>The Return of the Disaster-Class Hero est une série incontournable du genre Action.  (score AniList : 75/100)</p><p>À compléter avec votre avis personnel.</p>`,
-  shops: [],
+  synopsis: "Lee Geon, héros de classe S au pouvoir de la Faucheuse, est trahi et abandonné par ses compagnons dans un donjon de niveau impossible. Dix ans plus tard, il revient transformé, plus puissant que jamais, avec une seule motivation : se venger de ceux qui l'ont trahi. Un manhwa de vengeance classique mais efficacement exécuté.",
+  pros: ["Protagoniste à la posture froide et déterminée très efficace dans son registre","Montée en puissance progressive bien dosée","Révélations sur les trahisons passées maintiennent un bon suspense"],
+  cons: ["Schéma vengeance très codifié sans grandes surprises","Personnages secondaires peu développés au-delà de leur rôle"],
+  reviewHtml: `<p>The Return of the Disaster-Class Hero est un manhwa de vengeance qui connaît ses forces et les exploite sans prétendre à plus. Lee Geon est un protagoniste froid et implacable dont les retrouvailles progressives avec ceux qui l'ont trahi sont exécutées avec un rythme satisfaisant.</p><p>Le manga n'invente pas le genre mais le pratique avec compétence. Les lecteurs de manhwa d'action qui cherchent une histoire de héros trahi et ressuscité trouveront ici exactement ce qu'ils attendent, bien exécuté et sans longueurs inutiles.</p>`,
+  shops: [
+  {
+    name: "Fnac",
+    url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=Disaster+Class+Hero",
+    logo: "https://cdn.iconscout.com/icon/free/png-256/free-fnac-3521434-2944878.png"
+  },
+  {
+    name: "Amazon",
+    url: "https://www.amazon.fr/s?k=Disaster+Class+Hero",
+    logo: "https://www.1min30.com/wp-content/uploads/2017/12/logo-amazon-1.jpg"
+  }
+],
   streaming: [],
   live: []
 },
@@ -5415,14 +5886,25 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   title: "The SSS-Rank Hunter's Lucky Draw",
   category: "manhwa",
   cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx140466-f3JaHHbVXh8a.jpg",
-  tags: "Action · Comédie · Fantasy",
-  stars: 3,
+  tags: "Action · Manhwa · Fantasy · Gacha",
+  stars: 2,
   addedAt: "2026-03-19",
-  synopsis: "“The Change” brought dungeons filled with monsters into the world, altering reality forever. Pro-gamer Jin Jung-Do, whose lifelong dream was to be a hero like the Mana Users who fight in these dungeons, is crushed when he discovers his own abilities are useless. Just then, the “real universe” gives him a set of skills that allow him to draw information from the future and heroes from the past! Now",
-  pros: ["Combats dynamiques et bien chorégraphiés", "Humour efficace qui allège le récit", "Univers fantastique original"],
-  cons: ["Rythme parfois irrégulier"],
-  reviewHtml: `<p>The SSS-Rank Hunter's Lucky Draw est une série solide du genre Action.  (score AniList : 66/100)</p><p>À compléter avec votre avis personnel.</p>`,
-  shops: [],
+  synopsis: "Dans un monde où des portails de donjons sont apparus partout, Hyun-Sung Park est un chasseur de rang E qui découvre un système de gacha divin lui permettant d'obtenir des compétences et équipements de rang SSS par tirage aléatoire. Avec ce pouvoir imprévisible mais potentiellement illimité, il commence son ascension dans la hiérarchie des chasseurs.",
+  pros: ["Concept de gacha comme système de progression original dans le genre hunter","Moments de tirage aléatoire qui créent une tension comique efficace"],
+  cons: ["Exécution générique malgré la prémisse originale","Manque de profondeur narrative et de développement de personnages","Protagoniste peu distinct des héros classiques du genre"],
+  reviewHtml: `<p>The SSS-Rank Hunter's Lucky Draw a une bonne idée de départ, utiliser la mécanique du gacha comme système de progression pour un hunter, mais ne l'exploite pas aussi inventivemment qu'elle le mérite. Le résultat est un manhwa d'action correct mais générique, qui s'adresse surtout aux fans du genre hunter à la recherche de lecture facile.</p><p>Pour les amateurs inconditionnels du genre, c'est une lecture honnête. Pour ceux qui cherchent quelque chose de distinctif dans le paysage déjà surchargé du manhwa hunter, il faudra chercher ailleurs.</p>`,
+  shops: [
+  {
+    name: "Fnac",
+    url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=SSS+Rank+Hunter+Lucky+Draw",
+    logo: "https://cdn.iconscout.com/icon/free/png-256/free-fnac-3521434-2944878.png"
+  },
+  {
+    name: "Amazon",
+    url: "https://www.amazon.fr/s?k=SSS+Rank+Hunter+Lucky+Draw",
+    logo: "https://www.1min30.com/wp-content/uploads/2017/12/logo-amazon-1.jpg"
+  }
+],
   streaming: [],
   live: []
 },
@@ -5467,15 +5949,37 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   title: "Skip and Loafer",
   category: "manga",
   cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx109285-HmBZpzsO2zxd.jpg",
-  tags: "Comédie · Romance · Quotidien",
-  stars: 5,
+  tags: "Romance · Slice of Life · Seinen · École",
+  stars: 4,
   addedAt: "2026-03-19",
-  synopsis: "Excellent student Iwakura Mitsumi has always dreamt about leaving her small town, going to a prestigious university, and making positive change in the world. But she’s so focused on reaching her goals that she’s not prepared for the very different (and overwhelming) city life that awaits her in a Tokyo high school. Luckily, she makes fast friends with Shima Sousuke, a handsome classmate who’s as l",
-  pros: ["Humour efficace qui allège le récit", "Personnages attachants", "Narration solide"],
-  cons: ["Peut nécessiter de s'accrocher au départ"],
-  reviewHtml: `<p>Skip and Loafer est une série incontournable du genre Comedy.  (score AniList : 86/100)</p><p>À compléter avec votre avis personnel.</p>`,
-  shops: [],
-  streaming: [],
+  synopsis: "Mitsumi Iwakura débarque à Tokyo depuis sa petite ville de province avec un plan de vie détaillé et une ambition débordante. Son premier jour de lycée tourne mal, mais elle rencontre Sousuke Shima, beau et populaire, qui l'aide sans y penser. Entre la candeur de Mitsumi et la façade décontractée de Shima qui cache quelque chose, une amitié puis une romance se construisent naturellement.",
+  pros: ["Mitsumi est une héroïne d'un enthousiasme et d'une sincérité contagieux","Romance qui se développe organiquement sans manipulation narrative artificielle","Traitement sensible de la pression sociale et de l'identité au lycée","Art de Misaki Takamatsu expressif et chaleureux"],
+  cons: ["Rythme très doux, peut manquer de piquant pour certains","Certains arcs secondaires moins captivants"],
+  reviewHtml: `<p>Skip and Loafer est une des romances lycéennes les plus fraîches et les plus sincères du manga récent. Mitsumi Iwakura, avec ses plans en PowerPoint pour sa vie et sa candeur totale face au monde de Tokyo, est un personnage immédiatement attachant dont l'enthousiasme est communicatif.</p><p>Ce qui distingue le manga, c'est sa façon de traiter Shima. Sous la surface de garçon parfait et populaire se cache quelqu'un qui a perdu contact avec ses propres désirs, qui joue un rôle depuis si longtemps qu'il ne sait plus qui il est vraiment. La rencontre avec Mitsumi, qui l'accepte naturellement sans rien attendre en retour, est un catalyseur de croissance rarement aussi bien exécuté.</p><p>Skip and Loafer est doux, intelligent et terriblement honnête sur ce que signifie être adolescent loin de chez soi. Une belle lecture.</p>`,
+  shops: [
+  {
+    name: "Manganim",
+    url: "https://manganim.fr/search?q=Skip+and+Loafer",
+    logo: "https://manganim.fr/cdn/shop/files/logo-manganim-header_180x.png?v=1672862594"
+  },
+  {
+    name: "Fnac",
+    url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=Skip+and+Loafer+tome",
+    logo: "https://cdn.iconscout.com/icon/free/png-256/free-fnac-3521434-2944878.png"
+  },
+  {
+    name: "Amazon",
+    url: "https://www.amazon.fr/s?k=Skip+and+Loafer+tome",
+    logo: "https://www.1min30.com/wp-content/uploads/2017/12/logo-amazon-1.jpg"
+  }
+],
+  streaming: [
+  {
+    name: "Crunchyroll",
+    url: "https://www.crunchyroll.com/fr/search?q=Skip%20and%20Loafer",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/f/fc/Crunchyroll_logo_2018_vertical.png"
+  }
+],
   live: []
 },
 
