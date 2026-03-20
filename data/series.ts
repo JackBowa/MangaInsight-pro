@@ -2808,5 +2808,1864 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   streaming: [],
   live: []
 },
+{
+  slug: "yu-gi-oh",
+  title: "Yu-Gi-Oh!",
+  category: "manga",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx30054-HwrRlsJYePNF.jpg",
+  tags: "Action · Aventure · Comédie · Drame · Fantasy",
+  stars: 4,
+  addedAt: "2026-03-19",
+  synopsis: "10th grader Yugi spent most of his time alone playing games--until he solved the Millennium Puzzle, a mysterious Egyptian artifact! Possessed by the puzzle, Yugi becomes Yu-Gi-Oh, the King of Games, and challenges evil-doers to the Shadow Games--weird games with high stakes and high risks! These graphic novels contain new stories not seen in the anime, including the origin of Yugi and his friends!",
+  pros: ["Combats dynamiques et bien chorégraphiés", "World-building riche et immersif", "Humour efficace qui allège le récit", "Moments émotionnellement forts"],
+  cons: ["Certains arcs secondaires moins aboutis"],
+  reviewHtml: `<p>Yu-Gi-Oh! est une série incontournable du genre Action.  (score AniList : 77/100)</p><p>À compléter avec votre avis personnel.</p>`,
+  shops: [],
+  streaming: [],
+  live: []
+},
+
+{
+  slug: "inuyasha",
+  title: "InuYasha",
+  category: "manga",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx30676-kQTOiNRyKwqL.jpg",
+  tags: "Aventure · Comédie · Drame · Fantasy",
+  stars: 4,
+  addedAt: "2026-03-19",
+  synopsis: "Kagome is a modern Japanese high school girl. Never the type to believe in myths and legends, her world view dramatically changes when, one day, she's pulled out of her own time and into another! There, in Japan's ancient past, Kagome discovers more than a few of those dusty old legends are true, and that her destiny is linked to one legendary creature in particular--the dog-like half-demon called",
+  pros: ["World-building riche et immersif", "Humour efficace qui allège le récit", "Moments émotionnellement forts", "Univers fantastique original"],
+  cons: ["Peut nécessiter de s'accrocher au départ"],
+  reviewHtml: `<p>InuYasha est une série incontournable du genre Adventure.  (score AniList : 77/100)</p><p>À compléter avec votre avis personnel.</p>`,
+  shops: [],
+  streaming: [],
+  live: []
+},
+
+{
+  slug: "knights-of-the-zodiac",
+  title: "Knights of the Zodiac",
+  category: "manga",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx31045-YUcWBMk7RpeK.png",
+  tags: "Action · Aventure",
+  stars: 3,
+  addedAt: "2026-03-19",
+  synopsis: "In Greek mythology, Athena, the daughter of Zeus, was born in full armor. By birthright the goddess of battle, she did not believe in conquest, and only fought defensive wars. Her battles with bloodthirsty gods and giants shook the very earth and seemed to last forever. On the battlefield, there were a group of youths that always surrounded and protected the goddess: the Knights of Athena! Flash f",
+  pros: ["Combats dynamiques et bien chorégraphiés", "World-building riche et immersif"],
+  cons: ["Peut nécessiter de s'accrocher au départ"],
+  reviewHtml: `<p>Knights of the Zodiac est une série solide du genre Action.  (score AniList : 70/100)</p><p>À compléter avec votre avis personnel.</p>`,
+  shops: [],
+  streaming: [],
+  live: []
+},
+
+{
+  slug: "captain-tsubasa",
+  title: "Captain Tsubasa",
+  category: "manga",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx31789-qiNlHJDMJncz.png",
+  tags: "Football · Sport · Shōnen · Classique",
+  stars: 3,
+  addedAt: "2026-03-19",
+  synopsis: "Tsubasa Ozora, enfant prodige du football, rêve de remporter la Coupe du Monde avec le Japon. De ses premières parties dans la rue jusqu'aux compétitions internationales, il affronte des rivaux d'exception dont le légendaire gardien Genzo Wakabayashi. Captain Tsubasa, publié depuis 1981, a inspiré des générations de footballeurs professionnels à travers le monde.",
+  pros: ["Influence culturelle immense sur le football mondial et japonais","Rivalités emblématiques qui ont marqué des générations","Passion communicative pour le football","Tsubasa est devenu un symbole culturel au-delà du manga"],
+  cons: ["Art et techniques narratives très datés des années 80","Physique complètement irréaliste (tirs nucléaires, gardiens volants)","Difficile d'aborder pour les nouveaux lecteurs habitués au manga moderne"],
+  reviewHtml: `<p>Captain Tsubasa n'est pas un grand manga au sens technique du terme. Il est quelque chose de plus rare : une oeuvre qui a changé la réalité. Des joueurs professionnels comme Zinedine Zidane ou Fernando Torres ont cité Tsubasa comme leur première inspiration footballistique. Pour un manga, c'est une forme de réussite qui dépasse toutes les critiques.</p><p>Yoichi Takahashi a inventé un langage visuel pour le football dans le manga, les tirs qui brisent les filets, les dribbles défiant la physique, les gardiens qui volent. C'est absurde par les standards actuels, mais c'était révolutionnaire en 1981 et ça l'est resté dans l'imaginaire collectif.</p><p>À lire pour comprendre l'histoire du manga sportif et l'impact culturel que peut avoir un dessin animé, mais en acceptant le grand écart avec les standards actuels.</p>`,
+  shops: [
+  {
+    name: "Manganim",
+    url: "https://manganim.fr/search?q=Captain+Tsubasa",
+    logo: "https://manganim.fr/cdn/shop/files/logo-manganim-header_180x.png?v=1672862594"
+  },
+  {
+    name: "Fnac",
+    url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=Captain+Tsubasa+tome",
+    logo: "https://cdn.iconscout.com/icon/free/png-256/free-fnac-3521434-2944878.png"
+  },
+  {
+    name: "Amazon",
+    url: "https://www.amazon.fr/s?k=Captain+Tsubasa+tome",
+    logo: "https://www.1min30.com/wp-content/uploads/2017/12/logo-amazon-1.jpg"
+  }
+],
+  streaming: [
+  {
+    name: "Netflix",
+    url: "https://www.netflix.com/search?q=Captain%20Tsubasa",
+    logo: "https://images.ctfassets.net/y2ske730sjqp/5QQ9SVIdc1tmkqrtFnG9U1/de758bba0f65dcc1c6bc1f31f161003d/BrandAssets_Logos_02-NSymbol.jpg?w=940"
+  }
+],
+  live: []
+},
+
+{
+  slug: "eyeshield-21",
+  title: "Eyeshield 21",
+  category: "manga",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx30043-b2SqUjwSzfIH.png",
+  tags: "Football américain · Sport · Shōnen · Comédie",
+  stars: 4,
+  addedAt: "2026-03-19",
+  synopsis: "Sena Kobayakawa, lycéen timide qui a passé sa vie à fuir les brutes, est repéré par Hiruma Yoichi, capitaine diabolique de l'équipe de football américain du lycée Deimon. Sa vitesse de fuite exceptionnelle fait de lui le runningback parfait, baptisé Eyeshield 21 pour protéger son identité. Avec ses coéquipiers improbables, il vise le Christmas Bowl, la finale nationale.",
+  pros: ["Hiruma Yoichi est l'un des personnages les plus charismatiques du manga sportif","Vulgarisation efficace du football américain, sport peu connu en France","Matchs intenses avec des enjeux tactiques réels","Humour omniprésent qui rend le tout très accessible"],
+  cons: ["Protagoniste Sena parfois trop effacé par rapport aux personnages secondaires","Arcs finaux légèrement trop longs"],
+  reviewHtml: `<p>Eyeshield 21 est le manga qui a fait découvrir le football américain à toute une génération de lecteurs japonais et étrangers. La réussite de Riichiro Inagaki et Yusuke Murata tient en grande partie à leur talent pour expliquer un sport complexe sans jamais ennuyer, en faisant des règles tactiques des sources de tension dramatique réelle.</p><p>Hiruma est la vraie star de la série. Ce capitaine machiavélique, toujours armé, qui manipule tout le monde pour obtenir ce qu'il veut, est d'un charisme irrésistible. Il vole chaque scène et représente une version parfaitement exécutée du "génie de l'ombre" qui tire les ficelles.</p><p>Les matchs d'Eyeshield 21 sont parmi les mieux construits du manga sportif, avec de vrais ajustements tactiques, de vraies surprises, et des moments de gloire gagnés à la sueur. Une référence du genre.</p>`,
+  shops: [
+  {
+    name: "Manganim",
+    url: "https://manganim.fr/search?q=Eyeshield+21",
+    logo: "https://manganim.fr/cdn/shop/files/logo-manganim-header_180x.png?v=1672862594"
+  },
+  {
+    name: "Fnac",
+    url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=Eyeshield+21+tome",
+    logo: "https://cdn.iconscout.com/icon/free/png-256/free-fnac-3521434-2944878.png"
+  },
+  {
+    name: "Amazon",
+    url: "https://www.amazon.fr/s?k=Eyeshield+21+tome",
+    logo: "https://www.1min30.com/wp-content/uploads/2017/12/logo-amazon-1.jpg"
+  }
+],
+  streaming: [
+  {
+    name: "Crunchyroll",
+    url: "https://www.crunchyroll.com/fr/search?q=Eyeshield%2021",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/f/fc/Crunchyroll_logo_2018_vertical.png"
+  }
+],
+  live: []
+},
+
+
+{
+  slug: "rave-master",
+  title: "Rave Master",
+  category: "manga",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/nx30014-Q7yKgaHVVmUg.jpg",
+  tags: "Aventure · Comédie · Fantasy",
+  stars: 4,
+  addedAt: "2026-03-19",
+  synopsis: "The Continent of Song is in chaos. The sinister secret society known as Demon Card is using the power of Dark Bring to destroy everything in their path. The only things capable of stopping Dark Bring are the Rave stones. Unfortunately, the Rave Stones were scattered around the globe in an explosion 50 years ago, so now they must be collected by the Rave Master in order to stop Dark Bring once and ",
+  pros: ["World-building riche et immersif", "Humour efficace qui allège le récit", "Univers fantastique original"],
+  cons: ["Peut nécessiter de s'accrocher au départ"],
+  reviewHtml: `<p>Rave Master est une série incontournable du genre Adventure.  (score AniList : 75/100)</p><p>À compléter avec votre avis personnel.</p>`,
+  shops: [],
+  streaming: [],
+  live: []
+},
+
+{
+  slug: "cardcaptor-sakura",
+  title: "Cardcaptor Sakura",
+  category: "manga",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx30106-GgFOXeyB70xj.png",
+  tags: "Magie · Shōjo · Aventure · Romance",
+  stars: 4,
+  addedAt: "2026-03-19",
+  synopsis: "Sakura Kinomoto, écolière de dix ans, découvre par accident le Livre des Clow et libère les Cartes Clow, des entités magiques aux pouvoirs variés. Désignée Cardcaptor par le gardien du livre Cerberus, elle doit récupérer toutes les cartes avant qu'elles ne sèment le chaos. CLAMP signe avec cette série une des oeuvres fondatrices de la magical girl.",
+  pros: ["Character design iconique et art CLAMP au sommet de sa forme","Équilibre parfait entre aventure, humour et moments émouvants","Représentation des relations et de l'amour d'une ouverture rare pour l'époque","Sakura est un modèle de protagoniste féminine positive et courageuse"],
+  cons: ["Rythme formulaire (capture une carte par chapitre) dans les premiers volumes","Destiné à un public jeune, certains adultes trouveront le ton trop doux"],
+  reviewHtml: `<p>Cardcaptor Sakura est l'une des oeuvres les plus importantes du manga shōjo des années 90. CLAMP a créé avec Sakura Kinomoto une héroïne d'une gentillesse désarmante mais jamais naïve, courageuse sans être agressive, aimante sans être passive. Elle a influencé tout ce qui a suivi dans le genre magical girl.</p><p>Ce qui distingue CCS de ses contemporaines, c'est son traitement des relations. Les amours du manga ne sont jamais réduites à un schéma simple : des personnages aiment des personnages du même genre, des élèves aiment des professeurs, et tout ça est présenté avec une naturalité et une douceur qui était révolutionnaire en 1996.</p><p>L'arc final avec les Cartes Transparentes (dans la suite publiée en 2016) est à la hauteur de l'original. CLAMP n'a rien perdu de leur maîtrise émotionnelle. Une oeuvre à faire découvrir aux plus jeunes, mais dont les adultes apprécieront toute la subtilité.</p>`,
+  shops: [
+  {
+    name: "Manganim",
+    url: "https://manganim.fr/search?q=Cardcaptor+Sakura",
+    logo: "https://manganim.fr/cdn/shop/files/logo-manganim-header_180x.png?v=1672862594"
+  },
+  {
+    name: "Fnac",
+    url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=Cardcaptor+Sakura+tome",
+    logo: "https://cdn.iconscout.com/icon/free/png-256/free-fnac-3521434-2944878.png"
+  },
+  {
+    name: "Amazon",
+    url: "https://www.amazon.fr/s?k=Cardcaptor+Sakura+tome",
+    logo: "https://www.1min30.com/wp-content/uploads/2017/12/logo-amazon-1.jpg"
+  }
+],
+  streaming: [
+  {
+    name: "Crunchyroll",
+    url: "https://www.crunchyroll.com/fr/search?q=Cardcaptor%20Sakura",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/f/fc/Crunchyroll_logo_2018_vertical.png"
+  }
+],
+  live: []
+},
+
+{
+  slug: "sailor-moon",
+  title: "Sailor Moon",
+  category: "manga",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx30092-tjzz7ymlFfQu.png",
+  tags: "Drame · Fantasy · Romance",
+  stars: 4,
+  addedAt: "2026-03-19",
+  synopsis: "Usagi Tsukino is a normal girl until she meets up with Luna, a talking cat, who tells her that she is Sailor Moon. As Sailor Moon, Usagi must fight evils and enforce justice, in the name of the Moon and the mysterious Moon Princess. She meets other girls destined to be Sailor Senshi (Sailor Scouts), and together, they fight the forces of evil! (Source: Kodansha USA) Notes: - The tankoubon release ",
+  pros: ["Moments émotionnellement forts", "Univers fantastique original"],
+  cons: ["Peut nécessiter de s'accrocher au départ"],
+  reviewHtml: `<p>Sailor Moon est une série incontournable du genre Drama.  (score AniList : 79/100)</p><p>À compléter avec votre avis personnel.</p>`,
+  shops: [],
+  streaming: [],
+  live: []
+},
+
+{
+  slug: "hikaru-no-go",
+  title: "Hikaru no Go",
+  category: "manga",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx30020-5NZUzVqJPD2L.png",
+  tags: "Comédie · Drame · Psychologie · Sport · Surnaturel",
+  stars: 4,
+  addedAt: "2026-03-19",
+  synopsis: "After stumbling across a haunted Go board, irresponsible Hikaru Shindo discovers that the spirit of a master player has taken up residence in his consciousness. In his pursuit of the \"Divine Move,\" Fujiwara-no-Sai awakens in Hikaru an untapped interest and genius for the game, and soon the schoolboy is chasing his own dream--defeating the famed Go prodigy Akira Toya! (Source: VIZ Media) Note: Ther",
+  pros: ["Humour efficace qui allège le récit", "Moments émotionnellement forts", "Profondeur psychologique des personnages", "Tension dramatique dans les matchs"],
+  cons: ["Certains arcs secondaires moins aboutis"],
+  reviewHtml: `<p>Hikaru no Go est une série incontournable du genre Comedy.  (score AniList : 79/100)</p><p>À compléter avec votre avis personnel.</p>`,
+  shops: [],
+  streaming: [],
+  live: []
+},
+
+{
+  slug: "bakuman",
+  title: "Bakuman.",
+  category: "manga",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/95994-1FbJgX47l7em.jpg",
+  tags: "Drame · Seinen · Création · Romance",
+  stars: 5,
+  addedAt: "2026-03-19",
+  synopsis: "Moritaka Mashiro, lycéen rêvant secrètement de devenir mangaka comme son oncle décédé, est découvert par son camarade Akito Takagi qui a lu ses dessins. Ensemble, ils décident de créer un manga pour le Weekly Shōnen Jump, avec comme condition de Mashiro : si leur série est adaptée en animé, la fille qu'il aime, Miho Azuki, en doublera l'héroïne. Écrit par les créateurs de Death Note, Bakuman est une lettre d'amour au manga et à ceux qui le font.",
+  pros: ["Plongée fascinante dans les coulisses de l'industrie manga (Jump, éditeurs, sérialisation)","La romance à distance entre Mashiro et Miho est d'une pureté désarmante","Rivalités entre mangakas d'une intensité rarement atteinte","Progression réaliste et méritée des protagonistes"],
+  cons: ["Vision de l'industrie parfois idéalisée et sexiste sur le rôle des femmes","Certains personnages secondaires sous-développés"],
+  reviewHtml: `<p>Bakuman est l'un des manga les plus singuliers de Tsugumi Ohba et Takeshi Obata, le duo de Death Note. Ici, pas de dieu de la mort ni de cahier maudit. Juste deux adolescents qui veulent faire du manga dans le Jump, et tout ce que ça implique d'obstination, de doutes et de sacrifice.</p><p>La grande force du manga est son authenticité sur l'industrie. Ohba et Obata l'ont vécue de l'intérieur, et ça se sent à chaque chapitre. Les réunions avec les éditeurs, les taux de popularité, les décisions éditoriales, tout est décrit avec une précision qui donne l'impression d'un documentaire romancé. Pour quiconque s'intéresse à la création, c'est fascinant.</p><p>La romance entre Mashiro et Miho, qui se promettent de ne pas se voir jusqu'à la réalisation de leur rêve commun, est d'une pureté touchante dans sa naïveté. Elle donne au manga une dimension émotionnelle qui contraste avec l'aspect professionnel. Un chef-d'oeuvre pour tous ceux qui aiment le manga autant que ces deux personnages l'aiment.</p>`,
+  shops: [
+  {
+    name: "Manganim",
+    url: "https://manganim.fr/search?q=Bakuman",
+    logo: "https://manganim.fr/cdn/shop/files/logo-manganim-header_180x.png?v=1672862594"
+  },
+  {
+    name: "Fnac",
+    url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=Bakuman+tome",
+    logo: "https://cdn.iconscout.com/icon/free/png-256/free-fnac-3521434-2944878.png"
+  },
+  {
+    name: "Amazon",
+    url: "https://www.amazon.fr/s?k=Bakuman+tome",
+    logo: "https://www.1min30.com/wp-content/uploads/2017/12/logo-amazon-1.jpg"
+  }
+],
+  streaming: [],
+  live: []
+},
+
+{
+  slug: "the-prince-of-tennis",
+  title: "The Prince of Tennis",
+  category: "manga",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx30049-ipwZTsHitrhC.png",
+  tags: "Comédie · Sport",
+  stars: 3,
+  addedAt: "2026-03-19",
+  synopsis: "Ryoma Echizen just joined the Seishun Academy's tennis team, which is known for being one of the most competitive teams in Japan. Its members are incredibly talented, gifted, and athletic. With rigorous and extremely intense practices, the upperclassmen of the team expect the very best from themselves and they expect even more from the new members of the team. While most of the freshmen are on pin",
+  pros: ["Humour efficace qui allège le récit", "Tension dramatique dans les matchs"],
+  cons: ["Peut nécessiter de s'accrocher au départ"],
+  reviewHtml: `<p>The Prince of Tennis est une série solide du genre Comedy.  (score AniList : 74/100)</p><p>À compléter avec votre avis personnel.</p>`,
+  shops: [],
+  streaming: [],
+  live: []
+},
+
+{
+  slug: "ashita-no-joe-fighting-for-tomorrow",
+  title: "Ashita no Joe: Fighting for Tomorrow",
+  category: "manga",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx31303-l21HJn9AXl7w.jpg",
+  tags: "Boxe · Sport · Drame · Seinen",
+  stars: 5,
+  addedAt: "2026-03-19",
+  synopsis: "Joe Yabuki, voyou sans avenir errant dans les bas-fonds de Tokyo, croise la route de Danpei Tange, ancien entraîneur de boxe alcoolique qui voit en lui un talent exceptionnel. Ensemble, ils vont gravir les échelons d'un monde impitoyable, Joe transformant sa rage en uppercut, son désespoir en jab, sa vie entière en combat. Publié de 1968 à 1973, Ashita no Joe est la référence absolue du manga de sport, celle qui a tout inventé.",
+  pros: ["Récit de rédemption parmi les plus puissants de toute la bande dessinée mondiale","Joe Yabuki est l'un des personnages les plus complexes et attachants du manga","Finale parmi les plus célèbres et discutées de l'histoire du médium","Exploration sans concession de la pauvreté, de l'ambition et de la dignité"],
+  cons: ["Art daté des années 60-70, déroutant pour les nouveaux lecteurs","Rythme lent propre à l'époque, très différent du manga moderne"],
+  reviewHtml: `<p>Ashita no Joe n'est pas seulement un manga de boxe. C'est l'histoire d'un homme qui n'a rien, qui ne vaut rien aux yeux du monde, et qui décide de tout mettre dans ses poings pour prouver qu'il existe. Joe Yabuki est l'archétype du shōnen héros avant que le terme n'existe, brut, autodestructeur, incapable de renoncer.</p><p>Asao Takamori et Tetsuya Chiba ont créé quelque chose qui dépasse le genre sportif. Les combats sont prétextes à des explorations psychologiques d'une profondeur rare. Chaque adversaire de Joe est un miroir, une version différente de ce qu'il aurait pu devenir. Rikiishi Toru, en particulier, est un rival d'une intensité tragique qui hante tout le manga.</p><p>La conclusion d'Ashita no Joe est l'une des plus discutées de l'histoire du manga. Cinquante ans plus tard, elle divise encore. C'est la marque des grandes oeuvres : elles refusent les réponses faciles.</p>`,
+  shops: [
+  {
+    name: "Manganim",
+    url: "https://manganim.fr/search?q=Ashita+no+Joe",
+    logo: "https://manganim.fr/cdn/shop/files/logo-manganim-header_180x.png?v=1672862594"
+  },
+  {
+    name: "Fnac",
+    url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=Ashita+no+Joe+tome",
+    logo: "https://cdn.iconscout.com/icon/free/png-256/free-fnac-3521434-2944878.png"
+  },
+  {
+    name: "Amazon",
+    url: "https://www.amazon.fr/s?k=Ashita+no+Joe+tome",
+    logo: "https://www.1min30.com/wp-content/uploads/2017/12/logo-amazon-1.jpg"
+  }
+],
+  streaming: [],
+  live: []
+},
+
+
+{
+  slug: "nausicaa-of-the-valley-of-the-wind",
+  title: "Nausicaä of the Valley of the Wind",
+  category: "manga",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx30651-xLufeLnDPqpn.jpg",
+  tags: "Action · Aventure · Drame · Fantasy · Sci-fi",
+  stars: 5,
+  addedAt: "2026-03-19",
+  synopsis: "Humanity, in its hubris, has precipitated a devastating environmental disaster. Flourishing industrial civilizations have been swallowed up by the Sea of Corruption, an enormous forest of fungi releases a miasma of poisonous spores into the air. Nausicaa, a compassionate young princess, and her allies battle to heal a wounded world and its inhabitants... (Source: VIZ Media) Note: Won the 26th Seiu",
+  pros: ["Combats dynamiques et bien chorégraphiés", "World-building riche et immersif", "Moments émotionnellement forts", "Univers fantastique original"],
+  cons: ["Certains arcs secondaires moins aboutis"],
+  reviewHtml: `<p>Nausicaä of the Valley of the Wind est une série incontournable du genre Action.  (score AniList : 85/100)</p><p>À compléter avec votre avis personnel.</p>`,
+  shops: [],
+  streaming: [],
+  live: []
+},
+
+{
+  slug: "gto-great-teacher-onizuka",
+  title: "GTO: Great Teacher Onizuka",
+  category: "manga",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx30336-KWTPMwsNTeSa.png",
+  tags: "Action · Comédie · Drame · Ecchi",
+  stars: 5,
+  addedAt: "2026-03-19",
+  synopsis: "Former juvenile delinquent Onizuka finds himself thrust into to role of high school teacher, facing students who behave just as he used to and an administration that doesn't trust him. Using the brash an unorthodox methods he picked up in his youth, Onizuka manages to reach through to his kids and help them with their problems. (Source: TOKYOPOP) Notes: - Won the 22nd Kodansha Manga Award for Best",
+  pros: ["Combats dynamiques et bien chorégraphiés", "Humour efficace qui allège le récit", "Moments émotionnellement forts"],
+  cons: ["Fan service intrusif par moments"],
+  reviewHtml: `<p>GTO: Great Teacher Onizuka est une série incontournable du genre Action.  (score AniList : 86/100)</p><p>À compléter avec votre avis personnel.</p>`,
+  shops: [],
+  streaming: [],
+  live: []
+},
+
+{
+  slug: "initial-d",
+  title: "Initial D",
+  category: "manga",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/nx30375-YFIIOwp5kSqW.jpg",
+  tags: "Action · Drame · Sport",
+  stars: 4,
+  addedAt: "2026-03-19",
+  synopsis: "Only the fearless survive in the white-hot world of street racing, as teams take on dangerous roads in the shadow of Mt. Akina. Behind the wheel of the mysterious \"Ghost of Akina\" is Takumi, on his way to becoming the greatest racer ever. (Source: TOKYOPOP) Note: the chapter count includes six extra chapters published in volumes 2, 3, 30, 33, 39 and 48.",
+  pros: ["Combats dynamiques et bien chorégraphiés", "Moments émotionnellement forts", "Tension dramatique dans les matchs"],
+  cons: ["Peut nécessiter de s'accrocher au départ"],
+  reviewHtml: `<p>Initial D est une série incontournable du genre Action.  (score AniList : 81/100)</p><p>À compléter avec votre avis personnel.</p>`,
+  shops: [],
+  streaming: [],
+  live: []
+},
+
+{
+  slug: "lone-wolf-and-cub",
+  title: "Lone Wolf and Cub",
+  category: "manga",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx30904-KRN1WE3ZU3vl.jpg",
+  tags: "Action · Drame",
+  stars: 5,
+  addedAt: "2026-03-19",
+  synopsis: "An epic samurai adventure of staggering proportions—over 7000 pages—Lone Wolf and Cub (Kozure Okami in Japan) is acknowledged worldwide for the brilliant writing of series creator Kazuo Koike and the groundbreaking cinematic visuals of the late Goseki Kojima, creating unforgettable imagery of stark beauty, kinetic fury, and visceral thematic power that influenced a generation of visual storyteller",
+  pros: ["Combats dynamiques et bien chorégraphiés", "Moments émotionnellement forts"],
+  cons: ["Peut nécessiter de s'accrocher au départ"],
+  reviewHtml: `<p>Lone Wolf and Cub est une série incontournable du genre Action.  (score AniList : 85/100)</p><p>À compléter avec votre avis personnel.</p>`,
+  shops: [],
+  streaming: [],
+  live: []
+},
+
+{
+  slug: "ranma",
+  title: "Ranma ½",
+  category: "manga",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx30023-NWoD28ZKC73c.jpg",
+  tags: "Action · Comédie · Ecchi · Romance",
+  stars: 4,
+  addedAt: "2026-03-19",
+  synopsis: "Years ago, Genma promised his old friend Soun Tendo that Ranma would marry one of Soun’s three daughters and carry on the family’s martial arts school. Except that the girl picked to be Ranma’s bride doesn’t seem to like him, Ranma keeps getting into fights…and did we mention that whole changing into a girl thing? (Source: VIZ Media)",
+  pros: ["Combats dynamiques et bien chorégraphiés", "Humour efficace qui allège le récit"],
+  cons: ["Fan service intrusif par moments"],
+  reviewHtml: `<p>Ranma ½ est une série incontournable du genre Action.  (score AniList : 78/100)</p><p>À compléter avec votre avis personnel.</p>`,
+  shops: [],
+  streaming: [],
+  live: []
+},
+
+{
+  slug: "shijou-saikyou-no-deshi-kenichi",
+  title: "Shijou Saikyou no Deshi Kenichi",
+  category: "manga",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/b30988-JvtSyVVWqHUn.jpg",
+  tags: "Action · Comédie · Drame · Ecchi",
+  stars: 4,
+  addedAt: "2026-03-19",
+  synopsis: "The story is focused on Kenichi Shirahama, an average 15-year-old weakling, whose life turns to Hell with the appearance of the naive, beautiful, and strong transfer student, Miu Fūrinji. After Kenichi witnesses Miu's skills in martial arts, he joins the Ryōzanpaku dojo, the gathering place of those who are truly strong, which also happens to be Miu's home. After beating a karate student in a matc",
+  pros: ["Combats dynamiques et bien chorégraphiés", "Humour efficace qui allège le récit", "Moments émotionnellement forts"],
+  cons: ["Fan service intrusif par moments"],
+  reviewHtml: `<p>Shijou Saikyou no Deshi Kenichi est une série incontournable du genre Action.  (score AniList : 76/100)</p><p>À compléter avec votre avis personnel.</p>`,
+  shops: [],
+  streaming: [],
+  live: []
+},
+
+{
+  slug: "dandadan",
+  title: "Dandadan",
+  category: "manga",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx132029-prGF4gePdSKv.jpg",
+  tags: "Action · Surnaturel · Comédie · Romance",
+  stars: 4,
+  addedAt: "2026-03-19",
+  synopsis: "Momo Ayase croit aux fantômes mais pas aux extraterrestres. Ken Okarun croit aux extraterrestres mais pas aux fantômes. Pour se prouver mutuellement tort, ils s'aventurent ensemble dans des lieux hantés et se retrouvent confrontés à des phénomènes paranormaux dépassant de loin leurs convictions. Dandadan mélange aliens, yokai, amour de lycéens et bagarres cosmiques dans un tourbillon d'énergie visuelle.",
+  pros: ["Énergie et créativité visuelle rares, chaque chapitre surprend","Humour absurde et action effrénée s'équilibrent parfaitement","Character design des monstres et aliens d'une inventivité folle","Rythme endiablé qui ne laisse jamais souffler"],
+  cons: ["Trop chaotique pour certains lecteurs, difficile de suivre tous les fils","La romance est parfois reléguée au second plan malgré son potentiel"],
+  reviewHtml: `<p>Dandadan est l'une des séries les plus excitantes du Jump+ de ces dernières années. Yukinobu Tatsu vient de chez Shintaro Kago (manga d'horreur expérimental) et ça se voit : sa mise en page est d'une inventivité permanente, ses créatures sont visuellement mémorables, et son sens du rythme est redoutable.</p><p>Le manga assume pleinement son chaos. Aliens contre yokai, vol de parties génitales, grand-mères combattantes, amour de lycéens maladroit au milieu de l'apocalypse. Ce mélange improbable fonctionne parce que Tatsu y croit à fond et dessine chaque absurdité avec le même sérieux qu'une scène épique.</p><p>La relation entre Momo et Okarun, gênée et maladroite, est le fil émotionnel qui donne de l'ancrage à tout le reste. Dandadan est fun, frénétique, et visuellement parmi ce qui se fait de mieux dans le manga d'action contemporain.</p>`,
+  shops: [
+  {
+    name: "Manganim",
+    url: "https://manganim.fr/search?q=Dandadan",
+    logo: "https://manganim.fr/cdn/shop/files/logo-manganim-header_180x.png?v=1672862594"
+  },
+  {
+    name: "Fnac",
+    url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=Dandadan+tome",
+    logo: "https://cdn.iconscout.com/icon/free/png-256/free-fnac-3521434-2944878.png"
+  },
+  {
+    name: "Amazon",
+    url: "https://www.amazon.fr/s?k=Dandadan+tome",
+    logo: "https://www.1min30.com/wp-content/uploads/2017/12/logo-amazon-1.jpg"
+  }
+],
+  streaming: [
+  {
+    name: "Crunchyroll",
+    url: "https://www.crunchyroll.com/fr/search?q=Dandadan",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/f/fc/Crunchyroll_logo_2018_vertical.png"
+  }
+],
+  live: []
+},
+
+{
+  slug: "zom-100-bucket-list-of-the-dead",
+  title: "Zom 100: Bucket List of the Dead",
+  category: "manga",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx104660-NZZdpLJlgHle.jpg",
+  tags: "Action · Comédie · Horreur",
+  stars: 3,
+  addedAt: "2026-03-19",
+  synopsis: "Surviving a zombie apocalypse beats being a wage slave any day! After spending years slaving away for a soul-crushing company, Akira's life has lost its luster. He lives in a trash-filled apartment, his pay is abysmal, and he can't even muster up the nerve to confess his love to his beautiful co-worker. But when a zombie apocalypse ravages his town, it gives him the push he needs to live for himse",
+  pros: ["Combats dynamiques et bien chorégraphiés", "Humour efficace qui allège le récit"],
+  cons: ["Peut nécessiter de s'accrocher au départ"],
+  reviewHtml: `<p>Zom 100: Bucket List of the Dead est une série solide du genre Action.  (score AniList : 74/100)</p><p>À compléter avec votre avis personnel.</p>`,
+  shops: [],
+  streaming: [],
+  live: []
+},
+
+{
+  slug: "the-eminence-in-shadow",
+  title: "The Eminence in Shadow",
+  category: "manga",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx106758-jtXpQYQqyNJv.jpg",
+  tags: "Action · Comédie · Fantasy",
+  stars: 4,
+  addedAt: "2026-03-19",
+  synopsis: "One big fat lie and a few twisted truths. Even in his past life, Cid's dream wasn't to become a protagonist or a final boss. He'd rather lie low as a minor character until it's prime time to reveal he's a mastermind...or at least, do the next best thing-pretend to be one! And now that he's been reborn into another world, he's ready to set the perfect conditions to live out his dreams to the fulles",
+  pros: ["Combats dynamiques et bien chorégraphiés", "Humour efficace qui allège le récit", "Univers fantastique original"],
+  cons: ["Peut nécessiter de s'accrocher au départ"],
+  reviewHtml: `<p>The Eminence in Shadow est une série incontournable du genre Action.  (score AniList : 80/100)</p><p>À compléter avec votre avis personnel.</p>`,
+  shops: [],
+  streaming: [],
+  live: []
+},
+
+{
+  slug: "world-trigger",
+  title: "World Trigger",
+  category: "manga",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx78151-o2g4GiqaiPyO.jpg",
+  tags: "Action · Sci-fi",
+  stars: 4,
+  addedAt: "2026-03-19",
+  synopsis: "A gate to another dimension has burst open, and from it emerge gigantic invincible creatures that threaten all of humanity. Earth's only defense is a mysterious group of warriors who have co-opted the alien technology in order to fight back! (Source: VIZ Media)",
+  pros: ["Combats dynamiques et bien chorégraphiés", "Concepts science-fiction inventifs"],
+  cons: ["Peut nécessiter de s'accrocher au départ"],
+  reviewHtml: `<p>World Trigger est une série incontournable du genre Action.  (score AniList : 77/100)</p><p>À compléter avec votre avis personnel.</p>`,
+  shops: [],
+  streaming: [],
+  live: []
+},
+
+{
+  slug: "undead-unluck",
+  title: "Undead Unluck",
+  category: "manga",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx114791-Rj07uWUnsgLY.jpg",
+  tags: "Action · Comédie · Sci-fi · Surnaturel",
+  stars: 4,
+  addedAt: "2026-03-19",
+  synopsis: "What happens when an unlucky girl meets an undead guy? Pure chaos! All Fuuko wants is a passionate romance like the one in her favorite shojo manga. Unfortunately, her Unluck ability makes that impossible. But just as Fuuko hits rock bottom, Andy sweeps her off her feet—literally! Now she’s become Andy’s unwilling test subject as he works to find a way to trigger a stroke of Unluck big enough to k",
+  pros: ["Combats dynamiques et bien chorégraphiés", "Humour efficace qui allège le récit", "Concepts science-fiction inventifs"],
+  cons: ["Peut nécessiter de s'accrocher au départ"],
+  reviewHtml: `<p>Undead Unluck est une série incontournable du genre Action.  (score AniList : 77/100)</p><p>À compléter avec votre avis personnel.</p>`,
+  shops: [],
+  streaming: [],
+  live: []
+},
+
+{
+  slug: "mission-yozakura-family",
+  title: "Mission: Yozakura Family",
+  category: "manga",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx111149-cHYBsPbWIb3L.jpg",
+  tags: "Action · Comédie · Romance",
+  stars: 4,
+  addedAt: "2026-03-19",
+  synopsis: "Taiyou Asano is a super shy high school student and the only person he can talk to is his childhood friend, Mutsumi Yozakura. It turns out that Mutsumi is the daughter of the ultimate spy family! Even worse, Mutsumi is being harassed by her overprotective, nightmare of a brother, Kyouichirou. What drastic steps will Taiyou have to take to save Mutsumi?! A spy family comedy - the mission begins! (S",
+  pros: ["Combats dynamiques et bien chorégraphiés", "Humour efficace qui allège le récit"],
+  cons: ["Peut nécessiter de s'accrocher au départ"],
+  reviewHtml: `<p>Mission: Yozakura Family est une série incontournable du genre Action.  (score AniList : 76/100)</p><p>À compléter avec votre avis personnel.</p>`,
+  shops: [],
+  streaming: [],
+  live: []
+},
+
+{
+  slug: "witch-hat-atelier",
+  title: "Witch Hat Atelier",
+  category: "manga",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx98263-kIeaTXrAbGkj.jpg",
+  tags: "Aventure · Drame · Fantasy",
+  stars: 5,
+  addedAt: "2026-03-19",
+  synopsis: "In a world where everyone takes wonders like magic spells and dragons for granted, Coco is a girl with a simple dream: she wants to be a witch. But everybody knows magicians are born, not made, and Coco was not born with a gift for magic. Resigned to her un-magical life, Coco is about to give up on her dream to become a witch … until the day she meets Qifrey, a mysterious, traveling magician. Afte",
+  pros: ["World-building riche et immersif", "Moments émotionnellement forts", "Univers fantastique original"],
+  cons: ["Peut nécessiter de s'accrocher au départ"],
+  reviewHtml: `<p>Witch Hat Atelier est une série incontournable du genre Adventure.  (score AniList : 86/100)</p><p>À compléter avec votre avis personnel.</p>`,
+  shops: [],
+  streaming: [],
+  live: []
+},
+
+{
+  slug: "seraph-of-the-end-vampire-reign",
+  title: "Seraph of the End: Vampire Reign",
+  category: "manga",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/nx73661-PJX2JcBAUYCx.png",
+  tags: "Action · Drame · Mystère · Surnaturel",
+  stars: 4,
+  addedAt: "2026-03-19",
+  synopsis: "After trumpets of the apocalypse proclaim the fall of humanity, vampires arise from the shadows to rule the earth. Yuichiro wants just one thing—to get revenge by killing each and every vampire. Yuichiro’s dream is near-impossible, given that vampires are seven times stronger than humans, and the only way to kill them is by mastering Cursed Gear, advanced demon-possessed weaponry. Not to mention t",
+  pros: ["Combats dynamiques et bien chorégraphiés", "Moments émotionnellement forts", "Intrigue bien construite"],
+  cons: ["Peut nécessiter de s'accrocher au départ"],
+  reviewHtml: `<p>Seraph of the End: Vampire Reign est une série incontournable du genre Action.  (score AniList : 75/100)</p><p>À compléter avec votre avis personnel.</p>`,
+  shops: [],
+  streaming: [],
+  live: []
+},
+
+{
+  slug: "helck",
+  title: "Helck",
+  category: "manga",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/nx86720-hMyIB05OrKRC.jpg",
+  tags: "Action · Aventure · Comédie · Fantasy",
+  stars: 4,
+  addedAt: "2026-03-19",
+  synopsis: "Helck is the hero that defeated one of the Demon Kings, and in the wake of the Demon King's death, a new one must be declared. This is achieved through a fighting tournament, where the strongest becomes ruler. Vamirio, one of the Great Demon Kings, discovers that Helck is a participant for the tournament and is so far winning! What could be his motive? If a human becomes the next Demon King, what ",
+  pros: ["Combats dynamiques et bien chorégraphiés", "World-building riche et immersif", "Humour efficace qui allège le récit", "Univers fantastique original"],
+  cons: ["Peut nécessiter de s'accrocher au départ"],
+  reviewHtml: `<p>Helck est une série incontournable du genre Action.  (score AniList : 80/100)</p><p>À compléter avec votre avis personnel.</p>`,
+  shops: [],
+  streaming: [],
+  live: []
+},
+
+{
+  slug: "dorohedoro",
+  title: "Dorohedoro",
+  category: "manga",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx31133-Jx6map3Oidz1.png",
+  tags: "Dark Fantasy · Action · Comédie · Seinen",
+  stars: 5,
+  addedAt: "2026-03-19",
+  synopsis: "Caiman est un homme à tête de reptile vivant dans le Trou, une ville dystopique où les sorciers viennent tester leurs sorts sur les habitants. Avec son amie Nikaido, il traque les sorciers en espérant retrouver celui qui lui a volé son visage et sa mémoire. Dorohedoro est un univers post-apocalyptique halluciné qui mélange horreur body-horror, comédie absurde et worldbuilding d'une richesse époustouflante.",
+  pros: ["Univers absolument unique, rien d'autre n'y ressemble dans le manga","Caiman et Nikaido forment l'un des meilleurs duos du manga seinen","Humour absurde qui coexiste parfaitement avec la noirceur de l'univers","Art chaotique de Q Hayashida qui devient vite addictif"],
+  cons: ["Art volontairement brouillon difficile à apprivoiser au départ","Intrigue complexe avec de nombreux personnages à suivre"],
+  reviewHtml: `<p>Dorohedoro est l'une des oeuvres les plus singulières de tout le manga. Q Hayashida a construit pendant quinze ans un univers délirant et cohérent, violent et hilarant, où des sorciers en costume sèment le chaos dans une ville-décharge et où le héros est un reptile amnésique qui mord les têtes pour trouver des réponses.</p><p>Ce qui est remarquable, c'est que malgré l'apparent chaos visuel et narratif, Dorohedoro est d'une maîtrise totale. Chaque personnage a sa propre logique, ses propres désirs. Les sorciers, qu'on devrait détester, deviennent des personnages attachants avec leurs propres codes et leur famille dysfonctionnelle. La frontière entre héros et antagonistes n'existe presque pas.</p><p>Le tone est unique : des scènes de barbecue détendu succèdent à des massacres, et ça fonctionne. Dorohedoro est l'oeuvre qui prouve que le manga peut faire des choses qu'aucun autre médium ne peut se permettre.</p>`,
+  shops: [
+  {
+    name: "Manganim",
+    url: "https://manganim.fr/search?q=Dorohedoro",
+    logo: "https://manganim.fr/cdn/shop/files/logo-manganim-header_180x.png?v=1672862594"
+  },
+  {
+    name: "Fnac",
+    url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=Dorohedoro+tome",
+    logo: "https://cdn.iconscout.com/icon/free/png-256/free-fnac-3521434-2944878.png"
+  },
+  {
+    name: "Amazon",
+    url: "https://www.amazon.fr/s?k=Dorohedoro+tome",
+    logo: "https://www.1min30.com/wp-content/uploads/2017/12/logo-amazon-1.jpg"
+  }
+],
+  streaming: [
+  {
+    name: "Netflix",
+    url: "https://www.netflix.com/search?q=Dorohedoro",
+    logo: "https://images.ctfassets.net/y2ske730sjqp/5QQ9SVIdc1tmkqrtFnG9U1/de758bba0f65dcc1c6bc1f31f161003d/BrandAssets_Logos_02-NSymbol.jpg?w=940"
+  }
+],
+  live: []
+},
+
+{
+  slug: "beastars",
+  title: "BEASTARS",
+  category: "manga",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx98587-useiMvZ0nfya.png",
+  tags: "Drame · Psychologie · Romance · Seinen",
+  stars: 4,
+  addedAt: "2026-03-19",
+  synopsis: "Dans un monde anthropomorphe où carnivores et herbivores cohabitent sous des règles strictes, Legoshi, loup timide et introverti du lycée Cherryton, tombe amoureux de Haru, une lapine blanche. Leur relation impossible met en lumière les tensions profondes entre instinct et civilisation, désir et morale. Beastars est une métaphore dense sur la discrimination, la sexualité et l'identité.",
+  pros: ["Métaphore sociale d'une intelligence et d'une subtilité rares","Legoshi est un protagoniste d'une complexité psychologique remarquable","Traitement courageux de thèmes matures : désir, violence, appartenance","Univers cohérent et original avec ses propres règles sociales"],
+  cons: ["Arcs finaux moins maîtrisés et parfois incohérents","Certains lecteurs décrochent sur la densité thématique"],
+  reviewHtml: `<p>Beastars est l'oeuvre la plus ambitieuse de Paru Itagaki, et sans doute l'une des plus originales de sa génération. Sous l'apparence d'un manga d'école avec des animaux anthropomorphes, c'est une exploration dense de ce que signifie contrôler ses instincts, désirer ce qu'on ne peut pas avoir, et exister dans une société qui vous a assigné un rôle.</p><p>Legoshi est un personnage d'une richesse peu commune. Son combat intérieur constant entre sa nature de prédateur et son amour sincère pour Haru est traité avec une honnêteté qui évite les facilités. Il ne triomphe pas de ses instincts, il les négocie, chapitre après chapitre.</p><p>Les premiers arcs sont une réussite quasi totale. La conclusion est plus discutée, Itagaki perdant un peu le fil dans ses derniers volumes. Mais Beastars reste une oeuvre qui prend des risques et les assume, ce qui est déjà beaucoup.</p>`,
+  shops: [
+  {
+    name: "Manganim",
+    url: "https://manganim.fr/search?q=Beastars",
+    logo: "https://manganim.fr/cdn/shop/files/logo-manganim-header_180x.png?v=1672862594"
+  },
+  {
+    name: "Fnac",
+    url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=Beastars+tome",
+    logo: "https://cdn.iconscout.com/icon/free/png-256/free-fnac-3521434-2944878.png"
+  },
+  {
+    name: "Amazon",
+    url: "https://www.amazon.fr/s?k=Beastars+tome",
+    logo: "https://www.1min30.com/wp-content/uploads/2017/12/logo-amazon-1.jpg"
+  }
+],
+  streaming: [
+  {
+    name: "Netflix",
+    url: "https://www.netflix.com/search?q=Beastars",
+    logo: "https://images.ctfassets.net/y2ske730sjqp/5QQ9SVIdc1tmkqrtFnG9U1/de758bba0f65dcc1c6bc1f31f161003d/BrandAssets_Logos_02-NSymbol.jpg?w=940"
+  }
+],
+  live: []
+},
+
+{
+  slug: "golden-kamuy",
+  title: "Golden Kamuy",
+  category: "manga",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx86559-Y4xDmoz4ud43.jpg",
+  tags: "Action · Aventure · Comédie · Drame",
+  stars: 5,
+  addedAt: "2026-03-19",
+  synopsis: "In the early twentieth century, Russo-Japanese War veteran Saichi “Immortal” Sugimoto scratches out a meager existence during the postwar gold rush in the wilderness of Hokkaido. When he stumbles across a map to a fortune in hidden Ainu gold, he sets off on a treacherous quest to find it. But Sugimoto is not the only interested party, and everyone who knows about the gold will kill to possess it! ",
+  pros: ["Combats dynamiques et bien chorégraphiés", "World-building riche et immersif", "Humour efficace qui allège le récit", "Moments émotionnellement forts"],
+  cons: ["Peut nécessiter de s'accrocher au départ"],
+  reviewHtml: `<p>Golden Kamuy est une série incontournable du genre Action.  (score AniList : 86/100)</p><p>À compléter avec votre avis personnel.</p>`,
+  shops: [],
+  streaming: [],
+  live: []
+},
+
+{
+  slug: "the-ancient-magus-bride",
+  title: "The Ancient Magus' Bride",
+  category: "manga",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/nx85435-GEy771ZSyuO0.jpg",
+  tags: "Drame · Fantasy · Romance · Quotidien · Surnaturel",
+  stars: 4,
+  addedAt: "2026-03-19",
+  synopsis: "Hatori Chise has lived most of her short 15-year life full of neglect and abuse, and devoid of love. With no familial warmth, she's had more than her share of troubles and pitfalls. Just when it seems like life can't get any worse, she's now being sold at a slave auction! When a cloaked man, with the head of a beast' skull and wielding strange powers, purchases her, Chise’s life will never be the ",
+  pros: ["Moments émotionnellement forts", "Univers fantastique original"],
+  cons: ["Certains arcs secondaires moins aboutis"],
+  reviewHtml: `<p>The Ancient Magus' Bride est une série incontournable du genre Drama.  (score AniList : 81/100)</p><p>À compléter avec votre avis personnel.</p>`,
+  shops: [],
+  streaming: [],
+  live: []
+},
+
+{
+  slug: "toilet-bound-hanako-kun",
+  title: "Toilet-Bound Hanako-kun",
+  category: "manga",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/nx98842-Ji0v423UZ4er.jpg",
+  tags: "Action · Comédie · Drame · Mystère · Romance",
+  stars: 5,
+  addedAt: "2026-03-19",
+  synopsis: "\"Hanako-san, Hanako-san... are you there?\" At Kamome Academy, rumors abound about the school's Seven Mysteries, one of which is Hanako-san. Said to occupy the third stall of the third floor girls' bathroom in the old school building, Hanako-san grants any wish when summoned. Nene Yashiro, an occult-loving high school girl who dreams of romance, ventures into this haunted bathroom... but the Hanako",
+  pros: ["Combats dynamiques et bien chorégraphiés", "Humour efficace qui allège le récit", "Moments émotionnellement forts", "Intrigue bien construite"],
+  cons: ["Certains arcs secondaires moins aboutis"],
+  reviewHtml: `<p>Toilet-Bound Hanako-kun est une série incontournable du genre Action.  (score AniList : 85/100)</p><p>À compléter avec votre avis personnel.</p>`,
+  shops: [],
+  streaming: [],
+  live: []
+},
+
+{
+  slug: "kaguya-sama-love-is-war",
+  title: "Kaguya-sama: Love is War",
+  category: "manga",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx86635-EdaLQmsn86Fy.png",
+  tags: "Comédie · Psychologie · Romance · Quotidien",
+  stars: 5,
+  addedAt: "2026-03-19",
+  synopsis: "As leaders of their prestigious academy’s student council, Kaguya and Miyuki are the elite of the elite! But it’s lonely at the top… Luckily for them, they’ve fallen in love! There’s just one problem—they both have too much pride to admit it. And so begins the daily scheming to get the object of their affection to confess their romantic feelings first… Love is a war you win by losing. (Source: VIZ",
+  pros: ["Humour efficace qui allège le récit", "Profondeur psychologique des personnages"],
+  cons: ["Peut nécessiter de s'accrocher au départ"],
+  reviewHtml: `<p>Kaguya-sama: Love is War est une série incontournable du genre Comedy.  (score AniList : 87/100)</p><p>À compléter avec votre avis personnel.</p>`,
+  shops: [],
+  streaming: [],
+  live: []
+},
+
+{
+  slug: "moriarty-the-patriot",
+  title: "Moriarty the Patriot",
+  category: "manga",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx98544-UzMzrwxRii6p.jpg",
+  tags: "Mystère · Psychologie · Thriller",
+  stars: 4,
+  addedAt: "2026-03-19",
+  synopsis: "In the late 19th century, Great Britain rules over a quarter of the world. Nobles sit in their fancy homes in comfort and luxury, while the working class slaves away at their jobs. When young Albert James Moriarty’s upper-class family adopts two lower-class orphans, the cruelty the boys experience at his family’s hands cements Albert’s hatred of the nobility he was born into. He asks the older of ",
+  pros: ["Profondeur psychologique des personnages", "Intrigue bien construite"],
+  cons: ["Peut nécessiter de s'accrocher au départ"],
+  reviewHtml: `<p>Moriarty the Patriot est une série incontournable du genre Mystery.  (score AniList : 83/100)</p><p>À compléter avec votre avis personnel.</p>`,
+  shops: [],
+  streaming: [],
+  live: []
+},
+
+{
+  slug: "the-case-study-of-vanitas",
+  title: "The Case Study of Vanitas",
+  category: "manga",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx86568-IibEQI2zjYFl.jpg",
+  tags: "Action · Drame · Fantasy · Mystère · Surnaturel",
+  stars: 4,
+  addedAt: "2026-03-19",
+  synopsis: "Rumors revolving around The Book of Vanitas, a clockwork grimoire of dubious reputation, draw Noé, a young vampire in search of a friend's salvation, to Paris. What awaits him in the City of Flowers, however, is not long hours treading the pavement or rifling through dusty bookshops in search of the tome. Instead, his quarry comes to him...in the arms of a man claiming to be a vampire doctor! Thru",
+  pros: ["Combats dynamiques et bien chorégraphiés", "Moments émotionnellement forts", "Univers fantastique original", "Intrigue bien construite"],
+  cons: ["Certains arcs secondaires moins aboutis"],
+  reviewHtml: `<p>The Case Study of Vanitas est une série incontournable du genre Action.  (score AniList : 83/100)</p><p>À compléter avec votre avis personnel.</p>`,
+  shops: [],
+  streaming: [],
+  live: []
+},
+
+{
+  slug: "no-guns-life",
+  title: "No Guns Life",
+  category: "manga",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx86994-dD2VeOMADGhC.png",
+  tags: "Action · Drame · Sci-fi",
+  stars: 3,
+  addedAt: "2026-03-19",
+  synopsis: "When a fellow Extended showed up in Inui’s office—on the run from the Security Bureau with a kidnapped child in tow and asking for help—Inui almost throws the guy out. But Inui’s loyalty to a brother Extended makes him take the job. Keeping the child safe won’t be easy, since everyone wants him, from the mob to the megacorporation Berühren, which sends out a special agent who knows exactly how to ",
+  pros: ["Combats dynamiques et bien chorégraphiés", "Moments émotionnellement forts", "Concepts science-fiction inventifs"],
+  cons: ["Peut nécessiter de s'accrocher au départ"],
+  reviewHtml: `<p>No Guns Life est une série solide du genre Action.  (score AniList : 71/100)</p><p>À compléter avec votre avis personnel.</p>`,
+  shops: [],
+  streaming: [],
+  live: []
+},
+
+{
+  slug: "dragon-quest-the-adventure-of-dai",
+  title: "Dragon Quest: The Adventure of Dai",
+  category: "manga",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx30871-NzemCChOPyDk.jpg",
+  tags: "Fantasy · Aventure · Shōnen · Classique",
+  stars: 4,
+  addedAt: "2026-03-19",
+  synopsis: "Dai, jeune garçon élevé par des monstres sur une île isolée, rêve de devenir héros. Quand le Seigneur des Ténèbres Hadlar ressurgit, Dai découvre qu'il est le descendant d'un légendaire Paladin. Aux côtés du magicien Popp et de la princesse Leona, il part combattre l'Empire des Ténèbres. Adaptation du célèbre jeu vidéo, Dragon Quest: The Adventure of Dai est un shōnen classique des années 90 d'une qualité remarquable.",
+  pros: ["Worldbuilding riche hérité de la saga Dragon Quest enrichi d'éléments originaux","Le trio Dai-Popp-Maam est l'une des meilleures dynamiques de groupe du shōnen","Progression de puissance bien dosée et satisfaisante","Antagonistes avec des motivations et une présence mémorables"],
+  cons: ["Art daté des années 90 qui peut dérouter","Certaines conventions du shōnen de l'époque aujourd'hui très codifiées"],
+  reviewHtml: `<p>The Adventure of Dai est l'une des grandes réussites du shōnen des années 90, et sa réédition récente a permis à de nouvelles générations de le découvrir enfin. Riku Sanjo et Koji Inada ont pris l'univers de Dragon Quest et en ont fait quelque chose de profondément personnel, une épopée héroïque avec ses propres règles et sa propre mythologie.</p><p>Le trio principal fonctionne parce que chacun a son arc de croissance distinct. Popp en particulier, d'abord couard et calculateur, traverse l'une des meilleures évolutions de personnage du shōnen classique. Sa transformation est crédible parce qu'elle est payée à un prix réel.</p><p>Les antagonistes sont également notables. Hyunckel et Baran, en particulier, sont des adversaires qui dépassent le simple rôle de boss à vaincre. Dai reste l'une des meilleures adaptations de jeu vidéo en manga, et ce n'est pas rien.</p>`,
+  shops: [
+  {
+    name: "Manganim",
+    url: "https://manganim.fr/search?q=Dragon+Quest+Dai",
+    logo: "https://manganim.fr/cdn/shop/files/logo-manganim-header_180x.png?v=1672862594"
+  },
+  {
+    name: "Fnac",
+    url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=Dragon+Quest+Dai+tome",
+    logo: "https://cdn.iconscout.com/icon/free/png-256/free-fnac-3521434-2944878.png"
+  },
+  {
+    name: "Amazon",
+    url: "https://www.amazon.fr/s?k=Dragon+Quest+Dai+tome",
+    logo: "https://www.1min30.com/wp-content/uploads/2017/12/logo-amazon-1.jpg"
+  }
+],
+  streaming: [
+  {
+    name: "Crunchyroll",
+    url: "https://www.crunchyroll.com/fr/search?q=Dragon%20Quest%20Dai%20no%20Daibouken",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/f/fc/Crunchyroll_logo_2018_vertical.png"
+  }
+],
+  live: []
+},
+
+{
+  slug: "horimiya",
+  title: "Horimiya",
+  category: "manga",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx72451-vVXtRwyttjGG.png",
+  tags: "Comédie · Romance · Quotidien",
+  stars: 4,
+  addedAt: "2026-03-19",
+  synopsis: "At school, Kyouko Hori is known for being smart, attractive, and popular. On the other hand, her classmate, the boring, gloomy Izumi Miyamura tends to get painted as a \"loser fanboy.\" But when a liberally pierced and tattooed (not to mention downright gorgeous) Miyamura appears unexpectedly on the doorstep of secretly plain-Jane homebody Hori, these two similarly dissimilar teenagers discover that",
+  pros: ["Humour efficace qui allège le récit", "Personnages attachants", "Narration solide"],
+  cons: ["Peut nécessiter de s'accrocher au départ"],
+  reviewHtml: `<p>Horimiya est une série incontournable du genre Comedy.  (score AniList : 82/100)</p><p>À compléter avec votre avis personnel.</p>`,
+  shops: [],
+  streaming: [],
+  live: []
+},
+
+{
+  slug: "your-lie-in-april",
+  title: "Your Lie in April",
+  category: "manga",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx67707-srHFl9GBmfig.png",
+  tags: "Drame · Romance · Quotidien",
+  stars: 4,
+  addedAt: "2026-03-19",
+  synopsis: "Kosei Arima was a piano prodigy until his cruel taskmaster of a mother died suddenly, changing his life forever. Driven by his pain to abandon piano, Kosei now lives in a monotonous, colorless world. Having resigned himself to a bland life, he is surprised when he meets Kaori Miyazono, a violinist with an unorthodox style. Can she bring Kosei back to music, and back to life? (Source: Kodansha Comi",
+  pros: ["Moments émotionnellement forts", "Personnages attachants", "Narration solide"],
+  cons: ["Peut nécessiter de s'accrocher au départ"],
+  reviewHtml: `<p>Your Lie in April est une série incontournable du genre Drama.  (score AniList : 82/100)</p><p>À compléter avec votre avis personnel.</p>`,
+  shops: [],
+  streaming: [],
+  live: []
+},
+
+{
+  slug: "koe-no-katachi",
+  title: "Koe no Katachi",
+  category: "manga",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx78621-5EoA5Nv06Ok4.jpg",
+  tags: "Drame",
+  stars: 4,
+  addedAt: "2026-03-19",
+  synopsis: "A story about a grade school class that accepts a girl with impaired hearing. Winner of the 80th Weekly Shounen Magazine Newbie Best Mangaka Award.",
+  pros: ["Moments émotionnellement forts", "Personnages attachants", "Narration solide"],
+  cons: ["Peut nécessiter de s'accrocher au départ"],
+  reviewHtml: `<p>Koe no Katachi est une série incontournable du genre Drama.  (score AniList : 81/100)</p><p>À compléter avec votre avis personnel.</p>`,
+  shops: [],
+  streaming: [],
+  live: []
+},
+
+{
+  slug: "fruits-basket",
+  title: "Fruits Basket",
+  category: "manga",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx30102-MJuQ0e0k2CgU.png",
+  tags: "Romance · Surnaturel · Shōjo · Drame",
+  stars: 4,
+  addedAt: "2026-03-19",
+  synopsis: "Tohru Honda, orpheline qui vivait dans une tente, est recueillie par la famille Sohma. Elle découvre rapidement leur secret : certains membres se transforment en animaux du zodiaque chinois au contact d'une personne de l'autre sexe. Derrière les transformations comiques se cache une malédiction familiale profondément douloureuse. Fruits Basket est un shōjo sur la guérison, la famille choisie et le pouvoir d'accepter les autres.",
+  pros: ["Tohru Honda est l'un des personnages les plus aimants et sincères du shōjo","Traitement courageux des traumatismes familiaux et de la toxicité","Évolution émotionnelle profonde de presque tous les personnages","Conclusion satisfaisante et méritée"],
+  cons: ["Début formulaire avec les transformations qui peut sembler léger","Rythme inégal entre les tomes comiques et les tomes plus sombres"],
+  reviewHtml: `<p>Fruits Basket commence comme une comédie romantique avec des gens qui se transforment en animaux zodiacaux, et se révèle être l'une des explorations les plus sensibles et courageuses de la toxicité familiale dans le manga shōjo. Natsuki Takaya n'épargne pas ses personnages, mais elle leur offre aussi une possibilité de guérison réelle.</p><p>Tohru est l'inverse des héroïnes shōjo passives : elle est active dans sa bonté, elle choisit d'aimer les Sohma tels qu'ils sont, brisés et inaptes aux relations normales, et cette décision a un coût. La voir tenir cette position chapitre après chapitre est émouvant et inspirant.</p><p>L'arc final, qui affronte la malédiction des Sohma dans ses racines, est l'une des conclusions les plus méritées du genre. Fruits Basket est la définition d'un shōjo qui grandit avec son lecteur.</p>`,
+  shops: [
+  {
+    name: "Manganim",
+    url: "https://manganim.fr/search?q=Fruits+Basket",
+    logo: "https://manganim.fr/cdn/shop/files/logo-manganim-header_180x.png?v=1672862594"
+  },
+  {
+    name: "Fnac",
+    url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=Fruits+Basket+tome",
+    logo: "https://cdn.iconscout.com/icon/free/png-256/free-fnac-3521434-2944878.png"
+  },
+  {
+    name: "Amazon",
+    url: "https://www.amazon.fr/s?k=Fruits+Basket+tome",
+    logo: "https://www.1min30.com/wp-content/uploads/2017/12/logo-amazon-1.jpg"
+  }
+],
+  streaming: [
+  {
+    name: "Crunchyroll",
+    url: "https://www.crunchyroll.com/fr/search?q=Fruits%20Basket",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/f/fc/Crunchyroll_logo_2018_vertical.png"
+  }
+],
+  live: []
+},
+
+{
+  slug: "ouran-high-school-host-club",
+  title: "Ouran High School Host Club",
+  category: "manga",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx30030-zBHKa3yHdtnM.png",
+  tags: "Comédie · Drame · Romance · Quotidien",
+  stars: 4,
+  addedAt: "2026-03-19",
+  synopsis: "One day, Haruhi, a scholarship student at exclusive Ouran High School, breaks an $80,000 vase that belongs to the \"Host Club,\" a mysterious campus group consisting of six super-rich (and gorgeous) guys. To pay back the damages, she is forced to work for the club, and it's there that she discovers just how wealthy the boys are and how different they are from everybody else. (Source: VIZ Media) Note",
+  pros: ["Humour efficace qui allège le récit", "Moments émotionnellement forts"],
+  cons: ["Peut nécessiter de s'accrocher au départ"],
+  reviewHtml: `<p>Ouran High School Host Club est une série incontournable du genre Comedy.  (score AniList : 83/100)</p><p>À compléter avec votre avis personnel.</p>`,
+  shops: [],
+  streaming: [],
+  live: []
+},
+
+{
+  slug: "nisekoi",
+  title: "Nisekoi",
+  category: "manga",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/24172.jpg",
+  tags: "Action · Comédie · Romance",
+  stars: 3,
+  addedAt: "2026-03-19",
+  synopsis: "From the author of Double Arts here comes another interesting creation. Ichijou Raku is an honor student with outstanding grades and an admirable conduct. He has a female childhood friend named Kirisaki Chitoge who has slightly better grades than him, or so he says. They haven't been getting along since the day of Christmas after they gave each other gifts, and they also have opposite taste of thi",
+  pros: ["Combats dynamiques et bien chorégraphiés", "Humour efficace qui allège le récit"],
+  cons: ["Peut nécessiter de s'accrocher au départ"],
+  reviewHtml: `<p>Nisekoi est une série solide du genre Action.  (score AniList : 72/100)</p><p>À compléter avec votre avis personnel.</p>`,
+  shops: [],
+  streaming: [],
+  live: []
+},
+
+{
+  slug: "my-dress-up-darling",
+  title: "My Dress-Up Darling",
+  category: "manga",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx101583-VI1PT2QGGT8W.jpg",
+  tags: "Comédie · Ecchi · Romance · Quotidien",
+  stars: 4,
+  addedAt: "2026-03-19",
+  synopsis: "Traumatized by a childhood incident with a friend who took exception to his love of traditional dolls, doll-artisan hopeful Gojou Wakana passes his days as a loner, finding solace in the home ec room at his high school. To Wakana, people like beautiful Kitagawa Marin, a trendy girl who's always surrounded by a throng of friends, is practically an alien from another world. But when cheerful Marin--",
+  pros: ["Humour efficace qui allège le récit", "Personnages attachants", "Narration solide"],
+  cons: ["Fan service intrusif par moments"],
+  reviewHtml: `<p>My Dress-Up Darling est une série incontournable du genre Comedy.  (score AniList : 79/100)</p><p>À compléter avec votre avis personnel.</p>`,
+  shops: [],
+  streaming: [],
+  live: []
+},
+
+{
+  slug: "komi-san-wa-komyushou-desu",
+  title: "Komi-san wa Komyushou desu.",
+  category: "manga",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx86813-ywOLcmlGJKTy.jpg",
+  tags: "Comédie",
+  stars: 3,
+  addedAt: "2026-03-19",
+  synopsis: "Komi-san is the beautiful and admirable girl that no-one can take their eyes off her. Almost the whole school sees her as the cold beauty out of their league, but Tadano Shigeo knows the truth: she's just really bad at communicating with others. Komi-san, who wishes to fix this bad habit of hers, tries to improve it with the help of Tadano-kun.",
+  pros: ["Humour efficace qui allège le récit", "Personnages attachants", "Narration solide"],
+  cons: ["Peut nécessiter de s'accrocher au départ"],
+  reviewHtml: `<p>Komi-san wa Komyushou desu. est une série solide du genre Comedy.  (score AniList : 71/100)</p><p>À compléter avec votre avis personnel.</p>`,
+  shops: [],
+  streaming: [],
+  live: []
+},
+
+{
+  slug: "blue-spring-ride",
+  title: "Blue Spring Ride",
+  category: "manga",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx63297-4UWuHue0AJD2.jpg",
+  tags: "Romance · Shōjo · École · Drame",
+  stars: 4,
+  addedAt: "2026-03-19",
+  synopsis: "Futaba Yoshioka, qui s'était efforcée de réprimer sa féminité au collège pour être acceptée des filles, retrouve au lycée Kou Mabuchi, son premier amour disparu sans explication. Mais Kou a changé, il est devenu distant et cynique. Leur relation hésitante, entre anciens sentiments et nouvelles blessures, forme le coeur d'un shōjo romantique d'une sincérité touchante.",
+  pros: ["Évolution psychologique des personnages traitée avec soin et réalisme","Romance lente et nuancée qui respecte l'intelligence du lecteur","Kou Mabuchi est un héros shōjo plus complexe que la moyenne","Art élégant d'Io Sakisaka"],
+  cons: ["Rythme parfois très lent, les hésitations s'éternisent","Quelques arcs secondaires moins captivants"],
+  reviewHtml: `<p>Blue Spring Ride fait partie des shōjo qui comprennent que l'amour ne suffit pas pour que deux personnes se retrouvent. Futaba et Kou portent chacun des blessures que l'autre n'a pas vues se former, et leur tentative maladroite de se retrouver malgré ça est le vrai sujet du manga.</p><p>Io Sakisaka écrit des personnages qui pensent et qui se trompent de manière crédible. Les malentendus de Blue Spring Ride ne sont pas là pour créer des rebondissements artificiels, ils naissent d'une psychologie cohérente. Kou en particulier, blessé et fermé, est un héros shōjo qui sort des sentiers battus.</p><p>Le rythme est lent, c'est assumé. Pour les lecteurs qui aiment les romances qui prennent le temps de construire quelque chose, Blue Spring Ride est une très belle lecture.</p>`,
+  shops: [
+  {
+    name: "Manganim",
+    url: "https://manganim.fr/search?q=Blue+Spring+Ride",
+    logo: "https://manganim.fr/cdn/shop/files/logo-manganim-header_180x.png?v=1672862594"
+  },
+  {
+    name: "Fnac",
+    url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=Blue+Spring+Ride+tome",
+    logo: "https://cdn.iconscout.com/icon/free/png-256/free-fnac-3521434-2944878.png"
+  },
+  {
+    name: "Amazon",
+    url: "https://www.amazon.fr/s?k=Blue+Spring+Ride+tome",
+    logo: "https://www.1min30.com/wp-content/uploads/2017/12/logo-amazon-1.jpg"
+  }
+],
+  streaming: [
+  {
+    name: "Crunchyroll",
+    url: "https://www.crunchyroll.com/fr/search?q=Ao%20Haru%20Ride",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/f/fc/Crunchyroll_logo_2018_vertical.png"
+  }
+],
+  live: []
+},
+
+{
+  slug: "monthly-girls-nozaki-kun",
+  title: "Monthly Girls' Nozaki-kun",
+  category: "manga",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/nx59211-ltc4FW9inrms.jpg",
+  tags: "Comédie · Romance",
+  stars: 4,
+  addedAt: "2026-03-19",
+  synopsis: "The boy of her dreams...is a girl's manga artist?! To the eyes of high school student Chiyo Sakura, classmate Umetarou Nozaki--brawny of build and brusque of tongue--is a dreamboat! When Chiyo finally works up the courage to tell Nozaki how she feels about him, she knows rejection is on the table...but getting recruited as a manga-ka's assistant?! Never in a million years! But for someone who make",
+  pros: ["Humour efficace qui allège le récit", "Personnages attachants", "Narration solide"],
+  cons: ["Peut nécessiter de s'accrocher au départ"],
+  reviewHtml: `<p>Monthly Girls' Nozaki-kun est une série incontournable du genre Comedy.  (score AniList : 82/100)</p><p>À compléter avec votre avis personnel.</p>`,
+  shops: [],
+  streaming: [],
+  live: []
+},
+
+{
+  slug: "rent-a-girlfriend",
+  title: "Rent-A-Girlfriend",
+  category: "manga",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx99943-DX7nDMeqSTk3.png",
+  tags: "Comédie · Drame · Ecchi · Romance",
+  stars: 2,
+  addedAt: "2026-03-19",
+  synopsis: "In today’s Japan, “rental” services can deliver an afternoon with a “friend,” a “parent,” even a fake girlfriend! After a staggering betrayal by his girlfriend, hapless freshman Kazuya gets just desperate enough to give it a try. But he quickly discovers how complicated it can be to “rent” an emotional connection, and his new “girlfriend,” who’s trying to keep her side hustle secret, will panic wh",
+  pros: ["Humour efficace qui allège le récit", "Moments émotionnellement forts"],
+  cons: ["Rythme parfois irrégulier", "Fan service intrusif par moments"],
+  reviewHtml: `<p>Rent-A-Girlfriend est une série solide du genre Comedy.  (score AniList : 58/100)</p><p>À compléter avec votre avis personnel.</p>`,
+  shops: [],
+  streaming: [],
+  live: []
+},
+
+{
+  slug: "dont-toy-with-me-miss-nagatoro",
+  title: "Don't Toy With Me, Miss Nagatoro",
+  category: "manga",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/nx100664-uzN5998CDxPJ.jpg",
+  tags: "Comédie · Romance · Seinen · École",
+  stars: 3,
+  addedAt: "2026-03-19",
+  synopsis: "Hachioji, lycéen introverti passionné de manga, se fait remarquer par Nagatoro, une première année qui prend un malin plaisir à le taquiner sans relâche. Ce qui commence comme un harcèlement ambigu évolue progressivement vers une relation de confiance teintée d'affection maladroite. Le manga joue sur la frontière fine entre moquerie et soin.",
+  pros: ["Évolution de la relation Nagatoro-Senpai bien dosée sur la durée","Nagatoro est un personnage avec plus de profondeur qu'il n'y paraît","Humour efficace dans les situations de taquinerie","Les passages sur le manga de Senpai sont touchants"],
+  cons: ["Les premiers chapitres sont difficiles à apprécier selon la tolérance au harcèlement fictif","Rythme irrégulier entre les arcs romantiques et comiques"],
+  reviewHtml: `<p>Miss Nagatoro est un manga qui divise essentiellement sur ses premiers chapitres. La dynamique initiale, une fille qui tourmente un garçon visiblement mal à l'aise, peut mettre mal à l'aise. Mais le manga évolue, et assez vite Nagatoro révèle une affection maladroite et sincère sous ses provocations.</p><p>La force du manga sur la longueur est l'évolution de Senpai. Ce n'est pas juste un objet de taquinerie : il développe sa confiance en lui, continue son manga, apprend à s'affirmer. Nagatoro est le catalyseur d'une vraie progression. Pour les lecteurs patients, c'est une romance légère qui finit par mériter son investissement.</p>`,
+  shops: [
+  {
+    name: "Manganim",
+    url: "https://manganim.fr/search?q=Nagatoro",
+    logo: "https://manganim.fr/cdn/shop/files/logo-manganim-header_180x.png?v=1672862594"
+  },
+  {
+    name: "Fnac",
+    url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=Nagatoro+tome",
+    logo: "https://cdn.iconscout.com/icon/free/png-256/free-fnac-3521434-2944878.png"
+  },
+  {
+    name: "Amazon",
+    url: "https://www.amazon.fr/s?k=Nagatoro+tome",
+    logo: "https://www.1min30.com/wp-content/uploads/2017/12/logo-amazon-1.jpg"
+  }
+],
+  streaming: [
+  {
+    name: "Crunchyroll",
+    url: "https://www.crunchyroll.com/fr/search?q=Nagatoro",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/f/fc/Crunchyroll_logo_2018_vertical.png"
+  }
+],
+  live: []
+},
+
+{
+  slug: "barakamon",
+  title: "Barakamon",
+  category: "manga",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/nx47051-2Qdu2XyoAv1z.jpg",
+  tags: "Comédie · Slice of Life · Seinen · Campagne",
+  stars: 4,
+  addedAt: "2026-03-19",
+  synopsis: "Seishuu Handa, calligraphe prodige tokyoïte trop lisse et trop parfait, est exilé par son père sur une île rurale des Gotô après avoir frappé un critique d'art. Confronté à la lenteur de la vie villageoise, aux enfants envahissants et à l'absence de tout ce qui constituait son quotidien, il va devoir se réinventer pour trouver son propre style. Barakamon est un manga sur la créativité, l'authenticité et le bonheur simple.",
+  pros: ["Atmosphère chaleureuse et apaisante unique en son genre","Naru, la petite voisine, est l'un des personnages les plus adorables du manga moderne","Réflexions sincères sur la création artistique et le perfectionnisme","Équilibre parfait entre comédie légère et moments émouvants"],
+  cons: ["Peu de tension dramatique, peut sembler trop tranquille pour certains","La fin laisse quelques fils narratifs en suspens"],
+  reviewHtml: `<p>Barakamon est un de ces manga qu'on lit pour se sentir mieux. Pas parce qu'il évite les problèmes, mais parce qu'il montre comment une rupture radicale avec ses habitudes peut libérer quelque chose qu'on ne savait pas avoir en soi. Handa n'est pas en vacances sur l'île de Gotô, il se refabrique.</p><p>La relation entre Handa et les habitants de l'île, surtout la petite Naru qui débarque dans son atelier sans permission, est le coeur du manga. Naru est un personnage d'une vitalité communicative, joyeuse et sincère sans jamais tomber dans la mièvrerie. Elle représente exactement ce que Handa a besoin d'apprendre : vivre sans calculer.</p><p>Yoshino Satsuki a le rare talent de parler de création artistique sans jamais être ennuyeux. Les réflexions de Handa sur son style, sur ce que signifie "être authentique" en calligraphie, résonnent bien au-delà du médium. Un manga doux et intelligent.</p>`,
+  shops: [
+  {
+    name: "Manganim",
+    url: "https://manganim.fr/search?q=Barakamon",
+    logo: "https://manganim.fr/cdn/shop/files/logo-manganim-header_180x.png?v=1672862594"
+  },
+  {
+    name: "Fnac",
+    url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=Barakamon+tome",
+    logo: "https://cdn.iconscout.com/icon/free/png-256/free-fnac-3521434-2944878.png"
+  },
+  {
+    name: "Amazon",
+    url: "https://www.amazon.fr/s?k=Barakamon+tome",
+    logo: "https://www.1min30.com/wp-content/uploads/2017/12/logo-amazon-1.jpg"
+  }
+],
+  streaming: [
+  {
+    name: "Crunchyroll",
+    url: "https://www.crunchyroll.com/fr/search?q=Barakamon",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/f/fc/Crunchyroll_logo_2018_vertical.png"
+  }
+],
+  live: []
+},
+
+{
+  slug: "yahari-ore-no-seishun-love-come-wa-machigatteiru-monologue",
+  title: "Yahari Ore no Seishun Love Come wa Machigatteiru. Monologue",
+  category: "manga",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx75447-g0pXtV8FB0JP.jpg",
+  tags: "Comédie · Romance",
+  stars: 4,
+  addedAt: "2026-03-19",
+  synopsis: "Hikigaya Hachiman is a high school boy with twisted character. He prefers to go against the trend and refuses to make friends with anybody. In order to get Hachiman back the right track, his school teacher Hiratsuka Shizuka forces him to enter 'Public Service Club'. There he meets other problematic students.",
+  pros: ["Humour efficace qui allège le récit", "Personnages attachants", "Narration solide"],
+  cons: ["Peut nécessiter de s'accrocher au départ"],
+  reviewHtml: `<p>Yahari Ore no Seishun Love Come wa Machigatteiru. Monologue est une série incontournable du genre Comedy.  (score AniList : 78/100)</p><p>À compléter avec votre avis personnel.</p>`,
+  shops: [],
+  streaming: [],
+  live: []
+},
+
+{
+  slug: "domestic-girlfriend",
+  title: "Domestic Girlfriend",
+  category: "manga",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx85802-lh7gZHgQmliE.png",
+  tags: "Romance · Drame · Seinen · Controversé",
+  stars: 2,
+  addedAt: "2026-03-19",
+  synopsis: "Natsuo Fujii est amoureux de sa professeure Hina, sans espoir de réciprocité. Après une nuit impulsive avec une inconnue prénommée Rui, il découvre que son père va se remarier avec la mère de deux filles : Hina et Rui. Le voilà colocataire de la femme qu'il aime et de celle avec qui il a couché. Domestic Girlfriend explore ce triangle impossible jusqu'à ses limites les plus controversées.",
+  pros: ["Tension dramatique réelle et situations qui évitent rarement les conséquences","Certains arcs émotionnellement efficaces malgré les excès","La relation Natsuo-Rui finit par avoir une vraie profondeur"],
+  cons: ["Relation professeur-élève romanticisée de façon problématique","Natsuo est un protagoniste souvent exaspérant","Conclusion très discutée et perçue comme incohérente par beaucoup"],
+  reviewHtml: `<p>Domestic Girlfriend est un manga qui ne fait pas semblant d'être autre chose qu'un drama romantique provocateur. Kei Sasuga pousse ses personnages dans des situations de plus en plus extrêmes, assumant pleinement le côté scandaleux de sa prémisse.</p><p>Le manga a ses défenseurs pour sa tension émotionnelle réelle et quelques arcs bien construits. Il a aussi ses détracteurs pour la romanticisation d'une relation professeur-élève et une conclusion qui a divisé profondément son lectorat. Les deux camps ont leurs raisons. À aborder en sachant ce qu'on va trouver.</p>`,
+  shops: [
+  {
+    name: "Manganim",
+    url: "https://manganim.fr/search?q=Domestic+Girlfriend",
+    logo: "https://manganim.fr/cdn/shop/files/logo-manganim-header_180x.png?v=1672862594"
+  },
+  {
+    name: "Fnac",
+    url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=Domestic+Girlfriend+tome",
+    logo: "https://cdn.iconscout.com/icon/free/png-256/free-fnac-3521434-2944878.png"
+  },
+  {
+    name: "Amazon",
+    url: "https://www.amazon.fr/s?k=Domestic+Girlfriend+tome",
+    logo: "https://www.1min30.com/wp-content/uploads/2017/12/logo-amazon-1.jpg"
+  }
+],
+  streaming: [
+  {
+    name: "Crunchyroll",
+    url: "https://www.crunchyroll.com/fr/search?q=Domestic%20Girlfriend",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/f/fc/Crunchyroll_logo_2018_vertical.png"
+  }
+],
+  live: []
+},
+
+{
+  slug: "uzumaki-spiral-into-horror",
+  title: "Uzumaki: Spiral into Horror",
+  category: "manga",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx30436-Opk9ZubMPuDU.jpg",
+  tags: "Drame · Horreur · Mystère · Psychologie · Romance",
+  stars: 4,
+  addedAt: "2026-03-19",
+  synopsis: "Kurozu-cho, a small fogbound town on the coast of Japan, is cursed. According to Shuichi Saito, the withdrawn boyfriend of teenager Kirie Goshima, their town is haunted not by a person or being but by a pattern: uzumaki, the spiral, the hypnotic secret shape of the world. It manifests itself in small ways: seashells, ferns, whirlpools in water, whirlwinds in air. And in large ways: the spiral mark",
+  pros: ["Moments émotionnellement forts", "Profondeur psychologique des personnages", "Intrigue bien construite"],
+  cons: ["Certains arcs secondaires moins aboutis"],
+  reviewHtml: `<p>Uzumaki: Spiral into Horror est une série incontournable du genre Drama.  (score AniList : 79/100)</p><p>À compléter avec votre avis personnel.</p>`,
+  shops: [],
+  streaming: [],
+  live: []
+},
+
+
+{
+  slug: "goodnight-punpun",
+  title: "Goodnight Punpun",
+  category: "manga",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx34632-5xMDkx3pXsEh.png",
+  tags: "Drame · Psychologie · Quotidien",
+  stars: 5,
+  addedAt: "2026-03-19",
+  synopsis: "Meet Punpun Punyama. He’s an average kid in an average town. He wants to win a Nobel Prize and save the world. He wants the girl he has a crush on to like him back. He wants to find some porn. That’s what he wants, but what does he get…? (Source: VIZ Media)",
+  pros: ["Moments émotionnellement forts", "Profondeur psychologique des personnages"],
+  cons: ["Peut nécessiter de s'accrocher au départ"],
+  reviewHtml: `<p>Goodnight Punpun est une série incontournable du genre Drama.  (score AniList : 88/100)</p><p>À compléter avec votre avis personnel.</p>`,
+  shops: [],
+  streaming: [],
+  live: []
+},
+
+{
+  slug: "gantz",
+  title: "Gantz",
+  category: "manga",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx30564-RbyFbLzbnKea.jpg",
+  tags: "Sci-fi · Action · Horreur · Seinen",
+  stars: 3,
+  addedAt: "2026-03-19",
+  synopsis: "Kei Kurono et Masaru Kato meurent écrasés par un métro, pour se réveiller dans un appartement face à une mystérieuse sphère noire appelée Gantz. Elle les envoie combattre des aliens monstrueux dans Tokyo, équipés de combinaisons high-tech, avec comme seule motivation des points qui pourraient leur rendre la vie. Gantz est un survival ultra-violent qui pose des questions sur la mort, le libre arbitre et la valeur de la vie humaine.",
+  pros: ["Prémisse de survival original et tendue","Action ultra-dynamique avec des confrontations aliens mémorables","Certains arcs (l'arc des vampires, l'arc de la statue géante) sont particulièrement intenses","Questionnements philosophiques sur la mort et la résurrection"],
+  cons: ["Fan service excessif et traitement problématique de certains personnages féminins","Derniers arcs décevants et conclusion insatisfaisante","Peut être rebutant par son niveau de violence gratuite"],
+  reviewHtml: `<p>Gantz est un manga clivant par excellence. À son meilleur, c'est un survival d'une tension absolue, avec des créatures aliens inventives et une atmosphère de mort permanente qui donne un sens réel à chaque décision des personnages. Les meilleurs arcs, notamment l'arc des vampires et l'arc de la statue géante, sont parmi les plus intenses du seinen d'action.</p><p>À son pire, Gantz est excessif dans tous ses registres : violence, fan service, nihilisme. Hiroya Oku ne fait rien à moitié, ce qui peut être une qualité et un défaut selon les scènes. La conclusion du manga est généralement considérée comme décevante par rapport au potentiel des premiers arcs.</p><p>Gantz reste une lecture marquante pour les amateurs de seinen dark qui cherchent quelque chose de viscéral et provocateur, à condition d'accepter ses excès comme faisant partie du package.</p>`,
+  shops: [
+  {
+    name: "Manganim",
+    url: "https://manganim.fr/search?q=Gantz",
+    logo: "https://manganim.fr/cdn/shop/files/logo-manganim-header_180x.png?v=1672862594"
+  },
+  {
+    name: "Fnac",
+    url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=Gantz+tome",
+    logo: "https://cdn.iconscout.com/icon/free/png-256/free-fnac-3521434-2944878.png"
+  },
+  {
+    name: "Amazon",
+    url: "https://www.amazon.fr/s?k=Gantz+tome",
+    logo: "https://www.1min30.com/wp-content/uploads/2017/12/logo-amazon-1.jpg"
+  }
+],
+  streaming: [],
+  live: []
+},
+
+{
+  slug: "i-am-a-hero",
+  title: "I Am a Hero",
+  category: "manga",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx44440-oLFibAj4TvM7.jpg",
+  tags: "Action · Horreur · Psychologie",
+  stars: 3,
+  addedAt: "2026-03-19",
+  synopsis: "A mentally unhinged manga artist witnesses the beginning of a zombie outbreak in Tokyo, and he’s certain of only two things: he’s destined to be the city’s hero, and he possesses something quite rare in Japan—an actual firearm! (Source: Dark Horse) Notes: Nominated for the 3rd and 4th Manga Taisho Award (2010). Includes a new epilogue chapter that was released 4 years after the official end of the",
+  pros: ["Combats dynamiques et bien chorégraphiés", "Profondeur psychologique des personnages"],
+  cons: ["Peut nécessiter de s'accrocher au départ"],
+  reviewHtml: `<p>I Am a Hero est une série solide du genre Action.  (score AniList : 74/100)</p><p>À compléter avec votre avis personnel.</p>`,
+  shops: [],
+  streaming: [],
+  live: []
+},
+
+{
+  slug: "girls-last-tour",
+  title: "Girls' Last Tour",
+  category: "manga",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx85412-wzZ2QFwbZJED.jpg",
+  tags: "Aventure · Sci-fi · Quotidien",
+  stars: 5,
+  addedAt: "2026-03-19",
+  synopsis: "Civilization is dead, but Chito and Yuuri are still alive. So they hop aboard their beloved Kettenkrad motorbike and aimlessly wander the ruins of the world they once knew. Day after hopeless day, they look for their next meal and fuel for their ride. But as long as the two are together, even an existence as bleak as theirs has a ray or two of sunshine in it, whether they're sucking down their fil",
+  pros: ["World-building riche et immersif", "Concepts science-fiction inventifs"],
+  cons: ["Peut nécessiter de s'accrocher au départ"],
+  reviewHtml: `<p>Girls' Last Tour est une série incontournable du genre Adventure.  (score AniList : 86/100)</p><p>À compléter avec votre avis personnel.</p>`,
+  shops: [],
+  streaming: [],
+  live: []
+},
+
+{
+  slug: "mieruko-chan",
+  title: "Mieruko-chan",
+  category: "manga",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx105097-nMpc8bjBeuXE.jpg",
+  tags: "Comédie · Horreur · Quotidien · Surnaturel",
+  stars: 4,
+  addedAt: "2026-03-19",
+  synopsis: "One day, she could see…everything. What’s a girl to do when hideous monsters appear no matter which way she turns? And on top of that, nobody else can see them! Obviously, there’s only one thing that makes sense—ignore them. Kinda hard to put theory into practice, though, when the ghosts know she’s watching… (Source: Yen Press)",
+  pros: ["Humour efficace qui allège le récit", "Personnages attachants", "Narration solide"],
+  cons: ["Peut nécessiter de s'accrocher au départ"],
+  reviewHtml: `<p>Mieruko-chan est une série incontournable du genre Comedy.  (score AniList : 77/100)</p><p>À compléter avec votre avis personnel.</p>`,
+  shops: [],
+  streaming: [],
+  live: []
+},
+
+{
+  slug: "mushoku-tensei-redundant-reincarnation",
+  title: "Mushoku Tensei: Redundant Reincarnation",
+  category: "manga",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx165131-R4pedWdbZiAW.jpg",
+  tags: "Action · Drame · Ecchi · Fantasy",
+  stars: 4,
+  addedAt: "2026-03-19",
+  synopsis: "Rudeus Greyrat has finally emerged victorious from the showdown at Biheiril Kingdom. With his hard-fought battle over, he can finally rest easy and put his adventuring days behind him. Yeah right! The epic fight may be done, but the story of the Jobless Reincarnation cast is far from over. There’s still Norn’s wedding, Lucie’s first day at school, hunting down marriage partners for Dohga and Isold",
+  pros: ["Combats dynamiques et bien chorégraphiés", "Moments émotionnellement forts", "Univers fantastique original"],
+  cons: ["Fan service intrusif par moments"],
+  reviewHtml: `<p>Mushoku Tensei: Redundant Reincarnation est une série incontournable du genre Action.  (score AniList : 84/100)</p><p>À compléter avec votre avis personnel.</p>`,
+  shops: [],
+  streaming: [],
+  live: []
+},
+
+{
+  slug: "is-it-wrong-to-try-to-pick-up-girls-in-a-dungeon",
+  title: "Is It Wrong to Try to Pick Up Girls in a Dungeon?",
+  category: "manga",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx85162-Fpd3ejAlFWP8.jpg",
+  tags: "Action · Aventure · Comédie · Fantasy · Romance",
+  stars: 4,
+  addedAt: "2026-03-19",
+  synopsis: "In Orario, fearless adventurers band together in search of fame and fortune within the monstrous underground labyrinth known as Dungeon. But while riches and renown are incentive enough for most, Bell Cranel, would-be hero extraordinaire, has bigger plans. He wants to pick up girls. Is it wrong to face the perils of Dungeon alone, in a single-member guild blessed by a failed goddess? Maybe. Is it ",
+  pros: ["Combats dynamiques et bien chorégraphiés", "World-building riche et immersif", "Humour efficace qui allège le récit", "Univers fantastique original"],
+  cons: ["Certains arcs secondaires moins aboutis"],
+  reviewHtml: `<p>Is It Wrong to Try to Pick Up Girls in a Dungeon? est une série incontournable du genre Action.  (score AniList : 81/100)</p><p>À compléter avec votre avis personnel.</p>`,
+  shops: [],
+  streaming: [],
+  live: []
+},
+
+{
+  slug: "log-horizon",
+  title: "Log Horizon",
+  category: "manga",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx76024-asSsUMwFm5O8.jpg",
+  tags: "Action · Aventure · Fantasy · Romance",
+  stars: 4,
+  addedAt: "2026-03-19",
+  synopsis: "Thirty thousand Japanese gamers awake one day to discover that the fantasy world of Elder Tales, an MMORPG that was formerly their collective hobby, has become their cold hard reality. Severed from their everyday lives, they confront a new horizon filled with ravenous monsters, flavorless food, and the inability to die! Amid the chaos, veteran gamer Shiroe gathers his friends, the guardian Naotsug",
+  pros: ["Combats dynamiques et bien chorégraphiés", "World-building riche et immersif", "Univers fantastique original"],
+  cons: ["Peut nécessiter de s'accrocher au départ"],
+  reviewHtml: `<p>Log Horizon est une série incontournable du genre Action.  (score AniList : 77/100)</p><p>À compléter avec votre avis personnel.</p>`,
+  shops: [],
+  streaming: [],
+  live: []
+},
+
+{
+  slug: "skeleton-knight-in-another-world",
+  title: "Skeleton Knight in Another World",
+  category: "manga",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx87239-SYX4tnwAzmhN.jpg",
+  tags: "Action · Aventure · Fantasy",
+  stars: 3,
+  addedAt: "2026-03-19",
+  synopsis: "One day, a gamer played video games until he fell asleep…and when he woke up, he found himself in the game world–as a skeleton! Equipped with the powerful weapons and armor of his avatar but stuck with its frightening skeletal appearance, Arc has to find a place for himself in this new, fantastical land. All his hopes for a quiet life are dashed when he crosses paths with a beautiful elven warrior",
+  pros: ["Combats dynamiques et bien chorégraphiés", "World-building riche et immersif", "Univers fantastique original"],
+  cons: ["Rythme parfois irrégulier"],
+  reviewHtml: `<p>Skeleton Knight in Another World est une série solide du genre Action.  (score AniList : 68/100)</p><p>À compléter avec votre avis personnel.</p>`,
+  shops: [],
+  streaming: [],
+  live: []
+},
+
+{
+  slug: "didnt-i-say-to-make-my-abilities-average-in-the-next-life",
+  title: "Didn't I Say to Make My Abilities Average in the Next Life?!",
+  category: "manga",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/nx99102-DGXEjeRwT5bi.jpg",
+  tags: "Isekai · Comédie · Fantasy · Shōnen",
+  stars: 3,
+  addedAt: "2026-03-19",
+  synopsis: "Misato Kurihara, surdouée marginalisée dans sa vie passée, demande à sa réincarnation d'avoir des capacités parfaitement moyennes. Le problème : la moyenne divine est calculée entre la créature la plus faible et la plus puissante de l'univers, lui donnant des pouvoirs colossaux. Elle forme avec trois amies un groupe d'aventurières tout en cherchant désespérément à passer inaperçue, sans grand succès.",
+  pros: ["Prémisse comique bien exploitée sur la malédiction d'être involontairement OP","Dynamique de groupe des quatre filles sympathique et légère","Humour efficace sur les clichés de l'isekai"],
+  cons: ["Peu de profondeur narrative ou émotionnelle","Assez prévisible dans ses rebondissements","L'humour s'épuise sur la longueur"],
+  reviewHtml: `<p>Didn't I Say to Make My Abilities Average est une comédie isekai honnête qui fait bien ce qu'elle promet : se moquer gentiment des conventions du genre tout en les reproduisant avec affection. La prémisse, vouloir être ordinaire et rater à chaque fois, est une bonne source de gags récurrents.</p><p>Le manga ne prétend pas être plus que ce qu'il est. C'est une lecture légère et amusante, portée par une héroïne sympathique et un groupe d'amies attachantes. Pour les fans d'isekai qui cherchent quelque chose de détendu et sans prise de tête, c'est un choix tout à fait respectable.</p>`,
+  shops: [
+  {
+    name: "Manganim",
+    url: "https://manganim.fr/search?q=Abilities+Average",
+    logo: "https://manganim.fr/cdn/shop/files/logo-manganim-header_180x.png?v=1672862594"
+  },
+  {
+    name: "Fnac",
+    url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=Abilities+Average+tome",
+    logo: "https://cdn.iconscout.com/icon/free/png-256/free-fnac-3521434-2944878.png"
+  },
+  {
+    name: "Amazon",
+    url: "https://www.amazon.fr/s?k=Abilities+Average+tome",
+    logo: "https://www.1min30.com/wp-content/uploads/2017/12/logo-amazon-1.jpg"
+  }
+],
+  streaming: [
+  {
+    name: "Crunchyroll",
+    url: "https://www.crunchyroll.com/fr/search?q=Didn't%20I%20Say%20Make%20My%20Abilities%20Average",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/f/fc/Crunchyroll_logo_2018_vertical.png"
+  }
+],
+  live: []
+},
+
+{
+  slug: "gushing-over-magical-girls",
+  title: "Gushing over Magical Girls",
+  category: "manga",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx109017-bT3qVhgii0Xy.png",
+  tags: "Comédie · Ecchi · Quotidien",
+  stars: 4,
+  addedAt: "2026-03-19",
+  synopsis: "Hi, I'm Hiiragi Utena. I'm a normal magical-girl-loving middle school girl—or at least I was, but then some talking mascot showed up out of the blue and cast a spell on me! Now's my chance to join my beloved magical girls as...a villain? Hang on, something's wrong with my outfit! This can't be happening! (Source: J-Novel Club) Note: Nominated for the Tsugimanga 2020 Award in the Web Manga Category",
+  pros: ["Humour efficace qui allège le récit", "Personnages attachants", "Narration solide"],
+  cons: ["Fan service intrusif par moments"],
+  reviewHtml: `<p>Gushing over Magical Girls est une série incontournable du genre Comedy.  (score AniList : 77/100)</p><p>À compléter avec votre avis personnel.</p>`,
+  shops: [],
+  streaming: [],
+  live: []
+},
+
+{
+  slug: "true-beauty",
+  title: "True Beauty",
+  category: "manhwa",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx103995-eE7WHxOy77TB.jpg",
+  tags: "Comédie · Drame · Romance",
+  stars: 2,
+  addedAt: "2026-03-19",
+  synopsis: "After binge-watching beauty videos online, a shy comic book fan masters the art of makeup and sees her social standing skyrocket as she becomes her school’s prettiest pretty girl overnight. But will her elite status be short-lived? How long can she keep her real self a secret? And what about that cute boy who knows her secret? (Source: WEBTOONS) Note: Chapter count includes a prologue and 33 side ",
+  pros: ["Humour efficace qui allège le récit", "Moments émotionnellement forts"],
+  cons: ["Rythme parfois irrégulier"],
+  reviewHtml: `<p>True Beauty est une série solide du genre Comedy.  (score AniList : 63/100)</p><p>À compléter avec votre avis personnel.</p>`,
+  shops: [],
+  streaming: [],
+  live: []
+},
+{
+  slug: "hardcore-leveling-warrior",
+  title: "Hardcore Leveling Warrior",
+  category: "manhwa",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx101134-RH16zHUBRyXL.png",
+  tags: "Action · Aventure · Fantasy",
+  stars: 4,
+  addedAt: "2026-03-19",
+  synopsis: "When you go from level 99 to level 1 and start all over again. (Source: WEBTOON) Note: Includes one extra chapter.",
+  pros: ["Combats dynamiques et bien chorégraphiés", "World-building riche et immersif", "Univers fantastique original"],
+  cons: ["Peut nécessiter de s'accrocher au départ"],
+  reviewHtml: `<p>Hardcore Leveling Warrior est une série incontournable du genre Action.  (score AniList : 75/100)</p><p>À compléter avec votre avis personnel.</p>`,
+  shops: [],
+  streaming: [],
+  live: []
+},
+
+{
+  slug: "wotakoi-love-is-hard-for-otaku",
+  title: "Wotakoi: Love is Hard for Otaku",
+  category: "manga",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx86717-S7z7uizfTfEu.png",
+  tags: "Comédie · Romance · Quotidien",
+  stars: 4,
+  addedAt: "2026-03-19",
+  synopsis: "Narumi Momose has had it rough: every boyfriend she’s had dumped her once they found out she was an otaku, so she’s gone to great lengths to hide it. When a chance meeting at her new job with childhood friend, fellow otaku, and now coworker Hirotaka Nifuji almost gets her secret outed at work, she comes up with a plan to make sure he never speaks up. But he comes up with a counter-proposal: why do",
+  pros: ["Humour efficace qui allège le récit", "Personnages attachants", "Narration solide"],
+  cons: ["Peut nécessiter de s'accrocher au départ"],
+  reviewHtml: `<p>Wotakoi: Love is Hard for Otaku est une série incontournable du genre Comedy.  (score AniList : 83/100)</p><p>À compléter avec votre avis personnel.</p>`,
+  shops: [],
+  streaming: [],
+  live: []
+},
+
+{
+  slug: "we-never-learn",
+  title: "We Never Learn",
+  category: "manga",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/nx98235-V6yBxNIrsOp0.jpg",
+  tags: "Comédie · Ecchi · Romance · Quotidien",
+  stars: 4,
+  addedAt: "2026-03-19",
+  synopsis: "Nariyuki Yuiga is in his last and most painful year of high school. In order to gain the “special VIP recommendation” which would grant him a full scholarship to college, he must now tutor his classmates as they struggle to prepare for entrance exams. Among his pupils are “the sleeping beauty of the literary forest,” Fumino Furuhashi, and \"the Thumbelina supercomputer,\" Rizu Ogata–two of the most ",
+  pros: ["Humour efficace qui allège le récit", "Personnages attachants", "Narration solide"],
+  cons: ["Fan service intrusif par moments"],
+  reviewHtml: `<p>We Never Learn est une série incontournable du genre Comedy.  (score AniList : 75/100)</p><p>À compléter avec votre avis personnel.</p>`,
+  shops: [],
+  streaming: [],
+  live: []
+},
+
+{
+  slug: "call-of-the-night",
+  title: "Call of the Night",
+  category: "manga",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx111233-bQQV6KWMBXz4.jpg",
+  tags: "Romance · Surnaturel · Seinen · Vampire",
+  stars: 4,
+  addedAt: "2026-03-19",
+  synopsis: "Kou Yamori, lycéen insomniaque qui fuit le monde le jour, découvre la nuit une liberté qu'il ne soupçonnait pas. Il rencontre Nazuna Nanakusa, une vampire séduisante et nonchalante qui lui propose de le transformer, à condition qu'il tombe amoureux d'elle. Une romance nocturne entre un garçon qui cherche à ressentir quelque chose et une vampire qui fait semblant de ne rien ressentir.",
+  pros: ["Atmosphère nocturne unique et envoûtante","Dynamique de relation original qui inverse les codes du genre vampirique","Ryou Kotoyama maîtrise parfaitement le rythme et les silences","Art très élégant, particulièrement efficace dans les scènes de nuit"],
+  cons: ["Progression romantique très lente","Les enjeux de transformation vampirique restent longtemps flous"],
+  reviewHtml: `<p>Call of the Night est un manga vampirique qui n'a pas grand chose à voir avec les vampires. C'est surtout une histoire sur l'insomnie comme état d'esprit, sur ces adolescents qui ne savent pas quoi faire de leur vie le jour et qui trouvent dans la nuit un espace où les règles changent.</p><p>Kou et Nazuna forment un duo attachant parce que leurs problèmes sont symétriques. Lui cherche à ressentir quelque chose de vrai. Elle fait tout pour ne pas admettre qu'elle ressent déjà. Cette tension douce est le moteur émotionnel d'un manga qui sait parfaitement gérer ses silences.</p><p>L'ambiance nocturne de Kotoyama est sa marque de fabrique : rues vides, enseignes lumineuses, liberté légèrement vertigineuse. On lit Call of the Night comme on sort la nuit en été, avec ce mélange de mélancolie et d'euphorie.</p>`,
+  shops: [
+  {
+    name: "Manganim",
+    url: "https://manganim.fr/search?q=Call+of+the+Night",
+    logo: "https://manganim.fr/cdn/shop/files/logo-manganim-header_180x.png?v=1672862594"
+  },
+  {
+    name: "Fnac",
+    url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=Call+of+the+Night+tome",
+    logo: "https://cdn.iconscout.com/icon/free/png-256/free-fnac-3521434-2944878.png"
+  },
+  {
+    name: "Amazon",
+    url: "https://www.amazon.fr/s?k=Call+of+the+Night+tome",
+    logo: "https://www.1min30.com/wp-content/uploads/2017/12/logo-amazon-1.jpg"
+  }
+],
+  streaming: [
+  {
+    name: "Crunchyroll",
+    url: "https://www.crunchyroll.com/fr/search?q=Call%20of%20the%20Night",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/f/fc/Crunchyroll_logo_2018_vertical.png"
+  }
+],
+  live: []
+},
+
+{
+  slug: "the-ghost-in-the-shell",
+  title: "The Ghost in the Shell",
+  category: "manga",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx31023-iozeApEMjmPP.jpg",
+  tags: "Action · Ecchi · Psychologie · Sci-fi",
+  stars: 3,
+  addedAt: "2026-03-19",
+  synopsis: "Deep into the twenty-first century, the line between man and machine has been inexorably blurred as humans rely on the enhancement of mechanical implants and robots are upgraded with human tissue. In this rapidly converging landscape, cyborg superagent Major Motoko Kusanagi is charged to track down the craftiest and most dangerous terrorists and cybercriminals, including \"ghost hackers\" who are ca",
+  pros: ["Combats dynamiques et bien chorégraphiés", "Profondeur psychologique des personnages", "Concepts science-fiction inventifs"],
+  cons: ["Fan service intrusif par moments"],
+  reviewHtml: `<p>The Ghost in the Shell est une série solide du genre Action.  (score AniList : 74/100)</p><p>À compléter avec votre avis personnel.</p>`,
+  shops: [],
+  streaming: [],
+  live: []
+},
+
+{
+  slug: "yokohama-kaidashi-kikou",
+  title: "Yokohama Kaidashi Kikou",
+  category: "manga",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/b30004-k0YUnO94IB4x.jpg",
+  tags: "Sci-fi · Quotidien",
+  stars: 5,
+  addedAt: "2026-03-19",
+  synopsis: "Set hundreds of years in the future after an environmental catastrophe, Yokohama Kaidashi Kikou (also known as Yokohama Shopping Log) centers on the simple life of Alpha, an android who runs a small coffee shop in coastal Japan. Alpha stands witness to chronicle the end of humanity’s days with coffee, a slice of watermelon, and the sound of her moon guitar backed by distant seagulls. Quiet and bit",
+  pros: ["Concepts science-fiction inventifs", "Personnages attachants", "Narration solide"],
+  cons: ["Peut nécessiter de s'accrocher au départ"],
+  reviewHtml: `<p>Yokohama Kaidashi Kikou est une série incontournable du genre Sci-Fi.  (score AniList : 86/100)</p><p>À compléter avec votre avis personnel.</p>`,
+  shops: [],
+  streaming: [],
+  live: []
+},
+
+{
+  slug: "shiki",
+  title: "Shiki",
+  category: "manga",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/b112199-bF1fzRraSut3.jpg",
+  tags: "Mystère · Psychologie",
+  stars: 3,
+  addedAt: "2026-03-19",
+  synopsis: "Story about Magata Shiki, a character from S&M series.",
+  pros: ["Profondeur psychologique des personnages", "Intrigue bien construite"],
+  cons: ["Peut nécessiter de s'accrocher au départ"],
+  reviewHtml: `<p>Shiki est une série solide du genre Mystery. </p><p>À compléter avec votre avis personnel.</p>`,
+  shops: [],
+  streaming: [],
+  live: []
+},
+
+{
+  slug: "witchcraft-works",
+  title: "Witchcraft Works",
+  category: "manga",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx49896-3bGO2Oga6p0l.png",
+  tags: "Action · Fantasy · Romance · Surnaturel",
+  stars: 3,
+  addedAt: "2026-03-19",
+  synopsis: "There is something unusual about the Tougetsu Academy. While on the surface it may seem like just another private Japanese high school, hidden amongst its student body, though, are a few youngsters with some unique abilities. One of them is Honoka Takamiya. He may not know it yet, but inside him lurks something very powerful. And it is the job of the school’s idol, Ayaka Kagari, to protect Takamiy",
+  pros: ["Combats dynamiques et bien chorégraphiés", "Univers fantastique original"],
+  cons: ["Peut nécessiter de s'accrocher au départ"],
+  reviewHtml: `<p>Witchcraft Works est une série solide du genre Action.  (score AniList : 71/100)</p><p>À compléter avec votre avis personnel.</p>`,
+  shops: [],
+  streaming: [],
+  live: []
+},
+
+{
+  slug: "classroom-of-the-elite",
+  title: "Classroom of the Elite",
+  category: "manga",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx96798-SIQLQqS8HO9h.jpg",
+  tags: "Psychologie · Thriller · Seinen · École",
+  stars: 4,
+  addedAt: "2026-03-19",
+  synopsis: "À l'École Avancée Koudo Ikusei, les élèves semblent jouir d'une liberté totale avec des points échangeables contre tout ce qu'ils désirent. Mais Kiyotaka Ayanokoji, nouvel élève discret assigné à la classe D, la moins bien notée, comprend rapidement que l'école n'est qu'un champ de bataille social masqué. Avec la brillante Suzune Horikita, il va commencer à déjouer les règles du jeu.",
+  pros: ["Ayanokoji est l'un des protagonistes à l'intellect le plus fascinant du manga récent","Jeux mentaux et manipulations d'une construction rigoureuse","Révélations progressives sur les personnages et le système de l'école","Ambiance tendue et paranoïaque très efficace"],
+  cons: ["Adaptation du light novel parfois condensée maladroitement","Certains personnages manquent de profondeur initiale"],
+  reviewHtml: `<p>Classroom of the Elite tire sa force d'un protagoniste quasi-unique dans le manga moderne. Ayanokoji n'est pas le héros classique qui grandit et surmonte ses faiblesses. Il est déjà au sommet, il se cache volontairement dans la médiocrité, et observer ses calculs se dérouler est d'une satisfaction intellectuelle réelle.</p><p>L'École Koudo Ikusei est un microcosme social fascinant. Sous le vernis de liberté et de bien-être, c'est une compétition darwinienne permanente où les classes s'affrontent pour des ressources et des privilèges. Chaque arc dévoile une couche supplémentaire du système et des personnages qui le font fonctionner.</p><p>Le manga bénéficie d'une adaptation fidèle du light novel d'Amatora Shougo. Pour les amateurs de thrillers mentaux façon Machiavel en uniforme scolaire, c'est une lecture addictive.</p>`,
+  shops: [
+  {
+    name: "Manganim",
+    url: "https://manganim.fr/search?q=Classroom+of+the+Elite",
+    logo: "https://manganim.fr/cdn/shop/files/logo-manganim-header_180x.png?v=1672862594"
+  },
+  {
+    name: "Fnac",
+    url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=Classroom+of+the+Elite+tome",
+    logo: "https://cdn.iconscout.com/icon/free/png-256/free-fnac-3521434-2944878.png"
+  },
+  {
+    name: "Amazon",
+    url: "https://www.amazon.fr/s?k=Classroom+of+the+Elite+tome",
+    logo: "https://www.1min30.com/wp-content/uploads/2017/12/logo-amazon-1.jpg"
+  }
+],
+  streaming: [
+  {
+    name: "Crunchyroll",
+    url: "https://www.crunchyroll.com/fr/search?q=Classroom%20of%20the%20Elite",
+    logo: "https://upload.wikimedia.org/wikipedia/commons/f/fc/Crunchyroll_logo_2018_vertical.png"
+  }
+],
+  live: []
+},
+
+{
+  slug: "soul-land",
+  title: "Soul Land",
+  category: "manga",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx85446-YmuBl8pnTL9j.jpg",
+  tags: "Action · Aventure · Fantasy · Romance",
+  stars: 3,
+  addedAt: "2026-03-19",
+  synopsis: "Tang San spent his prelife in the Tang Clan. He stole the secret from the Inner Clan to reach the peak of martial arts. In the end, he had to commit suicide for such action. Then he was reborn in a different world-Soul Land. This world is filled with powerful soul masters. Each master has their own martial souls. The martial soul of Tang San is a useless Blue Silver Grass. Can he bring the glory o",
+  pros: ["Combats dynamiques et bien chorégraphiés", "World-building riche et immersif", "Univers fantastique original"],
+  cons: ["Peut nécessiter de s'accrocher au départ"],
+  reviewHtml: `<p>Soul Land est une série solide du genre Action.  (score AniList : 73/100)</p><p>À compléter avec votre avis personnel.</p>`,
+  shops: [],
+  streaming: [],
+  live: []
+},
+
+{
+  slug: "the-world-god-only-knows",
+  title: "The World God Only Knows",
+  category: "manga",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/23032.jpg",
+  tags: "Comédie · Romance · Surnaturel",
+  stars: 3,
+  addedAt: "2026-03-19",
+  synopsis: "Written by Mamizu Arisawa and illustrated by Tamiki Wakaki. The novel features a completely original story that disparate from the series, with original novel characters.",
+  pros: ["Humour efficace qui allège le récit", "Personnages attachants", "Narration solide"],
+  cons: ["Peut nécessiter de s'accrocher au départ"],
+  reviewHtml: `<p>The World God Only Knows est une série solide du genre Comedy.  (score AniList : 70/100)</p><p>À compléter avec votre avis personnel.</p>`,
+  shops: [],
+  streaming: [],
+  live: []
+},
+
+{
+  slug: "medaka-box",
+  title: "Medaka Box",
+  category: "manga",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx43949-sSgW4VE0nQKH.jpg",
+  tags: "Action · Comédie · Ecchi · Romance",
+  stars: 4,
+  addedAt: "2026-03-19",
+  synopsis: "Kurokami Medaka, a first year, is elected as Student Council President, and the first thing she does is establish a suggestion box, later dubbed by students the \"Medaka Box\". Medaka encourages students to submit any problem to the box without hesitation and promises to take on any issue from anyone. Since Medaka won the Student Council elections with a staggering 98% of the vote, she ends up as th",
+  pros: ["Combats dynamiques et bien chorégraphiés", "Humour efficace qui allège le récit"],
+  cons: ["Fan service intrusif par moments"],
+  reviewHtml: `<p>Medaka Box est une série incontournable du genre Action.  (score AniList : 77/100)</p><p>À compléter avec votre avis personnel.</p>`,
+  shops: [],
+  streaming: [],
+  live: []
+},
+
+{
+  slug: "psyen",
+  title: "PSYЯEN",
+  category: "manga",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx33438-pBfMEC42XhCA.png",
+  tags: "Action · Aventure · Fantasy · Romance · Sci-fi",
+  stars: 4,
+  addedAt: "2026-03-19",
+  synopsis: "\"Save me!\" Those were Sakurako Amamiya's last words to her friend Ageha Yoshina before she mysteriously went missing. Now Ageha's on a quest to find her. He's convinced that the mythical Psyren Secret Society has something to do with the recent rash of disappearances. And now he seems to be caught up as a player in their very deadly game... (Source: VIZ Media) Note: Includes six extra chapters.",
+  pros: ["Combats dynamiques et bien chorégraphiés", "World-building riche et immersif", "Univers fantastique original", "Concepts science-fiction inventifs"],
+  cons: ["Certains arcs secondaires moins aboutis"],
+  reviewHtml: `<p>PSYЯEN est une série incontournable du genre Action.  (score AniList : 75/100)</p><p>À compléter avec votre avis personnel.</p>`,
+  shops: [],
+  streaming: [],
+  live: []
+},
+
+
+{
+  slug: "karakai-jouzu-takagi-san",
+  title: "Karakai Jouzu Takagi-san",
+  category: "manga",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx138552-ya7O0IThDeZ6.jpg",
+  tags: "Comédie · Romance",
+  stars: 2,
+  addedAt: "2026-03-19",
+  synopsis: "",
+  pros: ["Humour efficace qui allège le récit", "Personnages attachants", "Narration solide"],
+  cons: ["Rythme parfois irrégulier"],
+  reviewHtml: `<p>Karakai Jouzu Takagi-san est une série solide du genre Comedy.  (score AniList : 62/100)</p><p>À compléter avec votre avis personnel.</p>`,
+  shops: [],
+  streaming: [],
+  live: []
+},
+
+{
+  slug: "laid-back-camp",
+  title: "Laid-Back Camp",
+  category: "manga",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx98351-cv6xQvSwK9GP.png",
+  tags: "Comédie · Quotidien",
+  stars: 4,
+  addedAt: "2026-03-19",
+  synopsis: "Setting up a tent, starting a fire, and eating noodles with Mt. Fuji in view...Rin and Nadeshiko absolutely love to camp! Enjoy their zest for travel and maybe even pick up a tip or two about roughing it in the great outdoors. You might just want to go camping yourself! (Source: Yen Press)",
+  pros: ["Humour efficace qui allège le récit", "Personnages attachants", "Narration solide"],
+  cons: ["Peut nécessiter de s'accrocher au départ"],
+  reviewHtml: `<p>Laid-Back Camp est une série incontournable du genre Comedy.  (score AniList : 83/100)</p><p>À compléter avec votre avis personnel.</p>`,
+  shops: [],
+  streaming: [],
+  live: []
+},
+
+{
+  slug: "asobi-asobase",
+  title: "Asobi Asobase",
+  category: "manga",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/nx97418-4vfXwsEGB7Rh.jpg",
+  tags: "Comédie · Slice of Life · Shōjo · École",
+  stars: 3,
+  addedAt: "2026-03-19",
+  synopsis: "Trois lycéennes fondent le club Pastime, censé explorer les loisirs traditionnels japonais. En réalité, elles passent leurs journées à se chamailler, se faire des farces et enchaîner des situations de plus en plus absurdes. Hanako, Olivia et Kasumi forment un trio explosive dont l'humour repose autant sur les expressions faciales outrancières que sur les retournements de situation.",
+  pros: ["Humour absurde très efficace et rythmé","Les expressions des personnages sont un art à part entière","Gags originaux qui évitent les clichés du genre"],
+  cons: ["Répétitif sur la durée, le format court s'essouffle","Peu de développement de personnages ou d'enjeux narratifs"],
+  reviewHtml: `<p>Asobi Asobase est une comédie qui mise tout sur un seul registre : l'absurde porté à son paroxysme par des expressions faciales totalement outrancières. Ça marche, et souvent très bien. Le contraste entre l'apparence sage des trois lycéennes et la violence comique de leurs interactions est une source intarissable de moments hilarants.</p><p>Le manga n'a pas vocation à raconter une histoire ni à développer ses personnages. C'est un recueil de gags au format court, et dans cette discipline, il excelle. Idéal pour lire un chapitre entre deux séries plus denses.</p>`,
+  shops: [
+  {
+    name: "Manganim",
+    url: "https://manganim.fr/search?q=Asobi+Asobase",
+    logo: "https://manganim.fr/cdn/shop/files/logo-manganim-header_180x.png?v=1672862594"
+  },
+  {
+    name: "Fnac",
+    url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=Asobi+Asobase+tome",
+    logo: "https://cdn.iconscout.com/icon/free/png-256/free-fnac-3521434-2944878.png"
+  },
+  {
+    name: "Amazon",
+    url: "https://www.amazon.fr/s?k=Asobi+Asobase+tome",
+    logo: "https://www.1min30.com/wp-content/uploads/2017/12/logo-amazon-1.jpg"
+  }
+],
+  streaming: [],
+  live: []
+},
+
+{
+  slug: "the-return-of-the-disaster-class-hero",
+  title: "The Return of the Disaster-Class Hero",
+  category: "manhwa",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx143056-MEpVxW7346jz.jpg",
+  tags: "Action · Fantasy",
+  stars: 4,
+  addedAt: "2026-03-19",
+  synopsis: "Humans call them “calamities”—the unknown, destructive creatures that suddenly appeared on earth. To challenge these calamities, the zodiac gods awakened 12 humans known as saints. But there was one more that awoke—unchosen but the greatest hero of all: Geon Lee. His allies betrayed him and left him for dead, but now, 20 years later, he’s more powerful than ever and ready to teach his fellow “sain",
+  pros: ["Combats dynamiques et bien chorégraphiés", "Univers fantastique original"],
+  cons: ["Peut nécessiter de s'accrocher au départ"],
+  reviewHtml: `<p>The Return of the Disaster-Class Hero est une série incontournable du genre Action.  (score AniList : 75/100)</p><p>À compléter avec votre avis personnel.</p>`,
+  shops: [],
+  streaming: [],
+  live: []
+},
+
+{
+  slug: "the-sss-rank-hunters-lucky-draw",
+  title: "The SSS-Rank Hunter's Lucky Draw",
+  category: "manhwa",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx140466-f3JaHHbVXh8a.jpg",
+  tags: "Action · Comédie · Fantasy",
+  stars: 3,
+  addedAt: "2026-03-19",
+  synopsis: "“The Change” brought dungeons filled with monsters into the world, altering reality forever. Pro-gamer Jin Jung-Do, whose lifelong dream was to be a hero like the Mana Users who fight in these dungeons, is crushed when he discovers his own abilities are useless. Just then, the “real universe” gives him a set of skills that allow him to draw information from the future and heroes from the past! Now",
+  pros: ["Combats dynamiques et bien chorégraphiés", "Humour efficace qui allège le récit", "Univers fantastique original"],
+  cons: ["Rythme parfois irrégulier"],
+  reviewHtml: `<p>The SSS-Rank Hunter's Lucky Draw est une série solide du genre Action.  (score AniList : 66/100)</p><p>À compléter avec votre avis personnel.</p>`,
+  shops: [],
+  streaming: [],
+  live: []
+},
+
+
+
+{
+  slug: "battle-angel-alita-last-order",
+  title: "Battle Angel Alita: Last Order",
+  category: "manga",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx30770-LkQ1FCwWIO9H.jpg",
+  tags: "Sci-fi · Action · Cyberpunk · Seinen",
+  stars: 4,
+  addedAt: "2026-03-19",
+  synopsis: "Alita, cyborg guerrière aux capacités de combat extraordinaires, se réveille dans un monde post-apocalyptique divisé entre la cité céleste Tiphares et la décharge géante Scrapyard. Last Order reprend son histoire après le premier arc, l'envoyant dans le tournoi ZOTT en orbite, affrontant les combattants les plus puissants de la galaxie. Un opéra cyberpunk d'une ambition et d'une densité rares.",
+  pros: ["Worldbuilding cyberpunk d'une richesse et d'une cohérence exceptionnelles","Alita est l'un des personnages féminins les plus forts et complexes du manga","Combats d'une inventivité technique impressionnante","Questionnements philosophiques profonds sur l'identité et la conscience"],
+  cons: ["Très dense et complexe, demande un investissement important","Meilleur après avoir lu le premier arc Gunnm"],
+  reviewHtml: `<p>Battle Angel Alita est l'une des grandes oeuvres du manga de science-fiction, et Last Order en est la continuation ambitieuse. Yukito Kishiro construit un univers d'une cohérence rare, où chaque élément du worldbuilding, de la physique des combats au fonctionnement des sociétés orbitales, est pensé avec une rigueur d'ingénieur.</p><p>Alita elle-même est un personnage d'exception. Elle n'est pas définie par une mission ou un maître, mais par une recherche constante de ce qu'elle est vraiment, dans des corps successifs, des identités empruntées, des mémoires fragmentées. Cette question de l'identité face au corps modifié est au coeur de tout le manga.</p><p>Last Order monte encore les enchères avec le tournoi ZOTT, qui permet à Kishiro d'introduire des adversaires d'une inventivité folle. Dense, ambitieux, parfois difficile à suivre, mais inoubliable pour les amateurs de science-fiction exigeante.</p>`,
+  shops: [
+  {
+    name: "Manganim",
+    url: "https://manganim.fr/search?q=Battle+Angel+Alita",
+    logo: "https://manganim.fr/cdn/shop/files/logo-manganim-header_180x.png?v=1672862594"
+  },
+  {
+    name: "Fnac",
+    url: "https://www.fnac.com/SearchResult/ResultList.aspx?Search=Battle+Angel+Alita+tome",
+    logo: "https://cdn.iconscout.com/icon/free/png-256/free-fnac-3521434-2944878.png"
+  },
+  {
+    name: "Amazon",
+    url: "https://www.amazon.fr/s?k=Battle+Angel+Alita+tome",
+    logo: "https://www.1min30.com/wp-content/uploads/2017/12/logo-amazon-1.jpg"
+  }
+],
+  streaming: [],
+  live: []
+},
+
+{
+  slug: "skip-and-loafer",
+  title: "Skip and Loafer",
+  category: "manga",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx109285-HmBZpzsO2zxd.jpg",
+  tags: "Comédie · Romance · Quotidien",
+  stars: 5,
+  addedAt: "2026-03-19",
+  synopsis: "Excellent student Iwakura Mitsumi has always dreamt about leaving her small town, going to a prestigious university, and making positive change in the world. But she’s so focused on reaching her goals that she’s not prepared for the very different (and overwhelming) city life that awaits her in a Tokyo high school. Luckily, she makes fast friends with Shima Sousuke, a handsome classmate who’s as l",
+  pros: ["Humour efficace qui allège le récit", "Personnages attachants", "Narration solide"],
+  cons: ["Peut nécessiter de s'accrocher au départ"],
+  reviewHtml: `<p>Skip and Loafer est une série incontournable du genre Comedy.  (score AniList : 86/100)</p><p>À compléter avec votre avis personnel.</p>`,
+  shops: [],
+  streaming: [],
+  live: []
+},
 
 ]
