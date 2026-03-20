@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { SERIES } from "@/data/series";
 
 // Séries en vedette (top 5 étoiles, mix manga/manhwa)
@@ -526,7 +527,7 @@ export default function Home() {
               {["one-piece", "bleach", "naruto"].map((slug) => {
                 const s = SERIES.find((x) => x.slug === slug);
                 return s?.cover ? (
-                  <img key={slug} src={s.cover} alt={s.title} className="hero-cover-img" />
+                  <Image key={slug} src={s.cover} alt={s.title} width={130} height={190} className="hero-cover-img" />
                 ) : null;
               })}
             </div>
@@ -534,7 +535,7 @@ export default function Home() {
               {["solo-leveling", "l-attaque-des-titans", "blue-lock"].map((slug) => {
                 const s = SERIES.find((x) => x.slug === slug);
                 return s?.cover ? (
-                  <img key={slug} src={s.cover} alt={s.title} className="hero-cover-img" />
+                  <Image key={slug} src={s.cover} alt={s.title} width={130} height={190} className="hero-cover-img" />
                 ) : null;
               })}
             </div>
@@ -542,7 +543,7 @@ export default function Home() {
               {["death-note", "my-hero-academia", "the-beginning-after-the-end"].map((slug) => {
                 const s = SERIES.find((x) => x.slug === slug);
                 return s?.cover ? (
-                  <img key={slug} src={s.cover} alt={s.title} className="hero-cover-img" />
+                  <Image key={slug} src={s.cover} alt={s.title} width={130} height={190} className="hero-cover-img" />
                 ) : null;
               })}
             </div>

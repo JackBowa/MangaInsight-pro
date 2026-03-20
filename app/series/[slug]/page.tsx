@@ -1,5 +1,6 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
 import { SERIES } from "@/data/series";
 import { STREAMING_MAP, STREAMING_INFO } from "@/data/streaming";
 import { SHOPS_MAP, SHOPS_INFO } from "@/data/shops";
@@ -126,7 +127,7 @@ export default function SeriePage({ params }: { params: { slug: string } }) {
           {/* cover nette */}
           {serie.cover && (
             <div className="hidden md:block w-[200px] rounded-2xl overflow-hidden border-2 border-white/15 shadow-[0_20px_60px_rgba(0,0,0,0.6)] translate-y-8 flex-shrink-0">
-              <img src={serie.cover} alt={serie.title} className="w-full block" />
+              <Image src={serie.cover} alt={serie.title} width={200} height={300} className="w-full block" />
             </div>
           )}
           <div className="pb-2">

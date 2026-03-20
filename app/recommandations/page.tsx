@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { SERIES } from "@/data/series";
 
 const STEPS = [
@@ -277,9 +278,9 @@ export default function RecommandationsPage() {
                     </div>
                   )}
                   <div style={{ aspectRatio: "2/3" }} className="relative overflow-hidden">
-                    <img src={serie.cover || "/_placeholder.jpg"} alt={serie.title}
-                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                      onError={(e) => { const img = e.currentTarget as HTMLImageElement; if (!img.dataset.fb) { img.dataset.fb="1"; img.src="/_placeholder.jpg"; }}} />
+                    <Image src={serie.cover || "/_placeholder.jpg"} alt={serie.title}
+                      fill sizes="(max-width: 640px) 50vw, 25vw"
+                      className="object-cover transition-transform duration-500 group-hover:scale-105" />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent" />
                     <div className="absolute bottom-2 left-2 right-2">
                       <p style={{ fontFamily: "'Bebas Neue', sans-serif" }}

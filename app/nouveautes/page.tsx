@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useRef, useMemo } from "react";
 import { SERIES } from "@/data/series";
 
@@ -115,9 +116,9 @@ export default function NouveautesPage() {
                 style={{ scrollSnapAlign: "start" }}
                 className="flex-shrink-0 w-40 rounded-2xl overflow-hidden border border-white/7 bg-white/3 flex flex-col transition-all duration-300 hover:-translate-y-1.5 hover:border-brand-500/45 hover:shadow-[0_16px_40px_rgba(0,0,0,0.5),0_0_30px_rgba(139,92,246,0.08)] group">
                 <div className="relative overflow-hidden" style={{ aspectRatio: "2/3" }}>
-                  <img src={s.cover || "/_placeholder.jpg"} alt={s.title}
-                    className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
-                    onError={(e) => { const img = e.currentTarget as HTMLImageElement; if (!img.dataset.fb) { img.dataset.fb = "1"; img.src = "/_placeholder.jpg"; } }} />
+                  <Image src={s.cover || "/_placeholder.jpg"} alt={s.title}
+                    fill sizes="160px"
+                    className="object-cover transition-transform duration-500 group-hover:scale-105" />
                   <div className="absolute inset-0 bg-gradient-to-t from-[#05050e]/95 to-transparent opacity-60" />
                   <span className={`absolute top-1.5 left-1.5 text-[0.52rem] font-bold tracking-widest uppercase px-1.5 py-0.5 rounded-full border ${
                     s.category === "manhwa" ? "bg-pink-500/20 border-pink-500/35 text-pink-300" : "bg-indigo-500/20 border-indigo-500/35 text-indigo-300"
@@ -153,10 +154,10 @@ export default function NouveautesPage() {
           {feed.map((item, i) => (
             <Link key={`${item.slug}-${i}`} href={`/series/${item.slug}`}
               className="flex items-center gap-4 px-4 py-3.5 bg-white/3 border border-white/6 rounded-2xl transition-all duration-250 hover:bg-white/5 hover:border-brand-500/30 hover:translate-x-1">
-              <div className="w-11 h-14 rounded-lg overflow-hidden flex-shrink-0 border border-white/8">
-                <img src={item.cover || "/_placeholder.jpg"} alt={item.title}
-                  className="w-full h-full object-cover"
-                  onError={(e) => { const img = e.currentTarget as HTMLImageElement; if (!img.dataset.fb) { img.dataset.fb = "1"; img.src = "/_placeholder.jpg"; } }} />
+              <div className="relative w-11 h-14 rounded-lg overflow-hidden flex-shrink-0 border border-white/8">
+                <Image src={item.cover || "/_placeholder.jpg"} alt={item.title}
+                  fill sizes="44px"
+                  className="object-cover" />
               </div>
               <div className="flex-1 min-w-0">
                 <h3 style={{ fontFamily: "'Bebas Neue', sans-serif", letterSpacing: "0.04em" }}

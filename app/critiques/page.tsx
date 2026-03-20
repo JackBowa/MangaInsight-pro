@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useEffect, useMemo, useState } from "react";
 import { SERIES } from "@/data/series";
 import { supabase } from "@/lib/lib/supabase/client";
@@ -39,14 +40,12 @@ function CritiqueCard({ slug, title, cover, tags, stars, category, avg, onTagCli
 
       {/* Image */}
       <div className="relative overflow-hidden" style={{ aspectRatio: "2/3" }}>
-        <img
+        <Image
           src={cover || "/_placeholder.jpg"}
           alt={title}
-          className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
-          onError={(e) => {
-            const img = e.currentTarget as HTMLImageElement;
-            if (!img.dataset.fallback) { img.dataset.fallback = "1"; img.src = "/_placeholder.jpg"; }
-          }}
+          fill
+          sizes="(max-width: 640px) 50vw, (max-width: 1024px) 25vw, 20vw"
+          className="object-cover transition-transform duration-500 group-hover:scale-105"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-[#05050e]/97 via-[#05050e]/20 to-transparent opacity-65 transition-opacity duration-300 group-hover:opacity-100" />
         {/* lueur violette depuis le bas */}
@@ -217,9 +216,9 @@ export default function CritiquesPage() {
         {/* covers flottantes */}
         <div className="absolute right-8 md:right-16 top-1/2 -translate-y-1/2 hidden md:grid grid-cols-3 gap-2 z-10" style={{ gridTemplateColumns: "repeat(3, 90px)" }}>
           {featuredSeries.map((s, i) => (
-            <div key={s.slug} className={`float-${i + 1} rounded-xl overflow-hidden border border-white/10 shadow-2xl`} style={{ aspectRatio: "2/3", marginTop: i % 2 === 1 ? "16px" : "0" }}>
-              <img src={s.cover || "/_placeholder.jpg"} alt={s.title} className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
-                onError={(e) => { const img = e.currentTarget as HTMLImageElement; if (!img.dataset.fb) { img.dataset.fb = "1"; img.src = "/_placeholder.jpg"; } }} />
+            <div key={s.slug} className={`float-${i + 1} rounded-xl overflow-hidden border border-white/10 shadow-2xl relative`} style={{ aspectRatio: "2/3", marginTop: i % 2 === 1 ? "16px" : "0" }}>
+              <Image src={s.cover || "/_placeholder.jpg"} alt={s.title} fill sizes="90px"
+                className="object-cover hover:scale-105 transition-transform duration-500" />
             </div>
           ))}
         </div>

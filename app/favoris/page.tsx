@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { SERIES } from "@/data/series";
 import { useFavorites } from "@/lib/useFavorites";
 
@@ -63,9 +64,9 @@ export default function FavorisPage() {
                   style={{ animationDelay: `${i * 40}ms` }}>
 
                   <div className="relative overflow-hidden" style={{ aspectRatio: "2/3" }}>
-                    <img src={s.cover || "/_placeholder.jpg"} alt={s.title}
-                      className="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-105"
-                      onError={(e) => { const img = e.currentTarget as HTMLImageElement; if (!img.dataset.fb) { img.dataset.fb = "1"; img.src = "/_placeholder.jpg"; } }} />
+                    <Image src={s.cover || "/_placeholder.jpg"} alt={s.title}
+                      fill sizes="(max-width: 640px) 50vw, (max-width: 1024px) 33vw, 16vw"
+                      className="object-cover transition-transform duration-500 group-hover:scale-105" />
                     <div className="absolute inset-0 bg-gradient-to-t from-[#05050e]/95 via-[#05050e]/20 to-transparent opacity-65 group-hover:opacity-100 transition-opacity duration-300" />
 
                     {/* Bouton retirer */}
