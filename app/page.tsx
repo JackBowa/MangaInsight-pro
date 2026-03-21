@@ -518,7 +518,7 @@ export default function Home() {
           <div className="hero-bg" />
           <div className="hero-grid" />
 
-          {/* Covers flottantes (6 covers, 2 colonnes) */}
+          {/* Covers flottantes (9 covers, 3 colonnes) */}
           <div className="hero-covers">
             <div className="hero-covers-fade" />
             <div className="hero-cover-col">
@@ -531,6 +531,14 @@ export default function Home() {
             </div>
             <div className="hero-cover-col">
               {["solo-leveling", "l-attaque-des-titans", "blue-lock"].map((slug) => {
+                const s = SERIES.find((x) => x.slug === slug);
+                return s?.cover ? (
+                  <Image key={slug} src={s.cover} alt={s.title} width={130} height={190} className="hero-cover-img" loading="lazy" />
+                ) : null;
+              })}
+            </div>
+            <div className="hero-cover-col">
+              {["death-note", "my-hero-academia", "the-beginning-after-the-end"].map((slug) => {
                 const s = SERIES.find((x) => x.slug === slug);
                 return s?.cover ? (
                   <Image key={slug} src={s.cover} alt={s.title} width={130} height={190} className="hero-cover-img" loading="lazy" />
