@@ -39,7 +39,6 @@ export default async function GuidePage({ params }: { params: { slug: string } }
   return (
     <div className="min-h-screen">
       <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
         .hero-grid { background-image: linear-gradient(rgba(139,92,246,0.05) 1px,transparent 1px),linear-gradient(90deg,rgba(139,92,246,0.05) 1px,transparent 1px); background-size:40px 40px; }
         .prose-guide h2 { font-family:'Bebas Neue',sans-serif; font-size:1.6rem; letter-spacing:0.04em; color:#fff; margin: 2rem 0 0.75rem; }
         .prose-guide h3 { font-size:1rem; font-weight:700; color:#e2e8f0; margin: 1.5rem 0 0.5rem; }
@@ -78,7 +77,7 @@ export default async function GuidePage({ params }: { params: { slug: string } }
             </div>
           </div>
 
-          <h1 style={{ fontFamily: "'Bebas Neue', sans-serif", letterSpacing: "0.04em" }}
+          <h1 style={{ fontFamily: "var(--font-bebas), sans-serif", letterSpacing: "0.04em" }}
             className="text-[clamp(2.2rem,5vw,3.5rem)] text-white leading-[0.95] mb-4">
             {guide.title}
           </h1>

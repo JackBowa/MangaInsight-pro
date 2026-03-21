@@ -191,7 +191,6 @@ export default function RecommandationsPage() {
 
   return (
     <div className="min-h-screen flex flex-col items-center justify-center px-4 py-16">
-      <style>{`@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');`}</style>
 
       {/* Fond */}
       <div className="fixed inset-0 pointer-events-none">
@@ -208,7 +207,7 @@ export default function RecommandationsPage() {
               <p className="text-[0.7rem] font-bold tracking-[0.2em] uppercase text-brand-400 mb-3">
                 🎌 Recommandations personnalisées
               </p>
-              <h1 style={{ fontFamily: "'Bebas Neue', sans-serif", letterSpacing: "0.04em" }}
+              <h1 style={{ fontFamily: "var(--font-bebas), sans-serif", letterSpacing: "0.04em" }}
                 className="text-[3rem] text-white leading-none mb-2">
                 Trouve ta<br /><span className="text-brand-400">prochaine série</span>
               </h1>
@@ -226,7 +225,7 @@ export default function RecommandationsPage() {
               <p className="text-[0.65rem] font-bold tracking-[0.15em] uppercase text-white/30 mb-3">
                 Question {step + 1} sur {STEPS.length}
               </p>
-              <h2 style={{ fontFamily: "'Bebas Neue', sans-serif", letterSpacing: "0.04em" }}
+              <h2 style={{ fontFamily: "var(--font-bebas), sans-serif", letterSpacing: "0.04em" }}
                 className="text-[1.8rem] text-white mb-6 leading-tight">
                 {current.question}
               </h2>
@@ -261,7 +260,7 @@ export default function RecommandationsPage() {
               <p className="text-[0.7rem] font-bold tracking-[0.2em] uppercase text-brand-400 mb-3">
                 ✨ Sélectionnées pour toi
               </p>
-              <h1 style={{ fontFamily: "'Bebas Neue', sans-serif", letterSpacing: "0.04em" }}
+              <h1 style={{ fontFamily: "var(--font-bebas), sans-serif", letterSpacing: "0.04em" }}
                 className="text-[2.8rem] text-white leading-none mb-2">
                 Tes <span className="text-brand-400">recommandations</span>
               </h1>
@@ -283,7 +282,7 @@ export default function RecommandationsPage() {
                       className="object-cover transition-transform duration-500 group-hover:scale-105" />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent" />
                     <div className="absolute bottom-2 left-2 right-2">
-                      <p style={{ fontFamily: "'Bebas Neue', sans-serif" }}
+                      <p style={{ fontFamily: "var(--font-bebas), sans-serif" }}
                         className="text-[0.85rem] text-white leading-tight">{serie.title}</p>
                       {serie.stars ? (
                         <div className="flex gap-0.5 mt-1">

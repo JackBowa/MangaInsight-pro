@@ -73,7 +73,7 @@ export default function NouveautesPage() {
             <span className="pulse-dot w-1.5 h-1.5 rounded-full bg-cyan-400 inline-block" />
             Mis à jour régulièrement
           </div>
-          <h1 style={{ fontFamily: "'Bebas Neue', sans-serif", letterSpacing: "0.03em" }}
+          <h1 style={{ fontFamily: "var(--font-bebas), sans-serif", letterSpacing: "0.03em" }}
             className="text-[clamp(3.5rem,7vw,5.5rem)] text-white leading-none mb-4">
             Les <span className="text-cyan-400">nouveautés</span>
           </h1>
@@ -86,7 +86,7 @@ export default function NouveautesPage() {
               { num: recent.length, label: "Ajouts récents" },
             ].map(({ num, label }) => (
               <div key={label}>
-                <div style={{ fontFamily: "'Bebas Neue', sans-serif" }} className="text-[1.8rem] text-white leading-none tracking-wide">{num}</div>
+                <div style={{ fontFamily: "var(--font-bebas), sans-serif" }} className="text-[1.8rem] text-white leading-none tracking-wide">{num}</div>
                 <div className="text-[0.65rem] font-bold tracking-[0.12em] uppercase text-white/35 mt-0.5">{label}</div>
               </div>
             ))}
@@ -129,7 +129,7 @@ export default function NouveautesPage() {
                   )}
                 </div>
                 <div className="p-2.5">
-                  <h3 style={{ fontFamily: "'Bebas Neue', sans-serif", letterSpacing: "0.04em" }}
+                  <h3 style={{ fontFamily: "var(--font-bebas), sans-serif", letterSpacing: "0.04em" }}
                     className="text-[0.9rem] text-white leading-tight">{s.title}</h3>
                   {s.addedAt && (
                     <p className="text-[0.6rem] text-white/30 mt-0.5">{timeAgo(s.addedAt)}</p>
@@ -159,7 +159,7 @@ export default function NouveautesPage() {
                   className="object-cover" />
               </div>
               <div className="flex-1 min-w-0">
-                <h3 style={{ fontFamily: "'Bebas Neue', sans-serif", letterSpacing: "0.04em" }}
+                <h3 style={{ fontFamily: "var(--font-bebas), sans-serif", letterSpacing: "0.04em" }}
                   className="text-[1rem] text-white truncate mb-1">{item.title}</h3>
                 <div className="flex items-center gap-2 flex-wrap">
                   <span className="text-[0.62rem] text-white/40">

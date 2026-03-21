@@ -50,7 +50,7 @@ export default function Home() {
     <>
       <style>{`
         .home-root {
-          font-family: 'Nunito', sans-serif;
+          font-family: var(--font-dm-sans), sans-serif;
         }
 
         /* ── HERO ── */
@@ -150,7 +150,7 @@ export default function Home() {
           border-radius: 999px;
         }
         .hero-title {
-          font-family: 'Bebas Neue', sans-serif;
+          font-family: var(--font-bebas), sans-serif;
           font-size: clamp(3.5rem, 8vw, 6.5rem);
           line-height: 0.92;
           letter-spacing: 0.02em;
@@ -218,7 +218,7 @@ export default function Home() {
           border-top: 1px solid rgba(255,255,255,0.07);
         }
         .hero-stat-num {
-          font-family: 'Bebas Neue', sans-serif;
+          font-family: var(--font-bebas), sans-serif;
           font-size: 2rem;
           color: #fff;
           line-height: 1;
@@ -270,7 +270,7 @@ export default function Home() {
           margin-bottom: 1.75rem;
         }
         .section-title {
-          font-family: 'Bebas Neue', sans-serif;
+          font-family: var(--font-bebas), sans-serif;
           font-size: 2rem;
           letter-spacing: 0.04em;
           color: #fff;
@@ -351,7 +351,7 @@ export default function Home() {
           color: #c4b5fd;
         }
         .featured-card-title {
-          font-family: 'Bebas Neue', sans-serif;
+          font-family: var(--font-bebas), sans-serif;
           font-size: 1.1rem;
           letter-spacing: 0.04em;
           color: #fff;
@@ -403,7 +403,7 @@ export default function Home() {
           gap: 6px;
         }
         .review-card-title {
-          font-family: 'Bebas Neue', sans-serif;
+          font-family: var(--font-bebas), sans-serif;
           font-size: 1.15rem;
           letter-spacing: 0.04em;
           color: #fff;
@@ -452,7 +452,7 @@ export default function Home() {
           pointer-events: none;
         }
         .banner-cta-title {
-          font-family: 'Bebas Neue', sans-serif;
+          font-family: var(--font-bebas), sans-serif;
           font-size: clamp(2rem, 4vw, 3rem);
           color: #fff;
           margin-bottom: 0.75rem;
@@ -499,7 +499,7 @@ export default function Home() {
           flex-shrink: 0;
         }
         .cat-card-title {
-          font-family: 'Bebas Neue', sans-serif;
+          font-family: var(--font-bebas), sans-serif;
           font-size: 1.2rem;
           letter-spacing: 0.04em;
           color: #fff;
@@ -593,7 +593,7 @@ export default function Home() {
             <Link href="/critiques" className="section-link">Tout voir →</Link>
           </div>
           <div className="featured-grid">
-            {featured.map((serie) => {
+            {featured.map((serie, idx) => {
               if (!serie) return null;
               return (
                 <Link
@@ -602,10 +602,13 @@ export default function Home() {
                   className="featured-card"
                   style={{ textDecoration: "none" }}
                 >
-                  <img
+                  <Image
                     src={serie.cover || "/_placeholder.jpg"}
                     alt={serie.title}
+                    fill
+                    sizes="(max-width: 640px) 50vw, (max-width: 1100px) 33vw, 16vw"
                     className="featured-img"
+                    priority={idx < 3}
                   />
                   <div className="featured-overlay">
                     <div className="featured-badge">{serie.category === "manhwa" ? "Manhwa" : "Manga"}</div>
@@ -666,11 +669,15 @@ export default function Home() {
                   href={`/series/${serie.slug}`}
                   className="review-card"
                 >
-                  <img
-                    src={serie.cover || "/_placeholder.jpg"}
-                    alt={serie.title}
-                    className="review-card-img"
-                  />
+                  <div className="relative w-full" style={{ aspectRatio: "16/9" }}>
+                    <Image
+                      src={serie.cover || "/_placeholder.jpg"}
+                      alt={serie.title}
+                      fill
+                      sizes="(max-width: 900px) 50vw, 25vw"
+                      className="object-cover object-top"
+                    />
+                  </div>
                   <div className="review-card-body">
                     <div className="review-card-title">{serie.title}</div>
                     <div className="review-card-tags">{serie.tags}</div>
@@ -708,7 +715,7 @@ export default function Home() {
               <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
               Nouveau
             </div>
-            <h2 style={{ fontFamily: "'Bebas Neue', sans-serif", fontSize: "clamp(1.8rem, 4vw, 2.6rem)", letterSpacing: "0.03em", color: "#fff", lineHeight: 1, marginBottom: "0.6rem" }}>
+            <h2 style={{ fontFamily: "var(--font-bebas), sans-serif", fontSize: "clamp(1.8rem, 4vw, 2.6rem)", letterSpacing: "0.03em", color: "#fff", lineHeight: 1, marginBottom: "0.6rem" }}>
               Trouve ta prochaine série
             </h2>
             <p style={{ fontSize: "0.9rem", color: "rgba(255,255,255,0.55)", maxWidth: "400px", lineHeight: 1.6 }}>

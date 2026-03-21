@@ -16,7 +16,6 @@ export default async function GuidesPage() {
   return (
     <div className="min-h-screen">
       <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
         @keyframes pulseOrb { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:0.5;transform:scale(0.8)} }
         .pulse-dot { animation: pulseOrb 2s infinite; }
         .hero-grid { background-image: linear-gradient(rgba(139,92,246,0.06) 1px,transparent 1px),linear-gradient(90deg,rgba(139,92,246,0.06) 1px,transparent 1px); background-size:40px 40px; }
@@ -32,7 +31,7 @@ export default async function GuidesPage() {
             <span className="pulse-dot w-1.5 h-1.5 rounded-full bg-emerald-400 inline-block" />
             Pour tous les niveaux
           </div>
-          <h1 style={{ fontFamily: "'Bebas Neue', sans-serif", letterSpacing: "0.03em" }}
+          <h1 style={{ fontFamily: "var(--font-bebas), sans-serif", letterSpacing: "0.03em" }}
             className="text-[clamp(3rem,6vw,5rem)] text-white leading-[0.92] mb-3">
             Guides &amp; <span className="text-emerald-400">conseils</span>
           </h1>
@@ -66,7 +65,7 @@ export default async function GuidesPage() {
                     </span>
                     <span className="text-xs text-white/30">· {featured.readingTime}</span>
                   </div>
-                  <h2 style={{ fontFamily: "'Bebas Neue', sans-serif", letterSpacing: "0.04em" }}
+                  <h2 style={{ fontFamily: "var(--font-bebas), sans-serif", letterSpacing: "0.04em" }}
                     className="text-2xl md:text-3xl text-white leading-tight mb-3">
                     {featured.title}
                   </h2>
@@ -97,7 +96,7 @@ export default async function GuidesPage() {
                   <div className="absolute inset-0 bg-[radial-gradient(circle_at_90%_10%,rgba(255,255,255,0.04)_0%,transparent_50%)]" />
                   <div className="text-3xl mb-4 relative z-10">{guide.icon}</div>
                   <p className={`text-[0.62rem] font-bold tracking-[0.12em] uppercase mb-2 relative z-10 ${t.category}`}>{guide.category}</p>
-                  <h3 style={{ fontFamily: "'Bebas Neue', sans-serif", letterSpacing: "0.04em" }}
+                  <h3 style={{ fontFamily: "var(--font-bebas), sans-serif", letterSpacing: "0.04em" }}
                     className="text-xl text-white leading-tight mb-3 relative z-10">{guide.title}</h3>
                   <p className="text-xs text-white/50 leading-relaxed relative z-10">{guide.excerpt}</p>
                 </div>

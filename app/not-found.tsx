@@ -5,7 +5,6 @@ import Link from "next/link";
 export default function NotFound() {
   return (
     <div className="min-h-screen flex flex-col items-center justify-center px-4">
-      <style>{`@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');`}</style>
 
       {/* Fond */}
       <div className="fixed inset-0 pointer-events-none">
@@ -19,14 +18,14 @@ export default function NotFound() {
         </p>
 
         <div
-          style={{ fontFamily: "'Bebas Neue', sans-serif", letterSpacing: "0.04em" }}
+          style={{ fontFamily: "var(--font-bebas), sans-serif", letterSpacing: "0.04em" }}
           className="text-[clamp(6rem,20vw,10rem)] text-white/8 leading-none select-none mb-[-1rem]"
         >
           404
         </div>
 
         <h1
-          style={{ fontFamily: "'Bebas Neue', sans-serif", letterSpacing: "0.04em" }}
+          style={{ fontFamily: "var(--font-bebas), sans-serif", letterSpacing: "0.04em" }}
           className="text-[clamp(2.5rem,6vw,4rem)] text-white leading-none mb-4"
         >
           Page <span className="text-brand-400">introuvable</span>

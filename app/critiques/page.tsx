@@ -82,7 +82,7 @@ function CritiqueCard({ slug, title, cover, tags, stars, category, avg, onTagCli
 
       {/* Corps */}
       <div className="relative z-10 p-3">
-        <h3 style={{ fontFamily: "'Bebas Neue', sans-serif", letterSpacing: "0.04em" }} className="text-[1.05rem] text-white leading-tight mb-1">
+        <h3 style={{ fontFamily: "var(--font-bebas), sans-serif", letterSpacing: "0.04em" }} className="text-[1.05rem] text-white leading-tight mb-1">
           {title}
         </h3>
         {typeof avg === "number" && (
@@ -192,7 +192,7 @@ export default function CritiquesPage() {
             <span className="pulse-dot w-1.5 h-1.5 rounded-full bg-brand-400 inline-block" />
             Critiques · Manhwa · Manga
           </div>
-          <h1 style={{ fontFamily: "'Bebas Neue', sans-serif", letterSpacing: "0.03em" }} className="text-[clamp(3.5rem,7vw,5.5rem)] text-white leading-[0.92] mb-4">
+          <h1 style={{ fontFamily: "var(--font-bebas), sans-serif", letterSpacing: "0.03em" }} className="text-[clamp(3.5rem,7vw,5.5rem)] text-white leading-[0.92] mb-4">
             Toutes<br />les <span className="text-brand-500">critiques</span>
           </h1>
           <p className="text-[0.95rem] text-white/50 leading-relaxed mb-6 max-w-sm">
@@ -205,7 +205,7 @@ export default function CritiquesPage() {
               { num: manhwaCount, label: "Manhwas" },
             ].map(({ num, label }) => (
               <div key={label}>
-                <div style={{ fontFamily: "'Bebas Neue', sans-serif" }} className="text-[1.8rem] text-white leading-none tracking-wide">{num}</div>
+                <div style={{ fontFamily: "var(--font-bebas), sans-serif" }} className="text-[1.8rem] text-white leading-none tracking-wide">{num}</div>
                 <div className="text-[0.65rem] font-bold tracking-[0.12em] uppercase text-white/35 mt-0.5">{label}</div>
               </div>
             ))}
@@ -297,7 +297,7 @@ export default function CritiquesPage() {
         {filtered.length === 0 ? (
           <div className="text-center py-24 text-white/25">
             <div className="text-5xl mb-4">🔍</div>
-            <p style={{ fontFamily: "'Bebas Neue', sans-serif" }} className="text-2xl text-white/35 mb-2">Aucun résultat</p>
+            <p style={{ fontFamily: "var(--font-bebas), sans-serif" }} className="text-2xl text-white/35 mb-2">Aucun résultat</p>
             <p className="text-sm">Essaie d&apos;autres mots-clés ou filtres</p>
           </div>
         ) : (

@@ -99,7 +99,6 @@ export default function SeriePage({ params }: { params: { slug: string } }) {
     <div className="min-h-screen">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <style>{`
-        @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
         .review-content p { margin-bottom: 1em; font-size: 0.88rem; color: rgba(255,255,255,0.6); line-height: 1.85; }
         .review-content strong { color: #fff; }
       `}</style>
@@ -136,14 +135,14 @@ export default function SeriePage({ params }: { params: { slug: string } }) {
                 {serie.category === "manhwa" ? "🇰🇷 Manhwa" : "🇯🇵 Manga"}
               </span>
               {rank && (
-                <span style={{ fontFamily: "'Bebas Neue', sans-serif", letterSpacing: "0.08em" }}
+                <span style={{ fontFamily: "var(--font-bebas), sans-serif", letterSpacing: "0.08em" }}
                   className={`text-sm px-3 py-1 rounded-full border ${RANK_STYLES[rank] ?? ""}`}>
                   Rang {rank}
                 </span>
               )}
             </div>
 
-            <h1 style={{ fontFamily: "'Bebas Neue', sans-serif", letterSpacing: "0.04em" }}
+            <h1 style={{ fontFamily: "var(--font-bebas), sans-serif", letterSpacing: "0.04em" }}
               className="text-[clamp(2.8rem,6vw,5rem)] text-white leading-[0.95] mb-2">
               {serie.title}
             </h1>
@@ -262,14 +261,14 @@ export default function SeriePage({ params }: { params: { slug: string } }) {
                     strokeDasharray={`${(stars / 5) * 213.6} 213.6`}
                     strokeLinecap="round" />
                 </svg>
-                <div style={{ fontFamily: "'Bebas Neue', sans-serif" }}
+                <div style={{ fontFamily: "var(--font-bebas), sans-serif" }}
                   className="absolute inset-0 flex items-center justify-center text-2xl text-white">
                   {stars}/5
                 </div>
               </div>
               <p className="text-[0.65rem] font-bold tracking-[0.1em] uppercase text-white/30 mb-3">Note rédaction</p>
               {rank && (
-                <span style={{ fontFamily: "'Bebas Neue', sans-serif", letterSpacing: "0.08em" }}
+                <span style={{ fontFamily: "var(--font-bebas), sans-serif", letterSpacing: "0.08em" }}
                   className={`text-xl px-4 py-1 rounded-xl border ${RANK_STYLES[rank] ?? ""}`}>
                   Rang {rank}
                 </span>
@@ -359,7 +358,7 @@ export default function SeriePage({ params }: { params: { slug: string } }) {
                     <div className="absolute inset-0 bg-gradient-to-t from-[#05050e]/95 to-transparent opacity-60" />
                   </div>
                   <div className="p-2 bg-white/3">
-                    <h4 style={{ fontFamily: "'Bebas Neue', sans-serif", letterSpacing: "0.04em" }}
+                    <h4 style={{ fontFamily: "var(--font-bebas), sans-serif", letterSpacing: "0.04em" }}
                       className="text-[0.85rem] text-white leading-tight truncate">{s.title}</h4>
                   </div>
                 </Link>

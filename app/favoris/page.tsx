@@ -12,7 +12,7 @@ export default function FavorisPage() {
 
   return (
     <div className="min-h-screen">
-      <style>{`@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+      <style>{`
         @keyframes fadeInUp { from{opacity:0;transform:translateY(16px)} to{opacity:1;transform:translateY(0)} }
         .card-fadein{animation:fadeInUp 0.4s ease both}
       `}</style>
@@ -27,7 +27,7 @@ export default function FavorisPage() {
           <div className="inline-flex items-center gap-2 text-[0.7rem] font-bold tracking-[0.18em] uppercase text-pink-300 bg-pink-500/10 border border-pink-500/25 px-3.5 py-1.5 rounded-full mb-5">
             ♥ Mes séries sauvegardées
           </div>
-          <h1 style={{ fontFamily: "'Bebas Neue', sans-serif", letterSpacing: "0.03em" }}
+          <h1 style={{ fontFamily: "var(--font-bebas), sans-serif", letterSpacing: "0.03em" }}
             className="text-[clamp(3rem,7vw,5rem)] text-white leading-none mb-3">
             Mes <span className="text-pink-400">favoris</span>
           </h1>
@@ -45,7 +45,7 @@ export default function FavorisPage() {
         {favSeries.length === 0 ? (
           <div className="text-center py-24">
             <div className="text-5xl mb-5">♡</div>
-            <p style={{ fontFamily: "'Bebas Neue', sans-serif" }} className="text-2xl text-white/30 mb-3">
+            <p style={{ fontFamily: "var(--font-bebas), sans-serif" }} className="text-2xl text-white/30 mb-3">
               Aucun favori
             </p>
             <p className="text-sm text-white/30 mb-8">
@@ -85,7 +85,7 @@ export default function FavorisPage() {
                   </div>
 
                   <Link href={`/series/${s.slug}`} className="p-3 flex-1">
-                    <h3 style={{ fontFamily: "'Bebas Neue', sans-serif", letterSpacing: "0.04em" }}
+                    <h3 style={{ fontFamily: "var(--font-bebas), sans-serif", letterSpacing: "0.04em" }}
                       className="text-[1.05rem] text-white leading-tight mb-1">{s.title}</h3>
                     {s.stars ? (
                       <div className="flex gap-0.5">

@@ -64,7 +64,7 @@ function RankCard({ slug, title, cover, tags, rank }: {
       <div className="pointer-events-none absolute inset-0 rounded-2xl bg-gradient-to-br from-white/8 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100 z-10" />
 
       {/* Badge rang */}
-      <span style={{ fontFamily: "'Bebas Neue', sans-serif", letterSpacing: "0.08em" }}
+      <span style={{ fontFamily: "var(--font-bebas), sans-serif", letterSpacing: "0.08em" }}
         className={`absolute top-2 left-2 z-20 text-sm px-2 py-0.5 rounded-lg ${styles.badge} ${rank === "SSS" ? "animate-pulse" : ""}`}>
         {rank}
       </span>
@@ -94,7 +94,7 @@ function RankCard({ slug, title, cover, tags, rank }: {
 
       {/* Corps */}
       <div className="p-3 relative z-10">
-        <h3 style={{ fontFamily: "'Bebas Neue', sans-serif", letterSpacing: "0.04em" }}
+        <h3 style={{ fontFamily: "var(--font-bebas), sans-serif", letterSpacing: "0.04em" }}
           className="text-[0.98rem] text-white leading-tight">
           {title}
         </h3>
@@ -111,7 +111,7 @@ function RankSection({ rank, items }: { rank: Rank; items: typeof SERIES }) {
     <div className="mb-12">
       {/* Header de section */}
       <div className="flex items-center gap-4 mb-5">
-        <div style={{ fontFamily: "'Bebas Neue', sans-serif", letterSpacing: "0.06em" }}
+        <div style={{ fontFamily: "var(--font-bebas), sans-serif", letterSpacing: "0.06em" }}
           className={`text-2xl px-4 py-1.5 rounded-xl bg-gradient-to-r border ${styles.section} min-w-[72px] text-center flex-shrink-0`}>
           {rank}
         </div>
@@ -177,7 +177,7 @@ export default function TopsPage() {
             <span className="pulse-dot w-1.5 h-1.5 rounded-full bg-amber-400 inline-block" />
             Classements officiels
           </div>
-          <h1 style={{ fontFamily: "'Bebas Neue', sans-serif", letterSpacing: "0.03em" }}
+          <h1 style={{ fontFamily: "var(--font-bebas), sans-serif", letterSpacing: "0.03em" }}
             className="text-[clamp(3.5rem,7vw,5.5rem)] text-white leading-none mb-4">
             Rangs <span className="text-amber-400">SSS</span> à <span className="text-blue-400">B</span>
           </h1>
@@ -195,7 +195,7 @@ export default function TopsPage() {
               const count = SERIES.filter(s => starsToRank(s.stars as number ?? 0) === rank).length;
               return count > 0 ? (
                 <div key={rank}>
-                  <div style={{ fontFamily: "'Bebas Neue', sans-serif" }} className={`text-[1.8rem] leading-none tracking-wide ${color}`}>{count}</div>
+                  <div style={{ fontFamily: "var(--font-bebas), sans-serif" }} className={`text-[1.8rem] leading-none tracking-wide ${color}`}>{count}</div>
                   <div className="text-[0.65rem] font-bold tracking-[0.12em] uppercase text-white/35 mt-0.5">Rang {rank}</div>
                 </div>
               ) : null;

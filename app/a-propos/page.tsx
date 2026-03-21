@@ -39,7 +39,6 @@ const VALEURS = [
 export default function AProposPage() {
   return (
     <div className="min-h-screen">
-      <style>{`@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');`}</style>
 
       {/* Hero */}
       <section className="relative overflow-hidden px-6 md:px-12 py-24 border-b border-white/6">
@@ -50,7 +49,7 @@ export default function AProposPage() {
           <p className="text-[0.7rem] font-bold tracking-[0.2em] uppercase text-brand-400 mb-4">
             🎌 À propos de MangaInsight
           </p>
-          <h1 style={{ fontFamily: "'Bebas Neue', sans-serif", letterSpacing: "0.04em" }}
+          <h1 style={{ fontFamily: "var(--font-bebas), sans-serif", letterSpacing: "0.04em" }}
             className="text-[clamp(3rem,8vw,5rem)] text-white leading-none mb-6">
             Fait par des<br /><span className="text-brand-400">passionnés</span>
           </h1>
@@ -67,7 +66,7 @@ export default function AProposPage() {
         <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-16">
           {STATS.map(s => (
             <div key={s.label} className="bg-white/3 border border-white/7 rounded-2xl p-5 text-center">
-              <div style={{ fontFamily: "'Bebas Neue', sans-serif", letterSpacing: "0.04em" }}
+              <div style={{ fontFamily: "var(--font-bebas), sans-serif", letterSpacing: "0.04em" }}
                 className="text-[2.2rem] text-brand-400 leading-none mb-1">{s.num}</div>
               <div className="text-[0.7rem] font-bold tracking-[0.1em] uppercase text-white/35">{s.label}</div>
             </div>
@@ -76,7 +75,7 @@ export default function AProposPage() {
 
         {/* Histoire */}
         <div className="mb-16">
-          <h2 style={{ fontFamily: "'Bebas Neue', sans-serif", letterSpacing: "0.04em" }}
+          <h2 style={{ fontFamily: "var(--font-bebas), sans-serif", letterSpacing: "0.04em" }}
             className="text-[2rem] text-white mb-6">Notre histoire</h2>
           <div className="bg-white/3 border border-white/7 rounded-2xl p-7 space-y-4 text-[0.93rem] text-white/60 leading-relaxed">
             <p>
@@ -101,13 +100,13 @@ export default function AProposPage() {
 
         {/* Valeurs */}
         <div className="mb-16">
-          <h2 style={{ fontFamily: "'Bebas Neue', sans-serif", letterSpacing: "0.04em" }}
+          <h2 style={{ fontFamily: "var(--font-bebas), sans-serif", letterSpacing: "0.04em" }}
             className="text-[2rem] text-white mb-6">Ce en quoi on croit</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {VALEURS.map(v => (
               <div key={v.title} className="bg-white/3 border border-white/7 rounded-2xl p-6 hover:border-brand-500/30 transition-colors">
                 <div className="text-2xl mb-3">{v.emoji}</div>
-                <h3 style={{ fontFamily: "'Bebas Neue', sans-serif", letterSpacing: "0.04em" }}
+                <h3 style={{ fontFamily: "var(--font-bebas), sans-serif", letterSpacing: "0.04em" }}
                   className="text-[1.15rem] text-white mb-2">{v.title}</h3>
                 <p className="text-sm text-white/45 leading-relaxed">{v.desc}</p>
               </div>
@@ -118,7 +117,7 @@ export default function AProposPage() {
         {/* CTA */}
         <div className="relative rounded-2xl overflow-hidden border border-brand-500/25 bg-gradient-to-br from-brand-700/20 to-transparent p-8 text-center">
           <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_50%_0%,rgba(139,92,246,0.15),transparent_70%)] pointer-events-none" />
-          <h2 style={{ fontFamily: "'Bebas Neue', sans-serif", letterSpacing: "0.04em" }}
+          <h2 style={{ fontFamily: "var(--font-bebas), sans-serif", letterSpacing: "0.04em" }}
             className="text-[2rem] text-white mb-3 relative">Prêt à explorer ?</h2>
           <p className="text-sm text-white/45 mb-6 relative">
             Plus de {SERIES.length} séries critiquées t'attendent.
