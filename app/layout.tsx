@@ -19,6 +19,7 @@ const dmSans = DM_Sans({
 
 export const metadata = {
   metadataBase: new URL('https://mangainsight.com'),
+  alternates: { canonical: 'https://mangainsight.com' },
   title: { default: 'MangaInsight', template: '%s · MangaInsight' },
   icons: {
     icon: '/icon.svg',
