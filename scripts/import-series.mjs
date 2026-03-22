@@ -13,7 +13,7 @@ import { join, dirname } from "path";
 import { fileURLToPath } from "url";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
-const SERIES_FILE = join(__dirname, "../data/series.ts");
+const SERIES_FILE = join(__dirname, "../data/series/series-2.ts");
 
 // ── Mapping genres AniList → tags français ──────────────────────────────────
 const GENRE_MAP = {
