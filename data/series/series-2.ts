@@ -84,39 +84,33 @@ export const SERIES_2: Serie[] = [
 {
   slug: "toradora",
   title: "Toradora!",
-  category: "manga",
-  tags: "Shōnen · Romance · Comédie · Lycée",
+  synopsis: "Ryūji Takasu a une tête d'intimidateur malgré sa nature douce. Taiga Aisaka est une petite fille explosive surnommée le Tigre de poche. Ces deux lycéens aux antipodes forment une alliance pour s'entraider à séduire leurs amours respectifs, mais la vie en décide autrement.",
+  reviewHtml: "<p><em>Toradora!</em> est l'une des light novels les plus appréciées du genre romance lycée des années 2000, et son adaptation manga est une réussite. La formule est simple mais parfaitement exécutée : deux personnages opposés qui apprennent à se connaître et tombent amoureux à leur insu.</p><p>Taiga est un personnage mémorable, difficile, violente, mais profondément blessée et sincère. La progression de la relation entre elle et Ryūji est l'une des mieux écrites du genre. Chaque étape semble naturelle, jamais forcée.</p><p>L'humour est bien dosé, les seconds rôles sont développés, et la fin est satisfaisante. Un classique de la romcom lycée qui tient la route.</p>",
+  pros: ["Duo principal mémorable et bien écrit", "Progression romantique naturelle", "Humour et émotion bien équilibrés"],
+  cons: ["Certains clichés du genre", "Personnages secondaires inégaux"],
   stars: 4,
+  category: "manga",
+  tags: "Romance · Comédie · Lycée · Light Novel",
+  cover: "",
   addedAt: "2026-03-22",
-  synopsis: "Ryuuji Takasu, au visage intimidant mais au cœur doux, et Taiga Aisaka, petite mais volcanique surnommée le 'Tigre de Palmier', ont tous deux un crush sur le meilleur ami de l'autre. Ils décident de s'entraider — et finissent par découvrir que leurs sentiments étaient peut-être mal dirigés dès le début.",
-  pros: ["Dynamique Ryuuji/Taiga parmi les meilleures du genre","Évolution naturelle et touchante des sentiments","Comédie efficace sans jamais écrasé l'émotion"],
-  cons: ["Adaptation manga légèrement en retrait sur le light novel original","Rythme un peu inégal sur les arcs secondaires"],
-  reviewHtml: "<p>Toradora! est l'un des piliers du romance lycéen japonais, et pour de bonnes raisons. La relation entre Ryuuji et Taiga commence sur un malentendu comique et évolue avec une logique émotionnelle rare dans le genre. On rit beaucoup, on est touché davantage.</p><p>Taiga Aisaka est un personnage complexe sous ses airs de petite terreur : sa vulnérabilité cachée, sa fierté excessive et son attachement croissant pour Ryuuji forment l'âme de la série. L'auteure Yuyuko Takemiya a construit une histoire où chaque personnage — même les secondaires — a ses propres aspirations et blessures.</p><p>La version manga est une bonne entrée dans l'histoire, même si les fans confirment que le light novel apporte une profondeur supplémentaire. Dans tous les cas, Toradora! reste une histoire d'amour lycéen incontournable, sincère et bien écrite.</p>",
   shops: [
-    {
-      "name": "Manganim",
-      "url": "https://www.manganim.fr/catalogsearch/result/?q=Toradora",
-      "logo": "/logos/manganim.png"
-    },
-    {
-      "name": "Fnac",
-      "url": "https://www.fnac.com/SearchResult/ResultList.aspx?SCat=0!1&Search=Toradora",
-      "logo": "/logos/fnac.png"
-    },
-    {
-      "name": "Amazon",
-      "url": "https://www.amazon.fr/s?k=Toradora+manga",
-      "logo": "/logos/amazon.png"
-    }
+  {
+    "name": "Manganim",
+    "url": "https://www.manganim.fr/manga/toradora",
+    "logo": "/logos/manganim.svg"
+  },
+  {
+    "name": "Fnac",
+    "url": "https://www.fnac.com/SearchResult/ResultKNV.aspx?Search=toradora+manga",
+    "logo": "/logos/fnac.svg"
+  },
+  {
+    "name": "Amazon",
+    "url": "https://www.amazon.fr/s?k=toradora+manga",
+    "logo": "/logos/amazon.svg"
+  }
   ],
-  streaming: [
-    {
-      "name": "Crunchyroll",
-      "url": "https://www.crunchyroll.com/fr/search?q=Toradora",
-      "logo": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Crunchyroll_logo_2018_vertical.png"
-    }
-  ],
-  live: []
+  streaming: []
 },
 
 {
@@ -516,39 +510,33 @@ export const SERIES_2: Serie[] = [
 {
   slug: "golden-time",
   title: "Golden Time",
-  category: "manga",
-  tags: "Seinen · Romance · Université · Comédie",
+  synopsis: "Banri Tada entre à la faculté de droit de Tōkyō avec un passé qui lui échappe : un accident l'a privé de tous ses souvenirs antérieurs. Il rencontre Kōko Kaga, une camarade aussi belle qu'obsédée par son ami d'enfance, et entre les deux naît une relation complexe entre premier amour et reconstruction identitaire.",
+  reviewHtml: "<p><em>Golden Time</em>, de Yuyuko Takemiya, est une romance qui se distingue en se déroulant à l'université. Ce cadre plus adulte autorise des thématiques plus matures : amnésie, deuil du passé, reconstruction de soi.</p><p>Kōko est un personnage fascinant, intense, parfois envahissante, mais d'une honnêteté émotionnelle rare. La mécanique de l'amnésie de Banri est exploitée de façon originale, créant un conflit intérieur intéressant entre son moi passé et présent.</p><p>Pour les fans de Toradora!, c'est une lecture naturelle, plus mature, plus mélancolique, tout aussi attachante.</p>",
+  pros: ["Cadre universitaire original", "Thématiques adultes bien traitées", "Héroïne complexe et mémorable"],
+  cons: ["Amnésie parfois surexploitée", "Rythme irrégulier"],
   stars: 3,
+  category: "manga",
+  tags: "Romance · Université · Drame · Light Novel",
+  cover: "",
   addedAt: "2026-03-22",
-  synopsis: "Banri Tada rejoint sa faculté de droit à Tokyo avec une particularité : il a perdu la mémoire de toute sa vie précédente suite à un accident. Il y rencontre Mitsuo Yanagisawa poursuivi par son amie d'enfance obsessionnelle Kouko Kaga, et Linda, une senpai qui semble le connaître de l'époque dont il ne se souvient pas.",
-  pros: ["Cadre universitaire rare et bienvenu dans le manga romance","Kouko Kaga est un personnage original et attachant","Exploration intéressante de l'identité et de la mémoire"],
-  cons: ["Amnésie utilisée de façon parfois maladroite","Rythme irrégulier, certains arcs trop longs","Résolution un peu laborieuse"],
-  reviewHtml: "<p>Golden Time se démarque du lot des romances manga par son cadre universitaire — rare — et par son héroïne Kouko Kaga, une obsessionnelle possessive qui évolue de manière surprenante et convaincante au fil des tomes. La série est adaptée du light novel de Yuyuko Takemiya (auteure de Toradora!).</p><p>L'arc central sur l'amnésie de Banri apporte une dimension psychologique intéressante : qui est-on sans ses souvenirs ? Peut-on aimer quelqu'un qu'on ne se rappelle pas être ? Ces questions sont traitées avec une certaine profondeur, même si l'exécution est parfois inégale.</p><p>Golden Time est une romance universitaire solide avec des moments d'humour et d'émotion bien dosés. Elle ne réinvente pas le genre mais l'occupe dignement, surtout pour les lecteurs qui cherchent quelque chose de plus mature que les histoires lycéennes habituelles.</p>",
   shops: [
-    {
-      "name": "Manganim",
-      "url": "https://www.manganim.fr/catalogsearch/result/?q=Golden%20Time%20manga",
-      "logo": "/logos/manganim.png"
-    },
-    {
-      "name": "Fnac",
-      "url": "https://www.fnac.com/SearchResult/ResultList.aspx?SCat=0!1&Search=Golden%20Time%20manga",
-      "logo": "/logos/fnac.png"
-    },
-    {
-      "name": "Amazon",
-      "url": "https://www.amazon.fr/s?k=Golden%20Time%20manga+manga",
-      "logo": "/logos/amazon.png"
-    }
+  {
+    "name": "Manganim",
+    "url": "https://www.manganim.fr/manga/golden-time",
+    "logo": "/logos/manganim.svg"
+  },
+  {
+    "name": "Fnac",
+    "url": "https://www.fnac.com/SearchResult/ResultKNV.aspx?Search=golden+time+manga",
+    "logo": "/logos/fnac.svg"
+  },
+  {
+    "name": "Amazon",
+    "url": "https://www.amazon.fr/s?k=golden+time+manga",
+    "logo": "/logos/amazon.svg"
+  }
   ],
-  streaming: [
-    {
-      "name": "Crunchyroll",
-      "url": "https://www.crunchyroll.com/fr/search?q=Golden%20Time",
-      "logo": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Crunchyroll_logo_2018_vertical.png"
-    }
-  ],
-  live: []
+  streaming: []
 },
 
 {
@@ -770,19 +758,24 @@ export const SERIES_2: Serie[] = [
 {
   slug: "clannad",
   title: "Clannad",
-  category: "manga",
-  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx32598-vVzF2p1UEubd.png",
-  tags: "Drame · Romance · Tranche de vie",
+  synopsis: "Tomoya Okazaki est un lycéen blasé qui traîne sa vie sans but. Sa rencontre avec Nagisa Furukawa, une fille fragile et déterminée à relancer le club de théâtre du lycée, va peu à peu changer sa vision du monde. Adaptation du visual novel culte de Key, Clannad explore la famille, la perte et la reconstruction.",
+  reviewHtml: "<p>L'adaptation manga de <em>Clannad</em> tente de capturer la magie du visual novel de Key. Le manga condense efficacement l'arc principal de Tomoya et Nagisa, avec les moments émotionnels forts bien rendus. Cependant, la richesse des routes alternatives du jeu est inévitablement perdue.</p><p>Pour les fans du jeu ou de l'anime, c'est une version complémentaire intéressante. Pour les néophytes, l'anime KyoAni reste la meilleure porte d'entrée dans l'univers Clannad.</p>",
+  pros: ["Moments émotionnels bien rendus", "Fidèle à l'esprit de l'oeuvre", "Dessin soigné"],
+  cons: ["Moins riche que le jeu et l'anime", "Routes alternatives absentes"],
   stars: 3,
+  category: "manga",
+  tags: "Romance · Drame · Slice of life · Key",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx32598-vVzF2p1UEubd.png",
   addedAt: "2026-03-22",
-  synopsis: "Tomoya Okazaki, lycéen cynique et sans ambition, rencontre Nagisa Furukawa, une fille timide qui rêve de ressusciter le club de théâtre. Ensemble ils vont recruter des membres et vivre leurs dernières années de lycée. Adapté du visual novel de Key, Clannad explore les thèmes de la famille, de la perte et des miracles quotidiens.",
-  pros: ["Adaptation fidèle d'un VN culte","Arcs individuels des héroïnes touchants","Thèmes sur la famille profondément humains"],
-  cons: ["Adaptation manga moins impactante que l'anime ou le VN","Certains arcs du visual novel absents ou condensés","Dessin peu remarquable"],
-  reviewHtml: `<p>Clannad en manga est d'abord une adaptation d'une oeuvre culte qui existe dans d'autres formes bien plus réussies. Le visual novel original de Key et l'adaptation anime de Kyoto Animation restent les versions de référence pour vivre l'histoire de Tomoya et Nagisa dans toute sa profondeur émotionnelle.</p><p>La version manga condense et simplifie le matériel de base, et si les moments forts de l'histoire restent présents, ils ont moins d'impact sans la musique et les voix qui leur donnent leur puissance dans le VN ou l'anime. Les arcs des héroïnes secondaires, riches dans l'original, sont souvent trop raccourcis ici.</p><p>Pour ceux qui veulent découvrir Clannad, commencer par l'anime est fortement recommandé. Pour les fans de l'univers qui veulent tout voir, c'est un complément satisfaisant mais non indispensable.</p>`,
   shops: [
   {
+    "name": "Manganim",
+    "url": "https://www.manganim.fr/manga/clannad",
+    "logo": "/logos/manganim.svg"
+  },
+  {
     "name": "Fnac",
-    "url": "https://www.fnac.com/SearchResult/ResultList.aspx?Search=clannad+manga&sft=1",
+    "url": "https://www.fnac.com/SearchResult/ResultKNV.aspx?Search=clannad+manga",
     "logo": "/logos/fnac.svg"
   },
   {
@@ -790,9 +783,8 @@ export const SERIES_2: Serie[] = [
     "url": "https://www.amazon.fr/s?k=clannad+manga",
     "logo": "/logos/amazon.svg"
   }
-],
-  streaming: [],
-  live: []
+  ],
+  streaming: []
 },
 
 
@@ -800,67 +792,65 @@ export const SERIES_2: Serie[] = [
 {
   slug: "skip-beat",
   title: "Skip Beat!",
-  category: "manga",
-  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx30610-HHSa8X8Hupxk.png",
-  tags: "Comédie · Drame · Romance · Shōjo · Showbiz",
+  synopsis: "Kyōko Mogami a tout abandonné pour suivre son ami d'enfance Shō dans sa carrière de chanteur à Tōkyō. Quand elle découvre qu'il la méprise et ne l'a utilisée que comme bonne à tout faire, elle jure de se venger en devenant une star plus grande que lui. Son chemin croise alors celui du mystérieux acteur Ren Tsuruga.",
+  reviewHtml: "<p><em>Skip Beat!</em> est probablement l'un des meilleurs shōjo des années 2000. Son secret : une héroïne dont la motivation principale n'est pas l'amour, mais la vengeance et la réalisation de soi.</p><p>Kyōko est un personnage extraordinaire, intense, comique, dramatique, dont la passion pour la performance finit par dépasser sa soif de revanche. Yoshiki Nakamura excelle dans les scènes de jeu d'acteur où Kyōko se transforme littéralement sous nos yeux.</p><p>La romance avec Ren est lente et frustrante dans le bon sens, chaque avancée est méritée et précieuse. Un shōjo long mais jamais monotone.</p>",
+  pros: ["Héroïne hors du commun, animée par la passion", "Scènes de jeu d'acteur inventives", "Romance lente mais intense"],
+  cons: ["Plus de 40 volumes, engagement long", "Rythme inégal sur certains arcs"],
   stars: 4,
+  category: "manga",
+  tags: "Romance · Shōjo · Show-business · Comédie",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx30610-HHSa8X8Hupxk.png",
   addedAt: "2026-03-22",
-  synopsis: "Kyoko Mogami abandonne tout pour suivre son enfance Sho à Tokyo et l'aider à devenir une star de J-pop. Quand elle découvre qu'il ne l'a jamais considérée que comme une domestique commode, sa douce nature se métamorphose en soif de vengeance : elle entrera dans le showbiz et le dépassera. Mais en cours de route, elle découvre sa vraie passion, le jeu d'actrice.",
-  pros: ["Kyoko parmi les héroïnes les plus charismatiques du shōjo","Progression vers le showbiz passionnante et variée","Humour sur les démons de Kyoko absolument hilarant","Romance qui prend son temps mais de façon justifiée"],
-  cons: ["70+ volumes, la romance principale avance très lentement","Certains arcs de côté moins captivants"],
-  reviewHtml: `<p>Skip Beat! est un manga qui dure depuis 2002 et justifie chaque volume par la force de son personnage principal. Kyoko Mogami est l'une des héroïnes les plus originales du shōjo : une fille douce transformée en machine de vengeance, qui découvre en cherchant à se venger sa vraie passion et son vrai moi.</p><p>Yoshiki Nakamura excelle à montrer l'évolution d'une actrice en formation : chaque rôle que Kyoko obtient est une nouvelle facette de sa personnalité qu'elle doit explorer, et la façon dont ses rôles résonnent avec son trauma personnel est brillamment traité. Les passages comiques sur ses "démons de la rancune" sont d'un humour incomparable.</p><p>La romance avec Ren Tsuruga est la patience testée au maximum mais récompensée : leur dynamique est complexe, tendue, et l'attente est suffisamment payante pour justifier la longueur. Pour ceux qui acceptent le long format shōjo, c'est une des meilleures séries du genre.</p>`,
   shops: [
   {
+    "name": "Manganim",
+    "url": "https://www.manganim.fr/manga/skip-beat",
+    "logo": "/logos/manganim.svg"
+  },
+  {
     "name": "Fnac",
-    "url": "https://www.fnac.com/SearchResult/ResultList.aspx?Search=skip+beat+manga&sft=1",
+    "url": "https://www.fnac.com/SearchResult/ResultKNV.aspx?Search=skip+beat+manga",
     "logo": "/logos/fnac.svg"
   },
   {
     "name": "Amazon",
     "url": "https://www.amazon.fr/s?k=skip+beat+manga",
     "logo": "/logos/amazon.svg"
-  },
-  {
-    "name": "Manganim",
-    "url": "https://manganim.com/search?q=skip-beat",
-    "logo": "/logos/manganim.svg"
   }
-],
-  streaming: [],
-  live: []
+  ],
+  streaming: []
 },
 
 {
   slug: "boys-over-flowers",
   title: "Boys Over Flowers",
+  synopsis: "Tsukushi Makino, fille d'une famille modeste, entre dans la prestigieuse académie Eitoku dominée par les F4, quatre garçons riches et arrogants. Quand elle se retrouve dans leur collimateur, elle refuse de plier. Sa ténacité attire l'attention et les sentiments de Tsukasa Domyoji, le leader impulsif du groupe.",
+  reviewHtml: "<p><em>Boys Over Flowers</em> (Hana Yori Dango) est l'un des shōjo les plus influents de l'histoire du manga. La formule a été copiée des dizaines de fois, mais l'original garde une énergie incomparable.</p><p>Tsukushi est une héroïne exceptionnelle : courageuse, entêtée, jamais soumise. Tsukasa est un héros contradictoire dont l'évolution est l'un des arcs de personnage les plus satisfaisants du genre.</p><p>La série est longue (36 volumes) et certains arcs s'étirent, mais l'intensité émotionnelle reste constante. Un classique absolu qui a engendré de nombreuses adaptations drama en Asie.</p>",
+  pros: ["Héroïne forte et mémorable", "Histoire d'amour intense et addictive", "Influence culturelle immense"],
+  cons: ["36 volumes, certains arcs sont longs", "Comportements du héros parfois problématiques"],
+  stars: 4,
   category: "manga",
+  tags: "Romance · Shōjo · Lycée · Classique",
   cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx30877-rh2We7eqWcZa.png",
-  tags: "Drame · Romance · Shōjo",
-  stars: 3,
   addedAt: "2026-03-22",
-  synopsis: "Tsukushi Makino, lycéenne de famille modeste dans l'école ultra-élitiste Eitoku, refuse de se soumettre aux F4, les quatre garçons les plus riches et les plus puissants du lycée. Cette résistance attire l'attention de Tsukasa Domyoji, le leader des F4, qui passe de la persécution à l'attirance dans cette romance coréenne devenue phénomène mondial.",
-  pros: ["Prémisse qui a défini un genre entier","Tsukushi est une héroïne à fort caractère","Tension romantique efficace dans les premiers arcs"],
-  cons: ["Tsukasa est un personnage problématique à l'aune des standards modernes","Certains arcs tardifs s'étirent inutilement","Dynamique amoureuse basée sur la coercition difficile à défendre"],
-  reviewHtml: `<p>Boys Over Flowers (Hana Yori Dango) est un classique du shōjo des années 90 qui a défini l'archétype du romance avec garçon riche dominant. L'oeuvre de Yoko Kamio a eu une influence culturelle immense, générant de multiples adaptations drama en Asie (japonaise, coréenne, chinoise, taïwanaise).</p><p>Lu avec le prisme de son époque, c'est une romance efficace avec une héroïne forte et des tensions bien construites. Tsukushi a suffisamment de caractère pour ne pas être une simple victime passive, ce qui la distingue de nombreuses héroïnes de l'époque.</p><p>Relu aujourd'hui, la dynamique de Tsukasa est difficile à digérer : le personnage commence essentiellement comme un harceleur violent dont les comportements sont progressivement romantisés. Un artefact culturel important mais à apprécier avec conscience de son contexte historique.</p>`,
   shops: [
   {
+    "name": "Manganim",
+    "url": "https://www.manganim.fr/manga/boys-over-flowers",
+    "logo": "/logos/manganim.svg"
+  },
+  {
     "name": "Fnac",
-    "url": "https://www.fnac.com/SearchResult/ResultList.aspx?Search=boys+over+flowers+manga&sft=1",
+    "url": "https://www.fnac.com/SearchResult/ResultKNV.aspx?Search=hana+yori+dango+manga",
     "logo": "/logos/fnac.svg"
   },
   {
     "name": "Amazon",
-    "url": "https://www.amazon.fr/s?k=boys+over+flowers+manga",
+    "url": "https://www.amazon.fr/s?k=hana+yori+dango+manga",
     "logo": "/logos/amazon.svg"
-  },
-  {
-    "name": "Manganim",
-    "url": "https://manganim.com/search?q=boys-over-flowers",
-    "logo": "/logos/manganim.svg"
   }
-],
-  streaming: [],
-  live: []
+  ],
+  streaming: []
 },
 
 
@@ -934,34 +924,33 @@ export const SERIES_2: Serie[] = [
 {
   slug: "absolute-boyfriend",
   title: "Absolute Boyfriend",
-  category: "manga",
-  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx30071-ZXvEpNo93NqK.png",
-  tags: "Comédie · Drame · Romance · Science-fiction · Shōjo",
+  synopsis: "Riiko Izawa, une lycéenne sans succès amoureux, commande accidentellement un petit ami idéal sur un site mystérieux. Elle reçoit Night, un androïde humanoïde parfait conçu pour l'aimer. Mais quand un vrai garçon entre dans sa vie, elle se retrouve face à un dilemme impossible.",
+  reviewHtml: "<p><em>Absolute Boyfriend</em> de Yuu Watase est un shōjo fantastique court (6 volumes) qui soulève des questions étonnamment profondes sur la nature de l'amour. Ce qui commence comme une comédie romantique légère prend progressivement une tournure mélancolique.</p><p>Night, l'androïde, est un personnage adorable dont la sincérité désarmante touche vraiment le lecteur. Le triangle amoureux est bien construit, et la fin est bien plus courageuse que ce à quoi on s'attendrait d'un shōjo mainstream.</p><p>Le dessin de Watase est irréprochable, avec des personnages expressifs caractéristiques de son style. Une lecture rapide, émouvante, idéale pour les amateurs du genre.</p>",
+  pros: ["Court et bien rythmé (6 volumes)", "Fin courageuse et mémorable", "Personnage d'androïde touchant"],
+  cons: ["Prémisse légèrement naïve", "Quelques clichés du genre"],
   stars: 3,
+  category: "manga",
+  tags: "Romance · Shōjo · Science-fiction · Androïde",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx30071-ZXvEpNo93NqK.png",
   addedAt: "2026-03-22",
-  synopsis: "Riiko Izawa commande accidentellement sur internet un \"petit ami idéal\" androïde nommé Night. Bien décidée à le renvoyer, elle se retrouve incapable de rembourser sa dette et doit garder Night en se faisant passer pour sa propriétaire. Une romance science-fiction courte sur ce que signifie aimer et être humain.",
-  pros: ["Format court bien rythmé","Night est un personnage touchant","Fin plus émouvante qu'attendu"],
-  cons: ["Prémisse gadget qui demande de l'indulgence","Manque de profondeur dans le traitement sci-fi"],
-  reviewHtml: `<p>Absolute Boyfriend est une romance science-fiction de Yuu Watase, auteure connue pour Fushigi Yuugi, dans un format court (6 volumes) qui va à l'essentiel. La prémisse du petit ami androïde est un prétexte pour explorer la question de ce qui constitue un amour véritable.</p><p>Night est le personnage central réussi : androïde conçu pour être le partenaire parfait, il développe des émotions authentiques qui posent des questions sur l'amour conditionné versus l'amour spontané. Sa naïveté et sa sincérité touchent malgré l'aspect artificiellement fabriqué.</p><p>La fin, beaucoup plus mélancolique que la comédie du départ ne le laissait attendre, est le vrai point fort de la série. Watase sait comment conclure. Une lecture légère avec une petite surprise émotionnelle finale, idéale pour une découverte du genre.</p>`,
   shops: [
   {
+    "name": "Manganim",
+    "url": "https://www.manganim.fr/manga/absolute-boyfriend",
+    "logo": "/logos/manganim.svg"
+  },
+  {
     "name": "Fnac",
-    "url": "https://www.fnac.com/SearchResult/ResultList.aspx?Search=absolute+boyfriend+manga&sft=1",
+    "url": "https://www.fnac.com/SearchResult/ResultKNV.aspx?Search=absolute+boyfriend+manga",
     "logo": "/logos/fnac.svg"
   },
   {
     "name": "Amazon",
     "url": "https://www.amazon.fr/s?k=absolute+boyfriend+manga",
     "logo": "/logos/amazon.svg"
-  },
-  {
-    "name": "Manganim",
-    "url": "https://manganim.com/search?q=absolute-boyfriend",
-    "logo": "/logos/manganim.svg"
   }
-],
-  streaming: [],
-  live: []
+  ],
+  streaming: []
 },
 
 
@@ -2905,5 +2894,222 @@ export const SERIES_2: Serie[] = [
   streaming: [],
   live: []
 },
+
+
+
+
+
+
+{
+  slug: "is",
+  title: "I\"s",
+  synopsis: "Seto Iori est un lycéen ordinaire secrètement amoureux de sa camarade Iori Yoshizuki. Mais quand Itsuki Akiba, une ancienne amie d'enfance, refait surface dans sa vie, ses sentiments se compliquent. Entre idylle hésitante et nostalgie de l'enfance, I\"s est un shōnen romantique tout en douceur et en émotions.",
+  reviewHtml: "<p>Masami Kishimoto livre avec <em>I\"s</em> un manga romantique du lycée d'une tendresse désarmante. Là où d'autres séries misent sur le spectaculaire, celle-ci choisit la subtilité : regards furtifs, malentendus innocents, silences éloquents.</p><p>Le dessin est particulièrement soigné pour l'époque, avec des personnages féminins dessinés avec délicatesse. Le triangle amoureux entre Iori, Itsuki et Seto ne tombe jamais dans le mélo, chaque personnage est traité avec respect et profondeur.</p><p>C'est une lecture nostalgique, parfaite pour les amateurs de romance japonaise classique années 90-2000. Pas révolutionnaire, mais sincère jusqu'au bout.</p>",
+  pros: ["Romance douce et sincère", "Dessin délicat et expressif", "Triangle amoureux bien géré"],
+  cons: ["Rythme lent pour certains lecteurs", "Héros un peu passif par moments"],
+  stars: 3,
+  category: "manga",
+  tags: "Romance · Shōnen · Lycée · Années 90",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx184031-LV8dRVoSVJHe.jpg",
+  addedAt: "2026-03-22",
+  shops: [
+  {
+    "name": "Manganim",
+    "url": "https://www.manganim.fr/manga/i-s",
+    "logo": "/logos/manganim.svg"
+  },
+  {
+    "name": "Fnac",
+    "url": "https://www.fnac.com/SearchResult/ResultKNV.aspx?Search=I%22s+manga",
+    "logo": "/logos/fnac.svg"
+  },
+  {
+    "name": "Amazon",
+    "url": "https://www.amazon.fr/s?k=I%22s+manga",
+    "logo": "/logos/amazon.svg"
+  }
+  ],
+  streaming: []
+},
+
+{
+  slug: "video-girl-ai",
+  title: "Video Girl Ai",
+  synopsis: "Yōta Moteuchi est un lycéen qui vient de se faire rejeter par la fille qu'il aimait. En rentrant chez lui, il loue une cassette vidéo qui libère Ai, une mystérieuse fille censée consoler les coeurs brisés. Mais le magnétoscope défaillant de Yōta la rend bien plus humaine que prévu, et les deux finissent par nouer une relation inattendue.",
+  reviewHtml: "<p><em>Video Girl Ai</em> est l'un des grands classiques de Masakazu Katsura, un auteur qui sait comme personne mêler romantisme et mélancolie. La prémisse fantastique sert de prétexte à une exploration sincère de l'amour non partagé et de la solitude adolescente.</p><p>Ai est un personnage mémorable, à la fois attachante, maladroite et touchante dans sa façon d'apprendre à être humaine. La relation entre elle et Yōta est dessinée avec une sensibilité rare pour un shōnen de l'époque.</p><p>Le dessin de Katsura est magnifique, caractéristique des années 90 avec ses personnages expressifs et ses scènes émotionnelles maîtrisées. Une oeuvre qui marque.</p>",
+  pros: ["Personnages profonds et attachants", "Romantisme sincère et touchant", "Dessin élégant de Katsura"],
+  cons: ["Fin un peu précipitée", "Certains passages datés"],
+  stars: 4,
+  category: "manga",
+  tags: "Romance · Fantastique · Shōnen · Classique",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/b30755-s5W5ORrhNybS.jpg",
+  addedAt: "2026-03-22",
+  shops: [
+  {
+    "name": "Manganim",
+    "url": "https://www.manganim.fr/manga/video-girl-ai",
+    "logo": "/logos/manganim.svg"
+  },
+  {
+    "name": "Fnac",
+    "url": "https://www.fnac.com/SearchResult/ResultKNV.aspx?Search=video+girl+ai+manga",
+    "logo": "/logos/fnac.svg"
+  },
+  {
+    "name": "Amazon",
+    "url": "https://www.amazon.fr/s?k=video+girl+ai+manga",
+    "logo": "/logos/amazon.svg"
+  }
+  ],
+  streaming: []
+},
+
+{
+  slug: "marmalade-boy",
+  title: "Marmalade Boy",
+  synopsis: "La vie de Miki Koishikawa est bouleversée le jour où ses parents annoncent qu'ils divorcent pour se remettre en couple avec deux autres personnes, et que toute la famille va cohabiter. Elle se retrouve ainsi à partager le foyer avec Yū Matsuura, un garçon séduisant et agaçant à la fois. Entre tension et attirance, une romance complexe s'engage.",
+  reviewHtml: "<p><em>Marmalade Boy</em> est un shōjo des années 90 qui a marqué toute une génération. La situation de départ est audacieuse et donne lieu à une romance pleine de rebondissements.</p><p>Yū Matsuura est un héros masculin charismatique peu courant dans les shōjo de l'époque : mystérieux, taquin mais sincèrement épris. La dynamique avec Miki est fluide et entretient un suspense romantique efficace.</p><p>Wataru Yoshizumi maîtrise parfaitement les codes du genre pour livrer un manga feel-good qui se lit d'une traite. Légèrement daté visuellement, mais toujours charmant.</p>",
+  pros: ["Prémisse originale et bien exploitée", "Héros masculin charismatique", "Nombreux rebondissements"],
+  cons: ["Certains fils narratifs étirés", "Visuellement daté"],
+  stars: 3,
+  category: "manga",
+  tags: "Romance · Shōjo · Famille · Classique 90s",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx30091-bj1AUgvEinjZ.jpg",
+  addedAt: "2026-03-22",
+  shops: [
+  {
+    "name": "Manganim",
+    "url": "https://www.manganim.fr/manga/marmalade-boy",
+    "logo": "/logos/manganim.svg"
+  },
+  {
+    "name": "Fnac",
+    "url": "https://www.fnac.com/SearchResult/ResultKNV.aspx?Search=marmalade+boy+manga",
+    "logo": "/logos/fnac.svg"
+  },
+  {
+    "name": "Amazon",
+    "url": "https://www.amazon.fr/s?k=marmalade+boy+manga",
+    "logo": "/logos/amazon.svg"
+  }
+  ],
+  streaming: []
+},
+
+
+
+
+
+
+
+
+
+{
+  slug: "fruits-basket-another",
+  title: "Fruits Basket Another",
+  synopsis: "Des années après les événements de Fruits Basket, Sawa Mitoma, une lycéenne effacée qui se croit un fardeau pour les autres, rencontre les enfants des personnages du manga original, dont Mutsuki Sohma. Une nouvelle histoire débute, héritière de l'esprit de la série originale.",
+  reviewHtml: "<p><em>Fruits Basket Another</em> est une suite courte (3 volumes) destinée aux fans de la série originale. Plutôt qu'un simple fan-service, c'est un prolongement thématique sincère : la nouvelle génération hérite des blessures et des guérisons de la précédente.</p><p>Sawa est une héroïne attachante, avec une problématique différente de Tohru mais tout aussi touchante. La nostalgie est bien dosée, les retrouvailles avec les anciens personnages font plaisir sans prendre le dessus sur la nouvelle histoire.</p><p>Visuellement, Takaya retrouve son style tout en l'actualisant légèrement. Pour les fans de Fruits Basket, c'est une lecture incontournable. Pour les nouveaux lecteurs, mieux vaut commencer par l'original.</p>",
+  pros: ["Prolongement sincère de l'original", "Nouvelle héroïne attachante", "Nostalgie bien dosée"],
+  cons: ["Très court (3 volumes)", "Nécessite de connaître l'original"],
+  stars: 3,
+  category: "manga",
+  tags: "Romance · Shōjo · Famille · Suite",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx86691-XyfIpcLGAP2d.jpg",
+  addedAt: "2026-03-22",
+  shops: [
+  {
+    "name": "Manganim",
+    "url": "https://www.manganim.fr/manga/fruits-basket-another",
+    "logo": "/logos/manganim.svg"
+  },
+  {
+    "name": "Fnac",
+    "url": "https://www.fnac.com/SearchResult/ResultKNV.aspx?Search=fruits+basket+another+manga",
+    "logo": "/logos/fnac.svg"
+  },
+  {
+    "name": "Amazon",
+    "url": "https://www.amazon.fr/s?k=fruits+basket+another+manga",
+    "logo": "/logos/amazon.svg"
+  }
+  ],
+  streaming: []
+},
+
+
+
+
+
+{
+  slug: "air",
+  title: "Air",
+  synopsis: "Yukito Kunisaki voyage de ville en ville en cherchant une fille ailée dans le ciel, selon la promesse faite à sa mère. À la ville côtière de Garudos, il rencontre Misuzu Kamio, une fille solitaire et étrange qui rêve chaque nuit d'un ciel sans fin. Une histoire empreinte de fantastique et de mélancolie.",
+  reviewHtml: "<p>L'adaptation manga du visual novel <em>Air</em> de Key souffre des limitations habituelles de la compression : la relation entre Yukito et Misuzu est touchante, et l'atmosphère estivale est bien restituée. Mais la complexité mythologique de l'oeuvre originale est simplifiée.</p><p>C'est une lecture agréable pour les fans de l'univers Key, mais l'anime reste supérieur pour vivre pleinement l'expérience Air.</p>",
+  pros: ["Atmosphère estivale et mélancolique", "Relation touchante entre les personnages", "Court et facile à lire"],
+  cons: ["Moins impactant que l'anime et le jeu", "Mythologie simplifiée"],
+  stars: 3,
+  category: "manga",
+  tags: "Romance · Fantastique · Drame · Key",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/b31604-dHOps27OpPIk.jpg",
+  addedAt: "2026-03-22",
+  shops: [
+  {
+    "name": "Manganim",
+    "url": "https://www.manganim.fr/manga/air",
+    "logo": "/logos/manganim.svg"
+  },
+  {
+    "name": "Fnac",
+    "url": "https://www.fnac.com/SearchResult/ResultKNV.aspx?Search=air+manga+key",
+    "logo": "/logos/fnac.svg"
+  },
+  {
+    "name": "Amazon",
+    "url": "https://www.amazon.fr/s?k=air+manga+key",
+    "logo": "/logos/amazon.svg"
+  }
+  ],
+  streaming: []
+},
+
+
+
+{
+  slug: "little-busters",
+  title: "Little Busters!",
+  synopsis: "Riki Naoe a perdu ses parents étant enfant et a été recueilli par le groupe d'amis soudés appelé les Little Busters. Des années plus tard, au lycée, ces amis lui proposent de monter une équipe de baseball, et Riki découvre peu à peu les secrets que cachent ses amis les plus proches.",
+  reviewHtml: "<p>L'adaptation manga de <em>Little Busters!</em> est l'une des versions papier de l'univers Key les plus réussies. Le groupe des Little Busters, soudé et joyeux, est immédiatement attachant.</p><p>Le manga réussit à rendre la dynamique de groupe vivante. Les arcs individuels des personnages féminins sont condensés mais gardent leur impact émotionnel. La révélation centrale de l'histoire est traitée avec soin.</p>",
+  pros: ["Dynamique de groupe très réussie", "Personnages attachants et variés", "Fidèle à l'esprit du visual novel"],
+  cons: ["Certains arcs condensés", "Impact moindre sans la musique de Key"],
+  stars: 3,
+  category: "manga",
+  tags: "Romance · Drame · Amitié · Key",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/96054-MOFibBs93ePS.jpg",
+  addedAt: "2026-03-22",
+  shops: [
+  {
+    "name": "Manganim",
+    "url": "https://www.manganim.fr/manga/little-busters",
+    "logo": "/logos/manganim.svg"
+  },
+  {
+    "name": "Fnac",
+    "url": "https://www.fnac.com/SearchResult/ResultKNV.aspx?Search=little+busters+manga",
+    "logo": "/logos/fnac.svg"
+  },
+  {
+    "name": "Amazon",
+    "url": "https://www.amazon.fr/s?k=little+busters+manga",
+    "logo": "/logos/amazon.svg"
+  }
+  ],
+  streaming: []
+},
+
+
+
+
+
+
 
 ]
