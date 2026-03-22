@@ -588,137 +588,13 @@ export const SERIES_2: Serie[] = [
   ],
   live: []
 },
-{
-  slug: "berserk",
-  title: "Berserk",
-  category: "manga",
-  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx30002-Cul4OeN7bYtn.jpg",
-  tags: "Action · Aventure · Dark Fantasy · Horreur · Psychologie",
-  stars: 5,
-  addedAt: "2026-03-22",
-  synopsis: "Guts, le Guerrier Noir, erre dans un monde sombre où les démons côtoient les hommes. Portant une épée démesurée et une main en acier, il est maudit par la Marque du Sacrifice qui attire les forces des ténèbres. Sa quête : retrouver Griffith, son ancien frère d'armes devenu un dieu du mal, et le tuer. Un récit de vengeance, de survie et de rédemption dans un monde médiéval impitoyable.",
-  pros: ["Univers dark fantasy d'une richesse exceptionnelle","Guts, l'un des protagonistes les plus complexes du manga","Art époustouflant, surtout dans les arcs tardifs","Profondeur philosophique et psychologique rare"],
-  cons: ["Rythme très lent depuis les années 2010","Contenu ultra-violent qui peut rebuter"],
-  reviewHtml: `<p>Berserk est tout simplement le monument incontournable du dark fantasy en manga. Kentaro Miura a créé une oeuvre d'une densité narrative et artistique rarement égalée, où chaque page transpire le travail et la passion.</p><p>L'arc du Faucon Doré reste l'un des meilleurs récits de trahison et de désillusion jamais écrits dans le médium. La transformation de Griffith et la chute de Guts sont d'une puissance émotionnelle absolue. Le tout est servi par un dessin d'une précision méticuleuse, avec des planches de combat qui défient la physique et des panoramas qui coupent le souffle.</p><p>Le seul bémol : la publication erratique de Miura (et son décès en 2021, repris depuis par ses assistants) a ralenti considérablement le rythme. Mais l'oeuvre existante suffit à en faire une lecture obligatoire pour tout amateur de manga sérieux.</p>`,
-  shops: [
-  {
-    "name": "Fnac",
-    "url": "https://www.fnac.com/SearchResult/ResultList.aspx?Search=berserk+manga&sft=1",
-    "logo": "/logos/fnac.svg"
-  },
-  {
-    "name": "Amazon",
-    "url": "https://www.amazon.fr/s?k=berserk+manga",
-    "logo": "/logos/amazon.svg"
-  },
-  {
-    "name": "Manganim",
-    "url": "https://manganim.com/search?q=berserk",
-    "logo": "/logos/manganim.svg"
-  }
-],
-  streaming: [],
-  live: []
-},
 
-{
-  slug: "vinland-saga",
-  title: "Vinland Saga",
-  category: "manga",
-  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx30642-0mjRDkf4THpo.jpg",
-  tags: "Action · Aventure · Drame · Historique · Psychologie",
-  stars: 5,
-  addedAt: "2026-03-22",
-  synopsis: "Au XIe siècle, le jeune Thorfinn voit son père, un légendaire guerrier pacifiste, assassiné par le mercenaire Askeladd. Élevé parmi les meurtriers de son père, il grandit avec une seule obsession : se venger dans un duel loyal. Mais sa quête de vengeance le plonge dans les guerres vikings, les intrigues politiques anglo-saxonnes et une profonde remise en question de ce que signifie être un vrai guerrier.",
-  pros: ["Évolution de personnage parmi les meilleures du manga","Reconstitution historique minutieuse et passionnante","Deuxième arc (ferme) aussi puissant que le premier","Thèmes profonds sur la paix, la violence et la rédemption"],
-  cons: ["L'arc de la ferme peut dérouter ceux qui attendent de l'action pure","Rythme posé qui demande de la patience"],
-  reviewHtml: `<p>Vinland Saga est un chef-d'oeuvre de la narration manga. Makoto Yukimura signe ici une épopée viking qui transcende le simple manga d'action pour devenir une réflexion profonde sur la violence, la liberté et ce que signifie vivre en paix.</p><p>Le premier arc est une odyssée de vengeance classique, brillamment exécutée. Mais c'est le deuxième arc, à la ferme, qui révèle l'ambition véritable de l'oeuvre : voir Thorfinn se reconstruire après des années de haine, trouver un but au-delà de la mort. C'est une évolution de personnage d'une justesse rare, qui prend le temps qu'il faut sans jamais perdre le lecteur.</p><p>Le dessin, puissant et expressif, sait autant représenter la brutalité des batailles que la douceur d'un moment de paix. Vinland Saga fait partie de ces oeuvres qui restent longtemps après la lecture.</p>`,
-  shops: [
-  {
-    "name": "Fnac",
-    "url": "https://www.fnac.com/SearchResult/ResultList.aspx?Search=vinland+saga+manga&sft=1",
-    "logo": "/logos/fnac.svg"
-  },
-  {
-    "name": "Amazon",
-    "url": "https://www.amazon.fr/s?k=vinland+saga+manga",
-    "logo": "/logos/amazon.svg"
-  },
-  {
-    "name": "Manganim",
-    "url": "https://manganim.com/search?q=vinland-saga",
-    "logo": "/logos/manganim.svg"
-  }
-],
-  streaming: [],
-  live: []
-},
 
-{
-  slug: "kingdom",
-  title: "Kingdom",
-  category: "manga",
-  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/nx46765-KPXir4sRqJBW.png",
-  tags: "Action · Aventure · Drame · Historique · Militaire",
-  stars: 5,
-  addedAt: "2026-03-22",
-  synopsis: "Dans la Chine des Royaumes Combattants (IIIe siècle av. J.-C.), Xin est un jeune orphelin de guerre qui rêve de devenir le plus grand général sous les cieux. Après la mort de son ami d'enfance Piao, il se retrouve mêlé aux luttes de succession du Royaume de Qin et va croiser le chemin d'Ei Sei, le futur Qin Shi Huang. Une épopée historique grandiose sur l'unification de la Chine.",
-  pros: ["Batailles stratégiques d'une complexité impressionnante","Galerie de généraux tous mémorables","Montée en puissance du héros parfaitement dosée","Reconstitution historique très soignée"],
-  cons: ["Plus de 70 volumes, engagement conséquent","Les arcs de siège peuvent être répétitifs"],
-  reviewHtml: `<p>Kingdom est l'une des grandes épopées du manga shōnen. Yasuhisa Hara a construit sur plus de 70 volumes une fresque militaire et politique d'une ambition extraordinaire, ancrée dans l'histoire réelle de la Chine ancienne.</p><p>Ce qui distingue Kingdom, c'est la façon dont il aborde les batailles : chaque affrontement est un véritable exercice de stratégie, où les généraux s'affrontent aussi bien intellectuellement que physiquement. La galerie de personnages est immense mais chaque général est unique, avec ses propres philosophies de combat et ses motivations profondes.</p><p>Xin évolue de façon crédible d'un gamin impulsif à un véritable chef militaire, et c'est cette progression qui maintient l'intérêt sur la durée. Un manga pour ceux qui aiment les récits épiques avec une substance historique réelle.</p>`,
-  shops: [
-  {
-    "name": "Fnac",
-    "url": "https://www.fnac.com/SearchResult/ResultList.aspx?Search=kingdom+manga&sft=1",
-    "logo": "/logos/fnac.svg"
-  },
-  {
-    "name": "Amazon",
-    "url": "https://www.amazon.fr/s?k=kingdom+manga+hara",
-    "logo": "/logos/amazon.svg"
-  },
-  {
-    "name": "Manganim",
-    "url": "https://manganim.com/search?q=kingdom",
-    "logo": "/logos/manganim.svg"
-  }
-],
-  streaming: [],
-  live: []
-},
 
-{
-  slug: "vagabond",
-  title: "Vagabond",
-  category: "manga",
-  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx30656-9mW113O7rDnA.png",
-  tags: "Action · Aventure · Drame · Historique · Psychologie",
-  stars: 5,
-  addedAt: "2026-03-22",
-  synopsis: "Miyamoto Musashi, survivant de la bataille de Sekigahara, fuit la mort et commence un voyage qui le mènera à devenir le plus grand sabreur du Japon. Adapté du roman Musashi de Eiji Yoshikawa, Vagabond explore la quête spirituelle d'un homme qui cherche à dépasser sa violence pour atteindre une vérité plus profonde : que signifie être réellement fort ?",
-  pros: ["Dessin de Takehiko Inoue parmi les plus beaux du manga","Profondeur philosophique et spirituelle exceptionnelle","Duels d'une intensité et d'une beauté rares","Développement de personnage magistral"],
-  cons: ["Publication suspendue depuis 2015, fin incertaine","Rythme contemplatif pas pour tous les lecteurs"],
-  reviewHtml: `<p>Vagabond est peut-être le manga au plus beau dessin jamais publié. Takehiko Inoue, déjà auteur de Slam Dunk, a produit ici une oeuvre d'une beauté visuelle absolument stupéfiante, avec des doubles pages qui rivalisent avec les plus grandes peintures.</p><p>Mais Vagabond n'est pas qu'un exercice de style : c'est une exploration profonde de ce que signifie chercher la force véritable. Musashi n'est pas un héros simple, c'est un homme violent qui apprend peu à peu à dépasser sa brutalité pour atteindre quelque chose de plus grand. La philosophie zen imprègne chaque arc.</p><p>Le seul regret : Inoue a suspendu la publication en 2015 et la fin reste en suspens. Mais les 37 volumes existants constituent déjà une oeuvre majeure de la culture manga.</p>`,
-  shops: [
-  {
-    "name": "Fnac",
-    "url": "https://www.fnac.com/SearchResult/ResultList.aspx?Search=vagabond+manga&sft=1",
-    "logo": "/logos/fnac.svg"
-  },
-  {
-    "name": "Amazon",
-    "url": "https://www.amazon.fr/s?k=vagabond+manga+inoue",
-    "logo": "/logos/amazon.svg"
-  },
-  {
-    "name": "Manganim",
-    "url": "https://manganim.com/search?q=vagabond",
-    "logo": "/logos/manganim.svg"
-  }
-],
-  streaming: [],
-  live: []
-},
+
+
+
+
 
 {
   slug: "blade-of-the-immortal",
@@ -753,172 +629,17 @@ export const SERIES_2: Serie[] = [
   live: []
 },
 
-{
-  slug: "slam-dunk",
-  title: "Slam Dunk",
-  category: "manga",
-  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx30051-5KJyPlO7z5F4.png",
-  tags: "Comédie · Drame · Sport · Shōnen",
-  stars: 5,
-  addedAt: "2026-03-22",
-  synopsis: "Hanamichi Sakuragi, lycéen bagarreur rejeté 50 fois de suite par des filles, découvre le basket-ball pour plaire à Haruko, la soeur du capitaine de l'équipe. Ce qu'il pensait être un simple prétexte romantique va devenir la passion de sa vie, et le révéler comme un talent brut capable de mener son équipe au championnat national.",
-  pros: ["Progression du héros extrêmement satisfaisante","Humour parfait qui coexiste avec l'émotion","Matchs d'une tension dramatique irréprochable","Caractérisation irréprochable de toute l'équipe"],
-  cons: ["Fin abrupte qui laisse sur sa faim","Quelques personnages adverses stéréotypés"],
-  reviewHtml: `<p>Slam Dunk est le manga sportif ultime, celui qui a défini le genre pour des générations de lecteurs. Takehiko Inoue a réussi le tour de force de rendre le basket-ball passionnant même pour ceux qui n'y connaissent rien, grâce à des personnages attachants et une narration irréprochable.</p><p>Hanamichi Sakuragi est l'un des héros les plus drôles et les plus touchants du manga : son ego démesuré, sa progression fulgurante et ses moments de grâce pure créent un cocktail émotionnel unique. L'équipe de Shohoku dans son ensemble est remarquablement écrite, chaque membre ayant ses propres arcs et motivations.</p><p>Les matchs sont tendus à couper le souffle, en particulier le tournoi national qui constitue un sommet dramatique rare. La fin, volontairement ouverte, reste un sujet de débat mais ne diminue pas la qualité de l'ensemble. Un classique absolu.</p>`,
-  shops: [
-  {
-    "name": "Fnac",
-    "url": "https://www.fnac.com/SearchResult/ResultList.aspx?Search=slam+dunk+manga&sft=1",
-    "logo": "/logos/fnac.svg"
-  },
-  {
-    "name": "Amazon",
-    "url": "https://www.amazon.fr/s?k=slam+dunk+manga",
-    "logo": "/logos/amazon.svg"
-  },
-  {
-    "name": "Manganim",
-    "url": "https://manganim.com/search?q=slam-dunk",
-    "logo": "/logos/manganim.svg"
-  }
-],
-  streaming: [],
-  live: []
-},
 
 
 
-{
-  slug: "eyeshield-21",
-  title: "Eyeshield 21",
-  category: "manga",
-  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx30043-b2SqUjwSzfIH.png",
-  tags: "Comédie · Sport · Shōnen · Action",
-  stars: 4,
-  addedAt: "2026-03-22",
-  synopsis: "Sena Kobayakawa a passé sa vie à courir pour fuir les brutes. Cette capacité à esquiver et à sprinter va faire de lui le running back star de l'équipe de football américain de son lycée, les Devil Bats de Deimon, sous le pseudonyme d'Eyeshield 21. Aux côtés du maniaque Hiruma et du colosse Kurita, il va viser le Christmas Bowl.",
-  pros: ["Apprentissage du football américain progressif et ludique","Hiruma, l'un des meilleurs personnages secondaires du shōnen","Matchs inventifs et variés","Humour constant et efficace"],
-  cons: ["Certains arcs de tournoi s'étirent trop","Protagoniste assez effacé comparé aux rivaux"],
-  reviewHtml: `<p>Eyeshield 21 est la grande série sportive sur le football américain, parvenant à rendre ce sport complexe accessible et passionnant pour un public qui n'y connaît rien. Riichiro Inagaki et Yusuke Murata (futur auteur de One Punch Man) forment un duo parfait.</p><p>La grande force du manga est son sens du spectacle : les matchs sont visuellement impressionnants, avec des stratégies inventives et des moments de grâce athlétique parfaitement mis en scène. Hiruma, le quarterback diabolique et manipulateur, est l'un des personnages les plus charismatiques de toute la production Jump.</p><p>L'humour est omniprésent et fonctionne bien, allégeant les enjeux sans les trahir. Une série idéale pour les amateurs de sports manga qui veulent sortir des sentiers battus du foot ou du basket.</p>`,
-  shops: [
-  {
-    "name": "Fnac",
-    "url": "https://www.fnac.com/SearchResult/ResultList.aspx?Search=eyeshield+21+manga&sft=1",
-    "logo": "/logos/fnac.svg"
-  },
-  {
-    "name": "Amazon",
-    "url": "https://www.amazon.fr/s?k=eyeshield+21+manga",
-    "logo": "/logos/amazon.svg"
-  },
-  {
-    "name": "Manganim",
-    "url": "https://manganim.com/search?q=eyeshield-21",
-    "logo": "/logos/manganim.svg"
-  }
-],
-  streaming: [],
-  live: []
-},
 
-{
-  slug: "hikaru-no-go",
-  title: "Hikaru no Go",
-  category: "manga",
-  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx30020-5NZUzVqJPD2L.png",
-  tags: "Comédie · Drame · Sport · Surnaturel · Shōnen",
-  stars: 4,
-  addedAt: "2026-03-22",
-  synopsis: "Hikaru Shindo, collégien insouciant, découvre un ancien goban hanté par l'esprit de Fujiwara no Sai, un génie du go du Heian. Sai prend possession de lui pour jouer au go, et Hikaru va progressivement s'y passionner, cherchant à atteindre le \"Divin Mouvement\" et à rivaliser avec le prodige Akira Toya.",
-  pros: ["Hors-série pour rendre le go accessible et fascinant","Bromance Hikaru/Akira très bien construite","Évolution de personnage satisfaisante","Émotion dans l'arc de Sai"],
-  cons: ["Fin assez brusque après la résolution de l'arc principal","Le go reste difficile à visualiser sans connaissances"],
-  reviewHtml: `<p>Hikaru no Go est un tour de force : parvenir à rendre le jeu de go, l'un des plus complexes au monde, accessible et palpitant pour des millions de lecteurs. Yumi Hotta et Takeshi Obata (futur auteur de Death Note) ont créé quelque chose d'unique.</p><p>La relation entre Hikaru et Sai est le coeur de l'oeuvre, une bromance intergénérationnelle touchante entre un fantôme millénaire et un gamin moderne. L'arc final avec la disparition de Sai est d'une émotion dévastatrice, et la quête d'Hikaru pour retrouver son jeu dans les parties suivantes est admirablement traitée.</p><p>La rivalité avec Akira Toya structure l'ensemble avec élégance : deux joueurs qui se tirent mutuellement vers le haut, cherchant à comprendre le mystère du joueur qui les fascine. Un manga indispensable pour comprendre l'importance culturelle du go au Japon.</p>`,
-  shops: [
-  {
-    "name": "Fnac",
-    "url": "https://www.fnac.com/SearchResult/ResultList.aspx?Search=hikaru+no+go+manga&sft=1",
-    "logo": "/logos/fnac.svg"
-  },
-  {
-    "name": "Amazon",
-    "url": "https://www.amazon.fr/s?k=hikaru+no+go+manga",
-    "logo": "/logos/amazon.svg"
-  },
-  {
-    "name": "Manganim",
-    "url": "https://manganim.com/search?q=hikaru-no-go",
-    "logo": "/logos/manganim.svg"
-  }
-],
-  streaming: [],
-  live: []
-},
 
-{
-  slug: "the-promised-neverland",
-  title: "The Promised Neverland",
-  category: "manga",
-  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx87423-gPNtu8QbGped.jpg",
-  tags: "Drame · Fantasy · Horreur · Mystère · Psychologie",
-  stars: 4,
-  addedAt: "2026-03-22",
-  synopsis: "Emma, Norman et Ray sont les enfants les plus brillants de Grace Field, un orphelinat idyllique sous la tutelle de leur \"Maman\". Mais quand ils découvrent l'horrible vérité derrière cette façade de bonheur, les trois amis mettent en place un plan d'évasion désespéré face à des adultes beaucoup plus dangereux qu'ils n'y paraissent.",
-  pros: ["Premier arc haletant, tension psychologique excellente","Duel d'intelligences entre enfants et adultes magistral","Révélations bien dosées","Trio de protagonistes attachants"],
-  cons: ["Qualité en dents de scie après l'arc de Grace Field","Fin décevante pour beaucoup de lecteurs"],
-  reviewHtml: `<p>The Promised Neverland commence comme l'un des meilleurs thrillers du manga Jump : le premier arc à Grace Field est une masterclass de tension psychologique, où chaque révélation redéfinit les règles du jeu. Le duel d'intelligences entre Emma/Norman et Isabella est fascinant.</p><p>Kaiu Shirai et Posuka Demizu construisent une atmosphère de menace permanente avec peu de moyens, jouant habilement sur l'innocence apparente des enfants et la malveillance cachée des adultes. Les 38 premiers chapitres sont parmi les meilleurs de toute la production Weekly Jump.</p><p>La suite est plus inégale : après l'évasion, la série peine à retrouver la même intensité malgré des idées intéressantes sur la nature du monde. La fin divise. Mais pour son premier arc au moins, The Promised Neverland mérite amplement sa réputation.</p>`,
-  shops: [
-  {
-    "name": "Fnac",
-    "url": "https://www.fnac.com/SearchResult/ResultList.aspx?Search=the+promised+neverland+manga&sft=1",
-    "logo": "/logos/fnac.svg"
-  },
-  {
-    "name": "Amazon",
-    "url": "https://www.amazon.fr/s?k=the+promised+neverland+manga",
-    "logo": "/logos/amazon.svg"
-  },
-  {
-    "name": "Manganim",
-    "url": "https://manganim.com/search?q=the-promised-neverland",
-    "logo": "/logos/manganim.svg"
-  }
-],
-  streaming: [],
-  live: []
-},
 
-{
-  slug: "chainsaw-man",
-  title: "Chainsaw Man",
-  category: "manga",
-  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx105778-euxXZEIfDY2u.png",
-  tags: "Action · Comédie · Drame · Horreur · Surnaturel",
-  stars: 5,
-  addedAt: "2026-03-22",
-  synopsis: "Denji, un jeune homme criblé de dettes qui chasse des démons pour survivre, fusionne avec son chien-démon Pochita et devient le Chainsaw Man. Recruté par le Bureau des Démons, il se retrouve plongé dans un monde de conspirations, de démons terrifiants et de relations humaines aussi dangereuses que les monstres qu'il affronte.",
-  pros: ["Subversif et imprévisible à chaque chapitre","Fujimoto joue avec les codes du shōnen de façon brillante","Démons conceptuels fascinants","Émotion brute et sincère malgré le chaos"],
-  cons: ["Partie 2 plus difficile d'accès que la partie 1","Certains arcs de la partie 1 moins aboutis"],
-  reviewHtml: `<p>Chainsaw Man est l'oeuvre la plus singulière publiée dans Weekly Jump depuis des années. Tatsuki Fujimoto y démontre un talent exceptionnel pour subvertir les attentes, construisant un récit chaotique, violent et drôle qui cache une sincérité émotionnelle désarmante.</p><p>Le concept des démons basés sur des peurs (le démon couteau, le démon pistolet, le démon éternité) est d'une créativité remarquable et permet des affrontements toujours surprenants. Mais c'est la relation de Denji avec les personnages qui l'entourent, notamment Makima, qui constitue le vrai moteur émotionnel de l'oeuvre.</p><p>L'arc final de la partie 1 atteint un sommet d'intensité et de douleur émotionnelle rare. Chainsaw Man n'est pas un manga confortable, mais c'est précisément pour ça qu'il marque durablement. Fujimoto est une voix unique dans le manga contemporain.</p>`,
-  shops: [
-  {
-    "name": "Fnac",
-    "url": "https://www.fnac.com/SearchResult/ResultList.aspx?Search=chainsaw+man+manga&sft=1",
-    "logo": "/logos/fnac.svg"
-  },
-  {
-    "name": "Amazon",
-    "url": "https://www.amazon.fr/s?k=chainsaw+man+manga",
-    "logo": "/logos/amazon.svg"
-  },
-  {
-    "name": "Manganim",
-    "url": "https://manganim.com/search?q=chainsaw-man",
-    "logo": "/logos/manganim.svg"
-  }
-],
-  streaming: [],
-  live: []
-},
+
+
+
+
+
 
 {
   slug: "fire-punch",
@@ -953,71 +674,9 @@ export const SERIES_2: Serie[] = [
   live: []
 },
 
-{
-  slug: "delicious-in-dungeon",
-  title: "Delicious in Dungeon",
-  category: "manga",
-  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx86082-MXizJxzbijdd.jpg",
-  tags: "Aventure · Comédie · Fantasy · Gastronomie",
-  stars: 5,
-  addedAt: "2026-03-22",
-  synopsis: "Laios et son groupe d'aventuriers se lancent dans un donjon pour sauver leur soeur dévorée par un dragon, sans provisions ni argent. La solution de Laios : cuisiner et manger les monstres du donjon. Un manga de fantasy culinaire qui prend son concept délirant avec un sérieux absolu et y ajoute un world-building d'une richesse surprenante.",
-  pros: ["Concept original exécuté avec une cohérence totale","World-building de fantasy parmi les meilleurs du genre","Chaque chapitre est à la fois drôle, appétissant et riche en lore","Personnages tous très bien écrits"],
-  cons: ["Rythme lent au début qui peut décourager","L'arc final très dense demande attention"],
-  reviewHtml: `<p>Delicious in Dungeon (Dungeon Meshi) est un manga qui prouve qu'un concept absurde, traité avec sérieux et talent, peut devenir une oeuvre de référence. Ryoko Kui a bâti autour de la simple question "peut-on manger les monstres ?" un univers d'une richesse fantastique exceptionnelle.</p><p>Chaque chapitre est une recette impossible mêlée de worldbuilding inventif : comment fonctionne l'écosystème du donjon, quelle est la nature des monstres, comment la magie s'articule avec la biologie des créatures. La série répond à ces questions avec le sérieux d'un documentaire naturaliste, ce qui est à la fois très drôle et fascinant.</p><p>Les personnages sont tous remarquablement écrits, notamment Laios avec ses obsessions particulières pour les monstres. L'arc final élargit considérablement les enjeux pour une conclusion ambitieuse et satisfaisante. Dungeon Meshi est une oeuvre complète, qui mérite son statut de classique moderne.</p>`,
-  shops: [
-  {
-    "name": "Fnac",
-    "url": "https://www.fnac.com/SearchResult/ResultList.aspx?Search=dungeon+meshi+manga&sft=1",
-    "logo": "/logos/fnac.svg"
-  },
-  {
-    "name": "Amazon",
-    "url": "https://www.amazon.fr/s?k=dungeon+meshi+manga",
-    "logo": "/logos/amazon.svg"
-  },
-  {
-    "name": "Manganim",
-    "url": "https://manganim.com/search?q=delicious-in-dungeon",
-    "logo": "/logos/manganim.svg"
-  }
-],
-  streaming: [],
-  live: []
-},
 
-{
-  slug: "dorohedoro",
-  title: "Dorohedoro",
-  category: "manga",
-  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx31133-Jx6map3Oidz1.png",
-  tags: "Action · Aventure · Comédie · Dark Fantasy · Horreur",
-  stars: 5,
-  addedAt: "2026-03-22",
-  synopsis: "Dans \"le Trou\", une ville misérable où les sorciers viennent pratiquer leurs expériences sur les habitants, Caiman erre avec une tête de reptile et une amnésie totale. Avec son amie Nikaido, il traque les sorciers pour retrouver celui qui l'a transformé. Une plongée dans un univers de dark fantasy délirant, violent et bizarrement touchant.",
-  pros: ["Univers absolument unique dans toute la production manga","Mélange de violence, humour et humanité maîtrisé","Esthétique sombre et grotesque inoubliable","Lore d'une profondeur inattendue"],
-  cons: ["Style graphique rugueux peu conventionnel","Premier volume difficile, demande de dépasser le choc visuel"],
-  reviewHtml: `<p>Dorohedoro est une oeuvre comme il n'en existe aucune autre dans le manga. Q Hayashida a créé un univers de dark fantasy grotesque et violent qui aurait dû être repoussant, et parvient pourtant à y insuffler une humanité et un humour profondément attachants.</p><p>"Le Trou" est l'un des univers les plus singuliers du manga : une ville sordide où coexistent des personnages improbables, des sorciers aux pouvoirs variés et une gastronomie qui occupe une place centrale dans la vie des personnages. Cette normalité dans l'anormal est la marque de fabrique de Dorohedoro.</p><p>Caiman et Nikaido forment un duo de protagonistes inoubliables, et les antagonistes sorciers sont traités avec autant de soin que les héros. Le lore s'approfondit au fil des volumes pour révéler une mythologie plus riche qu'attendu. Dorohedoro est une oeuvre culte qui demande un effort initial mais récompense largement le lecteur patient.</p>`,
-  shops: [
-  {
-    "name": "Fnac",
-    "url": "https://www.fnac.com/SearchResult/ResultList.aspx?Search=dorohedoro+manga&sft=1",
-    "logo": "/logos/fnac.svg"
-  },
-  {
-    "name": "Amazon",
-    "url": "https://www.amazon.fr/s?k=dorohedoro+manga",
-    "logo": "/logos/amazon.svg"
-  },
-  {
-    "name": "Manganim",
-    "url": "https://manganim.com/search?q=dorohedoro",
-    "logo": "/logos/manganim.svg"
-  }
-],
-  streaming: [],
-  live: []
-},
+
+
 
 {
   slug: "kaiju-no8",
@@ -1052,272 +711,24 @@ export const SERIES_2: Serie[] = [
   live: []
 },
 
-{
-  slug: "blue-lock",
-  title: "Blue Lock",
-  category: "manga",
-  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx106130-yPNeuSu75ey1.jpg",
-  tags: "Action · Drame · Psychologie · Sport · Football",
-  stars: 4,
-  addedAt: "2026-03-22",
-  synopsis: "Après la défaite du Japon en Coupe du Monde, la Fédération de football lance le projet Blue Lock : réunir 300 des meilleurs attaquants japonais dans une installation de compétition intense pour en façonner un seul tueur de buts absolu. Isagi Yoichi, attaquant prometteur mais sans instinct de tueur, doit transcender ses limites ou être éliminé.",
-  pros: ["Psychologie du sport et de la compétition très bien rendue","Système d'évolution du jeu inventif","Rivalités entre joueurs toutes mémorables","Concept de l'ego comme arme dramatiquement efficace"],
-  cons: ["Traitement du football parfois irréaliste","Personnages féminins quasi absents"],
-  reviewHtml: `<p>Blue Lock est arrivé comme une bouffée d'air frais dans le manga sportif en osant poser une question radicale : et si l'altruisme était l'ennemi de la performance ? Le projet Blue Lock, qui promeut l'égo comme condition nécessaire au génie du football, donne au manga une identité philosophique marquante.</p><p>Muneyuki Kaneshiro et Yusuke Nomura ont construit un système de progression tactique inventif, où chaque arc voit Isagi développer de nouvelles "armes" cognitives. Les rivalités qui se forment sont toutes passionnantes, chaque joueur représentant un style de jeu et une psychologie différents.</p><p>Le manga ne prétend pas être une représentation réaliste du football, et c'est tant mieux : il pousse les concepts à l'extrême pour servir le drame et les enjeux émotionnels. Un des sports manga les plus stimulants intellectuellement de sa génération.</p>`,
-  shops: [
-  {
-    "name": "Fnac",
-    "url": "https://www.fnac.com/SearchResult/ResultList.aspx?Search=blue+lock+manga&sft=1",
-    "logo": "/logos/fnac.svg"
-  },
-  {
-    "name": "Amazon",
-    "url": "https://www.amazon.fr/s?k=blue+lock+manga",
-    "logo": "/logos/amazon.svg"
-  },
-  {
-    "name": "Manganim",
-    "url": "https://manganim.com/search?q=blue-lock",
-    "logo": "/logos/manganim.svg"
-  }
-],
-  streaming: [],
-  live: []
-},
 
 
 
 
 
-{
-  slug: "rave-master",
-  title: "Rave Master",
-  category: "manga",
-  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/nx30014-Q7yKgaHVVmUg.jpg",
-  tags: "Aventure · Comédie · Fantasy · Shōnen",
-  stars: 4,
-  addedAt: "2026-03-22",
-  synopsis: "Haru Glory, un jeune homme vivant sur une île isolée, devient le deuxième Rave Master, porteur de la pierre Rave, seule arme capable de détruire les Dark Brings qui menacent le Continent de la Chanson. Accompagné de ses compagnons dont l'adorable Plue, il parcourt le monde pour collecter les cinq Raves et affronter la société criminelle Demon Card.",
-  pros: ["Aventure épique avec un sense of wonder communicatif","Plue est un personnage iconique très attachant","Combats créatifs avec les différentes formes de Ten Powers","Liens émotionnels entre personnages bien construits"],
-  cons: ["Début assez lent et classique","Certains antagonistes manquent de profondeur"],
-  reviewHtml: `<p>Rave Master (Groove Adventure Rave) est l'oeuvre qui a lancé la carrière de Hiro Mashima avant Fairy Tail. Publiée entre 1999 et 2005, elle montre déjà tous les atouts de l'auteur : un sens de l'aventure expansif, des compagnonnages chaleureux et une imagination fertile pour les pouvoirs et les artefacts magiques.</p><p>Le système des Ten Powers, l'épée de Haru qui peut changer de forme selon la situation, donne aux combats une inventivité constante. Mais ce qui distingue Rave Master c'est l'atmosphère d'exploration joyeuse : chaque nouvelle région du Continent de la Chanson est l'occasion de découvertes et de rencontres variées.</p><p>Plue, la créature indéfinissable au nez pointu, est devenu un personnage culte reconnaissable entre tous. Rave Master reste une aventure shōnen classique mais exécutée avec générosité et enthousiasme, idéale pour les lecteurs qui aiment les grandes épopées fantastiques traditionnelles.</p>`,
-  shops: [
-  {
-    "name": "Fnac",
-    "url": "https://www.fnac.com/SearchResult/ResultList.aspx?Search=rave+master+manga&sft=1",
-    "logo": "/logos/fnac.svg"
-  },
-  {
-    "name": "Amazon",
-    "url": "https://www.amazon.fr/s?k=rave+master+manga",
-    "logo": "/logos/amazon.svg"
-  },
-  {
-    "name": "Manganim",
-    "url": "https://manganim.com/search?q=rave-master",
-    "logo": "/logos/manganim.svg"
-  }
-],
-  streaming: [],
-  live: []
-},
-{
-  slug: "spy-x-family",
-  title: "SPY x FAMILY",
-  category: "manga",
-  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx108556-NHjkz0BNJhLx.jpg",
-  tags: "Action · Comédie · Romance · Espionnage · Shōnen",
-  stars: 5,
-  addedAt: "2026-03-22",
-  synopsis: "Loid Forger est un espion d'élite contraint de former une famille fictive pour infiltrer une école de prestige. Il adopte Anya, une petite fille capable de lire dans les pensées, et épouse Yor, une tueuse à gages qui cherche elle aussi une couverture. Aucun des trois ne sait la vérité sur les autres, mais ils vont former une vraie famille malgré eux.",
-  pros: ["Concept original qui fonctionne parfaitement","Anya est le personnage le plus attachant du manga récent","Humour brillant sans jamais trahir les enjeux","Chaque arc famille/espion s'équilibre parfaitement"],
-  cons: ["Avancement de l'intrigue principale lent","Certains arcs secondaires moins intéressants"],
-  reviewHtml: `<p>SPY x FAMILY est le manga phénomène qui mérite pleinement sa réputation. Tatsuya Endo a trouvé la formule parfaite : une prémisse espionnage jouissive (Mission Impossible meets Famille parfaite) au service d'une comédie familiale tendre et sincère.</p><p>Le génie du manga repose sur ses trois protagonistes et l'ironie de leurs situations. Anya, qui sait tout des secrets de sa famille mais ne peut rien dire, est d'une expressivité comique absolue. La dynamique entre des adultes froids et compétents face à l'innocence débordante d'une petite fille est inépuisable.</p><p>Mais SPY x FAMILY n'est pas qu'une comédie : sous les gags se cache une réflexion sincère sur la famille, la confiance et l'amour inconditionnel. Loid et Yor évoluent subtilement, leur lien se renforçant chapitre après chapitre. Une oeuvre qui réunit tout le monde autour d'elle.</p>`,
-  shops: [
-  {
-    "name": "Fnac",
-    "url": "https://www.fnac.com/SearchResult/ResultList.aspx?Search=spy+x+family+manga&sft=1",
-    "logo": "/logos/fnac.svg"
-  },
-  {
-    "name": "Amazon",
-    "url": "https://www.amazon.fr/s?k=spy+x+family+manga",
-    "logo": "/logos/amazon.svg"
-  },
-  {
-    "name": "Manganim",
-    "url": "https://manganim.com/search?q=spy-x-family",
-    "logo": "/logos/manganim.svg"
-  }
-],
-  streaming: [],
-  live: []
-},
 
-{
-  slug: "kaguya-sama-love-is-war",
-  title: "Kaguya-sama: Love is War",
-  category: "manga",
-  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx86635-EdaLQmsn86Fy.png",
-  tags: "Comédie · Romance · Psychologie · Shōnen",
-  stars: 5,
-  addedAt: "2026-03-22",
-  synopsis: "Kaguya Shinomiya et Miyuki Shirogane, tous deux présidents du conseil des élèves, sont secrètement amoureux l'un de l'autre. Mais leurs egos démesurés font que chacun refuse d'avouer en premier. S'ensuit une guerre psychologique absurde et brillante où chaque interaction devient une bataille stratégique pour forcer l'autre à avouer.",
-  pros: ["Concept de comédie psychologique absolument brillant","Évolution des personnages très bien gérée","Narration du \"commentateur\" qui transcende les scènes banales","Arcs émotionnels qui compensent la comédie légère"],
-  cons: ["Répétitif si lu en rafale","Certains arcs tardifs moins inspirés"],
-  reviewHtml: `<p>Kaguya-sama est la comédie romantique la plus intelligente du manga récent. Aka Akasaka a pris une prémisse simple (deux idiots qui refusent d'avouer leur amour) et en a tiré une série d'une inventivité comique extraordinaire sur plus de 280 chapitres.</p><p>Le secret de la réussite : le narrateur omniscient qui commente chaque micro-interaction avec un sérieux de documentaire militaire. Transformer une demande de trajet en voiture en affrontement tactique digne de Sun Tzu est un exploit comique répété à l'infini sans jamais se démoduler vraiment.</p><p>Mais la série sait aussi être touchante : l'évolution de Kaguya, fille de grande famille froide qui apprend à ressentir, est traitée avec une subtilité remarquable. Les arcs émotionnels majeurs (Confession Arc, Moon Festival) sont des sommets de romance manga. Une oeuvre complète et maîtrisée de bout en bout.</p>`,
-  shops: [
-  {
-    "name": "Fnac",
-    "url": "https://www.fnac.com/SearchResult/ResultList.aspx?Search=kaguya+sama+manga&sft=1",
-    "logo": "/logos/fnac.svg"
-  },
-  {
-    "name": "Amazon",
-    "url": "https://www.amazon.fr/s?k=kaguya+sama+love+is+war+manga",
-    "logo": "/logos/amazon.svg"
-  },
-  {
-    "name": "Manganim",
-    "url": "https://manganim.com/search?q=kaguya-sama-love-is-war",
-    "logo": "/logos/manganim.svg"
-  }
-],
-  streaming: [],
-  live: []
-},
 
-{
-  slug: "rent-a-girlfriend",
-  title: "Rent-A-Girlfriend",
-  category: "manga",
-  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx99943-DX7nDMeqSTk3.png",
-  tags: "Comédie · Romance · Harem · Seinen",
-  stars: 3,
-  addedAt: "2026-03-22",
-  synopsis: "Kazuya Kinoshita, étudiant fraîchement largué, loue les services de Chizuru Mizuhara, une petite amie de location. Après une série de quiproquos, ils se retrouvent à entretenir une relation fictive face à leurs familles respectives. Entre la fake girlfriend parfaite et ses sentiments réels, Kazuya va naviguer dans une comédie romantique qui s'étire sur des années.",
-  pros: ["Chizuru est un personnage bien écrit","Moments d'humour efficaces","Some moments of genuine emotional connection"],
-  cons: ["Kazuya parmi les protagonistes les plus agaçants du genre","Stagnation narrative chronique sur des dizaines de chapitres","Harem qui dilue l'intrigue principale"],
-  reviewHtml: `<p>Rent-A-Girlfriend est un manga à deux vitesses : d'un côté, Chizuru est un personnage féminin bien construit, avec ses contradictions et son évolution sincère. De l'autre, Kazuya reste l'un des protagonistes les plus exaspérants du manga romance moderne, incapable de décision et englué dans ses hésitations sur des centaines de chapitres.</p><p>La prémisse de départ est originale et la dynamique fake relationship a du potentiel. Reiji Miyajima exploite intelligemment les situations gênantes et les révélations progressives. Mais la série souffre d'un mal commun aux romcoms magazine : l'étirement artificiel pour éviter la résolution.</p><p>Pour les fans du genre qui apprécient Chizuru et acceptent le rythme lent, c'est une lecture plaisante. Pour ceux qui veulent de la progression narrative efficace, c'est frustrant. À lire avec des attentes modérées.</p>`,
-  shops: [
-  {
-    "name": "Fnac",
-    "url": "https://www.fnac.com/SearchResult/ResultList.aspx?Search=rent+a+girlfriend+manga&sft=1",
-    "logo": "/logos/fnac.svg"
-  },
-  {
-    "name": "Amazon",
-    "url": "https://www.amazon.fr/s?k=rent+a+girlfriend+manga",
-    "logo": "/logos/amazon.svg"
-  },
-  {
-    "name": "Manganim",
-    "url": "https://manganim.com/search?q=rent-a-girlfriend",
-    "logo": "/logos/manganim.svg"
-  }
-],
-  streaming: [],
-  live: []
-},
 
-{
-  slug: "domestic-girlfriend",
-  title: "Domestic Girlfriend",
-  category: "manga",
-  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx85802-lh7gZHgQmliE.png",
-  tags: "Drame · Romance · Seinen",
-  stars: 3,
-  addedAt: "2026-03-22",
-  synopsis: "Natsuo Fujii est amoureux de son professeur Hina. Après une nuit fortuite avec une inconnue nommée Rui, il découvre que les deux jeunes femmes sont ses nouvelles demi-soeurs suite au remariage de leurs parents. Une romance interdite compliquée qui explore les relations tabous avec un sérieux dramatique assumé.",
-  pros: ["N'a pas peur d'aller loin dans le drame","Quelques arcs émotionnellement forts","Fin qui surprend"],
-  cons: ["Prémisse moralement problématique peu questionnée","Personnages aux décisions souvent irrationnelles","Excès de drama qui frôle le soap opera"],
-  reviewHtml: `<p>Domestic Girlfriend est le manga drama qui va trop loin, dans tous les sens du terme. Kei Sasuga pousse les situations romantiques dans des territoires extrêmes (relations professeur-élève, famille recomposée incestueuse) avec un aplomb qui laisse pantois.</p><p>Pour les amateurs de drama intense et sans limites, c'est une proposition claire : la série ne fait pas semblant d'être autre chose qu'un soap opera romantique. Certains arcs sont effectivement prenants, notamment ceux impliquant les conséquences concrètes des relations interdites.</p><p>La fin, qui a divisé le fandom, a au moins le mérite de ne pas être la résolution facile attendue. Pour ceux qui cherchent une romance sage, passez votre chemin. Pour ceux qui veulent du drama maximal assumé, c'est une expérience à part.</p>`,
-  shops: [
-  {
-    "name": "Fnac",
-    "url": "https://www.fnac.com/SearchResult/ResultList.aspx?Search=domestic+girlfriend+manga&sft=1",
-    "logo": "/logos/fnac.svg"
-  },
-  {
-    "name": "Amazon",
-    "url": "https://www.amazon.fr/s?k=domestic+girlfriend+manga",
-    "logo": "/logos/amazon.svg"
-  },
-  {
-    "name": "Manganim",
-    "url": "https://manganim.com/search?q=domestic-girlfriend",
-    "logo": "/logos/manganim.svg"
-  }
-],
-  streaming: [],
-  live: []
-},
 
-{
-  slug: "we-never-learn",
-  title: "We Never Learn",
-  category: "manga",
-  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/nx98235-V6yBxNIrsOp0.jpg",
-  tags: "Comédie · Romance · Harem · Shōnen",
-  stars: 3,
-  addedAt: "2026-03-22",
-  synopsis: "Nariyuki Yuiga, lycéen méritant mais peu sûr de lui, est chargé de tutorer trois génies : Fumino qui excelle en lettres mais veut étudier les sciences, Rizu forte en maths mais passionnée de psychologie, et Uruka championne de natation voulant partir à l'étranger. Une comédie scolaire romantique avec harem décomplexé.",
-  pros: ["Heroïnes bien différenciées et attachantes","Humour de situation efficace","Finale multiple bien exécutée"],
-  cons: ["Formula harem très classique sans grande originalité","Progression romantique lente","Protagoniste assez fade"],
-  reviewHtml: `<p>We Never Learn est le harem romantique honnête dans ses ambitions : il ne prétend pas révolutionner le genre, mais offre une formule éprouvée exécutée avec soin. Taishi Tsutsui a le mérite de créer des héroïnes réellement différenciées, chacune ayant une personnalité et des aspirations propres.</p><p>La gimmick des génies hors de leur domaine est exploitée avec constance pour créer des situations comiques autour des sessions de tutorat. L'humour fonctionne bien même s'il reste dans les codes établis du genre. Les sentiments des différentes héroïnes évoluent de façon crédible.</p><p>La grande originalité : la série propose plusieurs fins alternatives selon l'héroïne choisie, un gimmick éditorial qui a bien fonctionné et donne une relecture intéressante. Une lecture plaisante pour les fans du genre qui ne demande pas plus que ce qu'elle promet.</p>`,
-  shops: [
-  {
-    "name": "Fnac",
-    "url": "https://www.fnac.com/SearchResult/ResultList.aspx?Search=we+never+learn+manga&sft=1",
-    "logo": "/logos/fnac.svg"
-  },
-  {
-    "name": "Amazon",
-    "url": "https://www.amazon.fr/s?k=we+never+learn+manga",
-    "logo": "/logos/amazon.svg"
-  },
-  {
-    "name": "Manganim",
-    "url": "https://manganim.com/search?q=we-never-learn",
-    "logo": "/logos/manganim.svg"
-  }
-],
-  streaming: [],
-  live: []
-},
 
-{
-  slug: "horimiya",
-  title: "Horimiya",
-  category: "manga",
-  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx72451-vVXtRwyttjGG.png",
-  tags: "Comédie · Romance · Tranche de vie · Shōnen",
-  stars: 4,
-  addedAt: "2026-03-22",
-  synopsis: "Kyouko Hori est une lycéenne populaire et sérieuse qui cache son vrai visage de fille de famille. Izumi Miyamura semble être un garçon discret et grincheux, mais il cache des tatouages et des piercings sous ses vêtements. Quand ils découvrent leurs doubles vies respectives, une amitié complice naît qui évolue naturellement vers l'amour.",
-  pros: ["Relation principale qui progresse vraiment","Dynamique de couple après la confession originale","Atmosphère chaleureuse et confortable","Ensemble de personnages secondaires attachants"],
-  cons: ["Arcs secondaires parfois très légers","Certains comportements d'Hori normalisés problématiquement"],
-  reviewHtml: `<p>Horimiya est une romance scolaire qui fait ce que peu osent : montrer la vie du couple après la confession, pas seulement la course vers celle-ci. HERO a construit une relation centrale mature et confortable, où deux personnes apprennent à se montrer telles qu'elles sont vraiment.</p><p>La dynamique Hori/Miyamura est remarquablement bien écrite : leurs interactions combinent humour, tendresse et une vraie communication. Le fait que la série s'attarde sur leur relation établie, avec ses petits conflits et ses moments de complicité quotidienne, la distingue nettement de la concurrence.</p><p>L'adaptation en anime a popularisé l'oeuvre à juste titre. Horimiya est une romance apaisante, idéale pour ceux qui en ont assez des malentendus artificiels prolongés. Une lecture feel-good sincère et bien exécutée.</p>`,
-  shops: [
-  {
-    "name": "Fnac",
-    "url": "https://www.fnac.com/SearchResult/ResultList.aspx?Search=horimiya+manga&sft=1",
-    "logo": "/logos/fnac.svg"
-  },
-  {
-    "name": "Amazon",
-    "url": "https://www.amazon.fr/s?k=horimiya+manga",
-    "logo": "/logos/amazon.svg"
-  },
-  {
-    "name": "Manganim",
-    "url": "https://manganim.com/search?q=horimiya",
-    "logo": "/logos/manganim.svg"
-  }
-],
-  streaming: [],
-  live: []
-},
+
+
+
+
+
+
+
+
 
 {
   slug: "a-silent-voice",
@@ -1352,71 +763,9 @@ export const SERIES_2: Serie[] = [
   live: []
 },
 
-{
-  slug: "your-lie-in-april",
-  title: "Your Lie in April",
-  category: "manga",
-  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx67707-srHFl9GBmfig.png",
-  tags: "Drame · Musique · Romance · Shōnen",
-  stars: 4,
-  addedAt: "2026-03-22",
-  synopsis: "Kousei Arima était un pianiste prodige jusqu'à ce que le décès traumatique de sa mère lui fasse perdre la capacité d'entendre sa propre musique. La rencontre avec Kaori Miyazono, violoniste libre et extravagante, va le pousser à rejouer. Un récit sur la musique, le deuil et la beauté fugace des moments partagés.",
-  pros: ["Représentation émotionnelle de la musique classique magnifique","Évolution de Kousei traitée avec sensibilité","Kaori parmi les personnages féminins les plus marquants","Fin bouleversante et mémorable"],
-  cons: ["Quelques clichés du genre drama musical","Certains personnages secondaires caricaturaux"],
-  reviewHtml: `<p>Your Lie in April (Shigatsu wa Kimi no Uso) est le manga musical qui a touché le coeur de millions de lecteurs grâce à sa représentation émotionnelle unique du rapport à la musique. Naoshi Arakawa parvient à transcrire sur papier ce que ressent un musicien quand il joue vraiment.</p><p>Kousei est un protagoniste touchant : un enfant brisé par un amour maternel toxique, qui a peur de retrouver la musique parce qu'elle lui rappelle trop de douleur. Son chemin vers la scène est traité avec patience et sincérité. Kaori, lumineuse et secrète, est l'une des héroïnes les plus aimées du manga seinen.</p><p>La fin, attendue mais redoutée, est exécutée avec une beauté déchirante. Même en la connaissant à l'avance, elle fait son effet. Un manga à lire dans de bonnes conditions : seul, avec de la musique de Chopin en fond sonore.</p>`,
-  shops: [
-  {
-    "name": "Fnac",
-    "url": "https://www.fnac.com/SearchResult/ResultList.aspx?Search=your+lie+in+april+manga&sft=1",
-    "logo": "/logos/fnac.svg"
-  },
-  {
-    "name": "Amazon",
-    "url": "https://www.amazon.fr/s?k=your+lie+in+april+manga",
-    "logo": "/logos/amazon.svg"
-  },
-  {
-    "name": "Manganim",
-    "url": "https://manganim.com/search?q=your-lie-in-april",
-    "logo": "/logos/manganim.svg"
-  }
-],
-  streaming: [],
-  live: []
-},
 
-{
-  slug: "fruits-basket",
-  title: "Fruits Basket",
-  category: "manga",
-  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx30102-MJuQ0e0k2CgU.png",
-  tags: "Comédie · Drame · Fantasy · Romance · Shōjo",
-  stars: 5,
-  addedAt: "2026-03-22",
-  synopsis: "Tohru Honda, orpheline habitant sous une tente, est accueillie par la mystérieuse famille Sohma. Elle découvre leur secret : certains membres se transforment en animaux du zodiaque chinois quand ils sont enlacés par quelqu'un du sexe opposé. En côtoyant les Sohma, Tohru va chercher à briser la malédiction qui les opprime depuis des générations.",
-  pros: ["Tohru Honda, héroïne shōjo la plus attachante de sa génération","Profondeur émotionnelle et thèmes sur le trauma familiaux exceptionnels","Chaque personnage Sohma a son arc complet","Fin satisfaisante et méritée"],
-  cons: ["Début peut sembler léger avant la profondeur des arcs tardifs","Certains personnages négatifs manichéens"],
-  reviewHtml: `<p>Fruits Basket est le chef-d'oeuvre du shōjo des années 2000, une oeuvre qui dépasse de très loin sa prémisse fantaisiste pour devenir une exploration profonde du trauma familial, de l'acceptation de soi et du pouvoir de l'amour inconditionnel.</p><p>Natsuki Takaya a construit quelque chose de rare : une héroïne, Tohru, dont l'optimisme et la gentillesse ne sont jamais naïfs ou irritants, mais représentent un vrai choix face à la douleur. En contact avec les Sohma, chacun portant une blessure différente liée à leur malédiction, elle offre simplement sa présence, sans juger, sans exiger.</p><p>Les arcs des différents Sohma, notamment Kyo et Yuki, sont d'une profondeur psychologique rare dans le shōjo. La malédiction du zodiaque est une métaphore puissante de l'emprise familiale toxique. Fruits Basket mérite d'être (re)lu par tous les amateurs de manga romantique et émotionnel.</p>`,
-  shops: [
-  {
-    "name": "Fnac",
-    "url": "https://www.fnac.com/SearchResult/ResultList.aspx?Search=fruits+basket+manga&sft=1",
-    "logo": "/logos/fnac.svg"
-  },
-  {
-    "name": "Amazon",
-    "url": "https://www.amazon.fr/s?k=fruits+basket+manga",
-    "logo": "/logos/amazon.svg"
-  },
-  {
-    "name": "Manganim",
-    "url": "https://manganim.com/search?q=fruits-basket",
-    "logo": "/logos/manganim.svg"
-  }
-],
-  streaming: [],
-  live: []
-},
+
+
 
 {
   slug: "clannad",
@@ -1446,38 +795,7 @@ export const SERIES_2: Serie[] = [
   live: []
 },
 
-{
-  slug: "nana",
-  title: "Nana",
-  category: "manga",
-  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx30028-VJqBC1ar6AxE.png",
-  tags: "Drame · Musique · Romance · Seinen · Tranche de vie",
-  stars: 5,
-  addedAt: "2026-03-22",
-  synopsis: "Deux jeunes femmes qui s'appellent toutes les deux Nana se rencontrent dans un train pour Tokyo. Nana Osaki, punk et leader d'un groupe de rock, et Nana Komatsu, romantique et rêveuse, vont partager un appartement et des vies qui s'entremêlent profondément, entre amour, ambition musicale et les dures réalités de l'âge adulte.",
-  pros: ["Portraiture adulte et nuancée de deux femmes remarquables","La musique rock comme toile de fond authentique","Relations amoureuses traitées sans manichéisme","Ai Yazawa au sommet de son art"],
-  cons: ["Publication suspendue depuis 2009 pour cause de maladie de l'auteure","Fin jamais connue"],
-  reviewHtml: `<p>Nana est le manga shōjo le plus adulte et le plus sincère de sa génération. Ai Yazawa a créé deux héroïnes diamétralement opposées mais d'une richesse humaine égale, dont la coexistence forme le coeur d'une oeuvre sur l'amour, l'ambition et la façon dont les choix de jeunesse nous définissent.</p><p>La scène musicale punk-rock tokyoïte des années 2000 est recréée avec un authenticité remarquable. Le groupe BLAST et ses dynamiques internes, les tensions entre succès commercial et intégrité artistique, sont traités avec la sérieux d'un vrai drame musical.</p><p>La douleur de Nana réside dans son inachèvement : Ai Yazawa a dû interrompre la publication en 2009 pour des raisons de santé, laissant l'histoire en suspens dans des moments cruciaux. Les 21 volumes existants restent une oeuvre majeure du manga féminin, et l'espoir de sa reprise un jour persiste dans le coeur de ses lecteurs.</p>`,
-  shops: [
-  {
-    "name": "Fnac",
-    "url": "https://www.fnac.com/SearchResult/ResultList.aspx?Search=nana+manga+yazawa&sft=1",
-    "logo": "/logos/fnac.svg"
-  },
-  {
-    "name": "Amazon",
-    "url": "https://www.amazon.fr/s?k=nana+manga+yazawa",
-    "logo": "/logos/amazon.svg"
-  },
-  {
-    "name": "Manganim",
-    "url": "https://manganim.com/search?q=nana",
-    "logo": "/logos/manganim.svg"
-  }
-],
-  streaming: [],
-  live: []
-},
+
 
 {
   slug: "skip-beat",
@@ -1545,38 +863,7 @@ export const SERIES_2: Serie[] = [
   live: []
 },
 
-{
-  slug: "ouran-high-school-host-club",
-  title: "Ouran High School Host Club",
-  category: "manga",
-  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx30030-zBHKa3yHdtnM.png",
-  tags: "Comédie · Romance · Shōjo · Parodie",
-  stars: 4,
-  addedAt: "2026-03-22",
-  synopsis: "Haruhi Fujioka, bourse-méritante à l'école Ouran pour ultra-riches, casse par accident un vase à 8 millions de yens appartenant au Club des Hôtes. Pour rembourser sa dette, elle doit devenir hôte et divertir les élèves féminins. Une satire tendre de tous les clichés du shōjo et du monde des ultra-riches, qui cache une vraie romance sous la comédie.",
-  pros: ["Parodie des clichés shōjo brillante et affectueuse","Ensemble de personnages tous mémorables","Équilibre parfait comédie/romance","Haruhi excellent personnage féminin qui refuse les stéréotypes"],
-  cons: ["Le rythme comédie peut décevoir ceux qui attendent un vrai romance","Certains épisodes très épisodiques sans impact narratif"],
-  reviewHtml: `<p>Ouran Host Club est la comédie shōjo ultime, une oeuvre qui aime profondément son genre tout en se moquant gentiment de ses clichés. Bisco Hatori a créé une galerie de personnages masculins qui incarnent chacun un archétype différent (le gentil, le sombre, le shotō, les jumeaux, le lolicon) pour mieux les démonter sous la comédie.</p><p>Haruhi est une héroïne remarquable : pragmatique, directe, indifférente aux constructions sociales de genre, elle dévalorise constamment les codes de la féminité performative tout en gardant son humanité. Sa relation avec Tamaki est l'une des plus savoureuses du shōjo, entre comédie et sentiment sincère.</p><p>La série est aussi une satire fine du monde des ultra-riches : les Hôtes, malgré leurs excès, apprennent peu à peu ce que signifie un sentiment authentique. Une oeuvre légère qui a plus à dire qu'il n'y paraît, indispensable pour tout fan du genre.</p>`,
-  shops: [
-  {
-    "name": "Fnac",
-    "url": "https://www.fnac.com/SearchResult/ResultList.aspx?Search=ouran+host+club+manga&sft=1",
-    "logo": "/logos/fnac.svg"
-  },
-  {
-    "name": "Amazon",
-    "url": "https://www.amazon.fr/s?k=ouran+high+school+host+club+manga",
-    "logo": "/logos/amazon.svg"
-  },
-  {
-    "name": "Manganim",
-    "url": "https://manganim.com/search?q=ouran-high-school-host-club",
-    "logo": "/logos/manganim.svg"
-  }
-],
-  streaming: [],
-  live: []
-},
+
 
 {
   slug: "sa-special-a",
@@ -1677,71 +964,9 @@ export const SERIES_2: Serie[] = [
   live: []
 },
 
-{
-  slug: "inuyasha",
-  title: "InuYasha",
-  category: "manga",
-  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx30676-kQTOiNRyKwqL.jpg",
-  tags: "Action · Aventure · Fantasy · Historique · Romance · Shōnen",
-  stars: 4,
-  addedAt: "2026-03-22",
-  synopsis: "Kagome Higurashi, lycéenne moderne, tombe dans un puit et se retrouve propulsée au Japon féodal. Elle libère accidentellement InuYasha, un demi-démon scellé depuis 50 ans, et brise le Joyau des Quatre-Âmes en mille éclats. Ensemble ils vont parcourir le Japon médiéval pour rassembler les fragments avant que le puissant Naraku ne les récupère.",
-  pros: ["World-building du Japon médiéval fantastique très riche","InuYasha/Kagome, un couple iconic","Excellente galerie de personnages et d'antagonistes","Atmosph\\u00e8re d\\'aventure épique bien soutenue"],
-  cons: ["Dernier arc très long et parfois répétitif","Miroir de Naraku utilisé à l'excès comme antagoniste élastique"],
-  reviewHtml: `<p>InuYasha est l'oeuvre signature de la grande Rumiko Takahashi dans le genre action-romance-fantastique. Publié de 1996 à 2008, c'est une fresque épique du Japon médiéval qui a accompagné des générations de lecteurs et de téléspectateurs dans les années 2000.</p><p>Le cadre historique-fantastique du Japon féodal permet une créativité remarquable dans les démons et entités surnaturelles rencontrés. Chaque arc introduit de nouveaux youkai et de nouvelles menaces, maintenant la variété sur 56 volumes. La galerie des compagnons (Miroku, Sango, Shippo) est chaleureuse et bien développée.</p><p>La romance entre InuYasha, déchiré entre deux mondes et deux amours, et Kagome, ancre moderne dans ce passé, est l'une des plus durables et sincères du manga shōnen. Le dernier arc est parfois répétitif mais la conclusion est satisfaisante. Un classique incontournable de l'aventure romantique fantastique.</p>`,
-  shops: [
-  {
-    "name": "Fnac",
-    "url": "https://www.fnac.com/SearchResult/ResultList.aspx?Search=inuyasha+manga&sft=1",
-    "logo": "/logos/fnac.svg"
-  },
-  {
-    "name": "Amazon",
-    "url": "https://www.amazon.fr/s?k=inuyasha+manga",
-    "logo": "/logos/amazon.svg"
-  },
-  {
-    "name": "Manganim",
-    "url": "https://manganim.com/search?q=inuyasha",
-    "logo": "/logos/manganim.svg"
-  }
-],
-  streaming: [],
-  live: []
-},
 
-{
-  slug: "ranma",
-  title: "Ranma ½",
-  category: "manga",
-  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx30023-NWoD28ZKC73c.jpg",
-  tags: "Action · Aventure · Comédie · Romance · Arts martiaux · Shōnen",
-  stars: 4,
-  addedAt: "2026-03-22",
-  synopsis: "Ranma Saotome tombe dans une source maudite en Chine et se transforme en fille quand il est aspergé d'eau froide. Il redevient garçon avec l'eau chaude. Fiancé d'office à Akane Tendo par leurs pères respectifs, les deux prétendants farouchement indépendants vont devoir cohabiter, s'affronter et, progressivement, tomber amoureux.",
-  pros: ["Concept de transformation de genre brillamment exploité pour la comédie","Galerie de prétendants tous hilarants","Arts martiaux créatifs et absurdes","Rumiko Takahashi au top de sa maîtrise de l'humour"],
-  cons: ["Status quo maintenu trop longtemps","Ranma/Akane évolution romantique très lente"],
-  reviewHtml: `<p>Ranma ½ est le manga de la comédie romantique et des arts martiaux absurdes, publié par la reine du genre Rumiko Takahashi. La prémisse du personnage qui change de sexe selon la température de l'eau est exploitée avec une inventivité comique inépuisable sur 38 volumes.</p><p>Takahashi a construit une galerie de prétendants tous plus délirantes les uns que les autres, chacun avec son propre style de combat absurde (arts martiaux de la restauration rapide, de la calligraphie, de la patinoire...). La créativité dans l'invention de nouveaux styles d'arts martiaux est un régal constant.</p><p>La romance Ranma/Akane est un exemple parfait du tsundere couple : deux personnages fiers qui refusent d'admettre leurs sentiments jusqu'à un degré souvent frustrant mais toujours drôle. La fin, après des années de statu quo, est douce-amère mais juste. Un pilier du manga shōnen comique.</p>`,
-  shops: [
-  {
-    "name": "Fnac",
-    "url": "https://www.fnac.com/SearchResult/ResultList.aspx?Search=ranma+manga&sft=1",
-    "logo": "/logos/fnac.svg"
-  },
-  {
-    "name": "Amazon",
-    "url": "https://www.amazon.fr/s?k=ranma+manga",
-    "logo": "/logos/amazon.svg"
-  },
-  {
-    "name": "Manganim",
-    "url": "https://manganim.com/search?q=ranma",
-    "logo": "/logos/manganim.svg"
-  }
-],
-  streaming: [],
-  live: []
-},
+
+
 
 {
   slug: "urusei-yatsura",
@@ -1777,71 +1002,9 @@ export const SERIES_2: Serie[] = [
 },
 
 
-{
-  slug: "20th-century-boys",
-  title: "20th Century Boys",
-  category: "manga",
-  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx30003-E84fwIh22LAQ.jpg",
-  tags: "Drame · Mystère · Science-fiction · Thriller · Seinen",
-  stars: 5,
-  addedAt: "2026-03-22",
-  synopsis: "Kenji Endo, gérant d'une supérette, découvre que les symboles d'un \"livre de prophéties\" qu'il avait créé avec ses amis enfants sont maintenant associés à des attentats terroristes réels orchestrés par un mystérieux \"Ami\". Une enquête qui mêle nostalgie des années 70, conspiration mondiale et amitié d'enfance sur des décennies.",
-  pros: ["Construction narrative d'une complexité impressionnante","Utilisation de la nostalgie comme moteur émotionnel unique","Révélations calibrées avec précision sur 24 volumes","Personnage de l'Ami, mystère maintenu magistralement"],
-  cons: ["L'arc 21st Century Boys final moins fort","Quelques longueurs dans les arcs intermédiaires"],
-  reviewHtml: `<p>20th Century Boys est le chef-d'oeuvre de la narration manga. Naoki Urasawa a construit sur 24 volumes une fresque générationnelle d'une complexité et d'une cohérence remarquables, où chaque révélation redéfinit ce qu'on croyait comprendre depuis le début.</p><p>La gestion du temps est le tour de force de la série : Urasawa jongle entre les années 60-70 de l'enfance de Kenji et le présent du complot, avec des flash-forwards vers un futur dystopique, sans jamais perdre le fil ou le lecteur. La façon dont les symboles innocents d'une bande d'enfants deviennent les emblèmes d'une secte terroriste mondiale est glaçante.</p><p>Le mystère de l'identité de l'Ami est l'un des plus grands suspenses de l'histoire du manga, maintenu avec habileté jusqu'à une révélation parfaitement servie. La nostalgie pour les années 70 japonaises est un moteur émotionnel unique qui donne à l'oeuvre une saveur incomparable. Une oeuvre majeure.</p>`,
-  shops: [
-  {
-    "name": "Fnac",
-    "url": "https://www.fnac.com/SearchResult/ResultList.aspx?Search=20th+century+boys+manga&sft=1",
-    "logo": "/logos/fnac.svg"
-  },
-  {
-    "name": "Amazon",
-    "url": "https://www.amazon.fr/s?k=20th+century+boys+manga",
-    "logo": "/logos/amazon.svg"
-  },
-  {
-    "name": "Manganim",
-    "url": "https://manganim.com/search?q=20th-century-boys",
-    "logo": "/logos/manganim.svg"
-  }
-],
-  streaming: [],
-  live: []
-},
 
-{
-  slug: "pluto",
-  title: "Pluto",
-  category: "manga",
-  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx30745-kueBpwriQkvZ.jpg",
-  tags: "Action · Drame · Science-fiction · Thriller · Seinen",
-  stars: 5,
-  addedAt: "2026-03-22",
-  synopsis: "Inspiré d'un arc d'Astro Boy, Pluto suit Gesicht, robot-détective d'Europol, enquêtant sur l'assassinat des sept robots les plus puissants du monde. Une relecture en seinen de l'univers d'Osamu Tezuka qui explore les thèmes de l'humanité, de la haine et de ce que signifie avoir une âme dans un monde post-guerre des robots.",
-  pros: ["Relecture respectueuse et brillante de l'univers Tezuka","Thèmes sur la guerre et la haine d'une profondeur rare","Gesicht, robot-protagoniste parmi les plus touchants du manga","Révélation finale dévastatrice et parfaite"],
-  cons: ["8 volumes seulement, certains auraient voulu plus","Connaissance d'Astro Boy enrichit mais n'est pas indispensable"],
-  reviewHtml: `<p>Pluto est le miracle de l'adaptation manga : prendre un arc classique d'Astro Boy et le transformer en un thriller de science-fiction adulte d'une profondeur philosophique extraordinaire. Naoki Urasawa et Takashi Nagasaki ont créé quelque chose qui honore l'oeuvre de Tezuka tout en la transcendant.</p><p>La question centrale du manga, répétée sous des formes multiples : qu'est-ce qui crée la haine ? Pourquoi des êtres créés pour la paix finissent-ils par se battre ? Ces questions sont explorées à travers Gesicht, robot qui enquête sur ses semblables tout en portant ses propres traumatismes enfouis.</p><p>La révélation finale sur l'identité et la nature de Pluto est d'une beauté et d'une tristesse dévastatrice. Huit volumes pour une oeuvre complète, dense et parfaite. Pluto est la preuve qu'Urasawa est l'un des plus grands auteurs de manga de tous les temps.</p>`,
-  shops: [
-  {
-    "name": "Fnac",
-    "url": "https://www.fnac.com/SearchResult/ResultList.aspx?Search=pluto+manga+urasawa&sft=1",
-    "logo": "/logos/fnac.svg"
-  },
-  {
-    "name": "Amazon",
-    "url": "https://www.amazon.fr/s?k=pluto+manga+urasawa",
-    "logo": "/logos/amazon.svg"
-  },
-  {
-    "name": "Manganim",
-    "url": "https://manganim.com/search?q=pluto",
-    "logo": "/logos/manganim.svg"
-  }
-],
-  streaming: [],
-  live: []
-},
+
+
 
 {
   slug: "billy-bat",
@@ -2043,38 +1206,7 @@ export const SERIES_2: Serie[] = [
   live: []
 },
 
-{
-  slug: "goodnight-punpun",
-  title: "Goodnight Punpun",
-  category: "manga",
-  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx34632-5xMDkx3pXsEh.png",
-  tags: "Drame · Psychologie · Romance · Tranche de vie · Seinen",
-  stars: 5,
-  addedAt: "2026-03-22",
-  synopsis: "Punpun Onodera, représenté comme une petite icône abstraite dans un monde de personnages réalistes, grandit dans une famille dysfonctionnelle. De l'école primaire à l'âge adulte, on suit ses amours, ses désillusions, sa dépression et sa quête d'un sens à une existence qui ne semble pas lui vouloir de bien. L'oeuvre la plus sombre et la plus belle d'Inio Asano.",
-  pros: ["Représentation de la dépression et des traumas d'une justesse bouleversante","Style graphique hyper-réaliste contrastant avec l'icône abstraite de Punpun","Honnêteté émotionnelle totale, sans complaisance ni jugement","Oeuvre unique et inimitable"],
-  cons: ["Extrêmement sombre, peut être éprouvant psychologiquement","Fin qui ne donne pas de réponses faciles"],
-  reviewHtml: `<p>Goodnight Punpun est l'une des oeuvres les plus déchirantes jamais créées dans le médium manga. Inio Asano a représenté son protagoniste sous forme d'une petite icône abstraite dans un monde hyper-réaliste pour mieux illustrer le sentiment d'aliénation profonde qui est au coeur du récit.</p><p>C'est un manga sur la façon dont les traumas d'enfance forment les adultes que nous devenons, sur la dépression comme réalité quotidienne plutôt que spectaculaire, sur les relations amoureuses toxiques que créent des individus blessés. Asano ne juge pas ses personnages mais les observe avec une acuité clinique qui fait mal.</p><p>Goodnight Punpun n'est pas une lecture facile ni recommandable à tout le monde. Mais pour ceux qui sont prêts à lui faire face, c'est une expérience émotionnelle d'une profondeur rare, la preuve que le manga peut atteindre les mêmes sommets que la grande littérature.</p>`,
-  shops: [
-  {
-    "name": "Fnac",
-    "url": "https://www.fnac.com/SearchResult/ResultList.aspx?Search=goodnight+punpun+manga&sft=1",
-    "logo": "/logos/fnac.svg"
-  },
-  {
-    "name": "Amazon",
-    "url": "https://www.amazon.fr/s?k=goodnight+punpun+manga",
-    "logo": "/logos/amazon.svg"
-  },
-  {
-    "name": "Manganim",
-    "url": "https://manganim.com/search?q=goodnight-punpun",
-    "logo": "/logos/manganim.svg"
-  }
-],
-  streaming: [],
-  live: []
-},
+
 
 {
   slug: "homunculus",
@@ -2137,104 +1269,11 @@ export const SERIES_2: Serie[] = [
   live: []
 },
 
-{
-  slug: "akira",
-  title: "Akira",
-  category: "manga",
-  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx30664-JJq9tosQvlpW.jpg",
-  tags: "Action · Science-fiction · Cyberpunk · Post-apocalyptique · Seinen",
-  stars: 5,
-  addedAt: "2026-03-22",
-  synopsis: "En 2019, Neo-Tokyo est une mégalopole dystopique construite sur les ruines de la ville détruite en 1988. Kaneda, chef d'un gang de motards, voit son ami Tetsuo acquérir des pouvoirs psychokinésiques incontrôlables liés au mystérieux projet Akira. Une fresque science-fiction monumentale qui a défini le cyberpunk dans le manga et au-delà.",
-  pros: ["Oeuvre fondatrice du manga SF et du cyberpunk visuel mondial","Katsuhiro Otomo, dessin et architecture urbaine d'une richesse extraordinaire","Ampleur narrative et créativité visuelle sans équivalent de l'époque","Influence sur toute la culture pop mondiale incalculable"],
-  cons: ["Rythme parfois ralenti par l'ampleur de la destruction","Certains arcs psychédéliques tardifs très denses"],
-  reviewHtml: `<p>Akira est simplement l'une des oeuvres les plus importantes de l'histoire du manga, et probablement la plus influente mondialement. Katsuhiro Otomo a publié entre 1982 et 1990 une science-fiction cyberpunk d'une ambition visuelle et narrative sans précédent.</p><p>Les 2000 pages du manga sont un exercice de maîtrise totale : chaque panneau de Neo-Tokyo grouille de détails architecturaux, chaque scène d'action est chorégraphiée avec une précision hallucinante. Le travail sur les décors de la ville détruite et reconstruite est un chef-d'oeuvre d'architecture imaginaire.</p><p>L'adaptation anime de 1988 (réalisée par Otomo lui-même) est culte, mais le manga original lui est supérieur en profondeur narrative et en richesse visuelle. Akira a influencé The Matrix, Ghost in the Shell, et des générations de créateurs occidentaux et japonais. Une lecture obligatoire pour comprendre la culture pop moderne.</p>`,
-  shops: [
-  {
-    "name": "Fnac",
-    "url": "https://www.fnac.com/SearchResult/ResultList.aspx?Search=akira+manga&sft=1",
-    "logo": "/logos/fnac.svg"
-  },
-  {
-    "name": "Amazon",
-    "url": "https://www.amazon.fr/s?k=akira+manga+otomo",
-    "logo": "/logos/amazon.svg"
-  },
-  {
-    "name": "Manganim",
-    "url": "https://manganim.com/search?q=akira",
-    "logo": "/logos/manganim.svg"
-  }
-],
-  streaming: [],
-  live: []
-},
 
-{
-  slug: "the-ghost-in-the-shell",
-  title: "The Ghost in the Shell",
-  category: "manga",
-  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx31023-iozeApEMjmPP.jpg",
-  tags: "Action · Cyberpunk · Philosophie · Science-fiction · Seinen",
-  stars: 5,
-  addedAt: "2026-03-22",
-  synopsis: "Dans un futur proche où les humains peuvent remplacer leur corps par des prothèses cybernétiques, Motoko Kusanagi dirige la Section 9, unité d'élite anti-terroriste. Au fil de ses missions, elle questionne ce qui définit l'identité, la conscience et l'humanité quand le corps devient une machine remplaçable.",
-  pros: ["Questionnements philosophiques sur l'identité et la conscience qui anticipent le transhumanisme","Masanune Shirow, créateur d'un univers SF d'une richesse conceptuelle rare","Influence sur tout le cyberpunk mondial (Matrix, etc.)","Action et réflexion parfaitement équilibrées"],
-  cons: ["Notes de bas de page très techniques parfois indigestes","Dessins très chargés qui demandent attention"],
-  reviewHtml: `<p>The Ghost in the Shell est la pierre angulaire du cyberpunk philosophique, une oeuvre qui a influencé la SF mondiale d'une façon incalculable. Masamune Shirow a créé un univers dense et cohérent pour poser des questions qui restent d'une actualité brûlante : qu'est-ce qui fait une âme ? Qu'est-ce qui définit l'humain quand le corps peut être remplacé ?</p><p>Motoko Kusanagi est une héroïne remarquable, cyborg de commandement qui questionne sa propre existence avec une curiosité intellectuelle fascinante plutôt qu'une angoisse existentielle paralysante. Sa façon d'habiter le paradoxe (être humaine dans un corps de machine) est le coeur philosophique de l'oeuvre.</p><p>L'adaptation anime de Mamoru Oshii (1995) est culte et a rendu Ghost in the Shell célèbre mondialement. Mais le manga original, plus dense et plus humoristique, est la source indispensable pour comprendre la richesse de cet univers. Une oeuvre fondatrice.</p>`,
-  shops: [
-  {
-    "name": "Fnac",
-    "url": "https://www.fnac.com/SearchResult/ResultList.aspx?Search=ghost+in+the+shell+manga&sft=1",
-    "logo": "/logos/fnac.svg"
-  },
-  {
-    "name": "Amazon",
-    "url": "https://www.amazon.fr/s?k=ghost+in+the+shell+manga",
-    "logo": "/logos/amazon.svg"
-  },
-  {
-    "name": "Manganim",
-    "url": "https://manganim.com/search?q=the-ghost-in-the-shell",
-    "logo": "/logos/manganim.svg"
-  }
-],
-  streaming: [],
-  live: []
-},
 
-{
-  slug: "lone-wolf-and-cub",
-  title: "Lone Wolf and Cub",
-  category: "manga",
-  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx30904-KRN1WE3ZU3vl.jpg",
-  tags: "Action · Drame · Historique · Seinen · Samouraï",
-  stars: 5,
-  addedAt: "2026-03-22",
-  synopsis: "Ogami Itto, ancien bourreau officiel du Shogunat, est trahi et voit sa femme assassinée. Avec son jeune fils Daigoro dans une poussette, il choisit la voie de la mort et devient un assassin itinérant au Japon féodal, traqué par le clan Yagyu qui l'a condamné. Un manga fondateur du seinen d'action historique.",
-  pros: ["Oeuvre fondatrice du manga d'action historique adulte","Dualité père/fils d'une profondeur émotionnelle rare","Reconstitution du Japon feudal d'une précision et richesse remarquables","Influence sur tout le cinéma de samouraï occidental"],
-  cons: ["Violence très graphique de son époque","Certains arcs très épisodiques"],
-  reviewHtml: `<p>Lone Wolf and Cub (Kozure Ōkami) est le manga fondateur du seinen d'action historique. Créé en 1970 par le scénariste Kazuo Koike et le dessinateur Goseki Kojima, c'est une oeuvre qui a défini les standards de la violence et de la profondeur philosophique dans le manga adulte.</p><p>Le duo Ogami/Daigoro est l'une des grandes créations du manga : un père condamné qui traverse l'Enfer avec son fils trop jeune pour comprendre, les deux liés par une destinée de mort que le père a choisie à la place de son enfant. L'amour paternel exprimé à travers la violence ritualisée est d'une puissance émotionnelle remarquable.</p><p>L'influence de Lone Wolf and Cub sur la culture mondiale est immense : les films de Zatoichi, le western spaghetti, The Road de Cormac McCarthy, et directement Logan de James Mangold lui doivent beaucoup. Un classique absolu à connaître.</p>`,
-  shops: [
-  {
-    "name": "Fnac",
-    "url": "https://www.fnac.com/SearchResult/ResultList.aspx?Search=lone+wolf+and+cub+manga&sft=1",
-    "logo": "/logos/fnac.svg"
-  },
-  {
-    "name": "Amazon",
-    "url": "https://www.amazon.fr/s?k=lone+wolf+and+cub+manga",
-    "logo": "/logos/amazon.svg"
-  },
-  {
-    "name": "Manganim",
-    "url": "https://manganim.com/search?q=lone-wolf-and-cub",
-    "logo": "/logos/manganim.svg"
-  }
-],
-  streaming: [],
-  live: []
-},
+
+
+
 
 {
   slug: "sanctuary",
@@ -2328,6 +1367,76 @@ export const SERIES_2: Serie[] = [
   {
     "name": "Manganim",
     "url": "https://manganim.com/search?q=the-summit-of-the-gods",
+    "logo": "/logos/manganim.svg"
+  }
+],
+  streaming: [],
+  live: []
+},
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+{
+  slug: "noragami-stray-god",
+  title: "Noragami: Stray God",
+  category: "manga",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx54692-3vWUzvrCyArN.png",
+  tags: "Action · Aventure · Comédie · Fantasy · Shōnen · Mythologie",
+  stars: 4,
+  addedAt: "2026-03-22",
+  synopsis: "Yato est un dieu mineur sans temple ni fidèle qui accepte tous les travaux pour 5 yens. Il rencontre Hiyori, lycéenne dont l'âme sort accidentellement de son corps, et Yukine, un esprit mort devenu son arme divine. Ensemble ils naviguent dans le monde des dieux shinto, des esprits et des menaces qui pèsent sur leurs existences précaires.",
+  pros: ["Mythologie shinto abordée avec précision et inventivité","Dynamique du trio Yato/Hiyori/Yukine très bien écrite","Équilibre parfait entre humour léger et drama profond","Arcs de développement de Yukine parmi les plus touchants du manga"],
+  cons: ["Publication lente en magazine (hiatuses fréquents)","Arcs tardifs très denses en mythologie shinto"],
+  reviewHtml: `<p>Noragami est l'un des mangas les plus intelligents dans son utilisation de la mythologie japonaise. Adachitoka mêle comédie légère et drama profond avec une fluidité remarquable, utilisant le panthéon shinto comme toile de fond pour explorer des thèmes de l'identité, de la mort et de la valeur d'une existence.</p><p>Yato est un personnage attachant et complexe : dieu raté et comique en surface, mais porteur d'un passé sombre et d'une envie sincère d'être reconnu, d'exister. Sa relation avec Yukine, esprit adolescent qui doit apprendre à accepter sa mort, est l'arc émotionnel le plus fort de la série et l'un des plus beaux du manga fantastique.</p><p>La série brille particulièrement dans ses arcs plus sombres où la mythologie shinto est explorée avec un sérieux documenté. Les dieux, les esprits, les règles du monde des morts sont traités avec un respect de la source remarquable. Un manga pour ceux qui veulent du fantastique japonais authentique.</p>`,
+  shops: [
+  {
+    "name": "Fnac",
+    "url": "https://www.fnac.com/SearchResult/ResultList.aspx?Search=noragami+manga&sft=1",
+    "logo": "/logos/fnac.svg"
+  },
+  {
+    "name": "Amazon",
+    "url": "https://www.amazon.fr/s?k=noragami+manga",
+    "logo": "/logos/amazon.svg"
+  },
+  {
+    "name": "Manganim",
+    "url": "https://manganim.com/search?q=noragami-stray-god",
     "logo": "/logos/manganim.svg"
   }
 ],
