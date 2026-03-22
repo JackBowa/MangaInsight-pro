@@ -136,7 +136,7 @@ export default function RecommandationsPage() {
     const [minVol, maxVol] = LENGTH_MAP[ans.length] ?? [1, 9999];
 
     const scored = SERIES.map(serie => {
-      const serieTags = (serie.tags ?? "").split("·").map(t => t.trim());
+      const serieTags = (serie.tags ?? "").split("·").map((t: string) => t.trim());
       let score = 0;
 
       // Mood : +3 par tag correspondant

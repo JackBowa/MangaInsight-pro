@@ -42,12 +42,12 @@ function formatDate(dateStr?: string): string {
 
 // Séries similaires = même tags en commun, exclut la série courante
 function getSimilar(serie: typeof SERIES[0], count = 6) {
-  const tags = (serie.tags ?? "").split("·").map(t => t.trim().toLowerCase());
+  const tags = (serie.tags ?? "").split("·").map((t: string) => t.trim().toLowerCase());
   return SERIES
     .filter(s => s.slug !== serie.slug)
     .map(s => {
-      const sTags = (s.tags ?? "").split("·").map(t => t.trim().toLowerCase());
-      const common = tags.filter(t => sTags.includes(t)).length;
+      const sTags = (s.tags ?? "").split("·").map((t: string) => t.trim().toLowerCase());
+      const common = tags.filter((t: string) => sTags.includes(t)).length;
       return { ...s, common };
     })
     .filter(s => s.common > 0)

@@ -172,7 +172,7 @@ export default function NouveautesPage() {
                 </div>
               </div>
               <div className="flex flex-col items-end gap-1.5 flex-shrink-0">
-                <span className={`text-[0.6rem] font-bold tracking-[0.08em] uppercase px-2.5 py-1 rounded-full ${BADGE_STYLES[item.badge]}`}>
+                <span className={`text-[0.6rem] font-bold tracking-[0.08em] uppercase px-2.5 py-1 rounded-full ${BADGE_STYLES[item.badge as BadgeType]}`}>
                   {item.badgeLabel}
                 </span>
                 {item.addedAt && (
