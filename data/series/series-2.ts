@@ -39,6 +39,8 @@ export const SERIES_2: Serie[] = [
     }
   ],
   live: []
+,
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/nx100230-TA0RQ9d7RVas.jpg"
 },
 
 {
@@ -77,6 +79,8 @@ export const SERIES_2: Serie[] = [
     }
   ],
   live: []
+,
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx85793-PvROauRZl0VB.png"
 },
 
 
@@ -91,7 +95,7 @@ export const SERIES_2: Serie[] = [
   stars: 4,
   category: "manga",
   tags: "Romance · Comédie · Lycée · Light Novel",
-  cover: "",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/nx34368-BCouTUMs4GmM.jpg",
   addedAt: "2026-03-22",
   shops: [
   {
@@ -143,6 +147,8 @@ export const SERIES_2: Serie[] = [
   ],
   streaming: [],
   live: []
+,
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx30104-sUVzNlTWZ5cu.jpg"
 },
 
 
@@ -177,6 +183,8 @@ export const SERIES_2: Serie[] = [
   ],
   streaming: [],
   live: []
+,
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx205598-Ed5jQnBctIQO.jpg"
 },
 
 {
@@ -215,6 +223,8 @@ export const SERIES_2: Serie[] = [
     }
   ],
   live: []
+,
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx190126-SOWtDjuwbcVs.jpg"
 },
 
 {
@@ -253,6 +263,8 @@ export const SERIES_2: Serie[] = [
     }
   ],
   live: []
+,
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx86218-sIl9tnqHZQyh.jpg"
 },
 
 {
@@ -291,6 +303,8 @@ export const SERIES_2: Serie[] = [
     }
   ],
   live: []
+,
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/nx99536-Ad0c9WNX50L6.jpg"
 },
 
 {
@@ -329,6 +343,8 @@ export const SERIES_2: Serie[] = [
     }
   ],
   live: []
+,
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx78881-WLtZZsQnDqHN.png"
 },
 
 {
@@ -367,6 +383,8 @@ export const SERIES_2: Serie[] = [
     }
   ],
   live: []
+,
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx86526-KEzZ1WkscsCy.jpg"
 },
 
 
@@ -407,6 +425,8 @@ export const SERIES_2: Serie[] = [
     }
   ],
   live: []
+,
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx87395-axsA49kSZp72.jpg"
 },
 
 {
@@ -439,6 +459,8 @@ export const SERIES_2: Serie[] = [
   ],
   streaming: [],
   live: []
+,
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx55297-4gAl9TLpkhfX.png"
 },
 
 {
@@ -471,6 +493,8 @@ export const SERIES_2: Serie[] = [
   ],
   streaming: [],
   live: []
+,
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx99609-hfnudDtTT1n5.jpg"
 },
 
 {
@@ -503,6 +527,8 @@ export const SERIES_2: Serie[] = [
   ],
   streaming: [],
   live: []
+,
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx147913-G5rMTLNhMScN.jpg"
 },
 
 
@@ -517,7 +543,7 @@ export const SERIES_2: Serie[] = [
   stars: 3,
   category: "manga",
   tags: "Romance · Université · Drame · Light Novel",
-  cover: "",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx123278-uop92nhqmk4T.jpg",
   addedAt: "2026-03-22",
   shops: [
   {
@@ -575,6 +601,8 @@ export const SERIES_2: Serie[] = [
     }
   ],
   live: []
+,
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx142376-0EclLARCmmZL.png"
 },
 
 
