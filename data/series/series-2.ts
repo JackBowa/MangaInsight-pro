@@ -3881,5 +3881,615 @@ export const SERIES_2: Serie[] = [
   ],
   streaming: []
 },
+{
+  slug: "tower-of-god",
+  title: "Tower of God",
+  synopsis: "Vingt-cinquième Bam a passé toute sa vie sous une tour, sans ciel ni avenir, avec Rachel comme seule lumière. Quand elle décide de monter dans la Tour, une structure mystérieuse dont l'ascension promet tout ce que l'on désire, Bam la suit et se retrouve projeté dans un monde de compétitions impitoyables, de pouvoirs surnaturels et de trahisons.",
+  reviewHtml: "<p><em>Tower of God</em> de SIU est l'un des piliers fondateurs du manhwa webtoon moderne. Publié depuis 2010 sur Naver, il a posé les bases du genre avec un worldbuilding d'une richesse exceptionnelle.</p><p>La Tour est une des constructions fictives les plus inventives du genre : chaque étage est un monde différent avec ses règles, sa faune et sa politique. SIU y déploie des centaines de personnages avec une maîtrise remarquable.</p><p>Bam est un héros dont l'évolution est l'une des plus satisfaisantes du webtoon — de gosse naïf à force à part entière. Une lecture incontournable malgré ses pauses fréquentes de publication.</p>",
+  pros: ["Worldbuilding d'une richesse exceptionnelle", "Centaines de personnages bien gérés", "Évolution du héros très satisfaisante"],
+  cons: ["Pauses de publication fréquentes", "Arcs très longs, rythme inégal"],
+  stars: 5,
+  category: "manhwa",
+  tags: "Action · Fantasy · Webtoon · Manhwa",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx85143-23oup3ETbFJk.jpg",
+  addedAt: "2026-03-22",
+  shops: [
+  {
+    "name": "Fnac",
+    "url": "https://www.fnac.com/SearchResult/ResultKNV.aspx?Search=tower+of+god+manhwa",
+    "logo": "/logos/fnac.svg"
+  },
+  {
+    "name": "Amazon",
+    "url": "https://www.amazon.fr/s?k=tower+of+god+manhwa",
+    "logo": "/logos/amazon.svg"
+  }
+  ],
+  streaming: []
+},
+
+{
+  slug: "the-god-of-high-school",
+  title: "The God of High School",
+  synopsis: "Jin Mori, un lycéen coréen champion de taekwondo, est invité à participer au tournoi God of High School, une compétition rassemblant les meilleurs combattants de tout le pays. Ce qui commence comme un tournoi sportif révèle progressivement des enjeux surnaturels bien plus grands que prévu.",
+  reviewHtml: "<p><em>The God of High School</em> de Yongje Park est une des séries de combat les plus viscéralement jouissives du webtoon. Si le scénario est simple au départ, il prend une ampleur mythologique inattendue qui surprend agréablement.</p><p>Les combats sont ce qui définit la série : dynamiques, inventifs, visuellement percutants. Park dessine l'action avec une clarté et une énergie rares, et chaque affrontement est mémorable.</p><p>Jin Mori est un héros shōnen classique dans le bon sens — enthousiaste, loyal et progressivement révélé comme bien plus qu'il n'y paraît. Une lecture parfaite pour les amateurs d'action pure.</p>",
+  pros: ["Combats parmi les meilleurs du webtoon", "Énergie et rythme constants", "Révélations mythologiques surprenantes"],
+  cons: ["Scénario simple au départ", "Personnages secondaires peu développés"],
+  stars: 4,
+  category: "manhwa",
+  tags: "Action · Arts martiaux · Webtoon · Manhwa",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx85141-qHR957V3FVco.png",
+  addedAt: "2026-03-22",
+  shops: [
+  {
+    "name": "Fnac",
+    "url": "https://www.fnac.com/SearchResult/ResultKNV.aspx?Search=god+of+high+school+manhwa",
+    "logo": "/logos/fnac.svg"
+  },
+  {
+    "name": "Amazon",
+    "url": "https://www.amazon.fr/s?k=god+of+high+school+manhwa",
+    "logo": "/logos/amazon.svg"
+  }
+  ],
+  streaming: []
+},
+
+{
+  slug: "noblesse",
+  title: "Noblesse",
+  synopsis: "Cadis Etrama Di Raizel, un noble vampire d'une puissance immense, se réveille après un sommeil de 820 ans et s'inscrit dans un lycée coréen pour retrouver son fidèle serviteur Frankenstein. Ses anciens ennemis et diverses organisations secrètes vont rapidement troubler sa nouvelle vie tranquille.",
+  reviewHtml: "<p><em>Noblesse</em> de Son Jeho et Lee Kwangsu est l'un des webtoons pionniers, publié depuis 2007. Son charme repose sur un protagoniste atypique : Rai, immensément puissant mais totalement désintéressé par son propre pouvoir, découvrant le monde moderne avec une dignité sereine et comique.</p><p>La dynamique entre Rai et Frankenstein (son serviteur protecteur) est le coeur émotionnel de la série. Les combats montent progressivement en intensité et en enjeux.</p><p>La série souffre d'un rythme parfois inégal et de certains arcs répétitifs, mais reste un classique fondateur du webtoon action/fantasy coréen. La conclusion est satisfaisante.</p>",
+  pros: ["Protagoniste charismatique et unique", "Dynamique Rai/Frankenstein touchante", "Classique fondateur du webtoon"],
+  cons: ["Rythme inégal", "Certains arcs répétitifs"],
+  stars: 4,
+  category: "manhwa",
+  tags: "Action · Fantasy · Vampires · Webtoon · Manhwa",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx59983-cfSjrRxuAlAD.png",
+  addedAt: "2026-03-22",
+  shops: [
+  {
+    "name": "Fnac",
+    "url": "https://www.fnac.com/SearchResult/ResultKNV.aspx?Search=noblesse+manhwa",
+    "logo": "/logos/fnac.svg"
+  },
+  {
+    "name": "Amazon",
+    "url": "https://www.amazon.fr/s?k=noblesse+manhwa",
+    "logo": "/logos/amazon.svg"
+  }
+  ],
+  streaming: []
+},
+
+{
+  slug: "nano-machine",
+  title: "Nano Machine",
+  synopsis: "Cheon Yeo-Woon est un bâtard dans une secte d'arts martiaux, en butte aux persécutions des fils légitimes. Un descendant du futur lui injecte secrètement une nano machine qui l'aide à maîtriser rapidement les arts martiaux et à s'élever dans la hiérarchie brutale de la secte.",
+  reviewHtml: "<p><em>Nano Machine</em> est l'archétype du manhwa de cultivation moderne avec twist technologique. La combinaison arts martiaux chinois / nano machine futuriste crée une dynamique de progression originale très appréciée des lecteurs du genre.</p><p>La progression de Cheon Yeo-Woon est rapide mais cohérente grâce à la logique de la nano machine. La politique interne de la secte, ses complots et ses trahisons donnent de la substance à ce qui pourrait rester un simple power fantasy.</p><p>Dessin dynamique, rythme soutenu et retournements fréquents font de Nano Machine une lecture addictive pour les amateurs de cultivation et de revenge manhwa.</p>",
+  pros: ["Fusion cultivation/technologie originale", "Rythme soutenu et addictif", "Complots de secte bien construits"],
+  cons: ["Power fantasy assumé, peu de nuance", "Dessin inégal"],
+  stars: 4,
+  category: "manhwa",
+  tags: "Action · Cultivation · Webtoon · Manhwa",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx120980-RZ9WLd0o9hyo.jpg",
+  addedAt: "2026-03-22",
+  shops: [
+  {
+    "name": "Fnac",
+    "url": "https://www.fnac.com/SearchResult/ResultKNV.aspx?Search=nano+machine+manhwa",
+    "logo": "/logos/fnac.svg"
+  },
+  {
+    "name": "Amazon",
+    "url": "https://www.amazon.fr/s?k=nano+machine+manhwa",
+    "logo": "/logos/amazon.svg"
+  }
+  ],
+  streaming: []
+},
+
+{
+  slug: "omniscient-reader",
+  title: "Omniscient Reader's Viewpoint",
+  synopsis: "Kim Dokja est le seul lecteur à avoir fini le roman web 'Three Ways to Survive the Apocalypse'. Quand le monde se transforme en l'apocalypse décrite dans ce roman, il est le seul à en connaître le déroulement. Armé de cette connaissance, il doit naviguer dans un monde devenu fiction tout en essayant de changer la destinée des personnages qu'il aime.",
+  reviewHtml: "<p><em>Omniscient Reader's Viewpoint</em> est l'un des meilleurs webtoons du moment, adapté du roman web coréen de singNsong. Sa prémisse — un lecteur qui connaît l'intrigue mais doit la vivre — est exploitée avec une intelligence et une profondeur rares.</p><p>Kim Dokja est un héros fascinant : sa connaissance méta du récit crée des situations narratives uniques, et son évolution d'observateur passif en acteur central est l'un des arcs de personnage les plus satisfaisants du genre.</p><p>Les thèmes sur la narration, la fiction et ce que les histoires font aux gens sont traités avec sérieux. Le dessin est de haute qualité. Une oeuvre majeure du manhwa contemporain.</p>",
+  pros: ["Prémisse méta brillamment exploitée", "Héros complexe et attachant", "Thèmes profonds sur la fiction et la narration"],
+  cons: ["Dense, nécessite attention", "Nombreux personnages à suivre"],
+  stars: 5,
+  category: "manhwa",
+  tags: "Action · Fantasy · Webtoon · Manhwa · Post-apocalyptique",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx119257-Pi21aq3ey9GG.jpg",
+  addedAt: "2026-03-22",
+  shops: [
+  {
+    "name": "Fnac",
+    "url": "https://www.fnac.com/SearchResult/ResultKNV.aspx?Search=omniscient+reader+manhwa",
+    "logo": "/logos/fnac.svg"
+  },
+  {
+    "name": "Amazon",
+    "url": "https://www.amazon.fr/s?k=omniscient+reader+manhwa",
+    "logo": "/logos/amazon.svg"
+  }
+  ],
+  streaming: []
+},
+
+{
+  slug: "martial-peak",
+  title: "Martial Peak",
+  synopsis: "Yang Kai est un disciple de bas rang dans une secte d'arts martiaux qui récure les latrines. Un jour, il trouve un livre noir mystérieux qui lui confère la capacité d'absorber l'énergie de ses ennemis vaincus. Son ascension fulgurante dans le monde de la cultivation commence.",
+  reviewHtml: "<p><em>Martial Peak</em> est un manhua (BD chinoise) de cultivation extrêmement populaire, avec des milliers de chapitres à son actif. C'est l'archétype du genre xianxia : héros parti de zéro qui devient progressivement invincible en traversant des royaumes de puissance toujours plus élevés.</p><p>Le point fort de la série est sa progression fluide et la variété des décors et ennemis rencontrés. Chaque arc apporte de nouveaux défis et de nouvelles mécaniques de cultivation.</p><p>Accessible sans background en xianxia, c'est une lecture de divertissement pur, à aborder sans attentes narratives complexes mais avec l'envie de suivre une progression de puissance satisfaisante.</p>",
+  pros: ["Progression de puissance fluide et satisfaisante", "Variété des arcs et des décors", "Série longue pour les grands lecteurs"],
+  cons: ["Scénario simple, peu de nuance", "Répétitif sur la très longue durée"],
+  stars: 3,
+  category: "manhwa",
+  tags: "Action · Cultivation · Manhua · Xianxia",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx104494-xmWuGEwxzbfB.jpg",
+  addedAt: "2026-03-22",
+  shops: [
+  {
+    "name": "Fnac",
+    "url": "https://www.fnac.com/SearchResult/ResultKNV.aspx?Search=martial+peak+manga",
+    "logo": "/logos/fnac.svg"
+  },
+  {
+    "name": "Amazon",
+    "url": "https://www.amazon.fr/s?k=martial+peak+manga",
+    "logo": "/logos/amazon.svg"
+  }
+  ],
+  streaming: []
+},
+
+{
+  slug: "the-breaker",
+  title: "The Breaker",
+  synopsis: "Yi Shioon est un lycéen bullied qui rencontre par hasard Chunwoo Han, un maître d'arts martiaux faisant semblant d'être prof de remplacement. Shioon le supplie de lui enseigner le combat pour se défendre. Il ignore qu'il vient d'être entraîné dans le monde souterrain du Murim, la communauté secrète des arts martiaux coréens.",
+  reviewHtml: "<p><em>The Breaker</em> de Jeon Geuk-jin et Park Jin-hwan est un manhwa d'arts martiaux de référence, publié de 2007 à 2010. Il se distingue du genre par son approche plus réaliste et nuancée des arts martiaux coréens et la relation maître/disciple au coeur de l'histoire.</p><p>Chunwoo Han est l'un des personnages les plus complexes du genre : brutal mais pas sans code éthique, avec un passé douloureux qui explique ses contradictions. La relation avec Shioon évolue de façon inattendue.</p><p>Le dessin de combat est excellent et lisible. Une série fondatrice du manhwa d'arts martiaux qui tient la route aujourd'hui.</p>",
+  pros: ["Relation maître/disciple complexe", "Arts martiaux réalistes et bien dessinés", "Personnages nuancés pour le genre"],
+  cons: ["Fin abrupte (suite dans New Waves)", "Certains arcs inégaux"],
+  stars: 4,
+  category: "manhwa",
+  tags: "Action · Arts martiaux · Manhwa · Murim",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx91629-ktt9L1cDWqEZ.jpg",
+  addedAt: "2026-03-22",
+  shops: [
+  {
+    "name": "Fnac",
+    "url": "https://www.fnac.com/SearchResult/ResultKNV.aspx?Search=the+breaker+manhwa",
+    "logo": "/logos/fnac.svg"
+  },
+  {
+    "name": "Amazon",
+    "url": "https://www.amazon.fr/s?k=the+breaker+manhwa",
+    "logo": "/logos/amazon.svg"
+  }
+  ],
+  streaming: []
+},
+
+{
+  slug: "the-breaker-new-waves",
+  title: "The Breaker: New Waves",
+  synopsis: "Suite directe de The Breaker. Shioon, maintenant privé de son ki par son ancien maître, doit survivre dans le monde du Murim sans ses pouvoirs. Il doit reconstruire sa force à partir de zéro tout en étant la cible de factions rivales qui voient en lui un moyen de déstabiliser Chunwoo Han.",
+  reviewHtml: "<p><em>The Breaker: New Waves</em> est la suite directe et obligatoire de The Breaker. Elle amplifie les thèmes de l'original : Shioon privé de ses pouvoirs est une décision narrative courageuse qui remet à zéro la progression du héros de façon crédible.</p><p>La politique du Murim prend plus de place dans cette suite, avec des factions multiples aux motivations entremêlées. Le dessin monte encore en qualité, avec des chorégraphies de combat encore plus soignées.</p><p>Une suite qui dépasse l'original sur plusieurs aspects. À lire absolument après The Breaker.</p>",
+  pros: ["Suite qui dépasse l'original", "Politique du Murim bien construite", "Dessin en progression constante"],
+  cons: ["Indispensable de lire The Breaker d'abord", "Certains fils narratifs non résolus"],
+  stars: 4,
+  category: "manhwa",
+  tags: "Action · Arts martiaux · Manhwa · Murim",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/22651.jpg",
+  addedAt: "2026-03-22",
+  shops: [
+  {
+    "name": "Fnac",
+    "url": "https://www.fnac.com/SearchResult/ResultKNV.aspx?Search=breaker+new+waves+manhwa",
+    "logo": "/logos/fnac.svg"
+  },
+  {
+    "name": "Amazon",
+    "url": "https://www.amazon.fr/s?k=breaker+new+waves+manhwa",
+    "logo": "/logos/amazon.svg"
+  }
+  ],
+  streaming: []
+},
+
+{
+  slug: "return-of-the-war-god",
+  title: "Return of the War God",
+  synopsis: "Un guerrier légendaire est tué après avoir vaincu un dieu maléfique. Il se réincarne dans le corps d'un jeune homme faible au sein d'une famille noble en déclin. Avec les souvenirs et les réflexes de son passé légendaire, il doit reconstruire sa puissance et venger son clan.",
+  reviewHtml: "<p><em>Return of the War God</em> (Chronicles of the Martial God's Return) est un manhwa de reincarnation/revenge dans la veine des séries murim classiques. La formule est bien rodée : héros légendaire dans un corps faible qui reprend progressivement son niveau tout en réglant des comptes.</p><p>Le manhwa est solide dans son genre, avec un héros charismatique et des combats bien dessinés. L'univers murim est bien construit et la progression satisfaisante.</p><p>Sans révolutionner le genre, c'est une lecture addictive et bien exécutée pour les fans de murim manhwa.</p>",
+  pros: ["Héros charismatique et compétent", "Revenge satisfaisant bien rythmé", "Univers murim cohérent"],
+  cons: ["Formule classique sans surprise", "Personnages secondaires peu développés"],
+  stars: 3,
+  category: "manhwa",
+  tags: "Action · Cultivation · Manhwa · Murim · Réincarnation",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx150319-Q5hDqxkIk2LR.png",
+  addedAt: "2026-03-22",
+  shops: [
+  {
+    "name": "Fnac",
+    "url": "https://www.fnac.com/SearchResult/ResultKNV.aspx?Search=chronicles+martial+god+return+manhwa",
+    "logo": "/logos/fnac.svg"
+  },
+  {
+    "name": "Amazon",
+    "url": "https://www.amazon.fr/s?k=return+war+god+manhwa",
+    "logo": "/logos/amazon.svg"
+  }
+  ],
+  streaming: []
+},
+
+{
+  slug: "jungle-juice",
+  title: "Jungle Juice",
+  synopsis: "Jang Suchan, lycéen modèle, se retrouve avec des ailes de mouche après avoir bu une étrange substance. Pour cacher sa transformation, il mène une double vie jusqu'à ce qu'il soit découvert et entraîné dans Nest, une ville secrète peuplée d'humains-insectes comme lui. Il doit y survivre et comprendre ce qu'il est devenu.",
+  reviewHtml: "<p><em>Jungle Juice</em> est un webtoon d'action qui tire intelligemment parti de sa prémisse d'hybrides humain/insecte. Les pouvoirs des personnages, inspirés de leurs caractéristiques d'insectes, donnent lieu à des combats créatifs et diversifiés.</p><p>L'univers de Nest est bien construit, avec une hiérarchie sociale et des factions dont les motivations sont développées progressivement. Le héros Suchan est attachant dans sa volonté de protéger à la fois ses deux mondes.</p><p>Un manhwa d'action original qui se distingue par son concept, avec un dessin de qualité et des arcs bien construits.</p>",
+  pros: ["Concept hybride humain/insecte très original", "Combats créatifs basés sur les pouvoirs d'insectes", "Univers bien construit"],
+  cons: ["Certains concepts absurdes si on y réfléchit", "Rythme inégal sur certains arcs"],
+  stars: 4,
+  category: "manhwa",
+  tags: "Action · Fantasy · Webtoon · Manhwa",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx128882-UxgmKbYEjuEz.jpg",
+  addedAt: "2026-03-22",
+  shops: [
+  {
+    "name": "Fnac",
+    "url": "https://www.fnac.com/SearchResult/ResultKNV.aspx?Search=jungle+juice+manhwa",
+    "logo": "/logos/fnac.svg"
+  },
+  {
+    "name": "Amazon",
+    "url": "https://www.amazon.fr/s?k=jungle+juice+manhwa",
+    "logo": "/logos/amazon.svg"
+  }
+  ],
+  streaming: []
+},
+
+{
+  slug: "eleceed",
+  title: "Eleceed",
+  synopsis: "Jiwoo Seo est un lycéen gentil qui cache des réflexes surhumains. Un jour, il recueille un chat gros et paresseux qui est en réalité Kayden Break, un puissant évolueur (humain aux capacités améliorées) fuyant ses ennemis. Ensemble, ils entrent dans le monde secret des évolueurs et de leurs combats pour le contrôle du monde.",
+  reviewHtml: "<p><em>Eleceed</em> de Son Jae-ho et Kim Zhena est l'une des meilleures surprises du webtoon d'action. Le duo Jiwoo/Kayden-chat est irrésistible : le jeune homme enthousiaste et le maître coincé dans un corps de chat créent une dynamique comique et affectueuse qui distingue la série.</p><p>Mais Eleceed ne se contente pas de l'humour : les combats entre évolueurs sont visuellement impressionnants et les enjeux montent progressivement. Le système de pouvoirs est cohérent et inventif.</p><p>Le dessin de Kim Zhena est parmi les plus beaux du webtoon actuel — couleurs éclatantes et action lisible. Un must-read pour les fans du genre.</p>",
+  pros: ["Duo Jiwoo/Kayden-chat irrésistible", "Dessin parmi les meilleurs du webtoon actuel", "Équilibre parfait humour/action"],
+  cons: ["Progression parfois lente", "En cours, pas encore de conclusion"],
+  stars: 5,
+  category: "manhwa",
+  tags: "Action · Comédie · Webtoon · Manhwa",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx106929-flAUvHZDUz5v.jpg",
+  addedAt: "2026-03-22",
+  shops: [
+  {
+    "name": "Fnac",
+    "url": "https://www.fnac.com/SearchResult/ResultKNV.aspx?Search=eleceed+manhwa",
+    "logo": "/logos/fnac.svg"
+  },
+  {
+    "name": "Amazon",
+    "url": "https://www.amazon.fr/s?k=eleceed+manhwa",
+    "logo": "/logos/amazon.svg"
+  }
+  ],
+  streaming: []
+},
+
+{
+  slug: "weak-hero",
+  title: "Weak Hero",
+  synopsis: "Gray Yeon est un lycéen nouveau venu dans une école gangrenée par la violence des bandes. Physiquement ordinaire, il neutralise pourtant les brutes avec une précision chirurgicale en utilisant l'intelligence plutôt que la force brute. Sa réputation grandit malgré lui dans le monde violent des gangs lycéens coréens.",
+  reviewHtml: "<p><em>Weak Hero</em> de Seopass et Razen est un manhwa de combat lycéen qui se distingue par son approche réaliste et psychologique. Gray Yeon n'est pas un héros classique : il utilise la physique et la géographie du combat plutôt que des pouvoirs fantastiques.</p><p>Le manhwa sait être brutal sans complaisance. Les conséquences des combats sont montrées honnêtement, et la question de la violence comme réponse à la violence est soulevée sans être résolue simplement.</p><p>Le dessin est excellent, avec des expressions faciales particulièrement réussies qui renforcent l'aspect psychologique. Un des meilleurs manhwas de son genre.</p>",
+  pros: ["Héros intelligent et original", "Approche réaliste et psychologique", "Dessin expressif et brutal"],
+  cons: ["Très sombre par moments", "Pas de happy end garanti"],
+  stars: 5,
+  category: "manhwa",
+  tags: "Action · Drame · Lycée · Manhwa · Réaliste",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx113488-0ghq0eEnftk0.jpg",
+  addedAt: "2026-03-22",
+  shops: [
+  {
+    "name": "Fnac",
+    "url": "https://www.fnac.com/SearchResult/ResultKNV.aspx?Search=weak+hero+manhwa",
+    "logo": "/logos/fnac.svg"
+  },
+  {
+    "name": "Amazon",
+    "url": "https://www.amazon.fr/s?k=weak+hero+manhwa",
+    "logo": "/logos/amazon.svg"
+  }
+  ],
+  streaming: []
+},
+
+{
+  slug: "true-beauty",
+  title: "True Beauty",
+  synopsis: "Lim Jugyeong est une lycéenne complexée par son apparence. Grâce au maquillage, elle se transforme en beauté reconnue de toute l'école. Mais quand Lee Suho, l'homme le plus beau de l'école, découvre son vrai visage, une romance naît sur fond d'insécurité, d'authenticité et de premier amour.",
+  reviewHtml: "<p><em>True Beauty</em> de Yaongyi est l'un des webtoons romantiques les plus populaires de Naver. Sa prémisse sur le maquillage comme masque social touche à des thèmes universels d'insécurité et d'authenticité avec une sincérité appréciable.</p><p>Jugyeong est une héroïne attachante précisément parce qu'elle n'est pas parfaite — ses complexes sont traités avec empathie et humour. Le triangle amoureux est bien géré, chaque prétendant étant crédible.</p><p>L'adaptation drama coréenne (2020) a amplifié la popularité mondiale du manhwa. Pour les amateurs de romance lycéenne légère avec une touche de profondeur, c'est un incontournable du genre.</p>",
+  pros: ["Thèmes d'insécurité traités avec empathie", "Triangle amoureux bien construit", "Héroïne attachante et réaliste"],
+  cons: ["Certains clichés du genre romcom", "Rythme inégal sur la longueur"],
+  stars: 3,
+  category: "manhwa",
+  tags: "Romance · Comédie · Lycée · Webtoon · Manhwa",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx103995-eE7WHxOy77TB.jpg",
+  addedAt: "2026-03-22",
+  shops: [
+  {
+    "name": "Fnac",
+    "url": "https://www.fnac.com/SearchResult/ResultKNV.aspx?Search=true+beauty+manhwa",
+    "logo": "/logos/fnac.svg"
+  },
+  {
+    "name": "Amazon",
+    "url": "https://www.amazon.fr/s?k=true+beauty+manhwa",
+    "logo": "/logos/amazon.svg"
+  }
+  ],
+  streaming: []
+},
+{
+  slug: "the-remarried-empress",
+  title: "The Remarried Empress",
+  synopsis: "Navier Ellie Trovi est l'impératrice parfaite : intelligente, gracieuse, admirée. Mais quand son mari l'empereur ramène une concubine ignorante des règles de la cour et commence à négliger Navier, celle-ci choisit une issue inattendue : plutôt que de souffrir en silence, elle demande le divorce et accepte la proposition d'un autre roi.",
+  reviewHtml: "<p><em>The Remarried Empress</em> est l'un des manhwas de fantasy romantique les plus populaires, et il mérite pleinement ce statut. Sa force est son héroïne : Navier n'est pas une victime, elle est compétente, digne et prend ses propres décisions avec une clarté remarquable.</p><p>La dynamique de cour impériale est bien rendue, avec une politique et des intrigues crédibles. Le nouvel amour avec le roi Heinrey est développé avec soin, chaque personnage étant traité avec respect.</p><p>Le dessin est élégant, les costumes détaillés, et l'atmosphère de fantaisie royale bien établie. Un manhwa de référence du genre isekai/reincarnation romance.</p>",
+  pros: ["Héroïne forte et digne, pas victime", "Politique de cour bien construite", "Romance avec Heinrey bien développée"],
+  cons: ["Rythme lent pour les impatients", "Certains personnages secondaires manichéens"],
+  stars: 4,
+  category: "manhwa",
+  tags: "Romance · Fantasy · Manhwa · Royauté",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx113055-pGB4A5nzhFdF.jpg",
+  addedAt: "2026-03-22",
+  shops: [
+  {
+    "name": "Fnac",
+    "url": "https://www.fnac.com/SearchResult/ResultKNV.aspx?Search=remarried+empress+manhwa",
+    "logo": "/logos/fnac.svg"
+  },
+  {
+    "name": "Amazon",
+    "url": "https://www.amazon.fr/s?k=remarried+empress+manhwa",
+    "logo": "/logos/amazon.svg"
+  }
+  ],
+  streaming: []
+},
+
+{
+  slug: "who-made-me-a-princess",
+  title: "Who Made Me a Princess",
+  synopsis: "Athanasia se réveille en tant que princesse dans le roman qu'elle lisait — un roman où elle finit exécutée par son propre père, l'empereur Claude. Pour survivre, elle doit soit fuir, soit conquérir le coeur du père le plus froid du monde avant que l'histoire ne suive son cours.",
+  reviewHtml: "<p><em>Who Made Me a Princess</em> est l'archétype du manhwa de réincarnation dans un roman romantique, et l'un des meilleurs du genre. La prémisse — survivre dans un roman dont on connaît la fin tragique — est parfaitement exploitée.</p><p>La relation entre Athanasia et son père Claude est le coeur de la série. Voir un père glacial apprendre à aimer sa fille est un arc émotionnel traité avec beaucoup de soin et de naturel.</p><p>Le dessin est absolument magnifique, parmi les plus beaux du webtoon romantique. Les expressions des personnages et les palettes de couleurs sont soignées à l'extrême. Un must-read du genre.</p>",
+  pros: ["Dessin parmi les plus beaux du webtoon", "Relation père/fille touchante et bien développée", "Prémisse de réincarnation bien exploitée"],
+  cons: ["Rythme très lent dans les premiers chapitres", "Triangle amoureux tardif"],
+  stars: 5,
+  category: "manhwa",
+  tags: "Romance · Fantasy · Manhwa · Réincarnation",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx107521-M4x3AUb7UGIM.png",
+  addedAt: "2026-03-22",
+  shops: [
+  {
+    "name": "Fnac",
+    "url": "https://www.fnac.com/SearchResult/ResultKNV.aspx?Search=who+made+me+a+princess+manhwa",
+    "logo": "/logos/fnac.svg"
+  },
+  {
+    "name": "Amazon",
+    "url": "https://www.amazon.fr/s?k=who+made+me+a+princess+manhwa",
+    "logo": "/logos/amazon.svg"
+  }
+  ],
+  streaming: []
+},
+
+{
+  slug: "doctor-elise-the-royal-lady-with-the-lamp",
+  title: "Doctor Elise: The Royal Lady with the Lamp",
+  synopsis: "Elise de Clorence était une princesse cruelle dans sa première vie. Réincarnée, elle devient chirurgienne de haut niveau. Quand elle se retrouve de nouveau dans son premier corps de princesse, elle utilise ses connaissances médicales modernes dans un monde médiéval et tente de réparer les erreurs de son ancienne vie.",
+  reviewHtml: "<p><em>Doctor Elise</em> se distingue dans le genre réincarnation par son angle médical. Voir une chirurgienne moderne utiliser ses compétences dans un monde médiéval fantastique crée des situations ingénieuses et donne une substance narrative rare au genre.</p><p>Elise est une héroïne compétente et active, dont la rédemption — de princesse cruelle à médecin bienveillante — est traitée avec cohérence. Les arcs médicaux sont bien documentés sans être indigestes.</p><p>Le dessin est propre et expressif. Pour les amateurs de manhwas de romance avec un twist professionnel, c'est un excellent choix.</p>",
+  pros: ["Angle médical original et bien documenté", "Héroïne compétente et en rédemption", "Scénario plus substantiel que la moyenne"],
+  cons: ["Romance parfois en retrait face aux arcs médicaux", "Rythme irrégulier"],
+  stars: 4,
+  category: "manhwa",
+  tags: "Romance · Fantasy · Médecine · Manhwa · Réincarnation",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx107918-dScBgkOyp8Rv.jpg",
+  addedAt: "2026-03-22",
+  shops: [
+  {
+    "name": "Fnac",
+    "url": "https://www.fnac.com/SearchResult/ResultKNV.aspx?Search=doctor+elise+manhwa",
+    "logo": "/logos/fnac.svg"
+  },
+  {
+    "name": "Amazon",
+    "url": "https://www.amazon.fr/s?k=doctor+elise+manhwa",
+    "logo": "/logos/amazon.svg"
+  }
+  ],
+  streaming: []
+},
+
+{
+  slug: "under-the-oak-tree",
+  title: "Under the Oak Tree",
+  synopsis: "Maxi, fille d'un puissant duc mais affligée d'un bégaiement qui lui vaut le mépris de son père, épouse le chevalier Riftan Calypse, un homme de basse naissance mais d'immense valeur. Quand il revient trois ans après leur mariage forcé, couvert de gloire, leur relation malentendus et non-dits doit être reconstruite.",
+  reviewHtml: "<p><em>Under the Oak Tree</em> est l'un des manhwas romantiques les plus populaires, adapté d'un roman web coréen. Sa particularité est de placer une héroïne avec un handicap (bégaiement) au centre d'une romance médiévale fantastique, ce qui est rare.</p><p>La relation entre Maxi et Riftan est construite sur les malentendus et la communication difficile, mais évolue vers quelque chose de profond et tendre. Riftan est un amour intérêt passionné et protecteur, dont l'affection pour Maxi est palpable.</p><p>Le dessin détaillé des costumes et décors médiévaux est un plus. Pour les lecteurs qui apprécient les romances lentes et émotionnelles, c'est une lecture très satisfaisante.</p>",
+  pros: ["Héroïne avec bégaiement, représentation rare", "Romance lente et profonde", "Décors médiévaux bien détaillés"],
+  cons: ["Très axé romance, peu d'action", "Héros parfois trop parfait"],
+  stars: 4,
+  category: "manhwa",
+  tags: "Romance · Fantasy · Manhwa · Médiéval",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx123739-qDrNrU0ZD6UX.jpg",
+  addedAt: "2026-03-22",
+  shops: [
+  {
+    "name": "Fnac",
+    "url": "https://www.fnac.com/SearchResult/ResultKNV.aspx?Search=under+oak+tree+manhwa",
+    "logo": "/logos/fnac.svg"
+  },
+  {
+    "name": "Amazon",
+    "url": "https://www.amazon.fr/s?k=under+oak+tree+manhwa",
+    "logo": "/logos/amazon.svg"
+  }
+  ],
+  streaming: []
+},
+
+
+
+{
+  slug: "kill-the-villainess",
+  title: "Kill the Villainess",
+  synopsis: "Une jeune femme coréenne ordinaire se retrouve piégée dans le corps d'Eris Miserian, la vilaine antagoniste d'un roman romantique destinée à mourir. Désespérée de rentrer chez elle, elle cherche un moyen de se suicider pour sortir du roman, mais le monde lui-même semble résister à ses tentatives.",
+  reviewHtml: "<p><em>Kill the Villainess</em> est un manhwa de réincarnation qui prend le contre-pied du genre : l'héroïne ne veut pas prospérer dans ce monde, elle veut en partir. Cette prémisse subversive donne un ton plus sombre et mélancolique que la moyenne.</p><p>L'exploration psychologique de l'héroïne, piégée dans un corps qui n'est pas le sien et dans un destin qu'elle refuse, est menée avec une profondeur inhabituelle. Le monde du roman résiste activement à ses tentatives d'en sortir.</p><p>Le dessin est élégant, l'atmosphère gothique bien rendue. Un manhwa pour ceux qui cherchent plus de substance émotionnelle que la moyenne du genre.</p>",
+  pros: ["Prémisse subversive du genre vilaine", "Profondeur psychologique inhabituelle", "Atmosphère sombre et élégante"],
+  cons: ["Moins accessible que les manhwas romantiques standards", "Fin débattue"],
+  stars: 4,
+  category: "manhwa",
+  tags: "Romance · Fantasy · Manhwa · Psychologique",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx132165-vbmIhwI4JjeZ.jpg",
+  addedAt: "2026-03-22",
+  shops: [
+  {
+    "name": "Fnac",
+    "url": "https://www.fnac.com/SearchResult/ResultKNV.aspx?Search=kill+the+villainess+manhwa",
+    "logo": "/logos/fnac.svg"
+  },
+  {
+    "name": "Amazon",
+    "url": "https://www.amazon.fr/s?k=kill+the+villainess+manhwa",
+    "logo": "/logos/amazon.svg"
+  }
+  ],
+  streaming: []
+},
+
+{
+  slug: "roxana",
+  title: "Roxana",
+  synopsis: "Roxana Agrece, réincarnée dans le corps de la vilaine d'un roman, est la fille d'un duc cruel qui assassine ses propres enfants pour tester leur valeur. Pour survivre, elle doit conserver la faveur de son père impitoyable tout en protégeant discrètement le héros du roman, Sylvester, dont elle connaît le destin.",
+  reviewHtml: "<p><em>Roxana</em> (The Way to Protect the Female Lead's Older Brother) est un manhwa de réincarnation aux enjeux plus sombres que la moyenne. La position de l'héroïne est précaire dès le départ : dans une famille qui tue ses propres membres, chaque décision est une question de survie.</p><p>La relation entre Roxana et Sylvester est construite sur la protection réciproque et une confiance gagnée progressivement. Le père Agrece est l'un des antagonistes les plus menaçants du genre.</p><p>Le dessin est de bonne qualité, avec une palette sombre adaptée au ton. Un manhwa solide pour les lecteurs qui apprécient la tension et le danger dans leurs romances fantastiques.</p>",
+  pros: ["Enjeux de survie plus sombres que la moyenne", "Père antagoniste menaçant et crédible", "Tension maintenue tout au long"],
+  cons: ["Ambiance très sombre, pas pour tous", "Certains arcs complexes"],
+  stars: 4,
+  category: "manhwa",
+  tags: "Romance · Fantasy · Manhwa · Dark",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx129210-3QmLApie5gYJ.jpg",
+  addedAt: "2026-03-22",
+  shops: [
+  {
+    "name": "Fnac",
+    "url": "https://www.fnac.com/SearchResult/ResultKNV.aspx?Search=roxana+manhwa",
+    "logo": "/logos/fnac.svg"
+  },
+  {
+    "name": "Amazon",
+    "url": "https://www.amazon.fr/s?k=roxana+manhwa",
+    "logo": "/logos/amazon.svg"
+  }
+  ],
+  streaming: []
+},
+
+
+
+
+
+
+
+{
+  slug: "demon-queen-just-wants-to-make-peace",
+  title: "Mage and Demon Queen",
+  synopsis: "Malori est une aventurière qui, contrairement à tous ses confrères qui cherchent à tuer la Reine Démon Velverosa, veut la séduire. Armée d'un amour inébranlable et d'une magie médiocre, elle monte jusqu'aux niveaux les plus hauts du donjon de la Reine Démon pour lui déclarer sa flamme, encore et encore.",
+  reviewHtml: "<p><em>Mage and Demon Queen</em> d'Other est une comédie romantique fantasy girl-love qui fonctionne sur un gag répété mais irrésistible : Malori, aventurière nulle au combat, revient chaque semaine demander à la Reine Démon de l'épouser. La Reine, qui ne comprend pas, continue de la battre.</p><p>La série est légère, drôle et charmante, avec un humour meta sur les jeux de rôle et les donjon-crawlers. La romance entre les deux protagonistes se développe avec douceur sur fond de malentendus comiques.</p><p>Publiée sur Webtoon Canvas (plateforme amateur), c'est un exemple parfait de webtoon girl-love accessible et feel-good.</p>",
+  pros: ["Comédie romantique GL légère et charmante", "Humour meta sur les jeux de rôle", "Romance développée avec douceur"],
+  cons: ["Format court — chapitres très courts", "Gag répétitif peut lasser"],
+  stars: 3,
+  category: "manhwa",
+  tags: "Romance · Fantasy · Comédie · Webtoon · GL",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx147141-lfzXW6UehgUC.jpg",
+  addedAt: "2026-03-22",
+  shops: [
+  {
+    "name": "Fnac",
+    "url": "https://www.fnac.com/SearchResult/ResultKNV.aspx?Search=mage+demon+queen+webtoon",
+    "logo": "/logos/fnac.svg"
+  },
+  {
+    "name": "Amazon",
+    "url": "https://www.amazon.fr/s?k=mage+demon+queen+webtoon",
+    "logo": "/logos/amazon.svg"
+  }
+  ],
+  streaming: []
+},
+
+
+
+
+
+
+
+{
+  slug: "the-worn-and-torn-newbie",
+  title: "Worn and Torn Newbie",
+  synopsis: "Un joueur de MMORPG vétéran de 20 ans est mystérieusement renvoyé au premier jour de son expérience de jeu. Il conserve toute sa connaissance du jeu — chaque stratégie, chaque boss, chaque objet rare — et va utiliser cet avantage pour dominer le jeu différemment, avec les réflexes d'un novice et la sagesse d'un vétéran.",
+  reviewHtml: "<p><em>Worn and Torn Newbie</em> est un manhwa game isekai qui se distingue par son protagoniste : pas un néophyte qui découvre un monde de jeu, mais un expert absolu qui rejoue depuis le début avec une connaissance parfaite. La dynamique est inversée et rafraîchissante.</p><p>La connaissance méta du héros crée des situations où il prend des décisions incompréhensibles pour les autres joueurs mais brillantes en réalité. Le fun est de voir sa stratégie à long terme se révéler.</p><p>Le manhwa est bien rythme, avec un humour intégré naturellement. Pour les fans de gaming/isekai qui cherchent un angle différent.</p>",
+  pros: ["Protagoniste vétéran — dynamique inversée originale", "Stratégies à long terme bien construites", "Rythme dynamique"],
+  cons: ["Nécessite d'apprécier le contexte gaming", "Certains aspects fan-service"],
+  stars: 3,
+  category: "manhwa",
+  tags: "Action · Game · Webtoon · Manhwa · Isekai",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx127102-UUP1Oj14Wd4Y.jpg",
+  addedAt: "2026-03-22",
+  shops: [
+  {
+    "name": "Fnac",
+    "url": "https://www.fnac.com/SearchResult/ResultKNV.aspx?Search=worn+torn+newbie+manhwa",
+    "logo": "/logos/fnac.svg"
+  },
+  {
+    "name": "Amazon",
+    "url": "https://www.amazon.fr/s?k=worn+torn+newbie+manhwa",
+    "logo": "/logos/amazon.svg"
+  }
+  ],
+  streaming: []
+},
+
+
+
+
+
+{
+  slug: "my-s-class-hunters",
+  title: "The S-Classes That I Raised",
+  synopsis: "Han Yujin est un chasseur de classe F — le niveau le plus bas — qui a passé sa vie à soutenir son frère chasseur S. Après un accident mortel, il revient dans le passé avec la capacité unique de faire progresser les autres chasseurs vers leur classe maximale. Il va cette fois construire une équipe de S-Class en commençant par zéro.",
+  reviewHtml: "<p><em>The S-Classes That I Raised</em> est un manhwa de regression/returnee qui se distingue par son angle : le héros n'est pas lui-même surpuissant, mais son pouvoir est de rendre les autres surpuissants. Cette mécanique crée une dynamique de team-building original dans le genre.</p><p>Han Yujin est un héros attachant précisément parce qu'il n'est pas invincible — il compense par l'intelligence, la gestion et son pouvoir unique. Les personnages qu'il élève forment un cast diversifié et attachant.</p><p>Le manhwa est bien rythmé avec des arcs courts et satisfaisants. Pour les fans de gate/hunter manhwa avec une approche moins conventional.</p>",
+  pros: ["Mécanique de pouvoir unique (élever les autres)", "Héros non OP mais intelligent", "Cast d'élèves bien développé"],
+  cons: ["Conventions du genre gate/hunter non remises en question", "Certains arcs prévisibles"],
+  stars: 4,
+  category: "manhwa",
+  tags: "Action · Fantasy · Manhwa · Regression · Chasseurs",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx141958-y46ASozodVNW.jpg",
+  addedAt: "2026-03-22",
+  shops: [
+  {
+    "name": "Fnac",
+    "url": "https://www.fnac.com/SearchResult/ResultKNV.aspx?Search=s-classes+raised+manhwa",
+    "logo": "/logos/fnac.svg"
+  },
+  {
+    "name": "Amazon",
+    "url": "https://www.amazon.fr/s?k=s+classes+raised+manhwa",
+    "logo": "/logos/amazon.svg"
+  }
+  ],
+  streaming: []
+},
 
 ]
