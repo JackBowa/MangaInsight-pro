@@ -4491,5 +4491,1291 @@ export const SERIES_2: Serie[] = [
   ],
   streaming: []
 },
+{
+  slug: "level-up-with-the-gods",
+  title: "Leveling with the Gods",
+  synopsis: "Kim YuWon, un ranker légendaire, revient dans le passé après la destruction de la Tour. Armé de sa mémoire du futur et d'un système de progression unique, il remonte les étages de la Tour afin d'empêcher la catastrophe à venir, forgeant des alliances avec des êtres mythologiques comme Hercule et Odin.",
+  reviewHtml: "<p><em>Leveling with the Gods</em> se distingue dans le genre murim/tower par son utilisation inventive de la mythologie mondiale — les personnages puissants de la Tour sont des dieux et héros de différentes mythologies. Cette couche mythologique donne du relief à ce qui pourrait être un regression manhwa standard.</p><p>Le système de progression est bien pensé, et Kim YuWon est un héros compétent et stratège plutôt que bourrin. Les alliances avec des figures mythologiques sont bien intégrées à la narration.</p><p>Bonne qualité de dessin, rythme soutenu. Un des meilleurs manhwas du genre tower/regression disponibles.</p>",
+  pros: ["Mythologie mondiale bien intégrée", "Héros stratège et compétent", "Rythme soutenu et addictif"],
+  cons: ["Dense en personnages mythologiques", "Certaines alliances non développées"],
+  stars: 4,
+  category: "manhwa",
+  tags: "Action · Fantasy · Manhwa · Tower · Mythologie",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx138222-PyVZk5MOWP07.png",
+  addedAt: "2026-03-22",
+  shops: [
+  {
+    "name": "Fnac",
+    "url": "https://www.fnac.com/SearchResult/ResultKNV.aspx?Search=leveling+gods+manhwa",
+    "logo": "/logos/fnac.svg"
+  },
+  {
+    "name": "Amazon",
+    "url": "https://www.amazon.fr/s?k=leveling+gods+manhwa",
+    "logo": "/logos/amazon.svg"
+  }
+  ],
+  streaming: []
+},
+
+{
+  slug: "the-gamer",
+  title: "The Gamer",
+  synopsis: "Han Jee-Han découvre qu'il perçoit le monde réel comme un jeu vidéo : des statistiques flottent au-dessus de tout, il peut gagner des niveaux et des compétences. Il doit naviguer dans ce monde transformé en RPG tout en découvrant que des guildes de pouvoirs spéciaux se cachent dans la réalité.",
+  reviewHtml: "<p><em>The Gamer</em> est l'un des manhwas pionniers du genre 'game mechanics in real world'. L'idée de percevoir le monde comme un RPG avec stats et niveaux y est déclinée avec humour et inventivité.</p><p>Le système de progression est cohérent et créatif — les compétences acquises par Han Jee-Han sont variées et les façons de monter en niveau souvent originales. La découverte progressive du monde souterrain des pouvoirs est bien rythmée.</p><p>Le dessin est correct sans être exceptionnel. Une série fondatrice du genre, agréable malgré quelques arcs inégaux.</p>",
+  pros: ["Pionnier du genre game mechanics", "Système de progression créatif", "Découverte du monde souterrain bien rythmée"],
+  cons: ["Dessin inégal", "Certains arcs s'étirent"],
+  stars: 3,
+  category: "manhwa",
+  tags: "Action · Fantasy · Manhwa · Game · RPG",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/b85155-HtYBpaLAa9E7.jpg",
+  addedAt: "2026-03-22",
+  shops: [
+  {
+    "name": "Fnac",
+    "url": "https://www.fnac.com/SearchResult/ResultKNV.aspx?Search=the+gamer+manhwa",
+    "logo": "/logos/fnac.svg"
+  },
+  {
+    "name": "Amazon",
+    "url": "https://www.amazon.fr/s?k=the+gamer+manhwa",
+    "logo": "/logos/amazon.svg"
+  }
+  ],
+  streaming: []
+},
+
+
+
+{
+  slug: "hwasanjeonsaeng",
+  title: "Volcanic Age",
+  synopsis: "Joo Seo-Cheon, un vieux maître d'arts martiaux sur son lit de mort, se réveille dans son corps de jeune apprenti. Avec 60 ans d'expérience de combat et de connaissance du monde murim, il va cette fois éviter les erreurs du passé et atteindre le sommet des arts martiaux.",
+  reviewHtml: "<p><em>Volcanic Age</em> est un manhwa de regression murim solide et bien exécuté. La prémisse du vieux maître qui revient dans son jeune corps est familière dans le genre, mais l'auteur l'exploite avec efficacité.</p><p>Joo Seo-Cheon est un protagoniste appréciable : sa sagesse acquise contraste avec sa jeunesse retrouvée, et ses décisions stratégiques témoignent de son expérience. Les arts martiaux sont bien représentés.</p><p>Bon divertissement pour les amateurs du genre murim/regression, avec un rythme soutenu et des combats satisfaisants.</p>",
+  pros: ["Héros expérimenté et stratège", "Rythme soutenu", "Arts martiaux bien représentés"],
+  cons: ["Formule classique du genre", "Manque de surprises narratives"],
+  stars: 3,
+  category: "manhwa",
+  tags: "Action · Arts martiaux · Manhwa · Murim · Regression",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx101418-YMJ7vXuXyZ1q.png",
+  addedAt: "2026-03-22",
+  shops: [
+  {
+    "name": "Fnac",
+    "url": "https://www.fnac.com/SearchResult/ResultKNV.aspx?Search=volcanic+age+manhwa",
+    "logo": "/logos/fnac.svg"
+  },
+  {
+    "name": "Amazon",
+    "url": "https://www.amazon.fr/s?k=volcanic+age+manhwa",
+    "logo": "/logos/amazon.svg"
+  }
+  ],
+  streaming: []
+},
+
+{
+  slug: "the-legendary-spearman-returns",
+  title: "Return of the Legendary Spear Knight",
+  synopsis: "Joshua Sanders, reconnu comme le meilleur lancier du monde, est trahi et tué. Il se retrouve projeté dans le passé, dans son corps d'enfant. Il va cette fois utiliser sa maîtrise de la lance et sa connaissance du futur pour bâtir sa propre puissance plutôt que de servir les nobles qui l'ont trahi.",
+  reviewHtml: "<p><em>Return of the Legendary Spear Knight</em> est un manhwa de revenge/regression centré sur un protagoniste dont la spécialité — la lance — est inhabituellement rare dans le genre. Cette distinction donne une identité à la série dans un marché encombré.</p><p>La progression de Joshua est satisfaisante, ses combats à la lance bien chorégraphiés. La politique de la noblesse et les motivations de ses anciens traîtres sont développées suffisamment pour donner de la substance au revenge plot.</p><p>Solide dans son genre, recommandé pour les fans de manhwa regression/revenge qui cherchent quelque chose de légèrement différent.</p>",
+  pros: ["Protagoniste à la lance — originalité dans le genre", "Revenge plot satisfaisant", "Combats bien chorégraphiés"],
+  cons: ["Formule classique regression/revenge", "Certains personnages secondaires peu développés"],
+  stars: 3,
+  category: "manhwa",
+  tags: "Action · Fantasy · Manhwa · Regression · Revenge",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx141479-9h8eyaxyRZP8.jpg",
+  addedAt: "2026-03-22",
+  shops: [
+  {
+    "name": "Fnac",
+    "url": "https://www.fnac.com/SearchResult/ResultKNV.aspx?Search=legendary+spear+knight+manhwa",
+    "logo": "/logos/fnac.svg"
+  },
+  {
+    "name": "Amazon",
+    "url": "https://www.amazon.fr/s?k=legendary+spear+knight+manhwa",
+    "logo": "/logos/amazon.svg"
+  }
+  ],
+  streaming: []
+},
+
+{
+  slug: "the-max-level-hero-strikes-back",
+  title: "The Max Level Hero Has Returned",
+  synopsis: "Davey, prince d'un petit royaume méprisé, tombe dans un coma profond après une tentative d'assassinat. Son âme est projetée dans un monde de héros légendaires où il passe 1000 ans à apprendre auprès des plus grands. Il se réveille level max et commence sa vengeance contre ceux qui l'ont sous-estimé.",
+  reviewHtml: "<p><em>The Max Level Hero Has Returned</em> est un manhwa power fantasy très bien exécuté. L'arc de formation de 1000 ans chez des héros légendaires donne une légitimité inhabituelle au niveau de puissance du protagoniste.</p><p>Le contraste entre le prince méprisé et ses capacités secrètes est exploité avec humour et satisfaction. Les réactions des antagonistes qui continuent à le sous-estimer pendant qu'il les défait sont une source de plaisir constant.</p><p>Dessin dynamique, rythme addictif. Un des power fantasy manhwas les plus plaisants du genre.</p>",
+  pros: ["Formation légendaire de 1000 ans crédibilise le pouvoir", "Humour et satisfaction du 'surprise power reveal'", "Rythme addictif"],
+  cons: ["Power fantasy assumé, peu de tension", "Antagonistes prévisibles"],
+  stars: 4,
+  category: "manhwa",
+  tags: "Action · Fantasy · Manhwa · Royauté · Power Fantasy",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx125636-g0gkyLZbo3Tz.png",
+  addedAt: "2026-03-22",
+  shops: [
+  {
+    "name": "Fnac",
+    "url": "https://www.fnac.com/SearchResult/ResultKNV.aspx?Search=max+level+hero+manhwa",
+    "logo": "/logos/fnac.svg"
+  },
+  {
+    "name": "Amazon",
+    "url": "https://www.amazon.fr/s?k=max+level+hero+manhwa",
+    "logo": "/logos/amazon.svg"
+  }
+  ],
+  streaming: []
+},
+
+
+
+{
+  slug: "limit-breaker",
+  title: "Limit Breaker",
+  synopsis: "Kim Kibong est un chasseur de donjons qui a passé 99 ans à combattre dans un donjon d'élite sans pouvoir en sortir. Quand il en sort enfin, le monde a changé mais ses niveaux ont atteint des sommets impossibles. Il doit réapprendre à vivre dans un monde moderne tout en étant l'être le plus puissant.",
+  reviewHtml: "<p><em>Limit Breaker</em> a une prémisse originale dans le genre gate/hunter : 99 ans de combat en boucle créent un protagoniste techniquement vieux mais physiquement jeune, avec un niveau hors normes. La réadaptation au monde moderne est traitée avec un humour touchant.</p><p>Les combats sont impressionnants, le système de puissance bien établi. Le manhwa traite aussi des traumatismes de l'isolement prolongé avec une sensibilité appréciable.</p><p>Un manhwa d'action solide avec un angle émotionnel plus développé que la moyenne du genre.</p>",
+  pros: ["Prémisse originale (99 ans de donjon)", "Angle émotionnel sur la réadaptation", "Combats impressionnants"],
+  cons: ["Certains arcs de réadaptation étirés", "Formule gate/hunter familière"],
+  stars: 4,
+  category: "manhwa",
+  tags: "Action · Fantasy · Manhwa · Gate · Regression",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx126733-TPF1BIeD2fMM.jpg",
+  addedAt: "2026-03-22",
+  shops: [
+  {
+    "name": "Fnac",
+    "url": "https://www.fnac.com/SearchResult/ResultKNV.aspx?Search=limit+breaker+manhwa",
+    "logo": "/logos/fnac.svg"
+  },
+  {
+    "name": "Amazon",
+    "url": "https://www.amazon.fr/s?k=limit+breaker+manhwa",
+    "logo": "/logos/amazon.svg"
+  }
+  ],
+  streaming: []
+},
+
+{
+  slug: "after-ten-millennia-in-hell",
+  title: "Player Who Returned 10000 Years Later",
+  synopsis: "Ko Woojin est un chasseur de rang D qui se retrouve enfermé dans une dimension infernale pendant 10 000 ans. Il en revient avec un niveau de puissance incompréhensible et les souvenirs de millénaires de survie. Sa réintégration dans un monde de chasseurs qui l'avaient abandonné est l'occasion d'une vengeance froide et méthodique.",
+  reviewHtml: "<p><em>Player Who Returned 10000 Years Later</em> pousse à l'extrême la logique du time skip : 10 000 ans d'enfer donne un protagoniste qui n'a plus grand-chose d'humain, mais dont la quête de vengeance reste lisible. La puissance absolue est bien dosée pour rester intéressante.</p><p>Le manhwa exploite bien le contraste entre Ko Woojin et les chasseurs actuels qui ont profité de son absence. La froide efficacité du héros dans ses vengeances est satisfaisante et crédible.</p><p>Dessin de qualité, rythme efficace. Un power fantasy parmi les plus extrêmes du genre, bien exécuté.</p>",
+  pros: ["Time skip extrême (10 000 ans) bien exploité", "Vengeance froide et satisfaisante", "Puissance absolue bien dosée"],
+  cons: ["Peu de tension dramatique", "Héros trop puissant crée de la distance"],
+  stars: 3,
+  category: "manhwa",
+  tags: "Action · Fantasy · Manhwa · Power Fantasy · Revenge",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx153284-roAlRmlRM7Vs.png",
+  addedAt: "2026-03-22",
+  shops: [
+  {
+    "name": "Fnac",
+    "url": "https://www.fnac.com/SearchResult/ResultKNV.aspx?Search=player+returned+10000+years+manhwa",
+    "logo": "/logos/fnac.svg"
+  },
+  {
+    "name": "Amazon",
+    "url": "https://www.amazon.fr/s?k=player+returned+10000+manhwa",
+    "logo": "/logos/amazon.svg"
+  }
+  ],
+  streaming: []
+},
+
+{
+  slug: "doom-breaker",
+  title: "Reincarnation of the Suicidal Battle God",
+  synopsis: "Zephyr, le dernier héros humain, échoue à vaincre le Seigneur des Démons après une lutte de dix ans. Avant de mourir, il est envoyé dix ans dans le passé par un dieu mystérieux. Avec la connaissance de tous ses futurs échecs, il doit reconstruire une nouvelle stratégie pour changer l'issue de la guerre.",
+  reviewHtml: "<p><em>Doom Breaker</em> (Reincarnation of the Suicidal Battle God) est un manhwa de regression/second chance de haute qualité. Sa particularité est que le héros revient non pas comme un adolescent, mais en pleine capacité, ce qui change la dynamique du genre.</p><p>Zephyr est un protagoniste fascinant — marqué par des années de guerre solitaire, méthodique et calculateur. La refonte de sa stratégie en sachant ce qui n'a pas fonctionné est satisfaisante et bien détaillée.</p><p>Le dessin des combats est parmi les meilleurs du genre, avec une énergie et une dynamique rares. Un manhwa de référence pour les amateurs de second chance/regression.</p>",
+  pros: ["Héros revenu mature et stratège", "Dynamique de second chance originale", "Dessin des combats exceptionnel"],
+  cons: ["Dense, nécessite de suivre la chronologie", "Certains arcs complexes"],
+  stars: 5,
+  category: "manhwa",
+  tags: "Action · Fantasy · Manhwa · Regression · Combat",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx136220-u9sewv3u02mN.jpg",
+  addedAt: "2026-03-22",
+  shops: [
+  {
+    "name": "Fnac",
+    "url": "https://www.fnac.com/SearchResult/ResultKNV.aspx?Search=doom+breaker+manhwa",
+    "logo": "/logos/fnac.svg"
+  },
+  {
+    "name": "Amazon",
+    "url": "https://www.amazon.fr/s?k=doom+breaker+manhwa",
+    "logo": "/logos/amazon.svg"
+  }
+  ],
+  streaming: []
+},
+
+{
+  slug: "the-skeleton-soldier-failed-to-defend-the-dungeon",
+  title: "The Skeleton Soldier Failed to Defend the Dungeon",
+  synopsis: "Un squelette sans nom, invoqué pour défendre une nécromancienne, échoue à la protéger. À sa mort, il découvre qu'il peut revivre depuis un point de sauvegarde antérieur. À chaque cycle, il conserve ses souvenirs et devient progressivement plus fort, déterminé à changer l'issue tragique.",
+  reviewHtml: "<p><em>The Skeleton Soldier Failed to Defend the Dungeon</em> est l'un des manhwas les plus originaux et émotionnellement riches du genre loop/regression. Le protagoniste — un squelette sans statut social, sans nom, dont la seule raison d'être est de protéger sa maîtresse — est d'une poignance inattendue.</p><p>Les boucles temporelles sont utilisées intelligemment : chaque cycle apporte de nouvelles informations sur le monde et les personnages, révélant progressivement la profondeur de l'histoire. Les thèmes de persévérance et d'attachement sont traités avec sincérité.</p><p>Un manhwa qui dépasse largement les attentes du genre, à lire absolument pour les amateurs de récits émotionnels et d'action.</p>",
+  pros: ["Protagoniste inattendu et touchant", "Boucles temporelles exploitées intelligemment", "Profondeur émotionnelle rare dans le genre"],
+  cons: ["Début humble qui peut décourager", "Dessin modeste au départ"],
+  stars: 5,
+  category: "manhwa",
+  tags: "Action · Fantasy · Manhwa · Loop · Émotion",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx103156-yTVWAW2N8uGi.jpg",
+  addedAt: "2026-03-22",
+  shops: [
+  {
+    "name": "Fnac",
+    "url": "https://www.fnac.com/SearchResult/ResultKNV.aspx?Search=skeleton+soldier+manhwa",
+    "logo": "/logos/fnac.svg"
+  },
+  {
+    "name": "Amazon",
+    "url": "https://www.amazon.fr/s?k=skeleton+soldier+manhwa",
+    "logo": "/logos/amazon.svg"
+  }
+  ],
+  streaming: []
+},
+
+{
+  slug: "descent-of-the-demon-master",
+  title: "Descent of the Demonic Master",
+  synopsis: "Jinho Kang meurt dans un accident de voiture. Il se retrouve réincarné dans un monde de cultivation en tant que disciple démoniaque, y vit et y meurt. Puis il se réincarne de nouveau dans son monde moderne d'origine, avec les souvenirs et les pouvoirs de sa vie de cultivateur. Il doit vivre normalement tout en gérant des capacités surhumaines.",
+  reviewHtml: "<p><em>Descent of the Demonic Master</em> est un manhwa qui propose une double réincarnation originale : un monde moderne, puis un monde de cultivation, puis retour au monde moderne. Cette structure donne au héros une double perspective rare.</p><p>La vie normale de Jinho — famille, école, quotidien coréen — contraste avec ses capacités surhumaines et son expérience de cultivateur démoniaque. Cette dualité est bien exploitée, avec un humour qui découle naturellement des situations.</p><p>Les combats sont dynamiques et bien illustrés. Une lecture plaisante pour les fans de cultivation et d'isekai inversé.</p>",
+  pros: ["Double réincarnation originale", "Contraste vie normale/pouvoirs bien exploité", "Humour naturel des situations"],
+  cons: ["Formule familière malgré la prémisse originale", "Certains arcs prévisibles"],
+  stars: 4,
+  category: "manhwa",
+  tags: "Action · Cultivation · Manhwa · Réincarnation · Moderne",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx113607-RD07LGoJbEFP.jpg",
+  addedAt: "2026-03-22",
+  shops: [
+  {
+    "name": "Fnac",
+    "url": "https://www.fnac.com/SearchResult/ResultKNV.aspx?Search=descent+demonic+master+manhwa",
+    "logo": "/logos/fnac.svg"
+  },
+  {
+    "name": "Amazon",
+    "url": "https://www.amazon.fr/s?k=descent+demonic+master+manhwa",
+    "logo": "/logos/amazon.svg"
+  }
+  ],
+  streaming: []
+},
+
+{
+  slug: "heavenly-demon-reborn",
+  title: "Heavenly Demon Reborn!",
+  synopsis: "Le Démon Céleste, le plus grand guerrier démoniaque du monde murim, est tué par traîtrise. Réincarné dans le corps d'un orphelin, il reconstruit progressivement sa puissance depuis zéro, avec pour objectif de retrouver ceux qui l'ont trahi et d'atteindre de nouveau le sommet.",
+  reviewHtml: "<p><em>Heavenly Demon Reborn!</em> est un manhwa murim/reincarnation bien construit qui se distingue par la personnalité de son protagoniste. Le Démon Céleste n'est pas un héros conventionnel — ses méthodes sont dures, sa morale flexible, et cette nuance est maintenue tout au long de la série.</p><p>Le worldbuilding du murim est riche, avec des sectes, des clans et des factions bien développés. La progression du héros est satisfaisante sans être trop rapide.</p><p>Dessin de bonne qualité, combats lisibles et dynamiques. Un des meilleurs manhwas murim du genre reincarnation.</p>",
+  pros: ["Protagoniste ambigu — ni héros classique ni villain", "Worldbuilding murim riche", "Progression bien rythmée"],
+  cons: ["Très long (progression lente)", "Formule reincarnation murim familière"],
+  stars: 4,
+  category: "manhwa",
+  tags: "Action · Arts martiaux · Manhwa · Murim · Réincarnation",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx107518-mIYnC1TQIe4P.png",
+  addedAt: "2026-03-22",
+  shops: [
+  {
+    "name": "Fnac",
+    "url": "https://www.fnac.com/SearchResult/ResultKNV.aspx?Search=heavenly+demon+reborn+manhwa",
+    "logo": "/logos/fnac.svg"
+  },
+  {
+    "name": "Amazon",
+    "url": "https://www.amazon.fr/s?k=heavenly+demon+reborn+manhwa",
+    "logo": "/logos/amazon.svg"
+  }
+  ],
+  streaming: []
+},
+
+{
+  slug: "log-in-murim",
+  title: "Murim Login",
+  synopsis: "Jin Taekyung est un chasseur de rang F qui passe son temps dans un jeu VRMMORPG sur le monde du murim. Quand il perd son équipement dans le jeu, il y reste pour le récupérer — et réalise que ses actions dans le jeu affectent le monde réel. Les adversaires du jeu commencent à apparaître dans la réalité.",
+  reviewHtml: "<p><em>Murim Login</em> est une fusion habile de deux genres populaires : le manhwa de chasseurs de donjons et le manhwa murim. La mécanique de jeu qui influence le monde réel est bien exploitée et crée des situations inédites dans les deux genres.</p><p>Jin Taekyung est un héros sympathique — un loser qui compense par une maîtrise du jeu. Sa progression parallèle dans le monde virtuel et réel est bien rythmée et satisfaisante.</p><p>Dessin dynamique, combats variés. L'un des manhwas qui réussit le mieux la fusion murim/game.</p>",
+  pros: ["Fusion murim/game bien exécutée", "Mécanique jeu/réalité originale", "Héros underdog attachant"],
+  cons: ["Peut sembler décousu au départ", "Certains aspects du jeu peu expliqués"],
+  stars: 4,
+  category: "manhwa",
+  tags: "Action · Fantasy · Manhwa · Murim · Game",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx120385-4JYGuOR6cn72.jpg",
+  addedAt: "2026-03-22",
+  shops: [
+  {
+    "name": "Fnac",
+    "url": "https://www.fnac.com/SearchResult/ResultKNV.aspx?Search=murim+login+manhwa",
+    "logo": "/logos/fnac.svg"
+  },
+  {
+    "name": "Amazon",
+    "url": "https://www.amazon.fr/s?k=murim+login+manhwa",
+    "logo": "/logos/amazon.svg"
+  }
+  ],
+  streaming: []
+},
+
+{
+  slug: "hwasangwonma",
+  title: "Fist Demon of Mount Hua",
+  synopsis: "Chung Myung, le plus grand épéiste du Mont Hua, meurt après avoir scellé le Seigneur des Démons au prix de sa vie. Réincarné 100 ans plus tard dans le corps d'un jeune disciple négligé du même sect, il retrouve un clan Hua dégénéré et décide de le restaurer à sa gloire passée.",
+  reviewHtml: "<p><em>Fist Demon of Mount Hua</em> est un manhwa murim/reincarnation populaire dont la force est son héros : Chung Myung est sarcastique, hilarant et infiniment compétent. Son mépris affiché pour les disciples actuels de son ancien sect, combiné à sa démonstration constante de leur infériorité, génère un humour de situation récurrent et jouissif.</p><p>La restauration progressive du sect de Mont Hua est un arc narratif bien construit, où chaque personnage secondaire est développé avec soin.</p><p>Dessin efficace et expressif. Un des manhwas murim les plus plaisants grâce à son ton.</p>",
+  pros: ["Héros sarcastique et hilarant", "Restauration du sect bien construite", "Humour de situation constant"],
+  cons: ["Très long, format webtoon très étiré", "Certains arcs répétitifs"],
+  stars: 4,
+  category: "manhwa",
+  tags: "Action · Arts martiaux · Manhwa · Murim · Comédie",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx130210-uTICEzqOLxFg.jpg",
+  addedAt: "2026-03-22",
+  shops: [
+  {
+    "name": "Fnac",
+    "url": "https://www.fnac.com/SearchResult/ResultKNV.aspx?Search=fist+demon+mount+hua+manhwa",
+    "logo": "/logos/fnac.svg"
+  },
+  {
+    "name": "Amazon",
+    "url": "https://www.amazon.fr/s?k=mount+hua+fist+demon+manhwa",
+    "logo": "/logos/amazon.svg"
+  }
+  ],
+  streaming: []
+},
+
+{
+  slug: "the-world-after-the-fall",
+  title: "The World After the Fall",
+  synopsis: "Dans un monde envahi de tours et de monstres, les survivants ont découvert qu'ils pouvaient revenir dans le passé. Tout le monde fuit sauf Jaehwan, qui choisit de rester et de continuer à combattre — convaincu que fuir ne fait qu'empirer les choses. Son obstination ouvre une nouvelle voie dans un monde en ruine.",
+  reviewHtml: "<p><em>The World After the Fall</em> est l'un des manhwas les plus intellectuellement ambitieux du genre gate/tower. Le concept de base — tout le monde fuit dans le passé sauf le héros — est une métaphore forte sur la fuite face à l'adversité.</p><p>Le récit prend une ampleur épique et philosophique inattendue, explorant des thèmes de responsabilité, de sacrifice et de ce que signifie vraiment sauver un monde. Le worldbuilding est riche et original.</p><p>Dessin de haute qualité. Un manhwa pour les lecteurs qui veulent plus que du power fantasy — une réflexion sur l'héroïsme.</p>",
+  pros: ["Ambition narrative et philosophique rare", "Worldbuilding original et riche", "Thèmes de responsabilité bien traités"],
+  cons: ["Dense, nécessite attention", "Rythme lent pour les impatients"],
+  stars: 5,
+  category: "manhwa",
+  tags: "Action · Fantasy · Manhwa · Post-apocalyptique · Philosophique",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx144957-h0qIwRwxOEdg.jpg",
+  addedAt: "2026-03-22",
+  shops: [
+  {
+    "name": "Fnac",
+    "url": "https://www.fnac.com/SearchResult/ResultKNV.aspx?Search=world+after+fall+manhwa",
+    "logo": "/logos/fnac.svg"
+  },
+  {
+    "name": "Amazon",
+    "url": "https://www.amazon.fr/s?k=world+after+fall+manhwa",
+    "logo": "/logos/amazon.svg"
+  }
+  ],
+  streaming: []
+},
+
+{
+  slug: "tomb-raider-king",
+  title: "Tomb Raider King",
+  synopsis: "Des reliques divines commencent à apparaître dans des tombes à travers le monde, conférant des pouvoirs surnaturels à ceux qui les trouvent. Johra est tué par son patron après avoir localisé une relique majeure. Il revient dix ans en arrière avec la connaissance de l'emplacement de toutes les reliques et la volonté de les monopoliser.",
+  reviewHtml: "<p><em>Tomb Raider King</em> est un manhwa d'action/adventure qui combine l'exploration archéologique et les pouvoirs surnaturels avec un protagoniste pragmatique et calculateur. La course aux reliques crée un terrain narratif bien exploité.</p><p>Johra est un héros moralement ambigu — il monopolise les reliques non pour sauver le monde mais pour sa propre puissance. Cette honnêteté sur les motivations du personnage est rafraîchissante.</p><p>Dessin dynamique avec de belles scènes d'exploration. Un manhwa solide pour les amateurs d'aventure et de power fantasy.</p>",
+  pros: ["Thème d'exploration archéologique original", "Héros pragmatique et moralement ambigu", "Course aux reliques bien rythmée"],
+  cons: ["Héros peu sympathique par conception", "Certains arcs très action-oriented"],
+  stars: 3,
+  category: "manhwa",
+  tags: "Action · Aventure · Manhwa · Reliques · Regression",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx110462-okQFIoSFvb4L.jpg",
+  addedAt: "2026-03-22",
+  shops: [
+  {
+    "name": "Fnac",
+    "url": "https://www.fnac.com/SearchResult/ResultKNV.aspx?Search=tomb+raider+king+manhwa",
+    "logo": "/logos/fnac.svg"
+  },
+  {
+    "name": "Amazon",
+    "url": "https://www.amazon.fr/s?k=tomb+raider+king+manhwa",
+    "logo": "/logos/amazon.svg"
+  }
+  ],
+  streaming: []
+},
+
+{
+  slug: "hero-killer",
+  title: "Hero Killer",
+  synopsis: "Dans un monde de super-héros, Ban Hajin est un gamin ordinaire dont l'admiration pour les héros se transforme en obsession puis en haine quand il découvre la corruption qui se cache derrière le système héroïque. Armé d'un pouvoir qui annule les capacités des autres, il décide d'exposer et d'éliminer les faux héros.",
+  reviewHtml: "<p><em>Hero Killer</em> est un manhwa déconstruction du genre super-héros avec une noirceur assumée. La critique du système héroïque comme industrie corrompue est menée sans compromis.</p><p>Ban Hajin est un protagoniste difficile — sa haine est compréhensible mais ses méthodes sont extrêmes. Cette ambiguïté morale est le coeur de la série et la rend plus intéressante qu'un simple récit de vengeance.</p><p>Dessin efficace, atmosphère sombre bien maintenue. Pour les lecteurs qui apprécient les déconstructions du genre super-héros dans la veine de Killing Stalking ou The Boys.</p>",
+  pros: ["Déconstruction du genre super-héros efficace", "Ambiguïté morale du protagoniste intéressante", "Critique sociale bien intégrée"],
+  cons: ["Très sombre, pas pour tous", "Peut être épuisant émotionnellement"],
+  stars: 4,
+  category: "manhwa",
+  tags: "Action · Super-héros · Manhwa · Déconstruction · Dark",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/87490-Ey3xJFxaxXvA.jpg",
+  addedAt: "2026-03-22",
+  shops: [
+  {
+    "name": "Fnac",
+    "url": "https://www.fnac.com/SearchResult/ResultKNV.aspx?Search=hero+killer+manhwa",
+    "logo": "/logos/fnac.svg"
+  },
+  {
+    "name": "Amazon",
+    "url": "https://www.amazon.fr/s?k=hero+killer+manhwa",
+    "logo": "/logos/amazon.svg"
+  }
+  ],
+  streaming: []
+},
+
+{
+  slug: "the-lazy-lord-masters-the-sword",
+  title: "Reformation of the Deadbeat Noble",
+  synopsis: "Irene Pareira est un noble paresseux qui ne fait rien depuis des années, traumatisé par un passé difficile. Un jour, il observe un vieux vagabond manier l'épée avec une grâce incomparable pendant trois ans. Cette observation silencieuse l'entraîne sur la voie de l'épée de façon inattendue.",
+  reviewHtml: "<p><em>Reformation of the Deadbeat Noble</em> est un manhwa d'arts martiaux fantastique qui surprend par son rythme délibérément lent et contemplatif. L'apprentissage d'Irene n'est pas dû à des pouvoirs surnaturels mais à une observation patiente — une approche rare dans le genre.</p><p>Le protagoniste est un anti-héros atypique : sa paresse est présentée non comme un défaut comique mais comme une protection psychologique contre un passé traumatique. Sa transformation est progressive et crédible.</p><p>Le dessin des scènes de combat est excellent, avec une élégance qui reflète la philosophie martiale de la série. Un manhwa pour les lecteurs qui apprécient la narration patient.</p>",
+  pros: ["Apprentissage par observation — approche rare", "Protagoniste complexe et crédible", "Combat élégant et bien illustré"],
+  cons: ["Rythme lent, pas pour les impatients", "Premier arc très contemplatif"],
+  stars: 4,
+  category: "manhwa",
+  tags: "Action · Fantasy · Manhwa · Épée · Redemption",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx135325-YAhEGWro8zFK.jpg",
+  addedAt: "2026-03-22",
+  shops: [
+  {
+    "name": "Fnac",
+    "url": "https://www.fnac.com/SearchResult/ResultKNV.aspx?Search=reformation+deadbeat+noble+manhwa",
+    "logo": "/logos/fnac.svg"
+  },
+  {
+    "name": "Amazon",
+    "url": "https://www.amazon.fr/s?k=reformation+deadbeat+noble+manhwa",
+    "logo": "/logos/amazon.svg"
+  }
+  ],
+  streaming: []
+},
+{
+  slug: "i-am-the-sorcerer-king",
+  title: "I Am the Sorcerer King",
+  synopsis: "Il y a dix ans, un portail vers un autre monde a ouvert en libérant des monstres sur Terre. Lee SungHoon, jeune homme ordinaire, se fait mordre par un monstre lors d'un raid et se réveille avec les souvenirs de sa vie passée de sorcier le plus puissant du monde magique. Il va reconstruire sa puissance dans ce monde moderne.",
+  reviewHtml: "<p><em>I Am the Sorcerer King</em> est un manhwa gate/réincarnation solide qui se distingue par son système de magie bien construit. Le héros, ancien sorcier roi réincarné, dispose d'un arsenal de sorts variés que l'auteur exploite avec créativité dans les combats.</p><p>Le worldbuilding des dimensions alternatives et des monstres est travaillé, avec une lore qui se développe progressivement. Les combats sont visuellement dynamiques et variés.</p><p>Sans réinventer le genre, c'est une exécution propre d'une formule appréciée. Bon divertissement pour les fans de gate manhwa.</p>",
+  pros: ["Système de magie bien construit", "Combats variés et dynamiques", "Lore développée progressivement"],
+  cons: ["Formule gate/réincarnation classique", "Rythme inégal"],
+  stars: 3,
+  category: "manhwa",
+  tags: "Action · Fantasy · Manhwa · Gate · Magie",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx110042-cHMKKa0lxiaJ.png",
+  addedAt: "2026-03-22",
+  shops: [
+  {
+    "name": "Fnac",
+    "url": "https://www.fnac.com/SearchResult/ResultKNV.aspx?Search=sorcerer+king+manhwa",
+    "logo": "/logos/fnac.svg"
+  },
+  {
+    "name": "Amazon",
+    "url": "https://www.amazon.fr/s?k=sorcerer+king+manhwa",
+    "logo": "/logos/amazon.svg"
+  }
+  ],
+  streaming: []
+},
+
+
+
+{
+  slug: "god-of-blackfield",
+  title: "God of Blackfield",
+  synopsis: "Kang Chan, légendaire mercenaire surnommé le Dieu du Champ de Bataille, est tué en Afrique. Il se réveille dans le corps d'un lycéen coréen qui portait le même nom. Avec les instincts et les compétences d'un soldats d'élite dans le corps d'un adolescent, il doit naviguer entre vie lycéenne et réseaux d'espionnage.",
+  reviewHtml: "<p><em>God of Blackfield</em> est un manhwa d'action militaire qui se démarque par son héros exceptionnel et son atmosphère de thriller d'espionnage. L'angle mercenaire/espionnage est rare dans le genre manhwa réincarnation et apporte une fraîcheur bienvenue.</p><p>Kang Chan est un protagoniste crédible — sa maîtrise militaire et ses réflexes de combat sont montrés de façon convaincante sans dépasser les limites du réalisme. Les intrigues politiques qui entourent sa réincarnation sont bien construites.</p><p>Dessin propre et efficace, atmosphère sombre bien rendue. Un des meilleurs manhwas du genre action/espionnage.</p>",
+  pros: ["Angle militaire/espionnage rare et bien exécuté", "Héros crédible dans ses capacités", "Intrigues politiques bien construites"],
+  cons: ["Dense en personnages et factions", "Certains arcs très techniques"],
+  stars: 4,
+  category: "manhwa",
+  tags: "Action · Espionnage · Manhwa · Militaire · Réincarnation",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx118267-hfGEZNguWhiq.jpg",
+  addedAt: "2026-03-22",
+  shops: [
+  {
+    "name": "Fnac",
+    "url": "https://www.fnac.com/SearchResult/ResultKNV.aspx?Search=god+of+blackfield+manhwa",
+    "logo": "/logos/fnac.svg"
+  },
+  {
+    "name": "Amazon",
+    "url": "https://www.amazon.fr/s?k=god+of+blackfield+manhwa",
+    "logo": "/logos/amazon.svg"
+  }
+  ],
+  streaming: []
+},
+
+{
+  slug: "the-lone-necromancer",
+  title: "The Lone Necromancer",
+  synopsis: "Seongwu, chasseur de bas rang, survit à un donjon catastrophique en devenant un nécromancien — une classe maudite qui effraye autant ses alliés que ses ennemis. Seul contre tous, il doit faire ses preuves dans un monde qui craint et rejette les nécromanciens.",
+  reviewHtml: "<p><em>The Lone Necromancer</em> exploite un angle original dans le genre gate : le héros possède une classe méprisée et doit s'imposer malgré les préjugés. La nécomancie comme système de combat est bien développée, avec une armée de morts progressivement étoffée.</p><p>La solitude du protagoniste — rejeté autant pour sa classe que pour sa personnalité distante — crée un ton plus sombre que la moyenne. Son évolution vers l'acceptation est gérée avec nuance.</p><p>Dessin de bonne qualité pour les scènes d'armées de non-morts. Un gate manhwa solide avec un angle moins commun.</p>",
+  pros: ["Classe maudite — angle moins commun", "Armée de morts bien développée", "Ton plus sombre que la moyenne"],
+  cons: ["Héros difficile à aimer au départ", "Formule gate familière"],
+  stars: 3,
+  category: "manhwa",
+  tags: "Action · Fantasy · Manhwa · Gate · Nécromancie",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx139572-e3vwLcOVQISn.jpg",
+  addedAt: "2026-03-22",
+  shops: [
+  {
+    "name": "Fnac",
+    "url": "https://www.fnac.com/SearchResult/ResultKNV.aspx?Search=lone+necromancer+manhwa",
+    "logo": "/logos/fnac.svg"
+  },
+  {
+    "name": "Amazon",
+    "url": "https://www.amazon.fr/s?k=lone+necromancer+manhwa",
+    "logo": "/logos/amazon.svg"
+  }
+  ],
+  streaming: []
+},
+
+{
+  slug: "solo-glitch-player",
+  title: "Solo Bug Player",
+  synopsis: "Jinhyuk, un joueur légendaire de MMORPG connu pour exploiter les bugs du jeu, voit son jeu favori fermer ses serveurs. Quand un jeu réel similaire s'ouvre dans le monde réel, il est le seul à pouvoir utiliser ses techniques de bug-exploitation pour progresser de façon extraordinaire.",
+  reviewHtml: "<p><em>Solo Bug Player</em> est un manhwa game isekai qui mise sur un concept original : l'exploitation des failles du système de jeu comme super-pouvoir. Le héros n'est pas le plus fort, mais le plus malin pour trouver et utiliser les bugs.</p><p>Les situations créatives que génère l'exploitation des bugs donnent lieu à des combats et des progressions inhabituels. L'humour est bien présent, avec des situations absurdes découlant naturellement du concept.</p><p>Divertissement léger et créatif pour les fans de gaming manhwa qui cherchent quelque chose de différent de Solo Leveling.</p>",
+  pros: ["Concept de bug-exploitation original", "Situations créatives et humoristiques", "Progression non conventionnelle"],
+  cons: ["Léger en narration", "Scénario secondaire"],
+  stars: 3,
+  category: "manhwa",
+  tags: "Action · Game · Manhwa · Isekai · Comédie",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx118177-vbShwnpmlBcK.jpg",
+  addedAt: "2026-03-22",
+  shops: [
+  {
+    "name": "Fnac",
+    "url": "https://www.fnac.com/SearchResult/ResultKNV.aspx?Search=solo+bug+player+manhwa",
+    "logo": "/logos/fnac.svg"
+  },
+  {
+    "name": "Amazon",
+    "url": "https://www.amazon.fr/s?k=solo+bug+player+manhwa",
+    "logo": "/logos/amazon.svg"
+  }
+  ],
+  streaming: []
+},
+
+
+
+{
+  slug: "orange-marmalade",
+  title: "Orange Marmalade",
+  synopsis: "Les vampires existent et cohabitent avec les humains sous couverture. Baek Ma-Ri est une lycéenne vampire qui tente de passer inaperçue, mais sa rencontre avec Jung Jae-Min, le plus populaire de l'école, complique tout. Une romance lycéenne avec des tensions propres à la cohabitation humains-vampires.",
+  reviewHtml: "<p><em>Orange Marmalade</em> est un manhwa romantique supernatural qui traite la métaphore vampirique avec plus de sérieux que la moyenne. La discrimination subie par les vampires est une vraie critique sociale sur les minorités et l'intégration.</p><p>La romance entre Ma-Ri et Jae-Min est bien développée, avec une tension entre attirance et préjugés sociauxbien gérée. Le manhwa évite de tomber dans les clichés du romance vampire en gardant ses personnages humains.</p><p>Un arc historique au milieu de la série apporte une dimension épique inattendue. Une lecture romantique agréable avec plus de substance que la moyenne.</p>",
+  pros: ["Métaphore vampirique utilisée comme critique sociale", "Romance bien développée avec vraie tension", "Arc historique surprenant"],
+  cons: ["Certains clichés lycée/romance", "Arc historique peut déstabiliser"],
+  stars: 4,
+  category: "manhwa",
+  tags: "Romance · Vampires · Lycée · Manhwa · Supernatural",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx84897-hU5hMVB8ZZbl.png",
+  addedAt: "2026-03-22",
+  shops: [
+  {
+    "name": "Fnac",
+    "url": "https://www.fnac.com/SearchResult/ResultKNV.aspx?Search=orange+marmalade+manhwa",
+    "logo": "/logos/fnac.svg"
+  },
+  {
+    "name": "Amazon",
+    "url": "https://www.amazon.fr/s?k=orange+marmalade+manhwa",
+    "logo": "/logos/amazon.svg"
+  }
+  ],
+  streaming: []
+},
+
+{
+  slug: "cheese-in-the-trap-season-1",
+  title: "Cheese in the Trap",
+  synopsis: "Hong Seol, étudiante sérieuse, est obsédée par le mystère de Yoo Jung, son aîné en fac à l'apparence parfaite. Personne ne comprend pourquoi il s'intéresse à elle. À mesure qu'ils se rapprochent, elle découvre que sa personnalité cache quelque chose de plus complexe et potentiellement dangereuse.",
+  reviewHtml: "<p><em>Cheese in the Trap</em> est un webtoon psychologique romantique de référence. Soonkki réussit à créer une romance dont le love interest principal est genuinement ambigu — Yoo Jung est-il un manipulateur sociopathe ou simplement quelqu'un d'incompris ?</p><p>Cette ambiguïté est maintenue tout au long de la série avec une finesse remarquable. Hong Seol est une héroïne très réaliste, avec ses propres failles et contradictions. La dynamique de leur relation est l'une des plus complexes du manhwa romantique.</p><p>Un manhwa de référence pour quiconque cherche de la profondeur psychologique dans ses romances. L'adaptation drama a controversé les fans pour ses choix narratifs.</p>",
+  pros: ["Love interest psychologiquement ambigu", "Héroïne réaliste et complexe", "Tension et ambiguïté maintenues"],
+  cons: ["Fin débattue parmi les fans", "Rythme lent dans certains arcs"],
+  stars: 5,
+  category: "manhwa",
+  tags: "Romance · Psychologique · Université · Manhwa",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/nx67705-9JFvdIsQweHJ.jpg",
+  addedAt: "2026-03-22",
+  shops: [
+  {
+    "name": "Fnac",
+    "url": "https://www.fnac.com/SearchResult/ResultKNV.aspx?Search=cheese+trap+manhwa",
+    "logo": "/logos/fnac.svg"
+  },
+  {
+    "name": "Amazon",
+    "url": "https://www.amazon.fr/s?k=cheese+in+trap+manhwa",
+    "logo": "/logos/amazon.svg"
+  }
+  ],
+  streaming: []
+},
+
+{
+  slug: "a-good-day-to-be-a-dog",
+  title: "A Good Day to Be a Dog",
+  synopsis: "Han Hana se transforme en chien à chaque fois qu'elle embrasse quelqu'un, et la seule façon de rompre la malédiction est d'être embrassée par la même personne. Elle embrasse accidentellement Seo Woong, son collègue qui déteste les chiens. Une romcom fantastique légère pleine de malentendus.",
+  reviewHtml: "<p><em>A Good Day to Be a Dog</em> est une romcom manhwa légère et charmante dont le concept de malédiction est bien utilisé pour générer des situations comiques. Le gag de la transformation en chien est décliné avec inventivité sans s'essouffler trop vite.</p><p>La dynamique entre Hana et Seo Woong est construite sur les malentendus et une attraction progressive naturelle. Les personnages secondaires apportent une bonne dose d'humour supplémentaire.</p><p>Une lecture feel-good parfaite pour les moments de détente, sans prétention narrative mais exécutée avec soin.</p>",
+  pros: ["Concept de malédiction bien exploité", "Romcom légère et charmante", "Humour de situation efficace"],
+  cons: ["Scénario simple par conception", "Résolution prévisible"],
+  stars: 3,
+  category: "manhwa",
+  tags: "Romance · Comédie · Fantastique · Manhwa",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx102259-xZvVOcfzXF6r.jpg",
+  addedAt: "2026-03-22",
+  shops: [
+  {
+    "name": "Fnac",
+    "url": "https://www.fnac.com/SearchResult/ResultKNV.aspx?Search=good+day+be+dog+manhwa",
+    "logo": "/logos/fnac.svg"
+  },
+  {
+    "name": "Amazon",
+    "url": "https://www.amazon.fr/s?k=good+day+be+dog+manhwa",
+    "logo": "/logos/amazon.svg"
+  }
+  ],
+  streaming: []
+},
+
+{
+  slug: "please-dont-eat-me",
+  title: "Please Don't Eat Me",
+  synopsis: "Hanuel, une jeune femme ordinaire, se retrouve dans un monde fantastique medieval et est capturée par un puissant démon nommé Crow qui la garde prisonnière. Mais au lieu de la manger, il la garde et une relation inattendue commence à se développer.",
+  reviewHtml: "<p><em>Please Don't Eat Me</em> est une romance fantasy avec une esthétique dark bien rendue. La dynamique captive/ravisseur est un trope classique du genre qui est ici traité avec une tension romantique plutôt qu'une résolution facile.</p><p>Crow est un amour intérêt au charisme indéniable, dont les motivations sont progressivement révélées. Le worldbuilding du monde fantastique est suffisant pour donner du contexte sans trop alourdir la romance.</p><p>Lecture recommandée pour les amateurs de romance sombre et de dynamic power-imbalance bien exécutée.</p>",
+  pros: ["Esthétique dark bien rendue", "Tension romantique maintenue", "Love interest charismatique"],
+  cons: ["Score bas, série moins connue", "Certains tropes problématiques assumés"],
+  stars: 3,
+  category: "manhwa",
+  tags: "Romance · Fantasy · Manhwa · Dark",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx129415-mMW8O1WdqvXp.jpg",
+  addedAt: "2026-03-22",
+  shops: [
+  {
+    "name": "Fnac",
+    "url": "https://www.fnac.com/SearchResult/ResultKNV.aspx?Search=please+dont+eat+me+manhwa",
+    "logo": "/logos/fnac.svg"
+  },
+  {
+    "name": "Amazon",
+    "url": "https://www.amazon.fr/s?k=please+dont+eat+me+manhwa",
+    "logo": "/logos/amazon.svg"
+  }
+  ],
+  streaming: []
+},
+
+{
+  slug: "marriage-of-convenience",
+  title: "Marriage of Convenience",
+  synopsis: "Bianca de Blanchefort, une noble ruinée, accepte d'épouser le duc Zachary Dion, réputé pour se débarrasser de ses épouses. Elle n'y survivra peut-être pas, mais au moins elle mourra en riche. Ce mariage arrangé se transforme progressivement en quelque chose d'inattendu.",
+  reviewHtml: "<p><em>Marriage of Convenience</em> est une romance manhwa médiévale fantastique qui déconstruit les attentes du mariage arrangé. Bianca est une héroïne cynique et pragmatique, dont la résignation initiale à une mort probable crée un ton inattendu et rafraîchissant.</p><p>La dynamique de méfiance mutuelle qui évolue en respect puis en amour est bien gérée. Zachary est un love interest crédible dont les actions parlent plus que les mots.</p><p>Le dessin est élégant, l'atmosphère médiévale bien rendue. Un manhwa de romance solide pour les amateurs du genre.</p>",
+  pros: ["Héroïne cynique et pragmatique, rafraîchissante", "Évolution de la méfiance vers l'amour bien dosée", "Ton inattendu et original"],
+  cons: ["Certain arcs lents", "Antagonistes prévisibles"],
+  stars: 4,
+  category: "manhwa",
+  tags: "Romance · Fantasy · Manhwa · Médiéval · Mariage",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx147587-ecBZHgnWa6T7.png",
+  addedAt: "2026-03-22",
+  shops: [
+  {
+    "name": "Fnac",
+    "url": "https://www.fnac.com/SearchResult/ResultKNV.aspx?Search=marriage+convenience+manhwa",
+    "logo": "/logos/fnac.svg"
+  },
+  {
+    "name": "Amazon",
+    "url": "https://www.amazon.fr/s?k=marriage+convenience+manhwa",
+    "logo": "/logos/amazon.svg"
+  }
+  ],
+  streaming: []
+},
+
+{
+  slug: "forget-my-husband-ill-go-make-money",
+  title: "Forget My Husband, I'll Go Make Money",
+  synopsis: "Aristia est une princesse qui a passé toute sa vie à se sacrifier pour son fiancé, le prince héritier, qui lui préfère sa demi-soeur. En échange de son aide diplomatique, elle épouse Tarkan, un prince barbare des steppes. Plutôt que de souffrir, elle décide de se consacrer au commerce et de s'affranchir.",
+  reviewHtml: "<p><em>Forget My Husband, I'll Go Make Money</em> est un manhwa romance fantastique qui rafraîchit le genre en plaçant l'ambition économique au centre. L'héroïne ne cherche pas à conquérir son mari — elle veut juste devenir riche et indépendante.</p><p>Cette motivation pragmatique donne un ton comique et dynamique à la série. Tarkan, le mari barbare qui tombe amoureux, est un love interest attachant dont les tentatives maladroites d'attirer l'attention de sa femme sont charmantes.</p><p>Le dessin est de bonne qualité, le ton léger bien maintenu. Un manhwa feel-good pour les amateurs de romances à contre-courant.</p>",
+  pros: ["Héroïne motivée par l'argent — angle original", "Mari barbare attachant et maladroit", "Ton léger et feel-good"],
+  cons: ["Peu de tension dramatique", "Certains arcs économiques complexes"],
+  stars: 4,
+  category: "manhwa",
+  tags: "Romance · Fantasy · Comédie · Manhwa · Commerce",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx153975-qOM20QfRhNA0.jpg",
+  addedAt: "2026-03-22",
+  shops: [
+  {
+    "name": "Fnac",
+    "url": "https://www.fnac.com/SearchResult/ResultKNV.aspx?Search=forget+husband+make+money+manhwa",
+    "logo": "/logos/fnac.svg"
+  },
+  {
+    "name": "Amazon",
+    "url": "https://www.amazon.fr/s?k=forget+husband+make+money+manhwa",
+    "logo": "/logos/amazon.svg"
+  }
+  ],
+  streaming: []
+},
+
+{
+  slug: "beware-the-villainess",
+  title: "Beware the Villainess!",
+  synopsis: "Une jeune femme moderne se réincarne en Melissa, la vilaine d'un roman d'otome. Mais plutôt que de réformer sa vie amoureuse comme dans la plupart des histoires de ce genre, elle décide de prendre soin d'elle-même et de traiter les intérêts amoureux du roman pour ce qu'ils sont vraiment : des drapeaux rouges évidents.",
+  reviewHtml: "<p><em>Beware the Villainess!</em> est une déconstruction satirique brillante des manhwas isekai/otome romantiques. L'héroïne identifie et commente avec une lucidité comique tous les red flags que les héroïnes de romance acceptent habituellement comme normal.</p><p>L'humour meta est utilisé avec intelligence — ce n'est pas seulement une parodie, c'est une critique affectueuse du genre qui montre pourquoi ces tropes sont problématiques. Les love interests du roman original sont ridiculisés mais avec nuance.</p><p>Dessin élégant, timing comique impeccable. Un must-read pour quiconque est familier avec les manhwas romantiques isekai.</p>",
+  pros: ["Satire brillante et intelligente du genre", "Héroïne lucide et hilarante", "Déconstruction affectueuse des tropes"],
+  cons: ["Mieux apprécié si on connaît les codes du genre", "Humour peut sembler trop méta"],
+  stars: 5,
+  category: "manhwa",
+  tags: "Romance · Comédie · Manhwa · Isekai · Satire",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx117540-RRDXqQJbhWTv.jpg",
+  addedAt: "2026-03-22",
+  shops: [
+  {
+    "name": "Fnac",
+    "url": "https://www.fnac.com/SearchResult/ResultKNV.aspx?Search=beware+villainess+manhwa",
+    "logo": "/logos/fnac.svg"
+  },
+  {
+    "name": "Amazon",
+    "url": "https://www.amazon.fr/s?k=beware+villainess+manhwa",
+    "logo": "/logos/amazon.svg"
+  }
+  ],
+  streaming: []
+},
+
+{
+  slug: "miss-not-so-sidekick",
+  title: "Miss Not-So Sidekick",
+  synopsis: "Latte Ectrie se réincarne dans son roman otome préféré en tant que personnage secondaire sans importance. Plutôt que de s'impliquer dans l'histoire romantique principale, elle préfère observer en coulisses avec son ami et commenter les situations — transformant son statut de figurante en privilège de spectatrice.",
+  reviewHtml: "<p><em>Miss Not-So Sidekick</em> est un manhwa isekai/otome qui mise sur la comédie de spectateur. L'héroïne, personnage secondaire par choix, observe les événements du roman avec le détachement et l'humour d'une lectrice consciente de la fiction.</p><p>Ce parti pris est exploité avec créativité : Latte commente les événements comme une lectrice tout en étant dedans, créant un effet meta délicieux. Les interactions avec les personnages principaux (dont elle connaît les vraies motivations) sont savoureuses.</p><p>Dessin léger et expressif, rythme dynamique. Un manhwa de comédie isekai très réussi pour les fans du genre.</p>",
+  pros: ["Concept de spectateur dans son propre roman très original", "Humour meta bien exécuté", "Rythme dynamique et léger"],
+  cons: ["Peu d'enjeux pour l'héroïne elle-même", "Fin moins satisfaisante"],
+  stars: 4,
+  category: "manhwa",
+  tags: "Comédie · Romance · Manhwa · Isekai · Meta",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx106098-02U4aAvJaXTj.jpg",
+  addedAt: "2026-03-22",
+  shops: [
+  {
+    "name": "Fnac",
+    "url": "https://www.fnac.com/SearchResult/ResultKNV.aspx?Search=miss+not+sidekick+manhwa",
+    "logo": "/logos/fnac.svg"
+  },
+  {
+    "name": "Amazon",
+    "url": "https://www.amazon.fr/s?k=miss+not+sidekick+manhwa",
+    "logo": "/logos/amazon.svg"
+  }
+  ],
+  streaming: []
+},
+
+
+
+{
+  slug: "something-about-us",
+  title: "Something About Us",
+  synopsis: "Eunji et Woojin sont meilleurs amis depuis longtemps. Eunji a des sentiments pour lui depuis des années mais n'ose pas les exprimer. Quand leur cercle d'amis commence à se disperser après le lycée, la fenêtre de leur possible romance se rétrécit. Une romance contemporaine réaliste sur l'amitié amoureuse.",
+  reviewHtml: "<p><em>Something About Us</em> est un manhwa romcom contemporain qui se distingue par son réalisme et sa sensibilité. L'auteure Dalseonbi capture avec précision la dynamique de l'amour qui naît dans une amitié profonde et les peurs qui empêchent de franchir le pas.</p><p>Eunji et Woojin sont des personnages très réalistes — leurs hésitations, leurs maladresses et leurs non-dits sonnent juste. Le cadre lycéen/post-lycée est rendu avec fidélité et nostalgie.</p><p>Sans fantastique ni rebondissements dramatiques, cette série mise tout sur l'émotion et la justesse des relations. Pour les amateurs de slice-of-life romantique authentique.</p>",
+  pros: ["Réalisme et justesse émotionnelle", "Dynamique amitié-amour bien rendue", "Nostalgie du lycée bien capturée"],
+  cons: ["Pas d'événements spectaculaires — slice of life pur", "Rythme très lent"],
+  stars: 4,
+  category: "manhwa",
+  tags: "Romance · Slice of life · Lycée · Manhwa · Contemporain",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx87154-stXqOdG7q94J.jpg",
+  addedAt: "2026-03-22",
+  shops: [
+  {
+    "name": "Fnac",
+    "url": "https://www.fnac.com/SearchResult/ResultKNV.aspx?Search=something+about+us+manhwa",
+    "logo": "/logos/fnac.svg"
+  },
+  {
+    "name": "Amazon",
+    "url": "https://www.amazon.fr/s?k=something+about+us+manhwa",
+    "logo": "/logos/amazon.svg"
+  }
+  ],
+  streaming: []
+},
+
+{
+  slug: "the-perks-of-being-an-s-class-heroine",
+  title: "The Perks of Being an S-Class Heroine",
+  synopsis: "Ailette Rodchester se réincarne dans un roman fantasy avec le pouvoir unique d'obtenir des dons de n'importe qui. Résolue à utiliser ce pouvoir pour collecter les cadeaux des personnages les plus puissants, elle accumule accidentellement les bénédictions des être les plus redoutables du monde tout en cherchant simplement à vivre tranquille.",
+  reviewHtml: "<p><em>The Perks of Being an S-Class Heroine</em> est une romcom isekai légère dont le pouvoir de l'héroïne est brillamment comique : collecter des dons génère des situations où elle reçoit accidentellement les grâces d'êtres dont elle voulait juste un cadeau anodin.</p><p>L'humour découle naturellement du concept, avec une héroïne dont les plans modestes sont constamment dépassés par leurs conséquences. Les personnages puissants qui s'attachent à elle sont amusants dans leur diversité.</p><p>Lecture légère et feel-good, parfaite pour les fans d'isekai romantique comique.</p>",
+  pros: ["Pouvoir comique bien exploité", "Situations absurdes délicieuses", "Héroïne sympathique et drôle"],
+  cons: ["Léger en narration sérieuse", "Formule répétitive"],
+  stars: 3,
+  category: "manhwa",
+  tags: "Romance · Comédie · Manhwa · Isekai · Fantasy",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx147586-nXOZKdOSvtDU.png",
+  addedAt: "2026-03-22",
+  shops: [
+  {
+    "name": "Fnac",
+    "url": "https://www.fnac.com/SearchResult/ResultKNV.aspx?Search=perks+s-class+heroine+manhwa",
+    "logo": "/logos/fnac.svg"
+  },
+  {
+    "name": "Amazon",
+    "url": "https://www.amazon.fr/s?k=perks+s+class+heroine+manhwa",
+    "logo": "/logos/amazon.svg"
+  }
+  ],
+  streaming: []
+},
+
+{
+  slug: "a-stepmothers-marchen",
+  title: "A Stepmother's Märchen",
+  synopsis: "La duchesse Shuri se retrouve à élever seule les enfants de son défunt mari, qui la détestaient autrefois. Réincarnée et connaissant le destin de ces enfants dans le roman d'origine, elle décide de les protéger et de les aimer sincèrement — en bonne marâtre qui casse les stéréotypes du conte de fées.",
+  reviewHtml: "<p><em>A Stepmother's Märchen</em> est l'un des manhwas de fantasy romantique les plus émouvants disponibles. Il subvertit le trope de la marâtre cruelle en proposant une femme qui choisit d'aimer des enfants qui ne sont pas les siens avec une tendresse et un dévouement absolus.</p><p>Les relations entre Shuri et chacun des enfants sont développées individuellement, avec des moments d'une douceur rare. L'auteure traite les blessures émotionnelles des enfants avec une sensibilité remarquable.</p><p>Le dessin est beau, l'atmosphère de conte de fées bien rendue. Une lecture émotionnelle et feel-good qui sort des sentiers battus du genre. Fortement recommandé.</p>",
+  pros: ["Subversion émouvante du trope marâtre", "Relations mère/enfants développées avec soin", "Tendresse et sensibilité remarquables"],
+  cons: ["Romance adulte en retrait sur les premières parties", "Certains arcs complexes"],
+  stars: 5,
+  category: "manhwa",
+  tags: "Romance · Fantasy · Manhwa · Famille · Émotion",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx111075-ZSqT1Z2XASRp.jpg",
+  addedAt: "2026-03-22",
+  shops: [
+  {
+    "name": "Fnac",
+    "url": "https://www.fnac.com/SearchResult/ResultKNV.aspx?Search=stepmother+marchen+manhwa",
+    "logo": "/logos/fnac.svg"
+  },
+  {
+    "name": "Amazon",
+    "url": "https://www.amazon.fr/s?k=stepmother+marchen+manhwa",
+    "logo": "/logos/amazon.svg"
+  }
+  ],
+  streaming: []
+},
+
+
+
+
+{
+  slug: "the-tutorial-is-too-tough",
+  title: "The Tutorial Is Too Hard",
+  synopsis: "Lee Ho-jae est téléporté dans un tutoriel de jeu avec 1000 niveaux de difficulté, du plus facile au plus meurtrier. Il choisit délibérément le niveau de difficulté 'Hell' par curiosité — et se retrouve seul dans le tutoriel le plus difficile qui soit. Il va devoir survivre, progresser et découvrir les secrets de ce jeu.",
+  reviewHtml: "<p><em>The Tutorial Is Too Hard</em> est un manhwa gate/game qui tire toute sa substance de son concept simple : un homme qui choisit la difficulté maximale par curiosité et persévère malgré tout. Cette obstination du héros face à des défis apparemment impossibles est addictive.</p><p>Lee Ho-jae est un protagoniste fascinant — pas le plus intelligent ni le plus fort, mais d'une ténacité absolue et d'un humour noir face à l'absurdité de sa situation. L'exploration du tutoriel révèle progressivement un lore riche.</p><p>Le manhwa est terminé avec une conclusion satisfaisante. Un des meilleurs manhwas de progression seul-contre-tous.</p>",
+  pros: ["Concept de difficulté maximale choisie — très original", "Héros tenace et humour noir attachant", "Lore progressivement révélé"],
+  cons: ["Certains arcs solitaires peuvent être lents", "Isolation prolongée du héros"],
+  stars: 5,
+  category: "manhwa",
+  tags: "Action · Fantasy · Manhwa · Game · Solo",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx129632-ArHo6qvYQoHs.jpg",
+  addedAt: "2026-03-22",
+  shops: [
+  {
+    "name": "Fnac",
+    "url": "https://www.fnac.com/SearchResult/ResultKNV.aspx?Search=tutorial+too+hard+manhwa",
+    "logo": "/logos/fnac.svg"
+  },
+  {
+    "name": "Amazon",
+    "url": "https://www.amazon.fr/s?k=tutorial+too+hard+manhwa",
+    "logo": "/logos/amazon.svg"
+  }
+  ],
+  streaming: []
+},
+
+{
+  slug: "the-art-of-reincarnation",
+  title: "Standard of Reincarnation",
+  synopsis: "Dalian, le plus grand guerrier de son époque, est réincarné dans le corps d'un jeune homme ordinaire — le fils d'un clan dégénéré considéré comme honteux. Avec les souvenirs de sa vie passée et la volonté de surpasser ses propres limites, il commence à reconstruire sa légende.",
+  reviewHtml: "<p><em>Standard of Reincarnation</em> est un manhwa murim/regression solide qui se distingue par le fait que le héros cherche à surpasser sa vie passée plutôt qu'à simplement la reproduire. Cette ambition donne une direction narrative intéressante.</p><p>Dalian est un personnage charismatique dont la sagesse ancienne contraste avec les challenges d'une nouvelle vie. Le système d'arts martiaux est bien construit et les combats bien choreographiés.</p><p>Un manhwa d'action murim bien exécuté, avec plus de profondeur que la moyenne du genre regression.</p>",
+  pros: ["Ambition de dépasser sa vie passée — angle intéressant", "Arts martiaux bien construits", "Héros charismatique"],
+  cons: ["Formule murim familière", "Certains arcs prévisibles"],
+  stars: 4,
+  category: "manhwa",
+  tags: "Action · Arts martiaux · Manhwa · Murim · Regression",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx153880-60zEJbCK4yQL.png",
+  addedAt: "2026-03-22",
+  shops: [
+  {
+    "name": "Fnac",
+    "url": "https://www.fnac.com/SearchResult/ResultKNV.aspx?Search=standard+reincarnation+manhwa",
+    "logo": "/logos/fnac.svg"
+  },
+  {
+    "name": "Amazon",
+    "url": "https://www.amazon.fr/s?k=standard+reincarnation+manhwa",
+    "logo": "/logos/amazon.svg"
+  }
+  ],
+  streaming: []
+},
+
+{
+  slug: "the-live",
+  title: "The Live",
+  synopsis: "Yun Jae est une homme ordinaire dont la femme et l'enfant meurent dans un accident. Un mystérieux message lui parvient depuis le futur : son fils, survivant dans un monde dystopique, lui envoie un système de jeu pour lui permettre de changer ce futur. Il entre dans le jeu avec pour seule motivation de sauver sa famille.",
+  reviewHtml: "<p><em>The Live</em> est un manhwa gate/game avec une dimension émotionnelle plus forte que la moyenne. La motivation du héros — sauver sa femme et son fils — est simple mais ancrée dans une perte réelle, ce qui donne une urgence émotionnelle à chaque mission.</p><p>Le système de jeu envoyé par son fils du futur crée une dynamique narrative originale : les choix du héros dans le présent influencent le futur de son fils de façon visible. Cette connexion père/fils est le coeur emotionnel de la série.</p><p>Bien rythmé, avec des combats efficaces et une ligne narrative émotionnelle maintenue. Un manhwa de gate plus humain que la moyenne.</p>",
+  pros: ["Motivation émotionnelle forte — sauver sa famille", "Connexion père/fils originale", "Plus humain que la moyenne du genre"],
+  cons: ["Certains arcs game très techniques", "Résolution du futur parfois obscure"],
+  stars: 4,
+  category: "manhwa",
+  tags: "Action · Fantasy · Manhwa · Game · Famille",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/b118608-9xFaGYcfPZk0.png",
+  addedAt: "2026-03-22",
+  shops: [
+  {
+    "name": "Fnac",
+    "url": "https://www.fnac.com/SearchResult/ResultKNV.aspx?Search=the+live+manhwa",
+    "logo": "/logos/fnac.svg"
+  },
+  {
+    "name": "Amazon",
+    "url": "https://www.amazon.fr/s?k=the+live+manhwa",
+    "logo": "/logos/amazon.svg"
+  }
+  ],
+  streaming: []
+},
+
+
+
+
+
+
+
+{
+  slug: "dark-moon-the-blood-altar",
+  title: "Dark Moon: The Blood Altar",
+  synopsis: "Dans un monde où les vampires et les humains coexistent sous tension, Soo-ah, une jeune femme ordinaire, est entraînée dans un conflit entre clans vampiriques. Liée à un vampire puissant, elle découvre que son passé et ses origines la placent au coeur d'une prophétie ancienne.",
+  reviewHtml: "<p><em>Dark Moon: The Blood Altar</em> est le manhwa officiel basé sur l'univers de Dark Moon (les albums du groupe BTS). L'univers fantastique vampire et la narration musicale sont bien traduits en manhwa, avec une esthétique soignée et une atmosphère sombre caractéristique.</p><p>Même pour les lecteurs non-fans de BTS, le manhwa fonctionne comme une romance vampire fantastique standalone avec des visuels de qualité. L'intrigue mystérieuse autour des origines de Soo-ah maintient l'intérêt.</p><p>Le dessin est particulièrement travaillé, avec des designs de personnages marquants. Un manhwa vampire solide pour les amateurs du genre.</p>",
+  pros: ["Esthétique dark vampire très soignée", "Designs de personnages marquants", "Intrigue mystérieuse bien construite"],
+  cons: ["Fan-service pour l'univers BTS (peut rebuter)", "Certains codes narrative très codes"],
+  stars: 3,
+  category: "manhwa",
+  tags: "Romance · Vampires · Fantasy · Manhwa · Dark",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx141146-Gc78MGrMWnbD.png",
+  addedAt: "2026-03-22",
+  shops: [
+  {
+    "name": "Fnac",
+    "url": "https://www.fnac.com/SearchResult/ResultKNV.aspx?Search=dark+moon+blood+altar+manhwa",
+    "logo": "/logos/fnac.svg"
+  },
+  {
+    "name": "Amazon",
+    "url": "https://www.amazon.fr/s?k=dark+moon+blood+altar+manhwa",
+    "logo": "/logos/amazon.svg"
+  }
+  ],
+  streaming: []
+},
+
+{
+  slug: "shark",
+  title: "Shark",
+  synopsis: "I Soo est l'héritier d'une famille de gangsters qui a perdu ses proches dans des circonstances mystérieuses. Déterminé à découvrir la vérité et à venger sa famille, il s'infiltre dans les cercles criminels et du pouvoir en utilisant ses capacités exceptionnelles et une intelligence froide.",
+  reviewHtml: "<p><em>Shark</em> est un manhwa de crime/thriller coréen avec une tension narrative soutenue. L'atmosphere du monde criminel coréen est bien rendue, avec des intrigues qui mêlent crime organisé, politique et corruption.</p><p>I Soo est un protagoniste calculateur et implacable, dont la quête de vengeance est méthodique et crédible. Les révélations sur la mort de sa famille sont distillées progressivement, maintenant l'intérêt.</p><p>Dessin détaillé, narration mature. Pour les amateurs de thrillers criminels asiatiques exigeants.</p>",
+  pros: ["Thriller criminel coréen bien exécuté", "Protagoniste calculateur et crédible", "Révélations bien dosées"],
+  cons: ["Dense en personnages et factions", "Ton très sombre constant"],
+  stars: 4,
+  category: "manhwa",
+  tags: "Action · Thriller · Crime · Manhwa · Revenge",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx131468-ib04zRmHiBwy.png",
+  addedAt: "2026-03-22",
+  shops: [
+  {
+    "name": "Fnac",
+    "url": "https://www.fnac.com/SearchResult/ResultKNV.aspx?Search=shark+manhwa",
+    "logo": "/logos/fnac.svg"
+  },
+  {
+    "name": "Amazon",
+    "url": "https://www.amazon.fr/s?k=shark+manhwa",
+    "logo": "/logos/amazon.svg"
+  }
+  ],
+  streaming: []
+},
+
+{
+  slug: "the-archmage-returns-after-4000-years",
+  title: "The Great Mage Returns After 4000 Years",
+  synopsis: "Lucas Traumen, le plus grand mage de l'histoire, est emprisonné dans un enfer de conscience pendant 4000 ans par un demi-dieu. Il se réincarne dans le corps d'un étudiant en magie considéré comme nul. Avec 4000 ans d'expérience et de réflexion sur la magie, il va reconstruire sa puissance.",
+  reviewHtml: "<p><em>The Great Mage Returns After 4000 Years</em> est un manhwa fantasy qui exploite l'angle du retour du mage légendaire avec efficacité. 4000 ans d'emprisonnement ont forgé une résolution implacable chez Lucas — pas de nostalgie, juste la volonté froide d'atteindre ses objectifs.</p><p>Le système de magie est l'un des plus développés du genre, avec des sorts et des théories magiques cohérentes. La progression du héros depuis un corps nul vers la puissance légendaire est satisfaisante et bien paced.</p><p>Dessin de qualité, combats magiques impressionnants. Un solide manhwa fantasy pour les amateurs du genre.</p>",
+  pros: ["Système de magie bien développé", "Héros implacable et charismatique", "Progression bien rythmée"],
+  cons: ["Formule reincarnation/regression classique", "Certains antagonistes peu développés"],
+  stars: 4,
+  category: "manhwa",
+  tags: "Action · Fantasy · Manhwa · Magie · Regression",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx118424-JbTApgnIP1ON.jpg",
+  addedAt: "2026-03-22",
+  shops: [
+  {
+    "name": "Fnac",
+    "url": "https://www.fnac.com/SearchResult/ResultKNV.aspx?Search=great+mage+returns+4000+years+manhwa",
+    "logo": "/logos/fnac.svg"
+  },
+  {
+    "name": "Amazon",
+    "url": "https://www.amazon.fr/s?k=great+mage+4000+years+manhwa",
+    "logo": "/logos/amazon.svg"
+  }
+  ],
+  streaming: []
+},
+
+{
+  slug: "a-returners-magic-should-be-special",
+  title: "A Returner's Magic Should Be Special",
+  synopsis: "Desir Arman revient 10 ans en arrière avec le souvenir de l'échec de son groupe face au Shadow Labyrinth — un donjon qui a failli détruire le monde. Cette fois, il va utiliser sa connaissance du futur pour entraîner ses nouveaux compagnons et préparer une défense contre la catastrophe à venir.",
+  reviewHtml: "<p><em>A Returner's Magic Should Be Special</em> est un manhwa de regression de haute qualité. Sa particularité est l'accent mis sur l'entraînement et la préparation plutôt que sur le seul power fantasy : Desir investit son temps à forger les autres, pas seulement lui-même.</p><p>La dynamique de mentoring entre Desir et ses élèves est bien construite, et les révélations progressives sur la vraie nature du Shadow Labyrinth maintiennent une tension narrative de fond.</p><p>Dessin de très bonne qualité, avec des combats magiques variés et lisibles. Un des meilleurs manhwas du genre regression pour ceux qui cherchent de la substance narrative.</p>",
+  pros: ["Accent sur l'entraînement des autres — angle rare", "Tension narrative de fond bien maintenue", "Dessin et combats de très bonne qualité"],
+  cons: ["Certains arcs d'entraînement lents", "Dense en personnages"],
+  stars: 5,
+  category: "manhwa",
+  tags: "Action · Fantasy · Manhwa · Regression · Magie",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx105393-oiHumQoBGKG5.jpg",
+  addedAt: "2026-03-22",
+  shops: [
+  {
+    "name": "Fnac",
+    "url": "https://www.fnac.com/SearchResult/ResultKNV.aspx?Search=returner+magic+special+manhwa",
+    "logo": "/logos/fnac.svg"
+  },
+  {
+    "name": "Amazon",
+    "url": "https://www.amazon.fr/s?k=returner+magic+special+manhwa",
+    "logo": "/logos/amazon.svg"
+  }
+  ],
+  streaming: []
+},
+
+{
+  slug: "the-max-level-returner",
+  title: "The Max Level Returner",
+  synopsis: "Yoon Sang-Hyuk passe 50 ans dans un monde parallèle de survie, atteignant le niveau maximum du jeu. Quand il revient dans le monde réel, seul quelques mois se sont écoulés. Il est désormais le seul être humain ayant atteint le niveau max, et les portes qui s'ouvrent dans le monde réel n'ont pas de secret pour lui.",
+  reviewHtml: "<p><em>The Max Level Returner</em> est un manhwa de return qui distingue son héros par une solitude totale — 50 ans passé seul dans un monde hostile. Cette expérience forge un protagoniste calme, efficace et légèrement déconnecté des émotions humaines ordinaires.</p><p>La maîtrise absolue de Yoon Sang-Hyuk de tous les aspects du jeu crée des moments satisfaisants où il résout des situations impossibles avec aisance. Les interactions avec les autres chasseurs qui découvrent progressivement son niveau sont amusantes.</p><p>Dessin efficace, power fantasy bien rythmé. Bon divertissement pour les fans du genre.</p>",
+  pros: ["50 ans seul — isolation bien exploitée", "Maîtrise totale du jeu crée des moments satisfaisants", "Interactions avec les autres bien gérées"],
+  cons: ["Héros émotionnellement distant", "Formule return familière"],
+  stars: 3,
+  category: "manhwa",
+  tags: "Action · Fantasy · Manhwa · Gate · Power Fantasy",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx125377-UqzyeoC1wbUF.jpg",
+  addedAt: "2026-03-22",
+  shops: [
+  {
+    "name": "Fnac",
+    "url": "https://www.fnac.com/SearchResult/ResultKNV.aspx?Search=max+level+returner+manhwa",
+    "logo": "/logos/fnac.svg"
+  },
+  {
+    "name": "Amazon",
+    "url": "https://www.amazon.fr/s?k=max+level+returner+manhwa",
+    "logo": "/logos/amazon.svg"
+  }
+  ],
+  streaming: []
+},
+
+{
+  slug: "hunter-academys-invincible-martial-god",
+  title: "Hunter Academy's Battle God",
+  synopsis: "Le plus grand chasseur de l'histoire se réincarne dans le corps d'un élève sous-performant d'une académie de chasseurs. Avec ses capacités légendaires redécouvertes progressivement dans un nouveau corps, il va reconstruire sa réputation tout en guidant ses camarades vers leur plein potentiel.",
+  reviewHtml: "<p><em>Hunter Academy's Battle God</em> est un manhwa gate/regression classique sur fond d'académie. La formule légendaire réincarné dans un élève nul est bien connue mais exécutée ici avec soin. L'ambiance d'académie donne un rythme différent des manhwas gate traditionnels.</p><p>Le mix entre combats d'élèves, tournois et missions de terrain est bien équilibré. Le héros retrouve ses capacités progressivement, ce qui crée une progression satisfaisante.</p><p>Dessin dynamique, ambiance académie bien rendue. Un bon manhwa pour les amateurs du genre.</p>",
+  pros: ["Ambiance académie bien rendue", "Progression des capacités satisfaisante", "Mix missions/tournois équilibré"],
+  cons: ["Formule classique sans grande surprise", "Score bas indique popularité limitée"],
+  stars: 3,
+  category: "manhwa",
+  tags: "Action · Fantasy · Manhwa · Académie · Regression",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx177058-cSVpf5GYfm5v.png",
+  addedAt: "2026-03-22",
+  shops: [
+  {
+    "name": "Fnac",
+    "url": "https://www.fnac.com/SearchResult/ResultKNV.aspx?Search=hunter+academy+battle+god+manhwa",
+    "logo": "/logos/fnac.svg"
+  },
+  {
+    "name": "Amazon",
+    "url": "https://www.amazon.fr/s?k=hunter+academy+battle+god+manhwa",
+    "logo": "/logos/amazon.svg"
+  }
+  ],
+  streaming: []
+},
+
+{
+  slug: "second-life-ranker",
+  title: "Second Life Ranker",
+  synopsis: "Yeon-woo découvre le journal de bord de son frère jumeau, mort dans une Tour mystérieuse. Il décide d'entrer dans la Tour pour venger son frère et découvrir la vérité sur sa mort. Grâce au journal qui détaille les étages déjà parcourus, il progresse avec une efficacité que personne ne comprend.",
+  reviewHtml: "<p><em>Second Life Ranker</em> est l'un des manhwas de tower les plus appréciés du genre. Sa force est double : une motivation émotionnelle forte (venger un frère) et une mécanique narrative originale (le journal qui révèle les secrets de la Tour).</p><p>Yeon-woo est un protagoniste charismatique dont l'évolution de vengeur à quelque chose de plus grand est bien menée. Les révélations sur la mort du frère et les conspirations de la Tour sont distillées avec soin.</p><p>Le système de puissance est bien construit, les combats impressionnants. Un des piliers du manhwa tower à lire absolument.</p>",
+  pros: ["Motivation émotionnelle forte — venger son frère", "Mécanique du journal bien exploitée", "Pilier du genre tower bien construit"],
+  cons: ["Dense en lore", "Progression parfois complexe à suivre"],
+  stars: 5,
+  category: "manhwa",
+  tags: "Action · Fantasy · Manhwa · Tower · Revenge",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx109957-EgJWdR7l9TBG.jpg",
+  addedAt: "2026-03-22",
+  shops: [
+  {
+    "name": "Fnac",
+    "url": "https://www.fnac.com/SearchResult/ResultKNV.aspx?Search=second+life+ranker+manhwa",
+    "logo": "/logos/fnac.svg"
+  },
+  {
+    "name": "Amazon",
+    "url": "https://www.amazon.fr/s?k=second+life+ranker+manhwa",
+    "logo": "/logos/amazon.svg"
+  }
+  ],
+  streaming: []
+},
+
+{
+  slug: "kill-the-dragon",
+  title: "Kill the Dragon",
+  synopsis: "Dans un monde où les dragons règnent en dominants et les humains vivent sous leur joug, une organisation secrète cherche à les éliminer. Lee Chan, un jeune homme qui a perdu sa famille à cause des dragons, rejoint cette organisation pour apprendre à tuer des créatures que peu peuvent même approcher.",
+  reviewHtml: "<p><em>Kill the Dragon</em> est un manhwa d'action anti-héros qui exploite un angle original : les dragons comme oppresseurs systémiques plutôt que comme créatures légendaires à défier par gloire. La résistance organisée contre eux donne une dimension de combat de libération intéressante.</p><p>Lee Chan est un protagoniste motivé par la perte, dont la progression vers un tueur efficace est bien menée. Les combats contre les dragons sont spectaculaires et bien illustrés.</p><p>Un manhwa d'action solide avec un angle moins commun dans la représentation des dragons.</p>",
+  pros: ["Dragons comme oppresseurs — angle original", "Combats spectaculaires", "Motivation de perte bien intégrée"],
+  cons: ["Formule vengeance familière", "Développement des personnages secondaires limité"],
+  stars: 3,
+  category: "manhwa",
+  tags: "Action · Fantasy · Manhwa · Dragons",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx149624-slR5wHzuRgmm.png",
+  addedAt: "2026-03-22",
+  shops: [
+  {
+    "name": "Fnac",
+    "url": "https://www.fnac.com/SearchResult/ResultKNV.aspx?Search=kill+the+dragon+manhwa",
+    "logo": "/logos/fnac.svg"
+  },
+  {
+    "name": "Amazon",
+    "url": "https://www.amazon.fr/s?k=kill+the+dragon+manhwa",
+    "logo": "/logos/amazon.svg"
+  }
+  ],
+  streaming: []
+},
+
+{
+  slug: "dungeon-reset",
+  title: "Dungeon Reset",
+  synopsis: "Dawun, coincé dans un donjon avec d'autres survivants, bénéficie d'un bug unique : à chaque reset du donjon, lui seul conserve ses objets et ses acquis. Alors que les autres avancent dans le donjon avec péril, il reste au premier niveau, accumulant tranquillement des ressources et des capacités dans la sécurité relative.",
+  reviewHtml: "<p><em>Dungeon Reset</em> est un manhwa de donjon avec un concept délicieusement anti-conventionnel : le héros ne progresse pas dans le donjon, il exploite son bug pour rester en sécurité et accumuler des ressources. Cette approche counter-intuitive génère un humour et des situations très originaux.</p><p>Le manhwa se distingue par la créativité avec laquelle Dawun exploite son avantage unique — crafting, agriculture, construction dans un donjon — tout en observant les autres se débattre avec les niveaux supérieurs.</p><p>Dessin expressif, concept savoureux. Un des manhwas de donjon les plus originaux et divertissants.</p>",
+  pros: ["Concept anti-conventionnel savoureux", "Créativité dans l'exploitation du bug", "Humour et situations très originaux"],
+  cons: ["Moins d'action que la moyenne du genre", "Protagoniste peu ambitieux par conception"],
+  stars: 4,
+  category: "manhwa",
+  tags: "Action · Comédie · Manhwa · Donjon · Survival",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx116506-D6cG2hsUzSpx.jpg",
+  addedAt: "2026-03-22",
+  shops: [
+  {
+    "name": "Fnac",
+    "url": "https://www.fnac.com/SearchResult/ResultKNV.aspx?Search=dungeon+reset+manhwa",
+    "logo": "/logos/fnac.svg"
+  },
+  {
+    "name": "Amazon",
+    "url": "https://www.amazon.fr/s?k=dungeon+reset+manhwa",
+    "logo": "/logos/amazon.svg"
+  }
+  ],
+  streaming: []
+},
+
+{
+  slug: "mystic-musketeer",
+  title: "Arcane Sniper",
+  synopsis: "Ha Jaeha, un soldat blessé incapable de se battre physiquement, découvre un MMORPG où il peut jouer au sniper à longue distance. Sa précision militaire réelle lui donne un avantage unique. Quand le jeu révèle des connexions avec le monde réel, ses compétences de tir deviennent vitales.",
+  reviewHtml: "<p><em>Arcane Sniper</em> est un manhwa game isekai qui se distingue par son angle de sniper à longue portée. Voir la mécanique du combat à distance — calcul balistique, anticipation, gestion des variables — appliquée dans un contexte fantasy est original et bien exploité.</p><p>Le héros, soldat blessé reconverti en sniper virtuel puis réel, a une background crédible qui justifie ses compétences. Les scènes de tir de précision sont bien illustrées et satisfaisantes.</p><p>Un manhwa game solide avec un angle combat moins commun que la mêlée habituelle.</p>",
+  pros: ["Angle sniper — combat à distance original", "Background militaire crédible du héros", "Scènes de tir de précision satisfaisantes"],
+  cons: ["Formule game isekai classique", "Certains aspects game peu expliqués"],
+  stars: 3,
+  category: "manhwa",
+  tags: "Action · Game · Manhwa · Militaire · Sniper",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx129918-Zl7EUTpBqBeW.jpg",
+  addedAt: "2026-03-22",
+  shops: [
+  {
+    "name": "Fnac",
+    "url": "https://www.fnac.com/SearchResult/ResultKNV.aspx?Search=arcane+sniper+manhwa",
+    "logo": "/logos/fnac.svg"
+  },
+  {
+    "name": "Amazon",
+    "url": "https://www.amazon.fr/s?k=arcane+sniper+manhwa",
+    "logo": "/logos/amazon.svg"
+  }
+  ],
+  streaming: []
+},
+
+{
+  slug: "the-celestial-returned-from-hell",
+  title: "The Constellation That Returned From Hell",
+  synopsis: "Choi Yeon-woo survit à une catastrophe de donjon et revient avec la capacité de voir des Constellations — êtres puissants du monde céleste qui peuvent parrainer des chasseurs. Son retour transforme sa position dans le système des chasseurs de façon inattendue.",
+  reviewHtml: "<p><em>The Constellation That Returned From Hell</em> est un manhwa de return/gate qui exploite le système de Constellations de façon intéressante. La relation entre les chasseurs et leurs Constellations parraines crée une dynamique politique et relationnelle originale.</p><p>Le héros revenu de l'enfer avec de nouvelles capacités de perception des Constellations est une mécanique bien exploitée pour créer des situations uniques dans les dungeons et les interactions avec les autres chasseurs.</p><p>Dessin de bonne qualité, système de jeu cohérent. Un gate manhwa solide avec un angle distinctif.</p>",
+  pros: ["Système de Constellations original", "Dynamique politique chasseurs/parrains intéressante", "Mécanique de perception bien exploitée"],
+  cons: ["Dense en lore du système de Constellations", "Certains arcs complexes"],
+  stars: 3,
+  category: "manhwa",
+  tags: "Action · Fantasy · Manhwa · Gate · Constellations",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx132457-sGQqSZbDoKJR.jpg",
+  addedAt: "2026-03-22",
+  shops: [
+  {
+    "name": "Fnac",
+    "url": "https://www.fnac.com/SearchResult/ResultKNV.aspx?Search=constellation+returned+hell+manhwa",
+    "logo": "/logos/fnac.svg"
+  },
+  {
+    "name": "Amazon",
+    "url": "https://www.amazon.fr/s?k=constellation+returned+hell+manhwa",
+    "logo": "/logos/amazon.svg"
+  }
+  ],
+  streaming: []
+},
+
+{
+  slug: "i-get-stronger-the-more-i-eat",
+  title: "I Grow Stronger By Eating",
+  synopsis: "Jaehwan découvre qu'il peut absorber la puissance des monstres qu'il mange. Cette capacité unique lui permet une progression exponentielle dans un monde envahi de créatures. Plus il mange, plus il devient puissant — une mécanique de progression aussi simple qu'efficace.",
+  reviewHtml: "<p><em>I Grow Stronger By Eating</em> est un manhwa de progression dont la mécanique — manger pour progresser — est exploitée avec humour et créativité. Le concept est absurde mais l'auteur en tire un divertissement léger et efficace.</p><p>Les situations comiques découlant de la nécessité de manger des monstres de plus en plus grands et puissants sont inventives. Jaehwan est un héros sympathique dont l'appétit est sa plus grande force et sa plus grande faiblesse.</p><p>Lecture légère et fun pour les fans de progression manhwa qui veulent du divertissement sans prise de tête.</p>",
+  pros: ["Mécanique de progression originale et comique", "Situations absurdes inventives", "Lecture légère et fun"],
+  cons: ["Léger en narration sérieuse", "Répétitif sur la longueur"],
+  stars: 3,
+  category: "manhwa",
+  tags: "Action · Comédie · Manhwa · Power Fantasy",
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx135317-92H8cxa8oHJf.jpg",
+  addedAt: "2026-03-22",
+  shops: [
+  {
+    "name": "Fnac",
+    "url": "https://www.fnac.com/SearchResult/ResultKNV.aspx?Search=grow+stronger+eating+manhwa",
+    "logo": "/logos/fnac.svg"
+  },
+  {
+    "name": "Amazon",
+    "url": "https://www.amazon.fr/s?k=grow+stronger+eating+manhwa",
+    "logo": "/logos/amazon.svg"
+  }
+  ],
+  streaming: []
+},
 
 ]

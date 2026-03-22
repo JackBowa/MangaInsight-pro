@@ -1,0 +1,40 @@
+import { readFileSync, writeFileSync } from "fs";
+import { join, dirname } from "path";
+import { fileURLToPath } from "url";
+const __dirname = dirname(fileURLToPath(import.meta.url));
+const FILE = join(__dirname, "../data/series/series-2.ts");
+
+const REMOVE = [
+  "how-a-country-girl-reincarnated-as-a-villainess-tries-to-avoid-a-bad-ending-i-dont-want-to-die-so-i-need-to-become-stronger-than-the-final-boss", // bad match pour The Beginning After the End
+  "temppal",                                      // bad match pour Overgeared
+  "super-string-marco-polos-travel-to-the-multiverse", // bad match pour Super String
+  "jeonsaengja",                                  // bad match pour Reincarnator (titre KR)
+  "yuujin-character-wa-taihen-desu-ka",           // bad match pour Is It Tough Being a Friend (JP)
+];
+
+function removeFirst(content, slug) {
+  const marker = `slug: "${slug}"`;
+  const idx = content.indexOf(marker);
+  if (idx === -1) return null;
+  let i = idx;
+  while (i > 0 && content[i] !== "{") i--;
+  const start = i; let depth = 0;
+  for (i = start; i < content.length; i++) {
+    if (content[i] === "{") depth++;
+    if (content[i] === "}") { depth--; if (depth === 0) break; }
+  }
+  const end = i + 1;
+  const after = content.slice(end).match(/^(\s*,)/);
+  const fullEnd = after ? end + after[1].length : end;
+  return content.slice(0, start) + content.slice(fullEnd);
+}
+
+let content = readFileSync(FILE, "utf-8");
+let removed = 0;
+for (const slug of REMOVE) {
+  const r = removeFirst(content, slug);
+  if (!r) { console.log(`⚠️ Non trouvé : ${slug}`); continue; }
+  content = r; removed++; console.log(`🗑️  ${slug}`);
+}
+writeFileSync(FILE, content, "utf-8");
+console.log(`\n✅ ${removed} supprimées`);
