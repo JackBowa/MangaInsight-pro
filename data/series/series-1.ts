@@ -462,7 +462,7 @@ export const SERIES_1: Serie[] = [
     { name: "Crunchyroll", url: "https://www.crunchyroll.com/fr/series/GRDV5EN6Y/black-butler", logo: "https://upload.wikimedia.org/wikipedia/commons/f/fc/Crunchyroll_logo_2018_vertical.png" },
   ],
   live: [],
-  published: true,
+  published: false,
 },
 
 // ASSASSINATION CLASSROOM
@@ -548,7 +548,7 @@ export const SERIES_1: Serie[] = [
   shops: [],
   streaming: [],
   live: [],
-  published: true,
+  published: false,
 }, 
  {
   slug: "hunter-x-hunter",
@@ -655,7 +655,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
     { name: "Netflix",     url: "https://www.netflix.com/search?q=Blue%20Exorcist",        logo: "https://images.ctfassets.net/y2ske730sjqp/5QQ9SVIdc1tmkqrtFnG9U1/de758bba0f65dcc1c6bc1f31f161003d/BrandAssets_Logos_02-NSymbol.jpg?w=940" }
   ],
   live: [],
-  published: true,
+  published: false,
 },
 {
   slug: "claymore",
@@ -678,7 +678,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
     { name: "Crunchyroll", url: "https://www.crunchyroll.com/fr/search?q=Claymore", logo: "https://upload.wikimedia.org/wikipedia/commons/f/fc/Crunchyroll_logo_2018_vertical.png" }
   ],
   live: [],
-  published: true,
+  published: false,
 },
 {
   slug: "d-gray-man",
@@ -701,7 +701,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
     { name: "Crunchyroll", url: "https://www.crunchyroll.com/fr/search?q=D.Gray-man", logo: "https://upload.wikimedia.org/wikipedia/commons/f/fc/Crunchyroll_logo_2018_vertical.png" }
   ],
   live: [],
-  published: true,
+  published: false,
 },
 {
   slug: "death-note",
@@ -748,7 +748,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
     { name: "Crunchyroll", url: "https://www.crunchyroll.com/fr/search?q=Dr.%20Stone", logo: "https://upload.wikimedia.org/wikipedia/commons/f/fc/Crunchyroll_logo_2018_vertical.png" }
   ],
   live: [],
-  published: true,
+  published: false,
 },
 {
   slug: "eleceed",
@@ -862,7 +862,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
     { name: "Crunchyroll", url: "https://www.crunchyroll.com/fr/search?q=Gintama", logo: "https://upload.wikimedia.org/wikipedia/commons/f/fc/Crunchyroll_logo_2018_vertical.png" }
   ],
   live: [],
-  published: true,
+  published: false,
 },
 {
   slug: "hells-paradise",
@@ -1000,7 +1000,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
     { name: "Crunchyroll", url: "https://www.crunchyroll.com/fr/search?q=Noragami", logo: "https://upload.wikimedia.org/wikipedia/commons/f/fc/Crunchyroll_logo_2018_vertical.png" }
   ],
   live: [],
-  published: true,
+  published: false,
 },
 {
   slug: "omniscient-reader",
@@ -1042,7 +1042,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
     { name: "Netflix", url: "https://www.netflix.com/search?q=Oshi%20no%20Ko", logo: "https://images.ctfassets.net/y2ske730sjqp/5QQ9SVIdc1tmkqrtFnG9U1/de758bba0f65dcc1c6bc1f31f161003d/BrandAssets_Logos_02-NSymbol.jpg?w=940" }
   ],
   live: [],
-  published: true,
+  published: false,
 },
 {
   slug: "pluto",
@@ -1106,7 +1106,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
     { name: "Crunchyroll", url: "https://www.crunchyroll.com/fr/search?q=Soul%20Eater", logo: "https://upload.wikimedia.org/wikipedia/commons/f/fc/Crunchyroll_logo_2018_vertical.png" }
   ],
   live: [],
-  published: true,
+  published: false,
 },
 {
   slug: "the-promised-neverland",
@@ -1372,7 +1372,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   ],
   streaming: [],  // Pas d'anime officiel confirmé
   live: [],
-  published: true,
+  published: false,
 },
 {
   slug: "my-wife-is-a-demon-queen",
@@ -1416,7 +1416,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
     { name: "Crunchyroll", url: "https://www.crunchyroll.com/series/G21MYZ1ML/the-rising-of-the-shield-hero", logo: "" }
   ],
   live: [],
-  published: true,
+  published: false,
 },
 {
   slug: "sword-art-online",
@@ -1440,7 +1440,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
     { name: "Netflix (recherche)", url: "https://www.netflix.com/search?q=Sword%20Art%20Online", logo: "" }
   ],
   live: [],
-  published: true,
+  published: false,
 },
 {
   slug: "goblin-slayer",
@@ -1463,7 +1463,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
     { name: "Crunchyroll", url: "https://www.crunchyroll.com/series/GR1MVZ6L2/goblin-slayer", logo: "" }
   ],
   live: [],
-  published: true,
+  published: false,
 },
 {
   slug: "grimgar",
@@ -1530,7 +1530,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
     { name: "Crunchyroll", url: "https://www.crunchyroll.com/series/GRK9ZNXJQ/record-of-ragnarok", logo: "" }
   ],
   live: [],
-  published: true,
+  published: false,
 },
 {
   slug: "chainsaw-man",
@@ -1707,7 +1707,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
     { name: "Netflix", url: "https://www.netflix.com/search?q=Edens%20Zero", logo: "" }
   ],
   live: [],
-  published: true,
+  published: false,
 },
 {
   slug: "fate-stay-night",
@@ -1728,7 +1728,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
     { name: "Crunchyroll", url: "https://www.crunchyroll.com/search?q=Fate", logo: "" }
   ],
   live: [],
-  published: true,
+  published: false,
 },
 {
   slug: "goblin-nightmare",
@@ -1832,7 +1832,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
     { name: "Netflix", url: "https://www.netflix.com/search?q=Kengan%20Ashura", logo: "" }
   ],
   live: [],
-  published: true,
+  published: false,
 },
 {
   slug: "kenshin",
@@ -1854,7 +1854,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
     { name: "Crunchyroll", url: "https://www.crunchyroll.com/search?q=Kenshin", logo: "" }
   ],
   live: [],
-  published: true,
+  published: false,
 },
 {
   slug: "kings-game",
@@ -1913,7 +1913,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
     { name: "Crunchyroll", url: "https://www.crunchyroll.com/search?q=Magi", logo: "" }
   ],
   live: [],
-  published: true,
+  published: false,
 },
 {
   slug: "monster-musume",
@@ -1934,7 +1934,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
     { name: "Crunchyroll", url: "https://www.crunchyroll.com/search?q=Monster%20Musume", logo: "" }
   ],
   live: [],
-  published: true,
+  published: false,
 },
 {
   slug: "overlord",
@@ -1977,7 +1977,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
     { name: "Crunchyroll", url: "https://www.crunchyroll.com/search?q=Psycho-Pass", logo: "" }
   ],
   live: [],
-  published: true,
+  published: false,
 },
 {
   slug: "radiant",
@@ -2000,7 +2000,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
     { name: "Crunchyroll", url: "https://www.crunchyroll.com/search?q=Radiant", logo: "" }
   ],
   live: [],
-  published: true,
+  published: false,
 },
 {
   slug: "rosario-vampire",
@@ -2044,7 +2044,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
     { name: "Netflix", url: "https://www.netflix.com/search?q=Seven%20Deadly%20Sins", logo: "" }
   ],
   live: [],
-  published: true,
+  published: false,
 },
 {
   slug: "shaman-king",
@@ -2067,7 +2067,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
     { name: "Netflix", url: "https://www.netflix.com/search?q=Shaman%20King", logo: "" }
   ],
   live: [],
-  published: true,
+  published: false,
 },
 {
   slug: "sk8-the-infinity",
@@ -2130,7 +2130,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
     { name: "Crunchyroll", url: "https://www.crunchyroll.com/search?q=Steins%3BGate", logo: "" }
   ],
   live: [],
-  published: true,
+  published: false,
 },
 {
   slug: "trigun",
@@ -2152,7 +2152,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
     { name: "Crunchyroll", url: "https://www.crunchyroll.com/search?q=Trigun", logo: "" }
   ],
   live: [],
-  published: true,
+  published: false,
 },
 {
   slug: "trinity-seven",
@@ -2196,7 +2196,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
     { name: "Crunchyroll", url: "https://www.crunchyroll.com/search?q=Akame%20ga%20Kill", logo: "" }
   ],
   live: [],
-  published: true,
+  published: false,
 },
 {
   slug: "angel-beats",
@@ -2217,7 +2217,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
     { name: "Crunchyroll", url: "https://www.crunchyroll.com/search?q=Angel%20Beats", logo: "" }
   ],
   live: [],
-  published: true,
+  published: false,
 },
 {
   slug: "bastard",
@@ -2239,7 +2239,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
     { name: "Netflix", url: "https://www.netflix.com/search?q=Bastard", logo: "" }
   ],
   live: [],
-  published: true,
+  published: false,
 },
 {
   slug: "beelzebub",
@@ -2262,7 +2262,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
     { name: "Crunchyroll", url: "https://www.crunchyroll.com/search?q=Beelzebub", logo: "" }
   ],
   live: [],
-  published: true,
+  published: false,
 },
 {
   slug: "black-bullet",
@@ -2305,7 +2305,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
     { name: "Crunchyroll", url: "https://www.crunchyroll.com/search?q=Black%20Lagoon", logo: "" }
   ],
   live: [],
-  published: true,
+  published: false,
 },
 {
   slug: "blame",
@@ -2373,7 +2373,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
     { name: "Crunchyroll", url: "https://www.crunchyroll.com/search?q=Bungou%20Stray%20Dogs", logo: "" }
   ],
   live: [],
-  published: true,
+  published: false,
 },
 {
   slug: "coppelion",
@@ -2968,7 +2968,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   }
 ],
   live: [],
-  published: true,
+  published: false,
 },
 
 {
@@ -3008,7 +3008,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   }
 ],
   live: [],
-  published: true,
+  published: false,
 },
 
 {
@@ -3088,7 +3088,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   }
 ],
   live: [],
-  published: true,
+  published: false,
 },
 
 {
@@ -3128,7 +3128,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   }
 ],
   live: [],
-  published: true,
+  published: false,
 },
 
 
@@ -5317,7 +5317,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   }
 ],
   live: [],
-  published: true,
+  published: false,
 },
 
 {
@@ -5494,7 +5494,7 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 ],
   streaming: [],
   live: [],
-  published: true,
+  published: false,
 },
 
 {

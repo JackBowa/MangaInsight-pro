@@ -1482,7 +1482,7 @@ export const SERIES_2: Serie[] = [
 ],
   streaming: [],
   live: [],
-  published: true,
+  published: false,
 },
 {
   slug: "fist-of-the-north-star",
@@ -4108,7 +4108,7 @@ export const SERIES_2: Serie[] = [
   }
   ],
   streaming: [],
-  published: true,
+  published: false,
 },
 
 {
@@ -7725,7 +7725,7 @@ export const SERIES_2: Serie[] = [
 ],
   streaming: [],
   live: [],
-  published: true,
+  published: false,
 },
 
 {
