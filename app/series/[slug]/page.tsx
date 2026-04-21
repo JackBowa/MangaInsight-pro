@@ -40,18 +40,45 @@ function formatDate(dateStr?: string): string {
   return new Date(dateStr).toLocaleDateString("fr-FR", { day: "numeric", month: "long", year: "numeric" });
 }
 
-// Séries similaires = même tags en commun, exclut la série courante
+const STOPWORDS = new Set([
+  "le","la","les","un","de","du","des","et","en","au","aux","par","sur","qui","que","dans","est","il","elle",
+  "ils","elles","son","sa","ses","leur","leurs","ce","se","si","ne","pas","plus","pour","avec","sans","mais",
+  "ou","donc","or","ni","car","tout","tous","très","bien","plus","aussi","même","comme","après","avant","sous",
+  "entre","jusqu","lorsque","dont","où","ont","être","avoir","une","lui","nous","vous","mon","ma","mes","ton",
+  "ta","tes","notre","votre","vos","cet","cette","ces","ceux","celle","celui","quel","quelle","quels","quelles",
+  "quand","comment","pourquoi","va","fait","peut","doit","autre","autres","peu","puis","alors","tout","toute",
+  "jeune","homme","monde","vie","jour","ans","long","seul","seule","afin","vers","ainsi","deux","trois","chaque",
+]);
+
+function synopsisTokens(text: string): Set<string> {
+  return new Set(
+    text.toLowerCase()
+      .replace(/[^a-zàâäéèêëîïôùûüç\s]/g, " ")
+      .split(/\s+/)
+      .filter(w => w.length > 3 && !STOPWORDS.has(w))
+  );
+}
+
+// Séries similaires — scoring hybride : tags (×3) + synopsis (×1) + catégorie (×1)
 function getSimilar(serie: typeof SERIES[0], count = 6) {
   const tags = (serie.tags ?? "").split("·").map((t: string) => t.trim().toLowerCase());
+  const tokens = synopsisTokens(serie.synopsis ?? "");
+
   return SERIES
-    .filter(s => s.slug !== serie.slug)
+    .filter(s => s.slug !== serie.slug && s.published !== false)
     .map(s => {
       const sTags = (s.tags ?? "").split("·").map((t: string) => t.trim().toLowerCase());
-      const common = tags.filter((t: string) => sTags.includes(t)).length;
-      return { ...s, common };
+      const sTokens = synopsisTokens(s.synopsis ?? "");
+
+      const tagScore = tags.filter((t: string) => sTags.includes(t)).length * 3;
+      const synopsisScore = [...tokens].filter(w => sTokens.has(w)).length;
+      const categoryBonus = s.category === serie.category ? 1 : 0;
+      const score = tagScore + synopsisScore + categoryBonus;
+
+      return { ...s, score };
     })
-    .filter(s => s.common > 0)
-    .sort((a, b) => b.common - a.common)
+    .filter(s => s.score > 0)
+    .sort((a, b) => b.score - a.score)
     .slice(0, count);
 }
 
