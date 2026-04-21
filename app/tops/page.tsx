@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useState } from "react";
-import { SERIES } from "@/data/series";
+import { PUBLISHED_SERIES as SERIES } from "@/data/series";
 
 type Rank = "SSS" | "SS" | "S" | "A" | "B";
 const RANK_ORDER: Rank[] = ["SSS", "SS", "S", "A", "B"];

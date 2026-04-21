@@ -3,7 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useRef, useMemo } from "react";
-import { SERIES } from "@/data/series";
+import { PUBLISHED_SERIES as SERIES } from "@/data/series";
 
 // Calcule "il y a X jours" depuis une date ISO
 function timeAgo(dateStr: string): string {

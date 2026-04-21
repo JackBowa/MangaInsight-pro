@@ -1,5 +1,5 @@
 import { MetadataRoute } from 'next';
-import { SERIES } from '@/data/series';
+import { PUBLISHED_SERIES as SERIES } from '@/data/series';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://mangainsight.com';

@@ -11,3 +11,5 @@ export const SERIES: Serie[] = [
   ...SERIES_1,
   ...SERIES_2,
 ]
+
+export const PUBLISHED_SERIES: Serie[] = SERIES.filter(s => s.published !== false)

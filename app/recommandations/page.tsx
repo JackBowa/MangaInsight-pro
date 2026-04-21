@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { SERIES } from "@/data/series";
+import { PUBLISHED_SERIES as SERIES } from "@/data/series";
 
 const STEPS = [
   {

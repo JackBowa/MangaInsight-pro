@@ -3,7 +3,7 @@ import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import { useUser } from "@supabase/auth-helpers-react";
 import { useState, useEffect, useRef, useCallback } from "react";
-import { SERIES } from "@/data/series";
+import { PUBLISHED_SERIES as SERIES } from "@/data/series";
 
 const items = [
   { href: "/", label: "Accueil" },

@@ -3,7 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useEffect, useMemo, useState } from "react";
-import { SERIES } from "@/data/series";
+import { PUBLISHED_SERIES as SERIES } from "@/data/series";
 import { supabase } from "@/lib/lib/supabase/client";
 
 const GENRES = ["Tout", "Action", "Fantasy", "Comédie", "Aventure", "Shōnen", "Magie", "Lycée", "Isekai", "Dark Fantasy", "Surnaturel", "Thriller", "Survie", "Sci-fi", "Tournoi"];

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { SERIES } from "@/data/series";
+import { PUBLISHED_SERIES as SERIES } from "@/data/series";
 
 export const metadata = {
   title: "À propos",
