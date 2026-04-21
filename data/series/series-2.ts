@@ -4108,7 +4108,7 @@ export const SERIES_2: Serie[] = [
   }
   ],
   streaming: [],
-  published: false,
+  published: true,
 },
 
 {
@@ -7725,7 +7725,7 @@ export const SERIES_2: Serie[] = [
 ],
   streaming: [],
   live: [],
-  published: false,
+  published: true,
 },
 
 {
