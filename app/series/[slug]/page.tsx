@@ -40,6 +40,14 @@ function formatDate(dateStr?: string): string {
   return new Date(dateStr).toLocaleDateString("fr-FR", { day: "numeric", month: "long", year: "numeric" });
 }
 
+function extractQuote(html: string): string {
+  const match = html.match(/<p[^>]*>([\s\S]*?)<\/p>/i);
+  if (!match) return "";
+  const text = match[1].replace(/<[^>]+>/g, "").trim();
+  const dotIdx = text.indexOf(".");
+  return (dotIdx > 20 ? text.slice(0, dotIdx) : text.slice(0, 150)).trim();
+}
+
 // Séries similaires = même tags en commun, exclut la série courante
 function getSimilar(serie: typeof SERIES[0], count = 6) {
   const tags = (serie.tags ?? "").split("·").map((t: string) => t.trim().toLowerCase());
@@ -75,6 +83,14 @@ export default function SeriePage({ params }: { params: { slug: string } }) {
     S:   "bg-orange-400/18 border-orange-400/35 text-orange-300",
     A:   "bg-green-400/15 border-green-400/30 text-green-300",
     B:   "bg-blue-400/15 border-blue-400/30 text-blue-300",
+  };
+
+  const RANK_HERO_BADGE: Record<string, string> = {
+    SSS: "bg-amber-400 text-black shadow-[0_0_28px_rgba(251,191,36,0.75),0_0_60px_rgba(251,191,36,0.3)] animate-pulse",
+    SS:  "bg-red-400 text-white shadow-[0_0_24px_rgba(248,113,113,0.65),0_0_50px_rgba(248,113,113,0.25)]",
+    S:   "bg-orange-400 text-white shadow-[0_0_24px_rgba(251,146,60,0.65),0_0_50px_rgba(251,146,60,0.25)]",
+    A:   "bg-green-400 text-black shadow-[0_0_20px_rgba(74,222,128,0.55)]",
+    B:   "bg-blue-400 text-white shadow-[0_0_20px_rgba(96,165,250,0.55)]",
   };
 
   const jsonLd = {
@@ -130,13 +146,13 @@ export default function SeriePage({ params }: { params: { slug: string } }) {
             </div>
           )}
           <div className="pb-2">
-            <div className="flex items-center gap-2 mb-3">
+            <div className="flex items-center gap-2 mb-3 flex-wrap">
               <span className={`text-[0.68rem] font-bold tracking-[0.15em] uppercase px-3 py-1 rounded-full border ${serie.category === "manhwa" ? "bg-pink-500/20 border-pink-500/35 text-pink-300" : "bg-indigo-500/20 border-indigo-500/35 text-indigo-300"}`}>
                 {serie.category === "manhwa" ? "🇰🇷 Manhwa" : "🇯🇵 Manga"}
               </span>
               {rank && (
-                <span style={{ fontFamily: "var(--font-bebas), sans-serif", letterSpacing: "0.08em" }}
-                  className={`text-sm px-3 py-1 rounded-full border ${RANK_STYLES[rank] ?? ""}`}>
+                <span style={{ fontFamily: "var(--font-bebas), sans-serif", letterSpacing: "0.12em" }}
+                  className={`text-3xl md:text-4xl px-5 py-1 rounded-2xl ${RANK_HERO_BADGE[rank] ?? ""}`}>
                   Rang {rank}
                 </span>
               )}
@@ -151,7 +167,7 @@ export default function SeriePage({ params }: { params: { slug: string } }) {
 
             {/* Étoiles */}
             {stars > 0 && (
-              <div className="flex items-center gap-1 mb-5">
+              <div className="flex items-center gap-1 mb-3">
                 {[1,2,3,4,5].map(i => (
                   <svg key={i} className={`w-5 h-5 ${i <= stars ? "text-brand-500" : "text-white/15"}`} fill="currentColor" viewBox="0 0 20 20">
                     <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
@@ -160,6 +176,21 @@ export default function SeriePage({ params }: { params: { slug: string } }) {
                 <span className="text-xs text-white/30 ml-2">Note rédaction</span>
               </div>
             )}
+
+            {/* Infos rapides + tags pills */}
+            <div className="flex flex-wrap items-center gap-2 mb-5">
+              {(serie as any).status && (
+                <span className={`text-xs font-semibold px-3 py-1 rounded-full border ${(serie as any).status === "Terminé" ? "bg-emerald-500/15 border-emerald-500/30 text-emerald-300" : "bg-blue-500/15 border-blue-500/30 text-blue-300"}`}>
+                  {(serie as any).status === "Terminé" ? "✓ Terminé" : "⟳ En cours"}
+                </span>
+              )}
+              {serie.tags?.split("·").map((t: string) => t.trim()).filter(Boolean).map((tag: string) => (
+                <Link key={tag} href={`/critiques?tag=${encodeURIComponent(tag)}`}
+                  className="text-xs px-3 py-1 rounded-full border border-brand-500/30 bg-brand-500/10 text-brand-300 hover:bg-brand-500/25 hover:border-brand-500/55 transition-all">
+                  {tag}
+                </Link>
+              ))}
+            </div>
 
             <div className="flex gap-2 flex-wrap">
               {serie.shops?.[0] && (
@@ -235,8 +266,34 @@ export default function SeriePage({ params }: { params: { slug: string } }) {
             {editorHtml && (
               <div className="mb-8">
                 <p className="text-[0.68rem] font-bold tracking-[0.15em] uppercase text-white/30 mb-3 flex items-center gap-3 after:flex-1 after:h-px after:bg-white/6">✍️ Avis de la rédaction</p>
-                <div className="bg-white/3 border border-white/7 rounded-2xl p-6 md:p-7">
-                  <div className="review-content" dangerouslySetInnerHTML={{ __html: editorHtml }} />
+                <div className="border-l-4 border-brand-500 rounded-r-2xl bg-white/2 overflow-hidden">
+                  {/* Header rédacteur */}
+                  <div className="flex items-center gap-3 px-6 pt-5 pb-4">
+                    <div className="w-9 h-9 rounded-full bg-brand-500/20 border border-brand-500/40 flex items-center justify-center flex-shrink-0">
+                      <svg className="w-4 h-4 text-brand-400" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
+                        <path strokeLinecap="round" strokeLinejoin="round" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"/>
+                      </svg>
+                    </div>
+                    <div>
+                      <p className="text-xs font-bold text-white/80">La rédaction MangaInsight</p>
+                      <p className="text-[0.65rem] text-white/30">Critique éditoriale</p>
+                    </div>
+                  </div>
+                  {/* Citation clé */}
+                  {(() => {
+                    const quote = extractQuote(editorHtml);
+                    return quote ? (
+                      <blockquote className="px-6 pb-5 border-b border-white/6">
+                        <p className="text-base md:text-lg italic text-brand-200 leading-relaxed font-light">
+                          &ldquo;{quote}&rdquo;
+                        </p>
+                      </blockquote>
+                    ) : null;
+                  })()}
+                  {/* Contenu complet */}
+                  <div className="px-6 py-5">
+                    <div className="review-content" dangerouslySetInnerHTML={{ __html: editorHtml }} />
+                  </div>
                 </div>
               </div>
             )}
@@ -282,6 +339,7 @@ export default function SeriePage({ params }: { params: { slug: string } }) {
                 { label: "Catégorie", value: serie.category === "manhwa" ? "Manhwa 🇰🇷" : "Manga 🇯🇵" },
                 ...(serie.tags ? [{ label: "Genres", value: serie.tags.split("·")[0].trim() }] : []),
                 ...(serie.addedAt ? [{ label: "Ajouté le", value: formatDate(serie.addedAt) }] : []),
+                ...(similar.length > 0 ? [{ label: "Séries similaires", value: `${similar.length} disponibles` }] : []),
               ].map(({ label, value }) => (
                 <div key={label} className="flex justify-between items-center py-2 border-b border-white/5 last:border-0 text-sm">
                   <span className="text-white/35">{label}</span>
