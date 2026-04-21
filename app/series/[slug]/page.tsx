@@ -9,7 +9,7 @@ import CoverImage from "./CoverImage";
 import SerieActions from "./SerieActions";
 
 export function generateStaticParams() {
-  return SERIES.map(s => ({ slug: s.slug }));
+  return SERIES.filter(s => s.published !== false).map(s => ({ slug: s.slug }));
 }
 
 export async function generateMetadata({ params }: { params: { slug: string } }) {
@@ -40,14 +40,6 @@ function formatDate(dateStr?: string): string {
   return new Date(dateStr).toLocaleDateString("fr-FR", { day: "numeric", month: "long", year: "numeric" });
 }
 
-function extractQuote(html: string): string {
-  const match = html.match(/<p[^>]*>([\s\S]*?)<\/p>/i);
-  if (!match) return "";
-  const text = match[1].replace(/<[^>]+>/g, "").trim();
-  const dotIdx = text.indexOf(".");
-  return (dotIdx > 20 ? text.slice(0, dotIdx) : text.slice(0, 150)).trim();
-}
-
 // Séries similaires = même tags en commun, exclut la série courante
 function getSimilar(serie: typeof SERIES[0], count = 6) {
   const tags = (serie.tags ?? "").split("·").map((t: string) => t.trim().toLowerCase());
@@ -66,6 +58,7 @@ function getSimilar(serie: typeof SERIES[0], count = 6) {
 export default function SeriePage({ params }: { params: { slug: string } }) {
   const serie = SERIES.find(s => s.slug === params.slug);
   if (!serie) return notFound();
+  if (serie.published === false) return notFound();
 
   const rank = starsToRank(serie.stars);
   const similar = getSimilar(serie);
@@ -159,7 +152,7 @@ export default function SeriePage({ params }: { params: { slug: string } }) {
             </div>
 
             <h1 style={{ fontFamily: "var(--font-bebas), sans-serif", letterSpacing: "0.04em" }}
-              className="text-[clamp(2.8rem,6vw,5rem)] text-white leading-[0.95] mb-2">
+              className="text-[clamp(1.8rem,4vw,3.5rem)] text-white leading-[0.95] mb-2">
               {serie.title}
             </h1>
 
@@ -279,17 +272,6 @@ export default function SeriePage({ params }: { params: { slug: string } }) {
                       <p className="text-[0.65rem] text-white/30">Critique éditoriale</p>
                     </div>
                   </div>
-                  {/* Citation clé */}
-                  {(() => {
-                    const quote = extractQuote(editorHtml);
-                    return quote ? (
-                      <blockquote className="px-6 pb-5 border-b border-white/6">
-                        <p className="text-base md:text-lg italic text-brand-200 leading-relaxed font-light">
-                          &ldquo;{quote}&rdquo;
-                        </p>
-                      </blockquote>
-                    ) : null;
-                  })()}
                   {/* Contenu complet */}
                   <div className="px-6 py-5">
                     <div className="review-content" dangerouslySetInnerHTML={{ __html: editorHtml }} />
