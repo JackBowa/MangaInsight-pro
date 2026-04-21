@@ -38,9 +38,9 @@ export const SERIES_2: Serie[] = [
       "logo": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Crunchyroll_logo_2018_vertical.png"
     }
   ],
-  live: []
-,
-  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/nx100230-TA0RQ9d7RVas.jpg"
+  live: [],
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/nx100230-TA0RQ9d7RVas.jpg",
+  published: false,
 },
 
 {
@@ -78,9 +78,9 @@ export const SERIES_2: Serie[] = [
       "logo": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Crunchyroll_logo_2018_vertical.png"
     }
   ],
-  live: []
-,
-  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx85793-PvROauRZl0VB.png"
+  live: [],
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx85793-PvROauRZl0VB.png",
+  published: false,
 },
 
 
@@ -114,7 +114,8 @@ export const SERIES_2: Serie[] = [
     "logo": "/logos/amazon.svg"
   }
   ],
-  streaming: []
+  streaming: [],
+  published: false,
 },
 
 {
@@ -146,9 +147,9 @@ export const SERIES_2: Serie[] = [
     }
   ],
   streaming: [],
-  live: []
-,
-  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx30104-sUVzNlTWZ5cu.jpg"
+  live: [],
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx30104-sUVzNlTWZ5cu.jpg",
+  published: true,
 },
 
 
@@ -182,9 +183,9 @@ export const SERIES_2: Serie[] = [
     }
   ],
   streaming: [],
-  live: []
-,
-  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx205598-Ed5jQnBctIQO.jpg"
+  live: [],
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx205598-Ed5jQnBctIQO.jpg",
+  published: true,
 },
 
 {
@@ -222,9 +223,9 @@ export const SERIES_2: Serie[] = [
       "logo": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Crunchyroll_logo_2018_vertical.png"
     }
   ],
-  live: []
-,
-  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx190126-SOWtDjuwbcVs.jpg"
+  live: [],
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx190126-SOWtDjuwbcVs.jpg",
+  published: true,
 },
 
 {
@@ -262,9 +263,9 @@ export const SERIES_2: Serie[] = [
       "logo": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Crunchyroll_logo_2018_vertical.png"
     }
   ],
-  live: []
-,
-  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx86218-sIl9tnqHZQyh.jpg"
+  live: [],
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx86218-sIl9tnqHZQyh.jpg",
+  published: true,
 },
 
 {
@@ -302,9 +303,9 @@ export const SERIES_2: Serie[] = [
       "logo": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Crunchyroll_logo_2018_vertical.png"
     }
   ],
-  live: []
-,
-  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/nx99536-Ad0c9WNX50L6.jpg"
+  live: [],
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/nx99536-Ad0c9WNX50L6.jpg",
+  published: false,
 },
 
 {
@@ -342,9 +343,9 @@ export const SERIES_2: Serie[] = [
       "logo": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Crunchyroll_logo_2018_vertical.png"
     }
   ],
-  live: []
-,
-  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx78881-WLtZZsQnDqHN.png"
+  live: [],
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx78881-WLtZZsQnDqHN.png",
+  published: false,
 },
 
 {
@@ -382,9 +383,9 @@ export const SERIES_2: Serie[] = [
       "logo": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Crunchyroll_logo_2018_vertical.png"
     }
   ],
-  live: []
-,
-  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx86526-KEzZ1WkscsCy.jpg"
+  live: [],
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx86526-KEzZ1WkscsCy.jpg",
+  published: false,
 },
 
 
@@ -424,9 +425,9 @@ export const SERIES_2: Serie[] = [
       "logo": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Crunchyroll_logo_2018_vertical.png"
     }
   ],
-  live: []
-,
-  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx87395-axsA49kSZp72.jpg"
+  live: [],
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx87395-axsA49kSZp72.jpg",
+  published: false,
 },
 
 {
@@ -458,9 +459,9 @@ export const SERIES_2: Serie[] = [
     }
   ],
   streaming: [],
-  live: []
-,
-  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx55297-4gAl9TLpkhfX.png"
+  live: [],
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx55297-4gAl9TLpkhfX.png",
+  published: false,
 },
 
 {
@@ -492,9 +493,9 @@ export const SERIES_2: Serie[] = [
     }
   ],
   streaming: [],
-  live: []
-,
-  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx99609-hfnudDtTT1n5.jpg"
+  live: [],
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx99609-hfnudDtTT1n5.jpg",
+  published: false,
 },
 
 {
@@ -526,9 +527,9 @@ export const SERIES_2: Serie[] = [
     }
   ],
   streaming: [],
-  live: []
-,
-  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx147913-G5rMTLNhMScN.jpg"
+  live: [],
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx147913-G5rMTLNhMScN.jpg",
+  published: false,
 },
 
 
@@ -562,7 +563,8 @@ export const SERIES_2: Serie[] = [
     "logo": "/logos/amazon.svg"
   }
   ],
-  streaming: []
+  streaming: [],
+  published: false,
 },
 
 {
@@ -600,9 +602,9 @@ export const SERIES_2: Serie[] = [
       "logo": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Crunchyroll_logo_2018_vertical.png"
     }
   ],
-  live: []
-,
-  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx142376-0EclLARCmmZL.png"
+  live: [],
+  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx142376-0EclLARCmmZL.png",
+  published: false,
 },
 
 
@@ -642,7 +644,8 @@ export const SERIES_2: Serie[] = [
   }
 ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 
@@ -687,7 +690,8 @@ export const SERIES_2: Serie[] = [
   }
 ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 
@@ -723,7 +727,8 @@ export const SERIES_2: Serie[] = [
     "logo": "/logos/amazon.svg"
   }
   ],
-  streaming: []
+  streaming: [],
+  published: false,
 },
 
 
@@ -775,7 +780,8 @@ export const SERIES_2: Serie[] = [
   }
 ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 
@@ -811,7 +817,8 @@ export const SERIES_2: Serie[] = [
     "logo": "/logos/amazon.svg"
   }
   ],
-  streaming: []
+  streaming: [],
+  published: false,
 },
 
 
@@ -845,7 +852,8 @@ export const SERIES_2: Serie[] = [
     "logo": "/logos/amazon.svg"
   }
   ],
-  streaming: []
+  streaming: [],
+  published: false,
 },
 
 {
@@ -877,7 +885,8 @@ export const SERIES_2: Serie[] = [
     "logo": "/logos/amazon.svg"
   }
   ],
-  streaming: []
+  streaming: [],
+  published: false,
 },
 
 
@@ -912,7 +921,8 @@ export const SERIES_2: Serie[] = [
   }
 ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -945,7 +955,8 @@ export const SERIES_2: Serie[] = [
   }
 ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -977,7 +988,8 @@ export const SERIES_2: Serie[] = [
     "logo": "/logos/amazon.svg"
   }
   ],
-  streaming: []
+  streaming: [],
+  published: false,
 },
 
 
@@ -1014,7 +1026,8 @@ export const SERIES_2: Serie[] = [
   }
 ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 
@@ -1052,7 +1065,8 @@ export const SERIES_2: Serie[] = [
   }
 ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -1085,7 +1099,8 @@ export const SERIES_2: Serie[] = [
   }
 ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -1118,7 +1133,8 @@ export const SERIES_2: Serie[] = [
   }
 ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 
@@ -1153,7 +1169,8 @@ export const SERIES_2: Serie[] = [
   }
 ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -1186,7 +1203,8 @@ export const SERIES_2: Serie[] = [
   }
 ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -1219,7 +1237,8 @@ export const SERIES_2: Serie[] = [
   }
 ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 
@@ -1254,7 +1273,8 @@ export const SERIES_2: Serie[] = [
   }
 ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -1282,7 +1302,8 @@ export const SERIES_2: Serie[] = [
   }
 ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 
@@ -1321,7 +1342,8 @@ export const SERIES_2: Serie[] = [
   }
 ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -1354,7 +1376,8 @@ export const SERIES_2: Serie[] = [
   }
 ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -1387,7 +1410,8 @@ export const SERIES_2: Serie[] = [
   }
 ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 
@@ -1457,7 +1481,8 @@ export const SERIES_2: Serie[] = [
   }
 ],
   streaming: [],
-  live: []
+  live: [],
+  published: true,
 },
 {
   slug: "fist-of-the-north-star",
@@ -1489,7 +1514,8 @@ export const SERIES_2: Serie[] = [
   }
 ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -1522,7 +1548,8 @@ export const SERIES_2: Serie[] = [
   }
 ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -1555,7 +1582,8 @@ export const SERIES_2: Serie[] = [
   }
 ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 
@@ -1590,7 +1618,8 @@ export const SERIES_2: Serie[] = [
   }
 ],
   streaming: [],
-  live: []
+  live: [],
+  published: true,
 },
 
 
@@ -1629,7 +1658,8 @@ export const SERIES_2: Serie[] = [
   }
 ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 
@@ -1664,7 +1694,8 @@ export const SERIES_2: Serie[] = [
   }
 ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -1697,7 +1728,8 @@ export const SERIES_2: Serie[] = [
   }
 ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 
@@ -1732,7 +1764,8 @@ export const SERIES_2: Serie[] = [
   }
 ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -1765,7 +1798,8 @@ export const SERIES_2: Serie[] = [
   }
 ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -1798,7 +1832,8 @@ export const SERIES_2: Serie[] = [
   }
 ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 
@@ -1833,7 +1868,8 @@ export const SERIES_2: Serie[] = [
   }
 ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 {
   slug: "silver-spoon",
@@ -1865,7 +1901,8 @@ export const SERIES_2: Serie[] = [
   }
 ],
   streaming: [],
-  live: []
+  live: [],
+  published: true,
 },
 
 {
@@ -1898,7 +1935,8 @@ export const SERIES_2: Serie[] = [
   }
 ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 
@@ -1933,7 +1971,8 @@ export const SERIES_2: Serie[] = [
   }
 ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -1966,7 +2005,8 @@ export const SERIES_2: Serie[] = [
   }
 ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -1999,7 +2039,8 @@ export const SERIES_2: Serie[] = [
   }
 ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -2032,7 +2073,8 @@ export const SERIES_2: Serie[] = [
   }
 ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -2065,7 +2107,8 @@ export const SERIES_2: Serie[] = [
   }
 ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -2093,7 +2136,8 @@ export const SERIES_2: Serie[] = [
   }
 ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -2126,7 +2170,8 @@ export const SERIES_2: Serie[] = [
   }
 ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 
@@ -2161,7 +2206,8 @@ export const SERIES_2: Serie[] = [
   }
 ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 
@@ -2200,7 +2246,8 @@ export const SERIES_2: Serie[] = [
   }
 ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -2233,7 +2280,8 @@ export const SERIES_2: Serie[] = [
   }
 ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -2266,7 +2314,8 @@ export const SERIES_2: Serie[] = [
   }
 ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -2294,7 +2343,8 @@ export const SERIES_2: Serie[] = [
   }
 ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -2322,7 +2372,8 @@ export const SERIES_2: Serie[] = [
   }
 ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 {
   slug: "planetes",
@@ -2354,7 +2405,8 @@ export const SERIES_2: Serie[] = [
   }
 ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -2387,7 +2439,8 @@ export const SERIES_2: Serie[] = [
   }
 ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -2420,7 +2473,8 @@ export const SERIES_2: Serie[] = [
   }
 ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -2453,7 +2507,8 @@ export const SERIES_2: Serie[] = [
   }
 ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -2486,7 +2541,8 @@ export const SERIES_2: Serie[] = [
   }
 ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -2519,7 +2575,8 @@ export const SERIES_2: Serie[] = [
   }
 ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -2552,7 +2609,8 @@ export const SERIES_2: Serie[] = [
   }
 ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -2585,7 +2643,8 @@ export const SERIES_2: Serie[] = [
   }
 ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 
@@ -2620,7 +2679,8 @@ export const SERIES_2: Serie[] = [
   }
 ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -2653,7 +2713,8 @@ export const SERIES_2: Serie[] = [
   }
 ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 
@@ -2688,7 +2749,8 @@ export const SERIES_2: Serie[] = [
   }
 ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -2721,7 +2783,8 @@ export const SERIES_2: Serie[] = [
   }
 ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -2754,7 +2817,8 @@ export const SERIES_2: Serie[] = [
   }
 ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -2787,7 +2851,8 @@ export const SERIES_2: Serie[] = [
   }
 ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -2820,7 +2885,8 @@ export const SERIES_2: Serie[] = [
   }
 ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -2853,7 +2919,8 @@ export const SERIES_2: Serie[] = [
   }
 ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -2886,7 +2953,8 @@ export const SERIES_2: Serie[] = [
   }
 ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -2919,7 +2987,8 @@ export const SERIES_2: Serie[] = [
   }
 ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 
@@ -2956,7 +3025,8 @@ export const SERIES_2: Serie[] = [
     "logo": "/logos/amazon.svg"
   }
   ],
-  streaming: []
+  streaming: [],
+  published: false,
 },
 
 {
@@ -2988,7 +3058,8 @@ export const SERIES_2: Serie[] = [
     "logo": "/logos/amazon.svg"
   }
   ],
-  streaming: []
+  streaming: [],
+  published: false,
 },
 
 {
@@ -3020,7 +3091,8 @@ export const SERIES_2: Serie[] = [
     "logo": "/logos/amazon.svg"
   }
   ],
-  streaming: []
+  streaming: [],
+  published: false,
 },
 
 
@@ -3060,7 +3132,8 @@ export const SERIES_2: Serie[] = [
     "logo": "/logos/amazon.svg"
   }
   ],
-  streaming: []
+  streaming: [],
+  published: false,
 },
 
 
@@ -3096,7 +3169,8 @@ export const SERIES_2: Serie[] = [
     "logo": "/logos/amazon.svg"
   }
   ],
-  streaming: []
+  streaming: [],
+  published: false,
 },
 
 
@@ -3130,7 +3204,8 @@ export const SERIES_2: Serie[] = [
     "logo": "/logos/amazon.svg"
   }
   ],
-  streaming: []
+  streaming: [],
+  published: false,
 },
 
 
@@ -3167,7 +3242,8 @@ export const SERIES_2: Serie[] = [
     "logo": "/logos/amazon.svg"
   }
   ],
-  streaming: []
+  streaming: [],
+  published: false,
 },
 {
   slug: "cromartie-high-school",
@@ -3198,7 +3274,8 @@ export const SERIES_2: Serie[] = [
     "logo": "/logos/amazon.svg"
   }
   ],
-  streaming: []
+  streaming: [],
+  published: false,
 },
 
 {
@@ -3230,7 +3307,8 @@ export const SERIES_2: Serie[] = [
     "logo": "/logos/amazon.svg"
   }
   ],
-  streaming: []
+  streaming: [],
+  published: false,
 },
 
 {
@@ -3262,7 +3340,8 @@ export const SERIES_2: Serie[] = [
     "logo": "/logos/amazon.svg"
   }
   ],
-  streaming: []
+  streaming: [],
+  published: false,
 },
 
 
@@ -3296,7 +3375,8 @@ export const SERIES_2: Serie[] = [
     "logo": "/logos/amazon.svg"
   }
   ],
-  streaming: []
+  streaming: [],
+  published: false,
 },
 
 
@@ -3330,7 +3410,8 @@ export const SERIES_2: Serie[] = [
     "logo": "/logos/amazon.svg"
   }
   ],
-  streaming: []
+  streaming: [],
+  published: false,
 },
 
 {
@@ -3362,7 +3443,8 @@ export const SERIES_2: Serie[] = [
     "logo": "/logos/amazon.svg"
   }
   ],
-  streaming: []
+  streaming: [],
+  published: false,
 },
 
 
@@ -3396,7 +3478,8 @@ export const SERIES_2: Serie[] = [
     "logo": "/logos/amazon.svg"
   }
   ],
-  streaming: []
+  streaming: [],
+  published: false,
 },
 
 {
@@ -3428,7 +3511,8 @@ export const SERIES_2: Serie[] = [
     "logo": "/logos/amazon.svg"
   }
   ],
-  streaming: []
+  streaming: [],
+  published: false,
 },
 
 
@@ -3466,7 +3550,8 @@ export const SERIES_2: Serie[] = [
     "logo": "/logos/amazon.svg"
   }
   ],
-  streaming: []
+  streaming: [],
+  published: false,
 },
 
 {
@@ -3498,7 +3583,8 @@ export const SERIES_2: Serie[] = [
     "logo": "/logos/amazon.svg"
   }
   ],
-  streaming: []
+  streaming: [],
+  published: false,
 },
 
 {
@@ -3525,7 +3611,8 @@ export const SERIES_2: Serie[] = [
     "logo": "/logos/amazon.svg"
   }
   ],
-  streaming: []
+  streaming: [],
+  published: false,
 },
 
 {
@@ -3557,7 +3644,8 @@ export const SERIES_2: Serie[] = [
     "logo": "/logos/amazon.svg"
   }
   ],
-  streaming: []
+  streaming: [],
+  published: false,
 },
 
 
@@ -3613,7 +3701,8 @@ export const SERIES_2: Serie[] = [
     "logo": "/logos/amazon.svg"
   }
   ],
-  streaming: []
+  streaming: [],
+  published: false,
 },
 
 
@@ -3649,7 +3738,8 @@ export const SERIES_2: Serie[] = [
     "logo": "/logos/amazon.svg"
   }
   ],
-  streaming: []
+  streaming: [],
+  published: false,
 },
 
 {
@@ -3681,7 +3771,8 @@ export const SERIES_2: Serie[] = [
     "logo": "/logos/amazon.svg"
   }
   ],
-  streaming: []
+  streaming: [],
+  published: false,
 },
 
 {
@@ -3713,7 +3804,8 @@ export const SERIES_2: Serie[] = [
     "logo": "/logos/amazon.svg"
   }
   ],
-  streaming: []
+  streaming: [],
+  published: false,
 },
 
 {
@@ -3745,7 +3837,8 @@ export const SERIES_2: Serie[] = [
     "logo": "/logos/amazon.svg"
   }
   ],
-  streaming: []
+  streaming: [],
+  published: false,
 },
 
 
@@ -3779,7 +3872,8 @@ export const SERIES_2: Serie[] = [
     "logo": "/logos/amazon.svg"
   }
   ],
-  streaming: []
+  streaming: [],
+  published: true,
 },
 
 {
@@ -3811,7 +3905,8 @@ export const SERIES_2: Serie[] = [
     "logo": "/logos/amazon.svg"
   }
   ],
-  streaming: []
+  streaming: [],
+  published: false,
 },
 
 
@@ -3847,7 +3942,8 @@ export const SERIES_2: Serie[] = [
     "logo": "/logos/amazon.svg"
   }
   ],
-  streaming: []
+  streaming: [],
+  published: false,
 },
 
 {
@@ -3879,143 +3975,9 @@ export const SERIES_2: Serie[] = [
     "logo": "/logos/amazon.svg"
   }
   ],
-  streaming: []
+  streaming: [],
+  published: false,
 },
-{
-  slug: "tower-of-god",
-  title: "Tower of God",
-  synopsis: "Vingt-cinquième Bam a passé toute sa vie sous une tour, sans ciel ni avenir, avec Rachel comme seule lumière. Quand elle décide de monter dans la Tour, une structure mystérieuse dont l'ascension promet tout ce que l'on désire, Bam la suit et se retrouve projeté dans un monde de compétitions impitoyables, de pouvoirs surnaturels et de trahisons.",
-  reviewHtml: "<p><em>Tower of God</em> de SIU est l'un des piliers fondateurs du manhwa webtoon moderne. Publié depuis 2010 sur Naver, il a posé les bases du genre avec un worldbuilding d'une richesse exceptionnelle.</p><p>La Tour est une des constructions fictives les plus inventives du genre : chaque étage est un monde différent avec ses règles, sa faune et sa politique. SIU y déploie des centaines de personnages avec une maîtrise remarquable.</p><p>Bam est un héros dont l'évolution est l'une des plus satisfaisantes du webtoon — de gosse naïf à force à part entière. Une lecture incontournable malgré ses pauses fréquentes de publication.</p>",
-  pros: ["Worldbuilding d'une richesse exceptionnelle", "Centaines de personnages bien gérés", "Évolution du héros très satisfaisante"],
-  cons: ["Pauses de publication fréquentes", "Arcs très longs, rythme inégal"],
-  stars: 5,
-  category: "manhwa",
-  tags: "Action · Fantasy · Webtoon · Manhwa",
-  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx85143-23oup3ETbFJk.jpg",
-  addedAt: "2026-03-22",
-  shops: [
-  {
-    "name": "Fnac",
-    "url": "https://www.fnac.com/SearchResult/ResultKNV.aspx?Search=tower+of+god+manhwa",
-    "logo": "/logos/fnac.svg"
-  },
-  {
-    "name": "Amazon",
-    "url": "https://www.amazon.fr/s?k=tower+of+god+manhwa",
-    "logo": "/logos/amazon.svg"
-  }
-  ],
-  streaming: []
-},
-
-{
-  slug: "the-god-of-high-school",
-  title: "The God of High School",
-  synopsis: "Jin Mori, un lycéen coréen champion de taekwondo, est invité à participer au tournoi God of High School, une compétition rassemblant les meilleurs combattants de tout le pays. Ce qui commence comme un tournoi sportif révèle progressivement des enjeux surnaturels bien plus grands que prévu.",
-  reviewHtml: "<p><em>The God of High School</em> de Yongje Park est une des séries de combat les plus viscéralement jouissives du webtoon. Si le scénario est simple au départ, il prend une ampleur mythologique inattendue qui surprend agréablement.</p><p>Les combats sont ce qui définit la série : dynamiques, inventifs, visuellement percutants. Park dessine l'action avec une clarté et une énergie rares, et chaque affrontement est mémorable.</p><p>Jin Mori est un héros shōnen classique dans le bon sens — enthousiaste, loyal et progressivement révélé comme bien plus qu'il n'y paraît. Une lecture parfaite pour les amateurs d'action pure.</p>",
-  pros: ["Combats parmi les meilleurs du webtoon", "Énergie et rythme constants", "Révélations mythologiques surprenantes"],
-  cons: ["Scénario simple au départ", "Personnages secondaires peu développés"],
-  stars: 4,
-  category: "manhwa",
-  tags: "Action · Arts martiaux · Webtoon · Manhwa",
-  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx85141-qHR957V3FVco.png",
-  addedAt: "2026-03-22",
-  shops: [
-  {
-    "name": "Fnac",
-    "url": "https://www.fnac.com/SearchResult/ResultKNV.aspx?Search=god+of+high+school+manhwa",
-    "logo": "/logos/fnac.svg"
-  },
-  {
-    "name": "Amazon",
-    "url": "https://www.amazon.fr/s?k=god+of+high+school+manhwa",
-    "logo": "/logos/amazon.svg"
-  }
-  ],
-  streaming: []
-},
-
-{
-  slug: "noblesse",
-  title: "Noblesse",
-  synopsis: "Cadis Etrama Di Raizel, un noble vampire d'une puissance immense, se réveille après un sommeil de 820 ans et s'inscrit dans un lycée coréen pour retrouver son fidèle serviteur Frankenstein. Ses anciens ennemis et diverses organisations secrètes vont rapidement troubler sa nouvelle vie tranquille.",
-  reviewHtml: "<p><em>Noblesse</em> de Son Jeho et Lee Kwangsu est l'un des webtoons pionniers, publié depuis 2007. Son charme repose sur un protagoniste atypique : Rai, immensément puissant mais totalement désintéressé par son propre pouvoir, découvrant le monde moderne avec une dignité sereine et comique.</p><p>La dynamique entre Rai et Frankenstein (son serviteur protecteur) est le coeur émotionnel de la série. Les combats montent progressivement en intensité et en enjeux.</p><p>La série souffre d'un rythme parfois inégal et de certains arcs répétitifs, mais reste un classique fondateur du webtoon action/fantasy coréen. La conclusion est satisfaisante.</p>",
-  pros: ["Protagoniste charismatique et unique", "Dynamique Rai/Frankenstein touchante", "Classique fondateur du webtoon"],
-  cons: ["Rythme inégal", "Certains arcs répétitifs"],
-  stars: 4,
-  category: "manhwa",
-  tags: "Action · Fantasy · Vampires · Webtoon · Manhwa",
-  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx59983-cfSjrRxuAlAD.png",
-  addedAt: "2026-03-22",
-  shops: [
-  {
-    "name": "Fnac",
-    "url": "https://www.fnac.com/SearchResult/ResultKNV.aspx?Search=noblesse+manhwa",
-    "logo": "/logos/fnac.svg"
-  },
-  {
-    "name": "Amazon",
-    "url": "https://www.amazon.fr/s?k=noblesse+manhwa",
-    "logo": "/logos/amazon.svg"
-  }
-  ],
-  streaming: []
-},
-
-{
-  slug: "nano-machine",
-  title: "Nano Machine",
-  synopsis: "Cheon Yeo-Woon est un bâtard dans une secte d'arts martiaux, en butte aux persécutions des fils légitimes. Un descendant du futur lui injecte secrètement une nano machine qui l'aide à maîtriser rapidement les arts martiaux et à s'élever dans la hiérarchie brutale de la secte.",
-  reviewHtml: "<p><em>Nano Machine</em> est l'archétype du manhwa de cultivation moderne avec twist technologique. La combinaison arts martiaux chinois / nano machine futuriste crée une dynamique de progression originale très appréciée des lecteurs du genre.</p><p>La progression de Cheon Yeo-Woon est rapide mais cohérente grâce à la logique de la nano machine. La politique interne de la secte, ses complots et ses trahisons donnent de la substance à ce qui pourrait rester un simple power fantasy.</p><p>Dessin dynamique, rythme soutenu et retournements fréquents font de Nano Machine une lecture addictive pour les amateurs de cultivation et de revenge manhwa.</p>",
-  pros: ["Fusion cultivation/technologie originale", "Rythme soutenu et addictif", "Complots de secte bien construits"],
-  cons: ["Power fantasy assumé, peu de nuance", "Dessin inégal"],
-  stars: 4,
-  category: "manhwa",
-  tags: "Action · Cultivation · Webtoon · Manhwa",
-  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx120980-RZ9WLd0o9hyo.jpg",
-  addedAt: "2026-03-22",
-  shops: [
-  {
-    "name": "Fnac",
-    "url": "https://www.fnac.com/SearchResult/ResultKNV.aspx?Search=nano+machine+manhwa",
-    "logo": "/logos/fnac.svg"
-  },
-  {
-    "name": "Amazon",
-    "url": "https://www.amazon.fr/s?k=nano+machine+manhwa",
-    "logo": "/logos/amazon.svg"
-  }
-  ],
-  streaming: []
-},
-
-{
-  slug: "omniscient-reader",
-  title: "Omniscient Reader's Viewpoint",
-  synopsis: "Kim Dokja est le seul lecteur à avoir fini le roman web 'Three Ways to Survive the Apocalypse'. Quand le monde se transforme en l'apocalypse décrite dans ce roman, il est le seul à en connaître le déroulement. Armé de cette connaissance, il doit naviguer dans un monde devenu fiction tout en essayant de changer la destinée des personnages qu'il aime.",
-  reviewHtml: "<p><em>Omniscient Reader's Viewpoint</em> est l'un des meilleurs webtoons du moment, adapté du roman web coréen de singNsong. Sa prémisse — un lecteur qui connaît l'intrigue mais doit la vivre — est exploitée avec une intelligence et une profondeur rares.</p><p>Kim Dokja est un héros fascinant : sa connaissance méta du récit crée des situations narratives uniques, et son évolution d'observateur passif en acteur central est l'un des arcs de personnage les plus satisfaisants du genre.</p><p>Les thèmes sur la narration, la fiction et ce que les histoires font aux gens sont traités avec sérieux. Le dessin est de haute qualité. Une oeuvre majeure du manhwa contemporain.</p>",
-  pros: ["Prémisse méta brillamment exploitée", "Héros complexe et attachant", "Thèmes profonds sur la fiction et la narration"],
-  cons: ["Dense, nécessite attention", "Nombreux personnages à suivre"],
-  stars: 5,
-  category: "manhwa",
-  tags: "Action · Fantasy · Webtoon · Manhwa · Post-apocalyptique",
-  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx119257-Pi21aq3ey9GG.jpg",
-  addedAt: "2026-03-22",
-  shops: [
-  {
-    "name": "Fnac",
-    "url": "https://www.fnac.com/SearchResult/ResultKNV.aspx?Search=omniscient+reader+manhwa",
-    "logo": "/logos/fnac.svg"
-  },
-  {
-    "name": "Amazon",
-    "url": "https://www.amazon.fr/s?k=omniscient+reader+manhwa",
-    "logo": "/logos/amazon.svg"
-  }
-  ],
-  streaming: []
-},
-
 {
   slug: "martial-peak",
   title: "Martial Peak",
@@ -4040,7 +4002,8 @@ export const SERIES_2: Serie[] = [
     "logo": "/logos/amazon.svg"
   }
   ],
-  streaming: []
+  streaming: [],
+  published: false,
 },
 
 {
@@ -4067,7 +4030,8 @@ export const SERIES_2: Serie[] = [
     "logo": "/logos/amazon.svg"
   }
   ],
-  streaming: []
+  streaming: [],
+  published: false,
 },
 
 {
@@ -4094,7 +4058,8 @@ export const SERIES_2: Serie[] = [
     "logo": "/logos/amazon.svg"
   }
   ],
-  streaming: []
+  streaming: [],
+  published: false,
 },
 
 {
@@ -4114,7 +4079,8 @@ export const SERIES_2: Serie[] = [
     { name: "Amazon", url: "https://www.amazon.fr/s?k=chronicles+martial+god+return+manhwa", logo: "/logos/amazon.png" }
   ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -4141,89 +4107,10 @@ export const SERIES_2: Serie[] = [
     "logo": "/logos/amazon.svg"
   }
   ],
-  streaming: []
+  streaming: [],
+  published: true,
 },
 
-{
-  slug: "eleceed",
-  title: "Eleceed",
-  synopsis: "Jiwoo Seo est un lycéen gentil qui cache des réflexes surhumains. Un jour, il recueille un chat gros et paresseux qui est en réalité Kayden Break, un puissant évolueur (humain aux capacités améliorées) fuyant ses ennemis. Ensemble, ils entrent dans le monde secret des évolueurs et de leurs combats pour le contrôle du monde.",
-  reviewHtml: "<p><em>Eleceed</em> de Son Jae-ho et Kim Zhena est l'une des meilleures surprises du webtoon d'action. Le duo Jiwoo/Kayden-chat est irrésistible : le jeune homme enthousiaste et le maître coincé dans un corps de chat créent une dynamique comique et affectueuse qui distingue la série.</p><p>Mais Eleceed ne se contente pas de l'humour : les combats entre évolueurs sont visuellement impressionnants et les enjeux montent progressivement. Le système de pouvoirs est cohérent et inventif.</p><p>Le dessin de Kim Zhena est parmi les plus beaux du webtoon actuel — couleurs éclatantes et action lisible. Un must-read pour les fans du genre.</p>",
-  pros: ["Duo Jiwoo/Kayden-chat irrésistible", "Dessin parmi les meilleurs du webtoon actuel", "Équilibre parfait humour/action"],
-  cons: ["Progression parfois lente", "En cours, pas encore de conclusion"],
-  stars: 5,
-  category: "manhwa",
-  tags: "Action · Comédie · Webtoon · Manhwa",
-  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx106929-flAUvHZDUz5v.jpg",
-  addedAt: "2026-03-22",
-  shops: [
-  {
-    "name": "Fnac",
-    "url": "https://www.fnac.com/SearchResult/ResultKNV.aspx?Search=eleceed+manhwa",
-    "logo": "/logos/fnac.svg"
-  },
-  {
-    "name": "Amazon",
-    "url": "https://www.amazon.fr/s?k=eleceed+manhwa",
-    "logo": "/logos/amazon.svg"
-  }
-  ],
-  streaming: []
-},
-
-{
-  slug: "weak-hero",
-  title: "Weak Hero",
-  synopsis: "Gray Yeon est un lycéen nouveau venu dans une école gangrenée par la violence des bandes. Physiquement ordinaire, il neutralise pourtant les brutes avec une précision chirurgicale en utilisant l'intelligence plutôt que la force brute. Sa réputation grandit malgré lui dans le monde violent des gangs lycéens coréens.",
-  reviewHtml: "<p><em>Weak Hero</em> de Seopass et Razen est un manhwa de combat lycéen qui se distingue par son approche réaliste et psychologique. Gray Yeon n'est pas un héros classique : il utilise la physique et la géographie du combat plutôt que des pouvoirs fantastiques.</p><p>Le manhwa sait être brutal sans complaisance. Les conséquences des combats sont montrées honnêtement, et la question de la violence comme réponse à la violence est soulevée sans être résolue simplement.</p><p>Le dessin est excellent, avec des expressions faciales particulièrement réussies qui renforcent l'aspect psychologique. Un des meilleurs manhwas de son genre.</p>",
-  pros: ["Héros intelligent et original", "Approche réaliste et psychologique", "Dessin expressif et brutal"],
-  cons: ["Très sombre par moments", "Pas de happy end garanti"],
-  stars: 5,
-  category: "manhwa",
-  tags: "Action · Drame · Lycée · Manhwa · Réaliste",
-  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx113488-0ghq0eEnftk0.jpg",
-  addedAt: "2026-03-22",
-  shops: [
-  {
-    "name": "Fnac",
-    "url": "https://www.fnac.com/SearchResult/ResultKNV.aspx?Search=weak+hero+manhwa",
-    "logo": "/logos/fnac.svg"
-  },
-  {
-    "name": "Amazon",
-    "url": "https://www.amazon.fr/s?k=weak+hero+manhwa",
-    "logo": "/logos/amazon.svg"
-  }
-  ],
-  streaming: []
-},
-
-{
-  slug: "true-beauty",
-  title: "True Beauty",
-  synopsis: "Lim Jugyeong est une lycéenne complexée par son apparence. Grâce au maquillage, elle se transforme en beauté reconnue de toute l'école. Mais quand Lee Suho, l'homme le plus beau de l'école, découvre son vrai visage, une romance naît sur fond d'insécurité, d'authenticité et de premier amour.",
-  reviewHtml: "<p><em>True Beauty</em> de Yaongyi est l'un des webtoons romantiques les plus populaires de Naver. Sa prémisse sur le maquillage comme masque social touche à des thèmes universels d'insécurité et d'authenticité avec une sincérité appréciable.</p><p>Jugyeong est une héroïne attachante précisément parce qu'elle n'est pas parfaite — ses complexes sont traités avec empathie et humour. Le triangle amoureux est bien géré, chaque prétendant étant crédible.</p><p>L'adaptation drama coréenne (2020) a amplifié la popularité mondiale du manhwa. Pour les amateurs de romance lycéenne légère avec une touche de profondeur, c'est un incontournable du genre.</p>",
-  pros: ["Thèmes d'insécurité traités avec empathie", "Triangle amoureux bien construit", "Héroïne attachante et réaliste"],
-  cons: ["Certains clichés du genre romcom", "Rythme inégal sur la longueur"],
-  stars: 3,
-  category: "manhwa",
-  tags: "Romance · Comédie · Lycée · Webtoon · Manhwa",
-  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx103995-eE7WHxOy77TB.jpg",
-  addedAt: "2026-03-22",
-  shops: [
-  {
-    "name": "Fnac",
-    "url": "https://www.fnac.com/SearchResult/ResultKNV.aspx?Search=true+beauty+manhwa",
-    "logo": "/logos/fnac.svg"
-  },
-  {
-    "name": "Amazon",
-    "url": "https://www.amazon.fr/s?k=true+beauty+manhwa",
-    "logo": "/logos/amazon.svg"
-  }
-  ],
-  streaming: []
-},
 {
   slug: "the-remarried-empress",
   title: "The Remarried Empress",
@@ -4248,7 +4135,8 @@ export const SERIES_2: Serie[] = [
     "logo": "/logos/amazon.svg"
   }
   ],
-  streaming: []
+  streaming: [],
+  published: false,
 },
 
 {
@@ -4275,7 +4163,8 @@ export const SERIES_2: Serie[] = [
     "logo": "/logos/amazon.svg"
   }
   ],
-  streaming: []
+  streaming: [],
+  published: false,
 },
 
 {
@@ -4302,7 +4191,8 @@ export const SERIES_2: Serie[] = [
     "logo": "/logos/amazon.svg"
   }
   ],
-  streaming: []
+  streaming: [],
+  published: false,
 },
 
 {
@@ -4329,7 +4219,8 @@ export const SERIES_2: Serie[] = [
     "logo": "/logos/amazon.svg"
   }
   ],
-  streaming: []
+  streaming: [],
+  published: false,
 },
 
 
@@ -4358,7 +4249,8 @@ export const SERIES_2: Serie[] = [
     "logo": "/logos/amazon.svg"
   }
   ],
-  streaming: []
+  streaming: [],
+  published: false,
 },
 
 {
@@ -4385,7 +4277,8 @@ export const SERIES_2: Serie[] = [
     "logo": "/logos/amazon.svg"
   }
   ],
-  streaming: []
+  streaming: [],
+  published: false,
 },
 
 
@@ -4418,7 +4311,8 @@ export const SERIES_2: Serie[] = [
     "logo": "/logos/amazon.svg"
   }
   ],
-  streaming: []
+  streaming: [],
+  published: false,
 },
 
 
@@ -4451,7 +4345,8 @@ export const SERIES_2: Serie[] = [
     "logo": "/logos/amazon.svg"
   }
   ],
-  streaming: []
+  streaming: [],
+  published: false,
 },
 
 
@@ -4482,7 +4377,8 @@ export const SERIES_2: Serie[] = [
     "logo": "/logos/amazon.svg"
   }
   ],
-  streaming: []
+  streaming: [],
+  published: false,
 },
 {
   slug: "level-up-with-the-gods",
@@ -4508,7 +4404,8 @@ export const SERIES_2: Serie[] = [
     "logo": "/logos/amazon.svg"
   }
   ],
-  streaming: []
+  streaming: [],
+  published: false,
 },
 
 {
@@ -4535,7 +4432,8 @@ export const SERIES_2: Serie[] = [
     "logo": "/logos/amazon.svg"
   }
   ],
-  streaming: []
+  streaming: [],
+  published: false,
 },
 
 
@@ -4557,7 +4455,8 @@ export const SERIES_2: Serie[] = [
     { name: "Amazon", url: "https://www.amazon.fr/s?k=volcanic+age+manhwa", logo: "/logos/amazon.png" }
   ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -4584,7 +4483,8 @@ export const SERIES_2: Serie[] = [
     "logo": "/logos/amazon.svg"
   }
   ],
-  streaming: []
+  streaming: [],
+  published: false,
 },
 
 {
@@ -4611,7 +4511,8 @@ export const SERIES_2: Serie[] = [
     "logo": "/logos/amazon.svg"
   }
   ],
-  streaming: []
+  streaming: [],
+  published: true,
 },
 
 
@@ -4640,7 +4541,8 @@ export const SERIES_2: Serie[] = [
     "logo": "/logos/amazon.svg"
   }
   ],
-  streaming: []
+  streaming: [],
+  published: false,
 },
 
 {
@@ -4660,7 +4562,8 @@ export const SERIES_2: Serie[] = [
     { name: "Amazon", url: "https://www.amazon.fr/s?k=player+returned+10000+years+manhwa", logo: "/logos/amazon.png" }
   ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -4687,7 +4590,8 @@ export const SERIES_2: Serie[] = [
     "logo": "/logos/amazon.svg"
   }
   ],
-  streaming: []
+  streaming: [],
+  published: false,
 },
 
 {
@@ -4714,7 +4618,8 @@ export const SERIES_2: Serie[] = [
     "logo": "/logos/amazon.svg"
   }
   ],
-  streaming: []
+  streaming: [],
+  published: false,
 },
 
 {
@@ -4741,7 +4646,8 @@ export const SERIES_2: Serie[] = [
     "logo": "/logos/amazon.svg"
   }
   ],
-  streaming: []
+  streaming: [],
+  published: false,
 },
 
 {
@@ -4768,7 +4674,8 @@ export const SERIES_2: Serie[] = [
     "logo": "/logos/amazon.svg"
   }
   ],
-  streaming: []
+  streaming: [],
+  published: false,
 },
 
 {
@@ -4795,7 +4702,8 @@ export const SERIES_2: Serie[] = [
     "logo": "/logos/amazon.svg"
   }
   ],
-  streaming: []
+  streaming: [],
+  published: false,
 },
 
 {
@@ -4822,7 +4730,8 @@ export const SERIES_2: Serie[] = [
     "logo": "/logos/amazon.svg"
   }
   ],
-  streaming: []
+  streaming: [],
+  published: false,
 },
 
 {
@@ -4849,7 +4758,8 @@ export const SERIES_2: Serie[] = [
     "logo": "/logos/amazon.svg"
   }
   ],
-  streaming: []
+  streaming: [],
+  published: false,
 },
 
 {
@@ -4876,7 +4786,8 @@ export const SERIES_2: Serie[] = [
     "logo": "/logos/amazon.svg"
   }
   ],
-  streaming: []
+  streaming: [],
+  published: false,
 },
 
 {
@@ -4903,7 +4814,8 @@ export const SERIES_2: Serie[] = [
     "logo": "/logos/amazon.svg"
   }
   ],
-  streaming: []
+  streaming: [],
+  published: false,
 },
 
 {
@@ -4930,7 +4842,8 @@ export const SERIES_2: Serie[] = [
     "logo": "/logos/amazon.svg"
   }
   ],
-  streaming: []
+  streaming: [],
+  published: false,
 },
 {
   slug: "i-am-the-sorcerer-king",
@@ -4956,7 +4869,8 @@ export const SERIES_2: Serie[] = [
     "logo": "/logos/amazon.svg"
   }
   ],
-  streaming: []
+  streaming: [],
+  published: false,
 },
 
 
@@ -4985,7 +4899,8 @@ export const SERIES_2: Serie[] = [
     "logo": "/logos/amazon.svg"
   }
   ],
-  streaming: []
+  streaming: [],
+  published: false,
 },
 
 {
@@ -5012,7 +4927,8 @@ export const SERIES_2: Serie[] = [
     "logo": "/logos/amazon.svg"
   }
   ],
-  streaming: []
+  streaming: [],
+  published: false,
 },
 
 {
@@ -5032,7 +4948,8 @@ export const SERIES_2: Serie[] = [
     { name: "Amazon", url: "https://www.amazon.fr/s?k=solo+bug+player+manhwa", logo: "/logos/amazon.png" }
   ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 
@@ -5061,7 +4978,8 @@ export const SERIES_2: Serie[] = [
     "logo": "/logos/amazon.svg"
   }
   ],
-  streaming: []
+  streaming: [],
+  published: false,
 },
 
 {
@@ -5088,7 +5006,8 @@ export const SERIES_2: Serie[] = [
     "logo": "/logos/amazon.svg"
   }
   ],
-  streaming: []
+  streaming: [],
+  published: false,
 },
 
 {
@@ -5115,7 +5034,8 @@ export const SERIES_2: Serie[] = [
     "logo": "/logos/amazon.svg"
   }
   ],
-  streaming: []
+  streaming: [],
+  published: false,
 },
 
 {
@@ -5142,7 +5062,8 @@ export const SERIES_2: Serie[] = [
     "logo": "/logos/amazon.svg"
   }
   ],
-  streaming: []
+  streaming: [],
+  published: false,
 },
 
 {
@@ -5169,7 +5090,8 @@ export const SERIES_2: Serie[] = [
     "logo": "/logos/amazon.svg"
   }
   ],
-  streaming: []
+  streaming: [],
+  published: false,
 },
 
 {
@@ -5196,7 +5118,8 @@ export const SERIES_2: Serie[] = [
     "logo": "/logos/amazon.svg"
   }
   ],
-  streaming: []
+  streaming: [],
+  published: false,
 },
 
 {
@@ -5223,7 +5146,8 @@ export const SERIES_2: Serie[] = [
     "logo": "/logos/amazon.svg"
   }
   ],
-  streaming: []
+  streaming: [],
+  published: false,
 },
 
 {
@@ -5250,7 +5174,8 @@ export const SERIES_2: Serie[] = [
     "logo": "/logos/amazon.svg"
   }
   ],
-  streaming: []
+  streaming: [],
+  published: false,
 },
 
 
@@ -5279,7 +5204,8 @@ export const SERIES_2: Serie[] = [
     "logo": "/logos/amazon.svg"
   }
   ],
-  streaming: []
+  streaming: [],
+  published: false,
 },
 
 {
@@ -5306,7 +5232,8 @@ export const SERIES_2: Serie[] = [
     "logo": "/logos/amazon.svg"
   }
   ],
-  streaming: []
+  streaming: [],
+  published: false,
 },
 
 {
@@ -5333,7 +5260,8 @@ export const SERIES_2: Serie[] = [
     "logo": "/logos/amazon.svg"
   }
   ],
-  streaming: []
+  streaming: [],
+  published: false,
 },
 
 
@@ -5363,7 +5291,8 @@ export const SERIES_2: Serie[] = [
     "logo": "/logos/amazon.svg"
   }
   ],
-  streaming: []
+  streaming: [],
+  published: false,
 },
 
 {
@@ -5390,7 +5319,8 @@ export const SERIES_2: Serie[] = [
     "logo": "/logos/amazon.svg"
   }
   ],
-  streaming: []
+  streaming: [],
+  published: false,
 },
 
 {
@@ -5417,7 +5347,8 @@ export const SERIES_2: Serie[] = [
     "logo": "/logos/amazon.svg"
   }
   ],
-  streaming: []
+  streaming: [],
+  published: false,
 },
 
 
@@ -5450,7 +5381,8 @@ export const SERIES_2: Serie[] = [
     "logo": "/logos/amazon.svg"
   }
   ],
-  streaming: []
+  streaming: [],
+  published: false,
 },
 
 {
@@ -5477,7 +5409,8 @@ export const SERIES_2: Serie[] = [
     "logo": "/logos/amazon.svg"
   }
   ],
-  streaming: []
+  streaming: [],
+  published: false,
 },
 
 {
@@ -5504,34 +5437,8 @@ export const SERIES_2: Serie[] = [
     "logo": "/logos/amazon.svg"
   }
   ],
-  streaming: []
-},
-
-{
-  slug: "a-returners-magic-should-be-special",
-  title: "A Returner's Magic Should Be Special",
-  synopsis: "Desir Arman revient 10 ans en arrière avec le souvenir de l'échec de son groupe face au Shadow Labyrinth — un donjon qui a failli détruire le monde. Cette fois, il va utiliser sa connaissance du futur pour entraîner ses nouveaux compagnons et préparer une défense contre la catastrophe à venir.",
-  reviewHtml: "<p><em>A Returner's Magic Should Be Special</em> est un manhwa de regression de haute qualité. Sa particularité est l'accent mis sur l'entraînement et la préparation plutôt que sur le seul power fantasy : Desir investit son temps à forger les autres, pas seulement lui-même.</p><p>La dynamique de mentoring entre Desir et ses élèves est bien construite, et les révélations progressives sur la vraie nature du Shadow Labyrinth maintiennent une tension narrative de fond.</p><p>Dessin de très bonne qualité, avec des combats magiques variés et lisibles. Un des meilleurs manhwas du genre regression pour ceux qui cherchent de la substance narrative.</p>",
-  pros: ["Accent sur l'entraînement des autres — angle rare", "Tension narrative de fond bien maintenue", "Dessin et combats de très bonne qualité"],
-  cons: ["Certains arcs d'entraînement lents", "Dense en personnages"],
-  stars: 5,
-  category: "manhwa",
-  tags: "Action · Fantasy · Manhwa · Regression · Magie",
-  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx105393-oiHumQoBGKG5.jpg",
-  addedAt: "2026-03-22",
-  shops: [
-  {
-    "name": "Fnac",
-    "url": "https://www.fnac.com/SearchResult/ResultKNV.aspx?Search=returner+magic+special+manhwa",
-    "logo": "/logos/fnac.svg"
-  },
-  {
-    "name": "Amazon",
-    "url": "https://www.amazon.fr/s?k=returner+magic+special+manhwa",
-    "logo": "/logos/amazon.svg"
-  }
-  ],
-  streaming: []
+  streaming: [],
+  published: false,
 },
 
 {
@@ -5558,7 +5465,8 @@ export const SERIES_2: Serie[] = [
     "logo": "/logos/amazon.svg"
   }
   ],
-  streaming: []
+  streaming: [],
+  published: false,
 },
 
 {
@@ -5585,34 +5493,8 @@ export const SERIES_2: Serie[] = [
     "logo": "/logos/amazon.svg"
   }
   ],
-  streaming: []
-},
-
-{
-  slug: "second-life-ranker",
-  title: "Second Life Ranker",
-  synopsis: "Yeon-woo découvre le journal de bord de son frère jumeau, mort dans une Tour mystérieuse. Il décide d'entrer dans la Tour pour venger son frère et découvrir la vérité sur sa mort. Grâce au journal qui détaille les étages déjà parcourus, il progresse avec une efficacité que personne ne comprend.",
-  reviewHtml: "<p><em>Second Life Ranker</em> est l'un des manhwas de tower les plus appréciés du genre. Sa force est double : une motivation émotionnelle forte (venger un frère) et une mécanique narrative originale (le journal qui révèle les secrets de la Tour).</p><p>Yeon-woo est un protagoniste charismatique dont l'évolution de vengeur à quelque chose de plus grand est bien menée. Les révélations sur la mort du frère et les conspirations de la Tour sont distillées avec soin.</p><p>Le système de puissance est bien construit, les combats impressionnants. Un des piliers du manhwa tower à lire absolument.</p>",
-  pros: ["Motivation émotionnelle forte — venger son frère", "Mécanique du journal bien exploitée", "Pilier du genre tower bien construit"],
-  cons: ["Dense en lore", "Progression parfois complexe à suivre"],
-  stars: 5,
-  category: "manhwa",
-  tags: "Action · Fantasy · Manhwa · Tower · Revenge",
-  cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/large/bx109957-EgJWdR7l9TBG.jpg",
-  addedAt: "2026-03-22",
-  shops: [
-  {
-    "name": "Fnac",
-    "url": "https://www.fnac.com/SearchResult/ResultKNV.aspx?Search=second+life+ranker+manhwa",
-    "logo": "/logos/fnac.svg"
-  },
-  {
-    "name": "Amazon",
-    "url": "https://www.amazon.fr/s?k=second+life+ranker+manhwa",
-    "logo": "/logos/amazon.svg"
-  }
-  ],
-  streaming: []
+  streaming: [],
+  published: false,
 },
 
 {
@@ -5639,7 +5521,8 @@ export const SERIES_2: Serie[] = [
     "logo": "/logos/amazon.svg"
   }
   ],
-  streaming: []
+  streaming: [],
+  published: false,
 },
 
 {
@@ -5666,7 +5549,8 @@ export const SERIES_2: Serie[] = [
     "logo": "/logos/amazon.svg"
   }
   ],
-  streaming: []
+  streaming: [],
+  published: false,
 },
 
 {
@@ -5686,7 +5570,8 @@ export const SERIES_2: Serie[] = [
     { name: "Amazon", url: "https://www.amazon.fr/s?k=arcane+sniper+manhwa", logo: "/logos/amazon.png" }
   ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -5713,7 +5598,8 @@ export const SERIES_2: Serie[] = [
     "logo": "/logos/amazon.svg"
   }
   ],
-  streaming: []
+  streaming: [],
+  published: false,
 },
 
 {
@@ -5740,7 +5626,8 @@ export const SERIES_2: Serie[] = [
     "logo": "/logos/amazon.svg"
   }
   ],
-  streaming: []
+  streaming: [],
+  published: false,
 },
 {
   slug: "hellbound",
@@ -5756,7 +5643,8 @@ export const SERIES_2: Serie[] = [
   addedAt: "2026-03-22",
   shops: [],
   streaming: [{ name: "Netflix", url: "https://www.netflix.com/title/81504847", logo: "/logos/netflix.svg" }],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -5773,7 +5661,8 @@ export const SERIES_2: Serie[] = [
   addedAt: "2026-03-22",
   shops: [],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -5790,7 +5679,8 @@ export const SERIES_2: Serie[] = [
   addedAt: "2026-03-22",
   shops: [],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -5807,7 +5697,8 @@ export const SERIES_2: Serie[] = [
   addedAt: "2026-03-22",
   shops: [],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -5824,7 +5715,8 @@ export const SERIES_2: Serie[] = [
   addedAt: "2026-03-22",
   shops: [],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -5841,7 +5733,8 @@ export const SERIES_2: Serie[] = [
   addedAt: "2026-03-22",
   shops: [],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -5858,7 +5751,8 @@ export const SERIES_2: Serie[] = [
   addedAt: "2026-03-22",
   shops: [],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 
@@ -5881,7 +5775,8 @@ export const SERIES_2: Serie[] = [
   addedAt: "2026-03-22",
   shops: [],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -5898,7 +5793,8 @@ export const SERIES_2: Serie[] = [
   addedAt: "2026-03-22",
   shops: [],
   streaming: [{ name: "Crunchyroll", url: "https://www.crunchyroll.com/series/GXJHM39MQ/why-raeliana-ended-up-at-the-dukes-mansion", logo: "/logos/crunchyroll.svg" }],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -5915,7 +5811,8 @@ export const SERIES_2: Serie[] = [
   addedAt: "2026-03-22",
   shops: [],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -5932,7 +5829,8 @@ export const SERIES_2: Serie[] = [
   addedAt: "2026-03-22",
   shops: [],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -5949,7 +5847,8 @@ export const SERIES_2: Serie[] = [
   addedAt: "2026-03-22",
   shops: [],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 {
   slug: "the-abandoned-empress",
@@ -5965,7 +5864,8 @@ export const SERIES_2: Serie[] = [
   addedAt: "2026-03-22",
   shops: [],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -5982,7 +5882,8 @@ export const SERIES_2: Serie[] = [
   addedAt: "2026-03-22",
   shops: [],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -5999,7 +5900,8 @@ export const SERIES_2: Serie[] = [
   addedAt: "2026-03-22",
   shops: [],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 
@@ -6021,7 +5923,8 @@ export const SERIES_2: Serie[] = [
     { name: "Amazon", url: "https://www.amazon.fr/s?k=trash+count+family+manhwa", logo: "/logos/amazon.png" }
   ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -6038,7 +5941,8 @@ export const SERIES_2: Serie[] = [
   addedAt: "2026-03-22",
   shops: [],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -6055,7 +5959,8 @@ export const SERIES_2: Serie[] = [
   addedAt: "2026-03-22",
   shops: [],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -6075,7 +5980,8 @@ export const SERIES_2: Serie[] = [
     { name: "Amazon", url: "https://www.amazon.fr/s?k=i+became+villain+mother+manhwa", logo: "/logos/amazon.png" }
   ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 
@@ -6094,7 +6000,8 @@ export const SERIES_2: Serie[] = [
   addedAt: "2026-03-22",
   shops: [],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -6111,7 +6018,8 @@ export const SERIES_2: Serie[] = [
   addedAt: "2026-03-22",
   shops: [],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -6128,7 +6036,8 @@ export const SERIES_2: Serie[] = [
   addedAt: "2026-03-22",
   shops: [],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 
@@ -6147,7 +6056,8 @@ export const SERIES_2: Serie[] = [
   addedAt: "2026-03-22",
   shops: [],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -6164,7 +6074,8 @@ export const SERIES_2: Serie[] = [
   addedAt: "2026-03-22",
   shops: [],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -6181,7 +6092,8 @@ export const SERIES_2: Serie[] = [
   addedAt: "2026-03-22",
   shops: [],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -6198,7 +6110,8 @@ export const SERIES_2: Serie[] = [
   addedAt: "2026-03-22",
   shops: [],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -6215,7 +6128,8 @@ export const SERIES_2: Serie[] = [
   addedAt: "2026-03-22",
   shops: [],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -6232,7 +6146,8 @@ export const SERIES_2: Serie[] = [
   addedAt: "2026-03-22",
   shops: [],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 {
   slug: "fff-class-trashero",
@@ -6248,7 +6163,8 @@ export const SERIES_2: Serie[] = [
   addedAt: "2026-03-22",
   shops: [],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -6265,7 +6181,8 @@ export const SERIES_2: Serie[] = [
   addedAt: "2026-03-22",
   shops: [],
   streaming: [{ name: "Crunchyroll", url: "https://www.crunchyroll.com/series/GR0XVZMNR/my-id-is-gangnam-beauty", logo: "/logos/crunchyroll.svg" }],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -6282,7 +6199,8 @@ export const SERIES_2: Serie[] = [
   addedAt: "2026-03-22",
   shops: [],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -6299,7 +6217,8 @@ export const SERIES_2: Serie[] = [
   addedAt: "2026-03-22",
   shops: [],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -6316,7 +6235,8 @@ export const SERIES_2: Serie[] = [
   addedAt: "2026-03-22",
   shops: [],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 
@@ -6356,7 +6276,8 @@ export const SERIES_2: Serie[] = [
     "logo": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Crunchyroll_logo_2018_vertical.png"
   }
 ],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -6389,7 +6310,8 @@ export const SERIES_2: Serie[] = [
   }
 ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -6428,7 +6350,8 @@ export const SERIES_2: Serie[] = [
     "logo": "/logos/netflix.svg"
   }
 ],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -6467,7 +6390,8 @@ export const SERIES_2: Serie[] = [
     "logo": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Crunchyroll_logo_2018_vertical.png"
   }
 ],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -6506,7 +6430,8 @@ export const SERIES_2: Serie[] = [
     "logo": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Crunchyroll_logo_2018_vertical.png"
   }
 ],
-  live: []
+  live: [],
+  published: false,
 },
 
 
@@ -6541,7 +6466,8 @@ export const SERIES_2: Serie[] = [
   }
 ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -6574,7 +6500,8 @@ export const SERIES_2: Serie[] = [
   }
 ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -6613,7 +6540,8 @@ export const SERIES_2: Serie[] = [
     "logo": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Crunchyroll_logo_2018_vertical.png"
   }
 ],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -6652,7 +6580,8 @@ export const SERIES_2: Serie[] = [
     "logo": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Crunchyroll_logo_2018_vertical.png"
   }
 ],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -6685,7 +6614,8 @@ export const SERIES_2: Serie[] = [
   }
 ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -6724,7 +6654,8 @@ export const SERIES_2: Serie[] = [
     "logo": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Crunchyroll_logo_2018_vertical.png"
   }
 ],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -6757,7 +6688,8 @@ export const SERIES_2: Serie[] = [
   }
 ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -6790,7 +6722,8 @@ export const SERIES_2: Serie[] = [
   }
 ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -6823,7 +6756,8 @@ export const SERIES_2: Serie[] = [
   }
 ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 
@@ -6861,7 +6795,8 @@ export const SERIES_2: Serie[] = [
   }
 ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -6900,7 +6835,8 @@ export const SERIES_2: Serie[] = [
     "logo": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Crunchyroll_logo_2018_vertical.png"
   }
 ],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -6933,7 +6869,8 @@ export const SERIES_2: Serie[] = [
   }
 ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 {
   slug: "blue-period",
@@ -6965,7 +6902,8 @@ export const SERIES_2: Serie[] = [
   }
 ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 {
   slug: "cross-game",
@@ -6997,7 +6935,8 @@ export const SERIES_2: Serie[] = [
   }
 ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 {
   slug: "strobe-edge",
@@ -7029,7 +6968,8 @@ export const SERIES_2: Serie[] = [
   }
 ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 {
   slug: "the-irregular-at-magic-high-school",
@@ -7067,7 +7007,8 @@ export const SERIES_2: Serie[] = [
     "logo": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Crunchyroll_logo_2018_vertical.png"
   }
 ],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -7100,7 +7041,8 @@ export const SERIES_2: Serie[] = [
   }
 ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -7133,7 +7075,8 @@ export const SERIES_2: Serie[] = [
   }
 ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -7166,7 +7109,8 @@ export const SERIES_2: Serie[] = [
   }
 ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 
@@ -7201,7 +7145,8 @@ export const SERIES_2: Serie[] = [
   }
 ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -7234,7 +7179,8 @@ export const SERIES_2: Serie[] = [
   }
 ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -7267,7 +7213,8 @@ export const SERIES_2: Serie[] = [
   }
 ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -7300,7 +7247,8 @@ export const SERIES_2: Serie[] = [
   }
 ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 
@@ -7335,7 +7283,8 @@ export const SERIES_2: Serie[] = [
   }
 ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -7368,7 +7317,8 @@ export const SERIES_2: Serie[] = [
   }
 ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -7401,7 +7351,8 @@ export const SERIES_2: Serie[] = [
   }
 ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -7434,7 +7385,8 @@ export const SERIES_2: Serie[] = [
   }
 ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -7467,7 +7419,8 @@ export const SERIES_2: Serie[] = [
   }
 ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -7500,7 +7453,8 @@ export const SERIES_2: Serie[] = [
   }
 ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -7533,7 +7487,8 @@ export const SERIES_2: Serie[] = [
   }
 ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -7566,7 +7521,8 @@ export const SERIES_2: Serie[] = [
   }
 ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -7599,7 +7555,8 @@ export const SERIES_2: Serie[] = [
   }
 ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -7632,7 +7589,8 @@ export const SERIES_2: Serie[] = [
   }
 ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 {
   slug: "toriko",
@@ -7664,7 +7622,8 @@ export const SERIES_2: Serie[] = [
   }
 ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 {
   slug: "mars-fuyumi-soryo",
@@ -7696,7 +7655,8 @@ export const SERIES_2: Serie[] = [
   }
 ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 
@@ -7730,7 +7690,8 @@ export const SERIES_2: Serie[] = [
   }
 ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -7763,7 +7724,8 @@ export const SERIES_2: Serie[] = [
   }
 ],
   streaming: [],
-  live: []
+  live: [],
+  published: true,
 },
 
 {
@@ -7796,7 +7758,8 @@ export const SERIES_2: Serie[] = [
   }
 ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -7829,7 +7792,8 @@ export const SERIES_2: Serie[] = [
   }
 ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -7862,7 +7826,8 @@ export const SERIES_2: Serie[] = [
   }
 ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -7895,7 +7860,8 @@ export const SERIES_2: Serie[] = [
   }
 ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -7928,7 +7894,8 @@ export const SERIES_2: Serie[] = [
   }
 ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -7961,7 +7928,8 @@ export const SERIES_2: Serie[] = [
   }
 ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -8000,7 +7968,8 @@ export const SERIES_2: Serie[] = [
     "logo": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Crunchyroll_logo_2018_vertical.png"
   }
 ],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -8033,7 +8002,8 @@ export const SERIES_2: Serie[] = [
   }
 ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -8066,7 +8036,8 @@ export const SERIES_2: Serie[] = [
   }
 ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -8099,7 +8070,8 @@ export const SERIES_2: Serie[] = [
   }
 ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -8132,7 +8104,8 @@ export const SERIES_2: Serie[] = [
   }
 ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -8165,7 +8138,8 @@ export const SERIES_2: Serie[] = [
   }
 ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -8198,7 +8172,8 @@ export const SERIES_2: Serie[] = [
   }
 ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -8231,7 +8206,8 @@ export const SERIES_2: Serie[] = [
   }
 ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -8264,7 +8240,8 @@ export const SERIES_2: Serie[] = [
   }
 ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -8303,7 +8280,8 @@ export const SERIES_2: Serie[] = [
     "logo": "https://upload.wikimedia.org/wikipedia/commons/f/fc/Crunchyroll_logo_2018_vertical.png"
   }
 ],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -8336,7 +8314,8 @@ export const SERIES_2: Serie[] = [
   }
 ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -8369,7 +8348,8 @@ export const SERIES_2: Serie[] = [
   }
 ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 {
   slug: "the-wallflower-yamatonadeshiko-shichihenge",
@@ -8401,7 +8381,8 @@ export const SERIES_2: Serie[] = [
   }
 ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -8434,7 +8415,8 @@ export const SERIES_2: Serie[] = [
   }
 ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -8467,7 +8449,8 @@ export const SERIES_2: Serie[] = [
   }
 ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -8500,7 +8483,8 @@ export const SERIES_2: Serie[] = [
   }
 ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -8533,7 +8517,8 @@ export const SERIES_2: Serie[] = [
   }
 ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -8566,7 +8551,8 @@ export const SERIES_2: Serie[] = [
   }
 ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -8599,7 +8585,8 @@ export const SERIES_2: Serie[] = [
   }
 ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -8632,7 +8619,8 @@ export const SERIES_2: Serie[] = [
   }
 ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -8665,7 +8653,8 @@ export const SERIES_2: Serie[] = [
   }
 ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -8698,7 +8687,8 @@ export const SERIES_2: Serie[] = [
   }
 ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 
@@ -8733,7 +8723,8 @@ export const SERIES_2: Serie[] = [
   }
 ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -8766,7 +8757,8 @@ export const SERIES_2: Serie[] = [
   }
 ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -8799,7 +8791,8 @@ export const SERIES_2: Serie[] = [
   }
 ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -8832,7 +8825,8 @@ export const SERIES_2: Serie[] = [
   }
 ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -8865,7 +8859,8 @@ export const SERIES_2: Serie[] = [
   }
 ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -8898,7 +8893,8 @@ export const SERIES_2: Serie[] = [
   }
 ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -8931,7 +8927,8 @@ export const SERIES_2: Serie[] = [
   }
 ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -8964,7 +8961,8 @@ export const SERIES_2: Serie[] = [
   }
 ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 {
   slug: "mushishi",
@@ -8996,7 +8994,8 @@ export const SERIES_2: Serie[] = [
   }
 ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 {
   slug: "happiness-oshimi",
@@ -9028,7 +9027,8 @@ export const SERIES_2: Serie[] = [
   }
 ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 {
   slug: "reborn-as-a-scholar",
@@ -9044,7 +9044,8 @@ export const SERIES_2: Serie[] = [
   reviewHtml: `<p>The Scholar's Reincarnation combine intelligemment la dynamique famille/protagoniste typique des manhwas de reincarnation avec un système de cultivation bien développé. Le fait que le 'démon' réincarné soit fondamentalement bon et développe des relations familiales authentiques est une nuance agréable dans le genre.</p><p>L'action est bien servie par un dessin dynamique, et la progression du protagoniste est satisfaisante. Un manhwa d'action-fantasy solide pour les fans du genre.</p>`,
   shops: [],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 
@@ -9063,7 +9064,8 @@ export const SERIES_2: Serie[] = [
   reviewHtml: `<p>Swordmaster's Youngest Son est un manhwa de régression/reincarnation qui brille par la profondeur de son univers. La famille Runcandel, avec ses politiques internes complexes et ses codes d'honneur rigides, est un cadre narratif riche. Jin est un protagoniste stratège dont les décisions s'appuient sur ses erreurs passées.</p><p>La série monte en intensité progressive et les arcs de compétition interne à la famille sont particulièrement bien écrits. Un manhwa au-dessus de la moyenne du genre dans son ambition narrative.</p>`,
   shops: [],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -9080,7 +9082,8 @@ export const SERIES_2: Serie[] = [
   reviewHtml: `<p>Return of the Mad Demon est un manhwa wuxia de régression au rythme explosif. Lee Zaha est un protagoniste jouissif, chaotique et imprévisible, dont l'expérience de vieux démon contraste hilarantement avec son corps jeune. Le ton mêle action intense et comédie décalée avec un équilibre parfait.</p><p>Les combats de murim sont spectaculaires, et les retrouvailles avec ses ennemis d'autrefois (qui ne le reconnaissent pas) donnent lieu à des moments savoureux. Un manhwa d'action-comédie wuxia parmi les plus divertissants du genre.</p>`,
   shops: [],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -9097,7 +9100,8 @@ export const SERIES_2: Serie[] = [
   reviewHtml: `<p>Debut or Die est un manhwa d'isekai survival dans le monde de l'industrie musicale coréenne, un cadre original et bien documenté. La tension entre la nécessité de performer et l'inadéquation totale du protagoniste crée une dynamique de survie stressante et engageante.</p><p>Le manhwa aborde avec une précision remarquable les aspects sombres de l'industrie du K-pop (formation, auditions, rivalités) tout en maintenant une énergie narrative positive. Un manhwa qui se démarque par l'originalité de son cadre.</p>`,
   shops: [],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -9114,7 +9118,8 @@ export const SERIES_2: Serie[] = [
   reviewHtml: `<p>Is This Hero for Real? est une parodie de l'isekai hero menée avec un humour constant et bien calibré. Kang Hansoo est un protagoniste rafraîchissant de pragmatisme et de refus des clichés du genre. Le monde fantastique est construit avec une inventivité qui permet à la parodie de fonctionner sans devenir répétitive.</p><p>La série s'améliore au fil des chapitres en développant ses personnages au-delà de la simple parodie. Un manhwa d'isekai comique bien mené pour les fans du genre qui veulent de l'humour.</p>`,
   shops: [],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -9131,7 +9136,8 @@ export const SERIES_2: Serie[] = [
   reviewHtml: `<p>Reverse Villain est un manhwa de cultivation qui joue avec intelligence les codes du genre. Jung-woo qui veut être villain mais ne peut s'empêcher d'être juste est un concept à la fois comique et touchant. La série explore avec finesse la fatigue du héros éternel et le désir de repos.</p><p>Les combats de cultivation sont bien illustrés, et la dynamique entre le protagoniste et les véritables méchants est savoureuse. Un manhwa de cultivation qui se distingue par son originalité narrative.</p>`,
   shops: [],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -9148,7 +9154,8 @@ export const SERIES_2: Serie[] = [
   reviewHtml: `<p>Return of the Frozen Player est un manhwa hunter qui se distingue par son concept de décalage temporel : le protagoniste revient d'une époque révolue et ses connaissances de 'premier Awakened' sont précieuses mais dépassées. La dynamique de rattrapage crée une tension narrative originale dans le genre.</p><p>Les combats sont dynamiques et le dessin de qualité. L'aspect émotionnel du protagoniste qui retrouve un monde changé est bien traité. Un manhwa hunter au-dessus de la moyenne pour ceux qui veulent un peu de substance avec leur action.</p>`,
   shops: [],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -9165,7 +9172,8 @@ export const SERIES_2: Serie[] = [
   reviewHtml: `<p>The Novel's Extra est un manhwa isekai qui joue intelligemment avec le concept de l'auteur connaissant son propre monde. Kim Hajin peut anticiper les événements et comprendre les motivations de personnages qu'il a lui-même créés, donnant lieu à des situations stratégiques inventives.</p><p>La série développe une réflexion intéressante sur ce que ça signifie 'connaître' un monde vs le vivre. Les personnages secondaires (issus du roman original) sont bien développés. Un manhwa isekai plus intelligent que la moyenne du genre.</p>`,
   shops: [],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 
@@ -9184,7 +9192,8 @@ export const SERIES_2: Serie[] = [
   reviewHtml: `<p>I Am the Real One est un manhwa isekai-villainess qui traite avec sensibilité la thématique de l'abandon parental et du désir de reconnaissance. Keira est un personnage touchant dont la quête d'amour paternel est le moteur émotionnel principal, et le manhwa ne la réduit jamais à un simple désir de vengeance.</p><p>La mise en scène de l'imposteur et des dynamiques de confiance dans la famille Parvis est bien construite. Un manhwa romance-fantaisie qui vaut la peine pour son coeur émotionnel.</p>`,
   shops: [],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 
@@ -9203,7 +9212,8 @@ export const SERIES_2: Serie[] = [
   reviewHtml: `<p>Father, I Don't Want This Marriage est un manhwa romance de cour qui se distingue par sa dynamique de complot partagé. Les deux protagonistes qui doivent jouer le jeu ensemble tout en se découvrant créent une relation organique et amusante. Le cadre politique est utilisé efficacement.</p><p>L'humour vient naturellement des situations de fausse romance qui deviennent vraie, et les deux personnages sont bien écrits. Un manhwa romance solide et bien rythmé.</p>`,
   shops: [],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 
@@ -9222,7 +9232,8 @@ export const SERIES_2: Serie[] = [
   reviewHtml: `<p>Helmut: The Forsaken Child est un manhwa fantasy qui joue avec le thème de l'inadaptation sociale d'un protagoniste élevé hors de la civilisation. Helmut est un personnage brut et fascinant, dont les réactions instinctives et la façon d'appréhender le monde humain donnent lieu à des moments à la fois comiques et poignants.</p><p>L'académie militaire comme cadre de sa socialisation forcée est bien utilisée, et ses progrès sont satisfaisants. Un manhwa fantasy original et bien développé.</p>`,
   shops: [],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -9239,7 +9250,8 @@ export const SERIES_2: Serie[] = [
   reviewHtml: `<p>Lady to Queen est un manhwa de régression féminin qui se distingue par l'énergie déterminée de son héroïne. Ellia n'est pas une noble de naissance qui cherche à se venger, mais une roturière qui décide de prendre sa vie en main avec intelligence. Cette perspective plus humble donne un angle frais au genre.</p><p>La progression d'Ellia dans la société est satisfaisante, et ses stratégies s'appuient sur sa connaissance passée de façon crédible. Un manhwa de régression féminin bien mené et attachant.</p>`,
   shops: [],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -9256,7 +9268,8 @@ export const SERIES_2: Serie[] = [
   reviewHtml: `<p>Crimson Karma est un manhwa isekai-romance qui se démarque par son héroïne mercenaire, bien plus compétente et badass que la moyenne du genre. Kasia apporte une fraîcheur militaire dans le monde des nobles, et ses stratégies brutalement pragmatiques contrastent avec les manœuvres politiques élégantes de la noblesse.</p><p>La romance avec le général ennemi est bien développée, et les batailles utilisant les compétences militaires de Kasia sont un vrai plus. Un manhwa romance avec une héroïne forte et une action plus présente qu'habituellement.</p>`,
   shops: [],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -9273,7 +9286,8 @@ export const SERIES_2: Serie[] = [
   reviewHtml: `<p>When the Villainess Loves est un manhwa isekai-villainess avec une dynamique méta amusante : la protagoniste était fan de l'oeuvre avant d'y être plongée. Sa relation émotionnelle avec les personnages comme lectrice crée une profondeur supplémentaire à ses interactions.</p><p>Les personnages secondaires, qu'elle connaît et admire, sont bien développés. La romance multiples est gérée avec humour et légèreté. Un manhwa villainess plus original que la moyenne grâce à son aspect méta bien utilisé.</p>`,
   shops: [],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 {
   slug: "beware-of-the-brothers",
@@ -9289,7 +9303,8 @@ export const SERIES_2: Serie[] = [
   reviewHtml: `<p>Beware of the Brothers! est un manhwa de régression féminin charmant qui joue avec la dynamique frères surprotecteurs. L'humour vient des tentatives répétées d'Hari de se libérer de leurs attentions étouffantes, et les trois frères sont bien différenciés et attachants chacun à leur façon.</p><p>La romance se développe doucement en arrière-plan, et le manhwa maintient une légèreté constante. Un manhwa romance feel-good bien mené.</p>`,
   shops: [],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 {
   slug: "ill-be-the-matriarch-in-this-life",
@@ -9305,7 +9320,8 @@ export const SERIES_2: Serie[] = [
   reviewHtml: `<p>I'll Be the Matriarch in This Life est un manhwa de régression féminin orienté business et politique familiale. Florentia est une héroïne compétente et déterminée, dont les stratégies s'appuient sur ses souvenirs passés pour reconstruire sa famille méticuleusement.</p><p>L'aspect management et reconstruction de domaine est bien développé et donne de la substance aux arcs non-romantiques. La romance avec l'héritier de la maison impériale est bien amenée. Un manhwa solide du genre.</p>`,
   shops: [],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 {
   slug: "reformation-of-the-deadbeat-noble",
@@ -9321,7 +9337,8 @@ export const SERIES_2: Serie[] = [
   reviewHtml: `<p>Reformation of the Deadbeat Noble est un manhwa de progression épée qui joue avec la transformation radicale d'un personnage considéré comme sans espoir. L'évolution d'Irene d'aristocrate paresseux en swordmaster potentiel est satisfaisante et bien rythmée.</p><p>La relation avec son maître est le coeur du manhwa, développée avec respect et profondeur. Les combats gagnent en intensité progressive. Un manhwa de training arc bien mené, plus axé sur la progression personnelle que sur les systèmes de jeu.</p>`,
   shops: [],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 {
   slug: "murim-login",
@@ -9337,7 +9354,8 @@ export const SERIES_2: Serie[] = [
   reviewHtml: `<p>Murim Login est un manhwa hunter qui combine intelligemment deux genres populaires : le système de donjon moderne et le murim traditionnel. Le fait que les entraînements dans le monde virtuel se transposent dans la réalité donne une logique satisfaisante à la progression du protagoniste.</p><p>Les techniques de combat du murim intégrées dans les combats de hunter modernes donnent des affrontements originaux et dynamiques. Un manhwa qui renouvelle le genre hunter avec une proposition fraîche.</p>`,
   shops: [],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 {
   slug: "regressor-instruction-manual",
@@ -9353,7 +9371,8 @@ export const SERIES_2: Serie[] = [
   reviewHtml: `<p>Regressor Instruction Manual est un manhwa intelligent qui prend le contre-pied du genre : au lieu d'être le regresseur puissant, le protagoniste est un homme ordinaire qui exploite les regresseurs. Cette inversion donne lieu à une série de manipulations stratégiques savoureuses.</p><p>Le ton cynique et pragmatique est bien mené, et la compréhension des clichés du genre par le protagoniste est méta et amusante. Un manhwa pour les lecteurs qui connaissent bien les manhwas de régression et veulent en rire intelligemment.</p>`,
   shops: [],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 {
   slug: "i-was-reincarnated-as-the-7th-prince",
@@ -9385,7 +9404,8 @@ export const SERIES_2: Serie[] = [
   }
 ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 {
   slug: "the-frost-flower-knight",
@@ -9404,7 +9424,8 @@ export const SERIES_2: Serie[] = [
     { name: "Amazon", url: "https://www.amazon.fr/s?k=knight+frozen+flower+manhwa", logo: "/logos/amazon.png" }
   ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -9424,7 +9445,8 @@ export const SERIES_2: Serie[] = [
     { name: "Amazon", url: "https://www.amazon.fr/s?k=survival+story+sword+king+manhwa", logo: "/logos/amazon.png" }
   ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -9444,7 +9466,8 @@ export const SERIES_2: Serie[] = [
     { name: "Amazon", url: "https://www.amazon.fr/s?k=greatest+estate+developer+manhwa", logo: "/logos/amazon.png" }
   ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 
@@ -9466,7 +9489,8 @@ export const SERIES_2: Serie[] = [
     { name: "Amazon", url: "https://www.amazon.fr/s?k=beloved+little+princess+manhwa", logo: "/logos/amazon.png" }
   ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -9486,7 +9510,8 @@ export const SERIES_2: Serie[] = [
     { name: "Amazon", url: "https://www.amazon.fr/s?k=ranker+return+manhwa", logo: "/logos/amazon.png" }
   ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 
@@ -9512,7 +9537,8 @@ export const SERIES_2: Serie[] = [
     { name: "Amazon", url: "https://www.amazon.fr/s?k=path+shaman+manhwa", logo: "/logos/amazon.png" }
   ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -9532,7 +9558,8 @@ export const SERIES_2: Serie[] = [
     { name: "Amazon", url: "https://www.amazon.fr/s?k=warrior+returns+manhwa", logo: "/logos/amazon.png" }
   ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -9552,7 +9579,8 @@ export const SERIES_2: Serie[] = [
     { name: "Amazon", url: "https://www.amazon.fr/s?k=wife+monstrous+crown+prince+manhwa", logo: "/logos/amazon.png" }
   ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 
@@ -9574,7 +9602,8 @@ export const SERIES_2: Serie[] = [
     { name: "Amazon", url: "https://www.amazon.fr/s?k=flower+beast+manhwa", logo: "/logos/amazon.png" }
   ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -9594,7 +9623,8 @@ export const SERIES_2: Serie[] = [
     { name: "Amazon", url: "https://www.amazon.fr/s?k=bad+ending+otome+game+manhwa", logo: "/logos/amazon.png" }
   ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 {
   slug: "killing-stalking",
@@ -9610,7 +9640,8 @@ export const SERIES_2: Serie[] = [
   reviewHtml: `<p>Killing Stalking est l'un des manhwas les plus discutés et les plus polarisants de la décennie. L'oeuvre de Koogi plonge le lecteur dans une relation entre un stalker et sa cible — une relation qui vire rapidement au cauchemar psychologique et ne ressemble à rien de romantique malgré ce que sa popularité BL pourrait laisser supposer.</p><p>Ce qui fait la force du manhwa, c'est l'exécution artistique : chaque planche transpire la tension, la claustrophobie et l'angoisse. Koogi maîtrise parfaitement la mise en scène du danger et de la manipulation. L'oeuvre est aussi une exploration lucide de la psychologie du traumatisme et de l'emprise.</p><p>Réservé à un lectorat adulte averti, Killing Stalking reste une oeuvre marquante et perturbante — à lire en ayant conscience de ce que l'on s'apprête à découvrir.</p>`,
   shops: [],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 {
   slug: "starting-today-im-a-villainess",
@@ -9626,7 +9657,8 @@ export const SERIES_2: Serie[] = [
   reviewHtml: `<p>Starting Today I'm a Villainess reprend une formule éprouvée du manhwa isekai — la réincarnation en villainess dans un otome game — mais le fait avec suffisamment d'énergie et d'humour pour rester frais. L'héroïne, qui décide d'embrasser pleinement son rôle de méchante, est attachante et drôle à suivre.</p><p>Le manhwa joue intelligemment avec les attentes du genre, faisant dérailler le scénario original de manière savoureuse. Les interactions amoureuses sont bien gérées, sans tomber dans la romance sirupeuse ou dans la comédie trop forcée.</p><p>Un bon représentant du sous-genre villainess isekai, à recommander à ceux qui apprécient les héroïnes proactives et l'humour situationnel.</p>`,
   shops: [],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 {
   slug: "the-villainess-wants-to-be-a-villainess-again",
@@ -9642,7 +9674,8 @@ export const SERIES_2: Serie[] = [
   reviewHtml: `<p>The Villainess Wants to Be a Villainess Again se distingue dans la vague des manhwas villainess par son humour particulier : l'héroïne veut vraiment rester une villainess, mais les circonstances et ses propres sentiments conspirent contre elle. Cette tension comique entre l'image voulue et la réalité fonctionne remarquablement bien.</p><p>Le manhwa est une comédie romantique bien menée, avec une héroïne qui a du caractère et des dialogues qui font mouche. La romance se développe avec naturel, évitant les moments trop forcés habituels au genre.</p><p>Un manhwa villainess au-dessus de la moyenne, particulièrement recommendé pour sa légèreté et son héroïne mémorable.</p>`,
   shops: [],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 {
   slug: "honey-trap-darling",
@@ -9658,7 +9691,8 @@ export const SERIES_2: Serie[] = [
   reviewHtml: `<p>Honey Trap Darling s'inscrit dans la tradition de la romantic comedy à relation contractuelle — un terrain très balisé dans le manhwa. Le manhwa ne cherche pas à révolutionner la formule, mais l'exécute avec sincérité et légèreté.</p><p>Les deux protagonistes ont une bonne alchimie, et les situations comiques générées par leur accord secret sont suffisamment bien menées pour maintenir l'intérêt. C'est le genre de lecture plaisante et sans prise de tête, idéale pour un moment de détente.</p><p>Un manhwa romantique convenu mais efficace, recommandé pour les amateurs de romance légère et de comédie de situation.</p>`,
   shops: [],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 {
   slug: "jeonsaengja",
@@ -9677,7 +9711,8 @@ export const SERIES_2: Serie[] = [
     { name: "Amazon", url: "https://www.amazon.fr/s?k=past+life+regressor+manhwa", logo: "/logos/amazon.png" }
   ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -9697,7 +9732,8 @@ export const SERIES_2: Serie[] = [
     { name: "Amazon", url: "https://www.amazon.fr/s?k=quest+supremacy+manhwa", logo: "/logos/amazon.png" }
   ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -9717,7 +9753,8 @@ export const SERIES_2: Serie[] = [
     { name: "Amazon", url: "https://www.amazon.fr/s?k=unholy+blood+manhwa", logo: "/logos/amazon.png" }
   ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -9737,7 +9774,8 @@ export const SERIES_2: Serie[] = [
     { name: "Amazon", url: "https://www.amazon.fr/s?k=return+to+player+manhwa", logo: "/logos/amazon.png" }
   ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -9757,7 +9795,8 @@ export const SERIES_2: Serie[] = [
     { name: "Amazon", url: "https://www.amazon.fr/s?k=reborn+rich+manhwa", logo: "/logos/amazon.png" }
   ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -9777,7 +9816,8 @@ export const SERIES_2: Serie[] = [
     { name: "Amazon", url: "https://www.amazon.fr/s?k=legend+northern+blade+manhwa", logo: "/logos/amazon.png" }
   ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -9797,7 +9837,8 @@ export const SERIES_2: Serie[] = [
     { name: "Amazon", url: "https://www.amazon.fr/s?k=absolute+sword+sense+manhwa", logo: "/logos/amazon.png" }
   ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -9817,7 +9858,8 @@ export const SERIES_2: Serie[] = [
     { name: "Amazon", url: "https://www.amazon.fr/s?k=taming+master+manhwa", logo: "/logos/amazon.png" }
   ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -9837,7 +9879,8 @@ export const SERIES_2: Serie[] = [
     { name: "Amazon", url: "https://www.amazon.fr/s?k=academy+undercover+professor+manhwa", logo: "/logos/amazon.png" }
   ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 
@@ -9859,7 +9902,8 @@ export const SERIES_2: Serie[] = [
     { name: "Amazon", url: "https://www.amazon.fr/s?k=medical+return+manhwa", logo: "/logos/amazon.png" }
   ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -9879,7 +9923,8 @@ export const SERIES_2: Serie[] = [
     { name: "Amazon", url: "https://www.amazon.fr/s?k=heavenly+inquisition+sword+manhwa", logo: "/logos/amazon.png" }
   ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -9916,7 +9961,8 @@ export const SERIES_2: Serie[] = [
     { name: "Amazon", url: "https://www.amazon.fr/s?k=my+daughter+final+boss+manhwa", logo: "/logos/amazon.png" }
   ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -9936,7 +9982,8 @@ export const SERIES_2: Serie[] = [
     { name: "Amazon", url: "https://www.amazon.fr/s?k=murim+rpg+simulation+manhwa", logo: "/logos/amazon.png" }
   ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -9956,7 +10003,8 @@ export const SERIES_2: Serie[] = [
     { name: "Amazon", url: "https://www.amazon.fr/s?k=extra+academy+survival+guide+manhwa", logo: "/logos/amazon.png" }
   ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -9993,7 +10041,8 @@ export const SERIES_2: Serie[] = [
     { name: "Amazon", url: "https://www.amazon.fr/s?k=perks+being+villainess+manhwa", logo: "/logos/amazon.png" }
   ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 {
   slug: "surviving-as-a-barbarian-in-another-world",
@@ -10009,7 +10058,8 @@ export const SERIES_2: Serie[] = [
   reviewHtml: `<p>Surviving as a Barbarian in Another World se distingue du tout-venant de l'isekai en refusant d'octroyer à son héros un système de progression ou des pouvoirs magiques. Réincarné dans le corps d'un barbare, il doit tout apprendre à la dure, dans un environnement hostile qui ne fait aucun cadeau.</p><p>Cette approche plus brute et survivaliste donne au manhwa une texture différente des isekai classiques : les combats ont du poids, la progression est réelle, et chaque victoire est méritée. Le côté « barbare contre un monde fantastique » crée des situations inattendues et souvent jubilatoires.</p><p>Un isekai de survie rafraîchissant pour qui cherche une alternative aux systèmes RPG omniprésen, avec une action directe et un héros qui compte uniquement sur lui-même.</p>`,
   shops: [],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 {
   slug: "dukes-eldest-son-escaped-to-the-military",
@@ -10025,7 +10075,8 @@ export const SERIES_2: Serie[] = [
   reviewHtml: `<p>Duke's Eldest Son Escaped to the Military propose une variation intéressante sur le manhwa de noble qui régresse : au lieu de manipuler la politique aristocratique depuis les salons, le héros fuit vers l'armée et choisit de se battre en première ligne sous une fausse identité. Ce choix thématique donne au manhwa un ton plus humble et authentique.</p><p>La progression militaire du héros est bien rendue, avec des combats crédibles et une montée en grade qui reflète vraiment ses compétences. Les tensions autour de son identité cachée apportent une couche de suspense bien gérée.</p><p>Un manhwa fantasy-militaire original, recommandé pour les amateurs de isekai noble qui cherchent quelque chose de moins centré sur les intrigues de cour.</p>`,
   shops: [],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 {
   slug: "monster-duchess-and-contract-princess",
@@ -10041,7 +10092,8 @@ export const SERIES_2: Serie[] = [
   reviewHtml: `<p>The Monster Duchess and Contract Princess se distingue par la force de sa relation centrale : une petite fille désespérée qui choisit de s'allier à la personne la plus effrayante du royaume pour survivre. La dynamique entre Sylvia et la duchesse est à la fois émouvante et rafraîchissante — deux personnes considérées comme « monstres » par leur entourage qui se trouvent mutuellement.</p><p>Le manhwa gère bien l'équilibre entre le drama familial (la famille cruelle de Sylvia), le développement des pouvoirs magiques, et la romance naissante qui se construit naturellement en arrière-plan. L'héroïne est particulièrement bien écrite pour une protagoniste enfant réincarnée.</p><p>Un manhwa isekai-romance solide et émotionnellement engageant, à recommander pour les amateurs de relations f/f fortes et de dynamiques familiales complexes.</p>`,
   shops: [],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 {
   slug: "the-second-coming-of-gluttony",
@@ -10060,7 +10112,8 @@ export const SERIES_2: Serie[] = [
     { name: "Amazon", url: "https://www.amazon.fr/s?k=second+coming+gluttony+manhwa", logo: "/logos/amazon.png" }
   ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -10097,7 +10150,8 @@ export const SERIES_2: Serie[] = [
     { name: "Amazon", url: "https://www.amazon.fr/s?k=legendary+moonlight+sculptor+manhwa", logo: "/logos/amazon.png" }
   ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -10168,7 +10222,8 @@ export const SERIES_2: Serie[] = [
     { name: "Amazon", url: "https://www.amazon.fr/s?k=mythic+item+obtained+manhwa", logo: "/logos/amazon.png" }
   ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -10188,7 +10243,8 @@ export const SERIES_2: Serie[] = [
     { name: "Amazon", url: "https://www.amazon.fr/s?k=duke+pendragon+manhwa", logo: "/logos/amazon.png" }
   ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -10208,7 +10264,8 @@ export const SERIES_2: Serie[] = [
     { name: "Amazon", url: "https://www.amazon.fr/s?k=golden+spoon+manhwa", logo: "/logos/amazon.png" }
   ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -10228,7 +10285,8 @@ export const SERIES_2: Serie[] = [
     { name: "Amazon", url: "https://www.amazon.fr/s?k=100th+regression+max+level+player+manhwa", logo: "/logos/amazon.png" }
   ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -10248,7 +10306,8 @@ export const SERIES_2: Serie[] = [
     { name: "Amazon", url: "https://www.amazon.fr/s?k=infinite+leveling+murim+manhwa", logo: "/logos/amazon.png" }
   ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -10268,7 +10327,8 @@ export const SERIES_2: Serie[] = [
     { name: "Amazon", url: "https://www.amazon.fr/s?k=dark+magician+66666+years+manhwa", logo: "/logos/amazon.png" }
   ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -10288,7 +10348,8 @@ export const SERIES_2: Serie[] = [
     { name: "Amazon", url: "https://www.amazon.fr/s?k=estio+manhwa", logo: "/logos/amazon.png" }
   ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -10308,7 +10369,8 @@ export const SERIES_2: Serie[] = [
     { name: "Amazon", url: "https://www.amazon.fr/s?k=red+storm+manhwa", logo: "/logos/amazon.png" }
   ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -10328,7 +10390,8 @@ export const SERIES_2: Serie[] = [
     { name: "Amazon", url: "https://www.amazon.fr/s?k=i+adopted+villainous+dad+manhwa", logo: "/logos/amazon.png" }
   ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 
@@ -10350,7 +10413,8 @@ export const SERIES_2: Serie[] = [
     { name: "Amazon", url: "https://www.amazon.fr/s?k=husband+antisocial+count+manhwa", logo: "/logos/amazon.png" }
   ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 {
   slug: "sss-rank-suicide-hunter",
@@ -10366,7 +10430,8 @@ export const SERIES_2: Serie[] = [
   reviewHtml: `<p>SSS-Rank Suicide Hunter est une oeuvre à part dans le manhwa de hunter. Son concept de départ — un chasseur qui gagne les pouvoirs de la personne qui le tue, et qui meurt encore et encore dans une boucle temporelle — est d'une ingéniosité redoutable. Ce qui pourrait être un simple power-fantasy devient une exploration dense de la psychologie d'un homme qui a vécu et mort des milliers de fois.</p><p>Le manhwa n'hésite pas à aller dans des zones sombres rarement explorées dans le genre : trauma, répétition compulsive, quête de sens face à l'infini. Kim Gong-ja est l'un des personnages les plus complexes et les plus mémorables du manhwa contemporain. La maîtrise narrative est exceptionnelle.</p><p>Un chef-d'oeuvre du manhwa hunter, indispensable pour les lecteurs qui cherchent de la profondeur, de l'ambition et une oeuvre qui marque durablement.</p>`,
   shops: [],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 {
   slug: "sooho",
@@ -10382,7 +10447,8 @@ export const SERIES_2: Serie[] = [
   reviewHtml: `<p>Sooho est un manhwa d'action contemporaine qui se distingue par son ancrage dans un Séoul moderne et son héros bodyguard — un angle peu commun dans un genre dominé par les chasseurs et les mages. Park Hoon, ancien des forces spéciales, apporte une crédibilité tactique à ses interventions qui fait défaut à beaucoup de manhwas d'action.</p><p>Le manhwa alterne habilement entre les séquences d'action pure, intenses et bien choreographiées, et les moments de tension psychologique autour de la relation protégé/garde du corps. L'univers du crime organisé coréen est bien rendu, avec des antagonistes qui ont leurs propres logiques.</p><p>Un manhwa d'action thriller de qualité, recommandé pour les amateurs d'action contemporaine et de héros compétents dans un cadre réaliste.</p>`,
   shops: [],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 {
   slug: "memorize",
@@ -10401,7 +10467,8 @@ export const SERIES_2: Serie[] = [
     { name: "Amazon", url: "https://www.amazon.fr/s?k=memorize+manhwa", logo: "/logos/amazon.png" }
   ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 
@@ -10425,7 +10492,8 @@ export const SERIES_2: Serie[] = [
     { name: "Amazon", url: "https://www.amazon.fr/s?k=dungeon+defense+manhwa", logo: "/logos/amazon.png" }
   ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 
@@ -10447,7 +10515,8 @@ export const SERIES_2: Serie[] = [
     { name: "Amazon", url: "https://www.amazon.fr/s?k=elqueeness+manhwa", logo: "/logos/amazon.png" }
   ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -10467,7 +10536,8 @@ export const SERIES_2: Serie[] = [
     { name: "Amazon", url: "https://www.amazon.fr/s?k=immortal+regis+manhwa", logo: "/logos/amazon.png" }
   ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 
@@ -10506,7 +10576,8 @@ export const SERIES_2: Serie[] = [
     { name: "Amazon", url: "https://www.amazon.fr/s?k=peerless+dad+manhwa", logo: "/logos/amazon.png" }
   ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -10526,7 +10597,8 @@ export const SERIES_2: Serie[] = [
     { name: "Amazon", url: "https://www.amazon.fr/s?k=undefeatable+swordsman+manhwa", logo: "/logos/amazon.png" }
   ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -10546,7 +10618,8 @@ export const SERIES_2: Serie[] = [
     { name: "Amazon", url: "https://www.amazon.fr/s?k=lightning+degree+manhwa", logo: "/logos/amazon.png" }
   ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -10566,7 +10639,8 @@ export const SERIES_2: Serie[] = [
     { name: "Amazon", url: "https://www.amazon.fr/s?k=demon+prince+academy+manhwa", logo: "/logos/amazon.png" }
   ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -10586,7 +10660,8 @@ export const SERIES_2: Serie[] = [
     { name: "Amazon", url: "https://www.amazon.fr/s?k=tutorial+tower+advanced+player+manhwa", logo: "/logos/amazon.png" }
   ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -10606,7 +10681,8 @@ export const SERIES_2: Serie[] = [
     { name: "Amazon", url: "https://www.amazon.fr/s?k=how+to+live+villain+manhwa", logo: "/logos/amazon.png" }
   ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -10626,7 +10702,8 @@ export const SERIES_2: Serie[] = [
     { name: "Amazon", url: "https://www.amazon.fr/s?k=spirit+farmer+manhwa", logo: "/logos/amazon.png" }
   ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -10646,7 +10723,8 @@ export const SERIES_2: Serie[] = [
     { name: "Amazon", url: "https://www.amazon.fr/s?k=villain+to+kill+manhwa", logo: "/logos/amazon.png" }
   ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -10666,7 +10744,8 @@ export const SERIES_2: Serie[] = [
     { name: "Amazon", url: "https://www.amazon.fr/s?k=twin+siblings+new+life+manhwa", logo: "/logos/amazon.png" }
   ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -10686,7 +10765,8 @@ export const SERIES_2: Serie[] = [
     { name: "Amazon", url: "https://www.amazon.fr/s?k=modern+man+transmigrated+murim+manhwa", logo: "/logos/amazon.png" }
   ],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 {
   slug: "i-am-the-villainess-so-i-am-taming-the-final-boss",
@@ -10702,6 +10782,7 @@ export const SERIES_2: Serie[] = [
   reviewHtml: `<p>I Am the Villainess, So I Am Taming the Final Boss est l'un des manhwas villainess les plus inventifs de ces dernières années. L'héroïne ne cherche pas à survivre en se faisant discreta ou en manipulant le prince — elle va directement apprivoiser le monstre le plus dangereux du jeu, avec une effronterie qui désarçonne absolument tout le monde.</p><p>Claude, le boss final mi-démon, réagit à cette approche avec une incompréhension qui tourne rapidement en fascination, et leur relation est l'un des couples les plus charmants et originaux du genre villainess. Le manhwa sait alterner humour et moments de tendresse avec un timing parfait.</p><p>Un must-read du genre villainess-isekai, recommandé pour son héroïne inoubliable, son concept original et sa romance délicieuse.</p>`,
   shops: [],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 }
 ]
