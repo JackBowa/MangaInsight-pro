@@ -349,17 +349,17 @@ export default function SeriePage({ params }: { params: { slug: string } }) {
               {(serie as any).status && (
                 <div className="mb-3">
                   {(serie as any).status === "terminé" && (
-                    <span className="inline-flex items-center gap-1.5 text-xs font-bold px-3 py-1 rounded-full bg-emerald-500/15 border border-emerald-500/30 text-emerald-300">
+                    <span className="inline-flex items-center gap-1.5 text-xs font-bold px-3 py-1 rounded-full bg-red-500/15 border border-red-500/30 text-red-300">
                       ✓ Terminé
                     </span>
                   )}
                   {(serie as any).status === "en cours" && (
-                    <span className="inline-flex items-center gap-1.5 text-xs font-bold px-3 py-1 rounded-full bg-orange-500/15 border border-orange-500/30 text-orange-300">
+                    <span className="inline-flex items-center gap-1.5 text-xs font-bold px-3 py-1 rounded-full bg-emerald-500/15 border border-emerald-500/30 text-emerald-300">
                       ⟳ En cours
                     </span>
                   )}
                   {(serie as any).status === "pause" && (
-                    <span className="inline-flex items-center gap-1.5 text-xs font-bold px-3 py-1 rounded-full bg-white/8 border border-white/15 text-white/50">
+                    <span className="inline-flex items-center gap-1.5 text-xs font-bold px-3 py-1 rounded-full bg-orange-500/15 border border-orange-500/30 text-orange-300">
                       ⏸ En pause
                     </span>
                   )}

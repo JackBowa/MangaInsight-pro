@@ -1,0 +1,68 @@
+name: Vérification volumes manga
+
+on:
+  schedule:
+    - cron: "0 8 * * *"   # tous les jours à 8h UTC
+  workflow_dispatch:        # déclenchement manuel possible
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    permissions:
+      issues: write
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Vérifier les volumes
+        id: check
+        continue-on-error: true
+        run: node scripts/check-volumes.mjs
+
+      - name: Ouvrir une issue si des mises à jour sont nécessaires
+        if: steps.check.outcome == 'failure'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const today = new Date().toISOString().split("T")[0];
+            const title = `📚 Volumes à mettre à jour — ${today}`;
+
+            // Vérifier si une issue du même titre existe déjà (ouverte)
+            const issues = await github.rest.issues.listForRepo({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              state: "open",
+              labels: "volumes-check",
+            });
+            const exists = issues.data.some(i => i.title === title);
+            if (exists) {
+              console.log("Issue déjà ouverte, on skip.");
+              return;
+            }
+
+            await github.rest.issues.create({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              title,
+              labels: ["volumes-check"],
+              body: [
+                "## 📚 Séries avec des tomes manquants",
+                "",
+                "Le script de vérification quotidien a détecté des séries dont",
+                "le nombre de tomes sur AniList est supérieur à nos données.",
+                "",
+                "**Action requise :** mettre à jour les champs `volumes` et/ou `chapters`",
+                "dans `data/series/series-1.ts` ou `data/series/series-2.ts`.",
+                "",
+                "> Consulte les logs du workflow pour le détail des séries concernées.",
+                "",
+                `[Voir les logs](https://github.com/${context.repo.owner}/${context.repo.repo}/actions/runs/${context.runId})`,
+              ].join("\n"),
+            });
+            console.log("Issue créée.");
