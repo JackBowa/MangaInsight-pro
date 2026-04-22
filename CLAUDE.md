@@ -15,7 +15,7 @@ Site de critiques manga et manhwa en français. Stack : **Next.js + Tailwind + S
 app/
   page.tsx              ← Homepage
   layout.tsx            ← Layout global + metadata Open Graph
-  sitemap.ts            ← Sitemap SEO (208 séries + pages statiques)
+  sitemap.ts            ← Sitemap SEO (séries published:true + pages statiques)
   critiques/            ← Page critiques (use client → layout.tsx séparé pour SEO)
   tops/                 ← Classement SSS→B
   nouveautes/           ← ⚠️ Sans accent (anciennement "nouveautés" avec accent, causait des erreurs Google)
@@ -29,91 +29,130 @@ components/
   SiteHeader.tsx        ← Nav + recherche Cmd+K + burger mobile + lien Favoris
   SiteFooter.tsx
 data/
-  series.ts             ← 208 séries avec slug, title, category, stars, tags, cover, synopsis, reviewHtml, pros, cons, addedAt, shops, streaming, live
+  series.ts             ← Re-export : SERIES (tout) + PUBLISHED_SERIES (filtrées)
+  series/index.ts       ← Point d'entrée, assemble SERIES_1 + SERIES_2
+  series/series-1.ts    ← Séries originales — contient aussi la définition du type Serie
+  series/series-2.ts    ← Nouvelles séries ajoutées (batches 2+)
   streaming.ts          ← (legacy) Mapping slug → plateformes streaming
   shops.ts              ← (legacy) Mapping slug → boutiques
 scripts/
-  import-series.mjs     ← Import AniList depuis un fichier .txt (node scripts/import-series.mjs titres.txt)
-  patch-new-series.mjs  ← Patch lot 0 : 20 séries initiales batch 2
-  patch-batch2-lot1.mjs ← Patch lot 1/5
-  patch-batch2-lot2.mjs ← Patch lot 2/5
-  patch-batch2-lot3.mjs ← Patch lot 3/5
-  patch-batch2-lot4.mjs ← Patch lot 4/5
-  patch-batch2-lot5.mjs ← Patch lot 5/5
-  cleanup-bad-entries.mjs ← Supprime des entrées par slug
-  patch-manhwa1.mjs → patch-manhwa8.mjs  ← Batches manhwa 1-8 (102 manhwas)
-  cleanup-manhwa1.mjs → cleanup-manhwa8.mjs ← Nettoyage bad matches AniList par batch
-data/series/
-  series-1.ts           ← Séries originales (manga/manhwa initiaux)
-  series-2.ts           ← Toutes les nouvelles séries ajoutées (batches 2+)
+  import-series.mjs     ← Import AniList depuis un fichier .txt
+  patch-metadata.mjs    ← Patch status/volumes/chapters/year/author sur les séries publiées
+  check-volumes.mjs     ← Vérifie via AniList si les volumes sont à jour (utilisé par le GitHub Action)
+  set-published-keywords.mjs ← Utilitaire pour set published:true par mots-clés dans les slugs
+.github/workflows/
+  check-volumes.yml     ← GitHub Action quotidienne (8h UTC) : détecte les volumes obsolètes
 ```
 
-## État du catalogue (mars 2026)
-- **~411 séries** au total — `data/series/series-1.ts` (séries originales) + `data/series/series-2.ts` (nouvelles séries)
-- **~102 manhwas** ajoutés en batches 1-8 dans `data/series/series-2.ts`
-- Toutes ont : synopsis FR, reviewHtml, pros/cons, stars, tags, shops, streaming
+## État du catalogue (avril 2026)
+- **~579 séries** au total — `series-1.ts` + `series-2.ts`
+- **~147 séries** avec `published: true` (visibles sur le site)
+- **~432 séries** avec `published: false` (conservées dans les données, invisibles sur le site)
+- Toutes les séries publiées ont : synopsis FR, reviewHtml, pros/cons, stars, tags, shops, streaming
+- Les 147 séries publiées ont aussi : `status`, `volumes`, `chapters`, `year`, `author`
 - Shops : Manganim (JP manga uniquement), Fnac, Amazon — pas Manganim pour manhwa KR ou manhua CN
-- Streaming : intégré directement dans chaque entrée series.ts (champs `shops` et `streaming`)
-- Covers : URL AniList CDN (ex: `https://s4.anilist.co/file/anilistcdn/...`) — plus de fichiers locaux `/public/covers/`
+- Covers : URL AniList CDN (ex: `https://s4.anilist.co/file/anilistcdn/...`) — plus de fichiers locaux
 
-## Fonctionnalités en place
-- Page 404 personnalisée (`app/not-found.tsx`)
-- Pagination sur la page Critiques (bouton "Charger plus")
-- Animations fade-in sur les cartes
-- JSON-LD structured data sur les pages séries
-- Favoris (localStorage) avec page `/favoris` et bouton ♥ dans le nav
-- Bouton partage (copie lien) sur chaque page série
-- Validation commentaires (max 50 / 1000 chars) avec compteur
-- Proxy AniList sécurisé avec rate limiting (20 req/min/IP)
-- `.gitignore` en place (node_modules, .next, .env*, .claude/)
-- Redirection 301 `/nouveautés` → `/nouveautes`
+## Système published (IMPORTANT)
+Le champ `published` contrôle la visibilité sur tout le site :
+- `published: true` → page visible, série dans toutes les listes
+- `published: false` → page 404, série exclue de partout (critiques, tops, quiz, search, sitemap)
+- absent → traité comme `true` (rétrocompatibilité)
+
+**Deux exports dans `data/series.ts` :**
+- `SERIES` → tout le catalogue (utile pour les scripts internes)
+- `PUBLISHED_SERIES` → uniquement les `published !== false` → **utiliser dans toutes les pages**
+
+**Pages qui utilisent `PUBLISHED_SERIES` :** critiques, tops, nouveautés, recommandations, SiteHeader (Cmd+K), sitemap, a-propos.
+
+**Attention aux erreurs de syntaxe** : quand on injecte `published: true/false` via script, vérifier que les champs array (`live: []`, `streaming: []`, `shops: []`) ont bien une virgule avant. Pattern récurrent à corriger :
+```js
+content.replace(/live: \[\]\n  published:/g, 'live: [],\n  published:')
+content.replace(/streaming: \[\]\n  published:/g, 'streaming: [],\n  published:')
+```
+
+## Type Serie — champs complets
+```ts
+type Serie = {
+  slug: string;
+  title: string;
+  category: "manga" | "manhwa";
+  cover?: string;
+  tags?: string;            // "Action · Fantasy" (string, pas tableau)
+  synopsis?: string;
+  reviewHtml?: string;
+  stars?: number;           // 0..5
+  shops?: { name: string; url: string; logo: string }[];
+  streaming?: { name: string; url: string; logo: string }[];
+  live?: { name: string; url: string; logo: string }[];
+  addedAt?: string;         // ISO "2025-03-04"
+  pros?: string[];
+  cons?: string[];
+  published?: boolean;      // false = masqué partout
+  status?: "en cours" | "terminé" | "pause";
+  volumes?: number;
+  chapters?: number;
+  year?: number;
+  author?: string;
+}
+```
+
+## Page série `app/series/[slug]/page.tsx`
+- Hero : titre avec `clamp(1.8rem,4vw,3.5rem)` pour éviter le débordement sur la cover
+- Sidebar "Informations" : badge statut coloré (🔴 terminé / 🟢 en cours / 🟠 pause) + auteur, année, tomes, chapitres, genres
+- Séries similaires : **scoring hybride** tags (×3) + mots-clés synopsis (×1) + même catégorie (×1) — filtrées sur `published !== false`
+- Pull quote supprimée (était un doublon de la première phrase de l'avis)
+
+## GitHub Action — vérification volumes
+`.github/workflows/check-volumes.yml` tourne tous les jours à 8h UTC :
+1. Exécute `node scripts/check-volumes.mjs`
+2. Pour chaque série `en cours` ou `pause`, interroge AniList
+3. Si AniList a plus de volumes → **ouvre une issue GitHub** avec label `volumes-check`
+4. Déclenchable manuellement : GitHub → Actions → "Vérification volumes manga" → Run workflow
+5. ⚠️ Créer le label `volumes-check` dans Settings → Labels du repo
 
 ## Workflow d'ajout de séries
 1. **Vérifier les doublons AVANT d'importer** :
    ```bash
    grep -h 'slug:' data/series/series-1.ts data/series/series-2.ts | sed 's/.*slug: "\([^"]*\)".*/\1/' | sort -u > /tmp/all_slugs.txt
    ```
-   Puis tester chaque slug candidat contre cette liste avant d'écrire le .txt
-2. Ajouter les titres dans un fichier `.txt` (un par ligne, ex: `scripts/manhwaN.txt`)
-3. `node scripts/import-series.mjs scripts/mon-fichier.txt` → génère les entrées dans `data/series/series-2.ts`
+2. Ajouter les titres dans un fichier `.txt` (un par ligne)
+3. `node scripts/import-series.mjs scripts/mon-fichier.txt` → génère dans `data/series/series-2.ts`
 4. AniList rate-limite à ~34 requêtes par session — splitter en lots de 20 max
-5. **Détecter les bad matches AniList** : titre JP/KR dans le résultat alors qu'on cherche KR/CN = mauvaise correspondance
-6. Créer un script `cleanup-manhwaN.mjs` pour supprimer les bad matches (utiliser pattern `removeFirst` / `removeSecond`)
-7. Créer un script `patch-manhwaN.mjs` avec les reviews FR complètes
-   - `tags` doit être une **string** (ex: `"Action · Fantasy"`) et non un tableau
-   - `category` doit être `"manga"` ou `"manhwa"` uniquement (jamais `"shonen"` etc.)
-   - Pas de champ `titleFr` dans le type
-   - Extraire la cover existante avant de patcher : `getCover(content, slug)`
-8. `npm run build` → vérifier que ça compile
-9. `git add ... && git commit && git push`
+5. Détecter les bad matches AniList, créer un script cleanup
+6. Créer un script patch avec reviews FR complètes
+7. Après ajout, **set `published: false` par défaut** — ne mettre `true` que pour les séries validées
+8. Pour les séries publiées, remplir status/volumes/chapters/year/author via `patch-metadata.mjs`
+9. `npm run build` → vérifier que ça compile
+10. `git add ... && git commit && git push`
 
 ## Règles importantes
 - Toutes les pages sont `"use client"` → les metadata SEO vont dans un `layout.tsx` séparé par section
 - URL sans accents : `/nouveautes` pas `/nouveautés`
 - Ne jamais utiliser `localStorage` dans les composants sans vérification SSR
-- Les `"use client"` empêchent l'export de `metadata` — toujours créer un `layout.tsx` séparé
-- `sitemap.ts` doit être mis à jour si le nombre de séries change significativement
+- `sitemap.ts` utilise `PUBLISHED_SERIES` — se met à jour automatiquement
+- `tags` doit être une **string** (ex: `"Action · Fantasy"`) et non un tableau
+- `category` doit être `"manga"` ou `"manhwa"` uniquement (jamais `"shonen"` etc.)
 
 ## Commandes utiles
 ```bash
 npm run dev                                    # Lancer en local
 npm run build                                  # Vérifier avant de push
 node scripts/import-series.mjs titres.txt      # Importer des séries depuis AniList
+node scripts/check-volumes.mjs                 # Vérifier les volumes manuellement
 git add -A && git commit -m "..." && git push  # Déployer via Vercel
 ```
 
 ## Points d'attention
 - Toujours vérifier `npm run build` avant de push — les erreurs TypeScript bloquent Vercel
-- Ne jamais utiliser `localStorage` dans les composants (SSR Next.js) — utiliser un hook avec vérification `typeof window`
+- Ne jamais utiliser `localStorage` dans les composants (SSR Next.js)
 - AniList peut retourner de mauvaises correspondances — toujours vérifier les titres importés
-- Le champ `shops` et `streaming` sont maintenant directement dans `data/series/series-2.ts` (pas dans les fichiers séparés legacy)
-- **Vérifier les doublons AVANT d'importer** — ne pas attendre après l'import pour découvrir les conflits
-- `sitemap.ts` à mettre à jour quand le catalogue dépasse une centaine de séries de plus
+- Les champs `shops` et `streaming` sont directement dans les entrées series.ts (pas les fichiers legacy)
+- **Vérifier les doublons AVANT d'importer** — des séries existent parfois dans les deux fichiers
 
 ## Pattern patcher (bracket-depth)
-Tous les scripts patch/cleanup utilisent ce pattern pour localiser et remplacer/supprimer une entrée par slug :
 ```js
-function findAndReplace(content, slug, newEntry) {
+function findEntry(content, slug) {
   const marker = `slug: "${slug}"`;
   const idx = content.indexOf(marker);
   if (idx === -1) return null;
@@ -125,15 +164,14 @@ function findAndReplace(content, slug, newEntry) {
     if (content[i] === "{") depth++;
     if (content[i] === "}") { depth--; if (depth === 0) break; }
   }
-  const end = i + 1;
-  return content.slice(0, start) + newEntry + content.slice(end);
+  return { start, end: i }; // end = index du } fermant
 }
-// Pour supprimer : retourner content.slice(0, start) + content.slice(fullEnd)
-// fullEnd = end + (virgule/espace suivant si présent)
+// Pour supprimer : content.slice(0, start) + content.slice(end + 1)
+// Pour modifier : content.slice(0, start) + newEntry + content.slice(end + 1)
+// Pour injecter avant } : content.slice(0, end) + "  nouveauChamp: valeur,\n" + content.slice(end)
 ```
 
 ## Bad matches AniList fréquents
-Ces titres retournent systématiquement de mauvaises correspondances JP :
 - "Overgeared" → "Temppal" (KR)
 - "Reincarnator" → "Jeonsaengja" (KR)
 - "Super String" → titre JP multivers
@@ -142,3 +180,13 @@ Ces titres retournent systématiquement de mauvaises correspondances JP :
 - "unOrdinary" → manga JP
 - "Let's Play" → manga JP
 - "Light and Shadow" → manga JP
+
+## Titres avec slugs piégeux (apostrophes/caractères spéciaux)
+- `JoJo's Bizarre Adventure` → apostrophe typographique `'` dans le titre, slug `jojos-bizarre-adventure`
+- `Hunter × Hunter` → symbole × (U+00D7), pas x minuscule
+- `SPY×FAMILY` → idem ×, tout en majuscules
+- `L'Attaque des Titans` → titre FR, slug `l-attaque-des-titans`
+- `Nausicaä` → ä, slug `nausicaa-of-the-valley-of-the-wind`
+- `Edens Zero` → slug `eden-zero` (sans s)
+- `Ranma ½` → slug `ranma` (sans le ½)
+- `Kenshin le Vagabond` → slug `kenshin`
