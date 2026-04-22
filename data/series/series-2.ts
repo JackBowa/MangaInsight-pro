@@ -3699,7 +3699,8 @@ export const SERIES_2: Serie[] = [
   reviewHtml: `<p>Kaiju No.8 est une série incontournable du genre Action.  (score AniList : 75/100)</p><p>À compléter avec votre avis personnel.</p>`,
   shops: [],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -9991,7 +9992,8 @@ export const SERIES_2: Serie[] = [
   reviewHtml: `<p>Akdangui Eommaga Doeeobeoryeotda est une série solide du genre Fantasy.  (score AniList : 56/100)</p><p>À compléter avec votre avis personnel.</p>`,
   shops: [],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -10071,7 +10073,8 @@ export const SERIES_2: Serie[] = [
   reviewHtml: `<p>Return of the War God est une série incontournable du genre Action.  (score AniList : 75/100)</p><p>À compléter avec votre avis personnel.</p>`,
   shops: [],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -10180,7 +10183,8 @@ export const SERIES_2: Serie[] = [
   reviewHtml: `<p>Lout of Count’s Family est une série incontournable du genre Action.  (score AniList : 78/100)</p><p>À compléter avec votre avis personnel.</p>`,
   shops: [],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -10218,7 +10222,8 @@ export const SERIES_2: Serie[] = [
   reviewHtml: `<p>Mystic Musketeer est une série solide du genre Action.  (score AniList : 70/100)</p><p>À compléter avec votre avis personnel.</p>`,
   shops: [],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -10235,7 +10240,8 @@ export const SERIES_2: Serie[] = [
   reviewHtml: `<p>Solo Glitch Player est une série solide du genre Action.  (score AniList : 68/100)</p><p>À compléter avec votre avis personnel.</p>`,
   shops: [],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -10252,7 +10258,8 @@ export const SERIES_2: Serie[] = [
   reviewHtml: `<p>After Ten Millennia in Hell est une série incontournable du genre Action.  (score AniList : 75/100)</p><p>À compléter avec votre avis personnel.</p>`,
   shops: [],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
@@ -10606,7 +10613,8 @@ export const SERIES_2: Serie[] = [
   reviewHtml: `<p>Hwasanjeonsaeng est une série solide du genre Action.  (score AniList : 74/100)</p><p>À compléter avec votre avis personnel.</p>`,
   shops: [],
   streaming: [],
-  live: []
+  live: [],
+  published: false,
 },
 
 {
