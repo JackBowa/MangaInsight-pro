@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { SERIES } from "@/data/series";
+import { SERIES, PUBLISHED_SERIES } from "@/data/series";
 
 // Séries en vedette (top 5 étoiles, mix manga/manhwa)
 const FEATURED = [
@@ -579,15 +579,15 @@ export default function Home() {
 
             <div className="hero-stats">
               <div>
-                <div className="hero-stat-num">{SERIES.length}+</div>
+                <div className="hero-stat-num">{PUBLISHED_SERIES.length}+</div>
                 <div className="hero-stat-label">Séries référencées</div>
               </div>
               <div>
-                <div className="hero-stat-num">{SERIES.filter(s => s.category === "manhwa").length}</div>
+                <div className="hero-stat-num">{PUBLISHED_SERIES.filter(s => s.category === "manhwa").length}</div>
                 <div className="hero-stat-label">Manhwas</div>
               </div>
               <div>
-                <div className="hero-stat-num">{SERIES.filter(s => s.stars === 5).length}</div>
+                <div className="hero-stat-num">{PUBLISHED_SERIES.filter(s => s.stars === 5).length}</div>
                 <div className="hero-stat-label">Coups de cœur</div>
               </div>
             </div>

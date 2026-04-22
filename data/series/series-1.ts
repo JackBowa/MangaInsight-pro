@@ -1019,7 +1019,8 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   streaming: [
     { name: "Crunchyroll", url: "https://www.crunchyroll.com/fr/search?q=Hell%27s%20Paradise", logo: "https://upload.wikimedia.org/wikipedia/commons/f/fc/Crunchyroll_logo_2018_vertical.png" }
   ],
-  live: []
+  live: [],
+  published: false,
 },
 {
   slug: "jojos-bizarre-adventure",
