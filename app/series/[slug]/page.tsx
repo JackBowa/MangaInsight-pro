@@ -344,10 +344,35 @@ export default function SeriePage({ params }: { params: { slug: string } }) {
             {/* Infos */}
             <div className="bg-white/3 border border-white/7 rounded-2xl p-5">
               <p className="text-[0.65rem] font-bold tracking-[0.1em] uppercase text-white/30 mb-3">Informations</p>
+
+              {/* Badge statut */}
+              {(serie as any).status && (
+                <div className="mb-3">
+                  {(serie as any).status === "terminé" && (
+                    <span className="inline-flex items-center gap-1.5 text-xs font-bold px-3 py-1 rounded-full bg-emerald-500/15 border border-emerald-500/30 text-emerald-300">
+                      ✓ Terminé
+                    </span>
+                  )}
+                  {(serie as any).status === "en cours" && (
+                    <span className="inline-flex items-center gap-1.5 text-xs font-bold px-3 py-1 rounded-full bg-orange-500/15 border border-orange-500/30 text-orange-300">
+                      ⟳ En cours
+                    </span>
+                  )}
+                  {(serie as any).status === "pause" && (
+                    <span className="inline-flex items-center gap-1.5 text-xs font-bold px-3 py-1 rounded-full bg-white/8 border border-white/15 text-white/50">
+                      ⏸ En pause
+                    </span>
+                  )}
+                </div>
+              )}
+
               {[
                 { label: "Catégorie", value: serie.category === "manhwa" ? "Manhwa 🇰🇷" : "Manga 🇯🇵" },
+                ...((serie as any).author ? [{ label: "Auteur", value: (serie as any).author }] : []),
+                ...((serie as any).year ? [{ label: "Début", value: String((serie as any).year) }] : []),
+                ...((serie as any).volumes ? [{ label: "Tomes", value: `${(serie as any).volumes} tomes` }] : []),
+                ...((serie as any).chapters ? [{ label: "Chapitres", value: `${(serie as any).chapters} chap.` }] : []),
                 ...(serie.tags ? [{ label: "Genres", value: serie.tags.split("·")[0].trim() }] : []),
-                ...(serie.addedAt ? [{ label: "Ajouté le", value: formatDate(serie.addedAt) }] : []),
                 ...(similar.length > 0 ? [{ label: "Séries similaires", value: `${similar.length} disponibles` }] : []),
               ].map(({ label, value }) => (
                 <div key={label} className="flex justify-between items-center py-2 border-b border-white/5 last:border-0 text-sm">

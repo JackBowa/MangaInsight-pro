@@ -15,6 +15,11 @@ export type Serie = {
   pros?: string[];        // points forts
   cons?: string[];        // points faibles
   published?: boolean;    // false = page masquée (notFound)
+  status?: "en cours" | "terminé" | "pause";
+  volumes?: number;       // nombre de tomes publiés
+  chapters?: number;      // nombre de chapitres
+  year?: number;          // année de début de publication
+  author?: string;        // auteur(s)
 };
 
 export const SERIES_1: Serie[] = [
@@ -65,6 +70,11 @@ export const SERIES_1: Serie[] = [
   ],
   live: [],
   published: true,
+  status: "terminé",
+  volumes: 72,
+  chapters: 700,
+  year: 1999,
+  author: "Masashi Kishimoto",
 },
 
   // Exemple manhwa
@@ -118,6 +128,11 @@ export const SERIES_1: Serie[] = [
   ],
   live: [],
   published: true,
+  status: "terminé",
+  volumes: 14,
+  chapters: 179,
+  year: 2018,
+  author: "Chugong",
 },
 
 // TOKYO REVENGERS
@@ -171,6 +186,11 @@ export const SERIES_1: Serie[] = [
   ],
   live: [],
   published: true,
+  status: "terminé",
+  volumes: 31,
+  chapters: 278,
+  year: 2017,
+  author: "Ken Wakui",
 },
 
 // THE PLAYER WHO CAN'T LEVEL UP
@@ -211,6 +231,11 @@ export const SERIES_1: Serie[] = [
   streaming: [],
   live: [],
   published: true,
+  status: "terminé",
+  volumes: 6,
+  chapters: 130,
+  year: 2019,
+  author: "D-Dart",
 },
 
 // THE BEGINNING AFTER THE END
@@ -249,6 +274,11 @@ export const SERIES_1: Serie[] = [
   streaming: [],
   live: [],
   published: true,
+  status: "terminé",
+  volumes: 23,
+  chapters: 180,
+  year: 2018,
+  author: "TurtleMe",
 },
 
 // MY HERO ACADEMIA
@@ -298,6 +328,11 @@ export const SERIES_1: Serie[] = [
   ],
   live: [],
   published: true,
+  status: "terminé",
+  volumes: 42,
+  chapters: 430,
+  year: 2014,
+  author: "Kōhei Horikoshi",
 },
 
 
@@ -350,6 +385,11 @@ export const SERIES_1: Serie[] = [
   ],
   live: [],
   published: true,
+  status: "terminé",
+  volumes: 34,
+  chapters: 139,
+  year: 2009,
+  author: "Hajime Isayama",
 },
 // BLUE LOCK
 {
@@ -389,6 +429,11 @@ export const SERIES_1: Serie[] = [
   ],
   live: [],
   published: true,
+  status: "en cours",
+  volumes: 30,
+  chapters: 290,
+  year: 2018,
+  author: "Muneyuki Kaneshiro",
 },
 
 // BLEACH
@@ -426,6 +471,11 @@ export const SERIES_1: Serie[] = [
   ],
   live: [],
   published: true,
+  status: "terminé",
+  volumes: 74,
+  chapters: 686,
+  year: 2001,
+  author: "Tite Kubo",
 },
 
 // BLACK BUTLER (Kuroshitsuji)
@@ -463,6 +513,11 @@ export const SERIES_1: Serie[] = [
   ],
   live: [],
   published: true,
+  status: "en cours",
+  volumes: 35,
+  chapters: 200,
+  year: 2006,
+  author: "Yana Toboso",
 },
 
 // ASSASSINATION CLASSROOM
@@ -500,6 +555,11 @@ export const SERIES_1: Serie[] = [
   ],
   live: [],
   published: true,
+  status: "terminé",
+  volumes: 21,
+  chapters: 185,
+  year: 2012,
+  author: "Yūsei Matsui",
 },
 {
   slug: "kuroko-no-basket",
@@ -528,6 +588,11 @@ export const SERIES_1: Serie[] = [
   ],
   live: [],
   published: true,
+  status: "terminé",
+  volumes: 30,
+  chapters: 276,
+  year: 2008,
+  author: "Tadatoshi Fujimaki",
 },
 {
   slug: "kill-the-hero",
@@ -549,6 +614,11 @@ export const SERIES_1: Serie[] = [
   streaming: [],
   live: [],
   published: true,
+  status: "terminé",
+  volumes: 9,
+  chapters: 152,
+  year: 2019,
+  author: "D-Dart",
 }, 
  {
   slug: "hunter-x-hunter",
@@ -584,6 +654,11 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   ],
   live: [],
   published: true,
+  status: "pause",
+  volumes: 37,
+  chapters: 400,
+  year: 1998,
+  author: "Yoshihiro Togashi",
 },
 {
   slug: "berserk",
@@ -608,6 +683,11 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   ],
   live: [],
   published: true,
+  status: "en cours",
+  volumes: 42,
+  chapters: 374,
+  year: 1989,
+  author: "Kentaro Miura",
 },
 {
   slug: "black-clover",
@@ -632,6 +712,11 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   ],
   live: [],
   published: true,
+  status: "en cours",
+  volumes: 37,
+  chapters: 375,
+  year: 2015,
+  author: "Yūki Tabata",
 },
 {
   slug: "blue-exorcist",
@@ -656,6 +741,11 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   ],
   live: [],
   published: true,
+  status: "en cours",
+  volumes: 29,
+  chapters: 145,
+  year: 2009,
+  author: "Kazue Kato",
 },
 {
   slug: "claymore",
@@ -679,6 +769,11 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   ],
   live: [],
   published: true,
+  status: "terminé",
+  volumes: 27,
+  chapters: 159,
+  year: 2001,
+  author: "Norihiro Yagi",
 },
 {
   slug: "d-gray-man",
@@ -702,6 +797,11 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   ],
   live: [],
   published: true,
+  status: "pause",
+  volumes: 27,
+  chapters: 242,
+  year: 2004,
+  author: "Katsura Hoshino",
 },
 {
   slug: "death-note",
@@ -726,6 +826,11 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   ],
   live: [],
   published: true,
+  status: "terminé",
+  volumes: 12,
+  chapters: 108,
+  year: 2003,
+  author: "Tsugumi Ohba",
 },
 {
   slug: "dr-stone",
@@ -749,6 +854,11 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   ],
   live: [],
   published: true,
+  status: "terminé",
+  volumes: 26,
+  chapters: 232,
+  year: 2017,
+  author: "Riichiro Inagaki",
 },
 {
   slug: "eleceed",
@@ -770,6 +880,11 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   streaming: [],
   live: [],
   published: true,
+  status: "en cours",
+  volumes: 10,
+  chapters: 310,
+  year: 2019,
+  author: "Son Jeho",
 },
 {
   slug: "fairy-tail",
@@ -793,6 +908,11 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   ],
   live: [],
   published: true,
+  status: "terminé",
+  volumes: 63,
+  chapters: 545,
+  year: 2006,
+  author: "Hiro Mashima",
 },
 {
   slug: "fire-force",
@@ -816,6 +936,11 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   ],
   live: [],
   published: true,
+  status: "terminé",
+  volumes: 34,
+  chapters: 304,
+  year: 2015,
+  author: "Atsushi Ohkubo",
 },
 {
   slug: "fullmetal-alchemist",
@@ -840,6 +965,11 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   ],
   live: [],
   published: true,
+  status: "terminé",
+  volumes: 27,
+  chapters: 116,
+  year: 2001,
+  author: "Hiromu Arakawa",
 },
 {
   slug: "gintama",
@@ -863,6 +993,11 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   ],
   live: [],
   published: true,
+  status: "terminé",
+  volumes: 77,
+  chapters: 704,
+  year: 2003,
+  author: "Hideaki Sorachi",
 },
 {
   slug: "hells-paradise",
@@ -909,6 +1044,11 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   ],
   live: [],
   published: true,
+  status: "en cours",
+  volumes: 131,
+  chapters: 959,
+  year: 1987,
+  author: "Hirohiko Araki",
 },
 {
   slug: "made-in-abyss",
@@ -932,6 +1072,11 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   ],
   live: [],
   published: true,
+  status: "en cours",
+  volumes: 13,
+  chapters: 68,
+  year: 2012,
+  author: "Akihito Tsukushi",
 },
 {
   slug: "mashle",
@@ -955,6 +1100,11 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   ],
   live: [],
   published: true,
+  status: "terminé",
+  volumes: 16,
+  chapters: 162,
+  year: 2020,
+  author: "Hajime Komoto",
 },
 {
   slug: "monster",
@@ -978,6 +1128,11 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   ],
   live: [],
   published: true,
+  status: "terminé",
+  volumes: 18,
+  chapters: 162,
+  year: 1994,
+  author: "Naoki Urasawa",
 },
 {
   slug: "noragami",
@@ -1001,6 +1156,11 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   ],
   live: [],
   published: true,
+  status: "en cours",
+  volumes: 27,
+  chapters: 110,
+  year: 2011,
+  author: "Adachitoka",
 },
 {
   slug: "omniscient-reader",
@@ -1020,6 +1180,11 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   streaming: [],
   live: [],
   published: true,
+  status: "terminé",
+  volumes: 8,
+  chapters: 551,
+  year: 2018,
+  author: "sing N song",
 },
 {
   slug: "oshi-no-ko",
@@ -1043,6 +1208,11 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   ],
   live: [],
   published: true,
+  status: "en cours",
+  volumes: 15,
+  chapters: 155,
+  year: 2020,
+  author: "Aka Akasaka",
 },
 {
   slug: "pluto",
@@ -1065,6 +1235,11 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   ],
   live: [],
   published: true,
+  status: "terminé",
+  volumes: 8,
+  chapters: 65,
+  year: 2003,
+  author: "Naoki Urasawa",
 },
 {
   slug: "slam-dunk",
@@ -1085,6 +1260,11 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   streaming: [],
   live: [],
   published: true,
+  status: "terminé",
+  volumes: 31,
+  chapters: 276,
+  year: 1990,
+  author: "Takehiko Inoue",
 },
 {
   slug: "soul-eater",
@@ -1107,6 +1287,11 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   ],
   live: [],
   published: true,
+  status: "terminé",
+  volumes: 25,
+  chapters: 113,
+  year: 2003,
+  author: "Atsushi Ohkubo",
 },
 {
   slug: "the-promised-neverland",
@@ -1130,6 +1315,11 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   ],
   live: [],
   published: true,
+  status: "terminé",
+  volumes: 20,
+  chapters: 181,
+  year: 2016,
+  author: "Kaiu Shirai",
 },
 {
   slug: "tower-of-god",
@@ -1151,6 +1341,11 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   ],
   live: [],
   published: true,
+  status: "en cours",
+  volumes: 16,
+  chapters: 620,
+  year: 2010,
+  author: "SIU",
 },
 {
   slug: "vagabond",
@@ -1171,6 +1366,11 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   streaming: [],
   live: [],
   published: true,
+  status: "pause",
+  volumes: 37,
+  chapters: 327,
+  year: 1998,
+  author: "Takehiko Inoue",
 },
 {
   slug: "vinland-saga",
@@ -1194,6 +1394,11 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   ],
   live: [],
   published: true,
+  status: "en cours",
+  volumes: 29,
+  chapters: 214,
+  year: 2005,
+  author: "Makoto Yukimura",
 },
 {
   slug: "wind-breaker",
@@ -1213,6 +1418,11 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   streaming: [],
   live: [],
   published: true,
+  status: "en cours",
+  volumes: 20,
+  chapters: 500,
+  year: 2013,
+  author: "Yongseok Jo",
 },
 {
   slug: "demon-slayer-kimetsu-no-yaiba",
@@ -1237,6 +1447,11 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   ],
   live: [],
   published: true,
+  status: "terminé",
+  volumes: 23,
+  chapters: 205,
+  year: 2016,
+  author: "Koyoharu Gotouge",
 },
 {
   slug: "spy-x-family",
@@ -1261,6 +1476,11 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   ],
   live: [],
   published: true,
+  status: "en cours",
+  volumes: 14,
+  chapters: 110,
+  year: 2019,
+  author: "Tatsuya Endo",
 },
 
 {
@@ -1308,6 +1528,11 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   ],
   live: [],
   published: true,
+  status: "en cours",
+  volumes: 40,
+  chapters: 110,
+  year: 2014,
+  author: "Tappei Nagatsuki",
 },
 {
   slug: "tokyo-ghoul",
@@ -1331,6 +1556,11 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   ],
   live: [],
   published: true,
+  status: "terminé",
+  volumes: 14,
+  chapters: 143,
+  year: 2011,
+  author: "Sui Ishida",
 },
 {
   slug: "black-god",
@@ -1373,6 +1603,11 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   streaming: [],  // Pas d'anime officiel confirmé
   live: [],
   published: true,
+  status: "en cours",
+  volumes: 8,
+  chapters: 160,
+  year: 2020,
+  author: "Shin Noah",
 },
 {
   slug: "my-wife-is-a-demon-queen",
@@ -1417,6 +1652,11 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   ],
   live: [],
   published: true,
+  status: "en cours",
+  volumes: 25,
+  chapters: 110,
+  year: 2013,
+  author: "Aneko Yusagi",
 },
 {
   slug: "sword-art-online",
@@ -1441,6 +1681,11 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   ],
   live: [],
   published: true,
+  status: "en cours",
+  volumes: 14,
+  chapters: 60,
+  year: 2012,
+  author: "Reki Kawahara",
 },
 {
   slug: "goblin-slayer",
@@ -1464,6 +1709,11 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   ],
   live: [],
   published: true,
+  status: "en cours",
+  volumes: 16,
+  chapters: 80,
+  year: 2016,
+  author: "Kumo Kagyu",
 },
 {
   slug: "grimgar",
@@ -1508,6 +1758,11 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   ],
   live: [],
   published: true,
+  status: "pause",
+  volumes: 9,
+  chapters: 50,
+  year: 2013,
+  author: "Yū Kamiya",
 },
 {
   slug: "record-of-ragnarok",
@@ -1531,6 +1786,11 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   ],
   live: [],
   published: true,
+  status: "en cours",
+  volumes: 18,
+  chapters: 95,
+  year: 2017,
+  author: "Shinya Umemura",
 },
 {
   slug: "chainsaw-man",
@@ -1554,6 +1814,11 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   ],
   live: [],
   published: true,
+  status: "en cours",
+  volumes: 17,
+  chapters: 170,
+  year: 2018,
+  author: "Tatsuki Fujimoto",
 },
 {
   slug: "parasyte",
@@ -1577,6 +1842,11 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   ],
   live: [],
   published: true,
+  status: "terminé",
+  volumes: 8,
+  chapters: 64,
+  year: 1988,
+  author: "Hitoshi Iwaaki",
 },
 {
   slug: "the-god-of-high-school",
@@ -1600,6 +1870,11 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   ],
   live: [],
   published: true,
+  status: "terminé",
+  volumes: 15,
+  chapters: 570,
+  year: 2011,
+  author: "Yongje Park",
 },
 {
   slug: "akatsuki-no-yona",
@@ -1685,6 +1960,11 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   ],
   live: [],
   published: true,
+  status: "terminé",
+  volumes: 13,
+  chapters: 58,
+  year: 2007,
+  author: "Jinsei Kataoka",
 },
 {
   slug: "eden-zero",
@@ -1708,6 +1988,11 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   ],
   live: [],
   published: true,
+  status: "en cours",
+  volumes: 32,
+  chapters: 300,
+  year: 2018,
+  author: "Hiro Mashima",
 },
 {
   slug: "fate-stay-night",
@@ -1729,6 +2014,11 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   ],
   live: [],
   published: true,
+  status: "terminé",
+  volumes: 20,
+  chapters: 149,
+  year: 2006,
+  author: "Type-Moon",
 },
 {
   slug: "goblin-nightmare",
@@ -1812,6 +2102,11 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   ],
   live: [],
   published: true,
+  status: "en cours",
+  volumes: 12,
+  chapters: 120,
+  year: 2021,
+  author: "Naoya Matsumoto",
 },
 {
   slug: "kengan-ashura",
@@ -1833,6 +2128,11 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   ],
   live: [],
   published: true,
+  status: "terminé",
+  volumes: 27,
+  chapters: 236,
+  year: 2012,
+  author: "Yabako Sandrovich",
 },
 {
   slug: "kenshin",
@@ -1855,6 +2155,11 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   ],
   live: [],
   published: true,
+  status: "terminé",
+  volumes: 28,
+  chapters: 255,
+  year: 1994,
+  author: "Nobuhiro Watsuki",
 },
 {
   slug: "kings-game",
@@ -1914,6 +2219,11 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   ],
   live: [],
   published: true,
+  status: "terminé",
+  volumes: 37,
+  chapters: 369,
+  year: 2009,
+  author: "Shinobu Ohtaka",
 },
 {
   slug: "monster-musume",
@@ -1957,6 +2267,11 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   ],
   live: [],
   published: true,
+  status: "en cours",
+  volumes: 16,
+  chapters: 75,
+  year: 2012,
+  author: "Kugane Maruyama",
 },
 {
   slug: "psycho-pass",
@@ -1978,6 +2293,11 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   ],
   live: [],
   published: true,
+  status: "en cours",
+  volumes: 8,
+  chapters: 50,
+  year: 2012,
+  author: "Midori Goto",
 },
 {
   slug: "radiant",
@@ -2001,6 +2321,11 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   ],
   live: [],
   published: true,
+  status: "en cours",
+  volumes: 21,
+  chapters: 200,
+  year: 2013,
+  author: "Tony Valente",
 },
 {
   slug: "rosario-vampire",
@@ -2045,6 +2370,11 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   ],
   live: [],
   published: true,
+  status: "terminé",
+  volumes: 41,
+  chapters: 347,
+  year: 2012,
+  author: "Nakaba Suzuki",
 },
 {
   slug: "shaman-king",
@@ -2068,6 +2398,11 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   ],
   live: [],
   published: true,
+  status: "terminé",
+  volumes: 35,
+  chapters: 300,
+  year: 1998,
+  author: "Hiroyuki Takei",
 },
 {
   slug: "sk8-the-infinity",
@@ -2131,6 +2466,11 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   ],
   live: [],
   published: true,
+  status: "terminé",
+  volumes: 6,
+  chapters: 24,
+  year: 2009,
+  author: "Yomi Sarachi",
 },
 {
   slug: "trigun",
@@ -2153,6 +2493,11 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   ],
   live: [],
   published: true,
+  status: "terminé",
+  volumes: 14,
+  chapters: 70,
+  year: 1995,
+  author: "Yasuhiro Nightow",
 },
 {
   slug: "trinity-seven",
@@ -2197,6 +2542,11 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   ],
   live: [],
   published: true,
+  status: "terminé",
+  volumes: 15,
+  chapters: 78,
+  year: 2010,
+  author: "Takahiro",
 },
 {
   slug: "angel-beats",
@@ -2218,6 +2568,11 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   ],
   live: [],
   published: true,
+  status: "terminé",
+  volumes: 5,
+  chapters: 27,
+  year: 2010,
+  author: "Jun Maeda",
 },
 {
   slug: "bastard",
@@ -2240,6 +2595,11 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   ],
   live: [],
   published: true,
+  status: "terminé",
+  volumes: 8,
+  chapters: 94,
+  year: 2014,
+  author: "Carnby Kim",
 },
 {
   slug: "beelzebub",
@@ -2263,6 +2623,11 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   ],
   live: [],
   published: true,
+  status: "terminé",
+  volumes: 28,
+  chapters: 239,
+  year: 2009,
+  author: "Ryūhei Tamura",
 },
 {
   slug: "black-bullet",
@@ -2306,6 +2671,11 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   ],
   live: [],
   published: true,
+  status: "pause",
+  volumes: 12,
+  chapters: 103,
+  year: 2002,
+  author: "Rei Hiroe",
 },
 {
   slug: "blame",
@@ -2328,6 +2698,11 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   ],
   live: [],
   published: true,
+  status: "terminé",
+  volumes: 10,
+  chapters: 66,
+  year: 1997,
+  author: "Tsutomu Nihei",
 },
 {
   slug: "blood-lad",
@@ -2374,6 +2749,11 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   ],
   live: [],
   published: true,
+  status: "en cours",
+  volumes: 24,
+  chapters: 120,
+  year: 2013,
+  author: "Kafka Asagiri",
 },
 {
   slug: "coppelion",
@@ -2424,6 +2804,11 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   ],
   live: [],
   published: true,
+  status: "terminé",
+  volumes: 5,
+  chapters: 38,
+  year: 1972,
+  author: "Go Nagai",
 },
 {
   slug: "dororo",
@@ -2449,6 +2834,11 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   ],
   live: [],
   published: true,
+  status: "terminé",
+  volumes: 4,
+  chapters: 48,
+  year: 1967,
+  author: "Osamu Tezuka",
 },
 {
   slug: "hajime-no-ippo",
@@ -2474,6 +2864,11 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   ],
   live: [],
   published: true,
+  status: "en cours",
+  volumes: 139,
+  chapters: 1450,
+  year: 1989,
+  author: "George Morikawa",
 },
 {
   slug: "katekyo-hitman-reborn",
@@ -2499,6 +2894,11 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   ],
   live: [],
   published: true,
+  status: "terminé",
+  volumes: 42,
+  chapters: 409,
+  year: 2004,
+  author: "Akira Amano",
 },
 {
   slug: "zatch-bell",
@@ -2524,6 +2924,11 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   ],
   live: [],
   published: true,
+  status: "terminé",
+  volumes: 33,
+  chapters: 323,
+  year: 2001,
+  author: "Makoto Raiku",
 },
 {
   slug: "one-piece",
@@ -2547,6 +2952,11 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   ],
   live: [],
   published: true,
+  status: "en cours",
+  volumes: 107,
+  chapters: 1112,
+  year: 1997,
+  author: "Eiichiro Oda",
 },
 
 {
@@ -2571,6 +2981,11 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   ],
   live: [],
   published: true,
+  status: "terminé",
+  volumes: 42,
+  chapters: 519,
+  year: 1984,
+  author: "Akira Toriyama",
 },
 {
   slug: "jujutsu-kaisen",
@@ -2588,6 +3003,11 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   streaming: [{"name":"Crunchyroll","url":"https://www.crunchyroll.com/fr/search?q=Jujutsu%20Kaisen","logo":"https://upload.wikimedia.org/wikipedia/commons/f/fc/Crunchyroll_logo_2018_vertical.png"}],
   live: [],
   published: true,
+  status: "en cours",
+  volumes: 27,
+  chapters: 265,
+  year: 2018,
+  author: "Gege Akutami",
 },
 
 {
@@ -2606,6 +3026,11 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   streaming: [{"name":"Crunchyroll","url":"https://www.crunchyroll.com/fr/search?q=One%20Punch%20Man","logo":"https://upload.wikimedia.org/wikipedia/commons/f/fc/Crunchyroll_logo_2018_vertical.png"}],
   live: [],
   published: true,
+  status: "en cours",
+  volumes: 30,
+  chapters: 200,
+  year: 2009,
+  author: "ONE",
 },
 
 {
@@ -2624,6 +3049,11 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   streaming: [{"name":"Crunchyroll","url":"https://www.crunchyroll.com/fr/search?q=Mob%20Psycho%20100","logo":"https://upload.wikimedia.org/wikipedia/commons/f/fc/Crunchyroll_logo_2018_vertical.png"}],
   live: [],
   published: true,
+  status: "terminé",
+  volumes: 16,
+  chapters: 101,
+  year: 2012,
+  author: "ONE",
 },
 
 {
@@ -2642,6 +3072,11 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   streaming: [{"name":"Crunchyroll","url":"https://www.crunchyroll.com/fr/search?q=Haikyuu","logo":"https://upload.wikimedia.org/wikipedia/commons/f/fc/Crunchyroll_logo_2018_vertical.png"}],
   live: [],
   published: true,
+  status: "terminé",
+  volumes: 45,
+  chapters: 402,
+  year: 2012,
+  author: "Haruichi Furudate",
 },
 
 {
@@ -2660,6 +3095,11 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   streaming: [{"name":"Crunchyroll","url":"https://www.crunchyroll.com/fr/search?q=Frieren","logo":"https://upload.wikimedia.org/wikipedia/commons/f/fc/Crunchyroll_logo_2018_vertical.png"}],
   live: [],
   published: true,
+  status: "en cours",
+  volumes: 13,
+  chapters: 130,
+  year: 2020,
+  author: "Kanehito Yamada",
 },
 
 {
@@ -2678,6 +3118,11 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   streaming: [{"name":"Netflix","url":"https://www.netflix.com/search?q=Delicious%20in%20Dungeon","logo":"https://images.ctfassets.net/y2ske730sjqp/5QQ9SVIdc1tmkqrtFnG9U1/de758bba0f65dcc1c6bc1f31f161003d/BrandAssets_Logos_02-NSymbol.jpg?w=940"}],
   live: [],
   published: true,
+  status: "terminé",
+  volumes: 14,
+  chapters: 97,
+  year: 2014,
+  author: "Ryoko Kui",
 },
 
 {
@@ -2696,6 +3141,11 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   streaming: [{"name":"Crunchyroll","url":"https://www.crunchyroll.com/fr/search?q=Yu%20Yu%20Hakusho","logo":"https://upload.wikimedia.org/wikipedia/commons/f/fc/Crunchyroll_logo_2018_vertical.png"}],
   live: [],
   published: true,
+  status: "terminé",
+  volumes: 19,
+  chapters: 175,
+  year: 1990,
+  author: "Yoshihiro Togashi",
 },
 
 {
@@ -2714,6 +3164,11 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   streaming: [],
   live: [],
   published: true,
+  status: "pause",
+  volumes: 21,
+  chapters: 84,
+  year: 2000,
+  author: "Ai Yazawa",
 },
 
 {
@@ -2732,6 +3187,11 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   streaming: [{"name":"Crunchyroll","url":"https://www.crunchyroll.com/fr/search?q=Kingdom","logo":"https://upload.wikimedia.org/wikipedia/commons/f/fc/Crunchyroll_logo_2018_vertical.png"}],
   live: [],
   published: true,
+  status: "en cours",
+  volumes: 72,
+  chapters: 800,
+  year: 2006,
+  author: "Yasuhisa Hara",
 },
 
 {
@@ -2750,6 +3210,11 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   streaming: [],
   live: [],
   published: true,
+  status: "terminé",
+  volumes: 22,
+  chapters: 249,
+  year: 1999,
+  author: "Naoki Urasawa",
 },
 
 {
@@ -2768,6 +3233,11 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   streaming: [{"name":"Netflix","url":"https://www.netflix.com/search?q=Akira","logo":"https://images.ctfassets.net/y2ske730sjqp/5QQ9SVIdc1tmkqrtFnG9U1/de758bba0f65dcc1c6bc1f31f161003d/BrandAssets_Logos_02-NSymbol.jpg?w=940"}],
   live: [],
   published: true,
+  status: "terminé",
+  volumes: 6,
+  chapters: 120,
+  year: 1982,
+  author: "Katsuhiro Otomo",
 },
 
 {
@@ -2786,6 +3256,11 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   streaming: [{"name":"Netflix","url":"https://www.netflix.com/search?q=Baki","logo":"https://images.ctfassets.net/y2ske730sjqp/5QQ9SVIdc1tmkqrtFnG9U1/de758bba0f65dcc1c6bc1f31f161003d/BrandAssets_Logos_02-NSymbol.jpg?w=940"}],
   live: [],
   published: true,
+  status: "en cours",
+  volumes: 42,
+  chapters: 380,
+  year: 1991,
+  author: "Keisuke Itagaki",
 },
 
 {
@@ -2804,6 +3279,11 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   streaming: [{"name":"Crunchyroll","url":"https://www.crunchyroll.com/fr/search?q=That%20Time%20I%20Got%20Reincarnated%20as%20a%20Slime","logo":"https://upload.wikimedia.org/wikipedia/commons/f/fc/Crunchyroll_logo_2018_vertical.png"}],
   live: [],
   published: true,
+  status: "en cours",
+  volumes: 23,
+  chapters: 110,
+  year: 2015,
+  author: "Fuse",
 },
 
 {
@@ -2822,6 +3302,11 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   streaming: [{"name":"Netflix","url":"https://www.netflix.com/search?q=Lookism","logo":"https://images.ctfassets.net/y2ske730sjqp/5QQ9SVIdc1tmkqrtFnG9U1/de758bba0f65dcc1c6bc1f31f161003d/BrandAssets_Logos_02-NSymbol.jpg?w=940"}],
   live: [],
   published: true,
+  status: "en cours",
+  volumes: 25,
+  chapters: 510,
+  year: 2014,
+  author: "Park Tae-jun",
 },
 
 {
@@ -2840,6 +3325,11 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   streaming: [{"name":"Netflix","url":"https://www.netflix.com/search?q=Sweet%20Home","logo":"https://images.ctfassets.net/y2ske730sjqp/5QQ9SVIdc1tmkqrtFnG9U1/de758bba0f65dcc1c6bc1f31f161003d/BrandAssets_Logos_02-NSymbol.jpg?w=940"}],
   live: [],
   published: true,
+  status: "terminé",
+  volumes: 18,
+  chapters: 140,
+  year: 2017,
+  author: "Carnby Kim",
 },
 
 {
@@ -2858,6 +3348,11 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   streaming: [{"name":"Crunchyroll","url":"https://www.crunchyroll.com/fr/search?q=Noblesse","logo":"https://upload.wikimedia.org/wikipedia/commons/f/fc/Crunchyroll_logo_2018_vertical.png"}],
   live: [],
   published: true,
+  status: "terminé",
+  volumes: 16,
+  chapters: 544,
+  year: 2007,
+  author: "Son Jeho",
 },
 
 {
@@ -2876,6 +3371,11 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   streaming: [],
   live: [],
   published: true,
+  status: "terminé",
+  volumes: 8,
+  chapters: 267,
+  year: 2019,
+  author: "Seopass",
 },
 
 {
@@ -2894,6 +3394,11 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   streaming: [{"name":"Crunchyroll","url":"https://www.crunchyroll.com/fr/search?q=A%20Returner's%20Magic%20Should%20Be%20Special","logo":"https://upload.wikimedia.org/wikipedia/commons/f/fc/Crunchyroll_logo_2018_vertical.png"}],
   live: [],
   published: true,
+  status: "terminé",
+  volumes: 12,
+  chapters: 270,
+  year: 2018,
+  author: "Wookjakga",
 },
 
 {
@@ -2912,6 +3417,11 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   streaming: [],
   live: [],
   published: true,
+  status: "en cours",
+  volumes: 10,
+  chapters: 200,
+  year: 2019,
+  author: "Sadoyeon",
 },
 
 {
@@ -2930,6 +3440,11 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   streaming: [],
   live: [],
   published: true,
+  status: "en cours",
+  volumes: 22,
+  chapters: 230,
+  year: 2020,
+  author: "Hanjung Wolya",
 },
 {
   slug: "yu-gi-oh",
@@ -2969,6 +3484,11 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 ],
   live: [],
   published: true,
+  status: "terminé",
+  volumes: 38,
+  chapters: 343,
+  year: 1996,
+  author: "Kazuki Takahashi",
 },
 
 {
@@ -3009,6 +3529,11 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 ],
   live: [],
   published: true,
+  status: "terminé",
+  volumes: 56,
+  chapters: 558,
+  year: 1996,
+  author: "Rumiko Takahashi",
 },
 
 {
@@ -3089,6 +3614,11 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 ],
   live: [],
   published: true,
+  status: "en cours",
+  volumes: 52,
+  chapters: 525,
+  year: 1981,
+  author: "Yoichi Takahashi",
 },
 
 {
@@ -3129,6 +3659,11 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 ],
   live: [],
   published: true,
+  status: "terminé",
+  volumes: 37,
+  chapters: 333,
+  year: 2002,
+  author: "Riichiro Inagaki",
 },
 
 
@@ -3250,6 +3785,11 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 ],
   live: [],
   published: true,
+  status: "terminé",
+  volumes: 18,
+  chapters: 60,
+  year: 1991,
+  author: "Naoko Takeuchi",
 },
 
 {
@@ -3290,6 +3830,11 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 ],
   live: [],
   published: true,
+  status: "terminé",
+  volumes: 23,
+  chapters: 189,
+  year: 1998,
+  author: "Yumi Hotta",
 },
 
 {
@@ -3433,6 +3978,11 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   streaming: [],
   live: [],
   published: true,
+  status: "terminé",
+  volumes: 7,
+  chapters: 59,
+  year: 1982,
+  author: "Hayao Miyazaki",
 },
 
 {
@@ -3473,6 +4023,11 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 ],
   live: [],
   published: true,
+  status: "terminé",
+  volumes: 25,
+  chapters: 200,
+  year: 1997,
+  author: "Tohru Fujisawa",
 },
 
 {
@@ -3587,6 +4142,11 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 ],
   live: [],
   published: true,
+  status: "terminé",
+  volumes: 38,
+  chapters: 407,
+  year: 1987,
+  author: "Rumiko Takahashi",
 },
 
 {
@@ -3667,6 +4227,11 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 ],
   live: [],
   published: true,
+  status: "en cours",
+  volumes: 18,
+  chapters: 180,
+  year: 2021,
+  author: "Yukinobu Tatsu",
 },
 
 {
@@ -3827,6 +4392,11 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 ],
   live: [],
   published: true,
+  status: "terminé",
+  volumes: 22,
+  chapters: 215,
+  year: 2020,
+  author: "Yoshifumi Tozuka",
 },
 
 {
@@ -3901,6 +4471,11 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   streaming: [],
   live: [],
   published: true,
+  status: "en cours",
+  volumes: 12,
+  chapters: 75,
+  year: 2016,
+  author: "Kamome Shirahama",
 },
 
 {
@@ -4021,6 +4596,11 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 ],
   live: [],
   published: true,
+  status: "terminé",
+  volumes: 23,
+  chapters: 167,
+  year: 2000,
+  author: "Q Hayashida",
 },
 
 {
@@ -4061,6 +4641,11 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 ],
   live: [],
   published: true,
+  status: "terminé",
+  volumes: 22,
+  chapters: 196,
+  year: 2016,
+  author: "Paru Itagaki",
 },
 
 {
@@ -4101,6 +4686,11 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 ],
   live: [],
   published: true,
+  status: "terminé",
+  volumes: 31,
+  chapters: 314,
+  year: 2014,
+  author: "Satoru Noda",
 },
 
 {
@@ -4221,6 +4811,11 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 ],
   live: [],
   published: true,
+  status: "terminé",
+  volumes: 28,
+  chapters: 281,
+  year: 2015,
+  author: "Aka Akasaka",
 },
 
 {
@@ -4421,6 +5016,11 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 ],
   live: [],
   published: true,
+  status: "terminé",
+  volumes: 16,
+  chapters: 122,
+  year: 2011,
+  author: "HERO",
 },
 
 {
@@ -4461,6 +5061,11 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 ],
   live: [],
   published: true,
+  status: "terminé",
+  volumes: 11,
+  chapters: 44,
+  year: 2011,
+  author: "Naoshi Arakawa",
 },
 
 {
@@ -4501,6 +5106,11 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 ],
   live: [],
   published: true,
+  status: "terminé",
+  volumes: 7,
+  chapters: 62,
+  year: 2013,
+  author: "Yoshitoki Oima",
 },
 
 {
@@ -4541,6 +5151,11 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 ],
   live: [],
   published: true,
+  status: "terminé",
+  volumes: 23,
+  chapters: 136,
+  year: 1998,
+  author: "Natsuki Takaya",
 },
 
 {
@@ -4581,6 +5196,11 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 ],
   live: [],
   published: true,
+  status: "terminé",
+  volumes: 18,
+  chapters: 87,
+  year: 2002,
+  author: "Bisco Hatori",
 },
 
 {
@@ -4621,6 +5241,11 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 ],
   live: [],
   published: true,
+  status: "terminé",
+  volumes: 25,
+  chapters: 229,
+  year: 2011,
+  author: "Naoshi Komi",
 },
 
 {
@@ -4661,6 +5286,11 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 ],
   live: [],
   published: true,
+  status: "en cours",
+  volumes: 14,
+  chapters: 105,
+  year: 2018,
+  author: "Shinichi Fukuda",
 },
 
 {
@@ -4901,6 +5531,11 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 ],
   live: [],
   published: true,
+  status: "terminé",
+  volumes: 18,
+  chapters: 118,
+  year: 2008,
+  author: "Satsuki Yoshino",
 },
 
 {
@@ -5015,6 +5650,11 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   streaming: [],
   live: [],
   published: true,
+  status: "terminé",
+  volumes: 3,
+  chapters: 20,
+  year: 1998,
+  author: "Junji Ito",
 },
 
 
@@ -5050,6 +5690,11 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   streaming: [],
   live: [],
   published: true,
+  status: "terminé",
+  volumes: 13,
+  chapters: 147,
+  year: 2007,
+  author: "Inio Asano",
 },
 
 {
@@ -5084,6 +5729,11 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   streaming: [],
   live: [],
   published: true,
+  status: "terminé",
+  volumes: 37,
+  chapters: 383,
+  year: 2000,
+  author: "Hiroya Oku",
 },
 
 {
@@ -5238,6 +5888,11 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 ],
   live: [],
   published: true,
+  status: "en cours",
+  volumes: 27,
+  chapters: 100,
+  year: 2014,
+  author: "Rifujin na Magonote",
 },
 
 {
@@ -5318,6 +5973,11 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 ],
   live: [],
   published: true,
+  status: "en cours",
+  volumes: 13,
+  chapters: 60,
+  year: 2011,
+  author: "Mamare Touno",
 },
 
 {
@@ -5467,6 +6127,11 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   streaming: [],
   live: [],
   published: true,
+  status: "terminé",
+  volumes: 12,
+  chapters: 207,
+  year: 2018,
+  author: "Yaongyi",
 },
 {
   slug: "hardcore-leveling-warrior",
@@ -5495,6 +6160,11 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   streaming: [],
   live: [],
   published: true,
+  status: "en cours",
+  volumes: 10,
+  chapters: 330,
+  year: 2016,
+  author: "Sehoon Kim",
 },
 
 {
@@ -5655,6 +6325,11 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 ],
   live: [],
   published: true,
+  status: "terminé",
+  volumes: 3,
+  chapters: 32,
+  year: 1989,
+  author: "Masamune Shirow",
 },
 
 {
@@ -5803,6 +6478,11 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 ],
   live: [],
   published: true,
+  status: "en cours",
+  volumes: 15,
+  chapters: 75,
+  year: 2020,
+  author: "Syougo Kinugasa",
 },
 
 {
@@ -5981,6 +6661,11 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 ],
   live: [],
   published: true,
+  status: "terminé",
+  volumes: 20,
+  chapters: 200,
+  year: 2013,
+  author: "Sōichirō Yamamoto",
 },
 
 {
@@ -6021,6 +6706,11 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
 ],
   live: [],
   published: true,
+  status: "en cours",
+  volumes: 16,
+  chapters: 100,
+  year: 2015,
+  author: "Afro",
 },
 
 {

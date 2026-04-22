@@ -150,6 +150,11 @@ export const SERIES_2: Serie[] = [
   live: [],
   cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx30104-sUVzNlTWZ5cu.jpg",
   published: true,
+  status: "en cours",
+  volumes: 15,
+  chapters: 104,
+  year: 2003,
+  author: "Kiyohiko Azuma",
 },
 
 
@@ -186,6 +191,11 @@ export const SERIES_2: Serie[] = [
   live: [],
   cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx205598-Ed5jQnBctIQO.jpg",
   published: true,
+  status: "terminé",
+  volumes: 6,
+  chapters: 22,
+  year: 2012,
+  author: "Ichigo Takano",
 },
 
 {
@@ -226,6 +236,11 @@ export const SERIES_2: Serie[] = [
   live: [],
   cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx190126-SOWtDjuwbcVs.jpg",
   published: true,
+  status: "en cours",
+  volumes: 9,
+  chapters: 50,
+  year: 2013,
+  author: "Natsuki Kizu",
 },
 
 {
@@ -266,6 +281,11 @@ export const SERIES_2: Serie[] = [
   live: [],
   cover: "https://s4.anilist.co/file/anilistcdn/media/manga/cover/medium/bx86218-sIl9tnqHZQyh.jpg",
   published: true,
+  status: "terminé",
+  volumes: 8,
+  chapters: 45,
+  year: 2015,
+  author: "Nio Nakatani",
 },
 
 {
@@ -1620,6 +1640,11 @@ export const SERIES_2: Serie[] = [
   streaming: [],
   live: [],
   published: true,
+  status: "terminé",
+  volumes: 16,
+  chapters: 61,
+  year: 2013,
+  author: "Natsume Akatsuki",
 },
 
 
@@ -1903,6 +1928,11 @@ export const SERIES_2: Serie[] = [
   streaming: [],
   live: [],
   published: true,
+  status: "terminé",
+  volumes: 15,
+  chapters: 130,
+  year: 2011,
+  author: "Hiromu Arakawa",
 },
 
 {
@@ -3874,6 +3904,11 @@ export const SERIES_2: Serie[] = [
   ],
   streaming: [],
   published: true,
+  status: "terminé",
+  volumes: 13,
+  chapters: 127,
+  year: 2018,
+  author: "Yuji Kaku",
 },
 
 {
@@ -4109,6 +4144,11 @@ export const SERIES_2: Serie[] = [
   ],
   streaming: [],
   published: true,
+  status: "terminé",
+  volumes: 8,
+  chapters: 171,
+  year: 2020,
+  author: "Juder",
 },
 
 {
@@ -4513,6 +4553,11 @@ export const SERIES_2: Serie[] = [
   ],
   streaming: [],
   published: true,
+  status: "en cours",
+  volumes: 8,
+  chapters: 150,
+  year: 2020,
+  author: "Yoonseok",
 },
 
 
@@ -7726,6 +7771,11 @@ export const SERIES_2: Serie[] = [
   streaming: [],
   live: [],
   published: true,
+  status: "en cours",
+  volumes: 16,
+  chapters: 150,
+  year: 2018,
+  author: "Hiro Mashima",
 },
 
 {
