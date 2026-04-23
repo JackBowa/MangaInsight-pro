@@ -8,6 +8,7 @@ import Comments from "./Comments";
 import CoverImage from "./CoverImage";
 import SerieActions from "./SerieActions";
 import SerieDetailTabs from "./SerieDetailTabs";
+import SidebarScores from "./SidebarScores";
 
 const A = "#e03030";
 const FH = "var(--font-barlow), 'Barlow Condensed', sans-serif";
@@ -332,42 +333,16 @@ export default function SeriePage({ params }: { params: { slug: string } }) {
           {/* ── SIDEBAR ── */}
           <div style={{ display: "flex", flexDirection: "column", gap: 16, position: "sticky", top: 72 }} className="serie-sidebar-chrome">
 
-            {/* Score rédaction */}
-            <div style={{
-              background: "rgba(255,255,255,0.03)", border: "1px solid rgba(255,255,255,0.07)",
-              borderRadius: 4, padding: 20, textAlign: "center",
-            }}>
-              {/* SVG cercle de score */}
-              <div style={{ position: "relative", width: 88, height: 88, margin: "0 auto 12px" }}>
-                <svg width="88" height="88" style={{ transform: "rotate(-90deg)" }} viewBox="0 0 88 88">
-                  <circle cx="44" cy="44" r="34" fill="none" stroke="rgba(255,255,255,0.06)" strokeWidth="7" />
-                  <circle
-                    cx="44" cy="44" r="34" fill="none"
-                    stroke={A} strokeWidth="7"
-                    strokeDasharray={`${(score10 / 10) * circumference} ${circumference}`}
-                    strokeLinecap="round"
-                  />
-                </svg>
-                <div style={{
-                  position: "absolute", inset: 0,
-                  display: "flex", alignItems: "center", justifyContent: "center",
-                  fontFamily: FH, fontSize: 22, fontWeight: 800, color: "#fff", letterSpacing: "0.04em",
-                }}>
-                  {score10}/10
-                </div>
-              </div>
-              <p style={{
-                fontFamily: FH, fontSize: 10, fontWeight: 700,
-                letterSpacing: "0.14em", textTransform: "uppercase",
-                color: "rgba(255,255,255,0.3)", marginBottom: 12,
-              }}>
-                Notre note
-              </p>
-              {rank && (
+            {/* Scores : rédaction + AniList + lecteurs */}
+            <SidebarScores slug={serie.slug} serieTitle={serie.title} notrNote={score10} />
+
+            {/* Rang */}
+            {rank && (
+              <div style={{ textAlign: "center" }}>
                 <span style={{
-                  fontFamily: FH, fontSize: 16, fontWeight: 800,
+                  fontFamily: FH, fontSize: 18, fontWeight: 800,
                   letterSpacing: "0.1em", textTransform: "uppercase",
-                  padding: "4px 14px", borderRadius: 4,
+                  padding: "6px 18px", borderRadius: 4,
                   background: rank === "SSS" ? "rgba(251,191,36,0.15)" : "rgba(224,48,48,0.12)",
                   border: `1px solid ${rank === "SSS" ? "rgba(251,191,36,0.35)" : "rgba(224,48,48,0.25)"}`,
                   color: rank === "SSS" ? "rgb(253,224,71)" : A,
@@ -375,8 +350,8 @@ export default function SeriePage({ params }: { params: { slug: string } }) {
                 }}>
                   Rang {rank}
                 </span>
-              )}
-            </div>
+              </div>
+            )}
 
             {/* Informations */}
             <div style={{ background: "rgba(255,255,255,0.03)", border: "1px solid rgba(255,255,255,0.07)", borderRadius: 4, padding: 20 }}>
