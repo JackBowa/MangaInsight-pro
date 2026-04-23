@@ -60,39 +60,13 @@ export default function Home() {
     <div style={{ background: BG, minHeight: "100vh", fontFamily: FONT_B }}>
 
       {/* ── HERO ── */}
-      <section style={{ position: "relative", minHeight: "88vh", display: "flex", alignItems: "flex-end", overflow: "hidden", padding: "0 clamp(20px,4vw,60px) 64px" }}>
-        <div style={{ position: "absolute", inset: 0, background: "#090909" }} />
-
-        {/* Covers wall — right side */}
-        <div className="hero-covers-chrome" style={{ position: "absolute", right: 0, top: 0, bottom: 0, width: "52%", display: "flex", gap: 10, padding: "16px 0", overflow: "hidden", alignItems: "flex-start" }}>
-          <div style={{ position: "absolute", left: 0, top: 0, bottom: 0, width: "22%", background: "linear-gradient(to right, #090909, transparent)", zIndex: 2 }} />
-          <div style={{ position: "absolute", right: 0, top: 0, bottom: 0, width: 80, background: "linear-gradient(to left, #090909, transparent)", zIndex: 2 }} />
-          {([[0, 1], [2, 3], [4, 5], [6, 7]] as [number, number][]).map((pair, ci) => (
-            <div key={ci} style={{ display: "flex", flexDirection: "column", gap: 10, marginTop: ci === 1 ? 60 : ci === 2 ? 20 : ci === 3 ? 80 : 0, flexShrink: 0 }}>
-              {pair.map((idx) => {
-                const s = heroCovers[idx];
-                if (!s?.cover) return null;
-                return (
-                  <Image
-                    key={idx}
-                    src={s.cover}
-                    alt={s.title}
-                    width={200}
-                    height={290}
-                    style={{ width: "clamp(160px,13vw,200px)", height: "auto", objectFit: "cover", borderRadius: 2, border: "1px solid rgba(255,255,255,0.06)", boxShadow: "0 8px 32px rgba(0,0,0,0.6)" }}
-                    priority={ci === 0}
-                  />
-                );
-              })}
-            </div>
-          ))}
-        </div>
+      <section style={{ position: "relative", minHeight: "88vh", display: "flex", alignItems: "stretch", overflow: "hidden", background: "#090909" }}>
 
         {/* Red left stripe */}
-        <div style={{ position: "absolute", left: 0, top: 0, bottom: 0, width: 5, background: ACCENT, zIndex: 5 }} />
+        <div style={{ position: "absolute", left: 0, top: 0, bottom: 0, width: 5, background: ACCENT, zIndex: 10 }} />
 
-        {/* Content */}
-        <div style={{ position: "relative", zIndex: 10, maxWidth: 580 }}>
+        {/* Content column */}
+        <div style={{ position: "relative", zIndex: 10, flex: "0 0 clamp(380px,42%,640px)", display: "flex", flexDirection: "column", justifyContent: "flex-end", padding: "0 clamp(20px,4vw,60px) 64px", paddingLeft: "clamp(30px,4vw,65px)" }}>
           <h1 style={{ fontFamily: FONT_H, fontSize: "clamp(72px,10vw,120px)", fontWeight: 800, lineHeight: 0.88, textTransform: "uppercase", color: "#fff", marginBottom: 24, letterSpacing: "-0.01em" }}>
             LE GUIDE<br />
             <span style={{ color: ACCENT }}>MANGA</span>
@@ -126,6 +100,32 @@ export default function Home() {
               </div>
             ))}
           </div>
+        </div>
+
+        {/* Covers wall — fills remaining width */}
+        <div className="hero-covers-chrome" style={{ flex: 1, position: "relative", display: "flex", gap: 8, padding: "16px 0", overflow: "hidden", alignItems: "flex-start", minWidth: 0 }}>
+          <div style={{ position: "absolute", left: 0, top: 0, bottom: 0, width: 120, background: "linear-gradient(to right, #090909, transparent)", zIndex: 2 }} />
+          <div style={{ position: "absolute", right: 0, top: 0, bottom: 0, width: 60, background: "linear-gradient(to left, #090909, transparent)", zIndex: 2 }} />
+          {([[0, 1], [2, 3], [4, 5], [6, 7]] as [number, number][]).map((pair, ci) => (
+            <div key={ci} style={{ flex: 1, display: "flex", flexDirection: "column", gap: 8, marginTop: ci === 1 ? 60 : ci === 2 ? 20 : ci === 3 ? 80 : 0, minWidth: 0 }}>
+              {pair.map((idx) => {
+                const s = heroCovers[idx];
+                if (!s?.cover) return null;
+                return (
+                  <div key={idx} style={{ position: "relative", width: "100%", aspectRatio: "2/3", borderRadius: 2, overflow: "hidden", border: "1px solid rgba(255,255,255,0.06)", boxShadow: "0 8px 32px rgba(0,0,0,0.6)" }}>
+                    <Image
+                      src={s.cover}
+                      alt={s.title}
+                      fill
+                      sizes="(max-width: 768px) 25vw, 15vw"
+                      style={{ objectFit: "cover" }}
+                      priority={ci === 0}
+                    />
+                  </div>
+                );
+              })}
+            </div>
+          ))}
         </div>
       </section>
 
