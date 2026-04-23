@@ -4,6 +4,9 @@ import { useEffect, useState } from "react";
 import { supabase } from "@/lib/lib/supabase/client";
 import { useUser } from "@/lib/lib/useUser";
 
+const A = "#e03030";
+const FH = "var(--font-barlow), 'Barlow Condensed', sans-serif";
+
 type CommentRow = {
   id: string;
   slug: string;
@@ -32,7 +35,6 @@ export default function Comments({
   const [error, setError] = useState<string | null>(null);
   const [busy, setBusy] = useState(false);
 
-  // Pré-remplir le pseudo avec le display_name du profil
   useEffect(() => {
     if (!user) return;
     supabase
@@ -40,13 +42,11 @@ export default function Comments({
       .select("display_name")
       .eq("id", user.id)
       .single()
-      .then(({ data, error }) => {
-        if (error) console.error(error);
+      .then(({ data }) => {
         if (data?.display_name) setName(data.display_name);
       });
   }, [user]);
 
-  // Charger les commentaires (approuvés + les miens si policies configurées)
   useEffect(() => {
     (async () => {
       const { data, error } = await supabase
@@ -60,15 +60,12 @@ export default function Comments({
 
   const avg =
     items.length > 0
-      ? Math.round(
-          (items.reduce((s, it) => s + (it.stars ?? 0), 0) / items.length) * 10
-        ) / 10
+      ? Math.round((items.reduce((s, it) => s + (it.stars ?? 0), 0) / items.length) * 10) / 10
       : null;
 
   async function onSubmit(e: React.FormEvent) {
     e.preventDefault();
     setError(null);
-
     if (!user) return setError("Tu dois être connecté pour publier un avis.");
     if (!name.trim()) return setError("Ton pseudo est requis.");
     if (name.trim().length > 50) return setError("Pseudo trop long (50 caractères max).");
@@ -79,147 +76,165 @@ export default function Comments({
     setBusy(true);
     const { data, error } = await supabase
       .from("comments")
-      .insert({
-        slug,
-        name: name.trim(),
-        stars,
-        text: text.trim(),
-        user_id: user.id,
-      })
+      .insert({ slug, name: name.trim(), stars, text: text.trim(), user_id: user.id })
       .select("*")
       .single();
     setBusy(false);
 
     if (error) return setError(error.message);
-
     setItems([data as CommentRow, ...items]);
     setText("");
     setStars(0);
-    // si l'utilisateur est connecté et qu'on a prérempli le name, on le laisse
-    if (!user) setName("");
   }
 
+  const inputStyle: React.CSSProperties = {
+    width: "100%", padding: "10px 14px", borderRadius: 4,
+    background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.1)",
+    color: "#fff", fontSize: 13, outline: "none", transition: "border-color 0.15s",
+    fontFamily: "var(--font-figtree), 'Figtree', sans-serif",
+  };
+
   return (
-    <section className="mt-14 mx-auto max-w-3xl">
-      <h2 className="text-xl font-semibold mb-2 text-center">
-        Avis & commentaires, {title}
-      </h2>
+    <section>
+      {/* Moyenne */}
+      {avg !== null && (
+        <div style={{ marginBottom: 16, fontSize: 13, color: "rgba(255,255,255,0.4)", fontFamily: FH, letterSpacing: "0.06em" }}>
+          Note moyenne lecteurs :{"  "}
+          <span style={{ color: A, fontWeight: 700 }}>{avg}/{max}</span>
+          {"  "}({items.length} avis)
+        </div>
+      )}
 
-      <div className="text-center mb-4 text-sm text-gray-300">
-        {avg ? (
-          <>
-            Note moyenne des lecteurs :{" "}
-            <span className="font-semibold text-yellow-400">
-              {avg}/{max}
-            </span>{" "}
-            ({items.length} avis)
-          </>
-        ) : (
-          `Pas d'avis pour le moment. Note sur ${max}.`
-        )}
-      </div>
-
-      <form
-        onSubmit={onSubmit}
-        className="rounded-xl border border-white/10 bg-white/5 p-4 space-y-3"
-      >
+      {/* Formulaire */}
+      <form onSubmit={onSubmit} style={{
+        background: "rgba(255,255,255,0.02)", border: "1px solid rgba(255,255,255,0.07)",
+        borderRadius: 4, padding: 20, marginBottom: 24,
+      }}>
         {!user && (
-          <p className="text-sm text-gray-300">
-            Connecte-toi via <a className="underline" href="/compte">/compte</a>{" "}
-            pour publier.
+          <p style={{ fontSize: 13, color: "rgba(255,255,255,0.4)", marginBottom: 12 }}>
+            <a href="/compte" style={{ color: A, textDecoration: "none" }}>Connecte-toi</a> pour publier un avis.
           </p>
         )}
 
-        <div className="flex flex-col sm:flex-row gap-3 sm:items-center">
-          <input
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-            placeholder="Ton pseudo"
-            className="flex-1 rounded-md bg-black/40 border border-white/10 px-3 py-2 outline-none focus:border-violet-400"
-            disabled={!user || busy}
-          />
+        <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
+          <div style={{ display: "flex", gap: 12, flexWrap: "wrap" }}>
+            <input
+              value={name}
+              onChange={e => setName(e.target.value)}
+              placeholder="Ton pseudo"
+              disabled={!user || busy}
+              style={{ ...inputStyle, flex: 1, minWidth: 140 }}
+            />
+            {/* Étoiles */}
+            <div style={{ display: "flex", alignItems: "center", gap: 4 }}>
+              {Array.from({ length: max }).map((_, i) => {
+                const idx = i + 1;
+                return (
+                  <button
+                    key={idx}
+                    type="button"
+                    onClick={() => setStars(idx)}
+                    disabled={!user || busy}
+                    style={{
+                      fontSize: 20, lineHeight: 1, background: "none", border: "none",
+                      cursor: !user || busy ? "default" : "pointer",
+                      color: idx <= stars ? "#fbbf24" : "rgba(255,255,255,0.15)",
+                      transition: "color 0.1s",
+                    }}
+                  >
+                    ★
+                  </button>
+                );
+              })}
+              <span style={{ fontSize: 12, color: "rgba(255,255,255,0.3)", marginLeft: 4 }}>
+                {stars || 0}/{max}
+              </span>
+            </div>
+          </div>
 
-          <div className="flex items-center gap-1">
-            {Array.from({ length: max }).map((_, i) => {
-              const idx = i + 1;
-              return (
-                <button
-                  key={idx}
-                  type="button"
-                  onClick={() => setStars(idx)}
-                  disabled={!user || busy}
-                  aria-label={`Note ${idx}`}
-                  className={`text-2xl leading-none ${
-                    idx <= stars ? "text-yellow-400" : "text-gray-600"
-                  }`}
-                >
-                  ★
-                </button>
-              );
-            })}
-            <span className="ml-2 text-sm text-gray-400">
-              {stars || 0}/{max}
+          <div style={{ position: "relative" }}>
+            <textarea
+              value={text}
+              onChange={e => setText(e.target.value.slice(0, 1000))}
+              placeholder="Ton avis (pas de spoilers non avertis)"
+              rows={4}
+              disabled={!user || busy}
+              style={{ ...inputStyle, resize: "vertical" }}
+            />
+            <span style={{
+              position: "absolute", bottom: 8, right: 12,
+              fontSize: 11, color: text.length > 900 ? "#f97316" : "rgba(255,255,255,0.2)",
+            }}>
+              {text.length}/1000
             </span>
           </div>
-        </div>
 
-        <div className="relative">
-          <textarea
-            value={text}
-            onChange={(e) => setText(e.target.value.slice(0, 1000))}
-            placeholder="Ton avis (reste sympa, pas de spoilers non avertis 🙂)"
-            rows={4}
-            className="w-full rounded-md bg-black/40 border border-white/10 px-3 py-2 outline-none focus:border-violet-400"
-            disabled={!user || busy}
-          />
-          <span className={`absolute bottom-2 right-3 text-[0.65rem] ${text.length > 900 ? "text-orange-400" : "text-white/20"}`}>
-            {text.length}/1000
-          </span>
-        </div>
+          {error && (
+            <div style={{
+              fontSize: 13, color: "#f87171",
+              border: "1px solid rgba(248,113,113,0.3)",
+              borderRadius: 4, padding: "8px 12px",
+              background: "rgba(239,68,68,0.08)",
+            }}>
+              {error}
+            </div>
+          )}
 
-        {error && (
-          <div className="text-sm text-red-400 border border-red-400/30 rounded px-3 py-2 bg-red-950/20">
-            {error}
+          <div style={{ display: "flex", justifyContent: "flex-end" }}>
+            <button
+              type="submit"
+              disabled={!user || busy}
+              style={{
+                padding: "9px 20px", borderRadius: 4,
+                background: !user || busy ? "rgba(255,255,255,0.1)" : A,
+                color: !user || busy ? "rgba(255,255,255,0.4)" : "#fff",
+                border: "none", fontFamily: FH, fontSize: 12, fontWeight: 700,
+                letterSpacing: "0.1em", textTransform: "uppercase",
+                cursor: !user || busy ? "not-allowed" : "pointer",
+                transition: "all 0.15s",
+              }}
+            >
+              {busy ? "Publication..." : "Publier l'avis"}
+            </button>
           </div>
-        )}
-
-        <div className="flex justify-end">
-          <button
-            disabled={!user || busy}
-            className="rounded-md bg-violet-600 hover:bg-violet-500 px-4 py-2 text-sm font-medium disabled:opacity-50"
-            type="submit"
-          >
-            {busy ? "Publication..." : "Publier l’avis"}
-          </button>
         </div>
       </form>
 
-      <div className="mt-6 space-y-3">
-        {items.map((it) => (
+      {/* Liste des commentaires */}
+      <div style={{ display: "flex", flexDirection: "column", gap: 12 }}>
+        {items.map(it => (
           <article
             key={it.id}
-            className="rounded-lg border border-white/10 bg-white/5 p-3"
+            style={{
+              background: "rgba(255,255,255,0.02)", border: "1px solid rgba(255,255,255,0.07)",
+              borderRadius: 4, padding: "14px 16px",
+            }}
           >
-            <header className="flex items-center justify-between">
-              <div className="font-semibold">{it.name}</div>
-              <div className="text-yellow-400">
+            <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center", marginBottom: 6 }}>
+              <span style={{ fontFamily: FH, fontSize: 13, fontWeight: 700, color: "#fff", letterSpacing: "0.06em" }}>
+                {it.name}
+              </span>
+              <span style={{ color: "#fbbf24", fontSize: 14, letterSpacing: 2 }}>
                 {"★".repeat(it.stars)}
-                <span className="text-gray-600">
-                  {"★".repeat(max - it.stars)}
-                </span>
-              </div>
-            </header>
-            {!it.approved && (
-              <div className="text-xs text-orange-400 mt-1">
-                En attente d’approbation
-              </div>
-            )}
-            <p className="mt-2 text-gray-100 leading-relaxed">{it.text}</p>
-            <div className="mt-1 text-xs text-gray-500">
-              {new Date(it.created_at).toLocaleString()}
+                <span style={{ color: "rgba(255,255,255,0.15)" }}>{"★".repeat(max - it.stars)}</span>
+              </span>
             </div>
+            {!it.approved && (
+              <p style={{ fontSize: 11, color: "#f97316", marginBottom: 6, fontFamily: FH, letterSpacing: "0.08em" }}>
+                En attente de modération
+              </p>
+            )}
+            <p style={{ fontSize: 13, color: "rgba(255,255,255,0.65)", lineHeight: 1.7 }}>{it.text}</p>
+            <p style={{ fontSize: 11, color: "rgba(255,255,255,0.2)", marginTop: 8 }}>
+              {new Date(it.created_at).toLocaleDateString("fr-FR", { day: "numeric", month: "long", year: "numeric" })}
+            </p>
           </article>
         ))}
+        {items.length === 0 && (
+          <p style={{ fontSize: 13, color: "rgba(255,255,255,0.25)", fontStyle: "italic" }}>
+            Pas encore d'avis. Sois le premier à donner le tien !
+          </p>
+        )}
       </div>
     </section>
   );

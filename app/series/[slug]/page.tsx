@@ -7,6 +7,10 @@ import { SHOPS_MAP, SHOPS_INFO } from "@/data/shops";
 import Comments from "./Comments";
 import CoverImage from "./CoverImage";
 import SerieActions from "./SerieActions";
+import SerieDetailTabs from "./SerieDetailTabs";
+
+const A = "#e03030";
+const FH = "var(--font-barlow), 'Barlow Condensed', sans-serif";
 
 export function generateStaticParams() {
   return SERIES.filter(s => s.published !== false).map(s => ({ slug: s.slug }));
@@ -35,11 +39,6 @@ function starsToRank(stars?: number): string | null {
   return null;
 }
 
-function formatDate(dateStr?: string): string {
-  if (!dateStr) return "";
-  return new Date(dateStr).toLocaleDateString("fr-FR", { day: "numeric", month: "long", year: "numeric" });
-}
-
 const STOPWORDS = new Set([
   "le","la","les","un","de","du","des","et","en","au","aux","par","sur","qui","que","dans","est","il","elle",
   "ils","elles","son","sa","ses","leur","leurs","ce","se","si","ne","pas","plus","pour","avec","sans","mais",
@@ -59,7 +58,6 @@ function synopsisTokens(text: string): Set<string> {
   );
 }
 
-// Séries similaires — scoring hybride : tags (×3) + synopsis (×1) + catégorie (×1)
 function getSimilar(serie: typeof SERIES[0], count = 6) {
   const tags = (serie.tags ?? "").split("·").map((t: string) => t.trim().toLowerCase());
   const tokens = synopsisTokens(serie.synopsis ?? "");
@@ -69,13 +67,10 @@ function getSimilar(serie: typeof SERIES[0], count = 6) {
     .map(s => {
       const sTags = (s.tags ?? "").split("·").map((t: string) => t.trim().toLowerCase());
       const sTokens = synopsisTokens(s.synopsis ?? "");
-
       const tagScore = tags.filter((t: string) => sTags.includes(t)).length * 3;
       const synopsisScore = [...tokens].filter(w => sTokens.has(w)).length;
       const categoryBonus = s.category === serie.category ? 1 : 0;
-      const score = tagScore + synopsisScore + categoryBonus;
-
-      return { ...s, score };
+      return { ...s, score: tagScore + synopsisScore + categoryBonus };
     })
     .filter(s => s.score > 0)
     .sort((a, b) => b.score - a.score)
@@ -89,139 +84,210 @@ export default function SeriePage({ params }: { params: { slug: string } }) {
 
   const rank = starsToRank(serie.stars);
   const similar = getSimilar(serie);
-
-  const editorHtml = (serie as any)?.editorReview?.html ?? (serie as any)?.reviewHtml ?? null;
+  const editorHtml = (serie as any)?.reviewHtml ?? null;
   const stars = typeof serie.stars === "number" ? serie.stars : 0;
-
+  const score10 = stars * 2;
   const pros: string[] = serie.pros ?? [];
   const cons: string[] = serie.cons ?? [];
-  const hasProscons = pros.length > 0 || cons.length > 0;
 
-  const RANK_STYLES: Record<string, string> = {
-    SSS: "bg-amber-400/20 border-amber-400/40 text-amber-300",
-    SS:  "bg-red-400/18 border-red-400/35 text-red-300",
-    S:   "bg-orange-400/18 border-orange-400/35 text-orange-300",
-    A:   "bg-green-400/15 border-green-400/30 text-green-300",
-    B:   "bg-blue-400/15 border-blue-400/30 text-blue-300",
-  };
+  // Shops: utilise serie.shops en priorité, fallback legacy map
+  const shopItems: { name: string; url: string; logo: string }[] =
+    serie.shops && serie.shops.length > 0
+      ? serie.shops
+      : (SHOPS_MAP[serie.slug] ?? ["amazon", "fnac"]).map(key => {
+          const s = SHOPS_INFO[key as keyof typeof SHOPS_INFO];
+          return { name: s.name, url: s.getUrl(serie.title), logo: s.logo };
+        });
 
-  const RANK_HERO_BADGE: Record<string, string> = {
-    SSS: "bg-amber-400 text-black shadow-[0_0_28px_rgba(251,191,36,0.75),0_0_60px_rgba(251,191,36,0.3)] animate-pulse",
-    SS:  "bg-red-400 text-white shadow-[0_0_24px_rgba(248,113,113,0.65),0_0_50px_rgba(248,113,113,0.25)]",
-    S:   "bg-orange-400 text-white shadow-[0_0_24px_rgba(251,146,60,0.65),0_0_50px_rgba(251,146,60,0.25)]",
-    A:   "bg-green-400 text-black shadow-[0_0_20px_rgba(74,222,128,0.55)]",
-    B:   "bg-blue-400 text-white shadow-[0_0_20px_rgba(96,165,250,0.55)]",
-  };
+  // Streaming: utilise serie.streaming en priorité, fallback legacy map
+  const streamingItems: { name: string; url: string; logo: string }[] =
+    serie.streaming && serie.streaming.length > 0
+      ? serie.streaming
+      : (STREAMING_MAP[serie.slug] ?? []).map(key => {
+          const p = STREAMING_INFO[key as keyof typeof STREAMING_INFO];
+          return { name: p.name, url: p.getUrl(serie.title), logo: p.logo };
+        });
 
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Book",
     "name": serie.title,
     "description": serie.synopsis ?? `Critique et avis sur ${serie.title}`,
-    "image": serie.cover ? `https://mangainsight.fr${serie.cover}` : undefined,
+    "image": serie.cover ?? undefined,
     "url": `https://mangainsight.fr/series/${serie.slug}`,
     "genre": serie.tags?.split("·")[0].trim(),
     "inLanguage": "fr",
     "aggregateRating": stars > 0 ? {
       "@type": "AggregateRating",
-      "ratingValue": stars,
-      "bestRating": 5,
+      "ratingValue": score10,
+      "bestRating": 10,
       "worstRating": 1,
       "ratingCount": 1,
     } : undefined,
   };
 
+  const circumference = 2 * Math.PI * 34; // r=34
+
   return (
-    <div className="min-h-screen">
+    <div style={{ minHeight: "100vh", background: "#0a0a0a" }}>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
       <style>{`
-        .review-content p { margin-bottom: 1em; font-size: 0.88rem; color: rgba(255,255,255,0.6); line-height: 1.85; }
+        .review-content p { margin-bottom: 1em; font-size: 0.9rem; color: rgba(255,255,255,0.65); line-height: 1.85; }
         .review-content strong { color: #fff; }
+        .review-content h2, .review-content h3 { font-family: ${FH}; color: #fff; margin: 1.5em 0 0.5em; letter-spacing: 0.06em; text-transform: uppercase; }
+        .similar-card:hover { border-color: rgba(224,48,48,0.4) !important; transform: translateY(-4px); }
+        .similar-card { transition: all 0.25s; }
       `}</style>
 
-      {/* ── HERO CINÉMATIQUE ── */}
-      <div className="relative min-h-[500px] flex items-end overflow-hidden">
-        {/* cover floutée en fond */}
+      {/* ── HERO ── */}
+      <div style={{ position: "relative", minHeight: 480, display: "flex", alignItems: "flex-end", overflow: "hidden" }}>
+        {/* Cover floutée en fond */}
         {serie.cover && (
-          <div className="absolute inset-0 z-0"
-            style={{ backgroundImage: `url(${serie.cover})`, backgroundSize: "cover", backgroundPosition: "center top", filter: "blur(20px) saturate(1.3)", transform: "scale(1.1)" }} />
+          <div style={{
+            position: "absolute", inset: 0, zIndex: 0,
+            backgroundImage: `url(${serie.cover})`,
+            backgroundSize: "cover", backgroundPosition: "center top",
+            filter: "blur(22px) saturate(1.2)", transform: "scale(1.1)",
+          }} />
         )}
-        {/* overlays */}
-        <div className="absolute inset-0 z-1 bg-gradient-to-t from-[#0b0b10] via-[#0b0b10]/80 to-[#0b0b10]/40" />
-        <div className="absolute inset-0 z-1" style={{ backgroundImage: "linear-gradient(rgba(139,92,246,0.04) 1px,transparent 1px),linear-gradient(90deg,rgba(139,92,246,0.04) 1px,transparent 1px)", backgroundSize: "40px 40px" }} />
+        {/* Gradient sombre */}
+        <div style={{ position: "absolute", inset: 0, zIndex: 1, background: "linear-gradient(to top, #0a0a0a 30%, rgba(10,10,10,0.75) 65%, rgba(10,10,10,0.4) 100%)" }} />
+        {/* Stripe rouge gauche */}
+        <div style={{ position: "absolute", left: 0, top: 0, bottom: 0, width: 4, background: A, zIndex: 2 }} />
 
-        {/* Bouton retour */}
-        <div className="absolute top-4 left-6 z-10">
-          <Link href="/critiques" className="inline-flex items-center gap-2 text-xs text-white/50 hover:text-white transition-colors bg-black/40 backdrop-blur-sm px-3 py-1.5 rounded-full border border-white/10">
-            ← Retour aux critiques
+        {/* Retour */}
+        <div style={{ position: "absolute", top: 20, left: 24, zIndex: 10 }}>
+          <Link href="/critiques" style={{
+            display: "inline-flex", alignItems: "center", gap: 8,
+            fontSize: 12, color: "rgba(255,255,255,0.5)",
+            background: "rgba(0,0,0,0.5)", backdropFilter: "blur(8px)",
+            padding: "6px 14px", borderRadius: 4, border: "1px solid rgba(255,255,255,0.1)",
+            textDecoration: "none", fontFamily: FH, letterSpacing: "0.08em",
+            textTransform: "uppercase",
+          }}>
+            ← Critiques
           </Link>
         </div>
 
-        {/* contenu hero */}
-        <div className="relative z-10 w-full max-w-[1100px] mx-auto px-6 md:px-8 pb-12 grid grid-cols-1 md:grid-cols-[200px_1fr] gap-8 items-end">
-          {/* cover nette */}
+        {/* Contenu hero */}
+        <div style={{
+          position: "relative", zIndex: 2, width: "100%",
+          maxWidth: 1100, margin: "0 auto",
+          padding: "0 clamp(20px,4vw,48px) 48px",
+          display: "grid", gridTemplateColumns: "auto 1fr", gap: 32, alignItems: "flex-end",
+        }} className="hero-grid-chrome">
+          {/* Cover nette */}
           {serie.cover && (
-            <div className="hidden md:block w-[200px] rounded-2xl overflow-hidden border-2 border-white/15 shadow-[0_20px_60px_rgba(0,0,0,0.6)] translate-y-8 flex-shrink-0">
-              <Image src={serie.cover} alt={serie.title} width={200} height={300} className="w-full block" />
+            <div style={{
+              width: 180, borderRadius: 4, overflow: "hidden",
+              border: "2px solid rgba(255,255,255,0.12)",
+              boxShadow: "0 20px 60px rgba(0,0,0,0.7)",
+              transform: "translateY(24px)", flexShrink: 0,
+            }} className="hero-cover-chrome">
+              <Image src={serie.cover} alt={serie.title} width={180} height={270} style={{ width: "100%", display: "block" }} />
             </div>
           )}
-          <div className="pb-2">
-            <div className="flex items-center gap-2 mb-3 flex-wrap">
-              <span className={`text-[0.68rem] font-bold tracking-[0.15em] uppercase px-3 py-1 rounded-full border ${serie.category === "manhwa" ? "bg-pink-500/20 border-pink-500/35 text-pink-300" : "bg-indigo-500/20 border-indigo-500/35 text-indigo-300"}`}>
+
+          <div>
+            {/* Badges */}
+            <div style={{ display: "flex", alignItems: "center", gap: 8, marginBottom: 12, flexWrap: "wrap" }}>
+              <span style={{
+                fontSize: 11, fontWeight: 700, letterSpacing: "0.14em", textTransform: "uppercase",
+                padding: "4px 10px", borderRadius: 4,
+                background: serie.category === "manhwa" ? "rgba(236,72,153,0.15)" : "rgba(255,255,255,0.08)",
+                border: `1px solid ${serie.category === "manhwa" ? "rgba(236,72,153,0.3)" : "rgba(255,255,255,0.15)"}`,
+                color: serie.category === "manhwa" ? "rgb(249,168,212)" : "rgba(255,255,255,0.7)",
+                fontFamily: FH,
+              }}>
                 {serie.category === "manhwa" ? "🇰🇷 Manhwa" : "🇯🇵 Manga"}
               </span>
               {rank && (
-                <span style={{ fontFamily: "var(--font-bebas), sans-serif", letterSpacing: "0.12em" }}
-                  className={`text-3xl md:text-4xl px-5 py-1 rounded-2xl ${RANK_HERO_BADGE[rank] ?? ""}`}>
+                <span style={{
+                  fontFamily: FH, fontSize: 22, fontWeight: 800,
+                  letterSpacing: "0.12em", textTransform: "uppercase",
+                  padding: "4px 16px", borderRadius: 4,
+                  background: rank === "SSS" ? "rgba(251,191,36,0.2)" : `rgba(224,48,48,0.15)`,
+                  border: `1px solid ${rank === "SSS" ? "rgba(251,191,36,0.4)" : "rgba(224,48,48,0.3)"}`,
+                  color: rank === "SSS" ? "rgb(253,224,71)" : "#e03030",
+                }}>
                   Rang {rank}
                 </span>
               )}
             </div>
 
-            <h1 style={{ fontFamily: "var(--font-bebas), sans-serif", letterSpacing: "0.04em" }}
-              className="text-[clamp(1.8rem,4vw,3.5rem)] text-white leading-[0.95] mb-2">
+            <h1 style={{
+              fontFamily: FH,
+              fontSize: "clamp(2rem,5vw,4rem)",
+              fontWeight: 800,
+              letterSpacing: "0.04em",
+              textTransform: "uppercase",
+              color: "#fff",
+              lineHeight: 0.95,
+              marginBottom: 10,
+            }}>
               {serie.title}
             </h1>
 
-            {serie.tags && <p className="text-sm text-white/45 mb-4">{serie.tags}</p>}
+            {serie.tags && (
+              <p style={{ fontSize: 13, color: "rgba(255,255,255,0.4)", marginBottom: 16, letterSpacing: "0.04em" }}>
+                {serie.tags}
+              </p>
+            )}
 
-            {/* Étoiles */}
+            {/* Score notre note */}
             {stars > 0 && (
-              <div className="flex items-center gap-1 mb-3">
-                {[1,2,3,4,5].map(i => (
-                  <svg key={i} className={`w-5 h-5 ${i <= stars ? "text-brand-500" : "text-white/15"}`} fill="currentColor" viewBox="0 0 20 20">
-                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                  </svg>
-                ))}
-                <span className="text-xs text-white/30 ml-2">Note rédaction</span>
+              <div style={{ display: "flex", alignItems: "center", gap: 16, marginBottom: 16, flexWrap: "wrap" }}>
+                <div style={{ display: "flex", alignItems: "center", gap: 8 }}>
+                  <span style={{ fontFamily: FH, fontSize: 28, fontWeight: 800, color: A, letterSpacing: "0.04em" }}>
+                    {score10}
+                  </span>
+                  <span style={{ fontSize: 13, color: "rgba(255,255,255,0.3)", fontFamily: FH }}>/10</span>
+                  <span style={{ fontSize: 11, color: "rgba(255,255,255,0.25)", fontFamily: FH, letterSpacing: "0.1em", textTransform: "uppercase", marginLeft: 4 }}>
+                    Notre note
+                  </span>
+                </div>
               </div>
             )}
 
-            {/* Infos rapides + tags pills */}
-            <div className="flex flex-wrap items-center gap-2 mb-5">
-              {(serie as any).status && (
-                <span className={`text-xs font-semibold px-3 py-1 rounded-full border ${(serie as any).status === "Terminé" ? "bg-emerald-500/15 border-emerald-500/30 text-emerald-300" : "bg-blue-500/15 border-blue-500/30 text-blue-300"}`}>
-                  {(serie as any).status === "Terminé" ? "✓ Terminé" : "⟳ En cours"}
+            {/* Status + tags pills */}
+            <div style={{ display: "flex", flexWrap: "wrap", alignItems: "center", gap: 8, marginBottom: 20 }}>
+              {serie.status && (
+                <span style={{
+                  fontSize: 11, fontWeight: 700, fontFamily: FH,
+                  letterSpacing: "0.1em", textTransform: "uppercase",
+                  padding: "4px 10px", borderRadius: 4,
+                  ...(serie.status === "terminé"
+                    ? { background: "rgba(239,68,68,0.12)", border: "1px solid rgba(239,68,68,0.25)", color: "rgba(252,165,165,0.9)" }
+                    : serie.status === "en cours"
+                    ? { background: "rgba(34,197,94,0.12)", border: "1px solid rgba(34,197,94,0.25)", color: "rgba(134,239,172,0.9)" }
+                    : { background: "rgba(251,146,60,0.12)", border: "1px solid rgba(251,146,60,0.25)", color: "rgba(253,186,116,0.9)" }),
+                }}>
+                  {serie.status === "terminé" ? "✓ Terminé" : serie.status === "en cours" ? "⟳ En cours" : "⏸ En pause"}
                 </span>
               )}
-              {serie.tags?.split("·").map((t: string) => t.trim()).filter(Boolean).map((tag: string) => (
-                <Link key={tag} href={`/critiques?tag=${encodeURIComponent(tag)}`}
-                  className="text-xs px-3 py-1 rounded-full border border-brand-500/30 bg-brand-500/10 text-brand-300 hover:bg-brand-500/25 hover:border-brand-500/55 transition-all">
-                  {tag}
-                </Link>
-              ))}
             </div>
 
-            <div className="flex gap-2 flex-wrap">
-              {serie.shops?.[0] && (
-                <a href={serie.shops[0].url} target="_blank" rel="noreferrer"
-                  className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-brand-500 text-white text-sm font-bold hover:bg-brand-600 transition-all hover:-translate-y-0.5 shadow-lg shadow-brand-500/30">
-                  📚 Acheter le manga
+            {/* CTA buttons */}
+            <div style={{ display: "flex", gap: 10, flexWrap: "wrap" }}>
+              {shopItems[0] && (
+                <a href={shopItems[0].url} target="_blank" rel="noreferrer" style={{
+                  display: "inline-flex", alignItems: "center", gap: 8,
+                  padding: "10px 20px", borderRadius: 4, background: A,
+                  color: "#fff", fontSize: 13, fontWeight: 700, textDecoration: "none",
+                  fontFamily: FH, letterSpacing: "0.08em", textTransform: "uppercase",
+                  boxShadow: "0 4px 20px rgba(224,48,48,0.3)", transition: "all 0.15s",
+                }}>
+                  📚 Acheter
                 </a>
               )}
-              {serie.streaming?.[0] && (
-                <a href={serie.streaming[0].url} target="_blank" rel="noreferrer"
-                  className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-white/8 border border-white/12 text-white/80 text-sm font-bold hover:bg-white/12 transition-all hover:-translate-y-0.5">
+              {streamingItems[0] && (
+                <a href={streamingItems[0].url} target="_blank" rel="noreferrer" style={{
+                  display: "inline-flex", alignItems: "center", gap: 8,
+                  padding: "10px 20px", borderRadius: 4,
+                  background: "rgba(255,255,255,0.07)", border: "1px solid rgba(255,255,255,0.12)",
+                  color: "rgba(255,255,255,0.8)", fontSize: 13, fontWeight: 700, textDecoration: "none",
+                  fontFamily: FH, letterSpacing: "0.08em", textTransform: "uppercase", transition: "all 0.15s",
+                }}>
                   ▶ Voir l'animé
                 </a>
               )}
@@ -231,235 +297,193 @@ export default function SeriePage({ params }: { params: { slug: string } }) {
         </div>
       </div>
 
-      {/* fade */}
-      <div className="h-10 bg-gradient-to-b from-transparent to-[#0b0b10] -mt-0.5 relative z-10" />
-
       {/* ── CONTENU ── */}
-      <div className="mx-auto max-w-[1100px] px-4 md:px-8">
-        <div className="grid grid-cols-1 lg:grid-cols-[1fr_280px] gap-10 items-start">
+      <div style={{ maxWidth: 1100, margin: "0 auto", padding: "40px clamp(20px,4vw,48px) 80px" }}>
+        <div style={{ display: "grid", gridTemplateColumns: "1fr 280px", gap: 40, alignItems: "start" }} className="serie-layout-chrome">
 
           {/* COLONNE PRINCIPALE */}
           <div>
+            {/* Tabs : Synopsis / Critique / Pros-Cons / Acheter */}
+            <SerieDetailTabs
+              slug={serie.slug}
+              synopsis={serie.synopsis}
+              editorHtml={editorHtml}
+              pros={pros}
+              cons={cons}
+              shops={shopItems}
+              streaming={streamingItems}
+            />
 
-            {/* Synopsis */}
-            {serie.synopsis && (
-              <div className="mb-8">
-                <p className="text-[0.68rem] font-bold tracking-[0.15em] uppercase text-white/30 mb-3 flex items-center gap-3 after:flex-1 after:h-px after:bg-white/6">📖 Synopsis</p>
-                <div className="bg-white/3 border border-white/7 rounded-2xl p-6 md:p-7">
-                  <p className="text-sm text-white/60 leading-[1.85]">{serie.synopsis}</p>
-                </div>
-              </div>
-            )}
-
-            {/* Pros / Cons */}
-            {hasProscons && (
-              <div className="mb-8">
-                <p className="text-[0.68rem] font-bold tracking-[0.15em] uppercase text-white/30 mb-3 flex items-center gap-3 after:flex-1 after:h-px after:bg-white/6">⚖️ Points forts & points faibles</p>
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
-                  <div className="rounded-2xl p-5 bg-emerald-500/7 border border-emerald-500/20">
-                    <p className="text-[0.68rem] font-bold tracking-[0.1em] uppercase text-emerald-400 mb-3">✓ Points forts</p>
-                    <ul className="flex flex-col gap-2">
-                      {pros.map((p, i) => (
-                        <li key={i} className="flex items-start gap-2 text-sm text-white/65 leading-relaxed">
-                          <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 flex-shrink-0 mt-1.5" />
-                          {p}
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                  <div className="rounded-2xl p-5 bg-red-500/7 border border-red-500/18">
-                    <p className="text-[0.68rem] font-bold tracking-[0.1em] uppercase text-red-400 mb-3">✗ Points faibles</p>
-                    <ul className="flex flex-col gap-2">
-                      {cons.map((c, i) => (
-                        <li key={i} className="flex items-start gap-2 text-sm text-white/65 leading-relaxed">
-                          <span className="w-1.5 h-1.5 rounded-full bg-red-500 flex-shrink-0 mt-1.5" />
-                          {c}
-                        </li>
-                      ))}
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            )}
-
-            {/* Avis rédaction */}
-            {editorHtml && (
-              <div className="mb-8">
-                <p className="text-[0.68rem] font-bold tracking-[0.15em] uppercase text-white/30 mb-3 flex items-center gap-3 after:flex-1 after:h-px after:bg-white/6">✍️ Avis de la rédaction</p>
-                <div className="border-l-4 border-brand-500 rounded-r-2xl bg-white/2 overflow-hidden">
-                  {/* Header rédacteur */}
-                  <div className="flex items-center gap-3 px-6 pt-5 pb-4">
-                    <div className="w-9 h-9 rounded-full bg-brand-500/20 border border-brand-500/40 flex items-center justify-center flex-shrink-0">
-                      <svg className="w-4 h-4 text-brand-400" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-                        <path strokeLinecap="round" strokeLinejoin="round" d="M15.232 5.232l3.536 3.536m-2.036-5.036a2.5 2.5 0 113.536 3.536L6.5 21.036H3v-3.572L16.732 3.732z"/>
-                      </svg>
-                    </div>
-                    <div>
-                      <p className="text-xs font-bold text-white/80">La rédaction MangaInsight</p>
-                      <p className="text-[0.65rem] text-white/30">Critique éditoriale</p>
-                    </div>
-                  </div>
-                  {/* Contenu complet */}
-                  <div className="px-6 py-5">
-                    <div className="review-content" dangerouslySetInnerHTML={{ __html: editorHtml }} />
-                  </div>
-                </div>
-              </div>
-            )}
-
-            {/* Commentaires */}
-            <div className="mb-8">
-              <p className="text-[0.68rem] font-bold tracking-[0.15em] uppercase text-white/30 mb-3 flex items-center gap-3 after:flex-1 after:h-px after:bg-white/6">💬 Avis des lecteurs</p>
+            {/* Commentaires lecteurs */}
+            <div style={{ marginTop: 40 }}>
+              <p style={{
+                fontFamily: FH, fontSize: 11, fontWeight: 700,
+                letterSpacing: "0.15em", textTransform: "uppercase",
+                color: "rgba(255,255,255,0.3)", marginBottom: 16,
+                display: "flex", alignItems: "center", gap: 12,
+              }}>
+                Avis des lecteurs
+                <span style={{ flex: 1, height: 1, background: "rgba(255,255,255,0.06)" }} />
+              </p>
               <Comments slug={params.slug} title={serie.title} />
             </div>
           </div>
 
           {/* ── SIDEBAR ── */}
-          <div className="flex flex-col gap-4 lg:sticky lg:top-[72px]">
+          <div style={{ display: "flex", flexDirection: "column", gap: 16, position: "sticky", top: 72 }} className="serie-sidebar-chrome">
 
-            {/* Note + Rang */}
-            <div className="bg-white/3 border border-white/7 rounded-2xl p-5 text-center">
-              {/* Cercle SVG */}
-              <div className="relative w-20 h-20 mx-auto mb-2">
-                <svg className="w-20 h-20 -rotate-90" viewBox="0 0 80 80">
-                  <circle cx="40" cy="40" r="34" fill="none" stroke="rgba(255,255,255,0.06)" strokeWidth="7" />
-                  <circle cx="40" cy="40" r="34" fill="none" stroke="#8b5cf6" strokeWidth="7"
-                    strokeDasharray={`${(stars / 5) * 213.6} 213.6`}
-                    strokeLinecap="round" />
+            {/* Score rédaction */}
+            <div style={{
+              background: "rgba(255,255,255,0.03)", border: "1px solid rgba(255,255,255,0.07)",
+              borderRadius: 4, padding: 20, textAlign: "center",
+            }}>
+              {/* SVG cercle de score */}
+              <div style={{ position: "relative", width: 88, height: 88, margin: "0 auto 12px" }}>
+                <svg width="88" height="88" style={{ transform: "rotate(-90deg)" }} viewBox="0 0 88 88">
+                  <circle cx="44" cy="44" r="34" fill="none" stroke="rgba(255,255,255,0.06)" strokeWidth="7" />
+                  <circle
+                    cx="44" cy="44" r="34" fill="none"
+                    stroke={A} strokeWidth="7"
+                    strokeDasharray={`${(score10 / 10) * circumference} ${circumference}`}
+                    strokeLinecap="round"
+                  />
                 </svg>
-                <div style={{ fontFamily: "var(--font-bebas), sans-serif" }}
-                  className="absolute inset-0 flex items-center justify-center text-2xl text-white">
-                  {stars}/5
+                <div style={{
+                  position: "absolute", inset: 0,
+                  display: "flex", alignItems: "center", justifyContent: "center",
+                  fontFamily: FH, fontSize: 22, fontWeight: 800, color: "#fff", letterSpacing: "0.04em",
+                }}>
+                  {score10}/10
                 </div>
               </div>
-              <p className="text-[0.65rem] font-bold tracking-[0.1em] uppercase text-white/30 mb-3">Note rédaction</p>
+              <p style={{
+                fontFamily: FH, fontSize: 10, fontWeight: 700,
+                letterSpacing: "0.14em", textTransform: "uppercase",
+                color: "rgba(255,255,255,0.3)", marginBottom: 12,
+              }}>
+                Notre note
+              </p>
               {rank && (
-                <span style={{ fontFamily: "var(--font-bebas), sans-serif", letterSpacing: "0.08em" }}
-                  className={`text-xl px-4 py-1 rounded-xl border ${RANK_STYLES[rank] ?? ""}`}>
+                <span style={{
+                  fontFamily: FH, fontSize: 16, fontWeight: 800,
+                  letterSpacing: "0.1em", textTransform: "uppercase",
+                  padding: "4px 14px", borderRadius: 4,
+                  background: rank === "SSS" ? "rgba(251,191,36,0.15)" : "rgba(224,48,48,0.12)",
+                  border: `1px solid ${rank === "SSS" ? "rgba(251,191,36,0.35)" : "rgba(224,48,48,0.25)"}`,
+                  color: rank === "SSS" ? "rgb(253,224,71)" : A,
+                  display: "inline-block",
+                }}>
                   Rang {rank}
                 </span>
               )}
             </div>
 
-            {/* Infos */}
-            <div className="bg-white/3 border border-white/7 rounded-2xl p-5">
-              <p className="text-[0.65rem] font-bold tracking-[0.1em] uppercase text-white/30 mb-3">Informations</p>
-
-              {/* Badge statut */}
-              {(serie as any).status && (
-                <div className="mb-3">
-                  {(serie as any).status === "terminé" && (
-                    <span className="inline-flex items-center gap-1.5 text-xs font-bold px-3 py-1 rounded-full bg-red-500/15 border border-red-500/30 text-red-300">
-                      ✓ Terminé
-                    </span>
-                  )}
-                  {(serie as any).status === "en cours" && (
-                    <span className="inline-flex items-center gap-1.5 text-xs font-bold px-3 py-1 rounded-full bg-emerald-500/15 border border-emerald-500/30 text-emerald-300">
-                      ⟳ En cours
-                    </span>
-                  )}
-                  {(serie as any).status === "pause" && (
-                    <span className="inline-flex items-center gap-1.5 text-xs font-bold px-3 py-1 rounded-full bg-orange-500/15 border border-orange-500/30 text-orange-300">
-                      ⏸ En pause
-                    </span>
-                  )}
-                </div>
-              )}
+            {/* Informations */}
+            <div style={{ background: "rgba(255,255,255,0.03)", border: "1px solid rgba(255,255,255,0.07)", borderRadius: 4, padding: 20 }}>
+              <p style={{
+                fontFamily: FH, fontSize: 10, fontWeight: 700,
+                letterSpacing: "0.14em", textTransform: "uppercase",
+                color: "rgba(255,255,255,0.3)", marginBottom: 14,
+              }}>
+                Informations
+              </p>
 
               {[
-                { label: "Catégorie", value: serie.category === "manhwa" ? "Manhwa 🇰🇷" : "Manga 🇯🇵" },
-                ...((serie as any).author ? [{ label: "Auteur", value: (serie as any).author }] : []),
-                ...((serie as any).year ? [{ label: "Début", value: String((serie as any).year) }] : []),
-                ...((serie as any).volumes ? [{ label: "Tomes", value: `${(serie as any).volumes} tomes` }] : []),
-                ...((serie as any).chapters ? [{ label: "Chapitres", value: `${(serie as any).chapters} chap.` }] : []),
+                { label: "Type", value: serie.category === "manhwa" ? "Manhwa 🇰🇷" : "Manga 🇯🇵" },
+                ...(serie.author ? [{ label: "Auteur", value: serie.author }] : []),
+                ...(serie.year ? [{ label: "Début", value: String(serie.year) }] : []),
+                ...(serie.volumes ? [{ label: "Tomes", value: `${serie.volumes} tomes` }] : []),
+                ...(serie.chapters ? [{ label: "Chapitres", value: `${serie.chapters} chap.` }] : []),
                 ...(serie.tags ? [{ label: "Genres", value: serie.tags.split("·")[0].trim() }] : []),
-                ...(similar.length > 0 ? [{ label: "Séries similaires", value: `${similar.length} disponibles` }] : []),
               ].map(({ label, value }) => (
-                <div key={label} className="flex justify-between items-center py-2 border-b border-white/5 last:border-0 text-sm">
-                  <span className="text-white/35">{label}</span>
-                  <span className="text-white font-semibold text-right">{value}</span>
+                <div key={label} style={{
+                  display: "flex", justifyContent: "space-between", alignItems: "center",
+                  padding: "8px 0", borderBottom: "1px solid rgba(255,255,255,0.05)", fontSize: 13,
+                }}>
+                  <span style={{ color: "rgba(255,255,255,0.35)", fontFamily: FH, fontSize: 11, letterSpacing: "0.06em", textTransform: "uppercase" }}>{label}</span>
+                  <span style={{ color: "#fff", fontWeight: 600, textAlign: "right" }}>{value}</span>
                 </div>
               ))}
             </div>
 
-            {/* Boutiques */}
-            {(() => {
-              const shopKeys = SHOPS_MAP[serie.slug] ?? ["amazon", "fnac", "rakuten"];
-              return (
-                <div className="bg-white/3 border border-white/7 rounded-2xl p-5">
-                  <p className="text-[0.65rem] font-bold tracking-[0.1em] uppercase text-white/30 mb-3">🛒 Acheter</p>
-                  <div className="flex flex-col gap-2">
-                    {shopKeys.map((key) => {
-                      const s = SHOPS_INFO[key];
-                      return (
-                        <a key={key} href={s.getUrl(serie.title)} target="_blank" rel="noreferrer"
-                          className={`flex items-center gap-3 p-2.5 rounded-xl bg-white/4 border border-white/7 text-white/70 text-sm font-bold hover:bg-white/8 hover:text-white transition-all ${s.color}`}>
-                          <img src={s.logo} alt={s.name} className="w-6 h-6 object-contain rounded" />
-                          {s.name}
-                          <svg className="w-3 h-3 ml-auto text-white/20" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-                            <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/>
-                          </svg>
-                        </a>
-                      );
-                    })}
-                  </div>
-                </div>
-              );
-            })()}
-
-            {/* Streaming */}
-            {(() => {
-              const platforms = STREAMING_MAP[serie.slug] ?? null;
-              if (!platforms || platforms.length === 0) return null;
-              return (
-                <div className="bg-white/3 border border-white/7 rounded-2xl p-5">
-                  <p className="text-[0.65rem] font-bold tracking-[0.1em] uppercase text-white/30 mb-3">📺 Voir l'animé</p>
-                  <div className="flex flex-col gap-2">
-                    {platforms.map((key) => {
-                      const p = STREAMING_INFO[key];
-                      return (
-                        <a key={key} href={p.getUrl(serie.title)} target="_blank" rel="noreferrer"
-                          className={`flex items-center gap-3 p-2.5 rounded-xl bg-white/4 border border-white/7 text-white/70 text-sm font-bold hover:bg-white/8 hover:text-white transition-all ${p.color}`}>
-                          <img src={p.logo} alt={p.name} className="w-6 h-6 object-contain rounded" />
-                          {p.name}
-                          <svg className="w-3 h-3 ml-auto text-white/20" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-                            <path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/>
-                          </svg>
-                        </a>
-                      );
-                    })}
-                  </div>
-                </div>
-              );
-            })()}
-
+            {/* Tags liens */}
+            {serie.tags && (
+              <div style={{ display: "flex", flexWrap: "wrap", gap: 6 }}>
+                {serie.tags.split("·").map(t => t.trim()).filter(Boolean).map(tag => (
+                  <Link key={tag} href={`/critiques?tag=${encodeURIComponent(tag)}`} style={{
+                    fontSize: 11, fontFamily: FH, fontWeight: 700,
+                    letterSpacing: "0.08em", textTransform: "uppercase",
+                    padding: "4px 10px", borderRadius: 4,
+                    background: "rgba(224,48,48,0.08)", border: "1px solid rgba(224,48,48,0.2)",
+                    color: "rgba(224,120,120,0.9)", textDecoration: "none",
+                  }}>
+                    {tag}
+                  </Link>
+                ))}
+              </div>
+            )}
           </div>
         </div>
 
         {/* ── SÉRIES SIMILAIRES ── */}
         {similar.length > 0 && (
-          <div className="mt-8 mb-16">
-            <p className="text-[0.68rem] font-bold tracking-[0.15em] uppercase text-white/30 mb-5 flex items-center gap-3 after:flex-1 after:h-px after:bg-white/6">🔥 Séries similaires</p>
-            <div className="grid gap-4 grid-cols-3 sm:grid-cols-4 md:grid-cols-6">
+          <div style={{ marginTop: 56 }}>
+            <div style={{ display: "flex", alignItems: "center", gap: 16, marginBottom: 20 }}>
+              <div style={{ width: 4, height: 20, background: A, borderRadius: 2, flexShrink: 0 }} />
+              <p style={{
+                fontFamily: FH, fontSize: 13, fontWeight: 800,
+                letterSpacing: "0.18em", textTransform: "uppercase", color: "rgba(255,255,255,0.5)",
+              }}>
+                Séries similaires
+              </p>
+              <div style={{ flex: 1, height: 1, background: "rgba(255,255,255,0.06)" }} />
+            </div>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(6,1fr)", gap: 12 }} className="similar-grid-chrome">
               {similar.map(s => (
-                <Link key={s.slug} href={`/series/${s.slug}`}
-                  className="group block rounded-xl overflow-hidden border border-white/7 transition-all duration-300 hover:-translate-y-1.5 hover:border-brand-500/40 hover:shadow-xl">
-                  <div className="relative overflow-hidden" style={{ aspectRatio: "2/3" }}>
-                    <CoverImage src={s.cover} alt={s.title}
-                      className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105" />
-                    <div className="absolute inset-0 bg-gradient-to-t from-[#05050e]/95 to-transparent opacity-60" />
-                  </div>
-                  <div className="p-2 bg-white/3">
-                    <h4 style={{ fontFamily: "var(--font-bebas), sans-serif", letterSpacing: "0.04em" }}
-                      className="text-[0.85rem] text-white leading-tight truncate">{s.title}</h4>
+                <Link key={s.slug} href={`/series/${s.slug}`} style={{ textDecoration: "none" }}>
+                  <div
+                    className="similar-card"
+                    style={{ borderRadius: 4, overflow: "hidden", border: "1px solid rgba(255,255,255,0.07)" }}
+                  >
+                    <div style={{ aspectRatio: "2/3", overflow: "hidden", position: "relative" }}>
+                      <CoverImage
+                        src={s.cover}
+                        alt={s.title}
+                        className="w-full h-full object-cover"
+                        style={{ transition: "transform 0.4s" }}
+                      />
+                      <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to top, rgba(0,0,0,0.7) 0%, transparent 50%)" }} />
+                    </div>
+                    <div style={{ padding: "8px 10px", background: "rgba(255,255,255,0.02)" }}>
+                      <p style={{
+                        fontFamily: FH, fontSize: 12, fontWeight: 700,
+                        color: "#fff", letterSpacing: "0.04em",
+                        overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap",
+                        textTransform: "uppercase",
+                      }}>
+                        {s.title}
+                      </p>
+                    </div>
                   </div>
                 </Link>
               ))}
             </div>
           </div>
         )}
-
       </div>
+
+      <style>{`
+        @media (max-width: 900px) {
+          .serie-layout-chrome { grid-template-columns: 1fr !important; }
+          .serie-sidebar-chrome { position: static !important; }
+          .similar-grid-chrome { grid-template-columns: repeat(3,1fr) !important; }
+        }
+        @media (max-width: 600px) {
+          .hero-grid-chrome { grid-template-columns: 1fr !important; }
+          .hero-cover-chrome { display: none !important; }
+          .similar-grid-chrome { grid-template-columns: repeat(2,1fr) !important; }
+        }
+      `}</style>
     </div>
   );
 }

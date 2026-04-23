@@ -3,6 +3,9 @@
 import { useState } from "react";
 import { useFavorites } from "@/lib/useFavorites";
 
+const A = "#e03030";
+const FH = "var(--font-barlow), 'Barlow Condensed', sans-serif";
+
 export default function SerieActions({ slug, title }: { slug: string; title: string }) {
   const { isFav, toggle } = useFavorites();
   const [copied, setCopied] = useState(false);
@@ -17,24 +20,38 @@ export default function SerieActions({ slug, title }: { slug: string; title: str
   }
 
   return (
-    <div className="flex gap-2 mt-3">
+    <div style={{ display: "flex", gap: 8, marginTop: 12, flexWrap: "wrap" }}>
       <button
         onClick={() => toggle(slug)}
         title={fav ? "Retirer des favoris" : "Ajouter aux favoris"}
-        className={`inline-flex items-center gap-2 px-4 py-2 rounded-xl border text-sm font-bold transition-all hover:-translate-y-0.5 ${
-          fav
-            ? "bg-pink-500/15 border-pink-500/40 text-pink-300 hover:bg-pink-500/25"
-            : "bg-white/6 border-white/12 text-white/60 hover:bg-white/10 hover:text-white"
-        }`}
+        style={{
+          display: "inline-flex", alignItems: "center", gap: 6,
+          padding: "8px 16px", borderRadius: 4,
+          fontFamily: FH, fontSize: 12, fontWeight: 700,
+          letterSpacing: "0.08em", textTransform: "uppercase",
+          cursor: "pointer", transition: "all 0.15s",
+          border: fav ? "1px solid rgba(236,72,153,0.35)" : "1px solid rgba(255,255,255,0.12)",
+          background: fav ? "rgba(236,72,153,0.12)" : "rgba(255,255,255,0.06)",
+          color: fav ? "rgb(249,168,212)" : "rgba(255,255,255,0.6)",
+        }}
       >
         {fav ? "♥ Favori" : "♡ Favoris"}
       </button>
 
       <button
         onClick={handleShare}
-        className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-white/6 border border-white/12 text-white/60 text-sm font-bold hover:bg-white/10 hover:text-white transition-all hover:-translate-y-0.5"
+        style={{
+          display: "inline-flex", alignItems: "center", gap: 6,
+          padding: "8px 16px", borderRadius: 4,
+          fontFamily: FH, fontSize: 12, fontWeight: 700,
+          letterSpacing: "0.08em", textTransform: "uppercase",
+          cursor: "pointer", transition: "all 0.15s",
+          border: copied ? `1px solid rgba(34,197,94,0.35)` : "1px solid rgba(255,255,255,0.12)",
+          background: copied ? "rgba(34,197,94,0.1)" : "rgba(255,255,255,0.06)",
+          color: copied ? "rgb(134,239,172)" : "rgba(255,255,255,0.6)",
+        }}
       >
-        {copied ? "✓ Lien copié !" : "Partager"}
+        {copied ? "✓ Lien copié" : "Partager"}
       </button>
     </div>
   );

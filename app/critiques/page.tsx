@@ -6,21 +6,18 @@ import { useEffect, useMemo, useState } from "react";
 import { PUBLISHED_SERIES as SERIES } from "@/data/series";
 import { supabase } from "@/lib/lib/supabase/client";
 
-const GENRES = ["Tout", "Action", "Fantasy", "Comédie", "Aventure", "Shōnen", "Magie", "Lycée", "Isekai", "Dark Fantasy", "Surnaturel", "Thriller", "Survie", "Sci-fi", "Tournoi"];
+const A = "#e03030";
+const ADim = "rgba(224,48,48,0.1)";
+const ABorder = "rgba(224,48,48,0.22)";
+const FH = "var(--font-barlow), 'Barlow Condensed', sans-serif";
+const FB = "var(--font-figtree), 'Figtree', sans-serif";
 
-const FEATURED_SLUGS = ["one-piece", "solo-leveling", "l-attaque-des-titans", "death-note", "blue-lock", "bleach"];
+const GENRES = ["Tous", "Action", "Fantasy", "Comédie", "Aventure", "Shōnen", "Isekai", "Dark Fantasy", "Thriller", "Sport", "Historique", "Psychologique", "Horreur"];
+const PAGE_SIZE = 24;
 
-function StarRating({ stars }: { stars?: number }) {
+function StarRow({ stars, size = 12 }: { stars?: number; size?: number }) {
   if (!stars) return null;
-  return (
-    <div className="flex gap-0.5">
-      {[1, 2, 3, 4, 5].map((i) => (
-        <svg key={i} className={`w-2.5 h-2.5 ${i <= stars ? "text-brand-500" : "text-white/15"}`} fill="currentColor" viewBox="0 0 20 20">
-          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-        </svg>
-      ))}
-    </div>
-  );
+  return <span style={{ color: A, fontSize: size }}>{[1,2,3,4,5].map(i => i <= stars ? "★" : "☆").join("")}</span>;
 }
 
 function CritiqueCard({ slug, title, cover, tags, stars, category, avg, onTagClick }: {
@@ -28,103 +25,51 @@ function CritiqueCard({ slug, title, cover, tags, stars, category, avg, onTagCli
   stars?: number; category?: string; avg?: number | null;
   onTagClick?: (tag: string) => void;
 }) {
-  const tagList = (tags ?? "").split("·").map((t) => t.trim()).filter(Boolean).slice(0, 3);
-
+  const tagList = (tags ?? "").split("·").map(t => t.trim()).filter(Boolean).slice(0, 2);
   return (
-    <Link
-      href={`/series/${slug}`}
-      className="group relative flex flex-col overflow-hidden rounded-2xl border border-white/7 bg-white/3 cursor-pointer transition-all duration-300 hover:-translate-y-2 hover:border-brand-500/50 hover:shadow-[0_20px_50px_rgba(0,0,0,0.5),0_0_40px_rgba(139,92,246,0.08)]"
-    >
-      {/* lueur hover */}
-      <div className="pointer-events-none absolute inset-0 rounded-2xl bg-gradient-to-br from-brand-500/15 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100 z-10" />
-
-      {/* Image */}
-      <div className="relative overflow-hidden" style={{ aspectRatio: "2/3" }}>
-        <Image
-          src={cover || "/_placeholder.jpg"}
-          alt={title}
-          fill
-          sizes="(max-width: 640px) 50vw, (max-width: 1024px) 25vw, 20vw"
-          className="object-cover transition-transform duration-500 group-hover:scale-105"
-        />
-        <div className="absolute inset-0 bg-gradient-to-t from-[#05050e]/97 via-[#05050e]/20 to-transparent opacity-65 transition-opacity duration-300 group-hover:opacity-100" />
-        {/* lueur violette depuis le bas */}
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_50%_100%,rgba(139,92,246,0.28)_0%,transparent_65%)] opacity-0 transition-opacity duration-400 group-hover:opacity-100" />
-
-        {/* Badge categorie */}
+    <Link href={`/series/${slug}`} className="critique-card-chrome"
+      style={{ display: "block", textDecoration: "none", borderRadius: 2, overflow: "hidden", position: "relative", aspectRatio: "2/3", background: "#141414", border: "1px solid rgba(255,255,255,0.06)" }}>
+      {cover && (
+        <Image src={cover} alt={title} fill sizes="(max-width: 640px) 50vw, (max-width: 1024px) 25vw, 20vw"
+          style={{ objectFit: "cover", transition: "transform .4s ease" }} className="critique-img-chrome" />
+      )}
+      <div className="critique-overlay-chrome" style={{ position: "absolute", inset: 0, background: "linear-gradient(to top, rgba(10,10,10,0.97) 0%, rgba(10,10,10,0.15) 55%, transparent 100%)", opacity: 0.7, transition: "opacity .25s", display: "flex", flexDirection: "column", justifyContent: "flex-end", padding: 10 }}>
         {category && (
-          <span className={`absolute left-2 top-2 z-10 rounded-full text-[0.58rem] font-bold tracking-widest uppercase px-2 py-0.5 border ${
-            category === "manhwa"
-              ? "bg-pink-500/20 border-pink-500/35 text-pink-300"
-              : "bg-indigo-500/20 border-indigo-500/35 text-indigo-300"
-          }`}>
-            {category}
-          </span>
+          <span style={{ alignSelf: "flex-start", fontSize: 9, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", padding: "2px 6px", borderRadius: 2, marginBottom: 4,
+            background: category === "manhwa" ? "rgba(244,114,182,0.15)" : ADim,
+            border: `1px solid ${category === "manhwa" ? "rgba(244,114,182,0.3)" : ABorder}`,
+            color: category === "manhwa" ? "#f9a8d4" : "#fca5a5" }}>{category}</span>
         )}
-
-        {/* Etoiles */}
-        <div className="absolute top-2 right-2 z-10">
-          <StarRating stars={stars} />
+        <div style={{ fontFamily: FH, fontSize: 13, fontWeight: 800, letterSpacing: "0.04em", color: "#fff", lineHeight: 1.1, marginBottom: 3 }}>{title}</div>
+        <div style={{ fontSize: 9, color: "rgba(255,255,255,0.4)", marginBottom: 5 }}>{tagList[0]}</div>
+        <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+          <StarRow stars={stars} size={10} />
+          {avg != null && <span style={{ fontFamily: FB, fontSize: 9, color: "rgba(255,255,255,0.4)" }}>{avg.toFixed(1)}/5</span>}
         </div>
-
-        {/* Tags */}
-        {tagList.length > 0 && (
-          <div className="absolute bottom-2 left-2 right-2 z-10 flex flex-wrap gap-1">
-            {tagList.map((t) => (
-              <button key={t} onClick={(e) => { e.preventDefault(); onTagClick?.(t); }}
-                className="rounded-full bg-black/60 border border-white/10 px-1.5 py-0.5 text-[0.6rem] text-white/75 hover:border-brand-500/50 hover:text-brand-300 transition-all cursor-pointer">
-                {t}
-              </button>
-            ))}
-          </div>
-        )}
-      </div>
-
-      {/* Corps */}
-      <div className="relative z-10 p-3">
-        <h3 style={{ fontFamily: "var(--font-bebas), sans-serif", letterSpacing: "0.04em" }} className="text-[1.05rem] text-white leading-tight mb-1">
-          {title}
-        </h3>
-        {typeof avg === "number" && (
-          <p className="text-[0.68rem] text-white/35">
-            Lecteurs : <span className="text-brand-400 font-bold">{avg.toFixed(1)}/5</span>
-          </p>
-        )}
       </div>
     </Link>
   );
 }
 
-const PAGE_SIZE = 24;
-
 export default function CritiquesPage() {
   const [q, setQ] = useState("");
   const [category, setCategory] = useState<"all" | "manga" | "manhwa">("all");
-  const [genre, setGenre] = useState("Tout");
+  const [genre, setGenre] = useState("Tous");
   const [sort, setSort] = useState<"recent" | "title" | "rating">("recent");
+  const [view, setView] = useState<"grid" | "list">("grid");
   const [avgs, setAvgs] = useState<Record<string, number>>({});
-  const [loadingAvgs, setLoadingAvgs] = useState(false);
   const [visibleCount, setVisibleCount] = useState(PAGE_SIZE);
 
-  const mangaCount = SERIES.filter((s) => s.category === "manga").length;
-  const manhwaCount = SERIES.filter((s) => s.category === "manhwa").length;
-
-  const featuredSeries = useMemo(() =>
-    FEATURED_SLUGS.map((slug) => SERIES.find((s) => s.slug === slug)).filter(Boolean).slice(0, 6) as typeof SERIES,
-    []
-  );
+  const mangaCount = SERIES.filter(s => s.category === "manga").length;
+  const manhwaCount = SERIES.filter(s => s.category === "manhwa").length;
 
   const filtered = useMemo(() => {
     let list = SERIES.slice();
-    if (category !== "all") list = list.filter((s) => s.category === category);
-    if (genre !== "Tout") list = list.filter((s) => (s.tags ?? "").toLowerCase().includes(genre.toLowerCase()));
+    if (category !== "all") list = list.filter(s => s.category === category);
+    if (genre !== "Tous") list = list.filter(s => (s.tags ?? "").toLowerCase().includes(genre.toLowerCase()));
     if (q.trim()) {
-      const needle = q.toLowerCase();
-      list = list.filter((s) =>
-        s.title.toLowerCase().includes(needle) ||
-        (s.tags ?? "").toLowerCase().includes(needle) ||
-        (s.synopsis ?? "").toLowerCase().includes(needle)
-      );
+      const n = q.toLowerCase();
+      list = list.filter(s => s.title.toLowerCase().includes(n) || (s.tags ?? "").toLowerCase().includes(n));
     }
     if (sort === "title") list.sort((a, b) => a.title.localeCompare(b.title, "fr"));
     else if (sort === "rating") list.sort((a, b) => (b.stars ?? 0) - (a.stars ?? 0));
@@ -132,18 +77,15 @@ export default function CritiquesPage() {
     return list;
   }, [q, category, genre, sort]);
 
-  // Reset pagination quand les filtres changent
   useEffect(() => { setVisibleCount(PAGE_SIZE); }, [q, category, genre, sort]);
 
   useEffect(() => {
-    const slugs = Array.from(new Set(filtered.map((s) => s.slug))).slice(0, 200);
+    const slugs = Array.from(new Set(filtered.map(s => s.slug))).slice(0, 200);
     if (!slugs.length) { setAvgs({}); return; }
     let cancelled = false;
-    setLoadingAvgs(true);
     supabase.from("comments").select("slug, stars").in("slug", slugs).eq("approved", true)
       .then(({ data, error }) => {
         if (cancelled) return;
-        setLoadingAvgs(false);
         if (error || !data) { setAvgs({}); return; }
         const sums: Record<string, { s: number; n: number }> = {};
         for (const row of data as { slug: string; stars: number }[]) {
@@ -152,187 +94,144 @@ export default function CritiquesPage() {
           sums[row.slug].n += 1;
         }
         const out: Record<string, number> = {};
-        Object.keys(sums).forEach((k) => {
-          const { s, n } = sums[k];
-          if (n > 0) out[k] = Math.round((s / n) * 10) / 10;
-        });
+        Object.keys(sums).forEach(k => { const { s, n } = sums[k]; if (n > 0) out[k] = Math.round((s / n) * 10) / 10; });
         setAvgs(out);
       });
     return () => { cancelled = true; };
   }, [filtered]);
 
+  const chipStyle = (active: boolean) => ({
+    padding: "7px 14px", borderRadius: 4, fontSize: 12, fontWeight: 700,
+    fontFamily: FH, letterSpacing: "0.08em", textTransform: "uppercase" as const, cursor: "pointer",
+    background: active ? A : "rgba(255,255,255,0.04)",
+    border: `1px solid ${active ? A : "rgba(255,255,255,0.07)"}`,
+    color: active ? "#fff" : "rgba(255,255,255,0.4)",
+    whiteSpace: "nowrap" as const,
+  });
+
   return (
-    <div className="min-h-screen">
-      <style>{`
-        @keyframes floatCover { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-8px)} }
-        @keyframes pulseOrb { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:0.5;transform:scale(0.8)} }
-        @keyframes fadeInUp { from{opacity:0;transform:translateY(16px)} to{opacity:1;transform:translateY(0)} }
-        .float-1{animation:floatCover 7s ease-in-out infinite}
-        .float-2{animation:floatCover 7s ease-in-out 1s infinite}
-        .float-3{animation:floatCover 7s ease-in-out 2s infinite}
-        .float-4{animation:floatCover 7s ease-in-out 0.5s infinite}
-        .float-5{animation:floatCover 7s ease-in-out 1.5s infinite}
-        .float-6{animation:floatCover 7s ease-in-out 2.5s infinite}
-        .pulse-dot{animation:pulseOrb 2s infinite}
-        .hero-grid{background-image:linear-gradient(rgba(139,92,246,0.06) 1px,transparent 1px),linear-gradient(90deg,rgba(139,92,246,0.06) 1px,transparent 1px);background-size:40px 40px}
-        .card-fadein{animation:fadeInUp 0.4s ease both}
-      `}</style>
+    <div style={{ background: "#0a0a0a", minHeight: "100vh", fontFamily: FB }}>
 
-      {/* ── HERO ── */}
-      <section className="relative min-h-[320px] flex items-center overflow-hidden px-6 md:px-12 hero-grid">
-        {/* fond */}
-        <div className="absolute inset-0 bg-gradient-to-br from-brand-700/50 via-brand-900/30 to-transparent" />
-        {/* orbes */}
-        <div className="absolute -top-20 left-[10%] w-72 h-72 rounded-full bg-brand-500/18 blur-[60px] pointer-events-none" />
-        <div className="absolute -bottom-10 left-[35%] w-48 h-48 rounded-full bg-brand-400/12 blur-[60px] pointer-events-none" />
-
-        {/* contenu */}
-        <div className="relative z-10 max-w-lg py-14">
-          <div className="inline-flex items-center gap-2 text-[0.7rem] font-bold tracking-[0.18em] uppercase text-brand-300 bg-brand-500/12 border border-brand-500/25 px-3.5 py-1.5 rounded-full mb-4">
-            <span className="pulse-dot w-1.5 h-1.5 rounded-full bg-brand-400 inline-block" />
-            Critiques · Manhwa · Manga
+      {/* Header */}
+      <div style={{ borderLeft: `5px solid ${A}`, background: "#080808", padding: "40px clamp(20px,4vw,52px) 32px" }}>
+        <div style={{ maxWidth: 1280, margin: "0 auto" }}>
+          <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 12 }}>
+            <div style={{ width: 24, height: 3, background: A }} />
+            <span style={{ fontFamily: FH, fontSize: 11, fontWeight: 700, letterSpacing: "0.2em", textTransform: "uppercase", color: A }}>CATALOGUE</span>
           </div>
-          <h1 style={{ fontFamily: "var(--font-bebas), sans-serif", letterSpacing: "0.03em" }} className="text-[clamp(3.5rem,7vw,5.5rem)] text-white leading-[0.92] mb-4">
-            Toutes<br />les <span className="text-brand-500">critiques</span>
-          </h1>
-          <p className="text-[0.95rem] text-white/50 leading-relaxed mb-6 max-w-sm">
-            Explore, filtre et découvre les meilleures séries notées par la rédaction.
-          </p>
-          <div className="flex gap-7">
-            {[
-              { num: SERIES.length, label: "Séries" },
-              { num: mangaCount, label: "Mangas" },
-              { num: manhwaCount, label: "Manhwas" },
-            ].map(({ num, label }) => (
-              <div key={label}>
-                <div style={{ fontFamily: "var(--font-bebas), sans-serif" }} className="text-[1.8rem] text-white leading-none tracking-wide">{num}</div>
-                <div className="text-[0.65rem] font-bold tracking-[0.12em] uppercase text-white/35 mt-0.5">{label}</div>
-              </div>
-            ))}
-          </div>
+          <h1 style={{ fontFamily: FH, fontSize: "clamp(40px,6vw,72px)", fontWeight: 800, textTransform: "uppercase", color: "#fff", lineHeight: 0.9, marginBottom: 10 }}>TOUTES LES CRITIQUES</h1>
+          <p style={{ fontSize: 14, color: "rgba(255,255,255,0.25)" }}>{SERIES.length} séries référencées · manga &amp; manhwa</p>
         </div>
+      </div>
 
-        {/* covers flottantes */}
-        <div className="absolute right-8 md:right-16 top-1/2 -translate-y-1/2 hidden md:grid grid-cols-3 gap-2 z-10" style={{ gridTemplateColumns: "repeat(3, 90px)" }}>
-          {featuredSeries.map((s, i) => (
-            <div key={s.slug} className={`float-${i + 1} rounded-xl overflow-hidden border border-white/10 shadow-2xl relative`} style={{ aspectRatio: "2/3", marginTop: i % 2 === 1 ? "16px" : "0" }}>
-              <Image src={s.cover || "/_placeholder.jpg"} alt={s.title} fill sizes="90px"
-                className="object-cover hover:scale-105 transition-transform duration-500" />
-            </div>
+      {/* Filters sticky bar */}
+      <div style={{ background: "#0d0d0d", borderBottom: "1px solid rgba(255,255,255,0.07)", position: "sticky", top: 56, zIndex: 50 }}>
+        <div style={{ maxWidth: 1280, margin: "0 auto", padding: "12px clamp(20px,4vw,52px)", display: "flex", gap: 8, alignItems: "center", flexWrap: "wrap" }}>
+          {/* Category chips */}
+          {(["all", "manga", "manhwa"] as const).map(c => (
+            <button key={c} onClick={() => setCategory(c)} style={chipStyle(category === c)}>
+              {c === "all" ? `TOUS (${SERIES.length})` : c === "manga" ? `MANGA (${mangaCount})` : `MANHWA (${manhwaCount})`}
+            </button>
           ))}
-        </div>
-      </section>
-
-      {/* fade */}
-      <div className="h-14 bg-gradient-to-b from-transparent to-[#0b0b10] -mt-0.5 relative z-10" />
-
-      {/* ── CONTENU ── */}
-      <div className="mx-auto max-w-[1400px] px-4 md:px-8">
-
-        {/* Filtres */}
-        <div className="bg-white/3 border border-white/7 rounded-2xl p-4 md:p-5 mb-7 flex flex-wrap gap-3 items-center">
-
-          {/* Recherche */}
-          <div className="relative flex-1 min-w-[200px]">
-            <input
-              value={q}
-              onChange={(e) => setQ(e.target.value)}
-              placeholder="Rechercher un titre, un genre..."
-              className="w-full bg-black/45 border border-white/9 rounded-xl px-4 py-2.5 text-sm outline-none focus:border-brand-500/50 focus:shadow-[0_0_0_3px_rgba(139,92,246,0.08)] placeholder:text-white/25 transition-all"
-            />
-            {q && (
-              <button onClick={() => setQ("")} className="absolute right-3 top-1/2 -translate-y-1/2 text-white/40 hover:text-white text-xs">✕</button>
-            )}
-          </div>
-
-          {/* Onglets categorie */}
-          <div className="flex gap-1 bg-black/35 rounded-xl p-1 border border-white/6">
-            {([
-              { key: "all", label: "Tout", count: SERIES.length },
-              { key: "manga", label: "Manga", count: mangaCount },
-              { key: "manhwa", label: "Manhwa", count: manhwaCount },
-            ] as const).map((opt) => (
-              <button key={opt.key} onClick={() => setCategory(opt.key)}
-                className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-sm font-bold transition-all ${
-                  category === opt.key ? "bg-brand-500 text-white shadow-lg shadow-brand-500/30" : "text-white/45 hover:text-white hover:bg-white/6"
-                }`}>
-                {opt.label}
-                <span className={`text-[0.65rem] px-1.5 py-0.5 rounded ${category === opt.key ? "bg-white/25" : "bg-white/10"}`}>{opt.count}</span>
-              </button>
+          <div style={{ width: 1, height: 24, background: "rgba(255,255,255,0.07)", margin: "0 4px" }} />
+          {/* Genre scroll */}
+          <div style={{ display: "flex", gap: 6, overflow: "auto", flex: 1 }} className="no-scrollbar">
+            {GENRES.map(g => (
+              <button key={g} onClick={() => setGenre(g)} style={chipStyle(genre === g)}>{g.toUpperCase()}</button>
             ))}
           </div>
-
-          {/* Tri */}
-          <select value={sort} onChange={(e) => setSort(e.target.value as any)}
-            className="bg-black/40 border border-white/9 rounded-xl px-3 py-2.5 text-sm outline-none focus:border-brand-500/50 text-white/65">
-            <option value="recent">Plus récents</option>
-            <option value="title">Titre A-Z</option>
-            <option value="rating">Meilleure note</option>
+          <div style={{ width: 1, height: 24, background: "rgba(255,255,255,0.07)", margin: "0 4px" }} />
+          {/* Sort */}
+          <select value={sort} onChange={e => setSort(e.target.value as any)}
+            style={{ fontSize: 12, fontWeight: 700, fontFamily: FH, letterSpacing: "0.08em", textTransform: "uppercase", background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.07)", color: "#fff", padding: "7px 12px", borderRadius: 4, cursor: "pointer" }}>
+            <option value="recent">RÉCENTS ↓</option>
+            <option value="title">A → Z</option>
+            <option value="rating">NOTE ↓</option>
           </select>
-
-          {/* Chips genres */}
-          <div className="w-full flex flex-wrap gap-2 pt-3 border-t border-white/5">
-            {GENRES.map((g) => (
-              <button key={g} onClick={() => setGenre(g)}
-                className={`px-3 py-1 rounded-full text-xs font-bold border transition-all ${
-                  genre === g
-                    ? "bg-brand-500/18 border-brand-500/45 text-brand-300"
-                    : "bg-transparent border-white/9 text-white/45 hover:border-white/20 hover:text-white hover:bg-white/4"
-                }`}>
-                {g}
+          {/* View toggle */}
+          <div style={{ display: "flex", border: "1px solid rgba(255,255,255,0.07)", borderRadius: 4, overflow: "hidden" }}>
+            {(["grid", "list"] as const).map(v => (
+              <button key={v} onClick={() => setView(v)} style={{ padding: "6px 12px", background: view === v ? A : "transparent", border: "none", color: view === v ? "#fff" : "rgba(255,255,255,0.4)", cursor: "pointer", fontSize: 14 }}>
+                {v === "grid" ? "▦" : "☰"}
               </button>
             ))}
           </div>
-        </div>
-
-        {/* Compteur */}
-        <div className="flex items-center justify-between mb-5">
-          <p className="text-sm text-white/35">
-            <span className="text-white font-bold text-base">{filtered.length}</span> résultats
-          </p>
-          {loadingAvgs && <p className="text-xs text-white/25">Calcul des notes...</p>}
-        </div>
-
-        {/* Grille */}
-        {filtered.length === 0 ? (
-          <div className="text-center py-24 text-white/25">
-            <div className="text-5xl mb-4">🔍</div>
-            <p style={{ fontFamily: "var(--font-bebas), sans-serif" }} className="text-2xl text-white/35 mb-2">Aucun résultat</p>
-            <p className="text-sm">Essaie d&apos;autres mots-clés ou filtres</p>
+          {/* Search */}
+          <div style={{ position: "relative" }}>
+            <input value={q} onChange={e => setQ(e.target.value)} placeholder="Rechercher..."
+              style={{ background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.07)", borderRadius: 4, padding: "7px 32px 7px 12px", fontSize: 13, color: "#fff", outline: "none", fontFamily: FB, width: 160 }} />
+            {q && <button onClick={() => setQ("")} style={{ position: "absolute", right: 8, top: "50%", transform: "translateY(-50%)", background: "none", border: "none", color: "rgba(255,255,255,0.4)", cursor: "pointer" }}>✕</button>}
           </div>
-        ) : (
+        </div>
+      </div>
+
+      {/* Count */}
+      <div style={{ maxWidth: 1280, margin: "0 auto", padding: "16px clamp(20px,4vw,52px) 0" }}>
+        <span style={{ fontSize: 13, color: "rgba(255,255,255,0.25)" }}>{filtered.length} série{filtered.length > 1 ? "s" : ""} trouvée{filtered.length > 1 ? "s" : ""}</span>
+      </div>
+
+      {/* Content */}
+      <div style={{ maxWidth: 1280, margin: "0 auto", padding: "16px clamp(20px,4vw,52px) 80px" }}>
+        {filtered.length === 0 ? (
+          <div style={{ textAlign: "center", padding: "80px 20px", color: "rgba(255,255,255,0.25)" }}>
+            <div style={{ fontSize: 48, marginBottom: 16 }}>🔍</div>
+            <p style={{ fontFamily: FH, fontSize: 24, marginBottom: 8 }}>AUCUN RÉSULTAT</p>
+            <p style={{ fontSize: 13 }}>Essaie d'autres mots-clés ou filtres</p>
+          </div>
+        ) : view === "grid" ? (
           <>
-            <div className="grid gap-4 grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6">
-              {filtered.slice(0, visibleCount).map((s, i) => (
-                <div key={s.slug} className="card-fadein" style={{ animationDelay: `${(i % PAGE_SIZE) * 30}ms` }}>
-                  <CritiqueCard
-                    slug={s.slug}
-                    title={s.title}
-                    cover={s.cover}
-                    tags={s.tags}
-                    stars={s.stars as number | undefined}
-                    category={s.category}
-                    avg={avgs[s.slug]}
-                    onTagClick={(tag) => { setGenre(tag); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
-                  />
-                </div>
+            <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill,minmax(150px,1fr))", gap: 12 }}>
+              {filtered.slice(0, visibleCount).map(s => (
+                <CritiqueCard key={s.slug} slug={s.slug} title={s.title} cover={s.cover} tags={s.tags}
+                  stars={s.stars} category={s.category} avg={avgs[s.slug]}
+                  onTagClick={tag => { setGenre(tag); window.scrollTo({ top: 0, behavior: "smooth" }); }} />
               ))}
             </div>
             {visibleCount < filtered.length && (
-              <div className="flex justify-center mt-8">
-                <button
-                  onClick={() => setVisibleCount(v => v + PAGE_SIZE)}
-                  className="px-8 py-3 rounded-xl bg-white/5 border border-white/10 text-white/70 text-sm font-bold hover:bg-brand-500/15 hover:border-brand-500/40 hover:text-brand-300 transition-all"
-                >
-                  Charger plus ({filtered.length - visibleCount} restantes)
+              <div style={{ display: "flex", justifyContent: "center", marginTop: 32 }}>
+                <button onClick={() => setVisibleCount(v => v + PAGE_SIZE)}
+                  style={{ padding: "12px 32px", background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.07)", borderRadius: 4, color: "rgba(255,255,255,0.5)", fontSize: 13, fontFamily: FH, fontWeight: 700, letterSpacing: "0.08em", textTransform: "uppercase", cursor: "pointer" }}>
+                  CHARGER PLUS ({filtered.length - visibleCount} restantes)
                 </button>
               </div>
             )}
           </>
+        ) : (
+          <div style={{ display: "flex", flexDirection: "column", gap: 2 }}>
+            {filtered.slice(0, visibleCount).map((s, i) => (
+              <Link key={s.slug} href={`/series/${s.slug}`}
+                style={{ display: "flex", alignItems: "center", gap: 14, padding: "12px 14px", background: i % 2 === 0 ? "rgba(255,255,255,0.02)" : "transparent", borderRadius: 4, textDecoration: "none", borderLeft: `3px solid ${s.stars === 5 ? A : "transparent"}` }}
+                className="list-item-chrome">
+                <span style={{ fontFamily: FH, fontSize: 20, fontWeight: 800, color: "rgba(255,255,255,0.1)", width: 32, textAlign: "right", flexShrink: 0 }}>{String(i + 1).padStart(2, "0")}</span>
+                {s.cover && <Image src={s.cover} alt={s.title} width={40} height={56} style={{ objectFit: "cover", borderRadius: 2, border: "1px solid rgba(255,255,255,0.07)", flexShrink: 0 }} />}
+                <div style={{ flex: 1, minWidth: 0 }}>
+                  <div style={{ fontFamily: FH, fontSize: 17, fontWeight: 800, letterSpacing: "0.03em", color: "#fff", lineHeight: 1 }}>{s.title}</div>
+                  <div style={{ fontSize: 11, color: "rgba(255,255,255,0.25)", marginTop: 2 }}>{s.tags}</div>
+                </div>
+                <span style={{ fontSize: 9, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", padding: "2px 8px", borderRadius: 2,
+                  background: s.category === "manhwa" ? "rgba(244,114,182,0.1)" : ADim,
+                  color: s.category === "manhwa" ? "#f9a8d4" : "#fca5a5" }}>{s.category}</span>
+                <StarRow stars={s.stars} size={11} />
+                <svg width="12" height="12" fill="none" stroke="rgba(255,255,255,0.2)" strokeWidth="2" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></svg>
+              </Link>
+            ))}
+            {visibleCount < filtered.length && (
+              <div style={{ display: "flex", justifyContent: "center", marginTop: 24 }}>
+                <button onClick={() => setVisibleCount(v => v + PAGE_SIZE)}
+                  style={{ padding: "12px 32px", background: "rgba(255,255,255,0.04)", border: "1px solid rgba(255,255,255,0.07)", borderRadius: 4, color: "rgba(255,255,255,0.5)", fontSize: 13, fontFamily: FH, fontWeight: 700, letterSpacing: "0.08em", textTransform: "uppercase", cursor: "pointer" }}>
+                  CHARGER PLUS ({filtered.length - visibleCount} restantes)
+                </button>
+              </div>
+            )}
+          </div>
         )}
-
-        <div className="h-20" />
       </div>
+
+      <style>{`
+        .critique-card-chrome:hover .critique-img-chrome { transform: scale(1.05) !important; }
+        .critique-card-chrome:hover .critique-overlay-chrome { opacity: 1 !important; }
+        .list-item-chrome:hover { background: rgba(255,255,255,0.04) !important; }
+      `}</style>
     </div>
   );
 }

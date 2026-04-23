@@ -5,11 +5,12 @@ import Image from "next/image";
 import { useRef, useMemo } from "react";
 import { PUBLISHED_SERIES as SERIES } from "@/data/series";
 
-// Calcule "il y a X jours" depuis une date ISO
+const A = "#e03030";
+const FH = "var(--font-barlow), 'Barlow Condensed', sans-serif";
+
 function timeAgo(dateStr: string): string {
   const now = new Date();
-  const date = new Date(dateStr);
-  const diff = Math.floor((now.getTime() - date.getTime()) / (1000 * 60 * 60 * 24));
+  const diff = Math.floor((now.getTime() - new Date(dateStr).getTime()) / (1000 * 60 * 60 * 24));
   if (diff === 0) return "Aujourd'hui";
   if (diff === 1) return "Hier";
   if (diff < 7) return `Il y a ${diff} jours`;
@@ -19,18 +20,9 @@ function timeAgo(dateStr: string): string {
   return `Il y a ${Math.floor(diff / 30)} mois`;
 }
 
-type BadgeType = "new" | "update" | "critique";
-
-const BADGE_STYLES: Record<BadgeType, string> = {
-  new:      "bg-cyan-400/15 border border-cyan-400/30 text-cyan-300",
-  update:   "bg-amber-400/12 border border-amber-400/30 text-amber-300",
-  critique: "bg-brand-500/15 border border-brand-500/30 text-brand-300",
-};
-
 export default function NouveautesPage() {
   const carouselRef = useRef<HTMLDivElement>(null);
 
-  // Trier par addedAt décroissant
   const sorted = useMemo(() =>
     [...SERIES]
       .filter(s => s.addedAt)
@@ -38,152 +30,274 @@ export default function NouveautesPage() {
     []
   );
 
-  // Carousel = 12 plus récentes
   const recent = sorted.slice(0, 12);
-
-  // Fil d'actu = 15 plus récentes avec badge
-  const feed = sorted.slice(0, 15).map(s => ({
-    ...s,
-    badge: "new" as BadgeType,
-    badgeLabel: "Nouveau",
-  }));
+  const feed = sorted.slice(0, 20);
 
   function scrollCarousel(dir: number) {
     carouselRef.current?.scrollBy({ left: dir * 340, behavior: "smooth" });
   }
 
   return (
-    <div className="min-h-screen">
+    <div style={{ minHeight: "100vh", background: "#0a0a0a" }}>
       <style>{`
-        @keyframes pulseOrb { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:0.5;transform:scale(0.8)} }
-        .pulse-dot { animation: pulseOrb 2s infinite; }
-        .hero-grid { background-image: linear-gradient(rgba(139,92,246,0.06) 1px,transparent 1px),linear-gradient(90deg,rgba(139,92,246,0.06) 1px,transparent 1px); background-size:40px 40px; }
-        .carousel-hide-scrollbar { scrollbar-width:none; }
-        .carousel-hide-scrollbar::-webkit-scrollbar { display:none; }
+        .nouveautes-card:hover { border-color: rgba(224,48,48,0.35) !important; transform: translateY(-4px); }
+        .nouveautes-card { transition: all 0.25s; }
+        .nouveautes-card:hover img { transform: scale(1.05); }
+        .feed-row:hover { background: rgba(255,255,255,0.05) !important; border-color: rgba(224,48,48,0.2) !important; }
+        .feed-row { transition: all 0.2s; }
+        .carousel-hide { scrollbar-width:none; }
+        .carousel-hide::-webkit-scrollbar { display:none; }
       `}</style>
 
-      {/* HERO */}
-      <section className="relative min-h-[320px] flex items-center overflow-hidden px-6 md:px-12 hero-grid">
-        <div className="absolute inset-0 bg-gradient-to-br from-brand-700/50 via-brand-900/30 to-transparent" />
-        <div className="absolute -top-16 left-[5%] w-96 h-96 rounded-full bg-brand-500/18 blur-[80px] pointer-events-none" />
-        <div className="absolute -bottom-10 left-[45%] w-64 h-64 rounded-full bg-cyan-500/12 blur-[70px] pointer-events-none" />
+      {/* HERO CHROME */}
+      <section style={{
+        position: "relative", minHeight: 280,
+        display: "flex", alignItems: "center",
+        padding: "0 clamp(20px,4vw,64px)",
+        borderBottom: "1px solid rgba(255,255,255,0.06)",
+        overflow: "hidden",
+      }}>
+        <div style={{ position: "absolute", left: 0, top: 0, bottom: 0, width: 4, background: A }} />
 
-        <div className="relative z-10 py-14 max-w-xl">
-          <div className="inline-flex items-center gap-2 text-[0.7rem] font-bold tracking-[0.18em] uppercase text-cyan-300 bg-cyan-500/10 border border-cyan-500/25 px-3.5 py-1.5 rounded-full mb-5">
-            <span className="pulse-dot w-1.5 h-1.5 rounded-full bg-cyan-400 inline-block" />
-            Mis à jour régulièrement
-          </div>
-          <h1 style={{ fontFamily: "var(--font-bebas), sans-serif", letterSpacing: "0.03em" }}
-            className="text-[clamp(3.5rem,7vw,5.5rem)] text-white leading-none mb-4">
-            Les <span className="text-cyan-400">nouveautés</span>
-          </h1>
-          <p className="text-[0.95rem] text-white/50 leading-relaxed mb-6">
-            Les dernières séries ajoutées sur MangaInsight, triées automatiquement par date d&apos;ajout.
+        <div style={{ position: "relative", zIndex: 2, paddingTop: 48, paddingBottom: 48 }}>
+          <p style={{
+            fontFamily: FH, fontSize: 11, fontWeight: 700,
+            letterSpacing: "0.2em", textTransform: "uppercase",
+            color: A, marginBottom: 14,
+          }}>
+            Mis à jour en continu
           </p>
-          <div className="flex gap-6">
+          <h1 style={{
+            fontFamily: FH, fontSize: "clamp(3rem,7vw,5.5rem)",
+            fontWeight: 800, letterSpacing: "0.04em", textTransform: "uppercase",
+            color: "#fff", lineHeight: 0.92, marginBottom: 16,
+          }}>
+            NOUVEAUTÉS
+          </h1>
+          <p style={{ fontSize: 14, color: "rgba(255,255,255,0.4)", lineHeight: 1.7, maxWidth: 440, marginBottom: 28 }}>
+            Les dernières séries ajoutées sur MangaInsight, triées par date d'ajout.
+          </p>
+          <div style={{ display: "flex", gap: 28 }}>
             {[
-              { num: sorted.length, label: "Séries" },
+              { num: sorted.length, label: "Séries avec date" },
               { num: recent.length, label: "Ajouts récents" },
             ].map(({ num, label }) => (
               <div key={label}>
-                <div style={{ fontFamily: "var(--font-bebas), sans-serif" }} className="text-[1.8rem] text-white leading-none tracking-wide">{num}</div>
-                <div className="text-[0.65rem] font-bold tracking-[0.12em] uppercase text-white/35 mt-0.5">{label}</div>
+                <div style={{ fontFamily: FH, fontSize: 30, fontWeight: 800, color: "#fff", lineHeight: 1 }}>{num}</div>
+                <div style={{ fontFamily: FH, fontSize: 10, fontWeight: 700, letterSpacing: "0.14em", textTransform: "uppercase", color: "rgba(255,255,255,0.3)", marginTop: 4 }}>
+                  {label}
+                </div>
               </div>
             ))}
           </div>
         </div>
       </section>
-      <div className="h-14 bg-gradient-to-b from-transparent to-[#0b0b10] -mt-0.5 relative z-10" />
 
-      <div className="mx-auto max-w-[1280px] px-4 md:px-8">
+      <div style={{ maxWidth: 1280, margin: "0 auto", padding: "40px clamp(16px,4vw,48px) 80px" }}>
 
-        {/* ── CAROUSEL ── */}
-        <p className="text-[0.68rem] font-bold tracking-[0.15em] uppercase text-white/35 mb-4 flex items-center gap-3 after:flex-1 after:h-px after:bg-white/6">
-          🆕 Récemment ajoutés
-        </p>
-        <div className="relative mb-14">
-          <button onClick={() => scrollCarousel(-1)}
-            className="absolute left-[-18px] top-1/2 -translate-y-[60%] z-10 w-9 h-9 rounded-full bg-black/70 border border-white/12 text-white items-center justify-center hover:bg-brand-500/50 hover:border-brand-500/50 transition-all backdrop-blur-sm text-base hidden md:flex">
+        {/* CAROUSEL */}
+        <div style={{ display: "flex", alignItems: "center", gap: 12, marginBottom: 16 }}>
+          <div style={{ width: 4, height: 16, background: A, borderRadius: 2 }} />
+          <p style={{
+            fontFamily: FH, fontSize: 11, fontWeight: 700,
+            letterSpacing: "0.18em", textTransform: "uppercase",
+            color: "rgba(255,255,255,0.4)",
+          }}>
+            Récemment ajoutés
+          </p>
+          <div style={{ flex: 1, height: 1, background: "rgba(255,255,255,0.06)" }} />
+        </div>
+
+        <div style={{ position: "relative", marginBottom: 56 }}>
+          {/* Flèche gauche */}
+          <button
+            onClick={() => scrollCarousel(-1)}
+            style={{
+              position: "absolute", left: -18, top: "40%", zIndex: 10,
+              width: 34, height: 34, borderRadius: "50%",
+              background: "rgba(0,0,0,0.8)", border: "1px solid rgba(255,255,255,0.12)",
+              color: "#fff", fontSize: 18, cursor: "pointer",
+              display: "none", alignItems: "center", justifyContent: "center",
+              transition: "all 0.15s",
+            }}
+            className="carousel-arrow-chrome"
+          >
             ‹
           </button>
 
-          <div ref={carouselRef}
-            className="flex gap-3.5 overflow-x-auto scroll-smooth carousel-hide-scrollbar pb-3"
-            style={{ scrollSnapType: "x mandatory" }}>
+          <div
+            ref={carouselRef}
+            className="carousel-hide"
+            style={{ display: "flex", gap: 12, overflowX: "auto", scrollSnapType: "x mandatory", paddingBottom: 8 }}
+          >
             {recent.map((s, i) => (
-              <Link key={s.slug} href={`/series/${s.slug}`}
-                style={{ scrollSnapAlign: "start" }}
-                className="flex-shrink-0 w-40 rounded-2xl overflow-hidden border border-white/7 bg-white/3 flex flex-col transition-all duration-300 hover:-translate-y-1.5 hover:border-brand-500/45 hover:shadow-[0_16px_40px_rgba(0,0,0,0.5),0_0_30px_rgba(139,92,246,0.08)] group">
-                <div className="relative overflow-hidden" style={{ aspectRatio: "2/3" }}>
-                  <Image src={s.cover || "/_placeholder.jpg"} alt={s.title}
-                    fill sizes="160px"
-                    className="object-cover transition-transform duration-500 group-hover:scale-105" />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#05050e]/95 to-transparent opacity-60" />
-                  <span className={`absolute top-1.5 left-1.5 text-[0.52rem] font-bold tracking-widest uppercase px-1.5 py-0.5 rounded-full border ${
-                    s.category === "manhwa" ? "bg-pink-500/20 border-pink-500/35 text-pink-300" : "bg-indigo-500/20 border-indigo-500/35 text-indigo-300"
-                  }`}>{s.category}</span>
-                  {i < 4 && (
-                    <span className="absolute top-1.5 right-1.5 text-[0.52rem] font-bold tracking-widest uppercase px-1.5 py-0.5 rounded-full bg-cyan-400 text-black">
-                      New
+              <Link
+                key={s.slug}
+                href={`/series/${s.slug}`}
+                style={{ scrollSnapAlign: "start", flexShrink: 0, width: 148, textDecoration: "none" }}
+              >
+                <div
+                  className="nouveautes-card"
+                  style={{
+                    borderRadius: 4, overflow: "hidden",
+                    border: "1px solid rgba(255,255,255,0.07)",
+                    background: "rgba(255,255,255,0.02)",
+                  }}
+                >
+                  <div style={{ position: "relative", aspectRatio: "2/3", overflow: "hidden" }}>
+                    <Image
+                      src={s.cover || "/_placeholder.jpg"}
+                      alt={s.title}
+                      fill sizes="148px"
+                      style={{ objectFit: "cover", transition: "transform 0.4s" }}
+                    />
+                    <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to top, rgba(0,0,0,0.75) 0%, transparent 50%)" }} />
+                    {/* Badge catégorie */}
+                    <span style={{
+                      position: "absolute", top: 6, left: 6,
+                      fontFamily: FH, fontSize: 9, fontWeight: 700,
+                      letterSpacing: "0.1em", textTransform: "uppercase",
+                      padding: "2px 6px", borderRadius: 4,
+                      background: s.category === "manhwa" ? "rgba(236,72,153,0.2)" : "rgba(255,255,255,0.12)",
+                      border: `1px solid ${s.category === "manhwa" ? "rgba(236,72,153,0.3)" : "rgba(255,255,255,0.15)"}`,
+                      color: s.category === "manhwa" ? "rgb(249,168,212)" : "rgba(255,255,255,0.75)",
+                    }}>
+                      {s.category}
                     </span>
-                  )}
-                </div>
-                <div className="p-2.5">
-                  <h3 style={{ fontFamily: "var(--font-bebas), sans-serif", letterSpacing: "0.04em" }}
-                    className="text-[0.9rem] text-white leading-tight">{s.title}</h3>
-                  {s.addedAt && (
-                    <p className="text-[0.6rem] text-white/30 mt-0.5">{timeAgo(s.addedAt)}</p>
-                  )}
+                    {/* Badge "NEW" pour les 4 premiers */}
+                    {i < 4 && (
+                      <span style={{
+                        position: "absolute", top: 6, right: 6,
+                        fontFamily: FH, fontSize: 9, fontWeight: 800,
+                        letterSpacing: "0.1em", textTransform: "uppercase",
+                        padding: "2px 6px", borderRadius: 4,
+                        background: A, color: "#fff",
+                      }}>
+                        NEW
+                      </span>
+                    )}
+                  </div>
+                  <div style={{ padding: "8px 10px" }}>
+                    <p style={{
+                      fontFamily: FH, fontSize: 12, fontWeight: 700,
+                      color: "#fff", letterSpacing: "0.04em", textTransform: "uppercase",
+                      overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap",
+                    }}>
+                      {s.title}
+                    </p>
+                    {s.addedAt && (
+                      <p style={{ fontSize: 10, color: "rgba(255,255,255,0.3)", marginTop: 2 }}>
+                        {timeAgo(s.addedAt)}
+                      </p>
+                    )}
+                  </div>
                 </div>
               </Link>
             ))}
           </div>
 
-          <button onClick={() => scrollCarousel(1)}
-            className="absolute right-[-18px] top-1/2 -translate-y-[60%] z-10 w-9 h-9 rounded-full bg-black/70 border border-white/12 text-white items-center justify-center hover:bg-brand-500/50 hover:border-brand-500/50 transition-all backdrop-blur-sm text-base hidden md:flex">
+          {/* Flèche droite */}
+          <button
+            onClick={() => scrollCarousel(1)}
+            style={{
+              position: "absolute", right: -18, top: "40%", zIndex: 10,
+              width: 34, height: 34, borderRadius: "50%",
+              background: "rgba(0,0,0,0.8)", border: "1px solid rgba(255,255,255,0.12)",
+              color: "#fff", fontSize: 18, cursor: "pointer",
+              display: "none", alignItems: "center", justifyContent: "center",
+              transition: "all 0.15s",
+            }}
+            className="carousel-arrow-chrome"
+          >
             ›
           </button>
         </div>
 
-        {/* ── FIL D'ACTU ── */}
-        <p className="text-[0.68rem] font-bold tracking-[0.15em] uppercase text-white/35 mb-4 flex items-center gap-3 after:flex-1 after:h-px after:bg-white/6">
-          📡 Fil des ajouts
-        </p>
-        <div className="flex flex-col gap-3 mb-24">
+        {/* FIL D'AJOUTS */}
+        <div style={{ display: "flex", alignItems: "center", gap: 12, marginBottom: 16 }}>
+          <div style={{ width: 4, height: 16, background: A, borderRadius: 2 }} />
+          <p style={{
+            fontFamily: FH, fontSize: 11, fontWeight: 700,
+            letterSpacing: "0.18em", textTransform: "uppercase",
+            color: "rgba(255,255,255,0.4)",
+          }}>
+            Fil des ajouts
+          </p>
+          <div style={{ flex: 1, height: 1, background: "rgba(255,255,255,0.06)" }} />
+        </div>
+
+        <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
           {feed.map((item, i) => (
-            <Link key={`${item.slug}-${i}`} href={`/series/${item.slug}`}
-              className="flex items-center gap-4 px-4 py-3.5 bg-white/3 border border-white/6 rounded-2xl transition-all duration-250 hover:bg-white/5 hover:border-brand-500/30 hover:translate-x-1">
-              <div className="relative w-11 h-14 rounded-lg overflow-hidden flex-shrink-0 border border-white/8">
-                <Image src={item.cover || "/_placeholder.jpg"} alt={item.title}
-                  fill sizes="44px"
-                  className="object-cover" />
-              </div>
-              <div className="flex-1 min-w-0">
-                <h3 style={{ fontFamily: "var(--font-bebas), sans-serif", letterSpacing: "0.04em" }}
-                  className="text-[1rem] text-white truncate mb-1">{item.title}</h3>
-                <div className="flex items-center gap-2 flex-wrap">
-                  <span className="text-[0.62rem] text-white/40">
-                    {item.category === "manhwa" ? "🇰🇷 Manhwa" : "🇯🇵 Manga"}
-                  </span>
-                  {item.tags && <>
-                    <span className="w-0.5 h-0.5 rounded-full bg-white/20" />
-                    <span className="text-[0.62rem] text-white/40">{item.tags}</span>
-                  </>}
+            <Link
+              key={`${item.slug}-${i}`}
+              href={`/series/${item.slug}`}
+              style={{ textDecoration: "none" }}
+            >
+              <div
+                className="feed-row"
+                style={{
+                  display: "flex", alignItems: "center", gap: 16,
+                  padding: "12px 16px",
+                  background: "rgba(255,255,255,0.02)",
+                  border: "1px solid rgba(255,255,255,0.06)",
+                  borderRadius: 4,
+                }}
+              >
+                {/* Miniature */}
+                <div style={{ position: "relative", width: 40, height: 56, borderRadius: 4, overflow: "hidden", flexShrink: 0, border: "1px solid rgba(255,255,255,0.08)" }}>
+                  <Image src={item.cover || "/_placeholder.jpg"} alt={item.title} fill sizes="40px" style={{ objectFit: "cover" }} />
                 </div>
-              </div>
-              <div className="flex flex-col items-end gap-1.5 flex-shrink-0">
-                <span className={`text-[0.6rem] font-bold tracking-[0.08em] uppercase px-2.5 py-1 rounded-full ${BADGE_STYLES[item.badge as BadgeType]}`}>
-                  {item.badgeLabel}
-                </span>
-                {item.addedAt && (
-                  <span className="text-[0.68rem] text-white/25">{timeAgo(item.addedAt)}</span>
-                )}
+
+                {/* Infos */}
+                <div style={{ flex: 1, minWidth: 0 }}>
+                  <p style={{
+                    fontFamily: FH, fontSize: 14, fontWeight: 700,
+                    color: "#fff", letterSpacing: "0.04em", textTransform: "uppercase",
+                    overflow: "hidden", textOverflow: "ellipsis", whiteSpace: "nowrap",
+                    marginBottom: 4,
+                  }}>
+                    {item.title}
+                  </p>
+                  <div style={{ display: "flex", gap: 8, alignItems: "center", flexWrap: "wrap" }}>
+                    <span style={{ fontSize: 11, color: "rgba(255,255,255,0.35)" }}>
+                      {item.category === "manhwa" ? "🇰🇷 Manhwa" : "🇯🇵 Manga"}
+                    </span>
+                    {item.tags && (
+                      <>
+                        <span style={{ width: 3, height: 3, borderRadius: "50%", background: "rgba(255,255,255,0.2)", display: "inline-block" }} />
+                        <span style={{ fontSize: 11, color: "rgba(255,255,255,0.25)" }}>
+                          {item.tags.split("·")[0].trim()}
+                        </span>
+                      </>
+                    )}
+                  </div>
+                </div>
+
+                {/* Badges */}
+                <div style={{ display: "flex", flexDirection: "column", alignItems: "flex-end", gap: 4, flexShrink: 0 }}>
+                  <span style={{
+                    fontFamily: FH, fontSize: 9, fontWeight: 800,
+                    letterSpacing: "0.12em", textTransform: "uppercase",
+                    padding: "3px 8px", borderRadius: 4,
+                    background: "rgba(224,48,48,0.1)", border: "1px solid rgba(224,48,48,0.2)",
+                    color: A,
+                  }}>
+                    Nouveau
+                  </span>
+                  {item.addedAt && (
+                    <span style={{ fontSize: 10, color: "rgba(255,255,255,0.25)" }}>
+                      {timeAgo(item.addedAt)}
+                    </span>
+                  )}
+                </div>
               </div>
             </Link>
           ))}
         </div>
 
       </div>
+
+      <style>{`@media (min-width: 768px) { .carousel-arrow-chrome { display: flex !important; } }`}</style>
     </div>
   );
 }
