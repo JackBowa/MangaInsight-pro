@@ -162,7 +162,7 @@ query ($search: String) {
                 <circle
                   cx="44" cy="44" r="34" fill="none"
                   stroke="#fbbf24" strokeWidth="7"
-                  strokeDasharray={`${(readerAvg / 5) * circumference} ${circumference}`}
+                  strokeDasharray={`${(readerAvg / 10) * circumference} ${circumference}`}
                   strokeLinecap="round"
                 />
               )}
@@ -195,7 +195,7 @@ query ($search: String) {
       }}>
         <span style={{ color: A }}>■</span> /10
         <span style={{ color: "#02a9ff" }}>■</span> /10
-        <span style={{ color: "#fbbf24" }}>■</span> /5
+        <span style={{ color: "#fbbf24" }}>■</span> /10
       </div>
     </div>
   );

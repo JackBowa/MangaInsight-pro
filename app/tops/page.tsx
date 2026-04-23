@@ -185,6 +185,10 @@ export default function TopsPage() {
       <style>{`
         .rank-card-chrome:hover > div { border-color: rgba(255,255,255,0.15) !important; transform: translateY(-4px); }
         .rank-card-chrome:hover .rank-card-img { transform: scale(1.05); }
+        .podium-card:hover { transform: translateY(-4px); transition: all 0.25s; }
+        .podium-card { transition: all 0.25s; }
+        .podium-card:hover .podium-img { transform: scale(1.05); }
+        @media (max-width: 600px) { .podium-grid-chrome { grid-template-columns: 1fr !important; } }
       `}</style>
 
       {/* HERO CHROME */}
@@ -268,6 +272,85 @@ export default function TopsPage() {
             <strong style={{ color: "rgba(255,255,255,0.6)" }}>{totalRanked}</strong> séries classées
           </span>
         </div>
+
+        {/* ── PODIUM TOP 3 ── */}
+        {activeRanks["SSS"].length >= 1 && (
+          <div style={{ marginBottom: 56 }}>
+            <div style={{ display: "flex", alignItems: "center", gap: 16, marginBottom: 24 }}>
+              <div style={{ width: 4, height: 20, background: "#fbbf24", borderRadius: 2 }} />
+              <p style={{ fontFamily: FH, fontSize: 11, fontWeight: 700, letterSpacing: "0.18em", textTransform: "uppercase", color: "rgba(255,255,255,0.4)" }}>
+                Podium SSS
+              </p>
+              <div style={{ flex: 1, height: 1, background: "rgba(255,255,255,0.06)" }} />
+            </div>
+
+            <div style={{ display: "grid", gridTemplateColumns: "1fr 1.15fr 1fr", gap: 12, alignItems: "flex-end" }} className="podium-grid-chrome">
+              {/* 2e place */}
+              {activeRanks["SSS"][1] ? (
+                <Link href={`/series/${activeRanks["SSS"][1].slug}`} style={{ textDecoration: "none" }}>
+                  <div style={{ position: "relative" }}>
+                    <div style={{ position: "absolute", top: -12, left: "50%", transform: "translateX(-50%)", fontFamily: FH, fontSize: 32, fontWeight: 800, color: "rgba(192,192,192,0.9)", zIndex: 10, textShadow: "0 0 20px rgba(192,192,192,0.3)" }}>②</div>
+                    <div className="podium-card" style={{ borderRadius: 4, overflow: "hidden", border: "1px solid rgba(192,192,192,0.2)", marginTop: 28 }}>
+                      <div style={{ aspectRatio: "2/3", position: "relative", overflow: "hidden" }}>
+                        <img src={activeRanks["SSS"][1].cover || "/_placeholder.jpg"} alt={activeRanks["SSS"][1].title} style={{ width: "100%", height: "100%", objectFit: "cover", transition: "transform 0.4s" }} className="podium-img" />
+                        <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to top, rgba(0,0,0,0.9) 0%, transparent 50%)" }} />
+                        <div style={{ position: "absolute", bottom: 10, left: 10, right: 10 }}>
+                          <p style={{ fontFamily: FH, fontSize: 13, fontWeight: 800, color: "#fff", textTransform: "uppercase", letterSpacing: "0.04em" }}>{activeRanks["SSS"][1].title}</p>
+                          <p style={{ fontSize: 10, color: "rgba(255,255,255,0.4)", marginTop: 2 }}>{activeRanks["SSS"][1].tags?.split("·")[0].trim()}</p>
+                        </div>
+                      </div>
+                      <div style={{ background: "rgba(192,192,192,0.06)", padding: "8px 10px", borderTop: "1px solid rgba(192,192,192,0.12)", textAlign: "center" }}>
+                        <span style={{ fontFamily: FH, fontSize: 10, fontWeight: 700, letterSpacing: "0.12em", color: "rgba(192,192,192,0.7)", textTransform: "uppercase" }}>Argent</span>
+                      </div>
+                    </div>
+                  </div>
+                </Link>
+              ) : <div />}
+
+              {/* 1re place */}
+              <Link href={`/series/${activeRanks["SSS"][0].slug}`} style={{ textDecoration: "none" }}>
+                <div style={{ position: "relative" }}>
+                  <div style={{ position: "absolute", top: -16, left: "50%", transform: "translateX(-50%)", fontFamily: FH, fontSize: 40, fontWeight: 800, color: "#fbbf24", zIndex: 10, textShadow: "0 0 30px rgba(251,191,36,0.6)" }}>①</div>
+                  <div className="podium-card" style={{ borderRadius: 4, overflow: "hidden", border: "2px solid rgba(251,191,36,0.4)", marginTop: 24, boxShadow: "0 0 40px rgba(251,191,36,0.15)" }}>
+                    <div style={{ aspectRatio: "2/3", position: "relative", overflow: "hidden" }}>
+                      <img src={activeRanks["SSS"][0].cover || "/_placeholder.jpg"} alt={activeRanks["SSS"][0].title} style={{ width: "100%", height: "100%", objectFit: "cover", transition: "transform 0.4s" }} className="podium-img" />
+                      <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to top, rgba(0,0,0,0.9) 0%, transparent 45%)" }} />
+                      <div style={{ position: "absolute", bottom: 12, left: 12, right: 12 }}>
+                        <p style={{ fontFamily: FH, fontSize: 15, fontWeight: 800, color: "#fff", textTransform: "uppercase", letterSpacing: "0.04em" }}>{activeRanks["SSS"][0].title}</p>
+                        <p style={{ fontSize: 11, color: "rgba(255,255,255,0.4)", marginTop: 3 }}>{activeRanks["SSS"][0].tags?.split("·")[0].trim()}</p>
+                      </div>
+                    </div>
+                    <div style={{ background: "rgba(251,191,36,0.08)", padding: "10px", borderTop: "1px solid rgba(251,191,36,0.2)", textAlign: "center" }}>
+                      <span style={{ fontFamily: FH, fontSize: 11, fontWeight: 800, letterSpacing: "0.12em", color: "#fbbf24", textTransform: "uppercase" }}>Or · Meilleure série</span>
+                    </div>
+                  </div>
+                </div>
+              </Link>
+
+              {/* 3e place */}
+              {activeRanks["SSS"][2] ? (
+                <Link href={`/series/${activeRanks["SSS"][2].slug}`} style={{ textDecoration: "none" }}>
+                  <div style={{ position: "relative" }}>
+                    <div style={{ position: "absolute", top: -12, left: "50%", transform: "translateX(-50%)", fontFamily: FH, fontSize: 32, fontWeight: 800, color: "rgba(205,127,50,0.9)", zIndex: 10, textShadow: "0 0 20px rgba(205,127,50,0.3)" }}>③</div>
+                    <div className="podium-card" style={{ borderRadius: 4, overflow: "hidden", border: "1px solid rgba(205,127,50,0.2)", marginTop: 28 }}>
+                      <div style={{ aspectRatio: "2/3", position: "relative", overflow: "hidden" }}>
+                        <img src={activeRanks["SSS"][2].cover || "/_placeholder.jpg"} alt={activeRanks["SSS"][2].title} style={{ width: "100%", height: "100%", objectFit: "cover", transition: "transform 0.4s" }} className="podium-img" />
+                        <div style={{ position: "absolute", inset: 0, background: "linear-gradient(to top, rgba(0,0,0,0.9) 0%, transparent 50%)" }} />
+                        <div style={{ position: "absolute", bottom: 10, left: 10, right: 10 }}>
+                          <p style={{ fontFamily: FH, fontSize: 13, fontWeight: 800, color: "#fff", textTransform: "uppercase", letterSpacing: "0.04em" }}>{activeRanks["SSS"][2].title}</p>
+                          <p style={{ fontSize: 10, color: "rgba(255,255,255,0.4)", marginTop: 2 }}>{activeRanks["SSS"][2].tags?.split("·")[0].trim()}</p>
+                        </div>
+                      </div>
+                      <div style={{ background: "rgba(205,127,50,0.06)", padding: "8px 10px", borderTop: "1px solid rgba(205,127,50,0.12)", textAlign: "center" }}>
+                        <span style={{ fontFamily: FH, fontSize: 10, fontWeight: 700, letterSpacing: "0.12em", color: "rgba(205,127,50,0.7)", textTransform: "uppercase" }}>Bronze</span>
+                      </div>
+                    </div>
+                  </div>
+                </Link>
+              ) : <div />}
+            </div>
+          </div>
+        )}
 
         {/* Sections par rang */}
         {RANK_ORDER.map(rank => (

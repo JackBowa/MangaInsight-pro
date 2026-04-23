@@ -21,7 +21,7 @@ type CommentRow = {
 export default function Comments({
   slug,
   title,
-  max = 5,
+  max = 10,
 }: {
   slug: string;
   title: string;
@@ -125,8 +125,8 @@ export default function Comments({
               disabled={!user || busy}
               style={{ ...inputStyle, flex: 1, minWidth: 140 }}
             />
-            {/* Étoiles */}
-            <div style={{ display: "flex", alignItems: "center", gap: 4 }}>
+            {/* Blocs note 1-10 */}
+            <div style={{ display: "flex", alignItems: "center", gap: 4, flexWrap: "wrap" }}>
               {Array.from({ length: max }).map((_, i) => {
                 const idx = i + 1;
                 return (
@@ -136,19 +136,23 @@ export default function Comments({
                     onClick={() => setStars(idx)}
                     disabled={!user || busy}
                     style={{
-                      fontSize: 20, lineHeight: 1, background: "none", border: "none",
+                      width: 32, height: 32, borderRadius: 4, border: "none",
+                      background: idx <= stars ? A : "rgba(255,255,255,0.07)",
+                      color: idx <= stars ? "#fff" : "rgba(255,255,255,0.35)",
+                      fontFamily: FH, fontSize: 13, fontWeight: 700,
                       cursor: !user || busy ? "default" : "pointer",
-                      color: idx <= stars ? "#fbbf24" : "rgba(255,255,255,0.15)",
-                      transition: "color 0.1s",
+                      transition: "all 0.1s",
                     }}
                   >
-                    ★
+                    {idx}
                   </button>
                 );
               })}
-              <span style={{ fontSize: 12, color: "rgba(255,255,255,0.3)", marginLeft: 4 }}>
-                {stars || 0}/{max}
-              </span>
+              {stars > 0 && (
+                <span style={{ fontSize: 12, color: A, marginLeft: 4, fontFamily: FH, fontWeight: 700 }}>
+                  {stars}/10
+                </span>
+              )}
             </div>
           </div>
 
