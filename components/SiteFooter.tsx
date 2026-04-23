@@ -105,6 +105,13 @@ export default function SiteFooter() {
           <span style={{ fontSize: 12, color: "rgba(255,255,255,0.45)", fontFamily: FONT_B }}>
             © {new Date().getFullYear()} MangaInsight — Tous droits réservés
           </span>
+          <Link
+            href="/politique-de-confidentialite"
+            style={{ fontSize: 12, color: "rgba(255,255,255,0.45)", fontFamily: FONT_B, textDecoration: "none", transition: "color .15s" }}
+            className="footer-link-chrome"
+          >
+            Politique de confidentialité
+          </Link>
         </div>
       </div>
 
