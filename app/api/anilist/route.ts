@@ -1,6 +1,9 @@
-import { ANILIST_SEARCH } from "@/lib/anilist";
+import { ANILIST_SEARCH, ANILIST_BY_ID } from "@/lib/anilist";
 
-const ALLOWED_QUERY = ANILIST_SEARCH.replace(/\s+/g, " ").trim();
+const ALLOWED_QUERIES = new Set([
+  ANILIST_SEARCH.replace(/\s+/g, " ").trim(),
+  ANILIST_BY_ID.replace(/\s+/g, " ").trim(),
+]);
 
 const rateLimitMap = new Map<string, { count: number; ts: number }>();
 const RATE_LIMIT = 20; // requêtes max
@@ -35,8 +38,8 @@ export async function POST(req: Request) {
 
   const { query, variables } = body;
 
-  // Whitelist : seule la query AniList autorisée
-  if (!query || query.replace(/\s+/g, " ").trim() !== ALLOWED_QUERY) {
+  // Whitelist : seules les queries AniList autorisées
+  if (!query || !ALLOWED_QUERIES.has(query.replace(/\s+/g, " ").trim())) {
     return Response.json({ error: "Requête non autorisée" }, { status: 403 });
   }
 
