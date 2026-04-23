@@ -130,7 +130,7 @@ export default function Home() {
       </section>
 
       {/* ── SÉRIES EN VEDETTE ── */}
-      <section style={{ maxWidth: 1440, margin: "0 auto", padding: "64px clamp(20px,4vw,52px)" }}>
+      <section style={{ maxWidth: 1700, margin: "0 auto", padding: "64px clamp(20px,4vw,52px)" }}>
         <div style={{ display: "flex", alignItems: "baseline", justifyContent: "space-between", marginBottom: 28 }}>
           <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
             <div style={{ width: 24, height: 3, background: ACCENT }} />
@@ -186,7 +186,7 @@ export default function Home() {
       </section>
 
       {/* ── QUIZ BANNER ── */}
-      <section style={{ maxWidth: 1440, margin: "0 auto", padding: "0 clamp(20px,4vw,52px) 48px" }}>
+      <section style={{ maxWidth: 1700, margin: "0 auto", padding: "0 clamp(20px,4vw,52px) 48px" }}>
         <div
           className="quiz-banner-chrome"
           style={{
@@ -225,7 +225,7 @@ export default function Home() {
       </section>
 
       {/* ── DERNIÈRES CRITIQUES ── */}
-      <section style={{ maxWidth: 1440, margin: "0 auto", padding: "0 clamp(20px,4vw,52px) 80px" }}>
+      <section style={{ maxWidth: 1700, margin: "0 auto", padding: "0 clamp(20px,4vw,52px) 80px" }}>
         <div style={{ display: "flex", alignItems: "baseline", justifyContent: "space-between", marginBottom: 28 }}>
           <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
             <div style={{ width: 24, height: 3, background: ACCENT }} />
@@ -291,7 +291,7 @@ export default function Home() {
       </section>
 
       {/* ── COMPTE BANNER ── */}
-      <section style={{ maxWidth: 1440, margin: "0 auto", padding: "0 clamp(20px,4vw,52px) 80px" }}>
+      <section style={{ maxWidth: 1700, margin: "0 auto", padding: "0 clamp(20px,4vw,52px) 80px" }}>
         <div style={{ textAlign: "center", padding: "48px 32px", background: "rgba(255,255,255,0.02)", border: "1px solid rgba(255,255,255,0.07)", borderRadius: 4 }}>
           <h2 style={{ fontFamily: FONT_H, fontSize: "clamp(28px,4vw,42px)", fontWeight: 800, textTransform: "uppercase", color: "#fff", marginBottom: 12 }}>
             REJOINS LA COMMUNAUTÉ
