@@ -8,7 +8,8 @@ import Comments from "./Comments";
 import CoverImage from "./CoverImage";
 import SerieActions from "./SerieActions";
 import SerieDetailTabs from "./SerieDetailTabs";
-import SidebarScores from "./SidebarScores";
+import dynamic from "next/dynamic";
+const SidebarScores = dynamic(() => import("./SidebarScores"), { ssr: false });
 
 const A = "#e03030";
 const FH = "var(--font-barlow), 'Barlow Condensed', sans-serif";

@@ -5,13 +5,12 @@ import { supabase } from "@/lib/lib/supabase/client";
 
 const A = "#e03030";
 const FH = "var(--font-barlow), 'Barlow Condensed', sans-serif";
-const ANILIST_URL = "https://graphql.anilist.co";
-const CIRCUMFERENCE = 2 * Math.PI * 34;
+const CIRC = 2 * Math.PI * 34;
 
-const QUERY_BY_ID = `query($id:Int){Media(id:$id,type:MANGA){averageScore}}`;
-const QUERY_SEARCH = `query($s:String){Page(perPage:8){media(search:$s,type:MANGA){averageScore title{romaji english}}}}`;
+const Q_ID = `query($id:Int){Media(id:$id,type:MANGA){averageScore}}`;
+const Q_SEARCH = `query($s:String){Page(perPage:8){media(search:$s,type:MANGA){averageScore title{romaji english}}}}`;
 
-interface SidebarScoresProps {
+interface Props {
   slug: string;
   serieTitle: string;
   notrNote: number;
@@ -22,94 +21,72 @@ function normalize(s: string) {
   return s.toLowerCase().normalize("NFD").replace(/[̀-ͯ]/g, "").replace(/[^a-z0-9\s]/g, " ").replace(/\s+/g, " ").trim();
 }
 
-function bestScore(title: string, media: any[]): number | null {
-  const nt = normalize(title);
-  for (const m of media) {
-    if (!m.averageScore) continue;
-    const titles = [m.title?.romaji ?? "", m.title?.english ?? ""];
-    if (titles.some(t => normalize(t) === nt)) return m.averageScore;
-  }
-  // fallback : substring match
-  for (const m of media) {
-    if (!m.averageScore) continue;
-    const titles = [m.title?.romaji ?? "", m.title?.english ?? ""];
-    if (titles.some(t => normalize(t).startsWith(nt) || nt.startsWith(normalize(t)))) return m.averageScore;
-  }
-  return null;
-}
-
-// Composant cercle de note — défini HORS du composant principal
 function ScoreCircle({ value, max, label, color, loading }: {
   value: number | null; max: number; label: string; color: string; loading?: boolean;
 }) {
-  const pct = value !== null ? Math.min(value / max, 1) : 0;
+  const pct = value ? Math.min(value / max, 1) : 0;
   return (
     <div style={{ textAlign: "center" }}>
       <div style={{ position: "relative", width: 72, height: 72, margin: "0 auto 8px" }}>
         <svg width="72" height="72" style={{ transform: "rotate(-90deg)" }} viewBox="0 0 88 88">
           <circle cx="44" cy="44" r="34" fill="none" stroke="rgba(255,255,255,0.06)" strokeWidth="7" />
-          {value !== null && value > 0 && (
+          {!!value && (
             <circle cx="44" cy="44" r="34" fill="none" stroke={color} strokeWidth="7"
-              strokeDasharray={`${pct * CIRCUMFERENCE} ${CIRCUMFERENCE}`} strokeLinecap="round" />
+              strokeDasharray={`${pct * CIRC} ${CIRC}`} strokeLinecap="round" />
           )}
         </svg>
-        <div style={{
-          position: "absolute", inset: 0, display: "flex", alignItems: "center", justifyContent: "center",
-          fontFamily: FH, fontSize: 16, fontWeight: 800, color: "#fff",
-        }}>
-          {loading ? "…" : value !== null ? value : "—"}
+        <div style={{ position: "absolute", inset: 0, display: "flex", alignItems: "center", justifyContent: "center", fontFamily: FH, fontSize: 16, fontWeight: 800, color: "#fff" }}>
+          {loading ? "…" : value ?? "—"}
         </div>
       </div>
-      <p style={{
-        fontFamily: FH, fontSize: 9, fontWeight: 700,
-        letterSpacing: "0.14em", textTransform: "uppercase", color: "rgba(255,255,255,0.3)",
-      }}>
+      <p style={{ fontFamily: FH, fontSize: 9, fontWeight: 700, letterSpacing: "0.14em", textTransform: "uppercase", color: "rgba(255,255,255,0.3)" }}>
         {label}
       </p>
     </div>
   );
 }
 
-export default function SidebarScores({ slug, serieTitle, notrNote, anilistId }: SidebarScoresProps) {
+export default function SidebarScores({ slug, serieTitle, notrNote, anilistId }: Props) {
   const [anilistScore, setAnilistScore] = useState<number | null>(null);
   const [readerAvg, setReaderAvg] = useState<number | null>(null);
   const [readerCount, setReaderCount] = useState(0);
   const [loadingAni, setLoadingAni] = useState(true);
 
   useEffect(() => {
-    let cancelled = false;
     (async () => {
       try {
-        let score: number | null = null;
+        const query = anilistId ? Q_ID : Q_SEARCH;
+        const variables = anilistId ? { id: anilistId } : { s: serieTitle };
+        const res = await fetch("/api/anilist", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify({ query, variables }),
+        });
+        const json = await res.json();
+
+        let raw: number | null = null;
         if (anilistId) {
-          const res = await fetch(ANILIST_URL, {
-            method: "POST",
-            headers: { "Content-Type": "application/json", Accept: "application/json" },
-            body: JSON.stringify({ query: QUERY_BY_ID, variables: { id: anilistId } }),
-          });
-          const json = await res.json();
-          score = json?.data?.Media?.averageScore ?? null;
+          raw = json?.data?.Media?.averageScore ?? null;
         } else {
-          const res = await fetch(ANILIST_URL, {
-            method: "POST",
-            headers: { "Content-Type": "application/json", Accept: "application/json" },
-            body: JSON.stringify({ query: QUERY_SEARCH, variables: { s: serieTitle } }),
-          });
-          const json = await res.json();
-          score = bestScore(serieTitle, json?.data?.Page?.media ?? []);
+          const media: any[] = json?.data?.Page?.media ?? [];
+          const nt = normalize(serieTitle);
+          for (const m of media) {
+            if (!m.averageScore) continue;
+            const match = [m.title?.romaji ?? "", m.title?.english ?? ""].some(t => normalize(t) === nt);
+            if (match) { raw = m.averageScore; break; }
+          }
+          if (!raw && media[0]?.averageScore) raw = media[0].averageScore;
         }
-        if (!cancelled && score) setAnilistScore(Math.round(score) / 10);
-      } catch {
-        // AniList inaccessible : le cercle reste vide
-      }
-      if (!cancelled) setLoadingAni(false);
+
+        if (raw) setAnilistScore(Math.round(raw) / 10);
+      } catch { /* silencieux */ }
+      setLoadingAni(false);
     })();
-    return () => { cancelled = true; };
   }, [serieTitle, anilistId]);
 
   useEffect(() => {
     supabase.from("comments").select("stars").eq("slug", slug).then(({ data }) => {
-      if (data && data.length > 0) {
+      if (data?.length) {
         const avg = data.reduce((s: number, r: any) => s + (r.stars ?? 0), 0) / data.length;
         setReaderAvg(Math.round(avg * 10) / 10);
         setReaderCount(data.length);
