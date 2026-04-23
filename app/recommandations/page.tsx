@@ -11,7 +11,7 @@ const FH = "var(--font-barlow), 'Barlow Condensed', sans-serif";
 const STEPS = [
   {
     id: "mood",
-    question: "T'as envie de quoi ce soir ?",
+    question: "Qu'est-ce qui vous fait envie ce soir ?",
     options: [
       { label: "🔥 Action & adrénaline", value: "action" },
       { label: "😂 Rire et bonne humeur", value: "comedy" },
@@ -21,7 +21,7 @@ const STEPS = [
   },
   {
     id: "length",
-    question: "Tu veux quelque chose de...",
+    question: "Vous cherchez quelque chose de...",
     options: [
       { label: "⚡ Court, moins de 15 tomes", value: "short" },
       { label: "📚 Moyen, 15 à 40 tomes", value: "medium" },
@@ -41,7 +41,7 @@ const STEPS = [
   },
   {
     id: "type",
-    question: "Tu préfères...",
+    question: "Vous préférez...",
     options: [
       { label: "📖 Manga japonais", value: "manga" },
       { label: "🇰🇷 Manhwa coréen", value: "manhwa" },
@@ -176,7 +176,7 @@ export default function RecommandationsPage() {
                 fontWeight: 800, letterSpacing: "0.04em", textTransform: "uppercase",
                 color: "#fff", lineHeight: 0.92, marginBottom: 10,
               }}>
-                Trouve ta<br />
+                Trouvez votre<br />
                 <span style={{ color: A }}>prochaine série</span>
               </h1>
               <p style={{ fontSize: 13, color: "rgba(255,255,255,0.35)" }}>
@@ -276,10 +276,10 @@ export default function RecommandationsPage() {
                 fontWeight: 800, letterSpacing: "0.04em", textTransform: "uppercase",
                 color: "#fff", lineHeight: 0.92, marginBottom: 8,
               }}>
-                Tes <span style={{ color: A }}>recommandations</span>
+                Vos <span style={{ color: A }}>recommandations</span>
               </h1>
               <p style={{ fontSize: 13, color: "rgba(255,255,255,0.35)" }}>
-                {results.length} séries correspondant à tes goûts
+                {results.length} séries correspondant à vos goûts
               </p>
             </div>
 
