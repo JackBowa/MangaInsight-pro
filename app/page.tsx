@@ -98,7 +98,7 @@ export default function Home() {
           </h1>
 
           <p style={{ fontSize: "clamp(14px,1.5vw,16px)", color: TEXT_DIM, lineHeight: 1.75, maxWidth: 440, marginBottom: 36 }}>
-            Des critiques honnêtes, des classements curatés et des recommandations personnalisées — pour ne jamais rater une bonne série.
+            Des critiques honnêtes, des classements sélectionnés et des recommandations personnalisées pour ne jamais rater une bonne série.
           </p>
 
           <div style={{ display: "flex", gap: 0, borderRadius: 4, overflow: "hidden", width: "fit-content", border: "1px solid rgba(255,255,255,0.1)" }}>

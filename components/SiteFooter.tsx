@@ -105,17 +105,6 @@ export default function SiteFooter() {
           <span style={{ fontSize: 12, color: "rgba(255,255,255,0.25)", fontFamily: FONT_B }}>
             © {new Date().getFullYear()} MangaInsight — Tous droits réservés
           </span>
-          <span style={{ fontSize: 12, color: "rgba(255,255,255,0.2)", fontFamily: FONT_B }}>
-            Créé avec ❤️ ·{" "}
-            <a
-              href="https://github.com/JackBowa/MangaInsight-pro"
-              target="_blank"
-              rel="noreferrer"
-              style={{ color: "inherit", textDecoration: "none" }}
-            >
-              GitHub
-            </a>
-          </span>
         </div>
       </div>
 
