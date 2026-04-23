@@ -235,7 +235,7 @@ export default function Comments({
           </article>
         ))}
         {items.length === 0 && (
-          <p style={{ fontSize: 13, color: "rgba(255,255,255,0.25)", fontStyle: "italic" }}>
+          <p style={{ fontSize: 13, color: "rgba(255,255,255,0.55)" }}>
             Pas encore d'avis. Soyez le premier à donner le vôtre !
           </p>
         )}
