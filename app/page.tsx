@@ -18,6 +18,8 @@ const HERO_COVER_SLUGS = [
   "vinland-saga",
   "chainsaw-man",
   "death-note",
+  "naruto",
+  "one-piece",
 ];
 
 const FEATURED_SLUGS = [
@@ -63,10 +65,10 @@ export default function Home() {
 
         {/* Covers wall — right side */}
         <div className="hero-covers-chrome" style={{ position: "absolute", right: 0, top: 0, bottom: 0, width: "52%", display: "flex", gap: 10, padding: "16px 0", overflow: "hidden", alignItems: "flex-start" }}>
-          <div style={{ position: "absolute", left: 0, top: 0, bottom: 0, width: "40%", background: "linear-gradient(to right, #090909, transparent)", zIndex: 2 }} />
-          <div style={{ position: "absolute", right: 0, top: 0, bottom: 0, width: 60, background: "linear-gradient(to left, #090909, transparent)", zIndex: 2 }} />
-          {([[0, 1], [2, 3], [4, 5]] as [number, number][]).map((pair, ci) => (
-            <div key={ci} style={{ display: "flex", flexDirection: "column", gap: 10, marginTop: ci === 1 ? 60 : ci === 2 ? 30 : 0, flexShrink: 0 }}>
+          <div style={{ position: "absolute", left: 0, top: 0, bottom: 0, width: "22%", background: "linear-gradient(to right, #090909, transparent)", zIndex: 2 }} />
+          <div style={{ position: "absolute", right: 0, top: 0, bottom: 0, width: 80, background: "linear-gradient(to left, #090909, transparent)", zIndex: 2 }} />
+          {([[0, 1], [2, 3], [4, 5], [6, 7]] as [number, number][]).map((pair, ci) => (
+            <div key={ci} style={{ display: "flex", flexDirection: "column", gap: 10, marginTop: ci === 1 ? 60 : ci === 2 ? 20 : ci === 3 ? 80 : 0, flexShrink: 0 }}>
               {pair.map((idx) => {
                 const s = heroCovers[idx];
                 if (!s?.cover) return null;
