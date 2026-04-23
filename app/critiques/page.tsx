@@ -114,7 +114,7 @@ export default function CritiquesPage() {
 
       {/* Header */}
       <div style={{ borderLeft: `5px solid ${A}`, background: "#080808", padding: "40px clamp(20px,4vw,52px) 32px" }}>
-        <div style={{ maxWidth: 1280, margin: "0 auto" }}>
+        <div style={{ maxWidth: 1440, margin: "0 auto" }}>
           <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: 12 }}>
             <div style={{ width: 24, height: 3, background: A }} />
             <span style={{ fontFamily: FH, fontSize: 11, fontWeight: 700, letterSpacing: "0.2em", textTransform: "uppercase", color: A }}>CATALOGUE</span>
@@ -126,7 +126,7 @@ export default function CritiquesPage() {
 
       {/* Filters sticky bar */}
       <div style={{ background: "#0d0d0d", borderBottom: "1px solid rgba(255,255,255,0.07)", position: "sticky", top: 56, zIndex: 50 }}>
-        <div style={{ maxWidth: 1280, margin: "0 auto", padding: "12px clamp(20px,4vw,52px)", display: "flex", gap: 8, alignItems: "center", flexWrap: "wrap" }}>
+        <div style={{ maxWidth: 1440, margin: "0 auto", padding: "12px clamp(20px,4vw,52px)", display: "flex", gap: 8, alignItems: "center", flexWrap: "wrap" }}>
           {/* Category chips */}
           {(["all", "manga", "manhwa"] as const).map(c => (
             <button key={c} onClick={() => setCategory(c)} style={chipStyle(category === c)}>
@@ -166,12 +166,12 @@ export default function CritiquesPage() {
       </div>
 
       {/* Count */}
-      <div style={{ maxWidth: 1280, margin: "0 auto", padding: "16px clamp(20px,4vw,52px) 0" }}>
+      <div style={{ maxWidth: 1440, margin: "0 auto", padding: "16px clamp(20px,4vw,52px) 0" }}>
         <span style={{ fontSize: 13, color: "rgba(255,255,255,0.25)" }}>{filtered.length} série{filtered.length > 1 ? "s" : ""} trouvée{filtered.length > 1 ? "s" : ""}</span>
       </div>
 
       {/* Content */}
-      <div style={{ maxWidth: 1280, margin: "0 auto", padding: "16px clamp(20px,4vw,52px) 80px" }}>
+      <div style={{ maxWidth: 1440, margin: "0 auto", padding: "16px clamp(20px,4vw,52px) 80px" }}>
         {filtered.length === 0 ? (
           <div style={{ textAlign: "center", padding: "80px 20px", color: "rgba(255,255,255,0.25)" }}>
             <div style={{ fontSize: 48, marginBottom: 16 }}>🔍</div>

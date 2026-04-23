@@ -92,9 +92,14 @@ export default async function GuidesPage() {
             return (
               <Link key={guide.slug} href={`/guides/${guide.slug}`}
                 className={`group relative flex flex-col rounded-[18px] overflow-hidden border border-white/7 transition-all duration-300 hover:-translate-y-1.5 hover:shadow-xl bg-gradient-to-br ${t.card}`}>
-                <div className="p-6 flex-1 relative overflow-hidden">
-                  <div className="absolute inset-0 bg-[radial-gradient(circle_at_90%_10%,rgba(255,255,255,0.04)_0%,transparent_50%)]" />
-                  <div className="text-3xl mb-4 relative z-10">{guide.icon}</div>
+                <div className="relative h-28 flex items-center justify-center overflow-hidden">
+                  <div className="absolute inset-0 opacity-40 bg-[radial-gradient(ellipse_at_center,rgba(139,92,246,0.4)_0%,transparent_70%)]" />
+                  <div className="relative z-10 w-16 h-16 rounded-2xl bg-white/6 border border-white/10 flex items-center justify-center text-3xl shadow-lg">
+                    {guide.icon}
+                  </div>
+                </div>
+                <div className="px-6 pb-6 flex-1 relative overflow-hidden">
+                  <div className="absolute inset-0 bg-[radial-gradient(circle_at_90%_10%,rgba(255,255,255,0.03)_0%,transparent_50%)]" />
                   <p className={`text-[0.62rem] font-bold tracking-[0.12em] uppercase mb-2 relative z-10 ${t.category}`}>{guide.category}</p>
                   <h3 style={{ fontFamily: "var(--font-bebas), sans-serif", letterSpacing: "0.04em" }}
                     className="text-xl text-white leading-tight mb-3 relative z-10">{guide.title}</h3>

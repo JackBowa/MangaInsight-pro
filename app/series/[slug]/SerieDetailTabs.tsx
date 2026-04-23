@@ -136,7 +136,7 @@ export default function SerieDetailTabs({
                 marginBottom: 14,
               }}
             >
-              Votre note lecteur
+              Ta note lecteur
             </p>
             <div style={{ display: "flex", gap: 6, flexWrap: "wrap" }}>
               {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((n) => {
@@ -179,7 +179,7 @@ export default function SerieDetailTabs({
                   letterSpacing: "0.08em",
                 }}
               >
-                Votre note : {rating}/10 ✓
+                Ta note : {rating}/10 ✓
               </p>
             )}
           </div>

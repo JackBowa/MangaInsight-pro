@@ -20,6 +20,7 @@ function AuthPanel() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [busy, setBusy] = useState(false);
+  const [gdprOk, setGdprOk] = useState(false);
   const [msg, setMsg] = useState<{ text: string; type: "error" | "success" } | null>(null);
 
   const origin = typeof window !== "undefined" ? window.location.origin : "https://mangainsight.fr";
@@ -102,6 +103,24 @@ function AuthPanel() {
           required
         />
 
+        {mode === "signup" && (
+          <label style={{ display: "flex", alignItems: "flex-start", gap: 10, cursor: "pointer" }}>
+            <input
+              type="checkbox"
+              checked={gdprOk}
+              onChange={e => setGdprOk(e.target.checked)}
+              style={{ marginTop: 2, accentColor: A, width: 15, height: 15, flexShrink: 0 }}
+            />
+            <span style={{ fontSize: 12, color: "rgba(255,255,255,0.4)", lineHeight: 1.6 }}>
+              J&apos;ai lu et j&apos;accepte la{" "}
+              <a href="/politique-de-confidentialite" target="_blank" style={{ color: A, textDecoration: "none" }}>
+                politique de confidentialité
+              </a>
+              . Mes données sont utilisées uniquement pour la gestion de mon compte.
+            </span>
+          </label>
+        )}
+
         {msg && (
           <div style={{
             fontSize: 13, padding: "10px 14px", borderRadius: 4,
@@ -114,13 +133,13 @@ function AuthPanel() {
         )}
 
         <div style={{ display: "flex", gap: 10, alignItems: "center", flexWrap: "wrap" }}>
-          <button type="submit" disabled={busy} style={{
+          <button type="submit" disabled={busy || (mode === "signup" && !gdprOk)} style={{
             padding: "10px 22px", borderRadius: 4,
-            background: busy ? "rgba(255,255,255,0.1)" : A,
-            color: busy ? "rgba(255,255,255,0.4)" : "#fff",
+            background: busy || (mode === "signup" && !gdprOk) ? "rgba(255,255,255,0.1)" : A,
+            color: busy || (mode === "signup" && !gdprOk) ? "rgba(255,255,255,0.4)" : "#fff",
             border: "none", fontFamily: FH, fontSize: 12, fontWeight: 700,
             letterSpacing: "0.1em", textTransform: "uppercase",
-            cursor: busy ? "not-allowed" : "pointer", transition: "all 0.15s",
+            cursor: busy || (mode === "signup" && !gdprOk) ? "not-allowed" : "pointer", transition: "all 0.15s",
           }}>
             {busy ? "Chargement…" : mode === "signin" ? "Se connecter" : "Créer le compte"}
           </button>

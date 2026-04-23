@@ -3,6 +3,7 @@ import { ReactNode } from 'react'
 import { Barlow_Condensed, Figtree } from 'next/font/google'
 import SiteHeader from '@/components/SiteHeader'
 import SiteFooter from '@/components/SiteFooter'
+import CookieBanner from '@/components/CookieBanner'
 
 const barlowCondensed = Barlow_Condensed({
   weight: ['400', '600', '700', '800'],
@@ -56,6 +57,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
         <SiteHeader />
         <main className="flex-1">{children}</main>
         <SiteFooter />
+        <CookieBanner />
       </body>
     </html>
   )
