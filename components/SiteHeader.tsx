@@ -384,7 +384,7 @@ export default function SiteHeader() {
                   style={{
                     background: "none",
                     border: "none",
-                    color: "rgba(255,255,255,0.25)",
+                    color: "rgba(255,255,255,0.45)",
                     fontSize: 18,
                     cursor: "pointer",
                     lineHeight: 1,
@@ -401,7 +401,7 @@ export default function SiteHeader() {
                   padding: "2px 6px",
                   borderRadius: 3,
                   fontFamily: "monospace",
-                  color: "rgba(255,255,255,0.25)",
+                  color: "rgba(255,255,255,0.45)",
                 }}
               >
                 ESC
@@ -416,7 +416,7 @@ export default function SiteHeader() {
                     padding: "36px 18px",
                     textAlign: "center",
                     fontSize: 13,
-                    color: "rgba(255,255,255,0.25)",
+                    color: "rgba(255,255,255,0.45)",
                     fontFamily: FONT_B,
                   }}
                 >
@@ -428,7 +428,7 @@ export default function SiteHeader() {
                     padding: "36px 18px",
                     textAlign: "center",
                     fontSize: 13,
-                    color: "rgba(255,255,255,0.25)",
+                    color: "rgba(255,255,255,0.45)",
                     fontFamily: FONT_B,
                   }}
                 >
@@ -491,7 +491,7 @@ export default function SiteHeader() {
                         <div
                           style={{
                             fontSize: 11,
-                            color: "rgba(255,255,255,0.25)",
+                            color: "rgba(255,255,255,0.45)",
                             marginTop: 1,
                             fontFamily: FONT_B,
                           }}
@@ -540,7 +540,7 @@ export default function SiteHeader() {
                 <span
                   style={{
                     fontSize: 11,
-                    color: "rgba(255,255,255,0.25)",
+                    color: "rgba(255,255,255,0.45)",
                     fontFamily: FONT_B,
                   }}
                 >
@@ -550,7 +550,7 @@ export default function SiteHeader() {
                   <span
                     style={{
                       fontSize: 11,
-                      color: "rgba(255,255,255,0.25)",
+                      color: "rgba(255,255,255,0.45)",
                       fontFamily: FONT_B,
                     }}
                   >

@@ -125,7 +125,7 @@ function RankSection({ rank, items }: { rank: Rank; items: typeof SERIES }) {
         <div style={{ flex: 1, height: 1, background: "rgba(255,255,255,0.06)" }} />
         <span style={{
           fontFamily: FH, fontSize: 11, fontWeight: 700,
-          color: "rgba(255,255,255,0.25)", letterSpacing: "0.1em",
+          color: "rgba(255,255,255,0.45)", letterSpacing: "0.1em",
         }}>
           {items.length} série{items.length > 1 ? "s" : ""}
         </span>
@@ -267,7 +267,7 @@ export default function TopsPage() {
           ))}
           <span style={{
             marginLeft: "auto", fontFamily: FH, fontSize: 11,
-            color: "rgba(255,255,255,0.25)", letterSpacing: "0.08em",
+            color: "rgba(255,255,255,0.45)", letterSpacing: "0.08em",
           }}>
             <strong style={{ color: "rgba(255,255,255,0.6)" }}>{totalRanked}</strong> séries classées
           </span>

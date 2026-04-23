@@ -120,7 +120,7 @@ export default function CritiquesPage() {
             <span style={{ fontFamily: FH, fontSize: 11, fontWeight: 700, letterSpacing: "0.2em", textTransform: "uppercase", color: A }}>CATALOGUE</span>
           </div>
           <h1 style={{ fontFamily: FH, fontSize: "clamp(40px,6vw,72px)", fontWeight: 800, textTransform: "uppercase", color: "#fff", lineHeight: 0.9, marginBottom: 10 }}>TOUTES LES CRITIQUES</h1>
-          <p style={{ fontSize: 14, color: "rgba(255,255,255,0.25)" }}>{SERIES.length} séries référencées · manga &amp; manhwa</p>
+          <p style={{ fontSize: 14, color: "rgba(255,255,255,0.45)" }}>{SERIES.length} séries référencées · manga &amp; manhwa</p>
         </div>
       </div>
 
@@ -167,13 +167,13 @@ export default function CritiquesPage() {
 
       {/* Count */}
       <div style={{ maxWidth: 1440, margin: "0 auto", padding: "16px clamp(20px,4vw,52px) 0" }}>
-        <span style={{ fontSize: 13, color: "rgba(255,255,255,0.25)" }}>{filtered.length} série{filtered.length > 1 ? "s" : ""} trouvée{filtered.length > 1 ? "s" : ""}</span>
+        <span style={{ fontSize: 13, color: "rgba(255,255,255,0.45)" }}>{filtered.length} série{filtered.length > 1 ? "s" : ""} trouvée{filtered.length > 1 ? "s" : ""}</span>
       </div>
 
       {/* Content */}
       <div style={{ maxWidth: 1440, margin: "0 auto", padding: "16px clamp(20px,4vw,52px) 80px" }}>
         {filtered.length === 0 ? (
-          <div style={{ textAlign: "center", padding: "80px 20px", color: "rgba(255,255,255,0.25)" }}>
+          <div style={{ textAlign: "center", padding: "80px 20px", color: "rgba(255,255,255,0.45)" }}>
             <div style={{ fontSize: 48, marginBottom: 16 }}>🔍</div>
             <p style={{ fontFamily: FH, fontSize: 24, marginBottom: 8 }}>AUCUN RÉSULTAT</p>
             <p style={{ fontSize: 13 }}>Essaie d'autres mots-clés ou filtres</p>
@@ -206,7 +206,7 @@ export default function CritiquesPage() {
                 {s.cover && <Image src={s.cover} alt={s.title} width={40} height={56} style={{ objectFit: "cover", borderRadius: 2, border: "1px solid rgba(255,255,255,0.07)", flexShrink: 0 }} />}
                 <div style={{ flex: 1, minWidth: 0 }}>
                   <div style={{ fontFamily: FH, fontSize: 17, fontWeight: 800, letterSpacing: "0.03em", color: "#fff", lineHeight: 1 }}>{s.title}</div>
-                  <div style={{ fontSize: 11, color: "rgba(255,255,255,0.25)", marginTop: 2 }}>{s.tags}</div>
+                  <div style={{ fontSize: 11, color: "rgba(255,255,255,0.45)", marginTop: 2 }}>{s.tags}</div>
                 </div>
                 <span style={{ fontSize: 9, fontWeight: 700, letterSpacing: "0.1em", textTransform: "uppercase", padding: "2px 8px", borderRadius: 2,
                   background: s.category === "manhwa" ? "rgba(244,114,182,0.1)" : ADim,

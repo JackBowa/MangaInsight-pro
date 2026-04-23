@@ -265,7 +265,7 @@ export default function NouveautesPage() {
                     {item.tags && (
                       <>
                         <span style={{ width: 3, height: 3, borderRadius: "50%", background: "rgba(255,255,255,0.2)", display: "inline-block" }} />
-                        <span style={{ fontSize: 11, color: "rgba(255,255,255,0.25)" }}>
+                        <span style={{ fontSize: 11, color: "rgba(255,255,255,0.45)" }}>
                           {item.tags.split("·")[0].trim()}
                         </span>
                       </>
@@ -285,7 +285,7 @@ export default function NouveautesPage() {
                     Nouveau
                   </span>
                   {item.addedAt && (
-                    <span style={{ fontSize: 10, color: "rgba(255,255,255,0.25)" }}>
+                    <span style={{ fontSize: 10, color: "rgba(255,255,255,0.45)" }}>
                       {timeAgo(item.addedAt)}
                     </span>
                   )}

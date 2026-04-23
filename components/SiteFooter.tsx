@@ -48,7 +48,7 @@ export default function SiteFooter() {
             >
               MANGA<span style={{ color: ACCENT }}>INSIGHT</span>
             </div>
-            <p style={{ fontSize: 13, color: "rgba(255,255,255,0.25)", lineHeight: 1.7, maxWidth: 200, fontFamily: FONT_B }}>
+            <p style={{ fontSize: 13, color: "rgba(255,255,255,0.5)", lineHeight: 1.7, maxWidth: 200, fontFamily: FONT_B }}>
               La référence francophone pour les critiques de manga et manhwa.
             </p>
           </div>
@@ -62,7 +62,7 @@ export default function SiteFooter() {
                   fontWeight: 700,
                   letterSpacing: "0.18em",
                   textTransform: "uppercase",
-                  color: "rgba(255,255,255,0.25)",
+                  color: "rgba(255,255,255,0.4)",
                   marginBottom: 14,
                   fontFamily: FONT_H,
                 }}
@@ -102,14 +102,14 @@ export default function SiteFooter() {
             gap: 8,
           }}
         >
-          <span style={{ fontSize: 12, color: "rgba(255,255,255,0.25)", fontFamily: FONT_B }}>
+          <span style={{ fontSize: 12, color: "rgba(255,255,255,0.45)", fontFamily: FONT_B }}>
             © {new Date().getFullYear()} MangaInsight — Tous droits réservés
           </span>
         </div>
       </div>
 
       <style>{`
-        .footer-link-chrome { color: rgba(255,255,255,0.4) !important; }
+        .footer-link-chrome { color: rgba(255,255,255,0.6) !important; }
         .footer-link-chrome:hover { color: #fff !important; }
         @media (max-width: 900px) {
           .footer-chrome-grid { grid-template-columns: 1fr 1fr !important; }

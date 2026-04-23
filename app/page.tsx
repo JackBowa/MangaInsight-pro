@@ -8,8 +8,8 @@ const ACCENT_BORDER = "rgba(224,48,48,0.22)";
 const FONT_H = "var(--font-barlow), 'Barlow Condensed', sans-serif";
 const FONT_B = "var(--font-figtree), 'Figtree', sans-serif";
 const BG = "#0a0a0a";
-const TEXT_MUTED = "rgba(255,255,255,0.25)";
-const TEXT_DIM = "rgba(255,255,255,0.5)";
+const TEXT_MUTED = "rgba(255,255,255,0.45)";
+const TEXT_DIM = "rgba(255,255,255,0.65)";
 
 const HERO_COVER_SLUGS = [
   "l-attaque-des-titans",
