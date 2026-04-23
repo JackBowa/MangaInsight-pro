@@ -7,8 +7,22 @@ const A = "#e03030";
 const FH = "var(--font-barlow), 'Barlow Condensed', sans-serif";
 const CIRC = 2 * Math.PI * 34;
 
-const Q_ID = `query($id:Int){Media(id:$id,type:MANGA){averageScore}}`;
-const Q_SEARCH = `query($s:String){Page(perPage:8){media(search:$s,type:MANGA){averageScore title{romaji english}}}}`;
+const Q_ID = `
+query ($id: Int) {
+  Media(id: $id, type: MANGA) {
+    averageScore
+  }
+}`;
+
+const Q_SEARCH = `
+query ($search: String) {
+  Page(perPage: 10) {
+    media(search: $search, type: MANGA) {
+      averageScore
+      title { romaji english }
+    }
+  }
+}`;
 
 interface Props {
   slug: string;
@@ -56,7 +70,7 @@ export default function SidebarScores({ slug, serieTitle, notrNote, anilistId }:
     (async () => {
       try {
         const query = anilistId ? Q_ID : Q_SEARCH;
-        const variables = anilistId ? { id: anilistId } : { s: serieTitle };
+        const variables = anilistId ? { id: anilistId } : { search: serieTitle };
         const res = await fetch("/api/anilist", {
           method: "POST",
           headers: { "Content-Type": "application/json" },

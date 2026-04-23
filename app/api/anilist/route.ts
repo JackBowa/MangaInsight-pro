@@ -38,16 +38,15 @@ export async function POST(req: Request) {
     return Response.json({ error: "Seules les queries sont autorisées" }, { status: 403 });
   }
 
-  const res = await fetch("https://graphql.anilist.co", {
-    method: "POST",
-    headers: { "Content-Type": "application/json", Accept: "application/json" },
-    body: JSON.stringify({ query, variables }),
-  });
-
-  if (!res.ok) {
-    return Response.json({ error: `AniList erreur ${res.status}` }, { status: 502 });
+  try {
+    const res = await fetch("https://graphql.anilist.co", {
+      method: "POST",
+      headers: { "Content-Type": "application/json", Accept: "application/json" },
+      body: JSON.stringify({ query, variables }),
+    });
+    const data = await res.json();
+    return Response.json(data);
+  } catch {
+    return Response.json({ error: "AniList inaccessible" }, { status: 502 });
   }
-
-  const data = await res.json();
-  return Response.json(data);
 }
