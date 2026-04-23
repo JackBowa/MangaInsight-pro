@@ -295,7 +295,7 @@ export default function Home() {
             REJOINS LA COMMUNAUTÉ
           </h2>
           <p style={{ fontSize: 14, color: TEXT_MUTED, maxWidth: 480, margin: "0 auto 28px" }}>
-            Crée un compte pour noter tes séries, laisser des commentaires et suivre tes lectures.
+            Créez un compte pour noter vos séries, laisser des commentaires et suivre vos lectures.
           </p>
           <Link
             href="/compte"

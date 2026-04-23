@@ -42,8 +42,8 @@ export default function PolitiqueConfidentialite() {
           {p("Nous collectons uniquement les données strictement nécessaires au fonctionnement du site :")}
           <ul style={{ paddingLeft: 20, marginBottom: 10 }}>
             {["Adresse email : lors de la création d'un compte, pour l'authentification et l'envoi d'emails transactionnels (confirmation, réinitialisation de mot de passe).",
-              "Pseudo (display name) : optionnel, visible sur tes commentaires publiés.",
-              "Commentaires et notes : le contenu que tu soumets volontairement sur les fiches séries.",
+              "Pseudo (display name) : optionnel, visible sur vos commentaires publiés.",
+              "Commentaires et notes : le contenu que vous soumettez volontairement sur les fiches séries.",
               "Données de navigation : aucune donnée de navigation n'est collectée à des fins publicitaires ou analytiques."
             ].map((item, i) => (
               <li key={i} style={{ fontSize: 14, color: "rgba(255,255,255,0.6)", lineHeight: 1.8, marginBottom: 6 }}>{item}</li>
@@ -52,23 +52,23 @@ export default function PolitiqueConfidentialite() {
         </>)}
 
         {section("3. Finalités du traitement", <>
-          {p("Tes données sont utilisées exclusivement pour :")}
+          {p("Vos données sont utilisées exclusivement pour :")}
           <ul style={{ paddingLeft: 20, marginBottom: 10 }}>
-            {["Gérer ton compte et l'authentification (base légale : exécution du contrat).",
-              "Afficher ton pseudo sur tes commentaires publiés (base légale : intérêt légitime).",
+            {["Gérer votre compte et l'authentification (base légale : exécution du contrat).",
+              "Afficher votre pseudo sur vos commentaires publiés (base légale : intérêt légitime).",
               "Envoyer des emails transactionnels (confirmation de compte, réinitialisation de mot de passe — base légale : exécution du contrat)."
             ].map((item, i) => (
               <li key={i} style={{ fontSize: 14, color: "rgba(255,255,255,0.6)", lineHeight: 1.8, marginBottom: 6 }}>{item}</li>
             ))}
           </ul>
-          {p("Nous ne vendons pas tes données et ne les partageons avec aucun tiers à des fins commerciales.")}
+          {p("Nous ne vendons pas vos données et ne les partageons avec aucun tiers à des fins commerciales.")}
         </>)}
 
         {section("4. Cookies et stockage local", <>
           {p("MangaInsight utilise :")}
           <ul style={{ paddingLeft: 20, marginBottom: 10 }}>
-            {["Cookies de session (Supabase) : indispensables pour maintenir ta session de connexion. Ces cookies sont fonctionnels et ne nécessitent pas de consentement.",
-              "LocalStorage : utilisé pour sauvegarder tes séries favorites et tes notes personnelles localement dans ton navigateur. Ces données ne sont jamais envoyées à nos serveurs.",
+            {["Cookies de session (Supabase) : indispensables pour maintenir votre session de connexion. Ces cookies sont fonctionnels et ne nécessitent pas de consentement.",
+              "LocalStorage : utilisé pour sauvegarder vos séries favorites et vos notes personnelles localement dans votre navigateur. Ces données ne sont jamais envoyées à nos serveurs.",
               "Aucun cookie publicitaire ni outil de tracking analytics n'est utilisé."
             ].map((item, i) => (
               <li key={i} style={{ fontSize: 14, color: "rgba(255,255,255,0.6)", lineHeight: 1.8, marginBottom: 6 }}>{item}</li>
@@ -78,31 +78,31 @@ export default function PolitiqueConfidentialite() {
 
         {section("5. Hébergement et sous-traitants", <>
           {p("Le site est hébergé sur Vercel (États-Unis). La base de données et l'authentification sont gérées par Supabase (États-Unis). Ces prestataires sont soumis au RGPD via des clauses contractuelles types.")}
-          {p("Les emails transactionnels sont envoyés via Resend (États-Unis), uniquement pour les communications liées à ton compte.")}
+          {p("Les emails transactionnels sont envoyés via Resend (États-Unis), uniquement pour les communications liées à votre compte.")}
         </>)}
 
         {section("6. Durée de conservation", <>
-          {p("Tes données de compte sont conservées tant que ton compte est actif. Les commentaires publiés sont conservés sur le site jusqu'à leur suppression par nos soins ou sur ta demande.")}
-          {p("En cas de suppression de compte, tes données personnelles sont effacées dans un délai de 30 jours.")}
+          {p("Vos données de compte sont conservées tant que votre compte est actif. Les commentaires publiés sont conservés sur le site jusqu'à leur suppression par nos soins ou sur votre demande.")}
+          {p("En cas de suppression de compte, vos données personnelles sont effacées dans un délai de 30 jours.")}
         </>)}
 
-        {section("7. Tes droits (RGPD)", <>
-          {p("Conformément au Règlement Général sur la Protection des Données (RGPD), tu disposes des droits suivants :")}
+        {section("7. Vos droits (RGPD)", <>
+          {p("Conformément au Règlement Général sur la Protection des Données (RGPD), vous disposez des droits suivants :")}
           <ul style={{ paddingLeft: 20, marginBottom: 10 }}>
-            {["Droit d'accès à tes données personnelles.",
-              "Droit de rectification de tes données.",
+            {["Droit d'accès à vos données personnelles.",
+              "Droit de rectification de vos données.",
               "Droit à l'effacement (droit à l'oubli).",
-              "Droit à la portabilité de tes données.",
+              "Droit à la portabilité de vos données.",
               "Droit d'opposition au traitement."
             ].map((item, i) => (
               <li key={i} style={{ fontSize: 14, color: "rgba(255,255,255,0.6)", lineHeight: 1.8, marginBottom: 6 }}>{item}</li>
             ))}
           </ul>
-          {p("Pour exercer ces droits, contacte-nous depuis la page de contact du site. Tu as également le droit d'introduire une réclamation auprès de la CNIL (www.cnil.fr).")}
+          {p("Pour exercer ces droits, contactez-nous depuis la page de contact du site. Vous avez également le droit d'introduire une réclamation auprès de la CNIL (www.cnil.fr).")}
         </>)}
 
         {section("8. Modifications", <>
-          {p("Cette politique peut être mise à jour. La date de dernière modification est indiquée en haut de cette page. En continuant à utiliser le site, tu acceptes les changements éventuels.")}
+          {p("Cette politique peut être mise à jour. La date de dernière modification est indiquée en haut de cette page. En continuant à utiliser le site, vous acceptez les changements éventuels.")}
         </>)}
 
         <div style={{ marginTop: 48, paddingTop: 24, borderTop: "1px solid rgba(255,255,255,0.06)", fontSize: 12, color: "rgba(255,255,255,0.2)" }}>

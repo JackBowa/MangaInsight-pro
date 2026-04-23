@@ -32,7 +32,7 @@ export default function CookieBanner() {
         fontSize: 13, color: "rgba(255,255,255,0.55)", lineHeight: 1.6,
         fontFamily: "var(--font-figtree), 'Figtree', sans-serif",
       }}>
-        Ce site utilise des cookies fonctionnels pour gérer ta session de connexion.
+        Ce site utilise des cookies fonctionnels pour gérer votre session de connexion.
         Aucun cookie publicitaire ni tracking n&apos;est utilisé.{" "}
         <a href="/politique-de-confidentialite" style={{ color: A, textDecoration: "none" }}>
           En savoir plus

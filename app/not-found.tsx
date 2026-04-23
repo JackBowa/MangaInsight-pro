@@ -32,7 +32,7 @@ export default function NotFound() {
         </h1>
 
         <p className="text-sm text-white/40 leading-relaxed mb-8">
-          Cette page n&apos;existe pas ou a été déplacée. Retourne au catalogue pour trouver ta prochaine série.
+          Cette page n&apos;existe pas ou a été déplacée. Retournez au catalogue pour trouver votre prochaine série.
         </p>
 
         <div className="flex gap-3 justify-center flex-wrap">
