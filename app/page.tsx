@@ -91,13 +91,6 @@ export default function Home() {
 
         {/* Content */}
         <div style={{ position: "relative", zIndex: 10, maxWidth: 580 }}>
-          <div style={{ display: "flex", alignItems: "center", gap: 12, marginBottom: 24 }}>
-            <div style={{ width: 32, height: 3, background: ACCENT }} />
-            <span style={{ fontFamily: FONT_H, fontSize: 12, fontWeight: 700, letterSpacing: "0.2em", textTransform: "uppercase", color: ACCENT }}>
-              PLATEFORME FRANCOPHONE
-            </span>
-          </div>
-
           <h1 style={{ fontFamily: FONT_H, fontSize: "clamp(72px,10vw,120px)", fontWeight: 800, lineHeight: 0.88, textTransform: "uppercase", color: "#fff", marginBottom: 24, letterSpacing: "-0.01em" }}>
             LE GUIDE<br />
             <span style={{ color: ACCENT }}>MANGA</span>
@@ -105,7 +98,7 @@ export default function Home() {
           </h1>
 
           <p style={{ fontSize: "clamp(14px,1.5vw,16px)", color: TEXT_DIM, lineHeight: 1.75, maxWidth: 440, marginBottom: 36 }}>
-            Critiques approfondies, tops curatés et recommandations — avec liens d'achat Amazon et streaming pour chaque série manga et manhwa.
+            Des critiques honnêtes, des classements curatés et des recommandations personnalisées — pour ne jamais rater une bonne série.
           </p>
 
           <div style={{ display: "flex", gap: 0, borderRadius: 4, overflow: "hidden", width: "fit-content", border: "1px solid rgba(255,255,255,0.1)" }}>
