@@ -2,759 +2,341 @@ import Link from "next/link";
 import Image from "next/image";
 import { SERIES, PUBLISHED_SERIES } from "@/data/series";
 
-// Séries en vedette (top 5 étoiles, mix manga/manhwa)
-const FEATURED = [
-  "one-piece",
+const ACCENT = "#e03030";
+const ACCENT_DIM = "rgba(224,48,48,0.1)";
+const ACCENT_BORDER = "rgba(224,48,48,0.22)";
+const FONT_H = "var(--font-barlow), 'Barlow Condensed', sans-serif";
+const FONT_B = "var(--font-figtree), 'Figtree', sans-serif";
+const BG = "#0a0a0a";
+const TEXT_MUTED = "rgba(255,255,255,0.25)";
+const TEXT_DIM = "rgba(255,255,255,0.5)";
+
+const HERO_COVER_SLUGS = [
   "l-attaque-des-titans",
   "solo-leveling",
+  "berserk",
+  "vinland-saga",
+  "chainsaw-man",
   "death-note",
-  "blue-lock",
-  "the-beginning-after-the-end",
 ];
 
-const RECENT_REVIEWS = [
+const FEATURED_SLUGS = [
+  "solo-leveling",
+  "l-attaque-des-titans",
+  "berserk",
+  "vagabond",
+  "vinland-saga",
+  "chainsaw-man",
+];
+
+const RECENT_SLUGS = [
   "naruto",
   "bleach",
-  "tokyo-revengers",
   "my-hero-academia",
+  "tokyo-revengers",
 ];
 
-const featured = FEATURED.map((slug) =>
-  SERIES.find((s) => s.slug === slug)
-).filter(Boolean);
-
-const recentReviews = RECENT_REVIEWS.map((slug) =>
-  SERIES.find((s) => s.slug === slug)
-).filter(Boolean);
-
-function StarRating({ stars }: { stars?: number }) {
+function StarRow({ stars, size = 13 }: { stars?: number; size?: number }) {
   if (!stars) return null;
   return (
-    <span className="flex gap-0.5">
-      {[1, 2, 3, 4, 5].map((i) => (
-        <svg
-          key={i}
-          className={`w-3 h-3 ${i <= stars ? "text-brand" : "text-white/20"}`}
-          fill="currentColor"
-          viewBox="0 0 20 20"
-        >
-          <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-        </svg>
-      ))}
+    <span style={{ color: ACCENT, fontSize: size, letterSpacing: "0.04em" }}>
+      {[1, 2, 3, 4, 5].map((i) => (i <= stars ? "★" : "☆")).join("")}
     </span>
   );
 }
 
 export default function Home() {
+  const heroCovers = HERO_COVER_SLUGS.map((slug) => SERIES.find((s) => s.slug === slug)).filter(Boolean);
+  const featured = FEATURED_SLUGS.map((slug) => SERIES.find((s) => s.slug === slug)).filter(Boolean);
+  const recent = RECENT_SLUGS.map((slug) => SERIES.find((s) => s.slug === slug)).filter(Boolean);
+
+  const totalSeries = PUBLISHED_SERIES.length;
+  const totalManhwa = PUBLISHED_SERIES.filter((s) => s.category === "manhwa").length;
+  const totalHearts = PUBLISHED_SERIES.filter((s) => s.stars === 5).length;
+
   return (
-    <>
-      <style>{`
-        .home-root {
-          font-family: var(--font-dm-sans), sans-serif;
-        }
+    <div style={{ background: BG, minHeight: "100vh", fontFamily: FONT_B }}>
 
-        /* ── HERO ── */
-        .hero {
-          position: relative;
-          min-height: 88vh;
-          display: flex;
-          align-items: flex-end;
-          overflow: hidden;
-          margin: -2rem -1rem 0;
-          padding: 0 2rem 5rem;
-        }
-        .hero-bg {
-          position: absolute;
-          inset: 0;
-          background:
-            radial-gradient(ellipse 80% 60% at 60% 30%, rgba(139,92,246,0.18) 0%, transparent 70%),
-            radial-gradient(ellipse 50% 40% at 20% 80%, rgba(109,40,217,0.12) 0%, transparent 60%),
-            linear-gradient(180deg, #05050a 0%, #0b0b18 100%);
-        }
-        .hero-grid {
-          position: absolute;
-          inset: 0;
-          background-image:
-            linear-gradient(rgba(139,92,246,0.04) 1px, transparent 1px),
-            linear-gradient(90deg, rgba(139,92,246,0.04) 1px, transparent 1px);
-          background-size: 60px 60px;
-          mask-image: linear-gradient(to bottom, transparent 0%, black 20%, black 60%, transparent 100%);
-        }
-        .hero-covers {
-          position: absolute;
-          top: 0; right: 0;
-          width: 50%;
-          height: 100%;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          gap: 12px;
-          padding-right: 0;
-          overflow: hidden;
-        }
-        .hero-cover-col {
-          display: flex;
-          flex-direction: column;
-          gap: 12px;
-          animation: floatCol 8s ease-in-out infinite;
-        }
-        .hero-cover-col:nth-child(2) {
-          margin-top: 48px;
-          animation-delay: -3s;
-        }
-        .hero-cover-col:nth-child(3) {
-          margin-top: 24px;
-          animation-delay: -6s;
-        }
-        @keyframes floatCol {
-          0%, 100% { transform: translateY(0px); }
-          50% { transform: translateY(-12px); }
-        }
-        .hero-cover-img {
-          width: 130px;
-          height: 190px;
-          object-fit: cover;
-          border-radius: 10px;
-          border: 1px solid rgba(255,255,255,0.08);
-          box-shadow: 0 8px 32px rgba(0,0,0,0.5);
-          transition: transform 0.3s ease, box-shadow 0.3s ease;
-        }
-        .hero-cover-img:hover {
-          transform: scale(1.04) translateY(-4px);
-          box-shadow: 0 16px 40px rgba(139,92,246,0.3);
-        }
-        .hero-covers-fade {
-          position: absolute;
-          left: 0; top: 0; bottom: 0;
-          width: 45%;
-          background: linear-gradient(to right, #05050a 20%, transparent);
-        }
-        .hero-content {
-          position: relative;
-          z-index: 10;
-          max-width: 560px;
-        }
-        .hero-eyebrow {
-          display: inline-flex;
-          align-items: center;
-          gap: 8px;
-          font-size: 0.75rem;
-          font-weight: 700;
-          letter-spacing: 0.15em;
-          text-transform: uppercase;
-          color: #a78bfa;
-          margin-bottom: 1rem;
-          padding: 6px 14px;
-          background: rgba(139,92,246,0.12);
-          border: 1px solid rgba(139,92,246,0.25);
-          border-radius: 999px;
-        }
-        .hero-title {
-          font-family: var(--font-bebas), sans-serif;
-          font-size: clamp(3.5rem, 8vw, 6.5rem);
-          line-height: 0.92;
-          letter-spacing: 0.02em;
-          color: #fff;
-          margin-bottom: 1.5rem;
-        }
-        .hero-title span {
-          color: #8b5cf6;
-        }
-        .hero-desc {
-          font-size: 1rem;
-          color: rgba(255,255,255,0.75);
-          line-height: 1.7;
-          margin-bottom: 2.5rem;
-          max-width: 420px;
-        }
-        .hero-ctas {
-          display: flex;
-          gap: 12px;
-          flex-wrap: wrap;
-        }
-        .btn-primary {
-          display: inline-flex;
-          align-items: center;
-          gap: 8px;
-          padding: 13px 28px;
-          background: #8b5cf6;
-          color: #fff;
-          font-weight: 700;
-          font-size: 0.9rem;
-          border-radius: 12px;
-          text-decoration: none;
-          transition: background 0.2s, transform 0.2s, box-shadow 0.2s;
-          box-shadow: 0 4px 24px rgba(139,92,246,0.4);
-        }
-        .btn-primary:hover {
-          background: #7c3aed;
-          transform: translateY(-2px);
-          box-shadow: 0 8px 32px rgba(139,92,246,0.5);
-        }
-        .btn-ghost {
-          display: inline-flex;
-          align-items: center;
-          gap: 8px;
-          padding: 13px 28px;
-          background: rgba(255,255,255,0.05);
-          color: rgba(255,255,255,0.8);
-          font-weight: 600;
-          font-size: 0.9rem;
-          border-radius: 12px;
-          text-decoration: none;
-          border: 1px solid rgba(255,255,255,0.1);
-          transition: background 0.2s, border-color 0.2s, transform 0.2s;
-        }
-        .btn-ghost:hover {
-          background: rgba(255,255,255,0.1);
-          border-color: rgba(255,255,255,0.2);
-          transform: translateY(-2px);
-        }
-        .hero-stats {
-          display: flex;
-          gap: 2rem;
-          margin-top: 3rem;
-          padding-top: 2rem;
-          border-top: 1px solid rgba(255,255,255,0.07);
-        }
-        .hero-stat-num {
-          font-family: var(--font-bebas), sans-serif;
-          font-size: 2rem;
-          color: #fff;
-          line-height: 1;
-        }
-        .hero-stat-label {
-          font-size: 0.72rem;
-          color: rgba(255,255,255,0.4);
-          text-transform: uppercase;
-          letter-spacing: 0.08em;
-          margin-top: 2px;
-        }
+      {/* ── HERO ── */}
+      <section style={{ position: "relative", minHeight: "88vh", display: "flex", alignItems: "flex-end", overflow: "hidden", padding: "0 clamp(20px,4vw,60px) 64px" }}>
+        <div style={{ position: "absolute", inset: 0, background: "#090909" }} />
 
-        /* ── MOBILE ── */
-        @media (max-width: 768px) {
-          .hero {
-            min-height: 70vh;
-            padding: 0 1.25rem 4rem;
-            align-items: flex-end;
-          }
-          .hero-covers {
-            display: none;
-          }
-          .hero-bg {
-            background:
-              radial-gradient(ellipse 100% 60% at 50% 20%, rgba(139,92,246,0.25) 0%, transparent 70%),
-              linear-gradient(180deg, #05050a 0%, #0b0b18 100%);
-          }
-          .hero-content {
-            max-width: 100%;
-          }
-          .hero-title {
-            font-size: clamp(3.2rem, 14vw, 4.5rem);
-          }
-          .hero-desc {
-            color: rgba(255,255,255,0.85);
-            font-size: 0.95rem;
-          }
-          .hero-stats {
-            gap: 1.5rem;
-          }
-        }
-        .section {
-          margin: 5rem 0;
-        }
-        .section-header {
-          display: flex;
-          align-items: baseline;
-          justify-content: space-between;
-          margin-bottom: 1.75rem;
-        }
-        .section-title {
-          font-family: var(--font-bebas), sans-serif;
-          font-size: 2rem;
-          letter-spacing: 0.04em;
-          color: #fff;
-          display: flex;
-          align-items: center;
-          gap: 12px;
-        }
-        .section-title::before {
-          content: '';
-          display: block;
-          width: 4px;
-          height: 1.6rem;
-          background: #8b5cf6;
-          border-radius: 2px;
-        }
-        .section-link {
-          font-size: 0.8rem;
-          color: #a78bfa;
-          text-decoration: none;
-          font-weight: 600;
-          letter-spacing: 0.04em;
-          transition: color 0.2s;
-        }
-        .section-link:hover { color: #c4b5fd; }
-
-        /* ── FEATURED GRID ── */
-        .featured-grid {
-          display: grid;
-          grid-template-columns: repeat(6, 1fr);
-          gap: 16px;
-        }
-        @media (max-width: 1100px) { .featured-grid { grid-template-columns: repeat(3, 1fr); } }
-        @media (max-width: 640px)  { .featured-grid { grid-template-columns: repeat(2, 1fr); } }
-
-        .featured-card {
-          position: relative;
-          border-radius: 14px;
-          overflow: hidden;
-          aspect-ratio: 2/3;
-          cursor: pointer;
-          group: true;
-        }
-        .featured-card:hover .featured-overlay {
-          opacity: 1;
-        }
-        .featured-card:hover .featured-img {
-          transform: scale(1.06);
-        }
-        .featured-img {
-          width: 100%;
-          height: 100%;
-          object-fit: cover;
-          transition: transform 0.5s cubic-bezier(0.25,0.46,0.45,0.94);
-        }
-        .featured-overlay {
-          position: absolute;
-          inset: 0;
-          background: linear-gradient(to top, rgba(5,5,10,0.97) 0%, rgba(5,5,10,0.5) 50%, transparent 100%);
-          opacity: 0.7;
-          transition: opacity 0.3s ease;
-          display: flex;
-          flex-direction: column;
-          justify-content: flex-end;
-          padding: 14px;
-        }
-        .featured-badge {
-          position: absolute;
-          top: 10px;
-          right: 10px;
-          font-size: 0.6rem;
-          font-weight: 700;
-          letter-spacing: 0.1em;
-          text-transform: uppercase;
-          padding: 3px 8px;
-          border-radius: 999px;
-          background: rgba(139,92,246,0.25);
-          border: 1px solid rgba(139,92,246,0.4);
-          color: #c4b5fd;
-        }
-        .featured-card-title {
-          font-family: var(--font-bebas), sans-serif;
-          font-size: 1.1rem;
-          letter-spacing: 0.04em;
-          color: #fff;
-          line-height: 1.1;
-          margin-bottom: 4px;
-        }
-        .featured-card-tags {
-          font-size: 0.65rem;
-          color: rgba(255,255,255,0.5);
-          margin-bottom: 6px;
-        }
-
-        /* ── REVIEW CARDS ── */
-        .reviews-grid {
-          display: grid;
-          grid-template-columns: repeat(4, 1fr);
-          gap: 16px;
-        }
-        @media (max-width: 900px) { .reviews-grid { grid-template-columns: repeat(2, 1fr); } }
-        @media (max-width: 500px) { .reviews-grid { grid-template-columns: 1fr; } }
-
-        .review-card {
-          background: rgba(255,255,255,0.03);
-          border: 1px solid rgba(255,255,255,0.07);
-          border-radius: 16px;
-          overflow: hidden;
-          text-decoration: none;
-          color: inherit;
-          transition: border-color 0.3s, background 0.3s, transform 0.3s;
-          display: flex;
-          flex-direction: column;
-        }
-        .review-card:hover {
-          border-color: rgba(139,92,246,0.35);
-          background: rgba(139,92,246,0.06);
-          transform: translateY(-4px);
-        }
-        .review-card-img {
-          width: 100%;
-          aspect-ratio: 16/9;
-          object-fit: cover;
-          object-position: top;
-        }
-        .review-card-body {
-          padding: 14px 16px 16px;
-          flex: 1;
-          display: flex;
-          flex-direction: column;
-          gap: 6px;
-        }
-        .review-card-title {
-          font-family: var(--font-bebas), sans-serif;
-          font-size: 1.15rem;
-          letter-spacing: 0.04em;
-          color: #fff;
-        }
-        .review-card-tags {
-          font-size: 0.7rem;
-          color: rgba(255,255,255,0.4);
-        }
-        .review-card-meta {
-          display: flex;
-          align-items: center;
-          justify-content: space-between;
-          margin-top: auto;
-          padding-top: 10px;
-        }
-        .review-card-cat {
-          font-size: 0.65rem;
-          font-weight: 700;
-          letter-spacing: 0.1em;
-          text-transform: uppercase;
-          padding: 2px 8px;
-          border-radius: 999px;
-        }
-        .cat-manga { background: rgba(99,102,241,0.15); color: #a5b4fc; }
-        .cat-manhwa { background: rgba(236,72,153,0.15); color: #f9a8d4; }
-
-        /* ── BANNER CTA ── */
-        .banner-cta {
-          position: relative;
-          margin: 4rem 0;
-          padding: 3.5rem 3rem;
-          border-radius: 20px;
-          overflow: hidden;
-          background: linear-gradient(135deg, rgba(109,40,217,0.25) 0%, rgba(139,92,246,0.12) 50%, rgba(0,0,0,0) 100%);
-          border: 1px solid rgba(139,92,246,0.2);
-          text-align: center;
-        }
-        .banner-cta::before {
-          content: '';
-          position: absolute;
-          top: -50%;
-          left: -20%;
-          width: 60%;
-          height: 200%;
-          background: radial-gradient(ellipse, rgba(139,92,246,0.15) 0%, transparent 70%);
-          pointer-events: none;
-        }
-        .banner-cta-title {
-          font-family: var(--font-bebas), sans-serif;
-          font-size: clamp(2rem, 4vw, 3rem);
-          color: #fff;
-          margin-bottom: 0.75rem;
-          letter-spacing: 0.04em;
-        }
-        .banner-cta-desc {
-          font-size: 0.95rem;
-          color: rgba(255,255,255,0.55);
-          margin-bottom: 2rem;
-          max-width: 480px;
-          margin-left: auto;
-          margin-right: auto;
-        }
-
-        /* ── CATEGORIES ── */
-        .categories-row {
-          display: grid;
-          grid-template-columns: repeat(4, 1fr);
-          gap: 14px;
-          margin: 4rem 0;
-        }
-        @media (max-width: 900px) { .categories-row { grid-template-columns: repeat(2, 1fr); } }
-        @media (max-width: 480px) { .categories-row { grid-template-columns: repeat(2, 1fr); } }
-
-        .cat-card {
-          display: flex;
-          align-items: center;
-          gap: 16px;
-          padding: 20px 22px;
-          border-radius: 14px;
-          background: rgba(255,255,255,0.03);
-          border: 1px solid rgba(255,255,255,0.07);
-          text-decoration: none;
-          color: inherit;
-          transition: background 0.2s, border-color 0.2s, transform 0.2s;
-        }
-        .cat-card:hover {
-          background: rgba(139,92,246,0.08);
-          border-color: rgba(139,92,246,0.3);
-          transform: translateY(-2px);
-        }
-        .cat-icon {
-          font-size: 2rem;
-          flex-shrink: 0;
-        }
-        .cat-card-title {
-          font-family: var(--font-bebas), sans-serif;
-          font-size: 1.2rem;
-          letter-spacing: 0.04em;
-          color: #fff;
-          margin-bottom: 2px;
-        }
-        .cat-card-desc {
-          font-size: 0.75rem;
-          color: rgba(255,255,255,0.4);
-        }
-      `}</style>
-
-      <div className="home-root">
-
-        {/* ── HERO ── */}
-        <section className="hero">
-          <div className="hero-bg" />
-          <div className="hero-grid" />
-
-          {/* Covers flottantes (9 covers, 3 colonnes) */}
-          <div className="hero-covers">
-            <div className="hero-covers-fade" />
-            <div className="hero-cover-col">
-              {["one-piece", "bleach", "naruto"].map((slug) => {
-                const s = SERIES.find((x) => x.slug === slug);
-                return s?.cover ? (
-                  <Image key={slug} src={s.cover} alt={s.title} width={130} height={190} className="hero-cover-img" priority />
-                ) : null;
-              })}
-            </div>
-            <div className="hero-cover-col">
-              {["solo-leveling", "l-attaque-des-titans", "blue-lock"].map((slug) => {
-                const s = SERIES.find((x) => x.slug === slug);
-                return s?.cover ? (
-                  <Image key={slug} src={s.cover} alt={s.title} width={130} height={190} className="hero-cover-img" loading="lazy" />
-                ) : null;
-              })}
-            </div>
-            <div className="hero-cover-col">
-              {["death-note", "my-hero-academia", "the-beginning-after-the-end"].map((slug) => {
-                const s = SERIES.find((x) => x.slug === slug);
-                return s?.cover ? (
-                  <Image key={slug} src={s.cover} alt={s.title} width={130} height={190} className="hero-cover-img" loading="lazy" />
-                ) : null;
-              })}
-            </div>
-          </div>
-
-          {/* Contenu hero */}
-          <div className="hero-content">
-            <div className="hero-eyebrow">
-              <svg width="8" height="8" viewBox="0 0 8 8" fill="currentColor">
-                <circle cx="4" cy="4" r="4" />
-              </svg>
-              Critiques · Manhwa · Manga
-            </div>
-
-            <h1 className="hero-title">
-              Ton guide <span>manga</span> ultime
-            </h1>
-
-            <p className="hero-desc">
-              Critiques détaillées, tops incontournables et guides pour explorer
-              les meilleures séries manga et manhwa du moment.
-            </p>
-
-            <div className="hero-ctas">
-              <Link href="/critiques" className="btn-primary">
-                <svg width="16" height="16" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth="2.5">
-                  <path strokeLinecap="round" strokeLinejoin="round" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
-                </svg>
-                Explorer les critiques
-              </Link>
-              <Link href="/tops" className="btn-ghost">
-                Voir les tops →
-              </Link>
-            </div>
-
-            <div className="hero-stats">
-              <div>
-                <div className="hero-stat-num">{PUBLISHED_SERIES.length}+</div>
-                <div className="hero-stat-label">Séries référencées</div>
-              </div>
-              <div>
-                <div className="hero-stat-num">{PUBLISHED_SERIES.filter(s => s.category === "manhwa").length}</div>
-                <div className="hero-stat-label">Manhwas</div>
-              </div>
-              <div>
-                <div className="hero-stat-num">{PUBLISHED_SERIES.filter(s => s.stars === 5).length}</div>
-                <div className="hero-stat-label">Coups de cœur</div>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        {/* ── SÉRIES EN VEDETTE ── */}
-        <section className="section">
-          <div className="section-header">
-            <h2 className="section-title">Séries en vedette</h2>
-            <Link href="/critiques" className="section-link">Tout voir →</Link>
-          </div>
-          <div className="featured-grid">
-            {featured.map((serie, idx) => {
-              if (!serie) return null;
-              return (
-                <Link
-                  key={serie.slug}
-                  href={`/series/${serie.slug}`}
-                  className="featured-card"
-                  style={{ textDecoration: "none" }}
-                >
+        {/* Covers wall — right side */}
+        <div className="hero-covers-chrome" style={{ position: "absolute", right: 0, top: 0, bottom: 0, width: "52%", display: "flex", gap: 10, padding: "16px 0", overflow: "hidden", alignItems: "flex-start" }}>
+          <div style={{ position: "absolute", left: 0, top: 0, bottom: 0, width: "40%", background: "linear-gradient(to right, #090909, transparent)", zIndex: 2 }} />
+          <div style={{ position: "absolute", right: 0, top: 0, bottom: 0, width: 60, background: "linear-gradient(to left, #090909, transparent)", zIndex: 2 }} />
+          {([[0, 1], [2, 3], [4, 5]] as [number, number][]).map((pair, ci) => (
+            <div key={ci} style={{ display: "flex", flexDirection: "column", gap: 10, marginTop: ci === 1 ? 60 : ci === 2 ? 30 : 0, flexShrink: 0 }}>
+              {pair.map((idx) => {
+                const s = heroCovers[idx];
+                if (!s?.cover) return null;
+                return (
                   <Image
-                    src={serie.cover || "/_placeholder.jpg"}
+                    key={idx}
+                    src={s.cover}
+                    alt={s.title}
+                    width={200}
+                    height={290}
+                    style={{ width: "clamp(160px,13vw,200px)", height: "auto", objectFit: "cover", borderRadius: 2, border: "1px solid rgba(255,255,255,0.06)", boxShadow: "0 8px 32px rgba(0,0,0,0.6)" }}
+                    priority={ci === 0}
+                  />
+                );
+              })}
+            </div>
+          ))}
+        </div>
+
+        {/* Red left stripe */}
+        <div style={{ position: "absolute", left: 0, top: 0, bottom: 0, width: 5, background: ACCENT, zIndex: 5 }} />
+
+        {/* Content */}
+        <div style={{ position: "relative", zIndex: 10, maxWidth: 580 }}>
+          <div style={{ display: "flex", alignItems: "center", gap: 12, marginBottom: 24 }}>
+            <div style={{ width: 32, height: 3, background: ACCENT }} />
+            <span style={{ fontFamily: FONT_H, fontSize: 12, fontWeight: 700, letterSpacing: "0.2em", textTransform: "uppercase", color: ACCENT }}>
+              PLATEFORME FRANCOPHONE
+            </span>
+          </div>
+
+          <h1 style={{ fontFamily: FONT_H, fontSize: "clamp(72px,10vw,120px)", fontWeight: 800, lineHeight: 0.88, textTransform: "uppercase", color: "#fff", marginBottom: 24, letterSpacing: "-0.01em" }}>
+            LE GUIDE<br />
+            <span style={{ color: ACCENT }}>MANGA</span>
+            <br />ULTIME
+          </h1>
+
+          <p style={{ fontSize: "clamp(14px,1.5vw,16px)", color: TEXT_DIM, lineHeight: 1.75, maxWidth: 440, marginBottom: 36 }}>
+            Critiques approfondies, tops curatés et recommandations — avec liens d'achat Amazon et streaming pour chaque série manga et manhwa.
+          </p>
+
+          <div style={{ display: "flex", gap: 0, borderRadius: 4, overflow: "hidden", width: "fit-content", border: "1px solid rgba(255,255,255,0.1)" }}>
+            <Link href="/critiques" style={{ display: "block", padding: "14px 32px", background: ACCENT, color: "#fff", fontWeight: 700, fontSize: 13, fontFamily: FONT_H, letterSpacing: "0.08em", textTransform: "uppercase", textDecoration: "none" }}>
+              Explorer les critiques
+            </Link>
+            <Link href="/tops" style={{ display: "block", padding: "14px 28px", background: "transparent", color: TEXT_DIM, fontWeight: 600, fontSize: 13, fontFamily: FONT_H, letterSpacing: "0.08em", textTransform: "uppercase", textDecoration: "none", borderLeft: "1px solid rgba(255,255,255,0.1)" }}>
+              Tops →
+            </Link>
+          </div>
+
+          {/* Stats row */}
+          <div className="hero-stats-chrome" style={{ display: "flex", gap: 0, marginTop: 44, paddingTop: 28, borderTop: "1px solid rgba(255,255,255,0.07)" }}>
+            {([
+              [`${totalSeries}+`, "SÉRIES"],
+              [`${totalManhwa}`, "MANHWAS"],
+              [`${totalHearts}`, "COUPS DE CŒUR"],
+              ["100%", "FRANCOPHONE"],
+            ] as [string, string][]).map(([n, l], i) => (
+              <div key={l} style={{ flex: 1, borderRight: i < 3 ? "1px solid rgba(255,255,255,0.07)" : "none", paddingRight: 20, marginRight: 20 }}>
+                <div style={{ fontFamily: FONT_H, fontSize: 36, fontWeight: 800, color: "#fff", lineHeight: 1 }}>{n}</div>
+                <div style={{ fontSize: 10, color: TEXT_MUTED, letterSpacing: "0.15em", textTransform: "uppercase", marginTop: 4 }}>{l}</div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ── SÉRIES EN VEDETTE ── */}
+      <section style={{ maxWidth: 1280, margin: "0 auto", padding: "64px clamp(20px,4vw,52px)" }}>
+        <div style={{ display: "flex", alignItems: "baseline", justifyContent: "space-between", marginBottom: 28 }}>
+          <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
+            <div style={{ width: 24, height: 3, background: ACCENT }} />
+            <h2 style={{ fontFamily: FONT_H, fontSize: 28, fontWeight: 800, letterSpacing: "0.06em", textTransform: "uppercase", color: "#fff" }}>
+              SÉRIES EN VEDETTE
+            </h2>
+          </div>
+          <Link href="/critiques" style={{ fontFamily: FONT_H, fontSize: 12, fontWeight: 700, color: ACCENT, letterSpacing: "0.1em", textTransform: "uppercase", textDecoration: "none" }}>
+            TOUT VOIR →
+          </Link>
+        </div>
+
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill,minmax(160px,1fr))", gap: 14 }}>
+          {featured.map((serie) => {
+            if (!serie) return null;
+            return (
+              <Link
+                key={serie.slug}
+                href={`/series/${serie.slug}`}
+                className="feat-card-chrome"
+                style={{ textDecoration: "none", display: "block", borderRadius: 2, overflow: "hidden", position: "relative", aspectRatio: "2/3", background: "#141414", border: "1px solid rgba(255,255,255,0.06)" }}
+              >
+                {serie.cover && (
+                  <Image
+                    src={serie.cover}
                     alt={serie.title}
                     fill
                     sizes="(max-width: 640px) 50vw, (max-width: 1100px) 33vw, 16vw"
-                    className="featured-img"
-                    priority={idx < 3}
+                    className="feat-img-chrome"
+                    style={{ objectFit: "cover", transition: "transform .4s ease" }}
                   />
-                  <div className="featured-overlay">
-                    <div className="featured-badge">{serie.category === "manhwa" ? "Manhwa" : "Manga"}</div>
-                    <div className="featured-card-title">{serie.title}</div>
-                    <div className="featured-card-tags">{serie.tags}</div>
-                    <StarRating stars={serie.stars} />
+                )}
+                <div className="feat-overlay-chrome" style={{ position: "absolute", inset: 0, background: "linear-gradient(to top, rgba(10,10,10,0.97) 0%, rgba(10,10,10,0.3) 50%, transparent 100%)", opacity: 0.7, transition: "opacity .3s", display: "flex", flexDirection: "column", justifyContent: "flex-end", padding: 12 }}>
+                  <div style={{ fontFamily: FONT_H, fontSize: 14, fontWeight: 800, letterSpacing: "0.04em", color: "#fff", lineHeight: 1.1, marginBottom: 4 }}>
+                    {serie.title}
                   </div>
-                </Link>
-              );
-            })}
-          </div>
-        </section>
+                  <div style={{ fontSize: 10, color: "rgba(255,255,255,0.4)", marginBottom: 6 }}>
+                    {(serie.tags ?? "").split(",")[0]?.trim()}
+                  </div>
+                  <div style={{ display: "flex", justifyContent: "space-between", alignItems: "center" }}>
+                    <StarRow stars={serie.stars} size={11} />
+                    {serie.stars != null && (
+                      <span style={{ fontFamily: FONT_H, fontSize: 13, fontWeight: 700, color: "#fff", background: ACCENT, padding: "2px 7px", borderRadius: 2 }}>
+                        {serie.stars * 2}/10
+                      </span>
+                    )}
+                  </div>
+                </div>
+              </Link>
+            );
+          })}
+        </div>
+      </section>
 
-        {/* ── CATÉGORIES ── */}
-        <div className="categories-row">
-          <Link href="/critiques" className="cat-card">
-            <span className="cat-icon">📖</span>
-            <div>
-              <div className="cat-card-title">Critiques</div>
-              <div className="cat-card-desc">Avis détaillés sur vos séries</div>
+      {/* ── QUIZ BANNER ── */}
+      <section style={{ maxWidth: 1280, margin: "0 auto", padding: "0 clamp(20px,4vw,52px) 48px" }}>
+        <div
+          className="quiz-banner-chrome"
+          style={{
+            position: "relative",
+            padding: "clamp(24px,4vw,40px) clamp(24px,4vw,48px)",
+            background: "linear-gradient(135deg, rgba(224,48,48,0.12) 0%, rgba(224,48,48,0.04) 100%)",
+            border: `1px solid ${ACCENT_BORDER}`,
+            borderRadius: 4,
+            overflow: "hidden",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "space-between",
+            flexWrap: "wrap",
+            gap: 20,
+          }}
+        >
+          <div style={{ position: "absolute", left: 0, top: 0, bottom: 0, width: 4, background: ACCENT }} />
+          <div style={{ paddingLeft: 16 }}>
+            <div style={{ fontFamily: FONT_H, fontSize: 11, fontWeight: 700, letterSpacing: "0.18em", textTransform: "uppercase", color: ACCENT, marginBottom: 8 }}>
+              ✦ NOUVEAU
             </div>
+            <h2 style={{ fontFamily: FONT_H, fontSize: "clamp(22px,3vw,34px)", fontWeight: 800, textTransform: "uppercase", color: "#fff", lineHeight: 1, marginBottom: 8 }}>
+              QUELLE SÉRIE POUR TOI ?
+            </h2>
+            <p style={{ fontSize: 14, color: TEXT_MUTED }}>
+              4 questions · une recommandation personnalisée parmi nos {totalSeries}+ séries
+            </p>
+          </div>
+          <Link
+            href="/recommandations"
+            style={{ padding: "13px 28px", background: ACCENT, color: "#fff", fontWeight: 700, fontSize: 13, fontFamily: FONT_H, letterSpacing: "0.1em", textTransform: "uppercase", borderRadius: 4, textDecoration: "none", whiteSpace: "nowrap" }}
+          >
+            LANCER LE QUIZ →
           </Link>
-          <Link href="/tops" className="cat-card">
-            <span className="cat-icon">🏆</span>
-            <div>
-              <div className="cat-card-title">Tops</div>
-              <div className="cat-card-desc">Les meilleures séries classées</div>
-            </div>
-          </Link>
-          <Link href="/guides" className="cat-card">
-            <span className="cat-icon">🗺️</span>
-            <div>
-              <div className="cat-card-title">Guides</div>
-              <div className="cat-card-desc">Par où commencer ?</div>
-            </div>
-          </Link>
-          <Link href="/nouveautes" className="cat-card">
-            <span className="cat-icon">🆕</span>
-            <div>
-              <div className="cat-card-title">Nouveautés</div>
-              <div className="cat-card-desc">Les derniers ajouts du catalogue</div>
-            </div>
+        </div>
+      </section>
+
+      {/* ── DERNIÈRES CRITIQUES ── */}
+      <section style={{ maxWidth: 1280, margin: "0 auto", padding: "0 clamp(20px,4vw,52px) 80px" }}>
+        <div style={{ display: "flex", alignItems: "baseline", justifyContent: "space-between", marginBottom: 28 }}>
+          <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
+            <div style={{ width: 24, height: 3, background: ACCENT }} />
+            <h2 style={{ fontFamily: FONT_H, fontSize: 28, fontWeight: 800, letterSpacing: "0.06em", textTransform: "uppercase", color: "#fff" }}>
+              DERNIÈRES CRITIQUES
+            </h2>
+          </div>
+          <Link href="/critiques" style={{ fontFamily: FONT_H, fontSize: 12, fontWeight: 700, color: ACCENT, letterSpacing: "0.1em", textTransform: "uppercase", textDecoration: "none" }}>
+            TOUT VOIR →
           </Link>
         </div>
 
-        {/* ── DERNIÈRES CRITIQUES ── */}
-        <section className="section">
-          <div className="section-header">
-            <h2 className="section-title">Dernières critiques</h2>
-            <Link href="/critiques" className="section-link">Tout voir →</Link>
-          </div>
-          <div className="reviews-grid">
-            {recentReviews.map((serie) => {
-              if (!serie) return null;
-              return (
-                <Link
-                  key={serie.slug}
-                  href={`/series/${serie.slug}`}
-                  className="review-card"
-                >
-                  <div className="relative w-full" style={{ aspectRatio: "16/9" }}>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fill,minmax(260px,1fr))", gap: 14 }}>
+          {recent.map((serie) => {
+            if (!serie) return null;
+            return (
+              <Link
+                key={serie.slug}
+                href={`/series/${serie.slug}`}
+                className="review-card-chrome"
+                style={{ display: "block", background: "#111", border: "1px solid rgba(255,255,255,0.06)", borderRadius: 4, overflow: "hidden", textDecoration: "none", transition: "border-color .2s, transform .2s" }}
+              >
+                {serie.cover && (
+                  <div style={{ position: "relative", aspectRatio: "16/9", overflow: "hidden" }}>
                     <Image
-                      src={serie.cover || "/_placeholder.jpg"}
+                      src={serie.cover}
                       alt={serie.title}
                       fill
                       sizes="(max-width: 900px) 50vw, 25vw"
-                      className="object-cover object-top"
+                      style={{ objectFit: "cover", objectPosition: "top" }}
                     />
+                    <div style={{ position: "absolute", top: 0, left: 0, right: 0, height: 3, background: ACCENT }} />
                   </div>
-                  <div className="review-card-body">
-                    <div className="review-card-title">{serie.title}</div>
-                    <div className="review-card-tags">{serie.tags}</div>
-                    <div className="review-card-meta">
-                      <span className={`review-card-cat ${serie.category === "manhwa" ? "cat-manhwa" : "cat-manga"}`}>
-                        {serie.category === "manhwa" ? "Manhwa" : "Manga"}
-                      </span>
-                      <StarRating stars={serie.stars} />
-                    </div>
+                )}
+                <div style={{ padding: "14px 16px" }}>
+                  <div style={{ fontFamily: FONT_H, fontSize: 18, fontWeight: 800, letterSpacing: "0.04em", color: "#fff", marginBottom: 4 }}>
+                    {serie.title}
                   </div>
-                </Link>
-              );
-            })}
-          </div>
-        </section>
+                  <div style={{ fontSize: 12, color: TEXT_MUTED, marginBottom: 10 }}>
+                    {serie.tags}
+                  </div>
+                  <div style={{ display: "flex", alignItems: "center", justifyContent: "space-between" }}>
+                    <span style={{
+                      fontSize: 10,
+                      fontWeight: 700,
+                      letterSpacing: "0.12em",
+                      textTransform: "uppercase",
+                      padding: "3px 8px",
+                      borderRadius: 2,
+                      background: serie.category === "manhwa" ? "rgba(244,114,182,0.1)" : ACCENT_DIM,
+                      border: `1px solid ${serie.category === "manhwa" ? "rgba(244,114,182,0.2)" : ACCENT_BORDER}`,
+                      color: serie.category === "manhwa" ? "#f9a8d4" : "#fca5a5",
+                    }}>
+                      {serie.category}
+                    </span>
+                    <StarRow stars={serie.stars} size={12} />
+                  </div>
+                </div>
+              </Link>
+            );
+          })}
+        </div>
+      </section>
 
-        {/* ── TROUVE TA SÉRIE ── */}
-        <section style={{
-          margin: "4rem 0",
-          background: "linear-gradient(135deg, rgba(124,58,237,0.15) 0%, rgba(109,40,217,0.08) 50%, transparent 100%)",
-          border: "1px solid rgba(124,58,237,0.25)",
-          borderRadius: "20px",
-          padding: "2.5rem",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "space-between",
-          gap: "2rem",
-          flexWrap: "wrap",
-          position: "relative",
-          overflow: "hidden",
-        }}>
-          <div style={{ position: "absolute", top: "-40px", right: "-40px", width: "200px", height: "200px", borderRadius: "50%", background: "radial-gradient(ellipse, rgba(124,58,237,0.2) 0%, transparent 70%)", pointerEvents: "none" }} />
-          <div style={{ position: "relative", zIndex: 1 }}>
-            <div style={{ display: "inline-flex", alignItems: "center", gap: "8px", fontSize: "0.7rem", fontWeight: 700, letterSpacing: "0.15em", textTransform: "uppercase", color: "#a78bfa", marginBottom: "0.75rem" }}>
-              <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-              Nouveau
-            </div>
-            <h2 style={{ fontFamily: "var(--font-bebas), sans-serif", fontSize: "clamp(1.8rem, 4vw, 2.6rem)", letterSpacing: "0.03em", color: "#fff", lineHeight: 1, marginBottom: "0.6rem" }}>
-              Trouve ta prochaine série
-            </h2>
-            <p style={{ fontSize: "0.9rem", color: "rgba(255,255,255,0.55)", maxWidth: "400px", lineHeight: 1.6 }}>
-              Réponds à 4 questions et on te recommande la série parfaite parmi nos 102 critiques.
-            </p>
-          </div>
-          <Link href="/recommandations" style={{
-            display: "inline-flex", alignItems: "center", gap: "10px",
-            padding: "14px 28px", background: "#7c3aed", color: "#fff",
-            fontWeight: 700, fontSize: "0.95rem", borderRadius: "12px",
-            textDecoration: "none", whiteSpace: "nowrap", flexShrink: 0,
-            boxShadow: "0 4px 24px rgba(124,58,237,0.45)",
-            transition: "transform 0.2s, box-shadow 0.2s",
-          }}>
-            ✨ Lancer le quiz
-            <svg width="16" height="16" fill="none" stroke="currentColor" strokeWidth="2.5" viewBox="0 0 24 24"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
-          </Link>
-        </section>
-
-        {/* ── BANNER CTA ── */}
-        <div className="banner-cta">
-          <h2 className="banner-cta-title">Rejoins la communauté</h2>
-          <p className="banner-cta-desc">
+      {/* ── COMPTE BANNER ── */}
+      <section style={{ maxWidth: 1280, margin: "0 auto", padding: "0 clamp(20px,4vw,52px) 80px" }}>
+        <div style={{ textAlign: "center", padding: "48px 32px", background: "rgba(255,255,255,0.02)", border: "1px solid rgba(255,255,255,0.07)", borderRadius: 4 }}>
+          <h2 style={{ fontFamily: FONT_H, fontSize: "clamp(28px,4vw,42px)", fontWeight: 800, textTransform: "uppercase", color: "#fff", marginBottom: 12 }}>
+            REJOINS LA COMMUNAUTÉ
+          </h2>
+          <p style={{ fontSize: 14, color: TEXT_MUTED, maxWidth: 480, margin: "0 auto 28px" }}>
             Crée un compte pour noter tes séries, laisser des commentaires et suivre tes lectures.
           </p>
-          <Link href="/compte" className="btn-primary" style={{ display: "inline-flex" }}>
-            Créer un compte gratuit
+          <Link
+            href="/compte"
+            style={{ display: "inline-block", padding: "13px 32px", background: ACCENT, color: "#fff", fontWeight: 700, fontSize: 14, fontFamily: FONT_H, letterSpacing: "0.1em", textTransform: "uppercase", borderRadius: 4, textDecoration: "none" }}
+          >
+            CRÉER MON COMPTE →
           </Link>
         </div>
+      </section>
 
-      </div>
-    </>
+      <style>{`
+        .feat-card-chrome:hover .feat-img-chrome { transform: scale(1.05) !important; }
+        .feat-card-chrome:hover .feat-overlay-chrome { opacity: 1 !important; }
+        .review-card-chrome:hover { border-color: rgba(224,48,48,0.22) !important; transform: translateY(-3px); }
+
+        @media (max-width: 900px) {
+          .hero-covers-chrome { display: none !important; }
+        }
+        @media (max-width: 600px) {
+          .hero-stats-chrome {
+            display: grid !important;
+            grid-template-columns: 1fr 1fr !important;
+            gap: 16px !important;
+          }
+          .hero-stats-chrome > div {
+            border-right: none !important;
+            padding-right: 0 !important;
+            margin-right: 0 !important;
+          }
+        }
+        @media (max-width: 700px) {
+          .quiz-banner-chrome { flex-direction: column !important; align-items: flex-start !important; }
+        }
+      `}</style>
+    </div>
   );
 }

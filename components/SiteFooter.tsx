@@ -1,69 +1,134 @@
 import Link from "next/link";
 
-const LINKS = {
-  "Explorer": [
+const ACCENT = "#e03030";
+const FONT_H = "var(--font-barlow), 'Barlow Condensed', sans-serif";
+const FONT_B = "var(--font-figtree), 'Figtree', sans-serif";
+
+const LINKS: Record<string, { href: string; label: string }[]> = {
+  Explorer: [
     { href: "/critiques", label: "Toutes les critiques" },
     { href: "/tops", label: "Tops & classements" },
     { href: "/nouveautes", label: "Nouveautés" },
     { href: "/guides", label: "Guides débutants" },
   ],
   "Top séries": [
-    { href: "/series/naruto", label: "Naruto" },
     { href: "/series/solo-leveling", label: "Solo Leveling" },
     { href: "/series/l-attaque-des-titans", label: "L'Attaque des Titans" },
+    { href: "/series/berserk", label: "Berserk" },
     { href: "/series/death-note", label: "Death Note" },
   ],
   "Le site": [
-    { href: "/a-propos", label: "À propos" },
-    { href: "/recommandations", label: "✨ Pour toi" },
+    { href: "/recommandations", label: "✦ Trouve ta série" },
     { href: "/compte", label: "Mon compte" },
-    { href: "/compte", label: "Se connecter" },
+    { href: "/a-propos", label: "À propos" },
   ],
 };
 
 export default function SiteFooter() {
   return (
-    <footer className="border-t border-white/8 bg-[#0b0b10] mt-auto">
-      <div className="max-w-[1280px] mx-auto px-6 md:px-8 py-12">
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-10">
+    <footer style={{ background: "#080808", borderTop: "1px solid rgba(255,255,255,0.07)", marginTop: "auto", paddingTop: 1 }}>
+      <div style={{ borderTop: `3px solid ${ACCENT}` }} />
+      <div style={{ maxWidth: 1280, margin: "0 auto", padding: "48px clamp(20px,4vw,52px) 32px" }}>
+        <div
+          style={{ display: "grid", gridTemplateColumns: "1fr repeat(3,auto)", gap: 48, marginBottom: 40 }}
+          className="footer-chrome-grid"
+        >
           {/* Brand */}
-          <div className="col-span-2 md:col-span-1">
-            <div style={{ fontFamily: "'Bebas Neue', sans-serif", letterSpacing: "0.08em", fontSize: "1.4rem" }}
-              className="text-white mb-3">
-              🎌 MangaInsight
+          <div>
+            <div
+              style={{
+                fontFamily: FONT_H,
+                fontSize: 22,
+                fontWeight: 800,
+                letterSpacing: "0.08em",
+                textTransform: "uppercase",
+                color: "#fff",
+                marginBottom: 12,
+              }}
+            >
+              MANGA<span style={{ color: ACCENT }}>INSIGHT</span>
             </div>
-            <p className="text-xs text-white/35 leading-relaxed max-w-[180px]">
+            <p style={{ fontSize: 13, color: "rgba(255,255,255,0.25)", lineHeight: 1.7, maxWidth: 200, fontFamily: FONT_B }}>
               La référence francophone pour les critiques de manga et manhwa.
             </p>
           </div>
 
-          {/* Liens */}
+          {/* Link columns */}
           {Object.entries(LINKS).map(([section, links]) => (
             <div key={section}>
-              <p className="text-[0.65rem] font-bold tracking-[0.15em] uppercase text-white/30 mb-3">{section}</p>
-              <ul className="flex flex-col gap-2">
-                {links.map(l => (
-                  <li key={l.href + l.label}>
-                    <Link href={l.href} className="text-xs text-white/50 hover:text-white transition-colors">
-                      {l.label}
-                    </Link>
-                  </li>
-                ))}
-              </ul>
+              <p
+                style={{
+                  fontSize: 10,
+                  fontWeight: 700,
+                  letterSpacing: "0.18em",
+                  textTransform: "uppercase",
+                  color: "rgba(255,255,255,0.25)",
+                  marginBottom: 14,
+                  fontFamily: FONT_H,
+                }}
+              >
+                {section}
+              </p>
+              {links.map((l) => (
+                <Link
+                  key={l.href + l.label}
+                  href={l.href}
+                  style={{
+                    display: "block",
+                    fontSize: 13,
+                    marginBottom: 8,
+                    fontFamily: FONT_B,
+                    textDecoration: "none",
+                    transition: "color .15s",
+                  }}
+                  className="footer-link-chrome"
+                >
+                  {l.label}
+                </Link>
+              ))}
             </div>
           ))}
         </div>
 
         {/* Bottom bar */}
-        <div className="border-t border-white/6 pt-6 flex flex-col sm:flex-row items-center justify-between gap-3">
-          <p className="text-[0.7rem] text-white/25">
+        <div
+          style={{
+            borderTop: "1px solid rgba(255,255,255,0.07)",
+            paddingTop: 20,
+            display: "flex",
+            justifyContent: "space-between",
+            alignItems: "center",
+            flexWrap: "wrap",
+            gap: 8,
+          }}
+        >
+          <span style={{ fontSize: 12, color: "rgba(255,255,255,0.25)", fontFamily: FONT_B }}>
             © {new Date().getFullYear()} MangaInsight — Tous droits réservés
-          </p>
-          <p className="text-[0.7rem] text-white/20">
-            Créé avec ❤️ et Claude · <a href="https://github.com/JackBowa/MangaInsight-pro" target="_blank" rel="noreferrer" className="hover:text-white/50 transition-colors">GitHub</a>
-          </p>
+          </span>
+          <span style={{ fontSize: 12, color: "rgba(255,255,255,0.2)", fontFamily: FONT_B }}>
+            Créé avec ❤️ ·{" "}
+            <a
+              href="https://github.com/JackBowa/MangaInsight-pro"
+              target="_blank"
+              rel="noreferrer"
+              style={{ color: "inherit", textDecoration: "none" }}
+            >
+              GitHub
+            </a>
+          </span>
         </div>
       </div>
+
+      <style>{`
+        .footer-link-chrome { color: rgba(255,255,255,0.4) !important; }
+        .footer-link-chrome:hover { color: #fff !important; }
+        @media (max-width: 900px) {
+          .footer-chrome-grid { grid-template-columns: 1fr 1fr !important; }
+        }
+        @media (max-width: 600px) {
+          .footer-chrome-grid { grid-template-columns: 1fr !important; }
+        }
+      `}</style>
     </footer>
   );
 }

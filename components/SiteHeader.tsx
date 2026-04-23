@@ -5,227 +5,557 @@ import { useUser } from "@supabase/auth-helpers-react";
 import { useState, useEffect, useRef, useCallback } from "react";
 import { PUBLISHED_SERIES as SERIES } from "@/data/series";
 
-const items = [
-  { href: "/", label: "Accueil" },
+const NAV_ITEMS = [
   { href: "/critiques", label: "Critiques" },
   { href: "/nouveautes", label: "Nouveautés" },
   { href: "/tops", label: "Tops" },
   { href: "/guides", label: "Guides" },
-  { href: "/recommandations", label: "✨ Trouve ta série" },
-  { href: "/a-propos", label: "À propos" },
+  { href: "/recommandations", label: "Trouve ta série", hot: true },
 ];
+
+const ACCENT = "#e03030";
+const FONT_H = "var(--font-barlow), 'Barlow Condensed', sans-serif";
+const FONT_B = "var(--font-figtree), 'Figtree', sans-serif";
 
 export default function SiteHeader() {
   const pathname = usePathname();
   const router = useRouter();
   const user = useUser();
 
-  const [open, setOpen] = useState(false);
+  const [searchOpen, setSearchOpen] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
   const [query, setQuery] = useState("");
   const inputRef = useRef<HTMLInputElement>(null);
 
-  // Résultats filtrés
-  const results = query.trim().length < 2 ? [] : SERIES.filter(s => {
-    const q = query.toLowerCase();
-    return s.title.toLowerCase().includes(q) || (s.tags ?? "").toLowerCase().includes(q);
-  }).slice(0, 8);
+  const results =
+    query.trim().length < 2
+      ? []
+      : SERIES.filter((s) => {
+          const q = query.toLowerCase();
+          return (
+            s.title.toLowerCase().includes(q) ||
+            (s.tags ?? "").toLowerCase().includes(q)
+          );
+        }).slice(0, 8);
 
-  // Ouvrir avec Cmd+K / Ctrl+K
   useEffect(() => {
     const handler = (e: KeyboardEvent) => {
       if ((e.metaKey || e.ctrlKey) && e.key === "k") {
         e.preventDefault();
-        setOpen(true);
+        setSearchOpen(true);
       }
-      if (e.key === "Escape") setOpen(false);
+      if (e.key === "Escape") {
+        setSearchOpen(false);
+        setMenuOpen(false);
+      }
     };
     window.addEventListener("keydown", handler);
     return () => window.removeEventListener("keydown", handler);
   }, []);
 
-  // Focus input à l'ouverture
   useEffect(() => {
-    if (open) setTimeout(() => inputRef.current?.focus(), 50);
+    if (searchOpen) setTimeout(() => inputRef.current?.focus(), 50);
     else setQuery("");
-  }, [open]);
+  }, [searchOpen]);
 
-  const goTo = useCallback((slug: string) => {
-    setOpen(false);
-    router.push(`/series/${slug}`);
-  }, [router]);
+  const goTo = useCallback(
+    (slug: string) => {
+      setSearchOpen(false);
+      router.push(`/series/${slug}`);
+    },
+    [router]
+  );
+
+  const isActive = (href: string) =>
+    href === "/" ? pathname === "/" : pathname.startsWith(href);
 
   return (
     <>
-      <nav className="border-b border-white/10 bg-black/80 backdrop-blur sticky top-0 z-40">
-        <div className="max-w-[1400px] mx-auto px-4 h-14 flex items-center gap-4">
-          <Link href="/" className="font-semibold shrink-0" style={{ fontFamily: "'Bebas Neue', sans-serif", letterSpacing: "0.08em", fontSize: "1.1rem" }}>
-            🎌 MangaInsight
-          </Link>
+      {/* ── NAV ── */}
+      <nav
+        style={{
+          position: "sticky",
+          top: 0,
+          zIndex: 100,
+          height: 56,
+          background: "rgba(10,10,10,0.96)",
+          backdropFilter: "blur(12px)",
+          borderBottom: `2px solid ${ACCENT}`,
+          display: "flex",
+          alignItems: "center",
+          padding: "0 clamp(20px,4vw,52px)",
+        }}
+      >
+        {/* Logo */}
+        <Link
+          href="/"
+          style={{
+            fontFamily: FONT_H,
+            fontSize: 21,
+            fontWeight: 800,
+            letterSpacing: "0.08em",
+            textTransform: "uppercase",
+            color: "#fff",
+            textDecoration: "none",
+            flexShrink: 0,
+          }}
+        >
+          MANGA<span style={{ color: ACCENT }}>INSIGHT</span>
+        </Link>
 
-          {/* liens nav, masqués sur mobile */}
-          <div className="hidden md:flex flex-1 items-center gap-5 text-sm">
-            {items.map((it) => {
-              const active = pathname === it.href || (it.href !== "/" && pathname.startsWith(it.href));
-              return (
-                <Link key={it.href} href={it.href}
-                  className={active ? "text-white font-semibold" : "text-white/50 hover:text-white transition-colors"}>
-                  {it.label}
-                </Link>
-              );
-            })}
-          </div>
+        {/* Desktop nav */}
+        <div
+          className="hidden md:flex"
+          style={{ gap: 28, marginLeft: 48, flex: 1 }}
+        >
+          {NAV_ITEMS.map((item) => (
+            <Link
+              key={item.href}
+              href={item.href}
+              style={{
+                fontFamily: FONT_H,
+                fontSize: 13,
+                fontWeight: 600,
+                letterSpacing: "0.07em",
+                textTransform: "uppercase",
+                color: item.hot
+                  ? ACCENT
+                  : isActive(item.href)
+                  ? "#fff"
+                  : "rgba(255,255,255,0.4)",
+                textDecoration: "none",
+                padding: "4px 0",
+                borderBottom: isActive(item.href)
+                  ? `2px solid ${ACCENT}`
+                  : "2px solid transparent",
+                transition: "color .15s, border-color .15s",
+              }}
+            >
+              {item.hot ? "✦ " : ""}
+              {item.label}
+            </Link>
+          ))}
+        </div>
 
-          <div className="flex-1 md:flex-none" />
-
-          {/* Bouton recherche */}
-          <button onClick={() => setOpen(true)}
-            className="flex items-center gap-2 px-3 py-1.5 rounded-lg bg-white/5 border border-white/10 text-white/40 hover:text-white/70 hover:bg-white/8 transition-all text-sm">
-            <svg className="w-3.5 h-3.5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-              <circle cx="11" cy="11" r="8" /><path d="m21 21-4.35-4.35" />
+        <div
+          style={{
+            marginLeft: "auto",
+            display: "flex",
+            gap: 10,
+            alignItems: "center",
+          }}
+        >
+          {/* Search */}
+          <button
+            onClick={() => setSearchOpen(true)}
+            style={{
+              display: "flex",
+              alignItems: "center",
+              gap: 8,
+              fontSize: 12,
+              color: "rgba(255,255,255,0.4)",
+              background: "rgba(255,255,255,0.04)",
+              border: "1px solid rgba(255,255,255,0.07)",
+              padding: "6px 14px",
+              borderRadius: 4,
+              cursor: "pointer",
+              fontFamily: FONT_B,
+            }}
+          >
+            <svg
+              width="13"
+              height="13"
+              fill="none"
+              stroke="currentColor"
+              strokeWidth="2"
+              viewBox="0 0 24 24"
+            >
+              <circle cx="11" cy="11" r="8" />
+              <path d="m21 21-4.35-4.35" />
             </svg>
-            <span className="hidden sm:inline text-xs">Rechercher</span>
-            <span className="hidden lg:inline text-[0.6rem] bg-white/8 border border-white/10 px-1.5 py-0.5 rounded font-mono text-white/30">⌘K</span>
+            <span className="hidden sm:inline">Rechercher</span>
+            <span
+              className="hidden lg:inline"
+              style={{
+                fontSize: 10,
+                background: "rgba(255,255,255,0.06)",
+                border: "1px solid rgba(255,255,255,0.07)",
+                padding: "2px 5px",
+                borderRadius: 3,
+                fontFamily: "monospace",
+              }}
+            >
+              ⌘K
+            </span>
           </button>
 
-          {/* Bouton favoris */}
-          <Link href="/favoris"
-            className={`hidden md:flex items-center gap-1.5 px-3 py-1.5 rounded-lg border text-sm transition-all ${
-              pathname === "/favoris"
-                ? "bg-pink-500/15 border-pink-500/35 text-pink-300"
-                : "bg-white/5 border-white/10 text-white/40 hover:text-pink-300 hover:bg-pink-500/8 hover:border-pink-500/25"
-            }`}>
-            ♥ <span className="text-xs">Favoris</span>
-          </Link>
-
-          {/* Auth, masqué sur mobile */}
-          <Link href="/compte"
-            className="hidden md:block shrink-0 rounded-lg border border-white/10 px-3 py-1.5 text-sm hover:bg-white/10 transition-colors text-white/70">
+          {/* Account — desktop */}
+          <Link
+            href="/compte"
+            className="hidden md:block"
+            style={{
+              fontFamily: FONT_H,
+              fontSize: 12,
+              fontWeight: 700,
+              letterSpacing: "0.08em",
+              textTransform: "uppercase",
+              color: "#fff",
+              background: ACCENT,
+              padding: "7px 18px",
+              borderRadius: 4,
+              textDecoration: "none",
+            }}
+          >
             {user ? "Mon compte" : "Se connecter"}
           </Link>
 
-          {/* Burger, visible sur mobile uniquement */}
-          <button onClick={() => setMenuOpen(!menuOpen)}
-            className="md:hidden flex flex-col gap-1.5 p-2 rounded-lg hover:bg-white/8 transition-colors"
-            aria-label="Menu">
-            <span className={`block w-5 h-0.5 bg-white/70 transition-all duration-200 ${menuOpen ? "rotate-45 translate-y-2" : ""}`} />
-            <span className={`block w-5 h-0.5 bg-white/70 transition-all duration-200 ${menuOpen ? "opacity-0" : ""}`} />
-            <span className={`block w-5 h-0.5 bg-white/70 transition-all duration-200 ${menuOpen ? "-rotate-45 -translate-y-2" : ""}`} />
+          {/* Burger — mobile */}
+          <button
+            onClick={() => setMenuOpen(!menuOpen)}
+            className="md:hidden"
+            style={{
+              background: "none",
+              border: "none",
+              cursor: "pointer",
+              padding: "6px",
+              display: "flex",
+              flexDirection: "column",
+              gap: "5px",
+            }}
+            aria-label="Menu"
+          >
+            {[0, 1, 2].map((i) => (
+              <span
+                key={i}
+                style={{
+                  display: "block",
+                  width: 20,
+                  height: 2,
+                  background: "rgba(255,255,255,0.7)",
+                  borderRadius: 1,
+                  transition: "all .2s",
+                  transform: menuOpen
+                    ? i === 0
+                      ? "rotate(45deg) translateY(7px)"
+                      : i === 2
+                      ? "rotate(-45deg) translateY(-7px)"
+                      : "scale(0)"
+                    : "none",
+                  opacity: menuOpen && i === 1 ? 0 : 1,
+                }}
+              />
+            ))}
           </button>
         </div>
-
-        {/* Menu mobile déroulant */}
-        {menuOpen && (
-          <div className="md:hidden border-t border-white/8 bg-black/95 backdrop-blur-md px-4 py-4 flex flex-col gap-1">
-            {items.map((it) => {
-              const active = pathname === it.href || (it.href !== "/" && pathname.startsWith(it.href));
-              return (
-                <Link key={it.href} href={it.href}
-                  onClick={() => setMenuOpen(false)}
-                  className={`px-4 py-3 rounded-xl text-sm font-medium transition-all ${
-                    active
-                      ? "bg-brand-500/15 text-brand-300 border border-brand-500/25"
-                      : "text-white/60 hover:text-white hover:bg-white/5"
-                  }`}>
-                  {it.label}
-                </Link>
-              );
-            })}
-            <div className="border-t border-white/8 mt-2 pt-3 flex flex-col gap-1">
-              <Link href="/favoris" onClick={() => setMenuOpen(false)}
-                className={`px-4 py-3 rounded-xl text-sm font-medium transition-all block ${
-                  pathname === "/favoris"
-                    ? "bg-pink-500/15 text-pink-300 border border-pink-500/25"
-                    : "text-white/60 hover:text-white hover:bg-white/5"
-                }`}>
-                ♥ Mes favoris
-              </Link>
-              <Link href="/compte" onClick={() => setMenuOpen(false)}
-                className="px-4 py-3 rounded-xl text-sm font-medium text-white/60 hover:text-white hover:bg-white/5 transition-all block">
-                {user ? "👤 Mon compte" : "🔑 Se connecter"}
-              </Link>
-            </div>
-          </div>
-        )}
       </nav>
 
-      {/* ── MODALE RECHERCHE ── */}
-      {open && (
-        <div className="fixed inset-0 z-50 flex items-start justify-center pt-[12vh] px-4"
-          onClick={(e) => { if (e.target === e.currentTarget) setOpen(false); }}>
-          {/* backdrop */}
-          <div className="absolute inset-0 bg-black/70 backdrop-blur-sm" onClick={() => setOpen(false)} />
+      {/* ── MOBILE MENU ── */}
+      {menuOpen && (
+        <div
+          style={{
+            position: "fixed",
+            top: 56,
+            left: 0,
+            right: 0,
+            zIndex: 99,
+            background: "#0d0d0d",
+            borderBottom: "1px solid rgba(255,255,255,0.07)",
+            padding: "16px 20px 20px",
+          }}
+        >
+          {NAV_ITEMS.map((item) => (
+            <Link
+              key={item.href}
+              href={item.href}
+              onClick={() => setMenuOpen(false)}
+              style={{
+                display: "block",
+                padding: "14px 0",
+                fontFamily: FONT_H,
+                fontSize: 18,
+                fontWeight: 800,
+                letterSpacing: "0.08em",
+                textTransform: "uppercase",
+                color: item.hot ? ACCENT : "#fff",
+                borderBottom: "1px solid rgba(255,255,255,0.07)",
+                textDecoration: "none",
+              }}
+            >
+              {item.label}
+            </Link>
+          ))}
+          <Link
+            href="/compte"
+            onClick={() => setMenuOpen(false)}
+            style={{
+              display: "block",
+              marginTop: 12,
+              padding: "12px 0",
+              fontFamily: FONT_H,
+              fontSize: 14,
+              fontWeight: 700,
+              letterSpacing: "0.1em",
+              textTransform: "uppercase",
+              color: ACCENT,
+              textDecoration: "none",
+            }}
+          >
+            → {user ? "Mon compte" : "Se connecter"}
+          </Link>
+        </div>
+      )}
 
-          {/* panel */}
-          <div className="relative w-full max-w-[580px] bg-[#13131f] border border-white/10 rounded-2xl shadow-2xl overflow-hidden"
-            style={{ boxShadow: "0 24px 80px rgba(0,0,0,0.6), 0 0 0 1px rgba(139,92,246,0.15)" }}>
-
-            {/* input */}
-            <div className="flex items-center gap-3 px-5 py-4 border-b border-white/8">
-              <svg className="w-4 h-4 text-white/30 flex-shrink-0" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-                <circle cx="11" cy="11" r="8" /><path d="m21 21-4.35-4.35" />
+      {/* ── SEARCH MODAL ── */}
+      {searchOpen && (
+        <div
+          style={{
+            position: "fixed",
+            inset: 0,
+            zIndex: 200,
+            display: "flex",
+            alignItems: "flex-start",
+            justifyContent: "center",
+            padding: "12vh 16px 0",
+          }}
+          onClick={(e) => {
+            if (e.target === e.currentTarget) setSearchOpen(false);
+          }}
+        >
+          <div
+            style={{
+              position: "absolute",
+              inset: 0,
+              background: "rgba(0,0,0,0.75)",
+              backdropFilter: "blur(6px)",
+            }}
+            onClick={() => setSearchOpen(false)}
+          />
+          <div
+            style={{
+              position: "relative",
+              width: "100%",
+              maxWidth: 580,
+              background: "#141414",
+              border: "1px solid rgba(255,255,255,0.07)",
+              borderRadius: 8,
+              overflow: "hidden",
+              boxShadow: `0 24px 80px rgba(0,0,0,0.7), 0 0 0 1px rgba(224,48,48,0.22)`,
+            }}
+          >
+            {/* Input */}
+            <div
+              style={{
+                display: "flex",
+                alignItems: "center",
+                gap: 12,
+                padding: "14px 18px",
+                borderBottom: "1px solid rgba(255,255,255,0.07)",
+              }}
+            >
+              <svg
+                width="15"
+                height="15"
+                fill="none"
+                stroke="rgba(255,255,255,0.25)"
+                strokeWidth="2"
+                viewBox="0 0 24 24"
+              >
+                <circle cx="11" cy="11" r="8" />
+                <path d="m21 21-4.35-4.35" />
               </svg>
               <input
                 ref={inputRef}
                 value={query}
-                onChange={e => setQuery(e.target.value)}
+                onChange={(e) => setQuery(e.target.value)}
                 placeholder="Rechercher une série..."
-                className="flex-1 bg-transparent text-white placeholder-white/25 text-sm outline-none"
+                style={{
+                  flex: 1,
+                  background: "transparent",
+                  border: "none",
+                  outline: "none",
+                  color: "#fff",
+                  fontSize: 15,
+                  fontFamily: FONT_B,
+                }}
               />
               {query && (
-                <button onClick={() => setQuery("")} className="text-white/25 hover:text-white/60 transition-colors text-lg leading-none">×</button>
+                <button
+                  onClick={() => setQuery("")}
+                  style={{
+                    background: "none",
+                    border: "none",
+                    color: "rgba(255,255,255,0.25)",
+                    fontSize: 18,
+                    cursor: "pointer",
+                    lineHeight: 1,
+                  }}
+                >
+                  ×
+                </button>
               )}
-              <kbd className="hidden sm:inline text-[0.6rem] bg-white/6 border border-white/10 px-1.5 py-0.5 rounded font-mono text-white/25">ESC</kbd>
+              <kbd
+                style={{
+                  fontSize: 10,
+                  background: "rgba(255,255,255,0.05)",
+                  border: "1px solid rgba(255,255,255,0.07)",
+                  padding: "2px 6px",
+                  borderRadius: 3,
+                  fontFamily: "monospace",
+                  color: "rgba(255,255,255,0.25)",
+                }}
+              >
+                ESC
+              </kbd>
             </div>
 
-            {/* résultats */}
-            <div className="max-h-[420px] overflow-y-auto">
+            {/* Results */}
+            <div style={{ maxHeight: 380, overflowY: "auto" }}>
               {query.trim().length < 2 ? (
-                <div className="px-5 py-10 text-center text-sm text-white/25">
-                  Tape au moins 2 caractères...
+                <div
+                  style={{
+                    padding: "36px 18px",
+                    textAlign: "center",
+                    fontSize: 13,
+                    color: "rgba(255,255,255,0.25)",
+                    fontFamily: FONT_B,
+                  }}
+                >
+                  Tape au moins 2 caractères…
                 </div>
               ) : results.length === 0 ? (
-                <div className="px-5 py-10 text-center">
-                  <p className="text-sm text-white/30 mb-1">Aucun résultat pour <strong className="text-white/60">&ldquo;{query}&rdquo;</strong></p>
-                  <p className="text-xs text-white/20">Essaie un autre titre ou un genre</p>
+                <div
+                  style={{
+                    padding: "36px 18px",
+                    textAlign: "center",
+                    fontSize: 13,
+                    color: "rgba(255,255,255,0.25)",
+                    fontFamily: FONT_B,
+                  }}
+                >
+                  Aucun résultat pour «&nbsp;{query}&nbsp;»
                 </div>
               ) : (
-                <div className="p-2">
-                  {results.map(s => (
-                    <button key={s.slug} onClick={() => goTo(s.slug)}
-                      className="w-full flex items-center gap-3 px-3 py-2.5 rounded-xl hover:bg-white/5 transition-colors group text-left">
-                      {/* cover miniature */}
-                      <div className="w-9 h-12 rounded-lg overflow-hidden flex-shrink-0 border border-white/8">
-                        <img src={s.cover || "/_placeholder.jpg"} alt={s.title}
-                          className="w-full h-full object-cover" />
-                      </div>
-                      {/* infos */}
-                      <div className="flex-1 min-w-0">
-                        <p className="text-sm text-white font-semibold truncate group-hover:text-brand-300 transition-colors"
-                          style={{ fontFamily: "'Bebas Neue', sans-serif", letterSpacing: "0.04em", fontSize: "1rem" }}>
+                <div style={{ padding: 8 }}>
+                  {results.map((s) => (
+                    <button
+                      key={s.slug}
+                      onClick={() => goTo(s.slug)}
+                      style={{
+                        width: "100%",
+                        display: "flex",
+                        alignItems: "center",
+                        gap: 12,
+                        padding: "10px 12px",
+                        borderRadius: 4,
+                        cursor: "pointer",
+                        background: "transparent",
+                        border: "none",
+                        textAlign: "left",
+                        transition: "background .15s",
+                      }}
+                      onMouseEnter={(e) =>
+                        (e.currentTarget.style.background =
+                          "rgba(255,255,255,0.04)")
+                      }
+                      onMouseLeave={(e) =>
+                        (e.currentTarget.style.background = "transparent")
+                      }
+                    >
+                      {/* cover */}
+                      {s.cover && (
+                        <img
+                          src={s.cover}
+                          alt={s.title}
+                          style={{
+                            width: 36,
+                            height: 50,
+                            objectFit: "cover",
+                            borderRadius: 2,
+                            border: "1px solid rgba(255,255,255,0.07)",
+                            flexShrink: 0,
+                          }}
+                        />
+                      )}
+                      <div style={{ flex: 1, minWidth: 0 }}>
+                        <div
+                          style={{
+                            fontFamily: FONT_H,
+                            fontSize: 15,
+                            fontWeight: 800,
+                            letterSpacing: "0.04em",
+                            color: "#fff",
+                          }}
+                        >
                           {s.title}
-                        </p>
-                        <p className="text-xs text-white/35 truncate">{s.tags}</p>
+                        </div>
+                        <div
+                          style={{
+                            fontSize: 11,
+                            color: "rgba(255,255,255,0.25)",
+                            marginTop: 1,
+                            fontFamily: FONT_B,
+                          }}
+                        >
+                          {s.tags}
+                        </div>
                       </div>
-                      {/* badge catégorie */}
-                      <span className={`text-[0.58rem] font-bold tracking-widest uppercase px-2 py-0.5 rounded-full border flex-shrink-0 ${
-                        s.category === "manhwa"
-                          ? "bg-pink-500/15 border-pink-500/30 text-pink-300"
-                          : "bg-indigo-500/15 border-indigo-500/30 text-indigo-300"
-                      }`}>{s.category}</span>
-                      <svg className="w-3.5 h-3.5 text-white/15 group-hover:text-white/40 transition-colors flex-shrink-0" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
-                        <path d="m9 18 6-6-6-6" />
-                      </svg>
+                      <span
+                        style={{
+                          fontSize: 10,
+                          fontWeight: 700,
+                          letterSpacing: "0.1em",
+                          textTransform: "uppercase",
+                          padding: "3px 8px",
+                          borderRadius: 3,
+                          background:
+                            s.category === "manhwa"
+                              ? "rgba(244,114,182,0.12)"
+                              : "rgba(224,48,48,0.1)",
+                          border: `1px solid ${
+                            s.category === "manhwa"
+                              ? "rgba(244,114,182,0.25)"
+                              : "rgba(224,48,48,0.22)"
+                          }`,
+                          color:
+                            s.category === "manhwa" ? "#f9a8d4" : "#fca5a5",
+                          fontFamily: FONT_B,
+                          flexShrink: 0,
+                        }}
+                      >
+                        {s.category}
+                      </span>
                     </button>
                   ))}
                 </div>
               )}
 
-              {/* footer */}
-              <div className="px-5 py-2.5 border-t border-white/6 flex items-center justify-between">
-                <p className="text-[0.65rem] text-white/20">{SERIES.length} séries indexées</p>
+              <div
+                style={{
+                  padding: "8px 18px",
+                  borderTop: "1px solid rgba(255,255,255,0.07)",
+                  display: "flex",
+                  justifyContent: "space-between",
+                }}
+              >
+                <span
+                  style={{
+                    fontSize: 11,
+                    color: "rgba(255,255,255,0.25)",
+                    fontFamily: FONT_B,
+                  }}
+                >
+                  {SERIES.length} séries indexées
+                </span>
                 {results.length > 0 && (
-                  <p className="text-[0.65rem] text-white/20">{results.length} résultat{results.length > 1 ? "s" : ""}</p>
+                  <span
+                    style={{
+                      fontSize: 11,
+                      color: "rgba(255,255,255,0.25)",
+                      fontFamily: FONT_B,
+                    }}
+                  >
+                    {results.length} résultat{results.length > 1 ? "s" : ""}
+                  </span>
                 )}
               </div>
             </div>

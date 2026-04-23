@@ -1,19 +1,19 @@
 import '../styles/globals.css'
 import { ReactNode } from 'react'
-import { Bebas_Neue, DM_Sans } from 'next/font/google'
+import { Barlow_Condensed, Figtree } from 'next/font/google'
 import SiteHeader from '@/components/SiteHeader'
 import SiteFooter from '@/components/SiteFooter'
 
-const bebasNeue = Bebas_Neue({
-  weight: '400',
+const barlowCondensed = Barlow_Condensed({
+  weight: ['400', '600', '700', '800'],
   subsets: ['latin'],
-  variable: '--font-bebas',
+  variable: '--font-barlow',
   display: 'swap',
 })
 
-const dmSans = DM_Sans({
+const figtree = Figtree({
   subsets: ['latin'],
-  variable: '--font-dm-sans',
+  variable: '--font-figtree',
   display: 'swap',
 })
 
@@ -51,7 +51,7 @@ export const metadata = {
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang="fr" className={`dark ${bebasNeue.variable} ${dmSans.variable}`}>
+    <html lang="fr" className={`dark ${barlowCondensed.variable} ${figtree.variable}`}>
       <body className="min-h-screen flex flex-col">
         <SiteHeader />
         <main className="flex-1">{children}</main>

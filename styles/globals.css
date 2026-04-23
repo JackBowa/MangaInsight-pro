@@ -3,13 +3,27 @@
 @tailwind utilities;
 
 html { color-scheme: dark; }
-body { @apply bg-[#0b0b10] text-gray-100; font-family: var(--font-dm-sans), 'DM Sans', sans-serif; }
+body { @apply bg-[#0a0a0a] text-white; font-family: var(--font-figtree), 'Figtree', sans-serif; }
 .prose { @apply prose-invert max-w-none; }
-.prose img { @apply rounded-xl; }
-.card { @apply rounded-2xl border border-white/10 bg-white/5 backdrop-blur; }
-.btn { @apply inline-flex items-center gap-2 px-4 py-2 rounded-xl border border-white/10 hover:bg-white/10; }
-.chips { @apply inline-flex items-center gap-2 text-xs px-2 py-1 rounded-lg bg-white/10; }
+.prose img { @apply rounded; }
+.card { @apply rounded border border-white/10 bg-[#111]; }
+.btn { @apply inline-flex items-center gap-2 px-4 py-2 rounded border border-white/10 hover:bg-white/10; }
+.chips { @apply inline-flex items-center gap-2 text-xs px-2 py-1 rounded bg-white/10; }
 
-/* NEW: hide horizontal scrollbar where we add `no-scrollbar` */
+/* scrollbar */
+::-webkit-scrollbar { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: #111; }
+::-webkit-scrollbar-thumb { background: #333; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #555; }
+
 .no-scrollbar::-webkit-scrollbar { display: none; }
 .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+/* Chrome design tokens as CSS vars */
+:root {
+  --accent: #e03030;
+  --accent-dim: rgba(224,48,48,0.1);
+  --accent-border: rgba(224,48,48,0.22);
+  --font-h: var(--font-barlow), 'Barlow Condensed', sans-serif;
+  --font-b: var(--font-figtree), 'Figtree', sans-serif;
+}

@@ -13,22 +13,22 @@ export default function NotFound() {
       </div>
 
       <div className="relative z-10 text-center max-w-lg">
-        <p className="text-[0.7rem] font-bold tracking-[0.2em] uppercase text-brand-400 mb-4">
+        <p className="text-[0.7rem] font-bold tracking-[0.2em] uppercase text-brand-500 mb-4">
           Erreur 404
         </p>
 
         <div
-          style={{ fontFamily: "var(--font-bebas), sans-serif", letterSpacing: "0.04em" }}
+          style={{ fontFamily: "var(--font-barlow), 'Barlow Condensed', sans-serif", letterSpacing: "0.04em" }}
           className="text-[clamp(6rem,20vw,10rem)] text-white/8 leading-none select-none mb-[-1rem]"
         >
           404
         </div>
 
         <h1
-          style={{ fontFamily: "var(--font-bebas), sans-serif", letterSpacing: "0.04em" }}
+          style={{ fontFamily: "var(--font-barlow), 'Barlow Condensed', sans-serif", letterSpacing: "0.04em" }}
           className="text-[clamp(2.5rem,6vw,4rem)] text-white leading-none mb-4"
         >
-          Page <span className="text-brand-400">introuvable</span>
+          Page <span className="text-brand-500">introuvable</span>
         </h1>
 
         <p className="text-sm text-white/40 leading-relaxed mb-8">
