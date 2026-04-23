@@ -11,7 +11,8 @@ const THEME_STYLES: Record<string, { card: string; category: string }> = {
 
 export default async function GuidesPage() {
   const guides = await getAllGuides();
-  const [featured, ...rest] = guides;
+  const featured = guides[0];
+  const rest = guides;
 
   return (
     <div className="min-h-screen">
