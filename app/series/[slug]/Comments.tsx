@@ -66,11 +66,11 @@ export default function Comments({
   async function onSubmit(e: React.FormEvent) {
     e.preventDefault();
     setError(null);
-    if (!user) return setError("Tu dois être connecté pour publier un avis.");
-    if (!name.trim()) return setError("Ton pseudo est requis.");
+    if (!user) return setError("Vous devez être connecté pour publier un avis.");
+    if (!name.trim()) return setError("Votre pseudo est requis.");
     if (name.trim().length > 50) return setError("Pseudo trop long (50 caractères max).");
     if (stars < 1 || stars > max) return setError(`Note entre 1 et ${max}.`);
-    if (!text.trim()) return setError("Écris un avis.");
+    if (!text.trim()) return setError("Écrivez un avis.");
     if (text.trim().length > 1000) return setError("Avis trop long (1000 caractères max).");
 
     setBusy(true);
@@ -112,7 +112,7 @@ export default function Comments({
       }}>
         {!user && (
           <p style={{ fontSize: 13, color: "rgba(255,255,255,0.4)", marginBottom: 12 }}>
-            <a href="/compte" style={{ color: A, textDecoration: "none" }}>Connecte-toi</a> pour publier un avis.
+            <a href="/compte" style={{ color: A, textDecoration: "none" }}>Connectez-vous</a> pour publier un avis.
           </p>
         )}
 
@@ -121,7 +121,7 @@ export default function Comments({
             <input
               value={name}
               onChange={e => setName(e.target.value)}
-              placeholder="Ton pseudo"
+              placeholder="Votre pseudo"
               disabled={!user || busy}
               style={{ ...inputStyle, flex: 1, minWidth: 140 }}
             />
@@ -160,7 +160,7 @@ export default function Comments({
             <textarea
               value={text}
               onChange={e => setText(e.target.value.slice(0, 1000))}
-              placeholder="Ton avis (pas de spoilers non avertis)"
+              placeholder="Votre avis (pas de spoilers non avertis)"
               rows={4}
               disabled={!user || busy}
               style={{ ...inputStyle, resize: "vertical" }}
@@ -236,7 +236,7 @@ export default function Comments({
         ))}
         {items.length === 0 && (
           <p style={{ fontSize: 13, color: "rgba(255,255,255,0.25)", fontStyle: "italic" }}>
-            Pas encore d'avis. Sois le premier à donner le tien !
+            Pas encore d'avis. Soyez le premier à donner le vôtre !
           </p>
         )}
       </div>
