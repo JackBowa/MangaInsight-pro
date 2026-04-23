@@ -33,7 +33,7 @@ function AuthPanel() {
     setBusy(false);
     if (error) {
       if (error.message.includes("Invalid login")) setMsg({ text: "Email ou mot de passe incorrect.", type: "error" });
-      else if (error.message.includes("Email not confirmed")) setMsg({ text: "Ton email n'est pas encore confirmé. Vérifie ta boîte mail (et les spams).", type: "error" });
+      else if (error.message.includes("Email not confirmed")) setMsg({ text: "Votre email n'est pas encore confirmé. Vérifiez votre boîte mail (et les spams).", type: "error" });
       else setMsg({ text: error.message, type: "error" });
     } else {
       setMsg({ text: "Connecté !", type: "success" });
@@ -51,22 +51,22 @@ function AuthPanel() {
     });
     setBusy(false);
     if (error) {
-      if (error.message.includes("already registered")) setMsg({ text: "Cet email est déjà utilisé. Connecte-toi ou réinitialise ton mot de passe.", type: "error" });
+      if (error.message.includes("already registered")) setMsg({ text: "Cet email est déjà utilisé. Connectez-vous ou réinitialisez votre mot de passe.", type: "error" });
       else if (error.message.includes("Password should")) setMsg({ text: "Mot de passe trop court (6 caractères minimum).", type: "error" });
       else setMsg({ text: error.message, type: "error" });
     } else {
-      setMsg({ text: "Compte créé ! Vérifie ta boîte mail (et les spams) pour confirmer ton adresse.", type: "success" });
+      setMsg({ text: "Compte créé ! Vérifiez votre boîte mail (et les spams) pour confirmer votre adresse.", type: "success" });
     }
   }
 
   async function resetPassword() {
-    if (!email) { setMsg({ text: "Entre d'abord ton email.", type: "error" }); return; }
+    if (!email) { setMsg({ text: "Entrez d'abord votre email.", type: "error" }); return; }
     setMsg(null);
     setBusy(true);
     const { error } = await supabase.auth.resetPasswordForEmail(email, { redirectTo: `${origin}/compte` });
     setBusy(false);
     if (error) setMsg({ text: error.message, type: "error" });
-    else setMsg({ text: "Email de réinitialisation envoyé (si l'adresse existe). Vérifie tes spams.", type: "success" });
+    else setMsg({ text: "Email de réinitialisation envoyé (si l'adresse existe). Vérifiez vos spams.", type: "success" });
   }
 
   return (
@@ -214,7 +214,7 @@ export default function AccountPage() {
 
         <div>
           <label style={{ fontFamily: FH, fontSize: 10, fontWeight: 700, letterSpacing: "0.14em", textTransform: "uppercase", color: "rgba(255,255,255,0.3)", display: "block", marginBottom: 8 }}>Pseudo affiché</label>
-          <input value={displayName} onChange={e => setDisplayName(e.target.value)} placeholder="Ton pseudo" style={inputStyle} disabled={loading || busy} />
+          <input value={displayName} onChange={e => setDisplayName(e.target.value)} placeholder="Votre pseudo" style={inputStyle} disabled={loading || busy} />
         </div>
 
         <div>
