@@ -1,6 +1,7 @@
 import { notFound } from "next/navigation";
 import Link from "next/link";
 import { MDXRemote } from "next-mdx-remote/rsc";
+import remarkGfm from "remark-gfm";
 import { getGuideBySlug, getAllGuides } from "@/lib/posts";
 
 export async function generateStaticParams() {
@@ -91,7 +92,7 @@ export default async function GuidePage({ params }: { params: { slug: string } }
       <div className="mx-auto max-w-3xl px-4 md:px-8 pb-24">
         <div className={`border ${t.border} rounded-2xl p-6 md:p-10 bg-white/2`}>
           <div className="prose-guide">
-            <MDXRemote source={guide.content} />
+            <MDXRemote source={guide.content} options={{ mdxOptions: { remarkPlugins: [remarkGfm] } }} />
           </div>
         </div>
 
