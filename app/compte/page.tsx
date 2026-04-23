@@ -82,7 +82,7 @@ function AuthPanel() {
             color: mode === m ? "#fff" : "rgba(255,255,255,0.35)",
             cursor: "pointer", transition: "color 0.15s", marginBottom: -1,
           }}>
-            {m === "signin" ? "Se connecter" : "Créer un compte"}
+            {m === "signin" ? "Se connecter" : "S'enregistrer"}
           </button>
         ))}
       </div>
@@ -141,7 +141,7 @@ function AuthPanel() {
             letterSpacing: "0.1em", textTransform: "uppercase",
             cursor: busy || (mode === "signup" && !gdprOk) ? "not-allowed" : "pointer", transition: "all 0.15s",
           }}>
-            {busy ? "Chargement…" : mode === "signin" ? "Se connecter" : "Créer le compte"}
+            {busy ? "Chargement…" : mode === "signin" ? "Se connecter" : "S'enregistrer"}
           </button>
 
           {mode === "signin" && (
