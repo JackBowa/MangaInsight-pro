@@ -3,6 +3,11 @@ import path from 'path'
 import matter from 'gray-matter'
 import readingTime from 'reading-time'
 
+function rtFr(content: string): string {
+  const rt = readingTime(content)
+  return `${Math.max(1, Math.ceil(rt.minutes))} min de lecture`
+}
+
 const contentDir = path.join(process.cwd(), 'content')
 
 export async function getAllPosts(limit?: number){
@@ -13,8 +18,7 @@ export async function getAllPosts(limit?: number){
     const slug = file.replace(/\.mdx$/, '')
     const raw = fs.readFileSync(path.join(reviewsDir, file),'utf8')
     const { content, data } = matter(raw)
-    const rt = readingTime(content)
-    return { slug, title: (data as any).title || slug, excerpt: (data as any).excerpt || '', date: (data as any).date || '', tags: (data as any).tags || [], readingTime: rt.text, content }
+    return { slug, title: (data as any).title || slug, excerpt: (data as any).excerpt || '', date: (data as any).date || '', tags: (data as any).tags || [], readingTime: rtFr(content), content }
   }).sort((a,b)=> (b.date?.localeCompare?.(a.date)) ?? 0)
   return typeof limit==='number' ? posts.slice(0,limit) : posts
 }
@@ -27,7 +31,6 @@ export async function getAllGuides() {
     const slug = file.replace(/\.mdx$/, '')
     const raw = fs.readFileSync(path.join(guidesDir, file), 'utf8')
     const { content, data } = matter(raw)
-    const rt = readingTime(content)
     return {
       slug,
       title: (data as any).title || slug,
@@ -37,7 +40,7 @@ export async function getAllGuides() {
       theme: (data as any).theme || 'purple',
       category: (data as any).category || 'Guide',
       tags: (data as any).tags || [],
-      readingTime: rt.text,
+      readingTime: rtFr(content),
       content,
     }
   }).sort((a, b) => a.date.localeCompare(b.date))
@@ -49,7 +52,6 @@ export async function getGuideBySlug(slug: string) {
   if (!fs.existsSync(p)) return null
   const raw = fs.readFileSync(p, 'utf8')
   const { content, data } = matter(raw)
-  const rt = readingTime(content)
   return {
     slug,
     title: (data as any).title || slug,
@@ -59,7 +61,7 @@ export async function getGuideBySlug(slug: string) {
     theme: (data as any).theme || 'purple',
     category: (data as any).category || 'Guide',
     tags: (data as any).tags || [],
-    readingTime: rt.text,
+    readingTime: rtFr(content),
     content,
   }
 }
@@ -69,6 +71,5 @@ export async function getPostBySlug(slug: string){
   if(!fs.existsSync(p)) return null
   const raw = fs.readFileSync(p,'utf8')
   const { content, data } = matter(raw)
-  const rt = readingTime(content)
-  return { slug, title: (data as any).title || slug, excerpt: (data as any).excerpt || '', date: (data as any).date || '', tags: (data as any).tags || [], readingTime: rt.text, content }
+  return { slug, title: (data as any).title || slug, excerpt: (data as any).excerpt || '', date: (data as any).date || '', tags: (data as any).tags || [], readingTime: rtFr(content), content }
 }
