@@ -1,16 +1,8 @@
-import { ANILIST_SEARCH, ANILIST_BY_ID } from "@/lib/anilist";
-
-const ALLOWED_QUERIES = new Set([
-  ANILIST_SEARCH.replace(/\s+/g, " ").trim(),
-  ANILIST_BY_ID.replace(/\s+/g, " ").trim(),
-]);
-
 const rateLimitMap = new Map<string, { count: number; ts: number }>();
-const RATE_LIMIT = 20; // requêtes max
-const RATE_WINDOW = 60_000; // par minute
+const RATE_LIMIT = 20;
+const RATE_WINDOW = 60_000;
 
 export async function POST(req: Request) {
-  // Rate limiting par IP
   const ip = req.headers.get("x-forwarded-for") ?? "unknown";
   const now = Date.now();
   const entry = rateLimitMap.get(ip);
@@ -23,9 +15,8 @@ export async function POST(req: Request) {
     rateLimitMap.set(ip, { count: 1, ts: now });
   }
 
-  // Taille max du body
   const raw = await req.text();
-  if (raw.length > 2048) {
+  if (raw.length > 4096) {
     return Response.json({ error: "Requête trop grande" }, { status: 400 });
   }
 
@@ -37,10 +28,14 @@ export async function POST(req: Request) {
   }
 
   const { query, variables } = body;
+  if (!query || typeof query !== "string") {
+    return Response.json({ error: "Query manquante" }, { status: 400 });
+  }
 
-  // Whitelist : seules les queries AniList autorisées
-  if (!query || !ALLOWED_QUERIES.has(query.replace(/\s+/g, " ").trim())) {
-    return Response.json({ error: "Requête non autorisée" }, { status: 403 });
+  // Sécurité : uniquement des queries en lecture (pas de mutation)
+  const normalized = query.replace(/\s+/g, " ").trim().toLowerCase();
+  if (!normalized.startsWith("query") || normalized.includes("mutation")) {
+    return Response.json({ error: "Seules les queries sont autorisées" }, { status: 403 });
   }
 
   const res = await fetch("https://graphql.anilist.co", {
@@ -48,6 +43,10 @@ export async function POST(req: Request) {
     headers: { "Content-Type": "application/json", Accept: "application/json" },
     body: JSON.stringify({ query, variables }),
   });
+
+  if (!res.ok) {
+    return Response.json({ error: `AniList erreur ${res.status}` }, { status: 502 });
+  }
 
   const data = await res.json();
   return Response.json(data);
