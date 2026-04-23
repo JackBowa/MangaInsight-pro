@@ -20,6 +20,7 @@ export type Serie = {
   chapters?: number;      // nombre de chapitres
   year?: number;          // année de début de publication
   author?: string;        // auteur(s)
+  anilistId?: number;     // ID AniList pour récupérer le score exact
 };
 
 export const SERIES_1: Serie[] = [
@@ -75,7 +76,8 @@ export const SERIES_1: Serie[] = [
   chapters: 700,
   year: 1999,
   author: "Masashi Kishimoto",
-},
+
+  anilistId: 11,},
 
   // Exemple manhwa
 {
@@ -133,7 +135,8 @@ export const SERIES_1: Serie[] = [
   chapters: 179,
   year: 2018,
   author: "Chugong",
-},
+
+  anilistId: 121496,},
 
 // TOKYO REVENGERS
 {
@@ -191,7 +194,8 @@ export const SERIES_1: Serie[] = [
   chapters: 278,
   year: 2017,
   author: "Ken Wakui",
-},
+
+  anilistId: 119090,},
 
 // THE PLAYER WHO CAN'T LEVEL UP
 {
@@ -333,7 +337,8 @@ export const SERIES_1: Serie[] = [
   chapters: 430,
   year: 2014,
   author: "Kōhei Horikoshi",
-},
+
+  anilistId: 75989,},
 
 
 // L'ATTAQUE DES TITANS
@@ -390,7 +395,8 @@ export const SERIES_1: Serie[] = [
   chapters: 139,
   year: 2009,
   author: "Hajime Isayama",
-},
+
+  anilistId: 53390,},
 // BLUE LOCK
 {
   slug: "blue-lock",
@@ -434,7 +440,8 @@ export const SERIES_1: Serie[] = [
   chapters: 290,
   year: 2018,
   author: "Muneyuki Kaneshiro",
-},
+
+  anilistId: 117960,},
 
 // BLEACH
 {
@@ -476,7 +483,8 @@ export const SERIES_1: Serie[] = [
   chapters: 686,
   year: 2001,
   author: "Tite Kubo",
-},
+
+  anilistId: 12,},
 
 // BLACK BUTLER (Kuroshitsuji)
 {
@@ -518,7 +526,8 @@ export const SERIES_1: Serie[] = [
   chapters: 200,
   year: 2006,
   author: "Yana Toboso",
-},
+
+  anilistId: 30654,},
 
 // ASSASSINATION CLASSROOM
 {
@@ -560,7 +569,8 @@ export const SERIES_1: Serie[] = [
   chapters: 185,
   year: 2012,
   author: "Yūsei Matsui",
-},
+
+  anilistId: 67067,},
 {
   slug: "kuroko-no-basket",
   pros: ["Matchs intenses et bien rythmés","Galerie de personnages mémorables","Spécialités de jeu inventives et spectaculaires"],
@@ -659,7 +669,8 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   chapters: 400,
   year: 1998,
   author: "Yoshihiro Togashi",
-},
+
+  anilistId: 46,},
 {
   slug: "berserk",
   pros: ["Chef-d'œuvre absolu du dark fantasy","Artwork de Miura, niveau hors norme","Personnage de Guts, l'un des meilleurs de l'histoire du manga"],
@@ -688,7 +699,8 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   chapters: 374,
   year: 1989,
   author: "Kentaro Miura",
-},
+
+  anilistId: 30002,},
 {
   slug: "black-clover",
   pros: ["Énergie et enthousiasme communicatifs","Système de magie créatif et varié","Progression constante en qualité"],
@@ -717,7 +729,8 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   chapters: 375,
   year: 2015,
   author: "Yūki Tabata",
-},
+
+  anilistId: 85449,},
 {
   slug: "blue-exorcist",
   pros: ["Univers riche mêlant démonologie et quotidien","Duo Rin/Yukio bien écrit","Ambiance scolaire originale"],
@@ -746,7 +759,8 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   chapters: 145,
   year: 2009,
   author: "Kazue Kato",
-},
+
+  anilistId: 40897,},
 {
   slug: "claymore",
   pros: ["Héroïnes complexes et mémorables","Atmosphère médiévale pesante et cohérente","Combats stratégiques et brutaux"],
@@ -831,7 +845,8 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   chapters: 108,
   year: 2003,
   author: "Tsugumi Ohba",
-},
+
+  anilistId: 21,},
 {
   slug: "dr-stone",
   pros: ["Science expliquée de façon ludique et accessible","Concept de reconstruction civilisationnelle unique","Senku, héros intellectuel rafraîchissant"],
@@ -859,7 +874,8 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   chapters: 232,
   year: 2017,
   author: "Riichiro Inagaki",
-},
+
+  anilistId: 105854,},
 {
   slug: "eleceed",
   pros: ["Duo Jiwoo/Kayden irrésistible","Humour constant et bien dosé","Action dynamique et lisible"],
@@ -913,7 +929,8 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   chapters: 545,
   year: 2006,
   author: "Hiro Mashima",
-},
+
+  anilistId: 31138,},
 {
   slug: "fire-force",
   pros: ["Univers pyrokinétique original et cohérent","Artwork spectaculaire d'Ohkubo","Mythologie progressive ambitieuse"],
@@ -941,7 +958,8 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   chapters: 304,
   year: 2015,
   author: "Atsushi Ohkubo",
-},
+
+  anilistId: 99685,},
 {
   slug: "fullmetal-alchemist",
   pros: ["Scénario sans faille du début à la fin","Duo Edward/Alphonse attachant","Thèmes profonds, deuil, responsabilité, humanité"],
@@ -970,7 +988,8 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   chapters: 116,
   year: 2001,
   author: "Hiromu Arakawa",
-},
+
+  anilistId: 25,},
 {
   slug: "gintama",
   pros: ["Humour le plus inventif du manga","Arcs sérieux d'une intensité rare","Gintoki, personnage d'une profondeur inattendue"],
@@ -1050,7 +1069,8 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   chapters: 959,
   year: 1987,
   author: "Hirohiko Araki",
-},
+
+  anilistId: 30034,},
 {
   slug: "made-in-abyss",
   pros: ["Univers unique et fascinant","Mélange de merveille enfantine et d'horreur adulte","Illustrations oniriques sublimes"],
@@ -1078,7 +1098,8 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   chapters: 68,
   year: 2012,
   author: "Akihito Tsukushi",
-},
+
+  anilistId: 97578,},
 {
   slug: "mashle",
   pros: ["Timing comique impeccable","Concept parodique bien exécuté","Personnages secondaires attachants"],
@@ -1106,7 +1127,8 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   chapters: 162,
   year: 2020,
   author: "Hajime Komoto",
-},
+
+  anilistId: 115376,},
 {
   slug: "monster",
   pros: ["Thriller psychologique sans équivalent dans le manga","Johan Liebert, antagoniste le plus terrfiant du medium","Réalisme et profondeur humaine exceptionnels"],
@@ -1134,7 +1156,8 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   chapters: 162,
   year: 1994,
   author: "Naoki Urasawa",
-},
+
+  anilistId: 30001,},
 {
   slug: "noragami",
   pros: ["Mythologie shinto bien intégrée","Yato, personnage attachant et profond","Équilibre comédie/drama très réussi"],
@@ -1162,7 +1185,8 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   chapters: 110,
   year: 2011,
   author: "Adachitoka",
-},
+
+  anilistId: 55966,},
 {
   slug: "omniscient-reader",
   pros: ["Concept meta-narratif brillant","Protagoniste avec une vraie profondeur","Univers d'une richesse rare dans le manhwa"],
@@ -1186,7 +1210,8 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   chapters: 551,
   year: 2018,
   author: "sing N song",
-},
+
+  anilistId: 118123,},
 {
   slug: "oshi-no-ko",
   pros: ["Critique acérée de l'industrie du divertissement japonais","Twists de début de série mémorables","Thèmes adultes traités avec maturité"],
@@ -1214,7 +1239,8 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   chapters: 155,
   year: 2020,
   author: "Aka Akasaka",
-},
+
+  anilistId: 127139,},
 {
   slug: "pluto",
   pros: ["Réécriture d'Astro Boy pour adultes magistrale","Thèmes sur la guerre et la haine d'une profondeur rare","Artwork d'Urasawa immaculé"],
@@ -1241,7 +1267,8 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   chapters: 65,
   year: 2003,
   author: "Naoki Urasawa",
-},
+
+  anilistId: 39194,},
 {
   slug: "slam-dunk",
   pros: ["Le meilleur manga de sport jamais créé","Hanamichi, protagoniste inoubliable","Matchs d'un réalisme et d'une tension exceptionnels"],
@@ -1266,7 +1293,8 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   chapters: 276,
   year: 1990,
   author: "Takehiko Inoue",
-},
+
+  anilistId: 38,},
 {
   slug: "soul-eater",
   pros: ["Esthétique gothic halloween unique et mémorable","Personnages secondaires qui volent souvent la vedette","Humour et action bien équilibrés"],
@@ -1321,7 +1349,8 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   chapters: 181,
   year: 2016,
   author: "Kaiu Shirai",
-},
+
+  anilistId: 101220,},
 {
   slug: "tower-of-god",
   pros: ["Univers vertical et mystérieux fascinant","Twenty-Fifth Bam, évolution lente mais marquante","Intrigues politiques complexes"],
@@ -1400,7 +1429,8 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   chapters: 214,
   year: 2005,
   author: "Makoto Yukimura",
-},
+
+  anilistId: 30584,},
 {
   slug: "wind-breaker",
   pros: ["Dynamique de groupe exceptionnelle et attachante","Combats chorégraphiés avec un sens du rythme rare","Évolution du protagoniste crédible et bien menée","Thèmes de protection et fraternité traités avec sincérité"],
@@ -1453,7 +1483,8 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   chapters: 205,
   year: 2016,
   author: "Koyoharu Gotouge",
-},
+
+  anilistId: 87216,},
 {
   slug: "spy-x-family",
   pros: ["Humour parfaitement dosé","Anya, personnage irrésistible","Légèreté assumée et rafraîchissante"],
@@ -1482,7 +1513,8 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   chapters: 110,
   year: 2019,
   author: "Tatsuya Endo",
-},
+
+  anilistId: 113213,},
 
 {
   slug: "arifureta",
@@ -1562,7 +1594,8 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   chapters: 143,
   year: 2011,
   author: "Sui Ishida",
-},
+
+  anilistId: 52573,},
 {
   slug: "black-god",
   pros: ["Système de doubles original et bien conçu","Kuro attachante et charismatique","Action rythmée et lisible"],
@@ -1820,7 +1853,8 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   chapters: 170,
   year: 2018,
   author: "Tatsuki Fujimoto",
-},
+
+  anilistId: 113415,},
 {
   slug: "parasyte",
   pros: ["Science-fiction philosophique d'une intelligence rare","Migi, partenaire unique dans le manga","Questions sur l'humanité traitées avec profondeur"],
@@ -1994,7 +2028,8 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   chapters: 300,
   year: 2018,
   author: "Hiro Mashima",
-},
+
+  anilistId: 100702,},
 {
   slug: "fate-stay-night",
   pros: ["Concept de Guerre du Graal brillant et fertile","Servants développés avec une vraie profondeur mythologique","Gilgamesh, antagoniste mémorable"],
@@ -2108,7 +2143,8 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   chapters: 120,
   year: 2021,
   author: "Naoya Matsumoto",
-},
+
+  anilistId: 120827,},
 {
   slug: "kengan-ashura",
   pros: ["Combats de MMA les plus réalistes et élaborés du manga","Chaque combattant adverse mémorable et bien développé","Artwork exceptionnel dans les scènes de combat"],
@@ -2134,7 +2170,8 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   chapters: 236,
   year: 2012,
   author: "Yabako Sandrovich",
-},
+
+  anilistId: 90023,},
 {
   slug: "kenshin",
   pros: ["Kenshin, l'un des personnages les plus iconiques du manga","Arc Kyoto avec Shishio parmi les meilleurs du genre","Thème de la rédemption traité avec profondeur"],
@@ -2161,7 +2198,8 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   chapters: 255,
   year: 1994,
   author: "Nobuhiro Watsuki",
-},
+
+  anilistId: 30017,},
 {
   slug: "kings-game",
   pros: ["Tension de survie immédiate et efficace","Ordres du roi inventifs et cruels","Flashbacks sur la première expérience de Nobuaki intenses"],
@@ -2225,7 +2263,8 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   chapters: 369,
   year: 2009,
   author: "Shinobu Ohtaka",
-},
+
+  anilistId: 41025,},
 {
   slug: "monster-musume",
   pros: ["Worldbuilding cohérent des contraintes physiques de chaque espèce","Humour généreux et bonne humeur constante","Personnages féminins aux personnalités distinctes"],
@@ -2376,7 +2415,8 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   chapters: 347,
   year: 2012,
   author: "Nakaba Suzuki",
-},
+
+  anilistId: 71755,},
 {
   slug: "shaman-king",
   pros: ["Philosophie zen unique dans le shōnen de combat","Yoh, protagoniste atypique et mémorable","Anna, l'un des meilleurs personnages féminins de l'époque"],
@@ -2755,7 +2795,8 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   chapters: 120,
   year: 2013,
   author: "Kafka Asagiri",
-},
+
+  anilistId: 63357,},
 {
   slug: "coppelion",
   pros: ["Atmosphère post-nucléaire unique et bien rendue","Héroïnes humanistes et attachantes","Visuellement ambitieux et soigné"],
@@ -2958,7 +2999,8 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   chapters: 1112,
   year: 1997,
   author: "Eiichiro Oda",
-},
+
+  anilistId: 30013,},
 
 {
   slug: "dragon-ball",
@@ -2987,7 +3029,8 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   chapters: 519,
   year: 1984,
   author: "Akira Toriyama",
-},
+
+  anilistId: 30042,},
 {
   slug: "jujutsu-kaisen",
   title: "Jujutsu Kaisen",
@@ -3009,7 +3052,8 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   chapters: 265,
   year: 2018,
   author: "Gege Akutami",
-},
+
+  anilistId: 101517,},
 
 {
   slug: "one-punch-man",
@@ -3032,7 +3076,8 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   chapters: 200,
   year: 2009,
   author: "ONE",
-},
+
+  anilistId: 85364,},
 
 {
   slug: "mob-psycho-100",
@@ -3055,7 +3100,8 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   chapters: 101,
   year: 2012,
   author: "ONE",
-},
+
+  anilistId: 85189,},
 
 {
   slug: "haikyuu",
@@ -3078,7 +3124,8 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   chapters: 402,
   year: 2012,
   author: "Haruichi Furudate",
-},
+
+  anilistId: 181735,},
 
 {
   slug: "frieren-beyond-journeys-end",
@@ -3101,7 +3148,8 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   chapters: 130,
   year: 2020,
   author: "Kanehito Yamada",
-},
+
+  anilistId: 118586,},
 
 {
   slug: "delicious-in-dungeon",
@@ -3124,7 +3172,8 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   chapters: 97,
   year: 2014,
   author: "Ryoko Kui",
-},
+
+  anilistId: 86082,},
 
 {
   slug: "yu-yu-hakusho",
@@ -3147,7 +3196,8 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   chapters: 175,
   year: 1990,
   author: "Yoshihiro Togashi",
-},
+
+  anilistId: 30053,},
 
 {
   slug: "nana",
@@ -3170,7 +3220,8 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   chapters: 84,
   year: 2000,
   author: "Ai Yazawa",
-},
+
+  anilistId: 30028,},
 
 {
   slug: "kingdom",
@@ -3193,7 +3244,8 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   chapters: 800,
   year: 2006,
   author: "Yasuhisa Hara",
-},
+
+  anilistId: 46765,},
 
 {
   slug: "20th-century-boys",
@@ -3216,7 +3268,8 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   chapters: 249,
   year: 1999,
   author: "Naoki Urasawa",
-},
+
+  anilistId: 30003,},
 
 {
   slug: "akira",
@@ -3239,7 +3292,8 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   chapters: 120,
   year: 1982,
   author: "Katsuhiro Otomo",
-},
+
+  anilistId: 30664,},
 
 {
   slug: "baki-the-search-of-our-strongest-hero",
@@ -3262,7 +3316,8 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   chapters: 380,
   year: 1991,
   author: "Keisuke Itagaki",
-},
+
+  anilistId: 35157,},
 
 {
   slug: "that-time-i-got-reincarnated-as-a-slime",
@@ -3285,7 +3340,8 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   chapters: 110,
   year: 2015,
   author: "Fuse",
-},
+
+  anilistId: 86399,},
 
 {
   slug: "lookism",
@@ -3308,7 +3364,8 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   chapters: 510,
   year: 2014,
   author: "Park Tae-jun",
-},
+
+  anilistId: 86848,},
 
 {
   slug: "sweet-home",
@@ -3331,7 +3388,8 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   chapters: 140,
   year: 2017,
   author: "Carnby Kim",
-},
+
+  anilistId: 100954,},
 
 {
   slug: "noblesse",
@@ -3354,7 +3412,8 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   chapters: 544,
   year: 2007,
   author: "Son Jeho",
-},
+
+  anilistId: 59983,},
 
 {
   slug: "weak-hero",
@@ -3377,7 +3436,8 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   chapters: 267,
   year: 2019,
   author: "Seopass",
-},
+
+  anilistId: 113488,},
 
 {
   slug: "a-returners-magic-should-be-special",
@@ -3400,7 +3460,8 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   chapters: 270,
   year: 2018,
   author: "Wookjakga",
-},
+
+  anilistId: 105393,},
 
 {
   slug: "second-life-ranker",
@@ -3423,7 +3484,8 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   chapters: 200,
   year: 2019,
   author: "Sadoyeon",
-},
+
+  anilistId: 109957,},
 
 {
   slug: "nano-machine",
@@ -3446,7 +3508,8 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   chapters: 230,
   year: 2020,
   author: "Hanjung Wolya",
-},
+
+  anilistId: 120980,},
 {
   slug: "yu-gi-oh",
   title: "Yu-Gi-Oh!",
@@ -3490,7 +3553,8 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   chapters: 343,
   year: 1996,
   author: "Kazuki Takahashi",
-},
+
+  anilistId: 30054,},
 
 {
   slug: "inuyasha",
@@ -3535,7 +3599,8 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   chapters: 558,
   year: 1996,
   author: "Rumiko Takahashi",
-},
+
+  anilistId: 30676,},
 
 {
   slug: "knights-of-the-zodiac",
@@ -3620,7 +3685,8 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   chapters: 525,
   year: 1981,
   author: "Yoichi Takahashi",
-},
+
+  anilistId: 31789,},
 
 {
   slug: "eyeshield-21",
@@ -3665,7 +3731,8 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   chapters: 333,
   year: 2002,
   author: "Riichiro Inagaki",
-},
+
+  anilistId: 30043,},
 
 
 {
@@ -3791,7 +3858,8 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   chapters: 60,
   year: 1991,
   author: "Naoko Takeuchi",
-},
+
+  anilistId: 30092,},
 
 {
   slug: "hikaru-no-go",
@@ -3836,7 +3904,8 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   chapters: 189,
   year: 1998,
   author: "Yumi Hotta",
-},
+
+  anilistId: 30020,},
 
 {
   slug: "bakuman",
@@ -3984,7 +4053,8 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   chapters: 59,
   year: 1982,
   author: "Hayao Miyazaki",
-},
+
+  anilistId: 30651,},
 
 {
   slug: "gto-great-teacher-onizuka",
@@ -4029,7 +4099,8 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   chapters: 200,
   year: 1997,
   author: "Tohru Fujisawa",
-},
+
+  anilistId: 30336,},
 
 {
   slug: "initial-d",
@@ -4148,7 +4219,8 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   chapters: 407,
   year: 1987,
   author: "Rumiko Takahashi",
-},
+
+  anilistId: 30023,},
 
 {
   slug: "shijou-saikyou-no-deshi-kenichi",
@@ -4233,7 +4305,8 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   chapters: 180,
   year: 2021,
   author: "Yukinobu Tatsu",
-},
+
+  anilistId: 132029,},
 
 {
   slug: "zom-100-bucket-list-of-the-dead",
@@ -4398,7 +4471,8 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   chapters: 215,
   year: 2020,
   author: "Yoshifumi Tozuka",
-},
+
+  anilistId: 114791,},
 
 {
   slug: "mission-yozakura-family",
@@ -4477,7 +4551,8 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   chapters: 75,
   year: 2016,
   author: "Kamome Shirahama",
-},
+
+  anilistId: 98263,},
 
 {
   slug: "seraph-of-the-end-vampire-reign",
@@ -4602,7 +4677,8 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   chapters: 167,
   year: 2000,
   author: "Q Hayashida",
-},
+
+  anilistId: 31133,},
 
 {
   slug: "beastars",
@@ -4647,7 +4723,8 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   chapters: 196,
   year: 2016,
   author: "Paru Itagaki",
-},
+
+  anilistId: 98587,},
 
 {
   slug: "golden-kamuy",
@@ -4692,7 +4769,8 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   chapters: 314,
   year: 2014,
   author: "Satoru Noda",
-},
+
+  anilistId: 86559,},
 
 {
   slug: "the-ancient-magus-bride",
@@ -4817,7 +4895,8 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   chapters: 281,
   year: 2015,
   author: "Aka Akasaka",
-},
+
+  anilistId: 86635,},
 
 {
   slug: "moriarty-the-patriot",
@@ -5022,7 +5101,8 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   chapters: 122,
   year: 2011,
   author: "HERO",
-},
+
+  anilistId: 72451,},
 
 {
   slug: "your-lie-in-april",
@@ -5067,7 +5147,8 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   chapters: 44,
   year: 2011,
   author: "Naoshi Arakawa",
-},
+
+  anilistId: 67707,},
 
 {
   slug: "koe-no-katachi",
@@ -5112,7 +5193,8 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   chapters: 62,
   year: 2013,
   author: "Yoshitoki Oima",
-},
+
+  anilistId: 78621,},
 
 {
   slug: "fruits-basket",
@@ -5157,7 +5239,8 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   chapters: 136,
   year: 1998,
   author: "Natsuki Takaya",
-},
+
+  anilistId: 30102,},
 
 {
   slug: "ouran-high-school-host-club",
@@ -5202,7 +5285,8 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   chapters: 87,
   year: 2002,
   author: "Bisco Hatori",
-},
+
+  anilistId: 30030,},
 
 {
   slug: "nisekoi",
@@ -5247,7 +5331,8 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   chapters: 229,
   year: 2011,
   author: "Naoshi Komi",
-},
+
+  anilistId: 50867,},
 
 {
   slug: "my-dress-up-darling",
@@ -5292,7 +5377,8 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   chapters: 105,
   year: 2018,
   author: "Shinichi Fukuda",
-},
+
+  anilistId: 101583,},
 
 {
   slug: "komi-san-wa-komyushou-desu",
@@ -5537,7 +5623,8 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   chapters: 118,
   year: 2008,
   author: "Satsuki Yoshino",
-},
+
+  anilistId: 47051,},
 
 {
   slug: "yahari-ore-no-seishun-love-come-wa-machigatteiru-monologue",
@@ -5656,7 +5743,8 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   chapters: 20,
   year: 1998,
   author: "Junji Ito",
-},
+
+  anilistId: 30436,},
 
 
 {
@@ -5696,7 +5784,8 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   chapters: 147,
   year: 2007,
   author: "Inio Asano",
-},
+
+  anilistId: 34632,},
 
 {
   slug: "gantz",
@@ -5735,7 +5824,8 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   chapters: 383,
   year: 2000,
   author: "Hiroya Oku",
-},
+
+  anilistId: 30564,},
 
 {
   slug: "i-am-a-hero",
@@ -5894,7 +5984,8 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   chapters: 100,
   year: 2014,
   author: "Rifujin na Magonote",
-},
+
+  anilistId: 165131,},
 
 {
   slug: "is-it-wrong-to-try-to-pick-up-girls-in-a-dungeon",
@@ -5979,7 +6070,8 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   chapters: 60,
   year: 2011,
   author: "Mamare Touno",
-},
+
+  anilistId: 76024,},
 
 {
   slug: "skeleton-knight-in-another-world",
@@ -6133,7 +6225,8 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   chapters: 207,
   year: 2018,
   author: "Yaongyi",
-},
+
+  anilistId: 103995,},
 {
   slug: "hardcore-leveling-warrior",
   title: "Hardcore Leveling Warrior",
@@ -6166,7 +6259,8 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   chapters: 330,
   year: 2016,
   author: "Sehoon Kim",
-},
+
+  anilistId: 101134,},
 
 {
   slug: "wotakoi-love-is-hard-for-otaku",
@@ -6331,7 +6425,8 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   chapters: 32,
   year: 1989,
   author: "Masamune Shirow",
-},
+
+  anilistId: 31023,},
 
 {
   slug: "yokohama-kaidashi-kikou",
@@ -6484,7 +6579,8 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   chapters: 75,
   year: 2020,
   author: "Syougo Kinugasa",
-},
+
+  anilistId: 96798,},
 
 {
   slug: "soul-land",
@@ -6667,7 +6763,8 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   chapters: 200,
   year: 2013,
   author: "Sōichirō Yamamoto",
-},
+
+  anilistId: 138552,},
 
 {
   slug: "laid-back-camp",
@@ -6712,7 +6809,8 @@ toujours plus dangereuses, des combats mortels et des ennemis redoutables pour p
   chapters: 100,
   year: 2015,
   author: "Afro",
-},
+
+  anilistId: 98351,},
 
 {
   slug: "asobi-asobase",

@@ -334,7 +334,7 @@ export default function SeriePage({ params }: { params: { slug: string } }) {
           <div style={{ display: "flex", flexDirection: "column", gap: 16, position: "sticky", top: 72 }} className="serie-sidebar-chrome">
 
             {/* Scores : rédaction + AniList + lecteurs */}
-            <SidebarScores slug={serie.slug} serieTitle={serie.title} notrNote={score10} />
+            <SidebarScores slug={serie.slug} serieTitle={serie.title} notrNote={score10} anilistId={serie.anilistId} />
 
             {/* Rang */}
             {rank && (

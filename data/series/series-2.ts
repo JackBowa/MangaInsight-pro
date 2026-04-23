@@ -155,7 +155,8 @@ export const SERIES_2: Serie[] = [
   chapters: 104,
   year: 2003,
   author: "Kiyohiko Azuma",
-},
+
+  anilistId: 30104,},
 
 
 
@@ -196,7 +197,8 @@ export const SERIES_2: Serie[] = [
   chapters: 22,
   year: 2012,
   author: "Ichigo Takano",
-},
+
+  anilistId: 205598,},
 
 {
   slug: "given",
@@ -241,7 +243,8 @@ export const SERIES_2: Serie[] = [
   chapters: 50,
   year: 2013,
   author: "Natsuki Kizu",
-},
+
+  anilistId: 190126,},
 
 {
   slug: "bloom-into-you",
@@ -286,7 +289,8 @@ export const SERIES_2: Serie[] = [
   chapters: 45,
   year: 2015,
   author: "Nio Nakatani",
-},
+
+  anilistId: 86218,},
 
 {
   slug: "talentless-nana",
@@ -1645,7 +1649,8 @@ export const SERIES_2: Serie[] = [
   chapters: 61,
   year: 2013,
   author: "Natsume Akatsuki",
-},
+
+  anilistId: 86238,},
 
 
 
@@ -1933,7 +1938,8 @@ export const SERIES_2: Serie[] = [
   chapters: 130,
   year: 2011,
   author: "Hiromu Arakawa",
-},
+
+  anilistId: 55096,},
 
 {
   slug: "aku-no-hana",
@@ -3910,7 +3916,8 @@ export const SERIES_2: Serie[] = [
   chapters: 127,
   year: 2018,
   author: "Yuji Kaku",
-},
+
+  anilistId: 100994,},
 
 {
   slug: "nues-exorcist",
@@ -4150,7 +4157,8 @@ export const SERIES_2: Serie[] = [
   chapters: 171,
   year: 2020,
   author: "Juder",
-},
+
+  anilistId: 128882,},
 
 {
   slug: "the-remarried-empress",
@@ -4559,7 +4567,8 @@ export const SERIES_2: Serie[] = [
   chapters: 150,
   year: 2020,
   author: "Yoonseok",
-},
+
+  anilistId: 125636,},
 
 
 
@@ -7777,7 +7786,8 @@ export const SERIES_2: Serie[] = [
   chapters: 150,
   year: 2018,
   author: "Hiro Mashima",
-},
+
+  anilistId: 103255,},
 
 {
   slug: "samurai-deeper-kyo",
