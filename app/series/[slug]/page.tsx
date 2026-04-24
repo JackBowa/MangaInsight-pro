@@ -32,6 +32,23 @@ export async function generateMetadata({ params }: { params: { slug: string } })
   };
 }
 
+async function fetchAnilistScore(id: number): Promise<number | null> {
+  try {
+    const res = await fetch("https://graphql.anilist.co", {
+      method: "POST",
+      headers: { "Content-Type": "application/json", Accept: "application/json" },
+      body: JSON.stringify({
+        query: `query($id:Int){Media(id:$id,type:MANGA){averageScore}}`,
+        variables: { id },
+      }),
+      next: { revalidate: 86400 },
+    });
+    if (!res.ok) return null;
+    const data = await res.json();
+    return data?.data?.Media?.averageScore ?? null;
+  } catch { return null; }
+}
+
 function starsToRank(stars?: number): string | null {
   if (stars === 5) return "SSS";
   if (stars === 4) return "SS";
@@ -79,7 +96,7 @@ function getSimilar(serie: typeof SERIES[0], count = 6) {
     .slice(0, count);
 }
 
-export default function SeriePage({ params }: { params: { slug: string } }) {
+export default async function SeriePage({ params }: { params: { slug: string } }) {
   const serie = SERIES.find(s => s.slug === params.slug);
   if (!serie) return notFound();
   if (serie.published === false) return notFound();
@@ -89,6 +106,8 @@ export default function SeriePage({ params }: { params: { slug: string } }) {
   const editorHtml = (serie as any)?.reviewHtml ?? null;
   const stars = typeof serie.stars === "number" ? serie.stars : 0;
   const score10 = stars * 2;
+  const rawAnilist = serie.anilistId ? await fetchAnilistScore(serie.anilistId) : null;
+  const anilistScore10 = rawAnilist ? Math.round(rawAnilist) / 10 : null;
   const pros: string[] = serie.pros ?? [];
   const cons: string[] = serie.cons ?? [];
 
@@ -335,7 +354,7 @@ export default function SeriePage({ params }: { params: { slug: string } }) {
           <div style={{ display: "flex", flexDirection: "column", gap: 16, position: "sticky", top: 72 }} className="serie-sidebar-chrome">
 
             {/* Scores : rédaction + AniList + lecteurs */}
-            <SidebarScores slug={serie.slug} serieTitle={serie.title} notrNote={score10} anilistId={serie.anilistId} />
+            <SidebarScores slug={serie.slug} notrNote={score10} anilistScore={anilistScore10} />
 
             {/* Rang */}
             {rank && (
