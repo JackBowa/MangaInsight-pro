@@ -55,6 +55,7 @@ export default function CritiquesPage() {
   const [q, setQ] = useState("");
   const [category, setCategory] = useState<"all" | "manga" | "manhwa">("all");
   const [genre, setGenre] = useState("Tous");
+  const [status, setStatus] = useState<"all" | "en cours" | "terminé" | "pause">("all");
   const [sort, setSort] = useState<"recent" | "title" | "rating">("recent");
   const [view, setView] = useState<"grid" | "list">("grid");
   const [avgs, setAvgs] = useState<Record<string, number>>({});
@@ -67,6 +68,7 @@ export default function CritiquesPage() {
     let list = SERIES.slice();
     if (category !== "all") list = list.filter(s => s.category === category);
     if (genre !== "Tous") list = list.filter(s => (s.tags ?? "").toLowerCase().includes(genre.toLowerCase()));
+    if (status !== "all") list = list.filter(s => s.status === status);
     if (q.trim()) {
       const n = q.toLowerCase();
       list = list.filter(s => s.title.toLowerCase().includes(n) || (s.tags ?? "").toLowerCase().includes(n));
@@ -75,9 +77,9 @@ export default function CritiquesPage() {
     else if (sort === "rating") list.sort((a, b) => (b.stars ?? 0) - (a.stars ?? 0));
     else list = list.reverse();
     return list;
-  }, [q, category, genre, sort]);
+  }, [q, category, genre, status, sort]);
 
-  useEffect(() => { setVisibleCount(PAGE_SIZE); }, [q, category, genre, sort]);
+  useEffect(() => { setVisibleCount(PAGE_SIZE); }, [q, category, genre, status, sort]);
 
   useEffect(() => {
     const slugs = Array.from(new Set(filtered.map(s => s.slug))).slice(0, 200);
@@ -140,6 +142,16 @@ export default function CritiquesPage() {
               <button key={g} onClick={() => setGenre(g)} style={chipStyle(genre === g)}>{g.toUpperCase()}</button>
             ))}
           </div>
+          <div style={{ width: 1, height: 24, background: "rgba(255,255,255,0.07)", margin: "0 4px" }} />
+          {/* Status */}
+          {([
+            { key: "all", label: "TOUS STATUTS" },
+            { key: "en cours", label: "⟳ EN COURS" },
+            { key: "terminé", label: "✓ TERMINÉ" },
+            { key: "pause", label: "⏸ PAUSE" },
+          ] as const).map(({ key, label }) => (
+            <button key={key} onClick={() => setStatus(key)} style={chipStyle(status === key)}>{label}</button>
+          ))}
           <div style={{ width: 1, height: 24, background: "rgba(255,255,255,0.07)", margin: "0 4px" }} />
           {/* Sort */}
           <select value={sort} onChange={e => setSort(e.target.value as any)}

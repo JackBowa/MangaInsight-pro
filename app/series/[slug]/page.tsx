@@ -21,13 +21,24 @@ export function generateStaticParams() {
 export async function generateMetadata({ params }: { params: { slug: string } }) {
   const serie = SERIES.find(s => s.slug === params.slug);
   if (!serie) return {};
+  const desc = serie.synopsis ? serie.synopsis.slice(0, 155) + "…" : `Critique et avis sur ${serie.title} — MangaInsight`;
+  const url = `https://mangainsight.fr/series/${serie.slug}`;
   return {
     title: serie.title,
-    description: serie.synopsis ? serie.synopsis.slice(0, 155) + "…" : `Critique et avis sur ${serie.title}, MangaInsight`,
+    description: desc,
+    alternates: { canonical: url },
     openGraph: {
       title: `${serie.title} · MangaInsight`,
-      description: serie.synopsis?.slice(0, 155) + "…",
-      images: serie.cover ? [{ url: serie.cover }] : [],
+      description: desc,
+      url,
+      type: "article",
+      images: serie.cover ? [{ url: serie.cover, width: 460, height: 690, alt: serie.title }] : [],
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${serie.title} · MangaInsight`,
+      description: desc,
+      images: serie.cover ? [serie.cover] : [],
     },
   };
 }
@@ -110,15 +121,29 @@ export default function SeriePage({ params }: { params: { slug: string } }) {
           return { name: p.name, url: p.getUrl(serie.title), logo: p.logo };
         });
 
+  const pageUrl = `https://mangainsight.fr/series/${serie.slug}`;
+
+  const breadcrumbLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://mangainsight.fr" },
+      { "@type": "ListItem", "position": 2, "name": "Critiques", "item": "https://mangainsight.fr/critiques" },
+      { "@type": "ListItem", "position": 3, "name": serie.title, "item": pageUrl },
+    ],
+  };
+
   const jsonLd = {
     "@context": "https://schema.org",
     "@type": "Book",
     "name": serie.title,
     "description": serie.synopsis ?? `Critique et avis sur ${serie.title}`,
     "image": serie.cover ?? undefined,
-    "url": `https://mangainsight.fr/series/${serie.slug}`,
+    "url": pageUrl,
     "genre": serie.tags?.split("·")[0].trim(),
     "inLanguage": "fr",
+    ...(serie.author ? { "author": { "@type": "Person", "name": serie.author } } : {}),
+    ...(serie.year ? { "datePublished": String(serie.year) } : {}),
     "aggregateRating": stars > 0 ? {
       "@type": "AggregateRating",
       "ratingValue": score10,
@@ -128,11 +153,10 @@ export default function SeriePage({ params }: { params: { slug: string } }) {
     } : undefined,
   };
 
-  const circumference = 2 * Math.PI * 34; // r=34
-
   return (
     <div style={{ minHeight: "100vh", background: "#0a0a0a" }}>
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbLd) }} />
       <style>{`
         .review-content p { margin-bottom: 1em; font-size: 0.9rem; color: rgba(255,255,255,0.65); line-height: 1.85; }
         .review-content strong { color: #fff; }

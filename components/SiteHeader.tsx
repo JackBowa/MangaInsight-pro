@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
-import { useUser } from "@supabase/auth-helpers-react";
+import { useUser } from "@/lib/lib/useUser";
 import { useState, useEffect, useRef, useCallback } from "react";
 import { PUBLISHED_SERIES as SERIES } from "@/data/series";
 
