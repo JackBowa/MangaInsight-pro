@@ -44,7 +44,13 @@ export async function POST(req: Request) {
       headers: { "Content-Type": "application/json", Accept: "application/json" },
       body: JSON.stringify({ query, variables }),
     });
-    const data = await res.json();
+    const text = await res.text();
+    let data: unknown;
+    try {
+      data = JSON.parse(text);
+    } catch {
+      return Response.json({ error: "AniList indisponible" }, { status: 503 });
+    }
     return Response.json(data);
   } catch {
     return Response.json({ error: "AniList inaccessible" }, { status: 502 });
